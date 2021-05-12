@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Comunicação Elgin: Impressora Térmica</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Plataforma de Comunicação Elgin
+   &#160;<span id="projectnumber">1.16</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group__ma0.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Impressora Térmica<div class="ingroups"><a class="el" href="group__g3.html">Android</a> &raquo; <a class="el" href="group__g32.html">Módulos</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Módulo para comunicação com as impressoras térmicas.  
+<a href="#details">Mais...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga86f7243db250544a1173c75da1371a66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ma0.html#ga86f7243db250544a1173c75da1371a66">DirectIO</a> (byte[] writeData, int writeNum, byte[] readData, Inteiro readNum)</td></tr>
+<tr class="memdesc:ga86f7243db250544a1173c75da1371a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envia comandos ESCPOS direto para a porta de comunicação.  <a href="group__ma0.html#ga86f7243db250544a1173c75da1371a66">Mais...</a><br /></td></tr>
+<tr class="separator:ga86f7243db250544a1173c75da1371a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Módulo para comunicação com as impressoras térmicas. </p>
+<p>Para utilizar essas funções em ambiente Android, é necessário importar a classe referente a este módulo: </p><blockquote class="doxtable">
+<p>import com.elgin.e1.Impressora.Termica;<br  />
+</p>
+</blockquote>
+<p><br  />
+ Após importar a classe, suas funções poderão ser acessadas diretamente via operador ponto ("."), uma vez que seus métodos são estáticos.<br  />
+<br  />
+ Para estabelecer uma comunicação com a impressora, será necessário abrir uma conexão através do método <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a>: </p><blockquote class="doxtable">
+<p>Termica.AbreConexaoImpressora(3, "i9", "192.168.0.1", 9100); // <em>Argumentos ilustrativos</em><br  />
+</p>
+</blockquote>
+<p><br  />
+ O exemplo abaixo ilustra como abrir uma conexão com a impressora Elgin i9 em ambiente Android, avançar 50 linhas de papel ("imprimir em branco") e fechar a conexão. </p><div class="fragment"><div class="line"><span class="keyword">import</span> com.elgin.e1.Impressora.Termica;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// ...</span></div>
+<div class="line"> </div>
+<div class="line">Termica.AbreConexaoImpressora(3, <span class="stringliteral">&quot;i9&quot;</span>, <span class="stringliteral">&quot;192.168.0.1&quot;</span>, 9100);</div>
+<div class="line"> </div>
+<div class="line">Termica.AvancaPapel(50);</div>
+<div class="line"> </div>
+<div class="line">Termica.FechaConexaoImpressora();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// ...</span></div>
+</div><!-- fragment --><p> <br  />
+ </p><blockquote class="doxtable">
+<p><b>Funções impressora térmica</b> </p>
+</blockquote>
+<p>- <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a><br  />
+</p><ul>
+<li><a class="el" href="group___m1.html#ga82f718c7155c604104b0b2fb5e800a40" title="Abre gaveta.">AbreGaveta</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#ga0477cb1087969802c31407757eb23073" title="Abre gavetas Elgin.">AbreGavetaElgin</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#ga7bb867ac58bdce583d497d05aa125732" title="Imprime informações no buffer e avança o papel.">AvancaPapel</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade" title="Realiza o corte do papel.">Corte</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#gaaf8135997bfdaaec07de62d7ba3575f6" title="Define Área Impressão.">DefineAreaImpressao</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#gaee4c087b368db5a467d2ed26afe1941a" title="Define a posição do conteúdo a ser impresso.">DefinePosicao</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#ga5a040acbc7d4a42ab7714972c0579076" title="Define Direção de Impressão.">DirecaoImpressao</a><br  />
+</li>
+<li>DirectIO<br  />
+</li>
+<li><a class="el" href="group___m1.html#ga520ec6fa932747f430c2a89bc46c8176" title="Fecha conexão com a impressora.">FechaConexaoImpressora</a><br  />
+</li>
+<li>GetVersaoDLL<br  />
+</li>
+<li><a class="el" href="group___m1.html#ga52b5a949b98c3163709b09762a17e794" title="Impressão de código de barras.">ImpressaoCodigoBarras</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#gaf4424cf8fcb9917a27c53a2972ca1626" title="Impressão de código PDF417.">ImpressaoPDF417</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#gace32a45c3d64239fc38f773f199ddf2e" title="Impressão de QRCode.">ImpressaoQRCode</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#ga6c9bc310ba0f45001cca6420c09e77c7" title="Envia informações de texto para o buffer da impressora.">ImpressaoTexto</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#ga64bca702d7d0dec0d3ba82257848c83e" title="Imprime imagem carregada em memória.">ImprimeImagemMemoria</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#ga3be49ecd34cd40e445e2bac306d5714c" title="Imprime Modo Página.">ImprimeModoPagina</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#gacee31e0a9e1d0a2a3e68ad14cf36acd0" title="Imprime Modo Página e Retorna ao Modo Padrão.">ImprimeMPeRetornaPadrao</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#ga14dad45b993f1f7ca6b99081084a5c12" title="Imprime Danfe de cancelamento SAT.">ImprimeXMLCancelamentoSAT</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#gace248799521dc829ed65a6a60f25ab8b" title="Imprime o Danfe NFCe.">ImprimeXMLNFCe</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#ga0e73b993587e826d44d95b4f2382e1f0" title="Imprime Danfe SAT.">ImprimeXMLSAT</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#gac15aad13ce53d650c10bd74e286170ec" title="Inicializa a impressora para novas tarefas.">InicializaImpressora</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#gacdc97edd24cfb9903abf0933996112f0" title="Limpa Buffer em Modo Página.">LimpaBufferModoPagina</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#ga26d6f65fe8192b33fd6df6fa4450d585" title="Retorna ao Modo Padrão.">ModoPadrao</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#ga7e6a7e1acce3d656659a471fb6dd0458" title="Habilita Modo Página.">ModoPagina</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#ga702f50865da261d69afd60618041d6a0" title="Define Posição de Impressão Horizontal.">PosicaoImpressaoHorizontal</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#ga31c2805a817a8b8049c60c4ac76ae3e7" title="Define a Posição da Impressão Vertical.">PosicaoImpressaoVertical</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#gaccc3718d7089288a2135d9b4a4377785" title="Emite sinal sonoro.">SinalSonoro</a><br  />
+</li>
+<li><a class="el" href="group___m1.html#gacd752d6dc3de8bd572757c58baad9abb" title="Obtém o status da impressora.">StatusImpressora</a><br  />
+</li>
+</ul>
+<h2 class="groupheader">Funções</h2>
+<a id="ga86f7243db250544a1173c75da1371a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86f7243db250544a1173c75da1371a66">&#9670;&nbsp;</a></span>DirectIO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DirectIO </td>
+          <td>(</td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>writeData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>writeNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>readData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Inteiro&#160;</td>
+          <td class="paramname"><em>readNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envia comandos ESCPOS direto para a porta de comunicação. </p>
+<p>Função de despejo de comandos na porta de comunicação. Essa função também recebe dados da porta de comunicação.</p><ul>
+<li>OBS: Este método não está disponível para uso com o <a class="el" href="group__g8.html">Serviço</a>.</li>
+<li>OBS: Se o tipo de conexão (definido na função <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a>) for algum dos presentes na lista abaixo, não será possível realizar a leitura da porta e os parâmetros <b>readData</b> e <b>readNum</b> podem ser definidos como <b>null</b>, pois não serão utilizados na função. <blockquote class="doxtable">
+<p>5 (SmartPOS)<br  />
+6 (Mini PDV M8)<br  />
+</p>
+</blockquote>
+<br  />
+ <dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">writeData</td><td>- Sequência de bytes que devem ser enviados para a porta de comunicação.<br  />
+<br  />
+ </td></tr>
+    <tr><td class="paramname">writeNum</td><td>- Quantidade de bytes enviados e que serão escritos.<br  />
+<br  />
+ </td></tr>
+    <tr><td class="paramname">readData</td><td>- Variável que receberá os dados de retorno caso seja necessário.<br  />
+<br  />
+ </td></tr>
+    <tr><td class="paramname">readNum</td><td>- Quantidade de dados que se espera ler. Após a execução da função, essa variável deve indicar a quantidade de dados lidos da porta. Para evitar a leitura da porta esse parâmetro deve valer 0 (ZERO).<br  />
+<br  />
+ Perceba que este parâmetro recebe, como argumento, um <b>objeto da classe Inteiro</b>, inicializado com o valor que deseja-se passar ao parâmetro.<br  />
+<br  />
+ Essa classe <b>representa um número inteiro</b> e, para utilizá-la, é necessário importá-la: <blockquote class="doxtable">
+<p>import com.elgin.e1.Impressora.Utilidades.Inteiro;<br  />
+</p>
+</blockquote>
+<br  />
+ Possui <b>dois construtores:</b> um construtor padrão (sem argumentos), que inicializa o objeto com valor 0; e um construtor com um argumento do tipo <b>int</b>, que inicializa o objeto com o valor passado nesse argumento.<br  />
+<br  />
+ Apresenta <b>dois métodos:</b> o método <b>getValor</b> (<em>assinatura: int getValor()</em>), que retorna o valor atual da instância (<em>definido no construtor ou na função setValor</em>); e o método <b>setValor</b> (<em>assinatura: void setValor(int valor)</em>), que modifica o valor da instância pelo valor passado no argumento).<br  />
+<br  />
+ Veja, abaixo, um exemplo de uso válido desta função, em Java, seguido de um comentário detalhado sobre os argumentos passados:</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="keywordtype">byte</span>[] esc = {29, 73, 67}; <span class="comment">// Nome da impressora</span></div>
+<div class="line"><span class="keywordtype">byte</span>[] ler = <span class="keyword">new</span> <span class="keywordtype">byte</span>[1000]; <span class="comment">// Armazena os dados retornados pela impressora (até 1000 bytes, nesse caso)</span></div>
+<div class="line">Inteiro leu = <span class="keyword">new</span> Inteiro(1); <span class="comment">// Armazena a quantidade de bytes lidos; o valor 1 (ou qualquer outro maior do que 0) solicita a leitura da porta</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> ret = Termica.DirectIO(esc, 3, ler, leu);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Imprime o retorno de DirectIO e a resposta da impressora:</span></div>
+<div class="line">System.out.printf(<span class="stringliteral">&quot;\n Ret: %d ; Leu: %d ; Dados lidos: %s \n&quot;</span>, ret, leu.getValor(), <span class="keyword">new</span> String(ler));</div>
+</div><!-- fragment --></li>
+</ul>
+<p><br  />
+</p><blockquote class="doxtable">
+<p>No exemplo acima, são passados a variável <b>esc</b> e o argumento <b>3</b> à função; a variável <b>esc</b> contém o comando que o <em>DirectIO</em> enviará à impressora - um comando em ESCPOS que solicita o nome da impressora - e o valor <b>3</b>, a quantidade de bytes que devem ser escritos - no exemplo, todos os três bytes do comando armazenado na variável <b>esc</b>.<br  />
+</p>
+</blockquote>
+<blockquote class="doxtable">
+<p>Em seguida, são passados à função as variáveis <b>ler</b> e <b>leu</b>; a variável <b>ler</b> armazenará os dados retornados pela impressora, em resposta ao comando enviado, e a variável <b>leu</b>, armazenará a quantidade de bytes efetivamente lidos.<br  />
+</p>
+</blockquote>
+<blockquote class="doxtable">
+<p>O valor <b>1</b> (ou qualquer valor maior do que zero), inicialmente atribuido à variável <b>leu</b>, solicita a leitura da porta. Após a leitura, o valor final dessa variável será a quantidade de dados lidos.<br  />
+</p>
+</blockquote>
+<p><br  />
+ </p><dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
+A função bem-sucedida deve retornar 0.<br  />
+<ul>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga42887be3dd7140bef19a0ab8b8246f8b" title="IMP_Erro_ConexaoAndroid enum -171 à -180 e -391 à -400.">Erro_ConexaoAndroid</a> e <a class="el" href="group__g1.html#gac34b8a950212ec91c4e28df08684e49b" title="IMP_Erro_Leitura_Impressora enum -81 à -90.">IMP_Erro_Leitura_Impressora</a>. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

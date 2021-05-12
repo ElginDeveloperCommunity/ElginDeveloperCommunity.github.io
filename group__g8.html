@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Comunicação Elgin: Serviço</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Plataforma de Comunicação Elgin
+   &#160;<span id="projectnumber">1.16</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group__g8.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Serviço</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>O serviço, por meio de troca de mensagens, possibilita a comunicação de diversos sistemas com os equipamentos Elgin.  
+</p>
+<p>O serviço, por meio de troca de mensagens, possibilita a comunicação de diversos sistemas com os equipamentos Elgin. </p>
+<p>A troca de mensagens, que pode ser feita por comunicação TCP/IP ou troca de arquivos, é utilizada para facilitar a integração entre os sistemas de clientes e os equipamentos Elgin, tornando possível inclusive a comunicação com sistemas que utilizam plataforma web.<br  />
+</p>
+<blockquote class="doxtable">
+<p><b> Configurações do Serviço</b><br  />
+</p>
+</blockquote>
+<p>As configurações podem ser acessadas por meio do arquivo e1_conf.ini, que será criado na pasta de instalação do serviço, ou diretamente pelo Monitor, que poderá ser acessado, após instalação do serviço, por meio do ícone constante na área de notificação da Barra de Tarefas.<br  />
+ Nessas configurações pode-se definir os seguintes itens:<br  />
+</p><ul>
+<li><b>caminho_biblioteca:</b> caminhos das DLLs que serão utilizadas pelas Impressoras ou SAT;<br  />
+</li>
+<li><b>caminho_xsd:</b> caminhos que contém os XSD, os quais validam os XMLs do SAT com base nas especificações da Secretaria da Fazenda;<br  />
+</li>
+<li><b>gerencia_XML:</b></li>
+<li><b>caminho_XML:</b> caminho necessário para ser armazenado o XML processado pelo SAT;<br  />
+</li>
+<li><b>log:</b></li>
+<li><b>caminho_log:</b></li>
+<li><b>qtd_dias_log:</b></li>
+<li><b>modoComunicacao:</b> determina o modo de funcionamento do serviço, sendo 1 para modo TCP/IP e 2 para o modo troca de arquivos;<br  />
+</li>
+<li><b>tipoComando:</b> utilizado tanto no modo TCP/IP como no modo troca de arquivos, sendo 1 para arquivos delimitado e 2 para arquivos com formatação Json; <br  />
+</li>
+<li><b>porta:</b> utilizado quando o modo de comunicação TCP/IP é selecionado, sendo definida por padrão a porta 89; <br  />
+</li>
+<li><b>path_file_in:</b> utilizado quando o modo de comunicação troca de arquivos é selecionado, deverá ser definido o local de entrada dos arquivos;<br  />
+</li>
+<li><b>path_file_out:</b> utilizado quando o modo de comunicação troca de arquivos é selecionado, deverá ser definido o local de saída dos arquivos, contendo as respostas das funções enviadas;<br  />
+</li>
+<li><b>separadorFuncoes:</b> utilizado quando o tipoComando selecionado se tratar de arquivo delimitado, sendo tal separador o responsável por garantir a utilização de várias funções em um mesmo arquivo; <br  />
+</li>
+<li><b>separadorValores:</b> utilizado quando o tipoComando selecionado se tratar de arquivo delimitado, sendo tal separador o responsável por garantir que todos os atributos de uma mesma função sejam encontrados. <br  />
+<br  />
+<br  />
+</li>
+</ul>
+<blockquote class="doxtable">
+<p><b> Modo TCP/IP</b><br  />
+</p>
+</blockquote>
+<p>Para utilizar esse modo de comunicação o usuário deverá configurar os itens a seguir, constantes no arquivo e1_conf.ini, conforme informações de configurações supracitadas:<br  />
+</p><ul>
+<li>modoCouminicação: 1 para TCP/IP;<br  />
+</li>
+<li>tipoComando: 1 para arquivo com formato delimitado e 2 para arquivo com formato Json;<br  />
+</li>
+<li>separadorFuncoes e separadorValores: ao utilizar o tipoComando 1, arquivo delimitado, o usuário deverá definir os separadores, que por padrão será: *|* e :|, respctivamente;<br  />
+</li>
+<li>porta: poderá ser mudada, no entanto por padrão a porta será definida como 89.<br  />
+<br  />
+ Nesse modo de comunicação a maquina em que o serviço está instalado será tratada como um servidor, que receberá as mensagens via TCP/IP pela porta definida nas configurações do serviço. Tal mensagen passará por diversas validações antes de ser enviada à impressora ou ao equipamento SAT;<br  />
+ Caso a mensagem recebida pelo servidor seja um comando válido, esta será enviada ao equipamento respectivo e, por fim, as respostas dos comandos serão tratadas e retornadas ao cliente, inclusive caso ocorra algum erro;<br  />
+ Nesse modo de comunicação as mensagens são trocadas em formato Json, sendo possível consultar os exemplos nesta documentação, por meio dos módulos Impressoras e SAT. <br  />
+<br  />
+<br  />
+</li>
+</ul>
+<blockquote class="doxtable">
+<p><b> Modo Diretório (Troca de Arquivos) </b><br  />
+</p>
+</blockquote>
+<p>Para utilizar esse modo de comunicação o usuário deverá configurar os itens a seguir, constantes no arquivo e1_conf.ini, conforme informações de configurações supracitadas:<br  />
+</p><ul>
+<li>modoCouminicação: 2 para Modo Diretório (Troca de Arquivos);<br  />
+</li>
+<li>tipoComando: 1 para arquivo com formato delimitado e 2 para arquivo com formato Json;<br  />
+</li>
+<li>path_file_in e path_file_out: caminhos de entrada e saída de arquivos;<br  />
+</li>
+<li>separadorFuncoes e separadorValores: ao utilizar o tipoComando 1, arquivo delimitado, o usuário deverá definir os separadores, que por padrão será: *|* e :|, respctivamente.<br  />
+<br  />
+ Nesse modo de comunicação será definida uma pasta de entrada, que receberá arquivos a serem processados, e uma pasta de saída, que receberá arquivos que contém as respostas dos arquivos processados;<br  />
+ O serviço ficará visualizando a pasta de entrada, aguardando e processando os arquivos que deverão conter o nome "Comando" em seu nome e deverão possuir extensão ".txt";<br  />
+ Durante o processamento do arquivo, este será apagado da pasta de entrada e um novo arquivo, contendo a resposta, será criado na pasta de saída;<br  />
+ Nesse modo de comunicação as mensagens são trocadas em formato Json ou delimitado, sendo possível consultar os exemplos nesta documentação, por meio dos módulos Impressoras e SAT. <br  />
+<br  />
+<br  />
+</li>
+</ul>
+<blockquote class="doxtable">
+<p><b> Arquivo JSON </b><br  />
+</p>
+</blockquote>
+<p>Esse tipo de formato será utilizado no modo TCP/IP, no entanto, no modo troca de arquivos, o usuário deverá definir o tipoComando como "2" para fazer uso desse tipo de formatação.<br  />
+ Segue exemplo:<br  />
+ </p><div class="fragment"><div class="line">{</div>
+<div class="line">  <span class="stringliteral">&quot;Modulo&quot;</span>: <span class="stringliteral">&quot;Impressor&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;Comando&quot;</span>: <span class="stringliteral">&quot;AbreConexaoImpressora&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;Parametros&quot;</span>: [{</div>
+<div class="line">      <span class="stringliteral">&quot;tipo&quot;</span>: 1,</div>
+<div class="line">      <span class="stringliteral">&quot;modelo&quot;</span>: <span class="stringliteral">&quot;I9&quot;</span>,</div>
+<div class="line">      <span class="stringliteral">&quot;conexao&quot;</span>: <span class="stringliteral">&quot;USB&quot;</span>,</div>
+<div class="line">      <span class="stringliteral">&quot;parametro&quot;</span>: 0</div>
+<div class="line">  }]</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> <br  />
+<br  />
+<br  />
+ </p><blockquote class="doxtable">
+<p><b> Arquivo delimitado </b><br  />
+</p>
+</blockquote>
+<p>Esse tipo de formato poderá ser utilizado no modo troca de arquivos, sendo necessário que o usuário defina o tipoComando como "2" para fazer uso desse tipo de formatação;<br  />
+ Há dois tipos de separadores necessários nesse tipo de formação, um para separar as funções que terão no arquivo e outro para separar os valores que estão dentro de cada função. <br  />
+ Por padrao os separadores são: de Funções= *|* de valores= :| Segue exemplo:<br  />
+</p><div class="fragment"><div class="line">Impressor:|<a class="code" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d">AbreConexaoImpressora</a>:|1:|i9:|USB:|0</div>
+<div class="ttc" id="agroup___m1_html_ga928f0795631b062f8d5c8c20b9681d8d"><div class="ttname"><a href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d">AbreConexaoImpressora</a></div><div class="ttdeci">int AbreConexaoImpressora(int tipo, const char *modelo, const char *conexao, int parametro)</div><div class="ttdoc">Abre conexão com a impressora.</div></div>
+</div><!-- fragment --><p><br  />
+<br  />
+<br  />
+</p><blockquote class="doxtable">
+<p><b> Multicomandos </b><br  />
+</p>
+</blockquote>
+<p>Independentemente do tipo de Comando, Json ou delimitado, o serviço aceita que diversos comandos sejam enviados num mesmo arquivo ou numa mesma mensagem TCP/IP, para isso é necessário que os arquivos sigam o modelo abaixo:<br  />
+ <b>Comando Json com várias funções: </b><br  />
+</p><div class="fragment"><div class="line">{</div>
+<div class="line">  <span class="stringliteral">&quot;Modulo&quot;</span>: <span class="stringliteral">&quot;Impressor&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Comando&quot;</span>: [{</div>
+<div class="line">            <span class="stringliteral">&quot;Funcao&quot;</span>: <span class="stringliteral">&quot;AbreConexaoImpressora&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;Parametros&quot;</span>: [{</div>
+<div class="line">                <span class="stringliteral">&quot;tipo&quot;</span>: 1,</div>
+<div class="line">                <span class="stringliteral">&quot;modelo&quot;</span>: <span class="stringliteral">&quot;i9&quot;</span>,</div>
+<div class="line">                <span class="stringliteral">&quot;conexao&quot;</span>: <span class="stringliteral">&quot;USB&quot;</span>,</div>
+<div class="line">                <span class="stringliteral">&quot;parametro&quot;</span>: 0</div>
+<div class="line">            }]</div>
+<div class="line">        },</div>
+<div class="line">        {</div>
+<div class="line">            <span class="stringliteral">&quot;Funcao&quot;</span>: <span class="stringliteral">&quot;Corte&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;Parametros&quot;</span>: [{</div>
+<div class="line">                <span class="stringliteral">&quot;avanco&quot;</span>: 10</div>
+<div class="line">            }]</div>
+<div class="line">        },</div>
+<div class="line">        {</div>
+<div class="line">            <span class="stringliteral">&quot;Funcao&quot;</span>: <span class="stringliteral">&quot;ImpressaoTexto&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;Parametros&quot;</span>: [{</div>
+<div class="line">                <span class="stringliteral">&quot;dados&quot;</span>: <span class="stringliteral">&quot;Elgin SA\n&quot;</span>,</div>
+<div class="line">                <span class="stringliteral">&quot;posicao&quot;</span>: 1,</div>
+<div class="line">                <span class="stringliteral">&quot;stilo&quot;</span>: 10,</div>
+<div class="line">                <span class="stringliteral">&quot;tamanho&quot;</span>: 20</div>
+<div class="line">            }]</div>
+<div class="line">        },</div>
+<div class="line">        {</div>
+<div class="line">            <span class="stringliteral">&quot;Funcao&quot;</span>: <span class="stringliteral">&quot;FechaConexaoImpressora&quot;</span></div>
+<div class="line">        }</div>
+<div class="line">    ]</div>
+<div class="line">}</div>
+</div><!-- fragment --><p><b>Comando delimitado com várias funções: </b><br  />
+</p><div class="fragment"><div class="line">Impressor:|<a class="code" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d">AbreConexaoImpressora</a>:|1:|i9:|USB:|0*|*</div>
+<div class="line"><a class="code" href="group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade">Corte</a>:|10*|*</div>
+<div class="line"><a class="code" href="group___m1.html#ga6c9bc310ba0f45001cca6420c09e77c7">ImpressaoTexto</a>:|Elgin SA\n:|1:|10:|20*|*</div>
+<div class="line"><a class="code" href="group___m1.html#ga520ec6fa932747f430c2a89bc46c8176">FechaConexaoImpressora</a></div>
+<div class="ttc" id="agroup___m1_html_ga520ec6fa932747f430c2a89bc46c8176"><div class="ttname"><a href="group___m1.html#ga520ec6fa932747f430c2a89bc46c8176">FechaConexaoImpressora</a></div><div class="ttdeci">int FechaConexaoImpressora()</div><div class="ttdoc">Fecha conexão com a impressora.</div></div>
+<div class="ttc" id="agroup___m1_html_ga6c9bc310ba0f45001cca6420c09e77c7"><div class="ttname"><a href="group___m1.html#ga6c9bc310ba0f45001cca6420c09e77c7">ImpressaoTexto</a></div><div class="ttdeci">int ImpressaoTexto(const char *dados, int posicao, int stilo, int tamanho)</div><div class="ttdoc">Envia informações de texto para o buffer da impressora.</div></div>
+<div class="ttc" id="agroup___m1_html_gab6411e97bf638b98b5acfcc621ec0ade"><div class="ttname"><a href="group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade">Corte</a></div><div class="ttdeci">int Corte(int avanco)</div><div class="ttdoc">Realiza o corte do papel.</div></div>
+</div><!-- fragment --><p><br  />
+<br  />
+<br  />
+ </p><blockquote class="doxtable">
+<p><b> Monitor do Serviço </b><br  />
+</p>
+</blockquote>
+<p>Após a instalação do serviço, enquanto este está sendo executado no computador, o usuário poderá acessar o monitor, a fim de visualizar os status do serviço, bem como configurar o serviço diretamente por meio dessa janela de configuração do monitor, a qual deverá ser acessada na área de notificação da barra de tarefas do Windows. </p>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,1860 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Comunicação Elgin: Código de barras</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Plataforma de Comunicação Elgin
+   &#160;<span id="projectnumber">1.16</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group__ge31.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Código de barras<div class="ingroups"><a class="el" href="group__g0.html">Impressoras</a> &raquo; <a class="el" href="group___m0.html">Etiqueta</a> &raquo; <a class="el" href="group__ge3.html">Campos da Etiqueta</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fornece funções para gerar códigos de barras (uma e duas dimensões) na etiqueta.  
+<a href="#details">Mais...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ga44d6c884f7b330f5fdbb504cda9545c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ge31.html#ga44d6c884f7b330f5fdbb504cda9545c6">GerarBarCode1D</a> (int rotacao, int tipo, int largBarrasL, int largBarrasE, int altura, int coordY, int coordX, const char *codigo, int exibirStr)</td></tr>
+<tr class="memdesc:ga44d6c884f7b330f5fdbb504cda9545c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gera um código de barras de uma dimensão na etiqueta.  <a href="group__ge31.html#ga44d6c884f7b330f5fdbb504cda9545c6">Mais...</a><br /></td></tr>
+<tr class="separator:ga44d6c884f7b330f5fdbb504cda9545c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4443e7de28a8b42da3af4421802f24b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ge31.html#gae4443e7de28a8b42da3af4421802f24b">GerarQRCodeAuto</a> (int rotacao, int mult, int coordY, int coordX, const char *codigo)</td></tr>
+<tr class="memdesc:gae4443e7de28a8b42da3af4421802f24b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gera um QR Code na etiqueta; modo automático.  <a href="group__ge31.html#gae4443e7de28a8b42da3af4421802f24b">Mais...</a><br /></td></tr>
+<tr class="separator:gae4443e7de28a8b42da3af4421802f24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4538a0ff5635ae02a69abbbf2b7658d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ge31.html#ga4538a0ff5635ae02a69abbbf2b7658d0">GerarQRCodeManual</a> (int rotacao, int mult, int coordY, int coordX, int numModelo, int nvlCorErro, int numMascara, int input, int inputConfig, int numChars8bit, const char *codigo)</td></tr>
+<tr class="memdesc:ga4538a0ff5635ae02a69abbbf2b7658d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gera um QR Code na etiqueta; modo manual.  <a href="group__ge31.html#ga4538a0ff5635ae02a69abbbf2b7658d0">Mais...</a><br /></td></tr>
+<tr class="separator:ga4538a0ff5635ae02a69abbbf2b7658d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga810bb8671d6bc48753c7c0a85f18b2df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ge31.html#ga810bb8671d6bc48753c7c0a85f18b2df">GerarMaxiCode</a> (int rotacao, int coordY, int coordX, int priZip, int secZip, int country, int serClass, const char *codigo)</td></tr>
+<tr class="memdesc:ga810bb8671d6bc48753c7c0a85f18b2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gera um código MaxiCode na etiqueta.  <a href="group__ge31.html#ga810bb8671d6bc48753c7c0a85f18b2df">Mais...</a><br /></td></tr>
+<tr class="separator:ga810bb8671d6bc48753c7c0a85f18b2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c835de03f437ab5c7090521b312ba83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ge31.html#ga0c835de03f437ab5c7090521b312ba83">GerarDataMatrix</a> (int rotacao, int mult, int coordY, int coordX, int rows, int columns, const char *codigo)</td></tr>
+<tr class="memdesc:ga0c835de03f437ab5c7090521b312ba83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gera um código DataMatrix na etiqueta.  <a href="group__ge31.html#ga0c835de03f437ab5c7090521b312ba83">Mais...</a><br /></td></tr>
+<tr class="separator:ga0c835de03f437ab5c7090521b312ba83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaab444b31ed29ba6b2fc9910dcf679d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ge31.html#gaaab444b31ed29ba6b2fc9910dcf679d5">GerarDataBar</a> (int rotacao, int barRatio, int altura, int coordY, int coordX, int tipo, int pxMult, const char *numLinData, const char *codigo)</td></tr>
+<tr class="memdesc:gaaab444b31ed29ba6b2fc9910dcf679d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gera um código DataBar na etiqueta.  <a href="group__ge31.html#gaaab444b31ed29ba6b2fc9910dcf679d5">Mais...</a><br /></td></tr>
+<tr class="separator:gaaab444b31ed29ba6b2fc9910dcf679d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga754c5c2e26958aed292cff4c662b74b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ge31.html#ga754c5c2e26958aed292cff4c662b74b0">GerarDataBarExpanded</a> (int rotacao, int barRatio, int altura, int coordY, int coordX, int pxMult, int segsRow, const char *alphanumeric, const char *codigo)</td></tr>
+<tr class="memdesc:ga754c5c2e26958aed292cff4c662b74b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gera um código DataBar, tipo Expanded, na etiqueta.  <a href="group__ge31.html#ga754c5c2e26958aed292cff4c662b74b0">Mais...</a><br /></td></tr>
+<tr class="separator:ga754c5c2e26958aed292cff4c662b74b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00adf682a7659f3dcd7a79e92e9a5023"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ge31.html#ga00adf682a7659f3dcd7a79e92e9a5023">GerarPDF417</a> (int rotacao, int multH, int multV, int coordY, int coordX, int tipo, int secLevel, int aspRatio, int rowNum, int colNum, const char *codigo)</td></tr>
+<tr class="memdesc:ga00adf682a7659f3dcd7a79e92e9a5023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gera um código PDF-417 na etiqueta.  <a href="group__ge31.html#ga00adf682a7659f3dcd7a79e92e9a5023">Mais...</a><br /></td></tr>
+<tr class="separator:ga00adf682a7659f3dcd7a79e92e9a5023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Fornece funções para gerar códigos de barras (uma e duas dimensões) na etiqueta. </p>
+<p>Convenções usadas nas chamadas das funções da biblioteca:<br  />
+<b>Windows</b><br  />
+</p><blockquote class="doxtable">
+<p>__stdcall </p>
+</blockquote>
+<p><b>Linux</b><br  />
+</p><blockquote class="doxtable">
+<p>__cdecl<br  />
+</p>
+</blockquote>
+<h2 class="groupheader">Funções</h2>
+<a id="ga44d6c884f7b330f5fdbb504cda9545c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga44d6c884f7b330f5fdbb504cda9545c6">&#9670;&nbsp;</a></span>GerarBarCode1D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GerarBarCode1D </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rotacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tipo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>largBarrasL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>largBarrasE</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>altura</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>codigo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>exibirStr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gera um código de barras de uma dimensão na etiqueta. </p>
+<ul>
+<li>OBS: A impressora L42PRO não suporta os códigos de barras Code 128 A e Coda Bar.</li>
+</ul>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotacao</td><td>- Parâmetro do tipo numérico que define a rotação do código de barras em relação ao plano da etiqueta.<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Rotação    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Retrato    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Paisagem reversa    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Retrato reverso    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Paisagem   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">tipo</td><td>- Parâmetro do tipo numérico que define o tipo do código de barras.<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Tipo   </th><th class="markdownTableHeadNone">Comprimento<br  />
+ (caracteres)   </th><th class="markdownTableHeadNone">Check<br  />
+sum   </th><th class="markdownTableHeadNone">Caracteres<br  />
+válidos   </th><th class="markdownTableHeadNone">Razão das<br  />
+barras    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">Code 3 of 9   </td><td class="markdownTableBodyNone">Variável   </td><td class="markdownTableBodyNone">Não   </td><td class="markdownTableBodyNone">0 ~ 9, A ~ Z,<br  />
+$ % * + - . / espaço   </td><td class="markdownTableBodyNone">2 : 1 ~3 : 1    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">UPC-A   </td><td class="markdownTableBodyNone">11 + 1   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">2 : 3 : 4    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">UPC-E   </td><td class="markdownTableBodyNone">6 + 1   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">2 : 3 : 4    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Interleaved 2 of 5   </td><td class="markdownTableBodyNone">Variável   </td><td class="markdownTableBodyNone">Não   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">2 : 1 ~3 : 1    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Code 128 A   </td><td class="markdownTableBodyNone">Variável   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">Códigos 0 ~ 127 (ASCII)   </td><td class="markdownTableBodyNone">2 : 3 : 4    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Code 128 B   </td><td class="markdownTableBodyNone">Variável   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">Códigos 0 ~ 127 (ASCII)   </td><td class="markdownTableBodyNone">2 : 3 : 4    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">6   </td><td class="markdownTableBodyNone">Code 128 C   </td><td class="markdownTableBodyNone">Variável (valores pares)   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">2 : 3 : 4    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">7   </td><td class="markdownTableBodyNone">EAN-13   </td><td class="markdownTableBodyNone">12 + 1   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">2 : 3 : 4    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">8   </td><td class="markdownTableBodyNone">EAN-8   </td><td class="markdownTableBodyNone">7 + 1   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">2 : 3 : 4    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">HBIC   </td><td class="markdownTableBodyNone">Variável   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">0 ~ 9, A ~ Z,<br  />
+$ % * + - . / espaço   </td><td class="markdownTableBodyNone">2 : 1 ~3 : 1    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">Coda bar   </td><td class="markdownTableBodyNone">No mínimo 3   </td><td class="markdownTableBodyNone">Não   </td><td class="markdownTableBodyNone">0 ~ 9, A ~ D,<br  />
+$ + - . : /   </td><td class="markdownTableBodyNone">2 : 1 ~3 : 1    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">11   </td><td class="markdownTableBodyNone">Interleaved 2 of 5 with a<br  />
+modulo 10 checksum   </td><td class="markdownTableBodyNone">Variável   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">2 : 1 ~3 : 1    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">12   </td><td class="markdownTableBodyNone">Plessey   </td><td class="markdownTableBodyNone">1 ~ 14   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">2 : 1 ~3 : 1    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">13   </td><td class="markdownTableBodyNone">Interleaved 2 of 5 with a<br  />
+modulo 10 checksum<br  />
+and shipping bearer bars   </td><td class="markdownTableBodyNone">Variável   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">2 : 1 ~3 : 1    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">14   </td><td class="markdownTableBodyNone">UPC2   </td><td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Não   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">2 : 3 : 4    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">15   </td><td class="markdownTableBodyNone">UPC5   </td><td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Não   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">2 : 3 : 4    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">16   </td><td class="markdownTableBodyNone">Code 93   </td><td class="markdownTableBodyNone">Variável   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">0 ~ 9, A ~ Z,<br  />
+$ % + - . / espaço   </td><td class="markdownTableBodyNone">2 : 3 : 4    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">17   </td><td class="markdownTableBodyNone">Postnet   </td><td class="markdownTableBodyNone">Variável   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">&mdash;    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">18   </td><td class="markdownTableBodyNone">UCC/EAN Code 128   </td><td class="markdownTableBodyNone">19 + 1   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">2 : 3 : 4    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">19   </td><td class="markdownTableBodyNone">UCC/EAN Code 128<br  />
+K-MART   </td><td class="markdownTableBodyNone">18   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">2 : 3 : 4    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">20   </td><td class="markdownTableBodyNone">UCC/EAN Code 128<br  />
+Random weight   </td><td class="markdownTableBodyNone">34   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">0 ~ 9   </td><td class="markdownTableBodyNone">2 : 3 : 4    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">21   </td><td class="markdownTableBodyNone">Telepen   </td><td class="markdownTableBodyNone">Variável   </td><td class="markdownTableBodyNone">Sim   </td><td class="markdownTableBodyNone">Códigos 0 ~ 127 (ASCII)   </td><td class="markdownTableBodyNone">2 : 3 : 4    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">22   </td><td class="markdownTableBodyNone">FIM<br  />
+ (Facing Identification Mark)   </td><td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Não   </td><td class="markdownTableBodyNone">A, B, C, D   </td><td class="markdownTableBodyNone">&mdash;   </td></tr>
+</table>
+<br  />
+<ul>
+<li>OBS: O caractere do checksum (+1) é calculado e adicionado junto ao código automaticamente.<br  />
+</li>
+<li>OBS: Os códigos de barras dos tipos 13, 17, 18, 19 e 20 são suportados parcialmente pela L42PRO.<br  />
+</li>
+<li>OBS: Os códigos de barras dos tipos 4 e 19 são suportados parcialmente pela L42.<br  />
+<br  />
+ </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">largBarrasL</td><td>- Parâmetro do tipo numérico que define a largura das barras largas.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 24 (0, 1, 2, ..., 24).<br  />
+</p>
+</blockquote>
+<br  />
+<ul>
+<li>OBS: Veja o campo "Razão das barras", na tabela do parâmetro <em>tipo</em>.<br  />
+<br  />
+ </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">largBarrasE</td><td>- Parâmetro do tipo numérico que define a largura das barras espessas.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 24 (0, 1, 2, ..., 24).<br  />
+</p>
+</blockquote>
+<br  />
+<ul>
+<li>OBS: Veja o campo "Razão das barras", na tabela do parâmetro <em>tipo</em>.<br  />
+<br  />
+ </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">altura</td><td>- Parâmetro do tipo numérico que define a altura das barras, em centésimos de centímetro (ou de polegada).<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 999 (0, 1, 2, ..., 999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Altura (métrico)   </th><th class="markdownTableHeadNone">Altura (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas   </td></tr>
+</table>
+<br  />
+<ul>
+<li>OBS: O valor 0 equivale à altura padrão.<br  />
+<br  />
+ </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">coordY</td><td>- Parâmetro do tipo numérico que define a coordenada Y de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo y (no plano da etiqueta) o código de barras será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. Y (métrico)   </th><th class="markdownTableHeadNone">Coord. Y (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordX</td><td>- Parâmetro do tipo numérico que define a coordenada X de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo x (no plano da etiqueta) o código de barras será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. X (métrico)   </th><th class="markdownTableHeadNone">Coord. X (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">codigo</td><td>- Parâmetro do tipo caractere que define o código a ser impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Qualquer string de dados imprimíveis; máximo de 254 caracteres (Code 128) ou 255 caracteres (demais tipos).<br  />
+</p>
+</blockquote>
+<br  />
+<ul>
+<li>OBS: O código deve respeitar a quantidade e os tipos de caracteres permitidos pelo <em>tipo</em>.<br  />
+<br  />
+ </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">exibirStr</td><td>- Parâmetro do tipo numérico que define se o código deverá ser impresso junto com as barras (abaixo delas) ou não.<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Exibe código?    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">Não    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Sim   </td></tr>
+</table>
+<br  />
+<ul>
+<li>OBS: Os códigos de barras dos tipos 17 (Postnet) e 22 (FIM) não suportam a exibição do código.<br  />
+<br  />
+ </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
+A função bem-sucedida deve retornar 0.<br  />
+<ul>
+<li>Para mais informações, consulte <a class="el" href="group__g1.html#ga8db572c51e06fd49407f59fdd4e92233" title="GER_Erro_BarCode1D enum -271 à -280.">GER_Erro_BarCode1D</a> </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="gae4443e7de28a8b42da3af4421802f24b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae4443e7de28a8b42da3af4421802f24b">&#9670;&nbsp;</a></span>GerarQRCodeAuto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GerarQRCodeAuto </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rotacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mult</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>codigo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gera um QR Code na etiqueta; modo automático. </p>
+<ul>
+<li>OBS: A impressora L42 suporta parcialmente esta função.</li>
+</ul>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotacao</td><td>- Parâmetro do tipo numérico que define a rotação do QR Code em relação ao plano da etiqueta.<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Rotação    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Retrato    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Paisagem reversa    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Retrato reverso    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Paisagem   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">mult</td><td>- Parâmetro do tipo numérico que define a dimensão do QR Code impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 1 e 35 (1, 2, 3, ..., 35).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordY</td><td>- Parâmetro do tipo numérico que define a coordenada Y de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo y (no plano da etiqueta) o QR Code será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. Y (métrico)   </th><th class="markdownTableHeadNone">Coord. Y (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordX</td><td>- Parâmetro do tipo numérico que define a coordenada X de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo x (no plano da etiqueta) o QR Code será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. X (métrico)   </th><th class="markdownTableHeadNone">Coord. X (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">codigo</td><td>- Parâmetro do tipo caractere que define o código a ser impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Dados numéricos, dados alfanuméricos, dados byte de 8-bit e Kanji.<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
+A função bem-sucedida deve retornar 0.<br  />
+<ul>
+<li>Para mais informações, consulte <a class="el" href="group__g1.html#ga8edd697291deac2899020263b4802b22" title="The GER_Erro_QRCodeAuto enum -281 à -290.">GER_Erro_QRCodeAuto</a> </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga4538a0ff5635ae02a69abbbf2b7658d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4538a0ff5635ae02a69abbbf2b7658d0">&#9670;&nbsp;</a></span>GerarQRCodeManual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GerarQRCodeManual </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rotacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mult</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numModelo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nvlCorErro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numMascara</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inputConfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numChars8bit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>codigo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gera um QR Code na etiqueta; modo manual. </p>
+<ul>
+<li>OBS: A impressora L42 suporta parcialmente esta função.</li>
+</ul>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotacao</td><td>- Parâmetro do tipo numérico que define a rotação do QR Code em relação ao plano da etiqueta.<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Rotação    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Retrato    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Paisagem reversa    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Retrato reverso    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Paisagem   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">mult</td><td>- Parâmetro do tipo numérico que define a dimensão do QR Code impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 1 e 35 (1, 2, 3, ..., 35).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordY</td><td>- Parâmetro do tipo numérico que define a coordenada Y de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo y (no plano da etiqueta) o QR Code será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. Y (métrico)   </th><th class="markdownTableHeadNone">Coord. Y (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordX</td><td>- Parâmetro do tipo numérico que define a coordenada X de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo x (no plano da etiqueta) o QR Code será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. X (métrico)   </th><th class="markdownTableHeadNone">Coord. X (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">numModelo</td><td>- Parâmetro do tipo numérico que define o número do modelo do QR Code.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>1 ou 2 (1, 2).<br  />
+Valor padrão: 2.<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">nvlCorErro</td><td>- Parâmetro do tipo numérico que define o nível de correção de erro.<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Nível    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">Nível de confiabilidade Ultra (30%)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Nível de confiabilidade Alto (25%)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Nível de confiabilidade Padrão (15%)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Nível de densidade Alto (7%)   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">numMascara</td><td>- Parâmetro do tipo numérico que define o número de máscara.<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Máscara    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">Máscara 0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Máscara 1    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Máscara 2    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Máscara 3    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Máscara 4    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Máscara 5    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">6   </td><td class="markdownTableBodyNone">Máscara 6    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">7   </td><td class="markdownTableBodyNone">Máscara 7    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">8   </td><td class="markdownTableBodyNone">Sem máscara    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">9   </td><td class="markdownTableBodyNone">Seleção automática   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">input</td><td>- Parâmetro do tipo numérico que define o modo de entrada de dados.<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Input    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">Configuração automática, ASCII    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Automático, hex-ASCII    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Configuração manual, ASCII    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Manual, hex-ASCII   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">inputConfig</td><td>- Parâmetro do tipo numérico que define o tipo de dado que compõe o QR Code.<br  />
+<br  />
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Input    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">Dado numérico    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Dado alfanumérico    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Dado byte de 8-bit    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Kanji   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">numChars8bit</td><td>- Parâmetro do tipo numérico que define o número de caracteres que o <em>código</em> do QR Code terá (no máximo), caso o parâmetro <em>inputConfig</em> tenha recebido o valor 2. Se o parâmetro <em>inputConfig</em> receber um valor válido diferente de 2, o valor passado para <em>numChars8bit</em> será ignorado.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+<ul>
+<li>OBS: Cada ideograma do chinês simplificado/tradicional tem dois caracteres.<br  />
+<br  />
+ </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">codigo</td><td>- Parâmetro do tipo caractere que define o código a ser impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Dados numéricos, dados alfanuméricos, dados byte de 8-bit e Kanji.<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
+A função bem-sucedida deve retornar 0.<br  />
+<ul>
+<li>Para mais informações, consulte <a class="el" href="group__g1.html#ga4e20ca3aa8ea344c899a2066697cadfe" title="The GER_Erro_QRCodeManual enum -291 à -310.">GER_Erro_QRCodeManual</a> </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga810bb8671d6bc48753c7c0a85f18b2df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga810bb8671d6bc48753c7c0a85f18b2df">&#9670;&nbsp;</a></span>GerarMaxiCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GerarMaxiCode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rotacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>priZip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>secZip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>country</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>serClass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>codigo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gera um código MaxiCode na etiqueta. </p>
+<ul>
+<li>OBS: A impressora L42PRO não suporta esta função.</li>
+</ul>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotacao</td><td>- Parâmetro do tipo numérico que define a rotação do MaxiCode em relação ao plano da etiqueta.<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Rotação    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Retrato    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Paisagem reversa    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Retrato reverso    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Paisagem   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordY</td><td>- Parâmetro do tipo numérico que define a coordenada Y de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo y (no plano da etiqueta) o MaxiCode será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. Y (métrico)   </th><th class="markdownTableHeadNone">Coord. Y (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordX</td><td>- Parâmetro do tipo numérico que define a coordenada X de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo x (no plano da etiqueta) o MaxiCode será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. X (métrico)   </th><th class="markdownTableHeadNone">Coord. X (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">priZip</td><td>- Parâmetro do tipo numérico que define o código postal principal.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 99999 (0, 1, 2, ..., 99999).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">secZip</td><td>- Parâmetro do tipo numérico que define o código postal secundário.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">country</td><td>- Parâmetro do tipo numérico que define o código do país.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 999 (0, 1, 2, ..., 999).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">serClass</td><td>- Parâmetro do tipo numérico que define o código da classe de serviço.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 999 (0, 1, 2, ..., 999).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">codigo</td><td>- Parâmetro do tipo caractere que define o código a ser impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Qualquer string de dados imprimíveis; máximo de 84 caracteres.<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
+A função bem-sucedida deve retornar 0.<br  />
+<ul>
+<li>Para mais informações, consulte <a class="el" href="group__g1.html#ga6959fba31e9b668a537ca2679f4a2a49" title="The GER_Erro_MaxiCode enum -311 à -320.">GER_Erro_MaxiCode</a> </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga0c835de03f437ab5c7090521b312ba83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c835de03f437ab5c7090521b312ba83">&#9670;&nbsp;</a></span>GerarDataMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GerarDataMatrix </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rotacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mult</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>columns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>codigo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gera um código DataMatrix na etiqueta. </p>
+<ul>
+<li>OBS: A impressora L42PRO não suporta esta função.</li>
+</ul>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotacao</td><td>- Parâmetro do tipo numérico que define a rotação do DataMatrix em relação ao plano da etiqueta.<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Rotação    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Retrato    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Paisagem reversa    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Retrato reverso    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Paisagem   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">mult</td><td>- Parâmetro do tipo numérico que define a dimensão do DataMatrix impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 24 (0, 1, 2, ..., 24).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordY</td><td>- Parâmetro do tipo numérico que define a coordenada Y de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo y (no plano da etiqueta) o DataMatrix será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. Y (métrico)   </th><th class="markdownTableHeadNone">Coord. Y (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordX</td><td>- Parâmetro do tipo numérico que define a coordenada X de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo x (no plano da etiqueta) o DataMatrix será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. X (métrico)   </th><th class="markdownTableHeadNone">Coord. X (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">rows</td><td>- Parâmetro do tipo numérico que define o número de linhas requeridas.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números pares entre 0 e 999 (0, 1, 2, ..., 999).<br  />
+</p>
+</blockquote>
+<br  />
+<ul>
+<li>OBS: O valor 0 faz com que o número de linhas seja determinado automaticamente.<br  />
+<br  />
+ </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">columns</td><td>- Parâmetro do tipo numérico que define o número de colunas requeridas.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números pares entre 0 e 999 (0, 1, 2, ..., 999).<br  />
+</p>
+</blockquote>
+<br  />
+<ul>
+<li>OBS: O valor 0 faz com que o número de colunas seja determinado automaticamente.<br  />
+<br  />
+ </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">codigo</td><td>- Parâmetro do tipo caractere que define o código a ser impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Qualquer string de dados imprimíveis; máximo de 255 caracteres.<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
+A função bem-sucedida deve retornar 0.<br  />
+<ul>
+<li>Para mais informações, consulte <a class="el" href="group__g1.html#gac7eaf2fbf92b322767e36e149c6e85d7" title="The GER_Erro_DataMatrix enum -321 à -330.">GER_Erro_DataMatrix</a> </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="gaaab444b31ed29ba6b2fc9910dcf679d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaab444b31ed29ba6b2fc9910dcf679d5">&#9670;&nbsp;</a></span>GerarDataBar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GerarDataBar </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rotacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>barRatio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>altura</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tipo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pxMult</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>numLinData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>codigo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gera um código DataBar na etiqueta. </p>
+<ul>
+<li>OBS: A impressora L42PRO suporta parcialmente esta função.</li>
+</ul>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotacao</td><td>- Parâmetro do tipo numérico que define a rotação do DataBar em relação ao plano da etiqueta.<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Rotação    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Retrato    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Paisagem reversa    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Retrato reverso    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Paisagem   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">barRatio</td><td>- Parâmetro do tipo numérico que define a razão entre as barras.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 1 e 9 (1, 2, 3, ..., 9).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">altura</td><td>- Parâmetro do tipo numérico que define a altura das barras, em centésimos de centímetro (ou de polegada).<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 999 (0, 1, 2, ..., 999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Altura (métrico)   </th><th class="markdownTableHeadNone">Altura (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordY</td><td>- Parâmetro do tipo numérico que define a coordenada Y de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo y (no plano da etiqueta) o DataBar será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. Y (métrico)   </th><th class="markdownTableHeadNone">Coord. Y (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordX</td><td>- Parâmetro do tipo numérico que define a coordenada X de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo x (no plano da etiqueta) o DataBar será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. X (métrico)   </th><th class="markdownTableHeadNone">Coord. X (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">tipo</td><td>- Parâmetro do tipo numérico que define o tipo do DataBar (RSS).<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Tipo    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">GS1 DataBar Omnidirectional <br  />
+ (RSS-14)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">GS1 DataBar Limited <br  />
+ (RSS Limited)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">GS1 DataBar Stacked <br  />
+ (RSS Stacked)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">GS1 DataBar Truncated <br  />
+ (RSS Truncated)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">GS1 DataBar Stacked Omnidirectional <br  />
+ (RSS Stacked Omnidirectional)   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">pxMult</td><td>- Parâmetro do tipo numérico que define o multiplicador do pixel.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 1 e 9 (1, 2, 3, ..., 9).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">numLinData</td><td>- Parâmetro do tipo numérico que define o dado linear numérico.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Até 13 números entre 0 e 9 (0, 2, 3, ..., 9).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">codigo</td><td>- Parâmetro do tipo caractere que define o código a ser impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Qualquer string de dados imprimíveis; máximo de 255 caracteres.<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
+A função bem-sucedida deve retornar 0.<br  />
+<ul>
+<li>Para mais informações, consulte <a class="el" href="group__g1.html#gafa61389bc58028aed3d8539ab8411981" title="The GER_Erro_DataBar enum -331 à -340.">GER_Erro_DataBar</a> </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga754c5c2e26958aed292cff4c662b74b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga754c5c2e26958aed292cff4c662b74b0">&#9670;&nbsp;</a></span>GerarDataBarExpanded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GerarDataBarExpanded </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rotacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>barRatio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>altura</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pxMult</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>segsRow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>alphanumeric</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>codigo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gera um código DataBar, tipo Expanded, na etiqueta. </p>
+<ul>
+<li>OBS: A impressora L42PRO suporta parcialmente esta função.</li>
+</ul>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotacao</td><td>- Parâmetro do tipo numérico que define a rotação do DataBar em relação ao plano da etiqueta.<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Rotação    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Retrato    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Paisagem reversa    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Retrato reverso    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Paisagem   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">barRatio</td><td>- Parâmetro do tipo numérico que define a razão entre as barras.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 1 e 9 (1, 2, 3, ..., 9).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">altura</td><td>- Parâmetro do tipo numérico que define a altura das barras, em centésimos de centímetro (ou de polegada).<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 999 (0, 1, 2, ..., 999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Altura (métrico)   </th><th class="markdownTableHeadNone">Altura (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordY</td><td>- Parâmetro do tipo numérico que define a coordenada Y de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo y (no plano da etiqueta) o DataBar será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. Y (métrico)   </th><th class="markdownTableHeadNone">Coord. Y (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordX</td><td>- Parâmetro do tipo numérico que define a coordenada X de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo x (no plano da etiqueta) o DataBar será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. X (métrico)   </th><th class="markdownTableHeadNone">Coord. X (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">pxMult</td><td>- Parâmetro do tipo numérico que define o multiplicador do pixel.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 1 e 9 (1, 2, 3, ..., 9).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">segsRow</td><td>- Parâmetro do tipo numérico que define o número de segmentos por linha.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números pares entre 2 e 22 (2, 3, 4, ..., 22).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">alphanumeric</td><td>- Parâmetro do tipo numérico que define o alfanumérico.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9 (0, 2, 3, ..., 9).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">codigo</td><td>- Parâmetro do tipo caractere que define o código a ser impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Qualquer string de dados imprimíveis; máximo de 255 caracteres.<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
+A função bem-sucedida deve retornar 0.<br  />
+<ul>
+<li>Para mais informações, consulte <a class="el" href="group__g1.html#ga529f0a1b314bf3afc8c1dd8a070dea63" title="The GER_Erro_DataBarExpanded enum -341 à -350.">GER_Erro_DataBarExpanded</a> </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga00adf682a7659f3dcd7a79e92e9a5023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00adf682a7659f3dcd7a79e92e9a5023">&#9670;&nbsp;</a></span>GerarPDF417()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GerarPDF417 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rotacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>multH</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>multV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coordX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tipo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>secLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>aspRatio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>codigo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gera um código PDF-417 na etiqueta. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotacao</td><td>- Parâmetro do tipo numérico que define a rotação do PDF-417 em relação ao plano da etiqueta.<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Rotação    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Retrato    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2   </td><td class="markdownTableBodyNone">Paisagem reversa    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">3   </td><td class="markdownTableBodyNone">Retrato reverso    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Paisagem   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">multH</td><td>- Parâmetro do tipo numérico que define a multiplicação horizontal (largura) do PDF-417.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 24 (0, 1, 2, ..., 24).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">multV</td><td>- Parâmetro do tipo numérico que define a multiplicação vertical (altura) do PDF-417.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 24 (0, 1, 2, ..., 24).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordY</td><td>- Parâmetro do tipo numérico que define a coordenada Y de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo y (no plano da etiqueta) o PDF-417 será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. Y (métrico)   </th><th class="markdownTableHeadNone">Coord. Y (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">coordX</td><td>- Parâmetro do tipo numérico que define a coordenada X de impressão, isto é, a quantos centésimos de centímetro (ou de polegada) do eixo x (no plano da etiqueta) o PDF-417 será impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 9999 (0, 1, 2, ..., 9999).<br  />
+</p>
+</blockquote>
+<br  />
+Exemplos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Coord. X (métrico)   </th><th class="markdownTableHeadNone">Coord. X (imperial)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Meio milímetro   </td><td class="markdownTableBodyNone">5 centésimos de polegada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">1 milímetro   </td><td class="markdownTableBodyNone">1 décimo de polegada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">200   </td><td class="markdownTableBodyNone">2 centímetros   </td><td class="markdownTableBodyNone">2 polegadas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">4500   </td><td class="markdownTableBodyNone">45 centímetros   </td><td class="markdownTableBodyNone">45 polegadas   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">tipo</td><td>- Parâmetro do tipo numérico que define o tipo do PDF-417.<br  />
+<br  />
+Valores válidos: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Tipo    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">0   </td><td class="markdownTableBodyNone">Normal    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">1   </td><td class="markdownTableBodyNone">Truncated   </td></tr>
+</table>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">secLevel</td><td>- Parâmetro do tipo numérico que define o nível de segurança.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 8 (0, 1, 2, ..., 8).<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+    <tr><td class="paramname">aspRatio</td><td>- Parâmetro do tipo numérico que define a proporção da tela.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 0 e 99 (0, 1, 2, ..., 99).<br  />
+</p>
+</blockquote>
+<br  />
+<ul>
+<li>OBS: O valor 0 significa 1:2.<br  />
+<br  />
+ </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">rowNum</td><td>- Parâmetro do tipo numérico que define o número de linha.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 3 e 90 (3, 4, 5, ..., 90).<br  />
+</p>
+</blockquote>
+<br  />
+<ul>
+<li>OBS: O valor 0 faz o melhor ajuste.<br  />
+<br  />
+ </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">colNum</td><td>- Parâmetro do tipo numérico que define o número de coluna.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Números entre 1 e 30 (1, 2, 3, ..., 30).<br  />
+</p>
+</blockquote>
+<br  />
+<ul>
+<li>OBS: O valor 0 faz o melhor ajuste.<br  />
+<br  />
+ </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">codigo</td><td>- Parâmetro do tipo caractere que define o código a ser impresso.<br  />
+<br  />
+Valores válidos: <blockquote class="doxtable">
+<p>Qualquer string de dados imprimíveis; máximo de 255 caracteres.<br  />
+</p>
+</blockquote>
+<br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
+A função bem-sucedida deve retornar 0.<br  />
+<ul>
+<li>Para mais informações, consulte <a class="el" href="group__g1.html#ga433ab44cb3f7ad1891744eea220df92f" title="The GER_Erro_PDF417 enum -351 à -370.">GER_Erro_PDF417</a> </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

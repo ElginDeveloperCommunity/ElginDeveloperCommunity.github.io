@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['validaxmlnfce_595',['ValidaXMLNFCe',['../group__g2.html#ga33d243fa3e4aabd04f6022c50a416661',1,'exportafuncoes.h']]],
+  ['validaxmlnfceprocessada_596',['ValidaXMLNFCeProcessada',['../group__g2.html#ga7189a4989c58f0883fea235d3c659ca4',1,'exportafuncoes.h']]],
+  ['validaxmlsat_597',['ValidaXMLSAT',['../group__g2.html#ga09f288cad5ce2c0fb98f1f270d3f35fe',1,'exportafuncoes.h']]],
+  ['validaxmlsatcancelamento_598',['ValidaXMLSATCancelamento',['../group__g2.html#ga53f2b56f2f6a9b7e769b1253501fbbad',1,'exportafuncoes.h']]],
+  ['validaxmlsatcancelamentosaida_599',['ValidaXMLSATCancelamentoSaida',['../group__g2.html#ga7caada7a5e4a256590c3a8b9e749b4db',1,'exportafuncoes.h']]],
+  ['validaxmlsatsaida_600',['ValidaXMLSATSaida',['../group__g2.html#gaba886f016e13e1acf0110e04170e4833',1,'exportafuncoes.h']]],
+  ['valor_5facrescimo_5finvalido_601',['VALOR_ACRESCIMO_INVALIDO',['../group__g1.html#ggab2fabaa4c9e7eb63e28651ed9515ec7aa83be0d1dc4fb3d73f0f9b4aeb42fca00',1,'codigoerro.h']]],
+  ['valor_5facrescimo_5fsubtotal_5finvalido_602',['VALOR_ACRESCIMO_SUBTOTAL_INVALIDO',['../group__g1.html#gga2c9f115c611f288143e0de8b62b42ab4ac6619788c441a69d413f2de3d024df71',1,'codigoerro.h']]],
+  ['valor_5faliquota_5fcofins_5finvalida_603',['VALOR_ALIQUOTA_COFINS_INVALIDA',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda48e93fb486279e38bd05ad55b335ae11',1,'codigoerro.h']]],
+  ['valor_5faliquota_5fpis_5finvalida_604',['VALOR_ALIQUOTA_PIS_INVALIDA',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bdabe7bdca1f3c8ba60bb1b2e81d65b07f2',1,'codigoerro.h']]],
+  ['valor_5fdeducoes_5fissqn_5finvalida_605',['VALOR_DEDUCOES_ISSQN_INVALIDA',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda42805c9448f5e8f418fc017f1f801b22',1,'codigoerro.h']]],
+  ['valor_5fdesconto_5finvalido_606',['VALOR_DESCONTO_INVALIDO',['../group__g1.html#ggab2fabaa4c9e7eb63e28651ed9515ec7aad9d8fcbf42138abd6763f95537130289',1,'codigoerro.h']]],
+  ['valor_5fdesconto_5fsubtotal_5finvalido_607',['VALOR_DESCONTO_SUBTOTAL_INVALIDO',['../group__g1.html#gga2c9f115c611f288143e0de8b62b42ab4a29447e6f077edc5f5a5d46dec390cfcc',1,'codigoerro.h']]],
+  ['valor_5fmeio_5fpagamento_5finvalido_608',['VALOR_MEIO_PAGAMENTO_INVALIDO',['../group__g1.html#gga016ca53373099dfbefdd44124f9797b2af9ec779081116232dbadc3e613a7b267',1,'codigoerro.h']]],
+  ['valor_5funitario_5finvalido_609',['VALOR_UNITARIO_INVALIDO',['../group__g1.html#ggab2fabaa4c9e7eb63e28651ed9515ec7aa9b890ff6fca26dc9feadbe618d062032',1,'codigoerro.h']]],
+  ['valor_5fvcfelei12741_5finvalido_610',['VALOR_VCFELEI12741_INVALIDO',['../group__g1.html#gga2c9f115c611f288143e0de8b62b42ab4abb0e72d46bcebb5139c0c9e0c33ef86f',1,'codigoerro.h']]],
+  ['versao_5fdados_5fent_5finvalido_611',['VERSAO_DADOS_ENT_INVALIDO',['../group__g1.html#gga2135434c111b0c910df2d58bc4d2e41ba82e87b7fd2289a198ebab5d802d97f63',1,'codigoerro.h']]],
+  ['versao_5fxmlnfce_5findefinida_612',['VERSAO_XMLNFCE_INDEFINIDA',['../group__g1.html#ggab60bf4a0fda40a03899957b30be9de07a0c355c8865a05bb0125472a0680526aa',1,'codigoerro.h']]],
+  ['versao_5fxmlnfce_5fnao_5fsuportada_613',['VERSAO_XMLNFCE_NAO_SUPORTADA',['../group__g1.html#ggab60bf4a0fda40a03899957b30be9de07a5704edac635051de3456acc5587901da',1,'codigoerro.h']]],
+  ['vitem12741_5finvalido_614',['VITEM12741_INVALIDO',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda1d019e20370a0068c9dd7359699efbad',1,'codigoerro.h']]]
+];

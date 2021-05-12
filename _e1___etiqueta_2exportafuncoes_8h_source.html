@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Comunicação Elgin: Código-Fonte de D:/Documentos/Projetos/QT_Projetos/integrado/E1_Etiqueta/exportafuncoes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Plataforma de Comunicação Elgin
+   &#160;<span id="projectnumber">1.16</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_e1___etiqueta_2exportafuncoes_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">exportafuncoes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EXPORTAFUNCOES_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define EXPORTAFUNCOES_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;e1_etiqueta.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifdef __WIN32</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define STDCALL __stdcall</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#elif __linux__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define STDCALL</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    Descricao:      Classe que exporta e documenta as funcoes da biblioteca E1_Etiqueta</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    Autor:          Rodrigo Angelo</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    Data:           05/08/2019</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;E1_Etiqueta et;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span>{</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">// METODOS SETTER; MANIPULAM AS PROPRIEDADES</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">    /*****************************************************************************/</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">    /***************************/</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">/* SYSTEM SETTING COMMANDS */</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">    /***************************/</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="group__ge0.html#ga5023cf5d081a139cb9dab16ceb4c6b9d">  210</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge0.html#ga5023cf5d081a139cb9dab16ceb4c6b9d">SetAlturaGap</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keywordtype">int</span> altura);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="group__ge0.html#gaf22fd8d76a9515294fda161676265c91">  271</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge0.html#gaf22fd8d76a9515294fda161676265c91">SetTipoTransferencia</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keywordtype">int</span> transferencia);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00372"></a><span class="lineno"><a class="line" href="group__ge0.html#gab11a4019e58a1886358c303de9dfcfd7">  372</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge0.html#gab11a4019e58a1886358c303de9dfcfd7">SetBaudrate</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keywordtype">int</span> baudrate, <span class="keywordtype">int</span> dataLength, <span class="keywordtype">int</span> parity, <span class="keywordtype">int</span> stopBit);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00440"></a><span class="lineno"><a class="line" href="group__ge0.html#ga9eae5a557c9ef4f285027b2fefa5b13f">  440</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge0.html#ga9eae5a557c9ef4f285027b2fefa5b13f">SetSymbolASD</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keywordtype">int</span> symbol);</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160; </div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="comment">    /*************************/</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    <span class="comment">/* SYSTEM LEVEL COMMANDS */</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="comment">    /*************************/</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160; </div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00482"></a><span class="lineno"><a class="line" href="group__ge1.html#gac844e1d490b653c1af96ad384c8f15a0">  482</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge1.html#gac844e1d490b653c1af96ad384c8f15a0">SetMedidas</a>(<span class="keywordtype">int</span> medida);</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160; </div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00517"></a><span class="lineno"><a class="line" href="group__ge1.html#ga761bd344ffc5c161aecdc95761e16219">  517</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge1.html#ga761bd344ffc5c161aecdc95761e16219">SetBackfeed</a>(<span class="keywordtype">int</span> backfeed);</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160; </div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00544"></a><span class="lineno"><a class="line" href="group__ge1.html#gaa3db12f878a1b7318ceb060d1d84fdea">  544</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge1.html#gaa3db12f878a1b7318ceb060d1d84fdea">SetPrintStPos</a>(<span class="keywordtype">int</span> printStPos);</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160; </div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00571"></a><span class="lineno"><a class="line" href="group__ge1.html#gaac9ae6ce3c05a76ffbaa9be60f58fdd7">  571</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge1.html#gaac9ae6ce3c05a76ffbaa9be60f58fdd7">SetSensor</a>(<span class="keywordtype">int</span> sensor);</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160; </div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00610"></a><span class="lineno"><a class="line" href="group__ge1.html#ga7a9c7c220fa90b66ef519af7594c8608">  610</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge1.html#ga7a9c7c220fa90b66ef519af7594c8608">SetModoContinuo</a>(<span class="keywordtype">int</span> modoContinuo);</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160; </div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00643"></a><span class="lineno"><a class="line" href="group__ge1.html#gae9e5f58ef8282363820a63b715500ae3">  643</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge1.html#gae9e5f58ef8282363820a63b715500ae3">SetLength</a>(<span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160; </div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;<span class="comment">// HA&#39; INCERTEZA QUANTO AO USO DE CUTTER/PEELER NAS IMPRESSORAS (SUPORTE)</span></div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;<span class="comment">//    E1_ETIQUETASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="comment">//    int SetCutterPeeler(int cutterPeeler);</span></div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160; </div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160; </div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="comment">    /*****************************/</span></div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="comment">/* LABEL FORMATTING COMMANDS */</span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;<span class="comment">    /*****************************/</span></div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160; </div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00689"></a><span class="lineno"><a class="line" href="group__ge2.html#ga411b4f250b2d63aa405ce02277c752a0">  689</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge2.html#ga411b4f250b2d63aa405ce02277c752a0">SetOffsetLinha</a>(<span class="keywordtype">int</span> offsetLinha);</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160; </div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00724"></a><span class="lineno"><a class="line" href="group__ge2.html#ga8fe7ee5fe473327d3b145db23752efe2">  724</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge2.html#ga8fe7ee5fe473327d3b145db23752efe2">SetOffsetColuna</a>(<span class="keywordtype">int</span> offsetColuna);</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160; </div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00762"></a><span class="lineno"><a class="line" href="group__ge2.html#gab5140a90fb9f3374ca9a39ceb65cb9d4">  762</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge2.html#gab5140a90fb9f3374ca9a39ceb65cb9d4">SetVelImpressao</a>(<span class="keywordtype">int</span> velImpressao);</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160; </div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00795"></a><span class="lineno"><a class="line" href="group__ge2.html#gaa35ae9a62b4299ea1325c84920a156ad">  795</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge2.html#gaa35ae9a62b4299ea1325c84920a156ad">SetTamPixel</a>(<span class="keywordtype">int</span> largura, <span class="keywordtype">int</span> altura);</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160; </div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00819"></a><span class="lineno"><a class="line" href="group__ge2.html#gab4fea706ac0baa7cc9f098d674185322">  819</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge2.html#gab4fea706ac0baa7cc9f098d674185322">SetCalor</a>(<span class="keywordtype">int</span> calor);</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160; </div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00843"></a><span class="lineno"><a class="line" href="group__ge2.html#ga9845fe4300f808d7e4f7209f140c92fd">  843</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge2.html#ga9845fe4300f808d7e4f7209f140c92fd">SetQtde</a>(<span class="keywordtype">int</span> qtde);</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160; </div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00871"></a><span class="lineno"><a class="line" href="group__ge2.html#ga2b765448482f1b059331e126cbf4d09d">  871</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge2.html#ga2b765448482f1b059331e126cbf4d09d">SetCortarZero</a>(<span class="keywordtype">int</span> cortarZero);</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160; </div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;<span class="comment">// HA&#39; INCERTEZA QUANTO AO USO DE CUTTER NAS IMPRESSORAS (SUPORTE)</span></div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;<span class="comment">//    E1_ETIQUETASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;<span class="comment">//    int SetCutAmount(int cutAmount);</span></div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160; </div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00912"></a><span class="lineno"><a class="line" href="group__ge2.html#ga7f5d7fdbe3569f6975c1277ead4bc0c5">  912</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge2.html#ga7f5d7fdbe3569f6975c1277ead4bc0c5">SetLogicImgMode</a>(<span class="keywordtype">int</span> logicImgMode);</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160; </div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00939"></a><span class="lineno"><a class="line" href="group__ge2.html#ga7ec50922260a494a7346bf5f3f1eaf7a">  939</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge2.html#ga7ec50922260a494a7346bf5f3f1eaf7a">SetMirror</a>(<span class="keywordtype">int</span> mirror);</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160; </div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160; </div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    <span class="comment">// METODOS PARA GERACAO DOS CAMPOS DA ETIQUETA; MANIPULAM O VETOR campos[]</span></div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;<span class="comment">    /*****************************************************************************/</span></div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160; </div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;<span class="comment">    /**************************/</span></div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;    <span class="comment">/* IMAGE EDITING COMMANDS */</span></div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;<span class="comment">    /**************************/</span></div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160; </div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01037"></a><span class="lineno"><a class="line" href="group__ge30.html#ga29a40d449f4aaf18f40becf69f83414c"> 1037</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge30.html#ga29a40d449f4aaf18f40becf69f83414c">GerarTexto</a>(<span class="keywordtype">int</span> rotacao, <span class="keywordtype">int</span> fonte, <span class="keywordtype">int</span> multH, <span class="keywordtype">int</span> multV, <span class="keywordtype">int</span> coordY, <span class="keywordtype">int</span> coordX, <span class="keyword">const</span> <span class="keywordtype">char</span> *texto);</div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160; </div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01125"></a><span class="lineno"><a class="line" href="group__ge30.html#gaf11e55c257c64ce3e7ccdc3025d05080"> 1125</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge30.html#gaf11e55c257c64ce3e7ccdc3025d05080">GerarTextoASD</a>(<span class="keywordtype">int</span> rotacao, <span class="keywordtype">int</span> tamanho, <span class="keywordtype">int</span> multH, <span class="keywordtype">int</span> multV, <span class="keywordtype">int</span> coordY, <span class="keywordtype">int</span> coordX, <span class="keyword">const</span> <span class="keywordtype">char</span> *texto);</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160; </div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01214"></a><span class="lineno"><a class="line" href="group__ge30.html#ga00a38cf3c4d519d622c40be56ef4347b"> 1214</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge30.html#ga00a38cf3c4d519d622c40be56ef4347b">GerarTextoCourier</a>(<span class="keywordtype">int</span> rotacao, <span class="keywordtype">int</span> symbol, <span class="keywordtype">int</span> multH, <span class="keywordtype">int</span> multV, <span class="keywordtype">int</span> coordY, <span class="keywordtype">int</span> coordX, <span class="keyword">const</span> <span class="keywordtype">char</span> *texto);</div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160; </div>
+<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01289"></a><span class="lineno"><a class="line" href="group__ge3.html#ga13d1ffa5421640d76d6a22e4071f1f59"> 1289</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge3.html#ga13d1ffa5421640d76d6a22e4071f1f59">GerarLinha</a>(<span class="keywordtype">int</span> coordY, <span class="keywordtype">int</span> coordX, <span class="keywordtype">int</span> comprimento, <span class="keywordtype">int</span> altura);</div>
+<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160; </div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01394"></a><span class="lineno"><a class="line" href="group__ge3.html#ga3b3da89d8749b8e1d57b5b53dc797399"> 1394</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge3.html#ga3b3da89d8749b8e1d57b5b53dc797399">GerarBox</a>(<span class="keywordtype">int</span> coordY, <span class="keywordtype">int</span> coordX, <span class="keywordtype">int</span> comprimento, <span class="keywordtype">int</span> altura, <span class="keywordtype">int</span> grosBordasH, <span class="keywordtype">int</span> grosBordasV);</div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160; </div>
+<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01542"></a><span class="lineno"><a class="line" href="group__ge31.html#ga44d6c884f7b330f5fdbb504cda9545c6"> 1542</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge31.html#ga44d6c884f7b330f5fdbb504cda9545c6">GerarBarCode1D</a>(<span class="keywordtype">int</span> rotacao, <span class="keywordtype">int</span> tipo, <span class="keywordtype">int</span> largBarrasL, <span class="keywordtype">int</span> largBarrasE, <span class="keywordtype">int</span> altura, <span class="keywordtype">int</span> coordY, <span class="keywordtype">int</span> coordX, <span class="keyword">const</span> <span class="keywordtype">char</span> *codigo, <span class="keywordtype">int</span> exibirStr);</div>
+<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160; </div>
+<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01611"></a><span class="lineno"><a class="line" href="group__ge31.html#gae4443e7de28a8b42da3af4421802f24b"> 1611</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge31.html#gae4443e7de28a8b42da3af4421802f24b">GerarQRCodeAuto</a>(<span class="keywordtype">int</span> rotacao, <span class="keywordtype">int</span> mult, <span class="keywordtype">int</span> coordY, <span class="keywordtype">int</span> coordX, <span class="keyword">const</span> <span class="keywordtype">char</span> *codigo);</div>
+<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160; </div>
+<div class="line"><a name="l01746"></a><span class="lineno"> 1746</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01748"></a><span class="lineno"><a class="line" href="group__ge31.html#ga4538a0ff5635ae02a69abbbf2b7658d0"> 1748</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge31.html#ga4538a0ff5635ae02a69abbbf2b7658d0">GerarQRCodeManual</a>(<span class="keywordtype">int</span> rotacao, <span class="keywordtype">int</span> mult, <span class="keywordtype">int</span> coordY, <span class="keywordtype">int</span> coordX, <span class="keywordtype">int</span> numModelo, <span class="keywordtype">int</span> nvlCorErro, <span class="keywordtype">int</span> numMascara, <span class="keywordtype">int</span> input, <span class="keywordtype">int</span> inputConfig, <span class="keywordtype">int</span> numChars8bit, <span class="keyword">const</span> <span class="keywordtype">char</span> *codigo);</div>
+<div class="line"><a name="l01749"></a><span class="lineno"> 1749</span>&#160; </div>
+<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01835"></a><span class="lineno"><a class="line" href="group__ge31.html#ga810bb8671d6bc48753c7c0a85f18b2df"> 1835</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge31.html#ga810bb8671d6bc48753c7c0a85f18b2df">GerarMaxiCode</a>(<span class="keywordtype">int</span> rotacao, <span class="keywordtype">int</span> coordY, <span class="keywordtype">int</span> coordX, <span class="keywordtype">int</span> priZip, <span class="keywordtype">int</span> secZip, <span class="keywordtype">int</span> country, <span class="keywordtype">int</span> serClass, <span class="keyword">const</span> <span class="keywordtype">char</span> *codigo);</div>
+<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160; </div>
+<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01922"></a><span class="lineno"><a class="line" href="group__ge31.html#ga0c835de03f437ab5c7090521b312ba83"> 1922</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge31.html#ga0c835de03f437ab5c7090521b312ba83">GerarDataMatrix</a>(<span class="keywordtype">int</span> rotacao, <span class="keywordtype">int</span> mult, <span class="keywordtype">int</span> coordY, <span class="keywordtype">int</span> coordX, <span class="keywordtype">int</span> rows, <span class="keywordtype">int</span> columns, <span class="keyword">const</span> <span class="keywordtype">char</span> *codigo);</div>
+<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160; </div>
+<div class="line"><a name="l02027"></a><span class="lineno"> 2027</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02029"></a><span class="lineno"><a class="line" href="group__ge31.html#gaaab444b31ed29ba6b2fc9910dcf679d5"> 2029</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge31.html#gaaab444b31ed29ba6b2fc9910dcf679d5">GerarDataBar</a>(<span class="keywordtype">int</span> rotacao, <span class="keywordtype">int</span> barRatio, <span class="keywordtype">int</span> altura, <span class="keywordtype">int</span> coordY, <span class="keywordtype">int</span> coordX, <span class="keywordtype">int</span> tipo, <span class="keywordtype">int</span> pxMult, <span class="keyword">const</span> <span class="keywordtype">char</span> *numLinData, <span class="keyword">const</span> <span class="keywordtype">char</span> *codigo);</div>
+<div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160; </div>
+<div class="line"><a name="l02128"></a><span class="lineno"> 2128</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02130"></a><span class="lineno"><a class="line" href="group__ge31.html#ga754c5c2e26958aed292cff4c662b74b0"> 2130</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge31.html#ga754c5c2e26958aed292cff4c662b74b0">GerarDataBarExpanded</a>(<span class="keywordtype">int</span> rotacao, <span class="keywordtype">int</span> barRatio, <span class="keywordtype">int</span> altura, <span class="keywordtype">int</span> coordY, <span class="keywordtype">int</span> coordX, <span class="keywordtype">int</span> pxMult, <span class="keywordtype">int</span> segsRow, <span class="keyword">const</span> <span class="keywordtype">char</span> *alphanumeric, <span class="keyword">const</span> <span class="keywordtype">char</span> *codigo);</div>
+<div class="line"><a name="l02131"></a><span class="lineno"> 2131</span>&#160; </div>
+<div class="line"><a name="l02244"></a><span class="lineno"> 2244</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02246"></a><span class="lineno"><a class="line" href="group__ge31.html#ga00adf682a7659f3dcd7a79e92e9a5023"> 2246</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge31.html#ga00adf682a7659f3dcd7a79e92e9a5023">GerarPDF417</a>(<span class="keywordtype">int</span> rotacao, <span class="keywordtype">int</span> multH, <span class="keywordtype">int</span> multV, <span class="keywordtype">int</span> coordY, <span class="keywordtype">int</span> coordX, <span class="keywordtype">int</span> tipo, <span class="keywordtype">int</span> secLevel, <span class="keywordtype">int</span> aspRatio, <span class="keywordtype">int</span> rowNum, <span class="keywordtype">int</span> colNum, <span class="keyword">const</span> <span class="keywordtype">char</span> *codigo);</div>
+<div class="line"><a name="l02247"></a><span class="lineno"> 2247</span>&#160; </div>
+<div class="line"><a name="l02301"></a><span class="lineno"> 2301</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02303"></a><span class="lineno"><a class="line" href="group__ge3.html#ga36fd6c2c5e9b54746196df8737ea4b96"> 2303</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__ge3.html#ga36fd6c2c5e9b54746196df8737ea4b96">GerarImagem</a>(<span class="keywordtype">int</span> coordY, <span class="keywordtype">int</span> coordX, <span class="keyword">const</span> <span class="keywordtype">char</span> *nome);</div>
+<div class="line"><a name="l02304"></a><span class="lineno"> 2304</span>&#160; </div>
+<div class="line"><a name="l02305"></a><span class="lineno"> 2305</span>&#160; </div>
+<div class="line"><a name="l02306"></a><span class="lineno"> 2306</span>&#160;    <span class="comment">// CONTROLES DA IMPRESSORA</span></div>
+<div class="line"><a name="l02307"></a><span class="lineno"> 2307</span>&#160;<span class="comment">    /*****************************************************************************/</span></div>
+<div class="line"><a name="l02308"></a><span class="lineno"> 2308</span>&#160; </div>
+<div class="line"><a name="l02330"></a><span class="lineno"> 2330</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02332"></a><span class="lineno"><a class="line" href="group___m0.html#ga050843aae323d2a0ae747b0478627335"> 2332</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___m0.html#ga050843aae323d2a0ae747b0478627335">Limpa</a>(<span class="keywordtype">int</span> keepProps);</div>
+<div class="line"><a name="l02333"></a><span class="lineno"> 2333</span>&#160; </div>
+<div class="line"><a name="l02384"></a><span class="lineno"> 2384</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02386"></a><span class="lineno"><a class="line" href="group___m0.html#ga46f7a88ff8b72188a2fd48e2013dccbc"> 2386</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___m0.html#ga46f7a88ff8b72188a2fd48e2013dccbc">Imprime</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l02387"></a><span class="lineno"> 2387</span>&#160; </div>
+<div class="line"><a name="l02436"></a><span class="lineno"> 2436</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02438"></a><span class="lineno"><a class="line" href="group___m0.html#ga1ed4367feeae4f5daa20d54dc309f117"> 2438</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___m0.html#ga1ed4367feeae4f5daa20d54dc309f117">Reset</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param); <span class="comment">// Interaction</span></div>
+<div class="line"><a name="l02439"></a><span class="lineno"> 2439</span>&#160; </div>
+<div class="line"><a name="l02501"></a><span class="lineno"> 2501</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02503"></a><span class="lineno"><a class="line" href="group___m0.html#ga7e94ba5494c79ebec047efc49b62eb64"> 2503</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="group___m0.html#ga7e94ba5494c79ebec047efc49b62eb64">Status</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param); <span class="comment">// Interaction</span></div>
+<div class="line"><a name="l02504"></a><span class="lineno"> 2504</span>&#160; </div>
+<div class="line"><a name="l02581"></a><span class="lineno"> 2581</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02583"></a><span class="lineno"><a class="line" href="group___m0.html#gadaca6ad68c96d7b6b33ea3dc68aede89"> 2583</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="group___m0.html#gadaca6ad68c96d7b6b33ea3dc68aede89">StatusEPL</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param); <span class="comment">// Interaction</span></div>
+<div class="line"><a name="l02584"></a><span class="lineno"> 2584</span>&#160; </div>
+<div class="line"><a name="l02636"></a><span class="lineno"> 2636</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02638"></a><span class="lineno"><a class="line" href="group___m0.html#ga8ccb5a664b12914f4603c7b59e8899ae"> 2638</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___m0.html#ga8ccb5a664b12914f4603c7b59e8899ae">Feed</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param); <span class="comment">// System Level</span></div>
+<div class="line"><a name="l02639"></a><span class="lineno"> 2639</span>&#160; </div>
+<div class="line"><a name="l02688"></a><span class="lineno"> 2688</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02690"></a><span class="lineno"><a class="line" href="group___m0.html#gae59c76694805242b556f36472f093a91"> 2690</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___m0.html#gae59c76694805242b556f36472f093a91">Teste</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param); <span class="comment">// System Level</span></div>
+<div class="line"><a name="l02691"></a><span class="lineno"> 2691</span>&#160; </div>
+<div class="line"><a name="l02754"></a><span class="lineno"> 2754</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02756"></a><span class="lineno"><a class="line" href="group___m0.html#gad097f61cd8e7a1f6ef9a1978bb8f3849"> 2756</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="group___m0.html#gad097f61cd8e7a1f6ef9a1978bb8f3849">MemoryStatus</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keywordtype">int</span> tipoDados); <span class="comment">// System Level</span></div>
+<div class="line"><a name="l02757"></a><span class="lineno"> 2757</span>&#160; </div>
+<div class="line"><a name="l02807"></a><span class="lineno"> 2807</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02809"></a><span class="lineno"><a class="line" href="group___m0.html#ga90c744271b59a250c3cf7cf0b291e63d"> 2809</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___m0.html#ga90c744271b59a250c3cf7cf0b291e63d">LimpaMemoria</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param); <span class="comment">// System Level</span></div>
+<div class="line"><a name="l02810"></a><span class="lineno"> 2810</span>&#160; </div>
+<div class="line"><a name="l02870"></a><span class="lineno"> 2870</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02872"></a><span class="lineno"><a class="line" href="group___m0.html#ga9cbbed7bb745ebc319cc712efd14642f"> 2872</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___m0.html#ga9cbbed7bb745ebc319cc712efd14642f">LimpaModulo</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keywordtype">int</span> modulo); <span class="comment">// System Level</span></div>
+<div class="line"><a name="l02873"></a><span class="lineno"> 2873</span>&#160; </div>
+<div class="line"><a name="l02981"></a><span class="lineno"> 2981</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02983"></a><span class="lineno"><a class="line" href="group___m0.html#ga8ef71a5102630088a5b6af34dc92be37"> 2983</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___m0.html#ga8ef71a5102630088a5b6af34dc92be37">EnviaImagem</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keywordtype">int</span> modulo, <span class="keywordtype">int</span> formato, <span class="keyword">const</span> <span class="keywordtype">char</span> *nome, <span class="keyword">const</span> <span class="keywordtype">char</span> *arquivo); <span class="comment">// System Level</span></div>
+<div class="line"><a name="l02984"></a><span class="lineno"> 2984</span>&#160; </div>
+<div class="line"><a name="l03048"></a><span class="lineno"> 3048</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l03050"></a><span class="lineno"><a class="line" href="group___m0.html#gaa33834742966c74e09d043b81f28b82a"> 3050</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___m0.html#gaa33834742966c74e09d043b81f28b82a">ExcluiImagem</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keywordtype">int</span> modulo, <span class="keyword">const</span> <span class="keywordtype">char</span> *nome); <span class="comment">// System Level</span></div>
+<div class="line"><a name="l03051"></a><span class="lineno"> 3051</span>&#160; </div>
+<div class="line"><a name="l03052"></a><span class="lineno"> 3052</span>&#160; </div>
+<div class="line"><a name="l03053"></a><span class="lineno"> 3053</span>&#160;    <span class="comment">// METODOS DIVERSOS...</span></div>
+<div class="line"><a name="l03054"></a><span class="lineno"> 3054</span>&#160;<span class="comment">    /*****************************************************************************/</span></div>
+<div class="line"><a name="l03055"></a><span class="lineno"> 3055</span>&#160; </div>
+<div class="line"><a name="l03068"></a><span class="lineno"> 3068</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l03070"></a><span class="lineno"><a class="line" href="group___m0.html#ga5bb8fac990198ebba5a789d5d87ee8cb"> 3070</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="group___m1.html#ga5bb8fac990198ebba5a789d5d87ee8cb">GetVersaoDLL</a>();</div>
+<div class="line"><a name="l03071"></a><span class="lineno"> 3071</span>&#160; </div>
+<div class="line"><a name="l03175"></a><span class="lineno"> 3175</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l03177"></a><span class="lineno"><a class="line" href="group___m0.html#ga78eb1724dbeecc0622e58b412ee36284"> 3177</a></span>&#160;    <span class="keywordtype">int</span> *<a class="code" href="group___m1.html#ga44b4bdd6ff22dddf5ce8945bcff10f2a">DirectIO</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* writeData, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> writeNum, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* readData, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> readNum);</div>
+<div class="line"><a name="l03178"></a><span class="lineno"> 3178</span>&#160; </div>
+<div class="line"><a name="l03239"></a><span class="lineno"> 3239</span>&#160;    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l03241"></a><span class="lineno"><a class="line" href="group___m0.html#ga529861151c23db0a2d64829aac45e94b"> 3241</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group___m0.html#ga529861151c23db0a2d64829aac45e94b">DespejarArquivo</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keyword">const</span> <span class="keywordtype">char</span> *caminho);</div>
+<div class="line"><a name="l03242"></a><span class="lineno"> 3242</span>&#160;}</div>
+<div class="line"><a name="l03243"></a><span class="lineno"> 3243</span>&#160; </div>
+<div class="line"><a name="l03244"></a><span class="lineno"> 3244</span>&#160; </div>
+<div class="line"><a name="l03245"></a><span class="lineno"> 3245</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// EXPORTAFUNCOES_H</span></div>
+<div class="ttc" id="agroup___m0_html_ga050843aae323d2a0ae747b0478627335"><div class="ttname"><a href="group___m0.html#ga050843aae323d2a0ae747b0478627335">Limpa</a></div><div class="ttdeci">int Limpa(int keepProps)</div><div class="ttdoc">Comando para limpar a etiqueta, isto é, remover todos os campos criados.</div></div>
+<div class="ttc" id="agroup___m0_html_ga1ed4367feeae4f5daa20d54dc309f117"><div class="ttname"><a href="group___m0.html#ga1ed4367feeae4f5daa20d54dc309f117">Reset</a></div><div class="ttdeci">int Reset(int tipo, const char *modelo, const char *conexao, int param)</div><div class="ttdoc">Aplica um reset na impressora.</div></div>
+<div class="ttc" id="agroup___m0_html_ga46f7a88ff8b72188a2fd48e2013dccbc"><div class="ttname"><a href="group___m0.html#ga46f7a88ff8b72188a2fd48e2013dccbc">Imprime</a></div><div class="ttdeci">int Imprime(int tipo, const char *modelo, const char *conexao, int param)</div><div class="ttdoc">Abre conexão com a impressora, imprime a etiqueta, depois de configurá-la com as funções dos módulos ...</div></div>
+<div class="ttc" id="agroup___m0_html_ga529861151c23db0a2d64829aac45e94b"><div class="ttname"><a href="group___m0.html#ga529861151c23db0a2d64829aac45e94b">DespejarArquivo</a></div><div class="ttdeci">int DespejarArquivo(int tipo, const char *modelo, const char *conexao, int param, const char *caminho)</div><div class="ttdoc">Envia um arquivo com comandos, em protocolo suportado, para impressora, que irá executá-los.</div></div>
+<div class="ttc" id="agroup___m0_html_ga7e94ba5494c79ebec047efc49b62eb64"><div class="ttname"><a href="group___m0.html#ga7e94ba5494c79ebec047efc49b62eb64">Status</a></div><div class="ttdeci">char * Status(int tipo, const char *modelo, const char *conexao, int param)</div><div class="ttdoc">Retorna uma sequência de 8 bytes que descreve o status geral da impressora.</div></div>
+<div class="ttc" id="agroup___m0_html_ga8ccb5a664b12914f4603c7b59e8899ae"><div class="ttname"><a href="group___m0.html#ga8ccb5a664b12914f4603c7b59e8899ae">Feed</a></div><div class="ttdeci">int Feed(int tipo, const char *modelo, const char *conexao, int param)</div><div class="ttdoc">Produz um efeito similar ao de pressionar o botão Feed da impressora.</div></div>
+<div class="ttc" id="agroup___m0_html_ga8ef71a5102630088a5b6af34dc92be37"><div class="ttname"><a href="group___m0.html#ga8ef71a5102630088a5b6af34dc92be37">EnviaImagem</a></div><div class="ttdeci">int EnviaImagem(int tipo, const char *modelo, const char *conexao, int param, int modulo, int formato, const char *nome, const char *arquivo)</div><div class="ttdoc">Envia uma imagem para a memória da impressora (RAM ou Flash).</div></div>
+<div class="ttc" id="agroup___m0_html_ga90c744271b59a250c3cf7cf0b291e63d"><div class="ttname"><a href="group___m0.html#ga90c744271b59a250c3cf7cf0b291e63d">LimpaMemoria</a></div><div class="ttdeci">int LimpaMemoria(int tipo, const char *modelo, const char *conexao, int param)</div><div class="ttdoc">Apaga o conteúdo carregado nos dois módulos da impressora (RAM e Flash).</div></div>
+<div class="ttc" id="agroup___m0_html_ga9cbbed7bb745ebc319cc712efd14642f"><div class="ttname"><a href="group___m0.html#ga9cbbed7bb745ebc319cc712efd14642f">LimpaModulo</a></div><div class="ttdeci">int LimpaModulo(int tipo, const char *modelo, const char *conexao, int param, int modulo)</div><div class="ttdoc">Apaga o conteúdo carregado em um módulo específico da impressora (RAM ou Flash).</div></div>
+<div class="ttc" id="agroup___m0_html_gaa33834742966c74e09d043b81f28b82a"><div class="ttname"><a href="group___m0.html#gaa33834742966c74e09d043b81f28b82a">ExcluiImagem</a></div><div class="ttdeci">int ExcluiImagem(int tipo, const char *modelo, const char *conexao, int param, int modulo, const char *nome)</div><div class="ttdoc">Exclui uma imagem enviada à memória da impressora.</div></div>
+<div class="ttc" id="agroup___m0_html_gad097f61cd8e7a1f6ef9a1978bb8f3849"><div class="ttname"><a href="group___m0.html#gad097f61cd8e7a1f6ef9a1978bb8f3849">MemoryStatus</a></div><div class="ttdeci">char * MemoryStatus(int tipo, const char *modelo, const char *conexao, int param, int tipoDados)</div><div class="ttdoc">Exibe o status da memória da impressora: as imagens, as fontes ou os labels carregados e o espaço dis...</div></div>
+<div class="ttc" id="agroup___m0_html_gadaca6ad68c96d7b6b33ea3dc68aede89"><div class="ttname"><a href="group___m0.html#gadaca6ad68c96d7b6b33ea3dc68aede89">StatusEPL</a></div><div class="ttdeci">char * StatusEPL(int tipo, const char *modelo, const char *conexao, int param)</div><div class="ttdoc">Retorna o status imediato da impressora.</div></div>
+<div class="ttc" id="agroup___m0_html_gae59c76694805242b556f36472f093a91"><div class="ttname"><a href="group___m0.html#gae59c76694805242b556f36472f093a91">Teste</a></div><div class="ttdeci">int Teste(int tipo, const char *modelo, const char *conexao, int param)</div><div class="ttdoc">Faz uma impressão de teste.</div></div>
+<div class="ttc" id="agroup___m1_html_ga44b4bdd6ff22dddf5ce8945bcff10f2a"><div class="ttname"><a href="group___m1.html#ga44b4bdd6ff22dddf5ce8945bcff10f2a">DirectIO</a></div><div class="ttdeci">int DirectIO(unsigned char *writeData, unsigned int writeNum, unsigned char *readData, unsigned int *readNum)</div><div class="ttdoc">Envia comandos ESCPOS direto para a porta de comunicação.</div></div>
+<div class="ttc" id="agroup___m1_html_ga5bb8fac990198ebba5a789d5d87ee8cb"><div class="ttname"><a href="group___m1.html#ga5bb8fac990198ebba5a789d5d87ee8cb">GetVersaoDLL</a></div><div class="ttdeci">char * GetVersaoDLL()</div><div class="ttdoc">Retorna a versão da DLL E1_Impressora.</div></div>
+<div class="ttc" id="agroup__ge0_html_ga5023cf5d081a139cb9dab16ceb4c6b9d"><div class="ttname"><a href="group__ge0.html#ga5023cf5d081a139cb9dab16ceb4c6b9d">SetAlturaGap</a></div><div class="ttdeci">int SetAlturaGap(int tipo, const char *modelo, const char *conexao, int param, int altura)</div><div class="ttdoc">Define a altura do gap.</div></div>
+<div class="ttc" id="agroup__ge0_html_ga9eae5a557c9ef4f285027b2fefa5b13f"><div class="ttname"><a href="group__ge0.html#ga9eae5a557c9ef4f285027b2fefa5b13f">SetSymbolASD</a></div><div class="ttdeci">int SetSymbolASD(int tipo, const char *modelo, const char *conexao, int param, int symbol)</div><div class="ttdoc">Define o symbol set das fontes Smooth ASD.</div></div>
+<div class="ttc" id="agroup__ge0_html_gab11a4019e58a1886358c303de9dfcfd7"><div class="ttname"><a href="group__ge0.html#gab11a4019e58a1886358c303de9dfcfd7">SetBaudrate</a></div><div class="ttdeci">int SetBaudrate(int tipo, const char *modelo, const char *conexao, int param, int baudrate, int dataLength, int parity, int stopBit)</div><div class="ttdoc">Define o baudrate, o comprimento dos dados, a paridade e o número de stop bits.</div></div>
+<div class="ttc" id="agroup__ge0_html_gaf22fd8d76a9515294fda161676265c91"><div class="ttname"><a href="group__ge0.html#gaf22fd8d76a9515294fda161676265c91">SetTipoTransferencia</a></div><div class="ttdeci">int SetTipoTransferencia(int tipo, const char *modelo, const char *conexao, int param, int transferencia)</div><div class="ttdoc">Define o tipo de transferência.</div></div>
+<div class="ttc" id="agroup__ge1_html_ga761bd344ffc5c161aecdc95761e16219"><div class="ttname"><a href="group__ge1.html#ga761bd344ffc5c161aecdc95761e16219">SetBackfeed</a></div><div class="ttdeci">int SetBackfeed(int backfeed)</div><div class="ttdoc">Define a distância em que a etiqueta será deslocada da impressora após a impressão; isso faz com que ...</div></div>
+<div class="ttc" id="agroup__ge1_html_ga7a9c7c220fa90b66ef519af7594c8608"><div class="ttname"><a href="group__ge1.html#ga7a9c7c220fa90b66ef519af7594c8608">SetModoContinuo</a></div><div class="ttdeci">int SetModoContinuo(int modoContinuo)</div><div class="ttdoc">Ativa (ou desativa) o modo de impressão contínuo e configura a distância de papel a ser impresso.</div></div>
+<div class="ttc" id="agroup__ge1_html_gaa3db12f878a1b7318ceb060d1d84fdea"><div class="ttname"><a href="group__ge1.html#gaa3db12f878a1b7318ceb060d1d84fdea">SetPrintStPos</a></div><div class="ttdeci">int SetPrintStPos(int printStPos)</div><div class="ttdoc">Define a posição inicial de impressão.</div></div>
+<div class="ttc" id="agroup__ge1_html_gaac9ae6ce3c05a76ffbaa9be60f58fdd7"><div class="ttname"><a href="group__ge1.html#gaac9ae6ce3c05a76ffbaa9be60f58fdd7">SetSensor</a></div><div class="ttdeci">int SetSensor(int sensor)</div><div class="ttdoc">Define se o sensor a ser usado na impressão será o transmissivo ou o reflexivo.</div></div>
+<div class="ttc" id="agroup__ge1_html_gac844e1d490b653c1af96ad384c8f15a0"><div class="ttname"><a href="group__ge1.html#gac844e1d490b653c1af96ad384c8f15a0">SetMedidas</a></div><div class="ttdeci">int SetMedidas(int medida)</div><div class="ttdoc">Define o sistema de unidades adotado para a configuração dos campos da etiqueta e de algumas propried...</div></div>
+<div class="ttc" id="agroup__ge1_html_gae9e5f58ef8282363820a63b715500ae3"><div class="ttname"><a href="group__ge1.html#gae9e5f58ef8282363820a63b715500ae3">SetLength</a></div><div class="ttdeci">int SetLength(int length)</div><div class="ttdoc">Define o comprimento (altura) máximo da etiqueta.</div></div>
+<div class="ttc" id="agroup__ge2_html_ga2b765448482f1b059331e126cbf4d09d"><div class="ttname"><a href="group__ge2.html#ga2b765448482f1b059331e126cbf4d09d">SetCortarZero</a></div><div class="ttdeci">int SetCortarZero(int cortarZero)</div><div class="ttdoc">Define se o número zero (0) deve ser &quot;cortado&quot; ou não, para distingui-lo da letra O.</div></div>
+<div class="ttc" id="agroup__ge2_html_ga411b4f250b2d63aa405ce02277c752a0"><div class="ttname"><a href="group__ge2.html#ga411b4f250b2d63aa405ce02277c752a0">SetOffsetLinha</a></div><div class="ttdeci">int SetOffsetLinha(int offsetLinha)</div><div class="ttdoc">Define a margem inferior da impressão (a distância, a partir da margem inferior da etiqueta,...</div></div>
+<div class="ttc" id="agroup__ge2_html_ga7ec50922260a494a7346bf5f3f1eaf7a"><div class="ttname"><a href="group__ge2.html#ga7ec50922260a494a7346bf5f3f1eaf7a">SetMirror</a></div><div class="ttdeci">int SetMirror(int mirror)</div><div class="ttdoc">Define se os textos serão espelhados ou não durante a impressão.</div></div>
+<div class="ttc" id="agroup__ge2_html_ga7f5d7fdbe3569f6975c1277ead4bc0c5"><div class="ttname"><a href="group__ge2.html#ga7f5d7fdbe3569f6975c1277ead4bc0c5">SetLogicImgMode</a></div><div class="ttdeci">int SetLogicImgMode(int logicImgMode)</div><div class="ttdoc">Define o modo lógico de impressão dos campos.</div></div>
+<div class="ttc" id="agroup__ge2_html_ga8fe7ee5fe473327d3b145db23752efe2"><div class="ttname"><a href="group__ge2.html#ga8fe7ee5fe473327d3b145db23752efe2">SetOffsetColuna</a></div><div class="ttdeci">int SetOffsetColuna(int offsetColuna)</div><div class="ttdoc">Define a margem esquerda da impressão (a distância, a partir da margem esquerda da etiqueta,...</div></div>
+<div class="ttc" id="agroup__ge2_html_ga9845fe4300f808d7e4f7209f140c92fd"><div class="ttname"><a href="group__ge2.html#ga9845fe4300f808d7e4f7209f140c92fd">SetQtde</a></div><div class="ttdeci">int SetQtde(int qtde)</div><div class="ttdoc">Define quantas vezes a etiqueta será impressa.</div></div>
+<div class="ttc" id="agroup__ge2_html_gaa35ae9a62b4299ea1325c84920a156ad"><div class="ttname"><a href="group__ge2.html#gaa35ae9a62b4299ea1325c84920a156ad">SetTamPixel</a></div><div class="ttdeci">int SetTamPixel(int largura, int altura)</div><div class="ttdoc">Define a largura e a altura do pixel que será usado na etiqueta.</div></div>
+<div class="ttc" id="agroup__ge2_html_gab4fea706ac0baa7cc9f098d674185322"><div class="ttname"><a href="group__ge2.html#gab4fea706ac0baa7cc9f098d674185322">SetCalor</a></div><div class="ttdeci">int SetCalor(int calor)</div><div class="ttdoc">Define o calor de impressão, isto é, o quão forte será a cor da impressão.</div></div>
+<div class="ttc" id="agroup__ge2_html_gab5140a90fb9f3374ca9a39ceb65cb9d4"><div class="ttname"><a href="group__ge2.html#gab5140a90fb9f3374ca9a39ceb65cb9d4">SetVelImpressao</a></div><div class="ttdeci">int SetVelImpressao(int velImpressao)</div><div class="ttdoc">Define a velocidade de impressão.</div></div>
+<div class="ttc" id="agroup__ge30_html_ga00a38cf3c4d519d622c40be56ef4347b"><div class="ttname"><a href="group__ge30.html#ga00a38cf3c4d519d622c40be56ef4347b">GerarTextoCourier</a></div><div class="ttdeci">int GerarTextoCourier(int rotacao, int symbol, int multH, int multV, int coordY, int coordX, const char *texto)</div><div class="ttdoc">Gera um texto na etiqueta usando as fontes Courier.</div></div>
+<div class="ttc" id="agroup__ge30_html_ga29a40d449f4aaf18f40becf69f83414c"><div class="ttname"><a href="group__ge30.html#ga29a40d449f4aaf18f40becf69f83414c">GerarTexto</a></div><div class="ttdeci">int GerarTexto(int rotacao, int fonte, int multH, int multV, int coordY, int coordX, const char *texto)</div><div class="ttdoc">Gera um texto na etiqueta usando as fontes alfanuméricas.</div></div>
+<div class="ttc" id="agroup__ge30_html_gaf11e55c257c64ce3e7ccdc3025d05080"><div class="ttname"><a href="group__ge30.html#gaf11e55c257c64ce3e7ccdc3025d05080">GerarTextoASD</a></div><div class="ttdeci">int GerarTextoASD(int rotacao, int tamanho, int multH, int multV, int coordY, int coordX, const char *texto)</div><div class="ttdoc">Gera um texto na etiqueta usando as fontes Smooth ASD.</div></div>
+<div class="ttc" id="agroup__ge31_html_ga00adf682a7659f3dcd7a79e92e9a5023"><div class="ttname"><a href="group__ge31.html#ga00adf682a7659f3dcd7a79e92e9a5023">GerarPDF417</a></div><div class="ttdeci">int GerarPDF417(int rotacao, int multH, int multV, int coordY, int coordX, int tipo, int secLevel, int aspRatio, int rowNum, int colNum, const char *codigo)</div><div class="ttdoc">Gera um código PDF-417 na etiqueta.</div></div>
+<div class="ttc" id="agroup__ge31_html_ga0c835de03f437ab5c7090521b312ba83"><div class="ttname"><a href="group__ge31.html#ga0c835de03f437ab5c7090521b312ba83">GerarDataMatrix</a></div><div class="ttdeci">int GerarDataMatrix(int rotacao, int mult, int coordY, int coordX, int rows, int columns, const char *codigo)</div><div class="ttdoc">Gera um código DataMatrix na etiqueta.</div></div>
+<div class="ttc" id="agroup__ge31_html_ga44d6c884f7b330f5fdbb504cda9545c6"><div class="ttname"><a href="group__ge31.html#ga44d6c884f7b330f5fdbb504cda9545c6">GerarBarCode1D</a></div><div class="ttdeci">int GerarBarCode1D(int rotacao, int tipo, int largBarrasL, int largBarrasE, int altura, int coordY, int coordX, const char *codigo, int exibirStr)</div><div class="ttdoc">Gera um código de barras de uma dimensão na etiqueta.</div></div>
+<div class="ttc" id="agroup__ge31_html_ga4538a0ff5635ae02a69abbbf2b7658d0"><div class="ttname"><a href="group__ge31.html#ga4538a0ff5635ae02a69abbbf2b7658d0">GerarQRCodeManual</a></div><div class="ttdeci">int GerarQRCodeManual(int rotacao, int mult, int coordY, int coordX, int numModelo, int nvlCorErro, int numMascara, int input, int inputConfig, int numChars8bit, const char *codigo)</div><div class="ttdoc">Gera um QR Code na etiqueta; modo manual.</div></div>
+<div class="ttc" id="agroup__ge31_html_ga754c5c2e26958aed292cff4c662b74b0"><div class="ttname"><a href="group__ge31.html#ga754c5c2e26958aed292cff4c662b74b0">GerarDataBarExpanded</a></div><div class="ttdeci">int GerarDataBarExpanded(int rotacao, int barRatio, int altura, int coordY, int coordX, int pxMult, int segsRow, const char *alphanumeric, const char *codigo)</div><div class="ttdoc">Gera um código DataBar, tipo Expanded, na etiqueta.</div></div>
+<div class="ttc" id="agroup__ge31_html_ga810bb8671d6bc48753c7c0a85f18b2df"><div class="ttname"><a href="group__ge31.html#ga810bb8671d6bc48753c7c0a85f18b2df">GerarMaxiCode</a></div><div class="ttdeci">int GerarMaxiCode(int rotacao, int coordY, int coordX, int priZip, int secZip, int country, int serClass, const char *codigo)</div><div class="ttdoc">Gera um código MaxiCode na etiqueta.</div></div>
+<div class="ttc" id="agroup__ge31_html_gaaab444b31ed29ba6b2fc9910dcf679d5"><div class="ttname"><a href="group__ge31.html#gaaab444b31ed29ba6b2fc9910dcf679d5">GerarDataBar</a></div><div class="ttdeci">int GerarDataBar(int rotacao, int barRatio, int altura, int coordY, int coordX, int tipo, int pxMult, const char *numLinData, const char *codigo)</div><div class="ttdoc">Gera um código DataBar na etiqueta.</div></div>
+<div class="ttc" id="agroup__ge31_html_gae4443e7de28a8b42da3af4421802f24b"><div class="ttname"><a href="group__ge31.html#gae4443e7de28a8b42da3af4421802f24b">GerarQRCodeAuto</a></div><div class="ttdeci">int GerarQRCodeAuto(int rotacao, int mult, int coordY, int coordX, const char *codigo)</div><div class="ttdoc">Gera um QR Code na etiqueta; modo automático.</div></div>
+<div class="ttc" id="agroup__ge3_html_ga13d1ffa5421640d76d6a22e4071f1f59"><div class="ttname"><a href="group__ge3.html#ga13d1ffa5421640d76d6a22e4071f1f59">GerarLinha</a></div><div class="ttdeci">int GerarLinha(int coordY, int coordX, int comprimento, int altura)</div><div class="ttdoc">Gera uma linha na etiqueta.</div></div>
+<div class="ttc" id="agroup__ge3_html_ga36fd6c2c5e9b54746196df8737ea4b96"><div class="ttname"><a href="group__ge3.html#ga36fd6c2c5e9b54746196df8737ea4b96">GerarImagem</a></div><div class="ttdeci">int GerarImagem(int coordY, int coordX, const char *nome)</div><div class="ttdoc">Gera uma imagem na etiqueta.</div></div>
+<div class="ttc" id="agroup__ge3_html_ga3b3da89d8749b8e1d57b5b53dc797399"><div class="ttname"><a href="group__ge3.html#ga3b3da89d8749b8e1d57b5b53dc797399">GerarBox</a></div><div class="ttdeci">int GerarBox(int coordY, int coordX, int comprimento, int altura, int grosBordasH, int grosBordasV)</div><div class="ttdoc">Gera um box na etiqueta.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_8094c0841e6a2a14f983857de26f1179.html">E1_Etiqueta</a></li><li class="navelem"><b>exportafuncoes.h</b></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
