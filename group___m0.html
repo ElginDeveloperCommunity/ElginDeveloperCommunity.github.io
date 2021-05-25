@@ -24,9 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">1.17</span>
+   &#160;<span id="projectnumber">versão 2.0</span>
    </div>
   </td>
  </tr>
@@ -1847,6 +1848,9 @@ Posição 2: Quantidade de bytes lidos na porta.<br  />
 </div><div class="memdoc">
 
 <p>Envia um arquivo com comandos, em protocolo suportado, para impressora, que irá executá-los. </p>
+<ul>
+<li>OBS: Existe também a função <em>DespejarArquivoLF</em>, idêntica a esta, exceto pelo único diferencial daquela incluir um byte 10 (caractere LF) ao final de cada linha lida do arquivo, antes de enviá-la à impressora (o arquivo original permanece inalterado). O método <em>DespejarArquivoLF</em> é útil nos casos em que esta função falhar no despejo.</li>
+</ul>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">tipo</td><td>- Parâmetro do tipo numérico que define o tipo de comunicação que será estabelecido.<br  />

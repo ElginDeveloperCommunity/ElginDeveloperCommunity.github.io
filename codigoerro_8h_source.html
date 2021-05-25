@@ -24,9 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">1.17</span>
+   &#160;<span id="projectnumber">versão 2.0</span>
    </div>
   </td>
  </tr>
@@ -846,7 +847,27 @@ $(document).ready(function(){initNavTree('codigoerro_8h_source.html',''); initRe
 <div class="line"><a name="l01103"></a><span class="lineno"><a class="line" href="group__g1.html#ggac8fd271395908a0ba0e1460d2e2ffc2aa82617597c8a175d238c88cdeb73f975a"> 1103</a></span>&#160;};</div>
 <div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160; </div>
 <div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160; </div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CODIGOERRO_H</span></div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160; </div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;<span class="comment">/*****************************************************************************/</span></div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;<span class="comment">/*****************************************************************************/</span></div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160; </div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160; </div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;<span class="comment">    Descricao:      Arquivo de cabecalho com as definicoes de possiveis erros para a biblioteca E1_PDF</span></div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;<span class="comment">    Autor:          Bruno Cruz</span></div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;<span class="comment">    Data:           25/05/2021</span></div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160; </div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160; </div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;<span class="comment">/****************************************************************/</span></div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;<span class="comment">// FAIXA DOS CODIGOS DE ERRO: -890 ~ -1200 (MANTER RESERVADO!!!) //</span></div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;<span class="comment">/****************************************************************/</span></div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160; </div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;<span class="keyword">enum</span> PDF_Error{</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;    ZINT_NAO_CARREGADA      = -890</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;};</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160; </div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CODIGOERRO_H</span></div>
 <div class="ttc" id="agroup__g1_html_ga016ca53373099dfbefdd44124f9797b2"><div class="ttname"><a href="group__g1.html#ga016ca53373099dfbefdd44124f9797b2">SAT_Erro_Pagamento</a></div><div class="ttdeci">SAT_Erro_Pagamento</div><div class="ttdoc">The SAT_Erro_Pagamento enum -511 à -520.</div><div class="ttdef"><b>Definition:</b> codigoerro.h:840</div></div>
 <div class="ttc" id="agroup__g1_html_ga018614a3b7b0333fb8e0d6fbccfd5c4f"><div class="ttname"><a href="group__g1.html#ga018614a3b7b0333fb8e0d6fbccfd5c4f">SAT_Erro_Informacao_Adicional_Produto</a></div><div class="ttdeci">SAT_Erro_Informacao_Adicional_Produto</div><div class="ttdoc">The SAT_Erro_Informacao_Adicional_Produto enum -491 à -500.</div><div class="ttdef"><b>Definition:</b> codigoerro.h:822</div></div>
 <div class="ttc" id="agroup__g1_html_ga02e52ee0e72a6239ffb68d30fdfc8814"><div class="ttname"><a href="group__g1.html#ga02e52ee0e72a6239ffb68d30fdfc8814">GER_Erro_SystemLevel</a></div><div class="ttdeci">GER_Erro_SystemLevel</div><div class="ttdoc">GER_Erro_SystemLevel enum -191 à -210.</div><div class="ttdef"><b>Definition:</b> codigoerro.h:393</div></div>
