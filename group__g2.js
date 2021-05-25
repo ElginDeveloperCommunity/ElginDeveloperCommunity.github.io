@@ -1,14 +1,6 @@
 var group__g2 =
 [
     [ "XML SAT", "group__s0.html", "group__s0" ],
-    [ "ValidaXMLSAT", "group__g2.html#ga09f288cad5ce2c0fb98f1f270d3f35fe", null ],
-    [ "ValidaXMLSATSaida", "group__g2.html#gaba886f016e13e1acf0110e04170e4833", null ],
-    [ "ValidaXMLSATCancelamento", "group__g2.html#ga53f2b56f2f6a9b7e769b1253501fbbad", null ],
-    [ "ValidaXMLSATCancelamentoSaida", "group__g2.html#ga7caada7a5e4a256590c3a8b9e749b4db", null ],
-    [ "ValidaXMLNFCeProcessada", "group__g2.html#ga7189a4989c58f0883fea235d3c659ca4", null ],
-    [ "ValidaXMLNFCe", "group__g2.html#ga33d243fa3e4aabd04f6022c50a416661", null ],
-    [ "ConsultarStatusEspecifico", "group__g2.html#ga888115e85350d00027c214f2ff2eb334", null ],
-    [ "DecodificaBase64", "group__g2.html#ga09f5e8af5d0f009325a5d0c112402386", null ],
     [ "AtivarSAT", "group__g2.html#ga01e9f27eedb0479120dc5d6b7797a4e3", null ],
     [ "EnviarDadosVenda", "group__g2.html#ga7325dbebf3ecb15d7214008d5ffaff83", null ],
     [ "CancelarUltimaVenda", "group__g2.html#ga21cf1f3afb98ffaae26373f5639d82b4", null ],
@@ -24,5 +16,11 @@ var group__g2 =
     [ "BloquearSAT", "group__g2.html#ga7ec222969b79dc416e9dcb3b1f89470f", null ],
     [ "DesbloquearSAT", "group__g2.html#gab57bf2fc6f11c8d8103ea023fe73963e", null ],
     [ "TrocarCodigoDeAtivacao", "group__g2.html#gab51d6fbd7ae01c4ce25f8fe005d66fd6", null ],
-    [ "GetVersaoDLL", "group__g2.html#ga5bb8fac990198ebba5a789d5d87ee8cb", null ]
+    [ "GetVersaoDLL", "group__g2.html#ga5bb8fac990198ebba5a789d5d87ee8cb", null ],
+    [ "HabilitarConexaoContinua", "group__g2.html#ga167f444f0cb49803547909fcf1c20747", null ],
+    [ "DesabilitarConexaoContinua", "group__g2.html#ga63057f0618cbd9b657ebe37965ca2ba0", null ],
+    [ "FiltraSATNumSerie", "group__g2.html#gae161c961a1d02061ee4136012977b13d", null ],
+    [ "FiltraSATUsb", "group__g2.html#ga978cc8dd5679f47517a41f960ff98df4", null ],
+    [ "LimpaFiltrosSAT", "group__g2.html#gaa7dfa5bfc4e7a659602e85a9a7a0816a", null ],
+    [ "ListAvailableSatAsJson", "group__g2.html#ga06e25f3ff0f99a112de3d4c41762c8e4", null ]
 ];

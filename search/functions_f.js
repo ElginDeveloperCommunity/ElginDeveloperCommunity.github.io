@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['validaxmlnfce_822',['ValidaXMLNFCe',['../group__g2.html#ga33d243fa3e4aabd04f6022c50a416661',1,'exportafuncoes.h']]],
-  ['validaxmlnfceprocessada_823',['ValidaXMLNFCeProcessada',['../group__g2.html#ga7189a4989c58f0883fea235d3c659ca4',1,'exportafuncoes.h']]],
-  ['validaxmlsat_824',['ValidaXMLSAT',['../group__g2.html#ga09f288cad5ce2c0fb98f1f270d3f35fe',1,'exportafuncoes.h']]],
-  ['validaxmlsatcancelamento_825',['ValidaXMLSATCancelamento',['../group__g2.html#ga53f2b56f2f6a9b7e769b1253501fbbad',1,'exportafuncoes.h']]],
-  ['validaxmlsatcancelamentosaida_826',['ValidaXMLSATCancelamentoSaida',['../group__g2.html#ga7caada7a5e4a256590c3a8b9e749b4db',1,'exportafuncoes.h']]],
-  ['validaxmlsatsaida_827',['ValidaXMLSATSaida',['../group__g2.html#gaba886f016e13e1acf0110e04170e4833',1,'exportafuncoes.h']]]
+  ['tararbalanca_820',['TararBalanca',['../group__g5.html#ga24433d41a66f4d8974c359913827f4b9',1,'exportafuncoes.h']]],
+  ['teste_821',['Teste',['../group___m0.html#gae59c76694805242b556f36472f093a91',1,'exportafuncoes.h']]],
+  ['testefimafim_822',['TesteFimAFim',['../group__g2.html#ga3b6d10b9ea39a6eb754c93c6e1515ec5',1,'exportafuncoes.h']]],
+  ['trocarcodigodeativacao_823',['TrocarCodigoDeAtivacao',['../group__g2.html#gab51d6fbd7ae01c4ce25f8fe005d66fd6',1,'exportafuncoes.h']]]
 ];

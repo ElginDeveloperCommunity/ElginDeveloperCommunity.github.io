@@ -1,6 +1,14 @@
 var searchData=
 [
-  ['memorystatus_736',['MemoryStatus',['../group___m0.html#gad097f61cd8e7a1f6ef9a1978bb8f3849',1,'exportafuncoes.h']]],
-  ['modopadrao_737',['ModoPadrao',['../group___m1.html#ga26d6f65fe8192b33fd6df6fa4450d585',1,'exportafuncoes.h']]],
-  ['modopagina_738',['ModoPagina',['../group___m1.html#ga7e6a7e1acce3d656659a471fb6dd0458',1,'exportafuncoes.h']]]
+  ['lerpeso_727',['LerPeso',['../group__g5.html#ga2e8a4dca8cec805f4836a9598ab27eaa',1,'exportafuncoes.h']]],
+  ['lerpreco_728',['LerPreco',['../group__g5.html#gabe76bc279a0bff0504081b44ad8be215',1,'exportafuncoes.h']]],
+  ['lertara_729',['LerTara',['../group__g5.html#gac7ceabcbacb42c11d41bddae0dd875e4',1,'exportafuncoes.h']]],
+  ['lertotal_730',['LerTotal',['../group__g5.html#ga35cb2806fe3bb06f10cc9a7b4f771d5a',1,'exportafuncoes.h']]],
+  ['ligardesligardisplay_731',['LigarDesligarDisplay',['../group__g5.html#ga80daeec9ea522fe30f56bd6a0156c68e',1,'exportafuncoes.h']]],
+  ['limpa_732',['Limpa',['../group___m0.html#ga050843aae323d2a0ae747b0478627335',1,'exportafuncoes.h']]],
+  ['limpabuffermodopagina_733',['LimpaBufferModoPagina',['../group___m1.html#gacdc97edd24cfb9903abf0933996112f0',1,'exportafuncoes.h']]],
+  ['limpafiltrossat_734',['LimpaFiltrosSAT',['../group__g2.html#gaa7dfa5bfc4e7a659602e85a9a7a0816a',1,'exportafuncoes.h']]],
+  ['limpamemoria_735',['LimpaMemoria',['../group___m0.html#ga90c744271b59a250c3cf7cf0b291e63d',1,'exportafuncoes.h']]],
+  ['limpamodulo_736',['LimpaModulo',['../group___m0.html#ga9cbbed7bb745ebc319cc712efd14642f',1,'exportafuncoes.h']]],
+  ['listavailablesatasjson_737',['ListAvailableSatAsJson',['../group__g2.html#ga06e25f3ff0f99a112de3d4c41762c8e4',1,'exportafuncoes.h']]]
 ];

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['obtermodelobalanca_739',['ObterModeloBalanca',['../group__g5.html#ga17389b720b15d322a9e6cc02c0cd4f9c',1,'exportafuncoes.h']]],
-  ['obterprotocolocomunicacao_740',['ObterProtocoloComunicacao',['../group__g5.html#ga0a5aed390271cd1296168fc6a1dc81db',1,'exportafuncoes.h']]],
-  ['obtertipoconexao_741',['ObterTipoConexao',['../group__g5.html#ga2de74dd1f5d987754d775740f5764ce5',1,'exportafuncoes.h']]],
-  ['opencashdrawer_742',['OpenCashDrawer',['../group___m2.html#ga4a982087db2fdbcc07407146ffb0f1a5',1,'exportafuncoes.h']]]
+  ['memorystatus_738',['MemoryStatus',['../group___m0.html#gad097f61cd8e7a1f6ef9a1978bb8f3849',1,'exportafuncoes.h']]],
+  ['modopadrao_739',['ModoPadrao',['../group___m1.html#ga26d6f65fe8192b33fd6df6fa4450d585',1,'exportafuncoes.h']]],
+  ['modopagina_740',['ModoPagina',['../group___m1.html#ga7e6a7e1acce3d656659a471fb6dd0458',1,'exportafuncoes.h']]]
 ];
