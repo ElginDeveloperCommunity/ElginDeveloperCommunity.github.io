@@ -49,8 +49,9 @@ var group__g1 =
       [ "ERRO_XSD", "group__g1.html#ggaa2a78878de69f89d20efffa516879d4ca362f430c94ba01e22a8563241a75a577", null ],
       [ "XSD_NAO_ENCONTRADO", "group__g1.html#ggaa2a78878de69f89d20efffa516879d4ca5fcf7b9dff3a168116bf78795c0cf9b9", null ]
     ] ],
-    [ "IMP_Erro_Leitura_Impressora", "group__g1.html#gac34b8a950212ec91c4e28df08684e49b", [
-      [ "NENHUM_DADO_RETORNADO", "group__g1.html#ggac34b8a950212ec91c4e28df08684e49ba348af8f1dcfc395b11104065469eeccf", null ]
+    [ "IMP_Erro_Leitura", "group__g1.html#ga2b35be00026d04777fac00ddb2100923", [
+      [ "NENHUM_DADO_RETORNADO", "group__g1.html#gga2b35be00026d04777fac00ddb2100923a348af8f1dcfc395b11104065469eeccf", null ],
+      [ "ARQUIVO_NAO_PODE_SER_ABERTO", "group__g1.html#gga15d766683e4eca0e281addece3d04704a0fcfb626bcf63584694d13b482dd3314", null ]
     ] ],
     [ "IMP_Erro_ValidacaoXMLSAT", "group__g1.html#ga9aa34265329d5ba253910de84799f82e", [
       [ "ASSINATURA_QRCODE_INVALIDA", "group__g1.html#gga9aa34265329d5ba253910de84799f82eaa71a1918f443234115e988eb9c45cf24", null ],
@@ -319,7 +320,7 @@ var group__g1 =
       [ "ERRO_LIMPAR", "group__g1.html#gga389d89af7b952e2a8794f76aa36fe62ba0f1ca6cae5daeecf17180458f49b68aa", null ]
     ] ],
     [ "SAT_Erro_Generico", "group__g1.html#ga15d766683e4eca0e281addece3d04704", [
-      [ "ARQUIVO_NAO_PODE_SER_ABERTO", "group__g1.html#gga15d766683e4eca0e281addece3d04704af6ae03fb5592942d85d47c1169e65d3f", null ],
+      [ "ARQUIVO_NAO_PODE_SER_ABERTO", "group__g1.html#gga15d766683e4eca0e281addece3d04704a0fcfb626bcf63584694d13b482dd3314", null ],
       [ "CNPJ_INVALIDO", "group__g1.html#gga15d766683e4eca0e281addece3d04704adf15c2375fda4f91b33071e2be2b575a", null ],
       [ "CPF_INVALIDO", "group__g1.html#gga15d766683e4eca0e281addece3d04704af5a7e7a7fe0750f0826ee2e303ee495b", null ],
       [ "SIGNAC_INVALIDA", "group__g1.html#gga15d766683e4eca0e281addece3d04704a50a1c0b4fb48400156a3759a647052c7", null ],
