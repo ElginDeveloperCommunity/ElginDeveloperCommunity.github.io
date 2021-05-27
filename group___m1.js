@@ -28,5 +28,6 @@ var group___m1 =
     [ "LimpaBufferModoPagina", "group___m1.html#gacdc97edd24cfb9903abf0933996112f0", null ],
     [ "ImprimeMPeRetornaPadrao", "group___m1.html#gacee31e0a9e1d0a2a3e68ad14cf36acd0", null ],
     [ "ModoPadrao", "group___m1.html#ga26d6f65fe8192b33fd6df6fa4450d585", null ],
-    [ "GetVersaoDLL", "group___m1.html#ga5bb8fac990198ebba5a789d5d87ee8cb", null ]
+    [ "GetVersaoDLL", "group___m1.html#ga5bb8fac990198ebba5a789d5d87ee8cb", null ],
+    [ "ImprimeCupomTEF", "group___m1.html#gae1e5566e27106c82cdbd137c5b4599c6", null ]
 ];

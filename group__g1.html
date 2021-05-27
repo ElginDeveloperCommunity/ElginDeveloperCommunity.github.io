@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.2</span>
+   &#160;<span id="projectnumber">versão 2.3</span>
    </div>
   </td>
  </tr>
@@ -164,7 +164,7 @@ Enumerações</h2></td></tr>
 <tr class="memdesc:gaa2a78878de69f89d20efffa516879d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMP_Erro_ValidacaoXML enum -71 à -80.  <a href="group__g1.html#gaa2a78878de69f89d20efffa516879d4c">Mais...</a><br /></td></tr>
 <tr class="separator:gaa2a78878de69f89d20efffa516879d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b35be00026d04777fac00ddb2100923"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g1.html#ga2b35be00026d04777fac00ddb2100923">IMP_Erro_Leitura</a> { <a class="el" href="group__g1.html#gga2b35be00026d04777fac00ddb2100923a348af8f1dcfc395b11104065469eeccf">NENHUM_DADO_RETORNADO</a> = -81
-, <a class="el" href="group__g1.html#gga15d766683e4eca0e281addece3d04704a0fcfb626bcf63584694d13b482dd3314">ARQUIVO_NAO_PODE_SER_ABERTO</a> = -82
+, <a class="el" href="group__g1.html#gga2b35be00026d04777fac00ddb2100923a4468be01189e0d06e8b35cdfc46e9c1b">FALHA_AO_ABRIR_ARQUIVO</a> = -82
  }</td></tr>
 <tr class="memdesc:ga2b35be00026d04777fac00ddb2100923"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMP_Erro_Leitura_Impressora enum -81 à -90.  <a href="group__g1.html#ga2b35be00026d04777fac00ddb2100923">Mais...</a><br /></td></tr>
 <tr class="separator:ga2b35be00026d04777fac00ddb2100923"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -541,7 +541,7 @@ Enumerações</h2></td></tr>
 <tr class="memdesc:ga389d89af7b952e2a8794f76aa36fe62b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The GER_Erro_Outros enum -381 à -390.  <a href="group__g1.html#ga389d89af7b952e2a8794f76aa36fe62b">Mais...</a><br /></td></tr>
 <tr class="separator:ga389d89af7b952e2a8794f76aa36fe62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga15d766683e4eca0e281addece3d04704"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g1.html#ga15d766683e4eca0e281addece3d04704">SAT_Erro_Generico</a> { <br />
-&#160;&#160;<a class="el" href="group__g1.html#gga15d766683e4eca0e281addece3d04704a0fcfb626bcf63584694d13b482dd3314">ARQUIVO_NAO_PODE_SER_ABERTO</a> = -82
+&#160;&#160;<a class="el" href="group__g1.html#gga15d766683e4eca0e281addece3d04704af6ae03fb5592942d85d47c1169e65d3f">ARQUIVO_NAO_PODE_SER_ABERTO</a> = -391
 , <a class="el" href="group__g1.html#gga15d766683e4eca0e281addece3d04704adf15c2375fda4f91b33071e2be2b575a">CNPJ_INVALIDO</a> = -392
 , <a class="el" href="group__g1.html#gga15d766683e4eca0e281addece3d04704af5a7e7a7fe0750f0826ee2e303ee495b">CPF_INVALIDO</a> = -393
 , <a class="el" href="group__g1.html#gga15d766683e4eca0e281addece3d04704a50a1c0b4fb48400156a3759a647052c7">SIGNAC_INVALIDA</a> = -394
@@ -958,8 +958,7 @@ Faixa -81 à -90. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="gga2b35be00026d04777fac00ddb2100923a348af8f1dcfc395b11104065469eeccf"></a>NENHUM_DADO_RETORNADO&#160;</td><td class="fielddoc"><p><b>(-81)</b> Nenhum dado retornou na tentativa de leitura na impressora. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga15d766683e4eca0e281addece3d04704a0fcfb626bcf63584694d13b482dd3314"></a>ARQUIVO_NAO_PODE_SER_ABERTO&#160;</td><td class="fielddoc"><p><b>(-81)</b> Falha ao tentar abrir arquivo para leitura.</p>
-<p><b>(-391)</b> Arquivo esta sendo usado por outro processo ou não existe. </p>
+<tr><td class="fieldname"><a id="gga2b35be00026d04777fac00ddb2100923a4468be01189e0d06e8b35cdfc46e9c1b"></a>FALHA_AO_ABRIR_ARQUIVO&#160;</td><td class="fielddoc"><p><b>(-81)</b> Falha ao tentar abrir arquivo para leitura. </p>
 </td></tr>
 </table>
 
@@ -1993,8 +1992,7 @@ Faixa -381 à -390. </p>
 <p>The SAT_Erro_Generico enum -391 à -400. </p>
 <p>Define erros genericos da biblioteca e1_sat Esses erros não estão vinculados especificamente a uma função. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="gga15d766683e4eca0e281addece3d04704a0fcfb626bcf63584694d13b482dd3314"></a>ARQUIVO_NAO_PODE_SER_ABERTO&#160;</td><td class="fielddoc"><p><b>(-81)</b> Falha ao tentar abrir arquivo para leitura.</p>
-<p><b>(-391)</b> Arquivo esta sendo usado por outro processo ou não existe. </p>
+<tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="gga15d766683e4eca0e281addece3d04704af6ae03fb5592942d85d47c1169e65d3f"></a>ARQUIVO_NAO_PODE_SER_ABERTO&#160;</td><td class="fielddoc"><p><b>(-391)</b> Arquivo esta sendo usado por outro processo ou não existe. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga15d766683e4eca0e281addece3d04704adf15c2375fda4f91b33071e2be2b575a"></a>CNPJ_INVALIDO&#160;</td><td class="fielddoc"><p><b>(-392)</b> CNPJ tem mais de 14 dígitos. </p>
 </td></tr>

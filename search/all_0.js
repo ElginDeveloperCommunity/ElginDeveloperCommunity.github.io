@@ -12,7 +12,7 @@ var searchData=
   ['android_9',['Android',['../group__g3.html',1,'(<em>Namespace</em> global)'],['../group__g46.html',1,'(<em>Namespace</em> global)']]],
   ['arquivo_5fnao_5fencontrado_10',['ARQUIVO_NAO_ENCONTRADO',['../group__g1.html#gga15d766683e4eca0e281addece3d04704acb820012a3f6424d1973b5f055f7f423',1,'codigoerro.h']]],
   ['arquivo_5fnao_5fexiste_11',['ARQUIVO_NAO_EXISTE',['../group__g1.html#gga997c5e807d27e95e6e2cf73714524876aae8dff9aa0ed716093b18bba38743963',1,'codigoerro.h']]],
-  ['arquivo_5fnao_5fpode_5fser_5faberto_12',['ARQUIVO_NAO_PODE_SER_ABERTO',['../group__g1.html#gga15d766683e4eca0e281addece3d04704a0fcfb626bcf63584694d13b482dd3314',1,'codigoerro.h']]],
+  ['arquivo_5fnao_5fpode_5fser_5faberto_12',['ARQUIVO_NAO_PODE_SER_ABERTO',['../group__g1.html#gga15d766683e4eca0e281addece3d04704af6ae03fb5592942d85d47c1169e65d3f',1,'codigoerro.h']]],
   ['arquivo_5fxml_5fnao_5fcontem_5fdados_13',['ARQUIVO_XML_NAO_CONTEM_DADOS',['../group__g1.html#gga9aa34265329d5ba253910de84799f82eafcf2c54fda872f7eea4328f6cb14af23',1,'codigoerro.h']]],
   ['arquivo_5fxml_5fnao_5fpode_5fser_5faberto_14',['ARQUIVO_XML_NAO_PODE_SER_ABERTO',['../group__g1.html#gga9aa34265329d5ba253910de84799f82ea05fd73e71650f45752fdf43b486f69a2',1,'codigoerro.h']]],
   ['arquivo_5fxml_5fnfce_5fnao_5fpode_5fser_5faberto_15',['ARQUIVO_XML_NFCE_NAO_PODE_SER_ABERTO',['../group__g1.html#ggab60bf4a0fda40a03899957b30be9de07a846cac825af1703c9c9245f598b5c0e1',1,'codigoerro.h']]],

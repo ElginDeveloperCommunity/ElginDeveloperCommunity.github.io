@@ -1,14 +1,15 @@
 var searchData=
 [
-  ['nao_5ffoi_5fpossivel_5finiciar_5fo_5fservico_1093',['NAO_FOI_POSSIVEL_INICIAR_O_SERVICO',['../group__g1.html#gga20c9fe838328460e9145419bd484c573a599edd9c1acaa923b74436b7ef36a1ab',1,'codigoerro.h']]],
-  ['natureza_5foperacao_5finvalida_1094',['NATUREZA_OPERACAO_INVALIDA',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda824b15c1b25f15a576a78a2977bdcc67',1,'codigoerro.h']]],
-  ['ncm_5finvalido_1095',['NCM_INVALIDO',['../group__g1.html#ggab2fabaa4c9e7eb63e28651ed9515ec7aa44e1a04b0047987672c93587a20080cd',1,'codigoerro.h']]],
-  ['nenhum_5fdado_5fretornado_1096',['NENHUM_DADO_RETORNADO',['../group__g1.html#gga2b35be00026d04777fac00ddb2100923a348af8f1dcfc395b11104065469eeccf',1,'codigoerro.h']]],
-  ['nivel_5fde_5fcorrecao_5finvalido_1097',['NIVEL_DE_CORRECAO_INVALIDO',['../group__g1.html#ggad19ba2237e07d2d45162e5834f084300a2622128736b4c3d53b357236857b2741',1,'codigoerro.h']]],
-  ['nome_5fdestinario_5finvalido_1098',['NOME_DESTINARIO_INVALIDO',['../group__g1.html#gga15d766683e4eca0e281addece3d04704a3b539c170939a1aba42e1c8da8dd1fc9',1,'codigoerro.h']]],
-  ['number_5fcolumns_5finvalido_1099',['NUMBER_COLUMNS_INVALIDO',['../group__g1.html#ggaf06e08f141e869b84df32c20e7b08e82ab810a7d89db6efa088e32f83b6c2cee7',1,'codigoerro.h']]],
-  ['number_5frows_5finvalido_1100',['NUMBER_ROWS_INVALIDO',['../group__g1.html#ggaf06e08f141e869b84df32c20e7b08e82afee77aa2a68a0cd10fa7b9d3ab837b7f',1,'codigoerro.h']]],
-  ['numero_5fcaixa_5finvalido_1101',['NUMERO_CAIXA_INVALIDO',['../group__g1.html#gga15d766683e4eca0e281addece3d04704a9248c32bfbcdf9e99923ae0b66fc64f4',1,'codigoerro.h']]],
-  ['numero_5finvalido_1102',['NUMERO_INVALIDO',['../group__g1.html#ggabce12b1307411516d5ae219d5e3da4fca4522976baf23e08bc093124f8a8f09a6',1,'codigoerro.h']]],
-  ['numero_5fitem_5finvalido_1103',['NUMERO_ITEM_INVALIDO',['../group__g1.html#ggab2fabaa4c9e7eb63e28651ed9515ec7aa07bf6c7e005b747a18fe1c776e891968',1,'codigoerro.h']]]
+  ['mac_5faddress_5finvalido_1085',['MAC_ADDRESS_INVALIDO',['../group__g1.html#gga42887be3dd7140bef19a0ab8b8246f8bae6222036af30143e11a6002d0dc6f32c',1,'codigoerro.h']]],
+  ['maxicode_5fclass_5fof_5fservice_5finvalida_1086',['MAXICODE_CLASS_OF_SERVICE_INVALIDA',['../group__g1.html#gga6959fba31e9b668a537ca2679f4a2a49a38c09bde2a0e4526f492e0879e0d96ff',1,'codigoerro.h']]],
+  ['maxicode_5fcodigo_5finvalido_1087',['MAXICODE_CODIGO_INVALIDO',['../group__g1.html#gga6959fba31e9b668a537ca2679f4a2a49aca6c1d8d18b74bec347bac774ab1df11',1,'codigoerro.h']]],
+  ['maxicode_5fcoordenada_5fx_5finvalida_1088',['MAXICODE_COORDENADA_X_INVALIDA',['../group__g1.html#gga6959fba31e9b668a537ca2679f4a2a49a7d51d7749a98a7b89985e8d6f381311a',1,'codigoerro.h']]],
+  ['maxicode_5fcoordenada_5fy_5finvalida_1089',['MAXICODE_COORDENADA_Y_INVALIDA',['../group__g1.html#gga6959fba31e9b668a537ca2679f4a2a49a5be832e71f855b18f36038442e993ac3',1,'codigoerro.h']]],
+  ['maxicode_5fcountry_5finvalido_1090',['MAXICODE_COUNTRY_INVALIDO',['../group__g1.html#gga6959fba31e9b668a537ca2679f4a2a49a68ae3372ebfa195009801f8921ead664',1,'codigoerro.h']]],
+  ['maxicode_5fprimary_5fzip_5finvalido_1091',['MAXICODE_PRIMARY_ZIP_INVALIDO',['../group__g1.html#gga6959fba31e9b668a537ca2679f4a2a49a06e159902a6feefcf23fb8cbdb84eadb',1,'codigoerro.h']]],
+  ['maxicode_5frotacao_5finvalida_1092',['MAXICODE_ROTACAO_INVALIDA',['../group__g1.html#gga6959fba31e9b668a537ca2679f4a2a49a2943df49e1b863862acaf9522177a440',1,'codigoerro.h']]],
+  ['maxicode_5fsecondary_5fzip_5finvalido_1093',['MAXICODE_SECONDARY_ZIP_INVALIDO',['../group__g1.html#gga6959fba31e9b668a537ca2679f4a2a49a1788129ff4b784a5b2c21534321243b8',1,'codigoerro.h']]],
+  ['modelo_5finvalido_1094',['MODELO_INVALIDO',['../group__g1.html#ggaaf847b41b132e891ed9cd18f57c1d54cadafeee84c40bbb5b5622c1ea10685006',1,'codigoerro.h']]],
+  ['modulo_5ffuncao_5fnao_5fencontrado_1095',['MODULO_FUNCAO_NAO_ENCONTRADO',['../group__g1.html#gga997c5e807d27e95e6e2cf73714524876aea472d99b895e3a157e572f20cb046be',1,'codigoerro.h']]],
+  ['municipio_5finvalido_1096',['MUNICIPIO_INVALIDO',['../group__g1.html#ggabce12b1307411516d5ae219d5e3da4fca89d540303aa3aa027688c95e19c3fdef',1,'codigoerro.h']]]
 ];

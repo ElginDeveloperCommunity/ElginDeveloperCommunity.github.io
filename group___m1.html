@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.2</span>
+   &#160;<span id="projectnumber">versão 2.3</span>
    </div>
   </td>
  </tr>
@@ -182,6 +182,10 @@ Funções</h2></td></tr>
 <tr class="memitem:ga5bb8fac990198ebba5a789d5d87ee8cb"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m1.html#ga5bb8fac990198ebba5a789d5d87ee8cb">GetVersaoDLL</a> ()</td></tr>
 <tr class="memdesc:ga5bb8fac990198ebba5a789d5d87ee8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a versão da DLL E1_Impressora.  <a href="group___m1.html#ga5bb8fac990198ebba5a789d5d87ee8cb">Mais...</a><br /></td></tr>
 <tr class="separator:ga5bb8fac990198ebba5a789d5d87ee8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1e5566e27106c82cdbd137c5b4599c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m1.html#gae1e5566e27106c82cdbd137c5b4599c6">ImprimeCupomTEF</a> (const char *dados)</td></tr>
+<tr class="memdesc:gae1e5566e27106c82cdbd137c5b4599c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza a impressão do Cupom TEF<br  />
+.  <a href="group___m1.html#gae1e5566e27106c82cdbd137c5b4599c6">Mais...</a><br /></td></tr>
+<tr class="separator:gae1e5566e27106c82cdbd137c5b4599c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <p>Fornece funções para integração com impressoras ELGIN. </p>
@@ -3145,6 +3149,42 @@ A função bem sucedida deve retornar 0.<br  />
 <div class="line">    ]</div>
 <div class="line">}</div>
 </div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a id="gae1e5566e27106c82cdbd137c5b4599c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae1e5566e27106c82cdbd137c5b4599c6">&#9670;&nbsp;</a></span>ImprimeCupomTEF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImprimeCupomTEF </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dados</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Realiza a impressão do Cupom TEF<br  />
+. </p>
+<p>Essa função pode ser usada para imprimir o comprovante presente nos arquivos processados<br  />
+nos TEF que utilizem modelo de troca de arquivos.<br  />
+A função busca pelos registros 029-XXX.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dados</td><td>- Conteúdo a ser impresso<br  />
+ou<br  />
+Caminho para arquivo com dados da venda prefixado com "path=", ex:<br  />
+path=C:/Client/intpos.001</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
+A função bem sucedida deve retornar 0.<br  />
+Para mais informações a sessão código de erros </dd></dl>
 
 </div>
 </div>

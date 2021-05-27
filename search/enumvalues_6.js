@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['height_5finvalido_1063',['HEIGHT_INVALIDO',['../group__g1.html#ggaf06e08f141e869b84df32c20e7b08e82a5ab4c47c0745ed4925efe51179101432',1,'codigoerro.h']]]
+  ['grupo_5finvalido_1065',['GRUPO_INVALIDO',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda071ffc1ec61dcc7e5f6125d948b999ff',1,'codigoerro.h']]],
+  ['gtin_5finvalido_1066',['GTIN_INVALIDO',['../group__g1.html#ggab2fabaa4c9e7eb63e28651ed9515ec7aa0c22ebdf6309b6d86fdbce7cec55ecad',1,'codigoerro.h']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['grupo_5finvalido_1061',['GRUPO_INVALIDO',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda071ffc1ec61dcc7e5f6125d948b999ff',1,'codigoerro.h']]],
-  ['gtin_5finvalido_1062',['GTIN_INVALIDO',['../group__g1.html#ggab2fabaa4c9e7eb63e28651ed9515ec7aa0c22ebdf6309b6d86fdbce7cec55ecad',1,'codigoerro.h']]]
+  ['falha_5fao_5fabrir_5farquivo_1064',['FALHA_AO_ABRIR_ARQUIVO',['../group__g1.html#gga2b35be00026d04777fac00ddb2100923a4468be01189e0d06e8b35cdfc46e9c1b',1,'codigoerro.h']]]
 ];
