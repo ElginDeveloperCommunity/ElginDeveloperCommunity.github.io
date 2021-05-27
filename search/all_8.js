@@ -31,7 +31,7 @@ var searchData=
   ['impressoras_323',['Impressoras',['../group__g0.html',1,'']]],
   ['imprime_324',['Imprime',['../group___m0.html#ga46f7a88ff8b72188a2fd48e2013dccbc',1,'exportafuncoes.h']]],
   ['imprimebitmap_325',['ImprimeBitmap',['../group__g3.html#gaff88f683823732330be58f8e412a2a7a',1,'android.doxy']]],
-  ['imprimecupomtef_326',['ImprimeCupomTEF',['../group___m1.html#gae1e5566e27106c82cdbd137c5b4599c6',1,'exportafuncoes.h']]],
+  ['imprimecupomtef_326',['ImprimeCupomTEF',['../group___m1.html#gae1e5566e27106c82cdbd137c5b4599c6',1,'ImprimeCupomTEF(const char *dados):&#160;exportafuncoes.h'],['../group__g3.html#ga255e87dc1bf99e89ff3b8adb0608eebb',1,'ImprimeCupomTEF(String dados):&#160;android.doxy']]],
   ['imprimeimagemmemoria_327',['ImprimeImagemMemoria',['../group___m1.html#ga64bca702d7d0dec0d3ba82257848c83e',1,'exportafuncoes.h']]],
   ['imprimemodopagina_328',['ImprimeModoPagina',['../group___m1.html#ga3be49ecd34cd40e445e2bac306d5714c',1,'exportafuncoes.h']]],
   ['imprimemperetornapadrao_329',['ImprimeMPeRetornaPadrao',['../group___m1.html#gacee31e0a9e1d0a2a3e68ad14cf36acd0',1,'exportafuncoes.h']]],

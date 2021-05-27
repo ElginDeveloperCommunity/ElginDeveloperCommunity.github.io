@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.3</span>
+   &#160;<span id="projectnumber">versão 2.4</span>
    </div>
   </td>
  </tr>
@@ -111,6 +111,10 @@ Funções</h2></td></tr>
 <tr class="memitem:gaff88f683823732330be58f8e412a2a7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g3.html#gaff88f683823732330be58f8e412a2a7a">ImprimeBitmap</a> (Bitmap bitmap)</td></tr>
 <tr class="memdesc:gaff88f683823732330be58f8e412a2a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime bitmap enviado ao dispositivo Elgin suportado (vide lista).  <a href="group__g3.html#gaff88f683823732330be58f8e412a2a7a">Mais...</a><br /></td></tr>
 <tr class="separator:gaff88f683823732330be58f8e412a2a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga255e87dc1bf99e89ff3b8adb0608eebb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g3.html#ga255e87dc1bf99e89ff3b8adb0608eebb">ImprimeCupomTEF</a> (String dados)</td></tr>
+<tr class="memdesc:ga255e87dc1bf99e89ff3b8adb0608eebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza a impressão do Cupom TEF.<br  />
+.  <a href="group__g3.html#ga255e87dc1bf99e89ff3b8adb0608eebb">Mais...</a><br /></td></tr>
+<tr class="separator:ga255e87dc1bf99e89ff3b8adb0608eebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <p>Fornece funções para uso em ambiente Android, bem como as instruções necessárias para compatibilizar o projeto com os dispositivos Elgin suportados.</p>
@@ -218,6 +222,41 @@ Esse parâmetro recebe como argumento uma instância da classe Bitmap, isto é, 
 <dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
 A função bem-sucedida deve retornar 0.<br  />
 </dd></dl>
+
+</div>
+</div>
+<a id="ga255e87dc1bf99e89ff3b8adb0608eebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga255e87dc1bf99e89ff3b8adb0608eebb">&#9670;&nbsp;</a></span>ImprimeCupomTEF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImprimeCupomTEF </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>dados</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Realiza a impressão do Cupom TEF.<br  />
+. </p>
+<p>Essa função pode ser usada para imprimir os dados do cupom TEF enviados em uma string<br  />
+ou<br  />
+Um bitmap passando o conteúdo do mesmo em BASE64.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dados</td><td>- Conteúdo a ser impresso<br  />
+ou<br  />
+Conteúdo do BITMAP em BASE64</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
+A função bem sucedida deve retornar 0.<br  />
+Para mais informações a sessão código de erros </dd></dl>
 
 </div>
 </div>
