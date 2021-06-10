@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.4</span>
+   &#160;<span id="projectnumber">versão 2.5</span>
    </div>
   </td>
  </tr>
@@ -107,6 +107,9 @@ Funções</h2></td></tr>
 <tr class="memitem:gab6411e97bf638b98b5acfcc621ec0ade"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade">Corte</a> (int avanco)</td></tr>
 <tr class="memdesc:gab6411e97bf638b98b5acfcc621ec0ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza o corte do papel.  <a href="group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade">Mais...</a><br /></td></tr>
 <tr class="separator:gab6411e97bf638b98b5acfcc621ec0ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga329c887a0b5731559d593aaa0ca0aa2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m1.html#ga329c887a0b5731559d593aaa0ca0aa2b">CorteTotal</a> (int avanco)</td></tr>
+<tr class="memdesc:ga329c887a0b5731559d593aaa0ca0aa2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza o corte total do papel.  <a href="group___m1.html#ga329c887a0b5731559d593aaa0ca0aa2b">Mais...</a><br /></td></tr>
+<tr class="separator:ga329c887a0b5731559d593aaa0ca0aa2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gace32a45c3d64239fc38f773f199ddf2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m1.html#gace32a45c3d64239fc38f773f199ddf2e">ImpressaoQRCode</a> (const char *dados, int tamanho, int nivelCorrecao)</td></tr>
 <tr class="memdesc:gace32a45c3d64239fc38f773f199ddf2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Impressão de QRCode.  <a href="group___m1.html#gace32a45c3d64239fc38f773f199ddf2e">Mais...</a><br /></td></tr>
 <tr class="separator:gace32a45c3d64239fc38f773f199ddf2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,7 +186,7 @@ Funções</h2></td></tr>
 <tr class="memdesc:ga5bb8fac990198ebba5a789d5d87ee8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a versão da DLL E1_Impressora.  <a href="group___m1.html#ga5bb8fac990198ebba5a789d5d87ee8cb">Mais...</a><br /></td></tr>
 <tr class="separator:ga5bb8fac990198ebba5a789d5d87ee8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae1e5566e27106c82cdbd137c5b4599c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m1.html#gae1e5566e27106c82cdbd137c5b4599c6">ImprimeCupomTEF</a> (const char *dados)</td></tr>
-<tr class="memdesc:gae1e5566e27106c82cdbd137c5b4599c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza a impressão do Cupom TEF.<br  />
+<tr class="memdesc:gae1e5566e27106c82cdbd137c5b4599c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza a impressão do Cupom TEF<br  />
 .  <a href="group___m1.html#gae1e5566e27106c82cdbd137c5b4599c6">Mais...</a><br /></td></tr>
 <tr class="separator:gae1e5566e27106c82cdbd137c5b4599c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -695,6 +698,81 @@ A função bem sucedida deve retornar 0.<br  />
 <div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
 <div class="line">            &quot;Parametros&quot;: [{</div>
 <div class="line">                &quot;dados&quot;: 1</div>
+<div class="line">            }]</div>
+<div class="line">        },</div>
+<div class="line">        {</div>
+<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
+<div class="line">        }</div>
+<div class="line">     ]</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="ga329c887a0b5731559d593aaa0ca0aa2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga329c887a0b5731559d593aaa0ca0aa2b">&#9670;&nbsp;</a></span>CorteTotal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CorteTotal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>avanco</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Realiza o corte total do papel. </p>
+<ul>
+<li>OBS: Algumas impressoras não suporta este método devido a limitação do hardware.<br  />
+ As impressoras com tal limitação irão executar o corte parcial.</li>
+</ul>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">avanco</td><td>- Parâmetro numérico que indica o quanto o papel deve avançar antes do corte. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorno numérico que indica se a operação foi concluída com sucesso.<br  />
+A função bem sucedida deve retornar 0.<br  />
+<ul>
+<li>Consulte <b>Códigos de erro</b> para mais informações.<br  />
+</li>
+</ul>
+</dd></dl>
+<p><br  />
+<br  />
+</p><blockquote class="doxtable">
+<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
+</blockquote>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
+<div class="line">    &quot;Comando&quot;: &quot;CorteTotal&quot;,</div>
+<div class="line">    &quot;Parametros&quot;: [{</div>
+<div class="line">        &quot;avanco&quot;: 10</div>
+<div class="line">    }]</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> <br  />
+</p><blockquote class="doxtable">
+<p><b><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></b></p>
+</blockquote>
+<div class="fragment"><div class="line"> {</div>
+<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
+<div class="line">    &quot;Comando&quot;: [{</div>
+<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
+<div class="line">            &quot;Parametros&quot;: [{</div>
+<div class="line">                &quot;tipo&quot;: 1,</div>
+<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
+<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
+<div class="line">                &quot;parametro&quot;: 0</div>
+<div class="line">            }]</div>
+<div class="line">        },</div>
+<div class="line">        {</div>
+<div class="line">            &quot;Funcao&quot;: &quot;CorteTotal&quot;,</div>
+<div class="line">            &quot;Parametros&quot;: [{</div>
+<div class="line">                &quot;avanco&quot;: 10</div>
 <div class="line">            }]</div>
 <div class="line">        },</div>
 <div class="line">        {</div>
@@ -1282,8 +1360,18 @@ A função bem sucedida deve retornar 0.<br  />
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft"><b>BK-T681</b>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft"><b>SmartPOS</b>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter"></td></tr>
+<td class="markdownTableBodyLeft"><b>MP-4200</b>   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter"></td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>MP-2800</b>   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>DR800</b>   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>TM-T20</b>   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>Print ID Touch</b>   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>SmartPOS</b>   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter"></td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft"><b>Mini PDV M8</b>   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter"></td></tr>
 </table>
 </li>
@@ -3168,7 +3256,7 @@ A função bem sucedida deve retornar 0.<br  />
       </table>
 </div><div class="memdoc">
 
-<p>Realiza a impressão do Cupom TEF.<br  />
+<p>Realiza a impressão do Cupom TEF<br  />
 . </p>
 <p>Essa função pode ser usada para imprimir o comprovante presente nos arquivos processados<br  />
 nos TEF que utilizem modelo de troca de arquivos.<br  />

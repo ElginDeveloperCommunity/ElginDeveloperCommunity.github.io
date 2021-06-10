@@ -4,6 +4,7 @@ var group___m1 =
     [ "FechaConexaoImpressora", "group___m1.html#ga520ec6fa932747f430c2a89bc46c8176", null ],
     [ "ImpressaoTexto", "group___m1.html#ga6c9bc310ba0f45001cca6420c09e77c7", null ],
     [ "Corte", "group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade", null ],
+    [ "CorteTotal", "group___m1.html#ga329c887a0b5731559d593aaa0ca0aa2b", null ],
     [ "ImpressaoQRCode", "group___m1.html#gace32a45c3d64239fc38f773f199ddf2e", null ],
     [ "ImpressaoPDF417", "group___m1.html#gaf4424cf8fcb9917a27c53a2972ca1626", null ],
     [ "ImpressaoCodigoBarras", "group___m1.html#ga52b5a949b98c3163709b09762a17e794", null ],

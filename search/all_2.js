@@ -34,12 +34,13 @@ var searchData=
   ['consultarultimasessaofiscal_104',['ConsultarUltimaSessaoFiscal',['../group__g2.html#gad4ef75ca65ff26c6608d4f14cacf7193',1,'exportafuncoes.h']]],
   ['conteudo_5fcampo_5finvalido_105',['CONTEUDO_CAMPO_INVALIDO',['../group__g1.html#gga8dc854771e10d750b6a0c4724a046d80a8b7dc74c92a5bdeb720ea1963d9c534f',1,'codigoerro.h']]],
   ['corte_106',['Corte',['../group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade',1,'exportafuncoes.h']]],
-  ['cpf_5finvalido_107',['CPF_INVALIDO',['../group__g1.html#gga15d766683e4eca0e281addece3d04704af5a7e7a7fe0750f0826ee2e303ee495b',1,'codigoerro.h']]],
-  ['credenciadora_5fcartao_5finvalido_108',['CREDENCIADORA_CARTAO_INVALIDO',['../group__g1.html#gga016ca53373099dfbefdd44124f9797b2aaba1536427be55568a5d48a57d26f698',1,'codigoerro.h']]],
-  ['cregtribissqn_5finvalido_109',['CREGTRIBISSQN_INVALIDO',['../group__g1.html#gga2135434c111b0c910df2d58bc4d2e41ba3aa5c8fec0365fd1c31941d8b585891a',1,'codigoerro.h']]],
-  ['csosn_5finvalido_110',['CSOSN_INVALIDO',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda86cb1d37c4315af7e732c9c10ce07358',1,'codigoerro.h']]],
-  ['cst_5finvalido_111',['CST_INVALIDO',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda3885a81f5a793c427b183d5650e10443',1,'codigoerro.h']]],
-  ['cutpaper_112',['CutPaper',['../group___m2.html#ga48f74826596723a41e8e50a46d4cf2e7',1,'exportafuncoes.h']]],
-  ['código_20de_20barras_113',['Código de barras',['../group__ge31.html',1,'']]],
-  ['códigos_20de_20erro_2e_114',['Códigos de erro.',['../group__g1.html',1,'']]]
+  ['cortetotal_107',['CorteTotal',['../group___m1.html#ga329c887a0b5731559d593aaa0ca0aa2b',1,'exportafuncoes.h']]],
+  ['cpf_5finvalido_108',['CPF_INVALIDO',['../group__g1.html#gga15d766683e4eca0e281addece3d04704af5a7e7a7fe0750f0826ee2e303ee495b',1,'codigoerro.h']]],
+  ['credenciadora_5fcartao_5finvalido_109',['CREDENCIADORA_CARTAO_INVALIDO',['../group__g1.html#gga016ca53373099dfbefdd44124f9797b2aaba1536427be55568a5d48a57d26f698',1,'codigoerro.h']]],
+  ['cregtribissqn_5finvalido_110',['CREGTRIBISSQN_INVALIDO',['../group__g1.html#gga2135434c111b0c910df2d58bc4d2e41ba3aa5c8fec0365fd1c31941d8b585891a',1,'codigoerro.h']]],
+  ['csosn_5finvalido_111',['CSOSN_INVALIDO',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda86cb1d37c4315af7e732c9c10ce07358',1,'codigoerro.h']]],
+  ['cst_5finvalido_112',['CST_INVALIDO',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda3885a81f5a793c427b183d5650e10443',1,'codigoerro.h']]],
+  ['cutpaper_113',['CutPaper',['../group___m2.html#ga48f74826596723a41e8e50a46d4cf2e7',1,'exportafuncoes.h']]],
+  ['código_20de_20barras_114',['Código de barras',['../group__ge31.html',1,'']]],
+  ['códigos_20de_20erro_2e_115',['Códigos de erro.',['../group__g1.html',1,'']]]
 ];
