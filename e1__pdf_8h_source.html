@@ -27,8 +27,9 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.4</span>
+   &#160;<span id="projectnumber">versão 2.5</span>
    </div>
+   <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
  </tr>
  </tbody>
@@ -104,101 +105,103 @@ $(document).ready(function(){initNavTree('e1__pdf_8h_source.html',''); initResiz
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;../e1_impressora/objxmlcancelamento.h&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;../e1_impressora/objxmlnfce.h&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;../e1_impressora/objprodutoxmlnfce.h&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>E1_Pdf</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    E1_Pdf();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    ~E1_Pdf();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">struct </span>zint_symbol *simbolo;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QPainter   *painter;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    QPdfWriter *writer;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    QFile *file;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QRect areaLogo;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QRect areaCabecalhoLogo;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QRect areaCabecalho;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    QFont font;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> avanco_padrao = 170;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> pos_y = 0;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> valor = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QString cabecalho;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QString corpo;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    QString valMod;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QString arquivo;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">const</span> QString separador = <span class="stringliteral">&quot;-----------------------------------------------------------------------------------------------------&quot;</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">     * CAMINHO QUE DEVE SER CONSIDERADOS PARA CRIAÇÃO É EM WORKDIR</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">     * APÓS UTILIZAÇÃO O ARQUIVO DEVE SER EXCLUIDO</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *caminhoCodeBar = <span class="stringliteral">&quot;./e1_codebar.bmp&quot;</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *caminhoQRCode  = <span class="stringliteral">&quot;./e1_qrcode.bmp&quot;</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    Zint_Biblioteca lib;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">int</span> geraPDFSAT_F(<span class="keywordtype">char</span> *dados_xml,<span class="keywordtype">int</span> param);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> geraPFFSATCancelamento_F(<span class="keywordtype">char</span> *dados_xml,<span class="keywordtype">char</span>* assQRCode,<span class="keywordtype">int</span> param);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> geraPDFNFCe_F(<span class="keywordtype">char</span> *dados,<span class="keywordtype">int</span> indexcsc, <span class="keywordtype">char</span> *csc, <span class="keywordtype">int</span> param);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> criaCodeBar(QByteArray valor);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> geraQrCode(QByteArray dados,<span class="keywordtype">float</span> scala);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> setNegrito();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> fontNormal();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> constroiPDF(QString fileName,<span class="keywordtype">int</span> largura,<span class="keywordtype">int</span> comprimento);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> cabecalhoSATPDF(ObjXMLSAT sat, <span class="keywordtype">int</span> param);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> corpoSatPDF(ObjXMLSAT objxml, <span class="keywordtype">int</span> param);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> rodapeSatPdf(ObjXMLSAT objxml, <span class="keywordtype">int</span> param);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> cabecalhoNFCe(ObjXMLNFCe obj, <span class="keywordtype">int</span> param);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> preencheProdutoNFCe(ObjXMLNFCe obj, <span class="keywordtype">int</span> param);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> cabecalhoSatCancelamento(ObjXMLCancelamento objxml,<span class="keywordtype">int</span> param);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    QImage carregaImagem(QString file);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//necessario para aplicar logica de redução de espaçamento entre linhas</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> retorna_spacamento_entre_linhas();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">int</span> retorna_avanco();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//necessario para calcular o alinhamento da informação e stilo que sera aplicado na impressão</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> escreve_linha_pdf(<span class="keywordtype">int</span> alinhamento, QString dados);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> escreve_linha_n_avanco(<span class="keywordtype">int</span> alinhamento, QString dados);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;../Utilidades/log.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>E1_Pdf</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    E1_Pdf();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    ~E1_Pdf();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">struct </span>zint_symbol *simbolo;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    QPainter   *painter;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    QPdfWriter *writer;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QFile *file;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QRect areaLogo;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QRect areaCabecalhoLogo;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QRect areaCabecalho;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QFont font;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> avanco_padrao = 170;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> pos_y = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> valor = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QString cabecalho;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    QString corpo;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QString valMod;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QString arquivo;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">const</span> QString separador = <span class="stringliteral">&quot;-----------------------------------------------------------------------------------------------------&quot;</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">     * CAMINHO QUE DEVE SER CONSIDERADOS PARA CRIAÇÃO É EM WORKDIR</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">     * APÓS UTILIZAÇÃO O ARQUIVO DEVE SER EXCLUIDO</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *caminhoCodeBar = <span class="stringliteral">&quot;./e1_codebar.bmp&quot;</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *caminhoQRCode  = <span class="stringliteral">&quot;./e1_qrcode.bmp&quot;</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Zint_Biblioteca lib;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> geraPDFSAT_F(<span class="keywordtype">char</span> *dados_xml,<span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> geraPFFSATCancelamento_F(<span class="keywordtype">char</span> *dados_xml,<span class="keywordtype">char</span>* assQRCode,<span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> geraPDFNFCe_F(<span class="keywordtype">char</span> *dados,<span class="keywordtype">int</span> indexcsc, <span class="keywordtype">char</span> *csc, <span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> criaCodeBar(QByteArray valor);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> geraQrCode(QByteArray dados,<span class="keywordtype">float</span> scala);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> setNegrito();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> fontNormal();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> constroiPDF(QString fileName,<span class="keywordtype">int</span> largura,<span class="keywordtype">int</span> comprimento);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> cabecalhoSATPDF(ObjXMLSAT sat, <span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> corpoSatPDF(ObjXMLSAT objxml, <span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> rodapeSatPdf(ObjXMLSAT objxml, <span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> cabecalhoNFCe(ObjXMLNFCe obj, <span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> preencheProdutoNFCe(ObjXMLNFCe obj, <span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> cabecalhoSatCancelamento(ObjXMLCancelamento objxml,<span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QImage carregaImagem(QString file);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//necessario para aplicar logica de redução de espaçamento entre linhas</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">int</span> retorna_spacamento_entre_linhas();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> retorna_avanco();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//necessario para calcular o alinhamento da informação e stilo que sera aplicado na impressão</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> escreve_linha_pdf(<span class="keywordtype">int</span> alinhamento, QString dados);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> escreve_linha_prod(objProdutoXMLSAT dados);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> escreve_linha_n_avanco(<span class="keywordtype">int</span> alinhamento, QString dados);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">int</span> argc{1};</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">char</span> *argv[]{<span class="stringliteral">&quot;SharedLibrary&quot;</span>, NULL};</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;QGuiApplication app(argc,argv);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;E1_Pdf pdf;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">extern</span>  <span class="stringliteral">&quot;C&quot;</span>{</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    E1_PDF_EXPORT __stdcall</div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="group__g9.html#gae6d6f5c757fd21edad85bc44709400c3">  155</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g9.html#gae6d6f5c757fd21edad85bc44709400c3">GeraPDFSAT</a>(<span class="keywordtype">char</span> *dados_xml,<span class="keywordtype">int</span> param){</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">return</span> pdf.geraPDFSAT_F(dados_xml,param);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    E1_PDF_EXPORT __stdcall</div>
-<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="group__g9.html#ga3595ae7561d533a1d89a6167254146c1">  191</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g9.html#ga3595ae7561d533a1d89a6167254146c1">GeraPDFSATCancelamento</a>(<span class="keywordtype">char</span> *dados_xml,<span class="keywordtype">char</span>* assQRCode,<span class="keywordtype">int</span> param){</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">return</span> pdf.geraPFFSATCancelamento_F(dados_xml,assQRCode,param);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    E1_PDF_EXPORT __stdcall</div>
-<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35">  242</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35">GeraPDFNFCe</a>(<span class="keywordtype">char</span> *dados,<span class="keywordtype">int</span> indexcsc, <span class="keywordtype">char</span> *csc, <span class="keywordtype">int</span> param){</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">return</span> pdf.geraPDFNFCe_F(dados,indexcsc,csc,param);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">int</span> argc{1};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">char</span> *argv[]{<span class="stringliteral">&quot;SharedLibrary&quot;</span>, NULL};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;QGuiApplication app(argc,argv);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;E1_Pdf pdf;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">extern</span>  <span class="stringliteral">&quot;C&quot;</span>{</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    E1_PDF_EXPORT __stdcall</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="group__g9.html#gae6d6f5c757fd21edad85bc44709400c3">  157</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g9.html#gae6d6f5c757fd21edad85bc44709400c3">GeraPDFSAT</a>(<span class="keywordtype">char</span> *dados_xml,<span class="keywordtype">int</span> param){</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">return</span> pdf.geraPDFSAT_F(dados_xml,param);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    E1_PDF_EXPORT __stdcall</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="group__g9.html#ga3595ae7561d533a1d89a6167254146c1">  193</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g9.html#ga3595ae7561d533a1d89a6167254146c1">GeraPDFSATCancelamento</a>(<span class="keywordtype">char</span> *dados_xml,<span class="keywordtype">char</span>* assQRCode,<span class="keywordtype">int</span> param){</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> pdf.geraPFFSATCancelamento_F(dados_xml,assQRCode,param);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    E1_PDF_EXPORT __stdcall</div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35">  244</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35">GeraPDFNFCe</a>(<span class="keywordtype">char</span> *dados,<span class="keywordtype">int</span> indexcsc, <span class="keywordtype">char</span> *csc, <span class="keywordtype">int</span> param){</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">return</span> pdf.geraPDFNFCe_F(dados,indexcsc,csc,param);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    }</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// E1_PDF_H</span></div>
-<div class="ttc" id="agroup__g9_html_ga3595ae7561d533a1d89a6167254146c1"><div class="ttname"><a href="group__g9.html#ga3595ae7561d533a1d89a6167254146c1">GeraPDFSATCancelamento</a></div><div class="ttdeci">int GeraPDFSATCancelamento(char *dados_xml, char *assQRCode, int param)</div><div class="ttdoc">Gera PDF Danfe de cancelamento SAT.</div><div class="ttdef"><b>Definition:</b> e1_pdf.h:191</div></div>
-<div class="ttc" id="agroup__g9_html_gaa82f7691ba9313b73fb80357fe836e35"><div class="ttname"><a href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35">GeraPDFNFCe</a></div><div class="ttdeci">int GeraPDFNFCe(char *dados, int indexcsc, char *csc, int param)</div><div class="ttdoc">Gera Pdf Danfe NFCe.</div><div class="ttdef"><b>Definition:</b> e1_pdf.h:242</div></div>
-<div class="ttc" id="agroup__g9_html_gae6d6f5c757fd21edad85bc44709400c3"><div class="ttname"><a href="group__g9.html#gae6d6f5c757fd21edad85bc44709400c3">GeraPDFSAT</a></div><div class="ttdeci">int GeraPDFSAT(char *dados_xml, int param)</div><div class="ttdoc">Gera PDF Danfe SAT.</div><div class="ttdef"><b>Definition:</b> e1_pdf.h:155</div></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;};</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// E1_PDF_H</span></div>
+<div class="ttc" id="agroup__g9_html_ga3595ae7561d533a1d89a6167254146c1"><div class="ttname"><a href="group__g9.html#ga3595ae7561d533a1d89a6167254146c1">GeraPDFSATCancelamento</a></div><div class="ttdeci">int GeraPDFSATCancelamento(char *dados_xml, char *assQRCode, int param)</div><div class="ttdoc">Gera PDF Danfe de cancelamento SAT.</div><div class="ttdef"><b>Definition:</b> e1_pdf.h:193</div></div>
+<div class="ttc" id="agroup__g9_html_gaa82f7691ba9313b73fb80357fe836e35"><div class="ttname"><a href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35">GeraPDFNFCe</a></div><div class="ttdeci">int GeraPDFNFCe(char *dados, int indexcsc, char *csc, int param)</div><div class="ttdoc">Gera Pdf Danfe NFCe.</div><div class="ttdef"><b>Definition:</b> e1_pdf.h:244</div></div>
+<div class="ttc" id="agroup__g9_html_gae6d6f5c757fd21edad85bc44709400c3"><div class="ttname"><a href="group__g9.html#gae6d6f5c757fd21edad85bc44709400c3">GeraPDFSAT</a></div><div class="ttdeci">int GeraPDFSAT(char *dados_xml, int param)</div><div class="ttdoc">Gera PDF Danfe SAT.</div><div class="ttdef"><b>Definition:</b> e1_pdf.h:157</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

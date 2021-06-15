@@ -29,6 +29,7 @@
    <div id="projectname">Plataforma de Comunicação Elgin
    &#160;<span id="projectnumber">versão 2.5</span>
    </div>
+   <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
  </tr>
  </tbody>
@@ -189,6 +190,9 @@ Funções</h2></td></tr>
 <tr class="memdesc:gae1e5566e27106c82cdbd137c5b4599c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza a impressão do Cupom TEF<br  />
 .  <a href="group___m1.html#gae1e5566e27106c82cdbd137c5b4599c6">Mais...</a><br /></td></tr>
 <tr class="separator:gae1e5566e27106c82cdbd137c5b4599c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6742274b49f7d997254981d3f44e5f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m1.html#gad6742274b49f7d997254981d3f44e5f1">ImprimeImagem</a> (const char *path)</td></tr>
+<tr class="memdesc:gad6742274b49f7d997254981d3f44e5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime imagem enviada à impressora diretamente, sem carregá-la na memória.  <a href="group___m1.html#gad6742274b49f7d997254981d3f44e5f1">Mais...</a><br /></td></tr>
+<tr class="separator:gad6742274b49f7d997254981d3f44e5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <p>Fornece funções para integração com impressoras ELGIN. </p>
@@ -3273,6 +3277,62 @@ path=C:/Client/intpos.001</td></tr>
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 Para mais informações a sessão código de erros </dd></dl>
+
+</div>
+</div>
+<a id="gad6742274b49f7d997254981d3f44e5f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad6742274b49f7d997254981d3f44e5f1">&#9670;&nbsp;</a></span>ImprimeImagem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImprimeImagem </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imprime imagem enviada à impressora diretamente, sem carregá-la na memória. </p>
+<ul>
+<li>OBS: Este método não foi implementado no ambiente Desktop.</li>
+</ul>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>- Parâmetro do tipo caractere que define a imagem que será impressa.<br  />
+<br  />
+Este parâmetro recebe como argumento o caminho, no sistema de arquivos, onde a imagem está armazenada, incluindo seu nome.<br  />
+<br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
+A função bem-sucedida deve retornar 0.<br  />
+<br  />
+ <blockquote class="doxtable">
+<p><b><em> Exemplo JSON para uso com Serviço. </em> </b></p>
+</blockquote>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
+<div class="line">    &quot;Comando&quot;: [</div>
+<div class="line">        {&quot;Funcao&quot;: &quot;ImprimeImagem&quot;,</div>
+<div class="line">        &quot;Parametros&quot;: [</div>
+<div class="line">            {&quot;path&quot;: &quot;C:\\Imagens\\logo.bmp&quot;</div>
+<div class="line">            }</div>
+<div class="line">        ]}</div>
+<div class="line">    ]</div>
+<div class="line">}</div>
+</div><!-- fragment --> <br  />
+ <blockquote class="doxtable">
+<p><b><b><em> Exemplo de comando com separadores para uso com Serviço. </em> </b></b></p>
+</blockquote>
+<div class="fragment"><div class="line">Impressor:|ImprimeImagem</div>
+<div class="line">:|C:\\Imagens\\logo.bmp</div>
+</div><!-- fragment --> </dd></dl>
 
 </div>
 </div>
