@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.6</span>
+   &#160;<span id="projectnumber">versão 2.7</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -1519,10 +1519,11 @@ Conforme descrição abaixo: <table class="markdownTable">
 </div><div class="memdoc">
 
 <p>Abre gavetas Elgin. </p>
-<ul>
-<li>OBS: O SmartPOS não suporta este método, uma vez que esse dispositivo não tem conector RJ-11. Se a gaveta for conectada à outra impressora térmica e esta, por sua vez, estiver conectada ao SmartPOS, o método funcionará corretamente.</li>
-</ul>
-<p>Essa função usa parâmetros padrões para abertura de gavetas Elgin. Para abrir gavetas de marcas diferentes use <a class="el" href="group___m1.html#ga82f718c7155c604104b0b2fb5e800a40" title="Abre gaveta.">AbreGaveta</a> e envie os parâmetros necessários para abertura. </p><dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
+<p>Essa função usa parâmetros padrões para abertura de gavetas Elgin. Para abrir gavetas de marcas diferentes use <a class="el" href="group___m1.html#ga82f718c7155c604104b0b2fb5e800a40" title="Abre gaveta.">AbreGaveta</a> e envie os parâmetros necessários para abertura.</p>
+<dl class="section note"><dt>Observação</dt><dd>O SmartPOS não suporta este método, uma vez que esse dispositivo não tem conector RJ-11. Se a gaveta for conectada à outra impressora térmica e esta, por sua vez, estiver conectada ao SmartPOS, o método funcionará corretamente.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>Para utilização desta função no MiniPDV M8 e M10 se faz necessário que o aplicativo solicite a permissão de armazenamento ao usuário<br  />
+ou que o usuário acesse as configurações do android, na sessão de permissões do aplicativo e habilite a opção de armazenamento.</dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
 <li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga695284e8910f01da194655a014135b58" title="IMP_Erro_Abertura_Gaveta enum -121 à -125.">IMP_Erro_Abertura_Gaveta</a>.</li>
@@ -1602,9 +1603,6 @@ A função bem sucedida deve retornar 0.<br  />
 </div><div class="memdoc">
 
 <p>Abre gaveta. </p>
-<ul>
-<li>OBS: O SmartPOS não suporta este método, uma vez que esse dispositivo não tem conector RJ-11. Se a gaveta for conectada à outra impressora térmica e esta, por sua vez, estiver conectada ao SmartPOS, o método funcionará corretamente.</li>
-</ul>
 <p>Essa função abre gavetas de acordo com os parâmetros fornecidos. </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">pino</td><td>- Indicação do pino a ser acionado.<br  />
@@ -1625,6 +1623,9 @@ A função bem sucedida deve retornar 0.<br  />
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Observação</dt><dd>O SmartPOS não suporta este método, uma vez que esse dispositivo não tem conector RJ-11. Se a gaveta for conectada à outra impressora térmica e esta, por sua vez, estiver conectada ao SmartPOS, o método funcionará corretamente.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>Para utilização desta função no MiniPDV M8 e M10 se faz necessário que o aplicativo solicite a permissão de armazenamento ao usuário<br  />
+ou que o usuário acesse as configurações do android, na sessão de permissões do aplicativo e habilite a opção de armazenamento.</dd></dl>
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
