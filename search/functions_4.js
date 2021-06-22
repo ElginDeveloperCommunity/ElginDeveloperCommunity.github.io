@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['enviaimagem_670',['EnviaImagem',['../group___m0.html#ga8ef71a5102630088a5b6af34dc92be37',1,'exportafuncoes.h']]],
-  ['enviardadosvenda_671',['EnviarDadosVenda',['../group__g2.html#ga7325dbebf3ecb15d7214008d5ffaff83',1,'exportafuncoes.h']]],
-  ['excluiimagem_672',['ExcluiImagem',['../group___m0.html#gaa33834742966c74e09d043b81f28b82a',1,'exportafuncoes.h']]],
-  ['extrairlogs_673',['ExtrairLogs',['../group__g2.html#ga2c0747e53ca09b26287ff5e9c5b623fa',1,'exportafuncoes.h']]]
+  ['enviaimagem_674',['EnviaImagem',['../group___m0.html#ga8ef71a5102630088a5b6af34dc92be37',1,'exportafuncoes.h']]],
+  ['enviardadosvenda_675',['EnviarDadosVenda',['../group__g2.html#ga7325dbebf3ecb15d7214008d5ffaff83',1,'exportafuncoes.h']]],
+  ['excluiimagem_676',['ExcluiImagem',['../group___m0.html#gaa33834742966c74e09d043b81f28b82a',1,'exportafuncoes.h']]],
+  ['extrairlogs_677',['ExtrairLogs',['../group__g2.html#ga2c0747e53ca09b26287ff5e9c5b623fa',1,'exportafuncoes.h']]]
 ];
