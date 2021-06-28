@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.7</span>
+   &#160;<span id="projectnumber">versão 2.8</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -99,6 +99,10 @@ Funções</h2></td></tr>
 <tr class="memitem:ga771504399db187272626f3171e2dc261"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s0.html#ga771504399db187272626f3171e2dc261">AbreCupomVenda</a> (const char *path_file, const char *versaoDadosEnt, const char *CNPJ_SH, const char *signAC, int numeroCaixa, const char *CNPJ_emit, const char *IE, const char *IM, const char *cRegTribISSQN, const char *indRatISSQN, const char *CNPJ_dest, const char *CPF_dest, const char *xNome_dest)</td></tr>
 <tr class="memdesc:ga771504399db187272626f3171e2dc261"><td class="mdescLeft">&#160;</td><td class="mdescRight">AbreCupomVenda Esssa função deve ser a primeira a ser chamada pela aplicação para iniciar a criação do xml de venda para o SAT.  <a href="group__s0.html#ga771504399db187272626f3171e2dc261">Mais...</a><br /></td></tr>
 <tr class="separator:ga771504399db187272626f3171e2dc261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7011e24e52c4f9b38259c1ddd95bec7"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s0.html#gaf7011e24e52c4f9b38259c1ddd95bec7">AbreCupomVenda2</a> (const char *path_root, const char *versaoDadosEnt, const char *CNPJ_SH, const char *signAC, int numeroCaixa, const char *CNPJ_emit, const char *IE, const char *IM, const char *cRegTribISSQN, const char *indRatISSQN, const char *CNPJ_dest, const char *CPF_dest, const char *xNome_dest)</td></tr>
+<tr class="memdesc:gaf7011e24e52c4f9b38259c1ddd95bec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">AbreCupomVenda2 Essa função cria o arquivo de vanda organizando os arquivos a partir do diretório informado em 'path_root'.<br  />
+.  <a href="group__s0.html#gaf7011e24e52c4f9b38259c1ddd95bec7">Mais...</a><br /></td></tr>
+<tr class="separator:gaf7011e24e52c4f9b38259c1ddd95bec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad77f4bb537baa165266c0af81116e545"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s0.html#gad77f4bb537baa165266c0af81116e545">InformaEntrega</a> (const char *path_file, const char *xLgr, const char *nro, const char *xCpl, const char *xBairro, const char *xMun, const char *UF)</td></tr>
 <tr class="memdesc:gad77f4bb537baa165266c0af81116e545"><td class="mdescLeft">&#160;</td><td class="mdescRight">InformaEntrega - Função para identificação do local de entrega. Informar apenas no caso de entrega da mercadoria em domicílio.  <a href="group__s0.html#gad77f4bb537baa165266c0af81116e545">Mais...</a><br /></td></tr>
 <tr class="separator:gad77f4bb537baa165266c0af81116e545"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,6 +213,10 @@ Caso a função seja processada com sucesso o XML usado sera atualizado com os d
 <tr class="memitem:ga8c864c85c5040162f422c6ec4659926d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s0.html#ga8c864c85c5040162f422c6ec4659926d">AbreCupomCancelamento</a> (const char *path_file, const char *chCanc, const char *CNPJ, const char *signAC, int numeroCaixa)</td></tr>
 <tr class="memdesc:ga8c864c85c5040162f422c6ec4659926d"><td class="mdescLeft">&#160;</td><td class="mdescRight">AbreCupomCancelamento Gera XML de Cancelamento para o SAT.  <a href="group__s0.html#ga8c864c85c5040162f422c6ec4659926d">Mais...</a><br /></td></tr>
 <tr class="separator:ga8c864c85c5040162f422c6ec4659926d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6acde1debf63a7845d07d71221d0b13"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s0.html#gaf6acde1debf63a7845d07d71221d0b13">AbreCupomCancelamento2</a> (const char *path_root, const char *chCanc, const char *CNPJ, const char *signAC, int numeroCaixa)</td></tr>
+<tr class="memdesc:gaf6acde1debf63a7845d07d71221d0b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">AbreCupomCancelamento2 Essa função cria o arquivo de cancelamento organizando os arquivos a partir do diretório informado em 'path_root'.<br  />
+.  <a href="group__s0.html#gaf6acde1debf63a7845d07d71221d0b13">Mais...</a><br /></td></tr>
+<tr class="separator:gaf6acde1debf63a7845d07d71221d0b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52e84c9217e6dab93eca68ac86f2f7c3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s0.html#ga52e84c9217e6dab93eca68ac86f2f7c3">FechaCupomCancelamento</a> (const char *path_file, const char *codigo_ativacao_sat)</td></tr>
 <tr class="memdesc:ga52e84c9217e6dab93eca68ac86f2f7c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">FechaCupomCancelamento Função de fechamento para cancelamento de venda. Usada para enviar o XML criado para o equipamento SAT.<br  />
 Caso a função seja processada com sucesso o XML usado sera atualizado com os dados de processamento do cancelamento no SAT.<br  />
@@ -464,6 +472,121 @@ A função bem sucedida deve retornar 0.<br  />
 <li>Para mais informações consulte a sessão de codigo de erros. </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="gaf7011e24e52c4f9b38259c1ddd95bec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf7011e24e52c4f9b38259c1ddd95bec7">&#9670;&nbsp;</a></span>AbreCupomVenda2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* AbreCupomVenda2 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path_root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>versaoDadosEnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>CNPJ_SH</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>signAC</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numeroCaixa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>CNPJ_emit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>IE</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>IM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cRegTribISSQN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>indRatISSQN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>CNPJ_dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>CPF_dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>xNome_dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AbreCupomVenda2 Essa função cria o arquivo de vanda organizando os arquivos a partir do diretório informado em 'path_root'.<br  />
+. </p>
+<p>A Estrutura criada deve ser: /XML/SAT/VENDA/yyyy/MM/dd/yyyyMMddhhmmss.xml<br  />
+onde: </p><blockquote class="doxtable">
+<p>yyyy = ANO<br  />
+MM = MÊS<br  />
+dd = DIA<br  />
+hh = HORA<br  />
+mm = MINUTO<br  />
+ss = SEGUNDO<br  />
+</p>
+</blockquote>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path_root</td><td>Caminho raiz onde a estrutura de pasta e o arquivo será gerado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Observação</dt><dd>Os demais parametros são identicos aos da função <a class="el" href="group__s0.html#ga771504399db187272626f3171e2dc261" title="AbreCupomVenda Esssa função deve ser a primeira a ser chamada pela aplicação para iniciar a criação d...">AbreCupomVenda</a></dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno dessa função deve ser o caminho absoluto onde o arquivo foi gerado. </dd></dl>
 
 </div>
 </div>
@@ -3136,6 +3259,73 @@ A função bem sucedida deve retornar 0.<br  />
 <li>Para mais informações consulte a sessão de codigo de erros. </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="gaf6acde1debf63a7845d07d71221d0b13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf6acde1debf63a7845d07d71221d0b13">&#9670;&nbsp;</a></span>AbreCupomCancelamento2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* AbreCupomCancelamento2 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path_root</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>chCanc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>CNPJ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>signAC</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numeroCaixa</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AbreCupomCancelamento2 Essa função cria o arquivo de cancelamento organizando os arquivos a partir do diretório informado em 'path_root'.<br  />
+. </p>
+<p>A Estrutura criada deve ser: /XML/SAT/CANCELAMENTO/yyyy/MM/dd/yyyyMMddhhmmss.xml<br  />
+onde: </p><blockquote class="doxtable">
+<p>yyyy = ANO<br  />
+MM = MÊS<br  />
+dd = DIA<br  />
+hh = HORA<br  />
+mm = MINUTO<br  />
+ss = SEGUNDO<br  />
+</p>
+</blockquote>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path_root</td><td>Caminho raiz onde a estrutura de pasta e o arquivo será gerado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Observação</dt><dd>Os demais parametros são identicos aos da função <a class="el" href="group__s0.html#ga8c864c85c5040162f422c6ec4659926d" title="AbreCupomCancelamento Gera XML de Cancelamento para o SAT.">AbreCupomCancelamento</a></dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno dessa função deve ser o caminho absoluto onde o arquivo foi gerado. </dd></dl>
 
 </div>
 </div>

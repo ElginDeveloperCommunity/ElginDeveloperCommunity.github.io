@@ -439,6 +439,14 @@ var group__g1 =
       [ "BAL_FALHA_AO_ENVIAR_PRECO", "group__g1.html#ggac8fd271395908a0ba0e1460d2e2ffc2aa86481cc41a08b445b6a32d7455678c98", null ],
       [ "CHAMADA_NAO_PERMITIDA", "group__g1.html#ggac8fd271395908a0ba0e1460d2e2ffc2aa82617597c8a175d238c88cdeb73f975a", null ]
     ] ],
+    [ "UTIL_Erro_Interno", "group__g1.html#gafd724a1fcc15d08d027120107767e201", [
+      [ "UTIL_DATA_INVALIDA", "group__g1.html#ggafd724a1fcc15d08d027120107767e201a911e4e571fd43563ef664841302f2834", null ],
+      [ "UTIL_ERRO_CAMINHO_ABSOLUTO", "group__g1.html#ggafd724a1fcc15d08d027120107767e201a76ffb9f4a51f435c683def4087a49697", null ],
+      [ "UTIL_EXTENSAO_INVALIDA", "group__g1.html#ggafd724a1fcc15d08d027120107767e201a4f7d48b00ce6635b77da4f1a75437619", null ],
+      [ "UTIL_TIPO_INVALIDO", "group__g1.html#ggafd724a1fcc15d08d027120107767e201a53b898c7b558725fbdc80a6aca76a8bd", null ],
+      [ "UTIL_ERRO_GERAR_ESTRUTURA", "group__g1.html#ggafd724a1fcc15d08d027120107767e201ad8ee88c283792416e981a5a41823932d", null ],
+      [ "UTIL_ERRO_ACESSAR_ESTRUTURA", "group__g1.html#ggafd724a1fcc15d08d027120107767e201a9dfeb12b1208a1e63ee38144ebc647e0", null ]
+    ] ],
     [ "SUCESSO", "group__g1.html#ga1d62492955d62c9a5cf6217bb64b9760", null ],
     [ "ERRO_DESCONHECIDO", "group__g1.html#ga159f19f65fa0d13a7cf6c75ba2766e31", null ]
 ];

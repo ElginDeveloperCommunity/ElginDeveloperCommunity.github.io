@@ -1,6 +1,7 @@
 var group__s0 =
 [
     [ "AbreCupomVenda", "group__s0.html#ga771504399db187272626f3171e2dc261", null ],
+    [ "AbreCupomVenda2", "group__s0.html#gaf7011e24e52c4f9b38259c1ddd95bec7", null ],
     [ "InformaEntrega", "group__s0.html#gad77f4bb537baa165266c0af81116e545", null ],
     [ "InformaProduto", "group__s0.html#ga11f5c8556b785241c2a004add7c49630", null ],
     [ "InformaObsFiscoDet", "group__s0.html#ga58e2fbf53ed959fd6b7f771544f34bcf", null ],
@@ -28,5 +29,6 @@ var group__s0 =
     [ "InformaInfAdic", "group__s0.html#ga8b6d51d8a85db7214bf0e6529f1920f6", null ],
     [ "FechaCupomVenda", "group__s0.html#ga955e6f25c690215026ca6d88ebae07cb", null ],
     [ "AbreCupomCancelamento", "group__s0.html#ga8c864c85c5040162f422c6ec4659926d", null ],
+    [ "AbreCupomCancelamento2", "group__s0.html#gaf6acde1debf63a7845d07d71221d0b13", null ],
     [ "FechaCupomCancelamento", "group__s0.html#ga52e84c9217e6dab93eca68ac86f2f7c3", null ]
 ];

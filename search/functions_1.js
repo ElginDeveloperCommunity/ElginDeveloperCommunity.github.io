@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bloquearsat_650',['BloquearSAT',['../group__g2.html#ga7ec222969b79dc416e9dcb3b1f89470f',1,'exportafuncoes.h']]]
+  ['bloquearsat_661',['BloquearSAT',['../group__g2.html#ga7ec222969b79dc416e9dcb3b1f89470f',1,'exportafuncoes.h']]]
 ];
