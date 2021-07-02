@@ -66,9 +66,10 @@ var searchData=
   ['erro_5fvel_5fimpressao_232',['ERRO_VEL_IMPRESSAO',['../group__g1.html#gga1a8355cf9e158adf813fc2770ea6dde8a62981fadc2ce0acd83450cc354fdbb3a',1,'codigoerro.h']]],
   ['erro_5fxsd_233',['ERRO_XSD',['../group__g1.html#ggaa2a78878de69f89d20efffa516879d4ca362f430c94ba01e22a8563241a75a577',1,'codigoerro.h']]],
   ['error_5fcorrection_5flevel_5finvalido_234',['ERROR_CORRECTION_LEVEL_INVALIDO',['../group__g1.html#ggaf06e08f141e869b84df32c20e7b08e82a109e4f2881519f1446e928e6a79ff7e3',1,'codigoerro.h']]],
-  ['este_5fjson_5fnao_5fe_5fum_5fobjeto_235',['ESTE_JSON_NAO_E_UM_OBJETO',['../group__g1.html#gga997c5e807d27e95e6e2cf73714524876a749c3d56da1aa01ac32cf25ccdeed566',1,'codigoerro.h']]],
-  ['etiqueta_236',['Etiqueta',['../group__g42.html',1,'(<em>Namespace</em> global)'],['../group___m0.html',1,'(<em>Namespace</em> global)'],['../group__ma41.html',1,'(<em>Namespace</em> global)']]],
-  ['excluiimagem_237',['ExcluiImagem',['../group___m0.html#gaa33834742966c74e09d043b81f28b82a',1,'exportafuncoes.h']]],
-  ['exemplo_238',['Exemplo',['../group__sp12.html',1,'']]],
-  ['extrairlogs_239',['ExtrairLogs',['../group__g2.html#ga2c0747e53ca09b26287ff5e9c5b623fa',1,'exportafuncoes.h']]]
+  ['espacamentoentrelinhas_235',['EspacamentoEntreLinhas',['../group___m1.html#ga6dd4083b75e9221d85c780a9a35b5168',1,'exportafuncoes.h']]],
+  ['este_5fjson_5fnao_5fe_5fum_5fobjeto_236',['ESTE_JSON_NAO_E_UM_OBJETO',['../group__g1.html#gga997c5e807d27e95e6e2cf73714524876a749c3d56da1aa01ac32cf25ccdeed566',1,'codigoerro.h']]],
+  ['etiqueta_237',['Etiqueta',['../group__g42.html',1,'(<em>Namespace</em> global)'],['../group___m0.html',1,'(<em>Namespace</em> global)'],['../group__ma41.html',1,'(<em>Namespace</em> global)']]],
+  ['excluiimagem_238',['ExcluiImagem',['../group___m0.html#gaa33834742966c74e09d043b81f28b82a',1,'exportafuncoes.h']]],
+  ['exemplo_239',['Exemplo',['../group__sp12.html',1,'']]],
+  ['extrairlogs_240',['ExtrairLogs',['../group__g2.html#ga2c0747e53ca09b26287ff5e9c5b623fa',1,'exportafuncoes.h']]]
 ];

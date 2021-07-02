@@ -2,6 +2,7 @@ var group___m1 =
 [
     [ "AbreConexaoImpressora", "group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d", null ],
     [ "FechaConexaoImpressora", "group___m1.html#ga520ec6fa932747f430c2a89bc46c8176", null ],
+    [ "EspacamentoEntreLinhas", "group___m1.html#ga6dd4083b75e9221d85c780a9a35b5168", null ],
     [ "ImpressaoTexto", "group___m1.html#ga6c9bc310ba0f45001cca6420c09e77c7", null ],
     [ "Corte", "group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade", null ],
     [ "CorteTotal", "group___m1.html#ga329c887a0b5731559d593aaa0ca0aa2b", null ],

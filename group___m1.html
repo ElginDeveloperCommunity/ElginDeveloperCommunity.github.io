@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.8</span>
+   &#160;<span id="projectnumber">versão 2.9</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -102,6 +102,9 @@ Funções</h2></td></tr>
 <tr class="memitem:ga520ec6fa932747f430c2a89bc46c8176"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m1.html#ga520ec6fa932747f430c2a89bc46c8176">FechaConexaoImpressora</a> ()</td></tr>
 <tr class="memdesc:ga520ec6fa932747f430c2a89bc46c8176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fecha conexão com a impressora.  <a href="group___m1.html#ga520ec6fa932747f430c2a89bc46c8176">Mais...</a><br /></td></tr>
 <tr class="separator:ga520ec6fa932747f430c2a89bc46c8176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6dd4083b75e9221d85c780a9a35b5168"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m1.html#ga6dd4083b75e9221d85c780a9a35b5168">EspacamentoEntreLinhas</a> (int tamanho)</td></tr>
+<tr class="memdesc:ga6dd4083b75e9221d85c780a9a35b5168"><td class="mdescLeft">&#160;</td><td class="mdescRight">EspacamentoEntreLinhas Altera o espaçamento entre linhas na impressão (line mode).  <a href="group___m1.html#ga6dd4083b75e9221d85c780a9a35b5168">Mais...</a><br /></td></tr>
+<tr class="separator:ga6dd4083b75e9221d85c780a9a35b5168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6c9bc310ba0f45001cca6420c09e77c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m1.html#ga6c9bc310ba0f45001cca6420c09e77c7">ImpressaoTexto</a> (const char *dados, int posicao, int stilo, int tamanho)</td></tr>
 <tr class="memdesc:ga6c9bc310ba0f45001cca6420c09e77c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envia informações de texto para o buffer da impressora.  <a href="group___m1.html#ga6c9bc310ba0f45001cca6420c09e77c7">Mais...</a><br /></td></tr>
 <tr class="separator:ga6c9bc310ba0f45001cca6420c09e77c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -442,6 +445,39 @@ A função bem sucedida deve retornar 0.<br  />
 <div class="line">    }]</div>
 <div class="line">}</div>
 </div><!-- fragment --><p> </b></p>
+
+</div>
+</div>
+<a id="ga6dd4083b75e9221d85c780a9a35b5168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6dd4083b75e9221d85c780a9a35b5168">&#9670;&nbsp;</a></span>EspacamentoEntreLinhas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int EspacamentoEntreLinhas </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tamanho</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EspacamentoEntreLinhas Altera o espaçamento entre linhas na impressão (line mode). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tamanho</td><td>Define espaçamento. Valor entre 1 e 255.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorno numérico que indica se a operação foi concluída com sucesso.<br  />
+A função bem sucedida deve retornar 0.<br  />
+<ul>
+<li>Consulte <b>Códigos de erro</b> para mais informações.<br  />
+</li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
