@@ -439,6 +439,16 @@ var group__g1 =
       [ "BAL_FALHA_AO_ENVIAR_PRECO", "group__g1.html#ggac8fd271395908a0ba0e1460d2e2ffc2aa86481cc41a08b445b6a32d7455678c98", null ],
       [ "CHAMADA_NAO_PERMITIDA", "group__g1.html#ggac8fd271395908a0ba0e1460d2e2ffc2aa82617597c8a175d238c88cdeb73f975a", null ]
     ] ],
+    [ "PDF_Error", "group__g1.html#ga2b9310cf04359e1e2e8d460964c499b0", [
+      [ "ZINT_NAO_CARREGADA", "group__g1.html#gga2b9310cf04359e1e2e8d460964c499b0a4f8bbcadbb54a693f3d5394fc00846f6", null ],
+      [ "ARQUIVO_NAO_FOI_ABERTO", "group__g1.html#gga2b9310cf04359e1e2e8d460964c499b0ad5aace792fb00ed7a860a82ae26d7b6a", null ],
+      [ "DIRETORIO_INVALIDO", "group__g1.html#gga2b9310cf04359e1e2e8d460964c499b0aa37700bc9d87c8fdc092ab8f1727d733", null ],
+      [ "IMPRESSORA_NAO_E_VALIDA", "group__g1.html#gga2b9310cf04359e1e2e8d460964c499b0ae0e15fd64fe5e9f717cef53b135eecc9", null ],
+      [ "FALHA_AO_CARREGAR_DOCUMENTO", "group__g1.html#gga2b9310cf04359e1e2e8d460964c499b0a3517b1311b65f2a4d318fefb7554318a", null ],
+      [ "DOCUMENTO_NAO_EXISTE", "group__g1.html#gga2b9310cf04359e1e2e8d460964c499b0aea5d3bc2ba200c1f43e5860dc71433c8", null ],
+      [ "DOCUMENTO_NAO_POSSUI_PAGINAS", "group__g1.html#gga2b9310cf04359e1e2e8d460964c499b0a526f2dbefea3ba2b9b0c0692ef75c217", null ],
+      [ "IMAGEM_NAO_FOI_GERADA", "group__g1.html#gga2b9310cf04359e1e2e8d460964c499b0a4cb98c48a825eff98e89f7377786f77a", null ]
+    ] ],
     [ "UTIL_Erro_Interno", "group__g1.html#gafd724a1fcc15d08d027120107767e201", [
       [ "UTIL_DATA_INVALIDA", "group__g1.html#ggafd724a1fcc15d08d027120107767e201a911e4e571fd43563ef664841302f2834", null ],
       [ "UTIL_ERRO_CAMINHO_ABSOLUTO", "group__g1.html#ggafd724a1fcc15d08d027120107767e201a76ffb9f4a51f435c683def4087a49697", null ],

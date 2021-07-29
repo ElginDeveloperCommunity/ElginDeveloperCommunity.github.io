@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.9</span>
+   &#160;<span id="projectnumber">versão 2.11</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -105,25 +105,45 @@ Funções</h2></td></tr>
 <tr class="memitem:gaa82f7691ba9313b73fb80357fe836e35"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35">GeraPDFNFCe</a> (char *dados, int indexcsc, char *csc, int param)</td></tr>
 <tr class="memdesc:gaa82f7691ba9313b73fb80357fe836e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gera Pdf Danfe NFCe.  <a href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35">Mais...</a><br /></td></tr>
 <tr class="separator:gaa82f7691ba9313b73fb80357fe836e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga307276d86f86a118c9b85b8207acb483"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g9.html#ga307276d86f86a118c9b85b8207acb483">ConfiguraDiretorioSaida</a> (const char *caminho)</td></tr>
+<tr class="memdesc:ga307276d86f86a118c9b85b8207acb483"><td class="mdescLeft">&#160;</td><td class="mdescRight">ConfiguraDiretorioSaida - Função usada para configurar o diretório onde serão gerados os pdf.<br  />
+A estrutura de diretório criado deve seguir conforme a seguir:<br  />
+</p><blockquote class="doxtable">
+<p>./DANFE/(SAT ou NFCe)/(VENDA ou CANCELAMENTO)/yyyy/MM/dd/yyyyMMddHHmmss.pdf </p>
+</blockquote>
+<p>onde: </p><blockquote class="doxtable">
+<p>yyyy = ANO<br  />
+MM = MÊS<br  />
+dd = DIA<br  />
+hh = HORA<br  />
+mm = MINUTO<br  />
+ss = SEGUNDO<br  />
+</p>
+</blockquote>
+ <a href="group__g9.html#ga307276d86f86a118c9b85b8207acb483">Mais...</a><br /></td></tr>
+<tr class="separator:ga307276d86f86a118c9b85b8207acb483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2785d304514f144e91123dc54c9c6747"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g9.html#ga2785d304514f144e91123dc54c9c6747">ObtemUltimoArquivo</a> ()</td></tr>
+<tr class="memdesc:ga2785d304514f144e91123dc54c9c6747"><td class="mdescLeft">&#160;</td><td class="mdescRight">ObtemUltimoArquivo - Essa função deve ser utilizada para capturar o caminho do ultimo arquivo gerado pelas funções:<br  />
+<a class="el" href="group__g9.html#gae6d6f5c757fd21edad85bc44709400c3" title="Gera PDF Danfe SAT.">GeraPDFSAT</a><br  />
+<a class="el" href="group__g9.html#ga3595ae7561d533a1d89a6167254146c1" title="Gera PDF Danfe de cancelamento SAT.">GeraPDFSATCancelamento</a><br  />
+<a class="el" href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35" title="Gera Pdf Danfe NFCe.">GeraPDFNFCe</a><br  />
+.  <a href="group__g9.html#ga2785d304514f144e91123dc54c9c6747">Mais...</a><br /></td></tr>
+<tr class="separator:ga2785d304514f144e91123dc54c9c6747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9165688669aa7633412b95b026b153ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g9.html#ga9165688669aa7633412b95b026b153ff">ImprimePDF</a> (const char *caminho)</td></tr>
+<tr class="memdesc:ga9165688669aa7633412b95b026b153ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">ImprimePDF.  <a href="group__g9.html#ga9165688669aa7633412b95b026b153ff">Mais...</a><br /></td></tr>
+<tr class="separator:ga9165688669aa7633412b95b026b153ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <p>Fornece funções para geração de Danfe NFCe e SAT. </p>
 <h1>E1 PDF Elgin</h1>
 <p>O E1 Pdf Elgin é uma solução que fornece para Automação Comercial a possibilidade de gerar Danfes no formato PDF. Essa solução possibilita a geração PDF da danfe para os XML de retornos do SAT (Sistema autorizador transmissor) para as operações de Venda e Cancelamento e também para os XML de retorno de emissão de nota fiscal do contribuinte NFCE. Além de que o usuário pode variar entre layouts diferentes de acordo com a necessidade.</p>
 <h2>Por onde começar?</h2>
-<p>Baixe o pacote da solução E1 Pdf Elgin neste link <em>aqui</em>. Através deste pacote, você poderá gerar a danfe em formato pdf se comunicando com a biblioteca (.dll).</p>
+<p>Baixe o pacote da solução E1 Pdf Elgin em github.com/elgindevelopercommunity. Através deste pacote, você poderá gerar a danfe em formato pdf se comunicando com a biblioteca (.dll).</p>
 <h3>Nomenclatura dos arquivos gerados</h3>
-<p>Os arquivos processados com sucesso são gravados em <code>workdir</code> em uma pasta chamada <code>pdf</code> seguindo os detalhes abaixo:</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">PREFIXO   </th><th class="markdownTableHeadNone">DATA   </th><th class="markdownTableHeadNone">NUMERO CUPOM   </th><th class="markdownTableHeadNone">EXTENSÃO    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>NFCe</b>   </td><td class="markdownTableBodyNone">NFCE   </td><td class="markdownTableBodyNone">DDMMAA <code>Ex:240521</code>   </td><td class="markdownTableBodyNone">000000001   </td><td class="markdownTableBodyNone">.pdf    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>SAT</b>   </td><td class="markdownTableBodyNone">CFE   </td><td class="markdownTableBodyNone">DDMMAA <code>Ex:240521</code>   </td><td class="markdownTableBodyNone">000000001   </td><td class="markdownTableBodyNone">.pdf    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>SAT CANCELAMENTO</b>   </td><td class="markdownTableBodyNone">CFE_CANCELAMENTO   </td><td class="markdownTableBodyNone">DDMMAA <code>Ex:240521</code>   </td><td class="markdownTableBodyNone">000000001   </td><td class="markdownTableBodyNone">.pdf   </td></tr>
-</table>
+<p>Os arquivos processados com sucesso são gravados em <code>workdir</code>, <br  />
+ ou em uma pasta definida pela função <a class="el" href="group__g9.html#ga307276d86f86a118c9b85b8207acb483" title="ConfiguraDiretorioSaida - Função usada para configurar o diretório onde serão gerados os pdf....">ConfiguraDiretorioSaida</a>,<br  />
+ ou no caminho definido para variavel de ambiente <code>saida_e1_pdf</code>,<br  />
+ seguindo os detalhes abaixo: ./DANFE/(SAT ou NFCe)/(VENDA ou CANCELAMENTO)/yyyy/MM/dd/yyyyMMddHHmmss.pdf</p>
 <p>Convenções usadas nas chamadas das funções da biblioteca:<br  />
 <b>Windows</b><br  />
 </p><blockquote class="doxtable">
@@ -192,7 +212,7 @@ O valor 0 não ativa nenhum bit e imprime o cupom padrão.<br  />
   </dd>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
-A função bem sucedida deve retornar 0 e o arquivo PDF será salvo em "pdf".<br  />
+A função bem sucedida deve retornar 0 e o arquivo PDF será salvo conforme definição do caminho de saída.<br  />
 <ul>
 <li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga9aa34265329d5ba253910de84799f82e" title="IMP_Erro_ValidacaoXMLSAT enum -91 à -100.">IMP_Erro_ValidacaoXMLSAT</a> ou <a class="el" href="group__g1.html#gaa2a78878de69f89d20efffa516879d4c" title="IMP_Erro_ValidacaoXML enum -71 à -80.">IMP_Erro_ValidacaoXML</a>.</li>
 </ul>
@@ -258,7 +278,7 @@ O valor 0 não ativa nenhum bit e imprime o cupom padrão.<br  />
   </dd>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
-A função bem sucedida deve retornar 0 e o arquivo PDF será salvo em "pdf".<br  />
+A função bem sucedida deve retornar 0 e o arquivo PDF será salvo conforme definição do caminho de saída.<br  />
  Informações que não estejam presentes no XML serão desconsideradas. </dd></dl>
 
 </div>
@@ -352,12 +372,109 @@ O valor 0 não ativa nenhum bit e imprime o cupom padrão.<br  />
   </dd>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
-A função bem sucedida deve retornar 0 e o arquivo PDF será salvo em "pdf".<br  />
+A função bem sucedida deve retornar 0 e o arquivo PDF será salvo conforme definição do caminho de saída.<br  />
 <ul>
 <li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#gab60bf4a0fda40a03899957b30be9de07" title="IMP_Erro_ValidacaoXMLNFCe enum -101 à -110.">IMP_Erro_ValidacaoXMLNFCe</a> ou <a class="el" href="group__g1.html#gaa2a78878de69f89d20efffa516879d4c" title="IMP_Erro_ValidacaoXML enum -71 à -80.">IMP_Erro_ValidacaoXML</a>.</li>
 </ul>
 </dd></dl>
 <p>Informações que não estejam presentes no XML serão desconsideradas. </p>
+
+</div>
+</div>
+<a id="ga307276d86f86a118c9b85b8207acb483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga307276d86f86a118c9b85b8207acb483">&#9670;&nbsp;</a></span>ConfiguraDiretorioSaida()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConfiguraDiretorioSaida </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>caminho</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ConfiguraDiretorioSaida - Função usada para configurar o diretório onde serão gerados os pdf.<br  />
+A estrutura de diretório criado deve seguir conforme a seguir:<br  />
+</p><blockquote class="doxtable">
+<p>./DANFE/(SAT ou NFCe)/(VENDA ou CANCELAMENTO)/yyyy/MM/dd/yyyyMMddHHmmss.pdf </p>
+</blockquote>
+<p>onde: </p><blockquote class="doxtable">
+<p>yyyy = ANO<br  />
+MM = MÊS<br  />
+dd = DIA<br  />
+hh = HORA<br  />
+mm = MINUTO<br  />
+ss = SEGUNDO<br  />
+</p>
+</blockquote>
+</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">caminho</td><td>Parametro para informar caminho raiz onde serão gerados os decumentos.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Observação</dt><dd>O mesmo comportamento pode ser atingido configurando uma variável de ambiente chamada <code>saida_e1_pdf</code><br  />
+com o caminho onde deve ser gerado os arquivos.<br  />
+A prioridade será da configuração será o valor da variavel de ambiente quando a mesma estiver definida.</dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
+A função bem sucedida deve retornar 0 </dd></dl>
+
+</div>
+</div>
+<a id="ga2785d304514f144e91123dc54c9c6747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2785d304514f144e91123dc54c9c6747">&#9670;&nbsp;</a></span>ObtemUltimoArquivo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* ObtemUltimoArquivo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ObtemUltimoArquivo - Essa função deve ser utilizada para capturar o caminho do ultimo arquivo gerado pelas funções:<br  />
+<a class="el" href="group__g9.html#gae6d6f5c757fd21edad85bc44709400c3" title="Gera PDF Danfe SAT.">GeraPDFSAT</a><br  />
+<a class="el" href="group__g9.html#ga3595ae7561d533a1d89a6167254146c1" title="Gera PDF Danfe de cancelamento SAT.">GeraPDFSATCancelamento</a><br  />
+<a class="el" href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35" title="Gera Pdf Danfe NFCe.">GeraPDFNFCe</a><br  />
+. </p>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno deve ser o caminho absoluto para o último arquivo gerado. </dd></dl>
+
+</div>
+</div>
+<a id="ga9165688669aa7633412b95b026b153ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9165688669aa7633412b95b026b153ff">&#9670;&nbsp;</a></span>ImprimePDF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImprimePDF </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>caminho</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ImprimePDF. </p>
+<p>Função utilzada para realizar a impressão da Danfe PDF gerado pela biblioteca E1_Pdf na impressora padrão configurada no sistema operacional. </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">caminho</td><td>- Parâmetro que recebe o caminho absoluto da Danfe PDF a ser impressa.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
+A função bem sucedida deve retornar 0 Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga2b9310cf04359e1e2e8d460964c499b0" title="The PDF_Error enum -890 à -900.">PDF_Error</a>. </dd></dl>
 
 </div>
 </div>

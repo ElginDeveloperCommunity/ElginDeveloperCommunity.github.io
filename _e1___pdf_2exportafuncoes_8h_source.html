@@ -27,8 +27,9 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.5</span>
+   &#160;<span id="projectnumber">versão 2.11</span>
    </div>
+   <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
  </tr>
  </tbody>
@@ -92,19 +93,40 @@ $(document).ready(function(){initNavTree('_e1___pdf_2exportafuncoes_8h_source.ht
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;E1_Pdf_global.h&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QGuiApplication&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">extern</span>  <span class="stringliteral">&quot;C&quot;</span>{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    E1_PDF_EXPORT __stdcall</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group__g9.html#gae6d6f5c757fd21edad85bc44709400c3">   68</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g9.html#gae6d6f5c757fd21edad85bc44709400c3">GeraPDFSAT</a>(<span class="keywordtype">char</span> *dados_xml,<span class="keywordtype">int</span> param);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    E1_PDF_EXPORT __stdcall</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="group__g9.html#ga3595ae7561d533a1d89a6167254146c1">  102</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g9.html#ga3595ae7561d533a1d89a6167254146c1">GeraPDFSATCancelamento</a>(<span class="keywordtype">char</span> *dados_xml,<span class="keywordtype">char</span>* assQRCode,<span class="keywordtype">int</span> param);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    E1_PDF_EXPORT __stdcall</div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35">  151</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35">GeraPDFNFCe</a>(<span class="keywordtype">char</span> *dados,<span class="keywordtype">int</span> indexcsc, <span class="keywordtype">char</span> *csc, <span class="keywordtype">int</span> param);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;};</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// EXPORTAFUNCOES_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifdef __WIN32</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define STDCALL __stdcall</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#elif __linux__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define STDCALL</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">extern</span>  <span class="stringliteral">&quot;C&quot;</span>{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    E1_PDF_EXPORT STDCALL</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group__g9.html#gae6d6f5c757fd21edad85bc44709400c3">   74</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g9.html#gae6d6f5c757fd21edad85bc44709400c3">GeraPDFSAT</a>(<span class="keywordtype">char</span> *dados_xml,<span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    E1_PDF_EXPORT STDCALL</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group__g9.html#ga3595ae7561d533a1d89a6167254146c1">  108</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g9.html#ga3595ae7561d533a1d89a6167254146c1">GeraPDFSATCancelamento</a>(<span class="keywordtype">char</span> *dados_xml,<span class="keywordtype">char</span>* assQRCode,<span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    E1_PDF_EXPORT STDCALL</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35">  157</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35">GeraPDFNFCe</a>(<span class="keywordtype">char</span> *dados,<span class="keywordtype">int</span> indexcsc, <span class="keywordtype">char</span> *csc, <span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    E1_PDF_EXPORT STDCALL</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="group__g9.html#ga307276d86f86a118c9b85b8207acb483">  186</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g9.html#ga307276d86f86a118c9b85b8207acb483">ConfiguraDiretorioSaida</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *caminho);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    E1_PDF_EXPORT STDCALL</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="group__g9.html#ga2785d304514f144e91123dc54c9c6747">  200</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__g9.html#ga2785d304514f144e91123dc54c9c6747">ObtemUltimoArquivo</a>();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;     E1_PDF_EXPORT STDCALL</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="group__g9.html#ga9165688669aa7633412b95b026b153ff">  216</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g9.html#ga9165688669aa7633412b95b026b153ff">ImprimePDF</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *caminho);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;};</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// EXPORTAFUNCOES_H</span></div>
+<div class="ttc" id="agroup__g9_html_ga2785d304514f144e91123dc54c9c6747"><div class="ttname"><a href="group__g9.html#ga2785d304514f144e91123dc54c9c6747">ObtemUltimoArquivo</a></div><div class="ttdeci">const char * ObtemUltimoArquivo()</div><div class="ttdoc">ObtemUltimoArquivo - Essa função deve ser utilizada para capturar o caminho do ultimo arquivo gerado ...</div></div>
+<div class="ttc" id="agroup__g9_html_ga307276d86f86a118c9b85b8207acb483"><div class="ttname"><a href="group__g9.html#ga307276d86f86a118c9b85b8207acb483">ConfiguraDiretorioSaida</a></div><div class="ttdeci">int ConfiguraDiretorioSaida(const char *caminho)</div><div class="ttdoc">ConfiguraDiretorioSaida - Função usada para configurar o diretório onde serão gerados os pdf....</div></div>
 <div class="ttc" id="agroup__g9_html_ga3595ae7561d533a1d89a6167254146c1"><div class="ttname"><a href="group__g9.html#ga3595ae7561d533a1d89a6167254146c1">GeraPDFSATCancelamento</a></div><div class="ttdeci">int GeraPDFSATCancelamento(char *dados_xml, char *assQRCode, int param)</div><div class="ttdoc">Gera PDF Danfe de cancelamento SAT.</div></div>
+<div class="ttc" id="agroup__g9_html_ga9165688669aa7633412b95b026b153ff"><div class="ttname"><a href="group__g9.html#ga9165688669aa7633412b95b026b153ff">ImprimePDF</a></div><div class="ttdeci">int ImprimePDF(const char *caminho)</div><div class="ttdoc">ImprimePDF.</div></div>
 <div class="ttc" id="agroup__g9_html_gaa82f7691ba9313b73fb80357fe836e35"><div class="ttname"><a href="group__g9.html#gaa82f7691ba9313b73fb80357fe836e35">GeraPDFNFCe</a></div><div class="ttdeci">int GeraPDFNFCe(char *dados, int indexcsc, char *csc, int param)</div><div class="ttdoc">Gera Pdf Danfe NFCe.</div></div>
 <div class="ttc" id="agroup__g9_html_gae6d6f5c757fd21edad85bc44709400c3"><div class="ttname"><a href="group__g9.html#gae6d6f5c757fd21edad85bc44709400c3">GeraPDFSAT</a></div><div class="ttdeci">int GeraPDFSAT(char *dados_xml, int param)</div><div class="ttdoc">Gera PDF Danfe SAT.</div></div>
 </div><!-- fragment --></div><!-- contents -->
