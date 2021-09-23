@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.11</span>
+   &#160;<span id="projectnumber">versão 2.12</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -114,7 +114,14 @@ Funções</h2></td></tr>
 </p>
 </blockquote>
 <p><br  />
- O exemplo abaixo ilustra como abrir uma conexão com a impressora Elgin i9 em ambiente Android, avançar 50 linhas de papel ("imprimir em branco") e fechar a conexão. </p><div class="fragment"><div class="line"><span class="keyword">import</span> com.elgin.e1.Impressora.Termica;</div>
+ Caso o tipo de conexão seja USB (<em>tipo</em> = 1), a comunicação somente será efetuada se o usuário permitir o acesso à impressora na solicitação que aparecer na tela; devido a isso, existem duas formas para chamar a função <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a>:<br  />
+<br  />
+ <b>1ª:</b> Chamá-la nos métodos de Activity <em>onCreate</em> ou <em>onResume</em> - nesse caso, a Activity sempre terá uma conexão USB aberta enquanto estiver "ativa" / em uso.<br  />
+--&gt; A função <a class="el" href="group___m1.html#ga520ec6fa932747f430c2a89bc46c8176" title="Fecha conexão com a impressora.">FechaConexaoImpressora</a> deverá ser chamada em <em>onDestroy</em> ou em <em>onStop</em>.<br  />
+<br  />
+ <b>2ª:</b> Chamá-la através de um botão - nesse caso, a comunicação USB será estabelecida somente após um clique em tal botão.<br  />
+<br  />
+ O exemplo abaixo ilustra como abrir uma conexão TCP/IP com a impressora Elgin i9 em ambiente Android, avançar 50 linhas de papel ("imprimir em branco") e fechar a conexão. </p><div class="fragment"><div class="line"><span class="keyword">import</span> com.elgin.e1.Impressora.Termica;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// ...</span></div>
 <div class="line"> </div>
@@ -126,7 +133,49 @@ Funções</h2></td></tr>
 <div class="line"> </div>
 <div class="line"><span class="comment">// ...</span></div>
 </div><!-- fragment --><p> <br  />
+ O exemplo abaixo ilustra como abrir uma conexão USB com a impressora Elgin i9 em ambiente Android, avançar 50 linhas de papel ("imprimir em branco") e fechar a conexão. </p><div class="fragment"><div class="line"><span class="comment">// ...</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">import</span> com.elgin.e1.Impressora.Termica;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">class </span>MainActivity <span class="keyword">extends</span> AppCompatActivity { <span class="comment">// AppCompatActivity e&#39; um subtipo de Activity</span></div>
+<div class="line"> </div>
+<div class="line">    @Override</div>
+<div class="line">    <span class="keyword">protected</span> <span class="keywordtype">void</span> onCreate(Bundle savedInstanceState) {</div>
+<div class="line">        super.onCreate(savedInstanceState);</div>
+<div class="line">        setContentView(R.layout.activity_main);</div>
+<div class="line"> </div>
+<div class="line">        Termica.AbreConexaoImpressora(1, <span class="stringliteral">&quot;i9&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 0);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    @Override</div>
+<div class="line">    <span class="keyword">protected</span> <span class="keywordtype">void</span> onDestroy() {</div>
+<div class="line">        super.onDestroy();</div>
+<div class="line">        Termica.FechaConexaoImpressora();</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Essa funcao pode ser chamada em um botao, por exemplo</span></div>
+<div class="line">    <span class="keyword">private</span> <span class="keywordtype">int</span> Avanca50linhas() {</div>
+<div class="line">        <span class="keywordtype">int</span> retorno = Termica.AvancaPapel(50);</div>
+<div class="line">        <span class="keywordflow">return</span> retorno;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// ...</span></div>
+</div><!-- fragment --><p> <br  />
  </p><blockquote class="doxtable">
+<p><b>Conexão / desconexão automática</b> </p>
+</blockquote>
+<p>A biblioteca E1 Android inicia e encerra conexões USB automaticamente, dispensando o usuário de chamar os métodos <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a> e <a class="el" href="group___m1.html#ga520ec6fa932747f430c2a89bc46c8176" title="Fecha conexão com a impressora.">FechaConexaoImpressora</a>, nas seguintes situações:</p><ol type="1">
+<li>Se, ao conectar uma impressora Elgin no dispositivo Android, a biblioteca E1 estiver sem uma conexão ativa;<ul>
+<li>Nesse caso, uma conexão USB é estabelecida automaticamente com a impressora conectada, desde que o usuário aceite a permissão que aparecer na tela.</li>
+</ul>
+</li>
+<li>Se a biblioteca E1 tiver uma conexão USB ativa com uma impressora Elgin e esta, por sua vez, for desligada ou desconectada do dispositivo Android.<ul>
+<li>A impressora desligada/desconectada terá sua conexão USB encerrada automaticamente.</li>
+</ul>
+</li>
+</ol>
+<blockquote class="doxtable">
 <p><b>Funções impressora térmica</b> </p>
 </blockquote>
 <p>- <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a><br  />
@@ -295,7 +344,7 @@ Funções</h2></td></tr>
  </p><dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem-sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga42887be3dd7140bef19a0ab8b8246f8b" title="IMP_Erro_ConexaoAndroid enum -171 à -180 e -391 à -400.">Erro_ConexaoAndroid</a> e #IMP_Erro_Leitura_Impressora. </li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga42887be3dd7140bef19a0ab8b8246f8b" title="IMP_Erro_ConexaoAndroid enum -171 à -180 e -391 à -400.">Erro_ConexaoAndroid</a> e <a class="el" href="group__g1.html#ga2b35be00026d04777fac00ddb2100923" title="IMP_Erro_Leitura_Impressora enum -81 à -90.">IMP_Erro_Leitura</a>. </li>
 </ul>
 </dd></dl>
 

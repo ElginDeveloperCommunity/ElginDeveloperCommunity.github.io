@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.11</span>
+   &#160;<span id="projectnumber">versão 2.12</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -99,8 +99,8 @@ $(document).ready(function(){initNavTree('group__m80.html',''); initResizable();
 <p><br  />
  Após importar a classe, suas funções poderão ser acessadas diretamente via operador ponto ("."), uma vez que seus métodos são estáticos.<br  />
 <br  />
- Para estabelecer uma comunicação com a impressora, será necessário abrir uma conexão através do método <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a>; no caso do Mini PDV M8, antes de chamar esse método, será necessário definir a <em>Activity</em> da classe que chama tal método, através da função <em>setContext</em> <em>(note que Activity é um <u>subtipo</u> de Context)</em>: </p><blockquote class="doxtable">
-<p>Termica.setContext(this); // <em><u>Upcasting</u> Activity (this) --&gt; Context (setContext)</em><br  />
+ Para estabelecer uma comunicação com a impressora, será necessário abrir uma conexão através do método <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a>; no caso do Mini PDV M8, antes de chamar esse método, será necessário definir a <em>Activity</em> da classe que chama tal método, através da função <em>setActivity</em>: </p><blockquote class="doxtable">
+<p>Termica.setActivity(this);<br  />
 Termica.AbreConexaoImpressora(6, "M8", "", 0); // <em>Argumentos ilustrativos</em><br  />
 </p>
 </blockquote>
@@ -123,7 +123,7 @@ Termica.AbreConexaoImpressora(6, "M8", "", 0); // <em>Argumentos ilustrativos</e
 <div class="line">        super.onCreate(savedInstanceState);</div>
 <div class="line">        setContentView(R.layout.activity_main);</div>
 <div class="line"> </div>
-<div class="line">        Termica.setContext(<span class="keyword">this</span>);</div>
+<div class="line">        Termica.setActivity(<span class="keyword">this</span>);</div>
 <div class="line">        Termica.AbreConexaoImpressora(6, <span class="stringliteral">&quot;M8&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 0);</div>
 <div class="line">    }</div>
 <div class="line"> </div>

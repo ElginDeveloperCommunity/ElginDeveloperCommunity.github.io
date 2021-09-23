@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['memorystatus_795',['MemoryStatus',['../group___m0.html#gad097f61cd8e7a1f6ef9a1978bb8f3849',1,'exportafuncoes.h']]],
-  ['modopadrao_796',['ModoPadrao',['../group___m1.html#ga26d6f65fe8192b33fd6df6fa4450d585',1,'exportafuncoes.h']]],
-  ['modopagina_797',['ModoPagina',['../group___m1.html#ga7e6a7e1acce3d656659a471fb6dd0458',1,'exportafuncoes.h']]]
+  ['memorystatus_804',['MemoryStatus',['../group___m0.html#gad097f61cd8e7a1f6ef9a1978bb8f3849',1,'exportafuncoes.h']]],
+  ['modopadrao_805',['ModoPadrao',['../group___m1.html#ga26d6f65fe8192b33fd6df6fa4450d585',1,'exportafuncoes.h']]],
+  ['modopagina_806',['ModoPagina',['../group___m1.html#ga7e6a7e1acce3d656659a471fb6dd0458',1,'exportafuncoes.h']]]
 ];

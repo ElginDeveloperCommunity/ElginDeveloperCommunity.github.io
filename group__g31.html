@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.11</span>
+   &#160;<span id="projectnumber">versão 2.12</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -109,7 +109,8 @@ Módulos</h2></td></tr>
 <p>- e1-vx.y.z-release.aar</p><ul>
 <li>cloudpossdk-s-1.0.2.aar // <em>necessário para comunicação com o SmartPOS</em></li>
 <li>scanner.aar // <em>necessário se for usar o Scanner do SmartPOS</em></li>
-<li>com.google.zxing/core // <em>repositório Maven, obrigatório</em> </li>
+<li>androidx.startup:startup-runtime // <em>dependência obrigatória</em></li>
+<li>com.google.zxing/core // <em>dependência obrigatória</em> </li>
 </ul>
 </blockquote>
 <p><br  />
@@ -122,6 +123,7 @@ Módulos</h2></td></tr>
 <p>implementation files('libs/scanner.aar')<br  />
 implementation files('libs/cloudpossdk-s-1.0.2.aar')<br  />
 implementation files('libs/e1-vx.y.z-release.aar')<br  />
+implementation "androidx.startup:startup-runtime:1.0.0"<br  />
 <br  />
 // <a href="https://mvnrepository.com/artifact/com.google.zxing/core">https://mvnrepository.com/artifact/com.google.zxing/core</a><br  />
 api group: 'com.google.zxing', name: 'core', version: '3.4.0'<br  />

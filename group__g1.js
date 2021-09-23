@@ -130,7 +130,8 @@ var group__g1 =
       [ "ERRO_ABERTURA_NAO_AUTORIZADA", "group__g1.html#gga869547ae805781a5cf75a8540aa14d3cadb7e846edacc0ed9c42a3d09d70e9c85", null ],
       [ "ERRO_FECHAMENTO_NAO_AUTORIZADO", "group__g1.html#gga869547ae805781a5cf75a8540aa14d3cab927b7d26d387fb81c3cebf011ccda69", null ],
       [ "ERRO_FUNCAO_NAO_CHAMADA_PELO_SERVICO", "group__g1.html#gga869547ae805781a5cf75a8540aa14d3ca4a395df8c9c1b105cf7cf9f79975e4f3", null ],
-      [ "ERRO_FUNCAO_NAO_DISPONIVEL_VIA_SERVICO", "group__g1.html#gga869547ae805781a5cf75a8540aa14d3ca34691c7397dc952c2a881c58cccc5b9d", null ]
+      [ "ERRO_FUNCAO_NAO_DISPONIVEL_VIA_SERVICO", "group__g1.html#gga869547ae805781a5cf75a8540aa14d3ca34691c7397dc952c2a881c58cccc5b9d", null ],
+      [ "ERRO_ACTIVITY_NAO_DEFINIDA", "group__g1.html#gga869547ae805781a5cf75a8540aa14d3caa891921820b94188bb185a6537c6e52c", null ]
     ] ],
     [ "IMP_Erro_PDF417", "group__g1.html#gaf06e08f141e869b84df32c20e7b08e82", [
       [ "NUMBER_COLUMNS_INVALIDO", "group__g1.html#ggaf06e08f141e869b84df32c20e7b08e82ab810a7d89db6efa088e32f83b6c2cee7", null ],

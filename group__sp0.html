@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.11</span>
+   &#160;<span id="projectnumber">versão 2.12</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -99,8 +99,8 @@ $(document).ready(function(){initNavTree('group__sp0.html',''); initResizable();
 <p><br  />
  Após importar a classe, suas funções poderão ser acessadas diretamente via operador ponto ("."), uma vez que seus métodos são estáticos.<br  />
 <br  />
- Para estabelecer uma comunicação com a impressora, será necessário abrir uma conexão através do método <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a>; no caso do SmartPOS, antes de chamar esse método, será necessário definir o <em>Context</em> da classe que chama tal método, através da função <em>setContext</em>: </p><blockquote class="doxtable">
-<p>Termica.setContext(this.getApplicationContext());<br  />
+ Para estabelecer uma comunicação com a impressora, será necessário abrir uma conexão através do método <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a>; no caso do SmartPOS, antes de chamar esse método, será necessário definir a <em>Activity</em> da classe que chama tal método, através da função <em>setActivity</em>: </p><blockquote class="doxtable">
+<p>Termica.setActivity(this);<br  />
 Termica.AbreConexaoImpressora(5, "SmartPOS", "", 0); // <em>Argumentos ilustrativos</em><br  />
 </p>
 </blockquote>
@@ -109,7 +109,7 @@ Termica.AbreConexaoImpressora(5, "SmartPOS", "", 0); // <em>Argumentos ilustrati
 <div class="line"> </div>
 <div class="line"><span class="comment">// ...</span></div>
 <div class="line"> </div>
-<div class="line">Termica.setContext(this.getApplicationContext());</div>
+<div class="line">Termica.setActivity(<span class="keyword">this</span>);</div>
 <div class="line">Termica.AbreConexaoImpressora(5, <span class="stringliteral">&quot;SmartPOS&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 0);</div>
 <div class="line"> </div>
 <div class="line">Termica.AvancaPapel(50);</div>
