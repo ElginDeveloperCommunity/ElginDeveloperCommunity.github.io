@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.12</span>
+   &#160;<span id="projectnumber">versão 2.13</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -282,11 +282,8 @@ Control ID Print ID Touch </p>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">4   </td><td class="markdownTableBodyNone">Bluetooth    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Impressora <br  />
- do SmartPOS    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">6   </td><td class="markdownTableBodyNone">Impressora <br  />
- do Mini PDV M8   </td></tr>
+<td class="markdownTableBodyNone">5   </td><td class="markdownTableBodyNone">Impressoras acopladas <br  />
+ (Android)   </td></tr>
 </table>
 <br  />
  </td></tr>
@@ -305,12 +302,11 @@ DR800<br  />
 TM_T20<br  />
 TM-T20X<br  />
 Print ID Touch<br  />
-SmartPOS<br  />
-M8<br  />
 </p>
 </blockquote>
 <ul>
 <li>NOTA: Daruma DR800 homologada com TABELA DE COMANDOS 3 com FIRMWARE 03.20.04</li>
+<li>OBS: Esse parâmetro é desconsiderado se o <b>tipo</b> da impressora for o <b>5</b>, podendo ser definido como "" (string vazia).</li>
 </ul>
 </td></tr>
     <tr><td class="paramname">conexao</td><td>- Parâmetro tipo caractere que define detalhes de conexão.<br  />
@@ -328,16 +324,15 @@ M8<br  />
 </table>
 <br  />
 <ul>
-<li>OBS: Esse parâmetro é desconsiderado se o <b>modelo</b> da impressora for o SmartPOS ou a M8, podendo ser definido como "" (string vazia).</li>
+<li>OBS: Esse parâmetro é desconsiderado se o <b>tipo</b> da impressora for o <b>5</b>, podendo ser definido como "" (string vazia).</li>
 </ul>
 </td></tr>
     <tr><td class="paramname">parametro</td><td>- Parâmetro do tipo numérico auxiliar para a conexão com a impressora.<br  />
  Utilizado para especificar <b>baudrate</b> ou <b>porta de comunicação TCP/IP.</b><br  />
 <ul>
 <li>OBS: Quando a conexão estabelecida for USB ou Bluetooth esse parâmetro é desconsiderado e pode ser definido como valor 0.<br  />
- <br  />
 </li>
-<li>OBS: Se o <b>modelo</b> da impressora for o SmartPOS ou a M8, esse parâmetro também é desconsiderado e pode ser definido com o valor 0.</li>
+<li>OBS: Esse parâmetro é desconsiderado se o <b>tipo</b> da impressora for o <b>5</b>, podendo ser definido como 0 (zero).</li>
 </ul>
 </td></tr>
   </table>
@@ -1039,7 +1034,7 @@ Valores válidos: <blockquote class="doxtable">
 </blockquote>
 <br  />
 <ul>
-<li>OBS: Se o tipo de conexão estiver definido como 5 ou 6 (impressora do SmartPOS ou do Mini PDV M8), este parâmetro definirá a largura <em>preferencial</em> do módulo, em <b>pixels</b>, e os valores válidos serão todos os números inteiros positivos (0, 1, 2, ...).<br  />
+<li>OBS: Se o <b>tipo</b> de conexão estiver definido como <b>5</b>, este parâmetro definirá a largura <em>preferencial</em> do módulo, em <b>pixels</b>, e os valores válidos serão todos os números inteiros positivos (0, 1, 2, ...).<br  />
 <br  />
  </li>
 </ul>
@@ -1052,7 +1047,7 @@ Valores válidos: <blockquote class="doxtable">
 </blockquote>
 <br  />
 <ul>
-<li>OBS: Se o tipo de conexão estiver definido como 5 ou 6 (impressora do SmartPOS ou do Mini PDV M8), este parâmetro definirá a altura <em>preferencial</em> do módulo, em <b>pixels</b>, e os valores válidos serão todos os números inteiros positivos (0, 1, 2, ...).<br  />
+<li>OBS: Se o <b>tipo</b> de conexão estiver definido como <b>5</b>, este parâmetro definirá a altura <em>preferencial</em> do módulo, em <b>pixels</b>, e os valores válidos serão todos os números inteiros positivos (0, 1, 2, ...).<br  />
 <br  />
  </li>
 </ul>

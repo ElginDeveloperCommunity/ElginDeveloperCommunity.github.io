@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.12</span>
+   &#160;<span id="projectnumber">versão 2.13</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -97,24 +97,45 @@ $(document).ready(function(){initNavTree('group__sp0.html',''); initResizable();
 </p>
 </blockquote>
 <p><br  />
- Após importar a classe, suas funções poderão ser acessadas diretamente via operador ponto ("."), uma vez que seus métodos são estáticos.<br  />
-<br  />
- Para estabelecer uma comunicação com a impressora, será necessário abrir uma conexão através do método <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a>; no caso do SmartPOS, antes de chamar esse método, será necessário definir a <em>Activity</em> da classe que chama tal método, através da função <em>setActivity</em>: </p><blockquote class="doxtable">
+ Em seguida, será necessário fazer o setup inicial da comunicação, adicionando as três linhas abaixo no método <em>onCreate</em>: </p><blockquote class="doxtable">
 <p>Termica.setActivity(this);<br  />
-Termica.AbreConexaoImpressora(5, "SmartPOS", "", 0); // <em>Argumentos ilustrativos</em><br  />
+Termica.AbreConexaoImpressora(5, "", "", 0);<br  />
+Termica.FechaConexaoImpressora(); // Caso deseje iniciar uma conexão automática com a impressora do equipamento Android, não adicione esta linha<br  />
 </p>
 </blockquote>
 <p><br  />
- O exemplo abaixo ilustra como abrir uma conexão com a impressora no SmartPOS, avançar 50 linhas de papel ("imprimir em branco") e fechar a conexão. </p><div class="fragment"><div class="line"><span class="keyword">import</span> com.elgin.e1.Impressora.Termica;</div>
+ Após importar a classe e fazer o setup, as funções poderão ser acessadas diretamente via operador ponto ("."), pois são métodos estáticos.<br  />
+Para estabelecer uma comunicação com a impressora, será necessário abrir uma conexão através do método <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a>: </p><blockquote class="doxtable">
+<p>Termica.AbreConexaoImpressora(5, "", "", 0);<br  />
+</p>
+</blockquote>
+<p><br  />
+ O exemplo a seguir ilustra como abrir uma conexão com a impressora acoplada, avançar 50 linhas de papel ("imprimir em branco") e fechar a conexão. </p><div class="fragment"><div class="line"><span class="comment">// ...</span></div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// ...</span></div>
+<div class="line"><span class="keyword">import</span> com.elgin.e1.Impressora.Termica;</div>
 <div class="line"> </div>
-<div class="line">Termica.setActivity(<span class="keyword">this</span>);</div>
-<div class="line">Termica.AbreConexaoImpressora(5, <span class="stringliteral">&quot;SmartPOS&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 0);</div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">class </span>MainActivity <span class="keyword">extends</span> AppCompatActivity { <span class="comment">// AppCompatActivity e&#39; um subtipo de Activity</span></div>
 <div class="line"> </div>
-<div class="line">Termica.AvancaPapel(50);</div>
+<div class="line">    @Override</div>
+<div class="line">    <span class="keyword">protected</span> <span class="keywordtype">void</span> onCreate(Bundle savedInstanceState) {</div>
+<div class="line">        super.onCreate(savedInstanceState);</div>
+<div class="line">        setContentView(R.layout.activity_main);</div>
 <div class="line"> </div>
-<div class="line">Termica.FechaConexaoImpressora();</div>
+<div class="line">        <span class="comment">//* SETUP INICIAL</span></div>
+<div class="line">        Termica.setActivity(<span class="keyword">this</span>);</div>
+<div class="line">        Termica.AbreConexaoImpressora(5, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 0);</div>
+<div class="line">        Termica.FechaConexaoImpressora();</div>
+<div class="line">        <span class="comment">//*</span></div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Essa funcao pode ser chamada em um botao, por exemplo</span></div>
+<div class="line">    <span class="keyword">private</span> <span class="keywordtype">int</span> abreAvancaFecha() {</div>
+<div class="line">        <span class="keywordtype">int</span> retorno = Termica.AbreConexaoImpressora(5, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 0);</div>
+<div class="line">        retorno += Termica.AvancaPapel(50);</div>
+<div class="line">        retorno += Termica.FechaConexaoImpressora();</div>
+<div class="line">        <span class="keywordflow">return</span> retorno;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// ...</span></div>
 </div><!-- fragment --><p> <br  />

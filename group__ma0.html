@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.12</span>
+   &#160;<span id="projectnumber">versão 2.13</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -144,6 +144,12 @@ Funções</h2></td></tr>
 <div class="line">        super.onCreate(savedInstanceState);</div>
 <div class="line">        setContentView(R.layout.activity_main);</div>
 <div class="line"> </div>
+<div class="line">        <span class="comment">//* SETUP INICIAL</span></div>
+<div class="line">        Termica.setActivity(<span class="keyword">this</span>);</div>
+<div class="line">        Termica.AbreConexaoImpressora(5, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 0);</div>
+<div class="line">        Termica.FechaConexaoImpressora();</div>
+<div class="line">        <span class="comment">//*</span></div>
+<div class="line"> </div>
 <div class="line">        Termica.AbreConexaoImpressora(1, <span class="stringliteral">&quot;i9&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 0);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
@@ -154,7 +160,7 @@ Funções</h2></td></tr>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Essa funcao pode ser chamada em um botao, por exemplo</span></div>
-<div class="line">    <span class="keyword">private</span> <span class="keywordtype">int</span> Avanca50linhas() {</div>
+<div class="line">    <span class="keyword">private</span> <span class="keywordtype">int</span> avanca50linhas() {</div>
 <div class="line">        <span class="keywordtype">int</span> retorno = Termica.AvancaPapel(50);</div>
 <div class="line">        <span class="keywordflow">return</span> retorno;</div>
 <div class="line">    }</div>
@@ -166,8 +172,9 @@ Funções</h2></td></tr>
 <p><b>Conexão / desconexão automática</b> </p>
 </blockquote>
 <p>A biblioteca E1 Android inicia e encerra conexões USB automaticamente, dispensando o usuário de chamar os métodos <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a> e <a class="el" href="group___m1.html#ga520ec6fa932747f430c2a89bc46c8176" title="Fecha conexão com a impressora.">FechaConexaoImpressora</a>, nas seguintes situações:</p><ol type="1">
+<li>Se, ao carregar a biblioteca E1, houver uma impressora Elgin conectada no dispositivo Android;</li>
 <li>Se, ao conectar uma impressora Elgin no dispositivo Android, a biblioteca E1 estiver sem uma conexão ativa;<ul>
-<li>Nesse caso, uma conexão USB é estabelecida automaticamente com a impressora conectada, desde que o usuário aceite a permissão que aparecer na tela.</li>
+<li>Em ambos os casos, uma conexão USB é estabelecida automaticamente com a impressora conectada, desde que o usuário aceite a permissão que aparecer na tela.</li>
 </ul>
 </li>
 <li>Se a biblioteca E1 tiver uma conexão USB ativa com uma impressora Elgin e esta, por sua vez, for desligada ou desconectada do dispositivo Android.<ul>
@@ -283,13 +290,9 @@ Funções</h2></td></tr>
 <p>Envia comandos ESCPOS direto para a porta de comunicação. </p>
 <p>Função de despejo de comandos na porta de comunicação. Essa função também recebe dados da porta de comunicação.</p><ul>
 <li>OBS: Este método não está disponível para uso com o <a class="el" href="group__g8.html">Serviço</a>.</li>
-<li>OBS: Se o tipo de conexão (definido na função <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a>) for algum dos presentes na lista abaixo, não será possível realizar a leitura da porta e os parâmetros <b>readData</b> e <b>readNum</b> podem ser definidos como <b>null</b>, pois não serão utilizados na função. <blockquote class="doxtable">
-<p>5 (SmartPOS)<br  />
-6 (Mini PDV M8)<br  />
-</p>
-</blockquote>
-<br  />
- <dl class="params"><dt>Parâmetros</dt><dd>
+<li>OBS: Se o <b>tipo</b> de conexão (definido na função <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a>) for o <b>5</b>, não será possível realizar a leitura da porta e os parâmetros <b>readData</b> e <b>readNum</b> podem ser definidos como <b>null</b>, pois não serão utilizados na função.</li>
+</ul>
+<dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">writeData</td><td>- Sequência de bytes que devem ser enviados para a porta de comunicação.<br  />
 <br  />
@@ -325,9 +328,7 @@ Funções</h2></td></tr>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Imprime o retorno de DirectIO e a resposta da impressora:</span></div>
 <div class="line">System.out.printf(<span class="stringliteral">&quot;\n Ret: %d ; Leu: %d ; Dados lidos: %s \n&quot;</span>, ret, leu.getValor(), <span class="keyword">new</span> String(ler));</div>
-</div><!-- fragment --></li>
-</ul>
-<p><br  />
+</div><!-- fragment --><p><br  />
 </p><blockquote class="doxtable">
 <p>No exemplo acima, são passados a variável <b>esc</b> e o argumento <b>3</b> à função; a variável <b>esc</b> contém o comando que o <em>DirectIO</em> enviará à impressora - um comando em ESCPOS que solicita o nome da impressora - e o valor <b>3</b>, a quantidade de bytes que devem ser escritos - no exemplo, todos os três bytes do comando armazenado na variável <b>esc</b>.<br  />
 </p>

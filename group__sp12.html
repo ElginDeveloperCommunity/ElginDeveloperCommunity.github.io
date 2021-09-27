@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.12</span>
+   &#160;<span id="projectnumber">versão 2.13</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -112,7 +112,11 @@ $(document).ready(function(){initNavTree('group__sp12.html',''); initResizable()
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Essa funcao pode ser chamada em onCreate() ou atraves de um botao, por exemplo</span></div>
-<div class="line">    <span class="keyword">public</span> <span class="keywordtype">void</span> lerCodigo(View view){</div>
+<div class="line">    <span class="keyword">public</span> <span class="keywordtype">void</span> lerCodigo(View view) {</div>
+<div class="line">        <span class="comment">/*</span></div>
+<div class="line"><span class="comment">         * Intent in e&#39; chamada com requestCode #1;</span></div>
+<div class="line"><span class="comment">         * se bem-sucedida, a Intent retorna resultCode #2</span></div>
+<div class="line"><span class="comment">         */</span></div>
 <div class="line">        Intent in = Scanner.getScanner(MainActivity.this);</div>
 <div class="line">        startActivityForResult(in, 1);</div>
 <div class="line">    }</div>
@@ -130,7 +134,7 @@ $(document).ready(function(){initNavTree('group__sp12.html',''); initResizable()
 <div class="line">                <span class="keywordflow">if</span> (result[0].equals(<span class="stringliteral">&quot;1&quot;</span>)) {</div>
 <div class="line">                    cs = <span class="stringliteral">&quot;Codigo: &quot;</span> + result[1] + <span class="stringliteral">&quot;\nTipo: &quot;</span> + result[3];</div>
 <div class="line">                    Toast.makeText(MainActivity.this, cs, Toast.LENGTH_LONG).show();</div>
-<div class="line">                }<span class="keywordflow">else</span>{</div>
+<div class="line">                } <span class="keywordflow">else</span> {</div>
 <div class="line">                    cs = <span class="stringliteral">&quot;Erro # &quot;</span> + result[0] + <span class="stringliteral">&quot; na leitura do código.&quot;</span>;</div>
 <div class="line">                    Toast.makeText(MainActivity.this, cs, Toast.LENGTH_LONG).show();</div>
 <div class="line">                }</div>
