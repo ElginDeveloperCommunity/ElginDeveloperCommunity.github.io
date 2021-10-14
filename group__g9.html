@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.13</span>
+   &#160;<span id="projectnumber">versão 2.14</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -257,7 +257,7 @@ A função bem sucedida deve retornar 0 e o arquivo PDF será salvo conforme def
 <p>Essa função recebe o XML de retorno da operação de cancelamento e os dados de assinatura do QRCode de venda, valida as informações, constrói o Danfe e realiza geração do cupom no formato PDF de acordo com a especificação da SEFAZ SP. </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">dados</td><td>- Conteúdo do XML de cancelamento retornado pelo SAT. </td></tr>
-    <tr><td class="paramname">assQRCode</td><td>- Assinatura do QRCode retornado na operação de Venda. Essa informação é necessária porque o XML de retorno da operação de venda não a contém.</td></tr>
+    <tr><td class="paramname">assQRCode</td><td>- Assinatura do QRCode retornado na operação de Venda. Essa informação é necessária porque o XML de retorno da operação de cancelamento não contém essa informação.</td></tr>
     <tr><td class="paramname">param</td><td>- Parâmetro do tipo numérico para ativar bits que modificam o cupom a ser impresso.<br  />
 <br  />
 Os bits disponíveis e seus respectivos efeitos no cupom (quando ativados) são descritos a seguir: <table class="markdownTable">
