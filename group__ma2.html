@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.14</span>
+   &#160;<span id="projectnumber">versão 2.15</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -94,41 +94,17 @@ $(document).ready(function(){initNavTree('group__ma2.html',''); initResizable();
 <p>Módulo para comunicação com o Smart SAT. </p>
 <p>Para utilizar essas funções em ambiente Android, siga os passos abaixo.</p>
 <ol type="1">
-<li>Copie a biblioteca AAR <em>libsat-release.aar</em> para o diretório <em>libs</em>, localizado no diretório do módulo que irá acessá-la.<br  />
+<li>Copie a biblioteca AAR <em>satelgin-x.x.x-release.aar</em> para o diretório <em>libs</em>, localizado no diretório do módulo que irá acessá-la.<br  />
 <br  />
 </li>
 <li>Adicione a seguinte linha na seção <em>dependencies</em>, do arquivo <em>build.gradle</em>, do módulo que usará a biblioteca (esse arquivo está no mesmo diretório da pasta <em>libs</em>): <blockquote class="doxtable">
-<p>implementation files('libs/libsat-release.aar')<br  />
-</p>
-</blockquote>
-<br  />
-</li>
-<li>Adicione a seguinte linha na seção <em>allprojects --&gt; repositories</em> do arquivo <em>build.gradle</em> "global" do projeto (localizado na pasta raiz do projeto): <blockquote class="doxtable">
-<p>maven { url "https://jitpack.io" }<br  />
-</p>
-</blockquote>
-<br  />
-</li>
-<li>Adicione a linha abaixo na seção <em>dependencies</em>, do arquivo <em>build.gradle</em>, do módulo que consumirá a biblioteca: <blockquote class="doxtable">
-<p>implementation 'com.github.felHR85:UsbSerial:4.5.2'<br  />
-</p>
-</blockquote>
-<br  />
-</li>
-<li>Adicione o service <em>br.com.elgin.sat.USBService</em> no <em>AndroidManifest</em> do módulo que utilizará as funções do SAT. Para isso, insira o trecho abaixo após a tag <em>&lt;activity&gt;</em> (referente à <em>MainActivity</em>, interna à tag <em>&lt;application&gt;</em>) no <em>AndroidManifest.xml</em> do respectivo módulo: <div class="fragment"><div class="line">&lt;service</div>
-<div class="line">    android:name=<span class="stringliteral">&quot;br.com.elgin.sat.USBService&quot;</span></div>
-<div class="line">    android:enabled=<span class="stringliteral">&quot;true&quot;</span> /&gt;</div>
-</div><!-- fragment --> <br  />
-</li>
-<li>Faça a classe <em>MainActivity</em> do projeto estender (herdar) de <em>br.com.elgin.sat.ElginSATMainActivity</em>: <blockquote class="doxtable">
-<p>import br.com.elgin.sat.ElginSATMainActivity;<br  />
-public class MainActivity extends ElginSATMainActivity { ... }<br  />
-</p>
+<p>implementation files('libs/satelgin-x.x.x-release.aar')<br  />
+implementation 'androidx.startup:startup-runtime:1.0.0' </p>
 </blockquote>
 <br  />
 </li>
 <li>Importe a classe referente a este módulo: <blockquote class="doxtable">
-<p>import com.elgin.e1.Fiscal.SAT;<br  />
+<p>import import br.com.elgin.Sat;<br  />
 </p>
 </blockquote>
 <br  />
@@ -150,23 +126,15 @@ public class MainActivity extends ElginSATMainActivity { ... }<br  />
 </li>
 <li><a class="el" href="group__g2.html#ga21cf1f3afb98ffaae26373f5639d82b4">CancelarUltimaVenda</a><br  />
 </li>
-<li>#CancelaVendaImpressaSAT<br  />
-</li>
 <li><a class="el" href="group__g2.html#ga25032686b3530a9cb5c6b65eed04d830">ConfigurarInterfaceDeRede</a><br  />
 </li>
 <li><a class="el" href="group__g2.html#gae36689e0166dec73094db328744b5153">ConsultarNumeroSessao</a><br  />
 </li>
 <li><a class="el" href="group__g2.html#gae1e6d06942146d021e89002e10c6c3db">ConsultarSat</a><br  />
 </li>
-<li>#ConsultarStatusEspecifico<br  />
-</li>
 <li><a class="el" href="group__g2.html#ga4b4ea1e75c811c3aca5a826ffbe786f3">ConsultarStatusOperacional</a><br  />
 </li>
 <li><a class="el" href="group__g2.html#gad4ef75ca65ff26c6608d4f14cacf7193">ConsultarUltimaSessaoFiscal</a><br  />
-</li>
-<li>#CriaXMLCancelamentoSAT<br  />
-</li>
-<li>#DecodificaBase64<br  />
 </li>
 <li><a class="el" href="group__g2.html#gab57bf2fc6f11c8d8103ea023fe73963e">DesbloquearSAT</a><br  />
 </li>
@@ -174,13 +142,9 @@ public class MainActivity extends ElginSATMainActivity { ... }<br  />
 </li>
 <li><a class="el" href="group__g2.html#ga2c0747e53ca09b26287ff5e9c5b623fa">ExtrairLogs</a><br  />
 </li>
-<li><a class="el" href="group__g2.html#ga5bb8fac990198ebba5a789d5d87ee8cb" title="Retorna a versão da DLL E1_SAT.">GetVersaoDLL</a><br  />
-</li>
 <li><a class="el" href="group__g2.html#ga3b6d10b9ea39a6eb754c93c6e1515ec5">TesteFimAFim</a><br  />
 </li>
 <li><a class="el" href="group__g2.html#gab51d6fbd7ae01c4ce25f8fe005d66fd6">TrocarCodigoDeAtivacao</a><br  />
-</li>
-<li>#VendaImpressaSAT<br  />
 </li>
 </ul>
 </div><!-- contents -->
