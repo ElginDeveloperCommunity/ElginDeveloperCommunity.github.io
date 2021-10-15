@@ -21,6 +21,7 @@ var group___m1 =
     [ "ImprimeXMLSAT", "group___m1.html#ga0e73b993587e826d44d95b4f2382e1f0", null ],
     [ "ImprimeXMLCancelamentoSAT", "group___m1.html#ga14dad45b993f1f7ca6b99081084a5c12", null ],
     [ "ImprimeXMLNFCe", "group___m1.html#gace248799521dc829ed65a6a60f25ab8b", null ],
+    [ "ImprimeXMLCancelamentoNFCe", "group___m1.html#ga188be53e06bbc309dfe6364c4082835f", null ],
     [ "ModoPagina", "group___m1.html#ga7e6a7e1acce3d656659a471fb6dd0458", null ],
     [ "DirecaoImpressao", "group___m1.html#ga5a040acbc7d4a42ab7714972c0579076", null ],
     [ "DefineAreaImpressao", "group___m1.html#gaaf8135997bfdaaec07de62d7ba3575f6", null ],

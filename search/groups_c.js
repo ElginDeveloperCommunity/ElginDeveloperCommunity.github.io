@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['sat_1322',['SAT',['../group__g2.html',1,'(<em>Namespace</em> global)'],['../group__g43.html',1,'(<em>Namespace</em> global)'],['../group__ma2.html',1,'(<em>Namespace</em> global)'],['../group__ma42.html',1,'(<em>Namespace</em> global)']]],
-  ['scanner_1323',['Scanner',['../group__sp1.html',1,'']]],
-  ['serviço_1324',['Serviço',['../group__g45.html',1,'(<em>Namespace</em> global)'],['../group__g8.html',1,'(<em>Namespace</em> global)'],['../group__ma4.html',1,'(<em>Namespace</em> global)']]],
-  ['smartpos_1325',['SmartPOS',['../group__g31.html',1,'(<em>Namespace</em> global)'],['../group__g460.html',1,'(<em>Namespace</em> global)']]]
+  ['sat_1324',['SAT',['../group__g2.html',1,'(<em>Namespace</em> global)'],['../group__g43.html',1,'(<em>Namespace</em> global)'],['../group__ma2.html',1,'(<em>Namespace</em> global)'],['../group__ma42.html',1,'(<em>Namespace</em> global)']]],
+  ['scanner_1325',['Scanner',['../group__sp1.html',1,'']]],
+  ['serviço_1326',['Serviço',['../group__g45.html',1,'(<em>Namespace</em> global)'],['../group__g8.html',1,'(<em>Namespace</em> global)'],['../group__ma4.html',1,'(<em>Namespace</em> global)']]],
+  ['smartpos_1327',['SmartPOS',['../group__g31.html',1,'(<em>Namespace</em> global)'],['../group__g460.html',1,'(<em>Namespace</em> global)']]]
 ];

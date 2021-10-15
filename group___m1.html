@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.15</span>
+   &#160;<span id="projectnumber">versão 2.16</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -159,6 +159,9 @@ Funções</h2></td></tr>
 <tr class="memitem:gace248799521dc829ed65a6a60f25ab8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m1.html#gace248799521dc829ed65a6a60f25ab8b">ImprimeXMLNFCe</a> (const char *dados, int indexcsc, const char *csc, int param)</td></tr>
 <tr class="memdesc:gace248799521dc829ed65a6a60f25ab8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime o Danfe NFCe.  <a href="group___m1.html#gace248799521dc829ed65a6a60f25ab8b">Mais...</a><br /></td></tr>
 <tr class="separator:gace248799521dc829ed65a6a60f25ab8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga188be53e06bbc309dfe6364c4082835f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m1.html#ga188be53e06bbc309dfe6364c4082835f">ImprimeXMLCancelamentoNFCe</a> (const char *dados, int param)</td></tr>
+<tr class="memdesc:ga188be53e06bbc309dfe6364c4082835f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ImprimeXMLCancelamentoNFCe Essa função recebe o conteúdo do XML de cancelamento do NFCe, valida o conteúdo, constrói o Danfe e realiza a impressão.  <a href="group___m1.html#ga188be53e06bbc309dfe6364c4082835f">Mais...</a><br /></td></tr>
+<tr class="separator:ga188be53e06bbc309dfe6364c4082835f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7e6a7e1acce3d656659a471fb6dd0458"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m1.html#ga7e6a7e1acce3d656659a471fb6dd0458">ModoPagina</a> ()</td></tr>
 <tr class="memdesc:ga7e6a7e1acce3d656659a471fb6dd0458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Habilita Modo Página.  <a href="group___m1.html#ga7e6a7e1acce3d656659a471fb6dd0458">Mais...</a><br /></td></tr>
 <tr class="separator:ga7e6a7e1acce3d656659a471fb6dd0458"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -343,59 +346,9 @@ Print ID Touch<br  />
 <ul>
 <li>Para mais informações consulte <a class="el" href="group__g1.html#gaaf847b41b132e891ed9cd18f57c1d54c" title="GER_Erro_Conexao enum -1 à -10.">GER_Erro_Conexao</a>, <a class="el" href="group__g1.html#gaea850727996cb617abfc4737b3d3ab23" title="GER_Erro_Conexao_Serial enum -11 à -20.">GER_Erro_Conexao_Serial</a>, <a class="el" href="group__g1.html#ga101fef66f978d7aef165a5c13a9498c7" title="GER_Erro_Conexao_USB enum -21 à -30.">GER_Erro_Conexao_USB</a> ou <a class="el" href="group__g1.html#ga783ada52f7ddd7c94d4ec1670a748ac5" title="GER_Erro_Conexao_TCP enum -31 à -40.">GER_Erro_Conexao_TCP</a><br  />
 </li>
-<li>OBS: Caso a biblioteca encontre um hardware diferente do esperado a conexão será negada e o valor -5 será retornado.</li>
+<li>OBS: Caso a biblioteca encontre um hardware diferente do esperado a conexão será negada e o valor -5 será retornado. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;tipo&quot;: 1,</div>
-<div class="line">        &quot;modelo&quot;: &quot;I9&quot;,</div>
-<div class="line">        &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">        &quot;parametro&quot;: 0</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b> <br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">        &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">        &quot;Parametros&quot;: [{</div>
-<div class="line">            &quot;tipo&quot;: 1,</div>
-<div class="line">            &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">            &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">            &quot;parametro&quot;: 0</div>
-<div class="line">        }]</div>
-<div class="line">    },</div>
-<div class="line">    {</div>
-<div class="line">        &quot;Funcao&quot;: &quot;2&quot;,</div>
-<div class="line">        &quot;Parametros&quot;: [{</div>
-<div class="line">            &quot;dados&quot;: 1,</div>
-<div class="line">            &quot;dados&quot;: 2</div>
-<div class="line">        }]</div>
-<div class="line">    },</div>
-<div class="line">    {</div>
-<div class="line">        &quot;Funcao&quot;: &quot;n&quot;,</div>
-<div class="line">        &quot;Parametros&quot;: [{</div>
-<div class="line">            &quot;dados&quot;: 1,</div>
-<div class="line">            &quot;dados&quot;: 2,</div>
-<div class="line">        }]</div>
-<div class="line">    },</div>
-<div class="line">    {</div>
-<div class="line">        &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">    }</div>
-<div class="line">   ]</div>
-<div class="line"> }</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -419,29 +372,9 @@ Print ID Touch<br  />
 <dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#gaaf847b41b132e891ed9cd18f57c1d54c" title="GER_Erro_Conexao enum -1 à -10.">GER_Erro_Conexao</a>.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#gaaf847b41b132e891ed9cd18f57c1d54c" title="GER_Erro_Conexao enum -1 à -10.">GER_Erro_Conexao</a>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">        &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -609,58 +542,7 @@ A função bem sucedida deve retornar 0.<br  />
 <blockquote class="doxtable">
 <p>* Informações em buffer serão apagadas caso a função <a class="el" href="group___m1.html#gac15aad13ce53d650c10bd74e286170ec" title="Inicializa a impressora para novas tarefas.">InicializaImpressora</a> seja executada. </p>
 </blockquote>
-<br  />
-<br  />
-<blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">   &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">   &quot;Comando&quot;: &quot;ImpressaoTexto&quot;,</div>
-<div class="line">   &quot;Parametros&quot;: [{</div>
-<div class="line">       &quot;dados&quot;: &quot;Elgin S/A&quot;,</div>
-<div class="line">       &quot;posicao&quot;: 1,</div>
-<div class="line">       &quot;stilo&quot;: 10,</div>
-<div class="line">       &quot;tamanho&quot;: 20</div>
-<div class="line">   }]</div>
-<div class="line">}</div>
-</div><!-- fragment --></li>
-<li><b><br  />
-<blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;ImpressaoTexto&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: &quot;Elgin SA\n&quot;,</div>
-<div class="line">                &quot;posicao&quot;: 1,</div>
-<div class="line">                &quot;stilo&quot;: 10,</div>
-<div class="line">                &quot;tamanho&quot;: 20</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --> </b></li>
+</li>
 </ul>
 
 </div>
@@ -698,51 +580,7 @@ A função bem sucedida deve retornar 0.<br  />
 </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;Corte&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;avanco&quot;: 10</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> <br  />
-</p><blockquote class="doxtable">
-<p><b><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;Corte&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;avanco&quot;: 10</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --> 
+
 </div>
 </div>
 <a id="ga329c887a0b5731559d593aaa0ca0aa2b"></a>
@@ -779,45 +617,7 @@ A função bem sucedida deve retornar 0.<br  />
 </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;CorteTotal&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;avanco&quot;: 10</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> <br  />
-</p><blockquote class="doxtable">
-<p><b><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;CorteTotal&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;avanco&quot;: 10</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --> 
+
 </div>
 </div>
 <a id="gace32a45c3d64239fc38f773f199ddf2e"></a>
@@ -888,55 +688,6 @@ A função bem sucedida deve retornar 0.<br  />
 <p>* O QRCode pode não ser impresso caso a área de impressão seja ultrapassada.<br  />
 Isso pode acontecer dependendo da quantidade de caracteres, tamanho do QRCode e nível de correção. </p>
 </blockquote>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;ImpressaoQRCode&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;dados&quot;: &quot;www.clubeautomacaoelgin.com.br&quot;,</div>
-<div class="line">        &quot;tamanho&quot;: 2,</div>
-<div class="line">       &quot;nivelCorrecao&quot;: 2</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;ImpressaoQRCode&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: &quot;www.clubeautomacaoelgin.com.br&quot;,</div>
-<div class="line">                &quot;tamanho&quot;: 2,</div>
-<div class="line">                &quot;nivelCorrecao&quot;: 2</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -1104,32 +855,9 @@ Valores válidos: <blockquote class="doxtable">
 <dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
 A função bem-sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações, consulte <a class="el" href="group__g1.html#gaf06e08f141e869b84df32c20e7b08e82" title="IMP_Erro_PDF417 enum -411 à -420.">IMP_Erro_PDF417</a></li>
+<li>Para mais informações, consulte <a class="el" href="group__g1.html#gaf06e08f141e869b84df32c20e7b08e82" title="IMP_Erro_PDF417 enum -411 à -420.">IMP_Erro_PDF417</a> </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo JSON para uso com Serviço. </em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [</div>
-<div class="line">        {&quot;Funcao&quot;: &quot;ImpressaoPDF417&quot;,</div>
-<div class="line">        &quot;Parametros&quot;: [</div>
-<div class="line">            {&quot;numCols&quot;: 0,</div>
-<div class="line">            &quot;numRows&quot;: 0,</div>
-<div class="line">            &quot;width&quot;: 3,</div>
-<div class="line">            &quot;height&quot;: 3,</div>
-<div class="line">            &quot;errCorLvl&quot;: 0,</div>
-<div class="line">            &quot;options&quot;: 0,</div>
-<div class="line">            &quot;dados&quot;: &quot;PDF-417&quot;</div>
-<div class="line">            }</div>
-<div class="line">        ]}</div>
-<div class="line">    ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> <br  />
-</p>
 
 </div>
 </div>
@@ -1225,62 +953,9 @@ A função bem-sucedida deve retornar 0.<br  />
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#gaadd6dde8b5904c2bdb01d2b8567ca238" title="IMP_Erro_CodigoBarras enum -61 à -70.">IMP_Erro_CodigoBarras</a>.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#gaadd6dde8b5904c2bdb01d2b8567ca238" title="IMP_Erro_CodigoBarras enum -61 à -70.">IMP_Erro_CodigoBarras</a>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;ImpressaoCodigoBarras&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;tipo&quot;: 2,</div>
-<div class="line">        &quot;dados&quot;: &quot;{C35170900246872000134590002121801051011580881&quot;,</div>
-<div class="line">        &quot;qltura&quot;: 20,</div>
-<div class="line">        &quot;largura&quot;: 1,</div>
-<div class="line">        &quot;HRI&quot;: 3</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;ImpressaoCodigoBarras&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                 &quot;tipo&quot;: 2,</div>
-<div class="line">                 &quot;dados&quot;: &quot;{C35170900246872000134590002121801051011580881&quot;,</div>
-<div class="line">                 &quot;qltura&quot;: 20,</div>
-<div class="line">                 &quot;largura&quot;: 1,</div>
-<div class="line">                 &quot;HRI&quot;: 3</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -1310,54 +985,9 @@ A função bem sucedida deve retornar 0.<br  />
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <b>Códigos de erro.</b></li>
+<li>Para mais informações sobre retorno consulte <b>Códigos de erro.</b> </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;AvancaPapel&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;linhas&quot;: 10</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AvancaPapel&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                 &quot;linhas&quot;: 10</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -1486,53 +1116,8 @@ Conforme descrição abaixo: <table class="markdownTable">
 </ul>
 </dd></dl>
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga186538095591690d8b4cea2e5ed46363" title="IMP_Erro_Status enum -126 à -130.">IMP_Erro_Status</a> ou #IMP_Erro_Leitura_Impressora.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga186538095591690d8b4cea2e5ed46363" title="IMP_Erro_Status enum -126 à -130.">IMP_Erro_Status</a> ou #IMP_Erro_Leitura_Impressora. </li>
 </ul>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;StatusImpressora&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;param&quot;: 3</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b> <br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;StatusImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                 &quot;param&quot;: 3</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -1559,48 +1144,10 @@ ou que o usuário acesse as configurações do android, na sessão de permissõe
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga695284e8910f01da194655a014135b58" title="IMP_Erro_Abertura_Gaveta enum -121 à -125.">IMP_Erro_Abertura_Gaveta</a>.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga695284e8910f01da194655a014135b58" title="IMP_Erro_Abertura_Gaveta enum -121 à -125.">IMP_Erro_Abertura_Gaveta</a>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;AbreGavetaElgin&quot;</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> <br  />
-</p><blockquote class="doxtable">
-<p><b><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreGavetaElgin&quot;</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --> 
+
 </div>
 </div>
 <a id="ga82f718c7155c604104b0b2fb5e800a40"></a>
@@ -1662,58 +1209,9 @@ ou que o usuário acesse as configurações do android, na sessão de permissõe
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga695284e8910f01da194655a014135b58" title="IMP_Erro_Abertura_Gaveta enum -121 à -125.">IMP_Erro_Abertura_Gaveta</a>.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga695284e8910f01da194655a014135b58" title="IMP_Erro_Abertura_Gaveta enum -121 à -125.">IMP_Erro_Abertura_Gaveta</a>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;AbreGaveta&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;pino&quot;: 5,</div>
-<div class="line">        &quot;ti&quot;: 50,</div>
-<div class="line">        &quot;tf&quot;: 50</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreGaveta&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;pino&quot;: 5,</div>
-<div class="line">                &quot;ti&quot;: 50,</div>
-<div class="line">                &quot;tf&quot;: 50</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -1736,48 +1234,9 @@ A função bem sucedida deve retornar 0.<br  />
 <p>Essa função inicializa a impressora para novas tarefas, redefine as configurações para o padrão da impressora e apaga as informações em buffer. </p><dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <b>Códigos de erro</b>.</li>
+<li>Para mais informações sobre retorno consulte <b>Códigos de erro</b>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">   &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">   &quot;Comando&quot;: &quot;InicializaImpressora&quot;</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;InicializaImpressora&quot;</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -1822,54 +1281,9 @@ Os valores possíveis são: <table class="markdownTable">
 </p><dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga2cc3b72b1510ab101e5cc94c48a2c981" title="IMP_Erro_Escrita_Impressora enum -41 à -50.">IMP_Erro_Escrita_Impressora</a>.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga2cc3b72b1510ab101e5cc94c48a2c981" title="IMP_Erro_Escrita_Impressora enum -41 à -50.">IMP_Erro_Escrita_Impressora</a>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;DefinePosicao&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;posicao&quot;: 2</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;DefinePosicao&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;posicao&quot;: 2</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -1928,58 +1342,9 @@ A função bem sucedida deve retornar 0.<br  />
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga733196ade50d170de34347e330c1d4e5" title="IMP_Erro_Emissao_Sinal_Sonoro enum -111 à -120.">IMP_Erro_Emissao_Sinal_Sonoro</a>.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga733196ade50d170de34347e330c1d4e5" title="IMP_Erro_Emissao_Sinal_Sonoro enum -111 à -120.">IMP_Erro_Emissao_Sinal_Sonoro</a>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;SinalSonoro&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;qtd&quot;: 5,</div>
-<div class="line">        &quot;tempoInicio&quot;: 10,</div>
-<div class="line">        &quot;tempoFim&quot;: 15</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;SinalSonoro&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;qtd&quot;: 5,</div>
-<div class="line">                &quot;tempoInicio&quot;: 10,</div>
-<div class="line">                &quot;tempoFim&quot;: 15</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -2091,56 +1456,9 @@ O upload da imagem é feito através do aplicativo Elgin Utility. </p><dl class=
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre o retorno consulte <a class="el" href="group__g1.html#gabd2708e8049494ee2601085eb9c1046d" title="IMP_Erro_Imagem enum -131 à -135.">IMP_Erro_Imagem</a>.</li>
+<li>Para mais informações sobre o retorno consulte <a class="el" href="group__g1.html#gabd2708e8049494ee2601085eb9c1046d" title="IMP_Erro_Imagem enum -131 à -135.">IMP_Erro_Imagem</a>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;ImprimeImagemMemoria&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;key&quot;: &quot;100&quot;,</div>
-<div class="line">        &quot;scala&quot;: 2</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;ImprimeImagemMemoria&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;key&quot;: &quot;100&quot;,</div>
-<div class="line">                &quot;scala&quot;: 2</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -2210,54 +1528,7 @@ A função bem sucedida deve retornar 0.<br  />
 </ul>
 </dd></dl>
 <p>Caso o XML apresente erros a função retornará a linha na qual encontrou o erro de acordo com XSD de validação.<br  />
-Informações que não estejam presentes no XML serão desconsideradas.</p>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;ImprimeXMLSAT&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;Dados&quot;: &quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;&lt;CFe&gt;&lt;infCFe Id=\&quot;CFe13190214200166000166599000162520038194198637\&quot; versao=\&quot;0.07\&quot; versaoDadosEnt=\&quot;0.07\&quot; versaoSB=\&quot;010103\&quot;&gt;&lt;ide&gt;&lt;cUF&gt;13&lt;/cUF&gt;&lt;cNF&gt;419863&lt;/cNF&gt;&lt;mod&gt;59&lt;/mod&gt;&lt;nserieSAT&gt;900016252&lt;/nserieSAT&gt;&lt;nCFe&gt;003819&lt;/nCFe&gt;&lt;dEmi&gt;20190219&lt;/dEmi&gt;&lt;hEmi&gt;085745&lt;/hEmi&gt;&lt;cDV&gt;7&lt;/cDV&gt;&lt;tpAmb&gt;2&lt;/tpAmb&gt;&lt;CNPJ&gt;16716114000172&lt;/CNPJ&gt;&lt;signAC&gt;SGR-SAT SISTEMA DE GESTAO E RETAGUARDA DO SAT&lt;/signAC&gt;&lt;assinaturaQRCODE&gt;HevsYxSTzH4u2mOaGjwqnLccBTzGvPl1DHrEWSXC68J4/4AotP7d4NRTQTmNxkqDHWPbDPTtcba39FCHRQ7Lk+MBlwuS6V1qpyP7YYIP1ECDzBj3/nZZtk4SHdcV6jMLdHVjRmKUE/d2vSznNvJQf2lG5i5gOfdNbBn2vEjNFZdRMx2PE8ZTAelZCmQpgdnvTmq31UWUboR0xVqlZjzFYV4eBt+icdmqM7MtPQpJTAlQUtiKfzYbxGBQkOfmRtIcTMadqfFXmBDOmp49nw10hbwXF0YX5L5rjr7XjBiqK8zNQNHDn36QbW+gxJGsRucO4Rqq2q3SDq4gIDn0A3l14Q==&lt;/assinaturaQRCODE&gt;&lt;numeroCaixa&gt;001&lt;/numeroCaixa&gt;&lt;/ide&gt;&lt;emit&gt;&lt;CNPJ&gt;14200166000166&lt;/CNPJ&gt;&lt;xNome&gt;ELGIN INDUSTRIAL DA AMAZONIA LTDA&lt;/xNome&gt;&lt;enderEmit&gt;&lt;xLgr&gt;AVENIDA ABIURANA&lt;/xLgr&gt;&lt;nro&gt;579&lt;/nro&gt;&lt;xBairro&gt;DIST INDUSTRIAL&lt;/xBairro&gt;&lt;xMun&gt;MANAUS&lt;/xMun&gt;&lt;CEP&gt;69075010&lt;/CEP&gt;&lt;/enderEmit&gt;&lt;IE&gt;111111111111&lt;/IE&gt;&lt;IM&gt;111111&lt;/IM&gt;&lt;cRegTrib&gt;3&lt;/cRegTrib&gt;&lt;indRatISSQN&gt;N&lt;/indRatISSQN&gt;&lt;/emit&gt;&lt;dest/&gt;&lt;det nItem=\&quot;1\&quot;&gt;&lt;prod&gt;&lt;cProd&gt;1&lt;/cProd&gt;&lt;cEAN&gt;0012345678905&lt;/cEAN&gt;&lt;xProd&gt;NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL&lt;/xProd&gt;&lt;NCM&gt;30043929&lt;/NCM&gt;&lt;CFOP&gt;5102&lt;/CFOP&gt;&lt;uCom&gt;UN&lt;/uCom&gt;&lt;qCom&gt;1.0000&lt;/qCom&gt;&lt;vUnCom&gt;4.40&lt;/vUnCom&gt;&lt;vProd&gt;4.40&lt;/vProd&gt;&lt;indRegra&gt;A&lt;/indRegra&gt;&lt;vItem&gt;4.40&lt;/vItem&gt;&lt;/prod&gt;&lt;imposto&gt;&lt;vItem12741&gt;2.00&lt;/vItem12741&gt;&lt;ICMS&gt;&lt;ICMSSN102&gt;&lt;Orig&gt;0&lt;/Orig&gt;&lt;CSOSN&gt;102&lt;/CSOSN&gt;&lt;/ICMSSN102&gt;&lt;/ICMS&gt;&lt;PIS&gt;&lt;PISAliq&gt;&lt;CST&gt;01&lt;/CST&gt;&lt;vBC&gt;4.40&lt;/vBC&gt;&lt;pPIS&gt;0.0165&lt;/pPIS&gt;&lt;vPIS&gt;0.07&lt;/vPIS&gt;&lt;/PISAliq&gt;&lt;/PIS&gt;&lt;COFINS&gt;&lt;COFINSAliq&gt;&lt;CST&gt;01&lt;/CST&gt;&lt;vBC&gt;4.40&lt;/vBC&gt;&lt;pCOFINS&gt;0.0760&lt;/pCOFINS&gt;&lt;vCOFINS&gt;0.33&lt;/vCOFINS&gt;&lt;/COFINSAliq&gt;&lt;/COFINS&gt;&lt;/imposto&gt;&lt;/det&gt;&lt;total&gt;&lt;ICMSTot&gt;&lt;vICMS&gt;0.00&lt;/vICMS&gt;&lt;vProd&gt;4.40&lt;/vProd&gt;&lt;vDesc&gt;0.00&lt;/vDesc&gt;&lt;vPIS&gt;0.07&lt;/vPIS&gt;&lt;vCOFINS&gt;0.33&lt;/vCOFINS&gt;&lt;vPISST&gt;0.00&lt;/vPISST&gt;&lt;vCOFINSST&gt;0.00&lt;/vCOFINSST&gt;&lt;vOutro&gt;0.00&lt;/vOutro&gt;&lt;/ICMSTot&gt;&lt;vCFe&gt;4.40&lt;/vCFe&gt;&lt;vCFeLei12741&gt;2.00&lt;/vCFeLei12741&gt;&lt;/total&gt;&lt;pgto&gt;&lt;MP&gt;&lt;cMP&gt;04&lt;/cMP&gt;&lt;vMP&gt;30.00&lt;/vMP&gt;&lt;/MP&gt;&lt;vTroco&gt;25.60&lt;/vTroco&gt;&lt;/pgto&gt;&lt;infAdic&gt;&lt;infCpl&gt;Nao Aceitamos Devolucoes sem este Comprovante&lt;/infCpl&gt;&lt;obsFisco xCampo=\&quot;04.04.05.04\&quot;&gt;&lt;xTexto&gt;Comete crime quem sonega&lt;/xTexto&gt;&lt;/obsFisco&gt;&lt;/infAdic&gt;&lt;/infCFe&gt;&lt;Signature xmlns=\&quot;http://www.w3.org/2000/09/xmldsig#\&quot;&gt;&lt;SignedInfo&gt;&lt;CanonicalizationMethod Algorithm=\&quot;http://www.w3.org/TR/2001/REC-xml-c14n-20010315\&quot;/&gt;&lt;SignatureMethod Algorithm=\&quot;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256\&quot;/&gt;&lt;Reference URI=\&quot;#CFe13190214200166000166599000162520038194198637\&quot;&gt;&lt;Transforms&gt;&lt;Transform Algorithm=\&quot;http://www.w3.org/2000/09/xmldsig#enveloped-signature\&quot;/&gt;&lt;Transform Algorithm=\&quot;http://www.w3.org/TR/2001/REC-xml-c14n-20010315\&quot;/&gt;&lt;/Transforms&gt;&lt;DigestMethod Algorithm=\&quot;http://www.w3.org/2001/04/xmlenc#sha256\&quot;/&gt;&lt;DigestValue&gt;3RkDPPFBvc7HTVFQ/xdEhtbNs769IDuEOnYKlFawcWs=&lt;/DigestValue&gt;&lt;/Reference&gt;&lt;/SignedInfo&gt;&lt;SignatureValue&gt;oK1VIW6YLMt8V3yY2NdxZKHlZGOS7i7DMl90sxRHfebbHqYeEeovVPOC3T6/pdfYoaUDzk4sWFz/dffWaQ6lKgF8yM44BYX63c9V1vycfM8x8hXeAAK0Iwna0pp5g75d1SZxpe4DsP+McPsppAJiv3PX1swEsr3a6B6AUJFsN9huhugf4VsWcgPPzbMdxV1K6t20/6YJr77uf2YiLrRBN6JMeTTCaKndVYIImUJjDUmV194bhYmxl2lLDJK9MqPDcfeGRC4WyW4TESfTfQYNIAFOijapZt3LHUFakkmC42NPL0lwKXvZ8Fow618vSVm1PKnoK3i76MaxE9jl8hn8GQ==&lt;/SignatureValue&gt;&lt;KeyInfo&gt;&lt;X509Data&gt;&lt;X509Certificate&gt;MIIFzTCCBLWgAwIBAgICGuowDQYJKoZIhvcNAQENBQAwaDELMAkGA1UEBhMCQlIxEjAQBgNVBAgMCVNBTyBQQVVMTzESMBAGA1UEBwwJU0FPIFBBVUxPMQ8wDQYDVQQKDAZBQ0ZVU1AxDzANBgNVBAsMBkFDRlVTUDEPMA0GA1UEAwwGQUNGVVNQMB4XDTE4MDkyMDE0MjAwOVoXDTIzMDkxOTE0MjAwOVowgbIxCzAJBgNVBAYTAkJSMREwDwYDVQQIDAhBbWF6b25hczERMA8GA1UECgwIU0VGQVotU1AxGDAWBgNVBAsMD0FDIFNBVCBTRUZBWiBTUDEoMCYGA1UECwwfQXV0b3JpZGFkZSBkZSBSZWdpc3RybyBTRUZBWiBTUDE5MDcGA1UEAwwwRUxHSU4gSU5EVVNUUklBTCBEQSBBTUFaT05JQSBMVERBOjE0MjAwMTY2MDAwMTY2MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyFisbknHWpIDQhroPXCT6SJMqSMIxP/nSlxMseAgfd56ac8Mhwl9pXAMLBdz5rq+g83TcV16GFwPTZg1x9SZAbgrGkTTepaCh7lxTh9WuwBhhYU9fBnCNwZcWRjJStNErO2phqvyq9Oc/5rwEv8Vrokff9Ck1TBvXVZIUaBcFuB9dEMVFrxfdYvaRdlfTT9xFeDaLaXZkPOW5Or0rpGap2A10blt7mhuAVbhZrsTjX5SkNRUtNHWp/72e7Q5/5K+KoHXQvlpvQKwA3oaU9ODkrVrcCAsegFDz1d3EIF1KSVf8Nx2JF5pQ7r1m97Y7bxcMukFMq4edSwI624IF6er3wIDAQABo4ICNDCCAjAwCQYDVR0TBAIwADAOBgNVHQ8BAf8EBAMCBeAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBR7TIYiwFbiCkb/P94YmH2L6ylSxjAfBgNVHSMEGDAWgBQVtOORhiQs6jNPBR4tL5O3SJfHeDATBgNVHSUEDDAKBggrBgEFBQcDAjBDBgNVHR8EPDA6MDigNqA0hjJodHRwOi8vYWNzYXQuZmF6ZW5kYS5zcC5nb3YuYnIvYWNzYXRzZWZhenNwY3JsLmNybDCBpwYIKwYBBQUHAQEEgZowgZcwNQYIKwYBBQUHMAGGKWh0dHA6Ly9vY3NwLXBpbG90LmltcHJlbnNhb2ZpY2lhbC5jb20uYnIvMF4GCCsGAQUFBzAChlJodHRwOi8vYWNzYXQtdGVzdGUuaW1wcmVuc2FvZmljaWFsLmNvbS5ici9yZXBvc2l0b3Jpby9jZXJ0aWZpY2Fkb3MvYWNzYXQtdGVzdGUucDdjMHsGA1UdIAR0MHIwcAYJKwYBBAGB7C0DMGMwYQYIKwYBBQUHAgEWVWh0dHA6Ly9hY3NhdC5pbXByZW5zYW9maWNpYWwuY29tLmJyL3JlcG9zaXRvcmlvL2RwYy9hY3NhdHNlZmF6c3AvZHBjX2Fjc2F0c2VmYXpzcC5wZGYwJAYDVR0RBB0wG6AZBgVgTAEDA6AQDA4xNDIwMDE2NjAwMDE2NjANBgkqhkiG9w0BAQ0FAAOCAQEAMHliSH9gc+1ciPx+wR3/K1WHUBOH+4/FgyHvzk3j8DMk8OGFhyYyvfiXF3gn2KrscXGuT6TY/TQxyJIZjZzujkBc5eDnRPBYOSDkiWpA5vGS2ba8OdhpZrlDfaxgQPN4mX74rEsj1/zydwkfHlObSWWwfqvQqvnvMNYqFuAgVLHfKtikRXId2wuC9uozYpBNxxNWNiCJj2VqD68KL8S1M0locZe/Sq/1HtnziWKyYmnNW6xKcE8wAXOVh13I1eNvWOr8KKPEsoyIq4LdS9TBI82OgjFH/kVWTWCI1RmoSyaw/knlrjT70AseiUHygbDBADeMKAmUi+LlSl5ppV+rrw==&lt;/X509Certificate&gt;&lt;/X509Data&gt;&lt;/KeyInfo&gt;&lt;/Signature&gt;&lt;/CFe&gt;&quot;,</div>
-<div class="line">        &quot;param&quot;: 0</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;ImprimeXMLSAT&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                 &quot;Dados&quot;: &quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;&lt;CFe&gt;&lt;infCFe Id=\&quot;CFe13190214200166000166599000162520038194198637\&quot; versao=\&quot;0.07\&quot; versaoDadosEnt=\&quot;0.07\&quot; versaoSB=\&quot;010103\&quot;&gt;&lt;ide&gt;&lt;cUF&gt;13&lt;/cUF&gt;&lt;cNF&gt;419863&lt;/cNF&gt;&lt;mod&gt;59&lt;/mod&gt;&lt;nserieSAT&gt;900016252&lt;/nserieSAT&gt;&lt;nCFe&gt;003819&lt;/nCFe&gt;&lt;dEmi&gt;20190219&lt;/dEmi&gt;&lt;hEmi&gt;085745&lt;/hEmi&gt;&lt;cDV&gt;7&lt;/cDV&gt;&lt;tpAmb&gt;2&lt;/tpAmb&gt;&lt;CNPJ&gt;16716114000172&lt;/CNPJ&gt;&lt;signAC&gt;SGR-SAT SISTEMA DE GESTAO E RETAGUARDA DO SAT&lt;/signAC&gt;&lt;assinaturaQRCODE&gt;HevsYxSTzH4u2mOaGjwqnLccBTzGvPl1DHrEWSXC68J4/4AotP7d4NRTQTmNxkqDHWPbDPTtcba39FCHRQ7Lk+MBlwuS6V1qpyP7YYIP1ECDzBj3/nZZtk4SHdcV6jMLdHVjRmKUE/d2vSznNvJQf2lG5i5gOfdNbBn2vEjNFZdRMx2PE8ZTAelZCmQpgdnvTmq31UWUboR0xVqlZjzFYV4eBt+icdmqM7MtPQpJTAlQUtiKfzYbxGBQkOfmRtIcTMadqfFXmBDOmp49nw10hbwXF0YX5L5rjr7XjBiqK8zNQNHDn36QbW+gxJGsRucO4Rqq2q3SDq4gIDn0A3l14Q==&lt;/assinaturaQRCODE&gt;&lt;numeroCaixa&gt;001&lt;/numeroCaixa&gt;&lt;/ide&gt;&lt;emit&gt;&lt;CNPJ&gt;14200166000166&lt;/CNPJ&gt;&lt;xNome&gt;ELGIN INDUSTRIAL DA AMAZONIA LTDA&lt;/xNome&gt;&lt;enderEmit&gt;&lt;xLgr&gt;AVENIDA ABIURANA&lt;/xLgr&gt;&lt;nro&gt;579&lt;/nro&gt;&lt;xBairro&gt;DIST INDUSTRIAL&lt;/xBairro&gt;&lt;xMun&gt;MANAUS&lt;/xMun&gt;&lt;CEP&gt;69075010&lt;/CEP&gt;&lt;/enderEmit&gt;&lt;IE&gt;111111111111&lt;/IE&gt;&lt;IM&gt;111111&lt;/IM&gt;&lt;cRegTrib&gt;3&lt;/cRegTrib&gt;&lt;indRatISSQN&gt;N&lt;/indRatISSQN&gt;&lt;/emit&gt;&lt;dest/&gt;&lt;det nItem=\&quot;1\&quot;&gt;&lt;prod&gt;&lt;cProd&gt;1&lt;/cProd&gt;&lt;cEAN&gt;0012345678905&lt;/cEAN&gt;&lt;xProd&gt;NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL&lt;/xProd&gt;&lt;NCM&gt;30043929&lt;/NCM&gt;&lt;CFOP&gt;5102&lt;/CFOP&gt;&lt;uCom&gt;UN&lt;/uCom&gt;&lt;qCom&gt;1.0000&lt;/qCom&gt;&lt;vUnCom&gt;4.40&lt;/vUnCom&gt;&lt;vProd&gt;4.40&lt;/vProd&gt;&lt;indRegra&gt;A&lt;/indRegra&gt;&lt;vItem&gt;4.40&lt;/vItem&gt;&lt;/prod&gt;&lt;imposto&gt;&lt;vItem12741&gt;2.00&lt;/vItem12741&gt;&lt;ICMS&gt;&lt;ICMSSN102&gt;&lt;Orig&gt;0&lt;/Orig&gt;&lt;CSOSN&gt;102&lt;/CSOSN&gt;&lt;/ICMSSN102&gt;&lt;/ICMS&gt;&lt;PIS&gt;&lt;PISAliq&gt;&lt;CST&gt;01&lt;/CST&gt;&lt;vBC&gt;4.40&lt;/vBC&gt;&lt;pPIS&gt;0.0165&lt;/pPIS&gt;&lt;vPIS&gt;0.07&lt;/vPIS&gt;&lt;/PISAliq&gt;&lt;/PIS&gt;&lt;COFINS&gt;&lt;COFINSAliq&gt;&lt;CST&gt;01&lt;/CST&gt;&lt;vBC&gt;4.40&lt;/vBC&gt;&lt;pCOFINS&gt;0.0760&lt;/pCOFINS&gt;&lt;vCOFINS&gt;0.33&lt;/vCOFINS&gt;&lt;/COFINSAliq&gt;&lt;/COFINS&gt;&lt;/imposto&gt;&lt;/det&gt;&lt;total&gt;&lt;ICMSTot&gt;&lt;vICMS&gt;0.00&lt;/vICMS&gt;&lt;vProd&gt;4.40&lt;/vProd&gt;&lt;vDesc&gt;0.00&lt;/vDesc&gt;&lt;vPIS&gt;0.07&lt;/vPIS&gt;&lt;vCOFINS&gt;0.33&lt;/vCOFINS&gt;&lt;vPISST&gt;0.00&lt;/vPISST&gt;&lt;vCOFINSST&gt;0.00&lt;/vCOFINSST&gt;&lt;vOutro&gt;0.00&lt;/vOutro&gt;&lt;/ICMSTot&gt;&lt;vCFe&gt;4.40&lt;/vCFe&gt;&lt;vCFeLei12741&gt;2.00&lt;/vCFeLei12741&gt;&lt;/total&gt;&lt;pgto&gt;&lt;MP&gt;&lt;cMP&gt;04&lt;/cMP&gt;&lt;vMP&gt;30.00&lt;/vMP&gt;&lt;/MP&gt;&lt;vTroco&gt;25.60&lt;/vTroco&gt;&lt;/pgto&gt;&lt;infAdic&gt;&lt;infCpl&gt;Nao Aceitamos Devolucoes sem este Comprovante&lt;/infCpl&gt;&lt;obsFisco xCampo=\&quot;04.04.05.04\&quot;&gt;&lt;xTexto&gt;Comete crime quem sonega&lt;/xTexto&gt;&lt;/obsFisco&gt;&lt;/infAdic&gt;&lt;/infCFe&gt;&lt;Signature xmlns=\&quot;http://www.w3.org/2000/09/xmldsig#\&quot;&gt;&lt;SignedInfo&gt;&lt;CanonicalizationMethod Algorithm=\&quot;http://www.w3.org/TR/2001/REC-xml-c14n-20010315\&quot;/&gt;&lt;SignatureMethod Algorithm=\&quot;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256\&quot;/&gt;&lt;Reference URI=\&quot;#CFe13190214200166000166599000162520038194198637\&quot;&gt;&lt;Transforms&gt;&lt;Transform Algorithm=\&quot;http://www.w3.org/2000/09/xmldsig#enveloped-signature\&quot;/&gt;&lt;Transform Algorithm=\&quot;http://www.w3.org/TR/2001/REC-xml-c14n-20010315\&quot;/&gt;&lt;/Transforms&gt;&lt;DigestMethod Algorithm=\&quot;http://www.w3.org/2001/04/xmlenc#sha256\&quot;/&gt;&lt;DigestValue&gt;3RkDPPFBvc7HTVFQ/xdEhtbNs769IDuEOnYKlFawcWs=&lt;/DigestValue&gt;&lt;/Reference&gt;&lt;/SignedInfo&gt;&lt;SignatureValue&gt;oK1VIW6YLMt8V3yY2NdxZKHlZGOS7i7DMl90sxRHfebbHqYeEeovVPOC3T6/pdfYoaUDzk4sWFz/dffWaQ6lKgF8yM44BYX63c9V1vycfM8x8hXeAAK0Iwna0pp5g75d1SZxpe4DsP+McPsppAJiv3PX1swEsr3a6B6AUJFsN9huhugf4VsWcgPPzbMdxV1K6t20/6YJr77uf2YiLrRBN6JMeTTCaKndVYIImUJjDUmV194bhYmxl2lLDJK9MqPDcfeGRC4WyW4TESfTfQYNIAFOijapZt3LHUFakkmC42NPL0lwKXvZ8Fow618vSVm1PKnoK3i76MaxE9jl8hn8GQ==&lt;/SignatureValue&gt;&lt;KeyInfo&gt;&lt;X509Data&gt;&lt;X509Certificate&gt;MIIFzTCCBLWgAwIBAgICGuowDQYJKoZIhvcNAQENBQAwaDELMAkGA1UEBhMCQlIxEjAQBgNVBAgMCVNBTyBQQVVMTzESMBAGA1UEBwwJU0FPIFBBVUxPMQ8wDQYDVQQKDAZBQ0ZVU1AxDzANBgNVBAsMBkFDRlVTUDEPMA0GA1UEAwwGQUNGVVNQMB4XDTE4MDkyMDE0MjAwOVoXDTIzMDkxOTE0MjAwOVowgbIxCzAJBgNVBAYTAkJSMREwDwYDVQQIDAhBbWF6b25hczERMA8GA1UECgwIU0VGQVotU1AxGDAWBgNVBAsMD0FDIFNBVCBTRUZBWiBTUDEoMCYGA1UECwwfQXV0b3JpZGFkZSBkZSBSZWdpc3RybyBTRUZBWiBTUDE5MDcGA1UEAwwwRUxHSU4gSU5EVVNUUklBTCBEQSBBTUFaT05JQSBMVERBOjE0MjAwMTY2MDAwMTY2MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyFisbknHWpIDQhroPXCT6SJMqSMIxP/nSlxMseAgfd56ac8Mhwl9pXAMLBdz5rq+g83TcV16GFwPTZg1x9SZAbgrGkTTepaCh7lxTh9WuwBhhYU9fBnCNwZcWRjJStNErO2phqvyq9Oc/5rwEv8Vrokff9Ck1TBvXVZIUaBcFuB9dEMVFrxfdYvaRdlfTT9xFeDaLaXZkPOW5Or0rpGap2A10blt7mhuAVbhZrsTjX5SkNRUtNHWp/72e7Q5/5K+KoHXQvlpvQKwA3oaU9ODkrVrcCAsegFDz1d3EIF1KSVf8Nx2JF5pQ7r1m97Y7bxcMukFMq4edSwI624IF6er3wIDAQABo4ICNDCCAjAwCQYDVR0TBAIwADAOBgNVHQ8BAf8EBAMCBeAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBR7TIYiwFbiCkb/P94YmH2L6ylSxjAfBgNVHSMEGDAWgBQVtOORhiQs6jNPBR4tL5O3SJfHeDATBgNVHSUEDDAKBggrBgEFBQcDAjBDBgNVHR8EPDA6MDigNqA0hjJodHRwOi8vYWNzYXQuZmF6ZW5kYS5zcC5nb3YuYnIvYWNzYXRzZWZhenNwY3JsLmNybDCBpwYIKwYBBQUHAQEEgZowgZcwNQYIKwYBBQUHMAGGKWh0dHA6Ly9vY3NwLXBpbG90LmltcHJlbnNhb2ZpY2lhbC5jb20uYnIvMF4GCCsGAQUFBzAChlJodHRwOi8vYWNzYXQtdGVzdGUuaW1wcmVuc2FvZmljaWFsLmNvbS5ici9yZXBvc2l0b3Jpby9jZXJ0aWZpY2Fkb3MvYWNzYXQtdGVzdGUucDdjMHsGA1UdIAR0MHIwcAYJKwYBBAGB7C0DMGMwYQYIKwYBBQUHAgEWVWh0dHA6Ly9hY3NhdC5pbXByZW5zYW9maWNpYWwuY29tLmJyL3JlcG9zaXRvcmlvL2RwYy9hY3NhdHNlZmF6c3AvZHBjX2Fjc2F0c2VmYXpzcC5wZGYwJAYDVR0RBB0wG6AZBgVgTAEDA6AQDA4xNDIwMDE2NjAwMDE2NjANBgkqhkiG9w0BAQ0FAAOCAQEAMHliSH9gc+1ciPx+wR3/K1WHUBOH+4/FgyHvzk3j8DMk8OGFhyYyvfiXF3gn2KrscXGuT6TY/TQxyJIZjZzujkBc5eDnRPBYOSDkiWpA5vGS2ba8OdhpZrlDfaxgQPN4mX74rEsj1/zydwkfHlObSWWwfqvQqvnvMNYqFuAgVLHfKtikRXId2wuC9uozYpBNxxNWNiCJj2VqD68KL8S1M0locZe/Sq/1HtnziWKyYmnNW6xKcE8wAXOVh13I1eNvWOr8KKPEsoyIq4LdS9TBI82OgjFH/kVWTWCI1RmoSyaw/knlrjT70AseiUHygbDBADeMKAmUi+LlSl5ppV+rrw==&lt;/X509Certificate&gt;&lt;/X509Data&gt;&lt;/KeyInfo&gt;&lt;/Signature&gt;&lt;/CFe&gt;&quot;,</div>
-<div class="line">                 &quot;param&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
+Informações que não estejam presentes no XML serão desconsideradas. </p>
 
 </div>
 </div>
@@ -2327,54 +1598,7 @@ A função bem sucedida deve retornar 0.<br  />
 </ul>
 </dd></dl>
 <p>Caso o XML apresente erros a função retornará a linha na qual encontrou o erro de acordo com XSD de validação.<br  />
-Informações que não estejam presentes no XML serão desconsideradas.</p>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;ImprimeXMLCancelamentoSAT&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;dados&quot;: &quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;&lt;CFeCanc&gt;&lt;infCFe Id=\&quot;CFe13180314200166000166599000108160001324252883\&quot; chCanc=\&quot;CFe13180314200166000166599000108160001316693175\&quot; versao=\&quot;0.07\&quot;&gt;&lt;dEmi&gt;20180305&lt;/dEmi&gt;&lt;hEmi&gt;142819&lt;/hEmi&gt;&lt;ide&gt;&lt;cUF&gt;13&lt;/cUF&gt;&lt;cNF&gt;425288&lt;/cNF&gt;&lt;mod&gt;59&lt;/mod&gt;&lt;nserieSAT&gt;900010816&lt;/nserieSAT&gt;&lt;nCFe&gt;000132&lt;/nCFe&gt;&lt;dEmi&gt;20180305&lt;/dEmi&gt;&lt;hEmi&gt;142846&lt;/hEmi&gt;&lt;cDV&gt;3&lt;/cDV&gt;&lt;CNPJ&gt;16716114000172&lt;/CNPJ&gt;&lt;signAC&gt;SGR-SAT SISTEMA DE GESTAO E RETAGUARDA DO SAT&lt;/signAC&gt;&lt;assinaturaQRCODE&gt;Q5DLkpdRijIRGY6YSSNsTWK1TztHL1vD0V1Jc4spo/CEUqICEb9SFy82ym8EhBRZjbh3btsZhF+sjHqEMR159i4agru9x6KsepK/q0E2e5xlU5cv3m1woYfgHyOkWDNcSdMsS6bBh2Bpq6s89yJ9Q6qh/J8YHi306ce9Tqb/drKvN2XdE5noRSS32TAWuaQEVd7u+TrvXlOQsE3fHR1D5f1saUwQLPSdIv01NF6Ny7jZwjCwv1uNDgGZONJdlTJ6p0ccqnZvuE70aHOI09elpjEO6Cd+orI7XHHrFCwhFhAcbalc+ZfO5b/+vkyAHS6CYVFCDtYR9Hi5qgdk31v23w==&lt;/assinaturaQRCODE&gt;&lt;numeroCaixa&gt;001&lt;/numeroCaixa&gt;&lt;/ide&gt;&lt;emit&gt;&lt;CNPJ&gt;14200166000166&lt;/CNPJ&gt;&lt;xNome&gt;ELGIN INDUSTRIAL DA AMAZONIA LTDA&lt;/xNome&gt;&lt;enderEmit&gt;&lt;xLgr&gt;AVENIDA ABIURANA&lt;/xLgr&gt;&lt;nro&gt;579&lt;/nro&gt;&lt;xBairro&gt;DIST INDUSTRIAL&lt;/xBairro&gt;&lt;xMun&gt;MANAUS&lt;/xMun&gt;&lt;CEP&gt;69075010&lt;/CEP&gt;&lt;/enderEmit&gt;&lt;IE&gt;111111111111&lt;/IE&gt;&lt;IM&gt;111111&lt;/IM&gt;&lt;/emit&gt;&lt;dest&gt;&lt;CPF&gt;14808815893&lt;/CPF&gt;&lt;/dest&gt;&lt;total&gt;&lt;vCFe&gt;3.00&lt;/vCFe&gt;&lt;/total&gt;&lt;infAdic&gt;&lt;obsFisco xCampo=\&quot;xCampo1\&quot;&gt;&lt;xTexto&gt;xTexto1&lt;/xTexto&gt;&lt;/obsFisco&gt;&lt;/infAdic&gt;&lt;/infCFe&gt;&lt;Signature xmlns=\&quot;http://www.w3.org/2000/09/xmldsig#\&quot;&gt;&lt;SignedInfo&gt;&lt;CanonicalizationMethod Algorithm=\&quot;http://www.w3.org/TR/2001/REC-xml-c14n-20010315\&quot;/&gt;&lt;SignatureMethod Algorithm=\&quot;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256\&quot;/&gt;&lt;Reference URI=\&quot;#CFe13180314200166000166599000108160001324252883\&quot;&gt;&lt;Transforms&gt;&lt;Transform Algorithm=\&quot;http://www.w3.org/2000/09/xmldsig#enveloped-signature\&quot;/&gt;&lt;Transform Algorithm=\&quot;http://www.w3.org/TR/2001/REC-xml-c14n-20010315\&quot;/&gt;&lt;/Transforms&gt;&lt;DigestMethod Algorithm=\&quot;http://www.w3.org/2001/04/xmlenc#sha256\&quot;/&gt;&lt;DigestValue&gt;pePcOYfIU+b59qGayJiJj492D9fTVhqbHEqFLDUi1Wc=&lt;/DigestValue&gt;&lt;/Reference&gt;&lt;/SignedInfo&gt;&lt;SignatureValue&gt;og35vHuErSOCB29ME4WRwdVPwps/mOUQJvk3nA4Oy//CVPIt0X/iGUZHMnJhQa4aS4c7dq5YUaE2yf8H9FY8xPkY9vDQW62ZzuM/6qSHeh9Ft09iP55T76h7iLY+QLl9FZL4WINmCikv/kzmCCi4+8miVwx1MnFiTNsgSMmzRnvAv1iVkhBogbAZES03iQIi7wZGzZDo7bFmWyXVdtNnjOke0WS0gTLhJbftpDT3gi0Muu8J+AfNjaziBMFQB3i1oN96EkpCKsT78o5Sb+uBux/bV3r79nrFk4MXzaFOgBoTqv1HF5RVNx2nWSoZrbpAV8zPB1icnAnfb4Qfh1oJdA==&lt;/SignatureValue&gt;&lt;KeyInfo&gt;&lt;X509Data&gt;&lt;X509Certificate&gt;MIIFzTCCBLWgAwIBAgICESswDQYJKoZIhvcNAQENBQAwaDELMAkGA1UEBhMCQlIxEjAQBgNVBAgMCVNBTyBQQVVMTzESMBAGA1UEBwwJU0FPIFBBVUxPMQ8wDQYDVQQKDAZBQ0ZVU1AxDzANBgNVBAsMBkFDRlVTUDEPMA0GA1UEAwwGQUNGVVNQMB4XDTE3MDEyNzEzMzMyMloXDTIyMDEyNjEzMzMyMlowgbIxCzAJBgNVBAYTAkJSMREwDwYDVQQIDAhBbWF6b25hczERMA8GA1UECgwIU0VGQVotU1AxGDAWBgNVBAsMD0FDIFNBVCBTRUZBWiBTUDEoMCYGA1UECwwfQXV0b3JpZGFkZSBkZSBSZWdpc3RybyBTRUZBWiBTUDE5MDcGA1UEAwwwRUxHSU4gSU5EVVNUUklBTCBEQSBBTUFaT05JQSBMVERBOjE0MjAwMTY2MDAwMTY2MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtyLG8URyX8fqjOQa+rj3Rl6Z6eIX/dndhNe0rw6inNAXt06HtXQslBqnReuSanN3ssgpV6oev0ikfXA7hhmpZM7qVigTJp3+h1K9vKUlPZ5ELT36yAokpxakIyYRy5ELjP4KwFrAjQUgB6xu5X/MOoUmBKRLIiwm3wh7kUA9jZArQGD4pRknuvFuQ99ot3y6u3lI7Oa2ZqJ1P2E7NBmfdswQL8VG51by0Weivugsv3xWAHvdXZmmOrmv2W5C2U2VnsTjA3p2zQVwitZBEh6JxqLE3KljXlokbhHb1m2moSbzRLCdAJHIq/6eWL8kl2OVWViECODGoYA0Qz0wSgk/vwIDAQABo4ICNDCCAjAwCQYDVR0TBAIwADAOBgNVHQ8BAf8EBAMCBeAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBTIeTKrUS19raxSgeeIHYSXclNYkDAfBgNVHSMEGDAWgBQVtOORhiQs6jNPBR4tL5O3SJfHeDATBgNVHSUEDDAKBggrBgEFBQcDAjBDBgNVHR8EPDA6MDigNqA0hjJodHRwOi8vYWNzYXQuZmF6ZW5kYS5zcC5nb3YuYnIvYWNzYXRzZWZhenNwY3JsLmNybDCBpwYIKwYBBQUHAQEEgZowgZcwNQYIKwYBBQUHMAGGKWh0dHA6Ly9vY3NwLXBpbG90LmltcHJlbnNhb2ZpY2lhbC5jb20uYnIvMF4GCCsGAQUFBzAChlJodHRwOi8vYWNzYXQtdGVzdGUuaW1wcmVuc2FvZmljaWFsLmNvbS5ici9yZXBvc2l0b3Jpby9jZXJ0aWZpY2Fkb3MvYWNzYXQtdGVzdGUucDdjMHsGA1UdIAR0MHIwcAYJKwYBBAGB7C0DMGMwYQYIKwYBBQUHAgEWVWh0dHA6Ly9hY3NhdC5pbXByZW5zYW9maWNpYWwuY29tLmJyL3JlcG9zaXRvcmlvL2RwYy9hY3NhdHNlZmF6c3AvZHBjX2Fjc2F0c2VmYXpzcC5wZGYwJAYDVR0RBB0wG6AZBgVgTAEDA6AQDA4xNDIwMDE2NjAwMDE2NjANBgkqhkiG9w0BAQ0FAAOCAQEAAhF7TLbDABp5MH0qTDWA73xEPt20Ohw28gnqdhUsQAII2gGSLt7D+0hvtr7X8K8gDS0hfEkv34sZ+YS9nuLQ7S1LbKGRUymphUZhAfOomYvGS56RIG3NMKnjLIxAPOHiuzauX1b/OwDRmHThgPVF4s+JZYt6tQLESEWtIjKadIr4ozUXI2AcWJZL1cKc/NI7Vx7l6Ji/66f8l4Qx704evTqN+PjzZbFNFvbdCeC3H3fKhVSj/75tmK2TBnqzdc6e1hrjwqQuxNCopUSV1EJSiW/LR+t3kfSoIuQCPhaiccJdAUMIqethyyfo0ie7oQSn9IfSms8aI4lh2BYNR1mf5w==&lt;/X509Certificate&gt;&lt;/X509Data&gt;&lt;/KeyInfo&gt;&lt;/Signature&gt;&lt;/CFeCanc&gt;&quot;,</div>
-<div class="line">        &quot;assQRCode&quot;: &quot;blcamrPugGfK1VV8ixHUyfgh66vhzH7hVURbW1BaHR4eBHHtWBaZmcUuxSdpkaSl8WZ9umJkhJ4JXfKCAxJrJSRqQ6ZPpdFvEEnInJGbZ71mnM0ofTsN4+kJwem8Ky/nagqHSrZnVP3mr3L4j8c5eaiarSqu4tjgXSNnbhfntwhB8RNTxx1irsTZeJmqFOeQJ+XSkkW+ScWbGMw+gRlsI2ZTJgxaaTha1v6cltDscdeKuCYfVgu5U+WqffbAZrb9mw71rY4ccARpHo8c7qn+dEknS5f5LSfnm7llosFhlOwK+wvFKV47PRvrIHZStUxPZSw2F5FPq+IRtfvrB2EAuA==&quot;</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;ImprimeXMLCancelamentoSAT&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                 &quot;dados&quot;: &quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;&lt;CFeCanc&gt;&lt;infCFe Id=\&quot;CFe13180314200166000166599000108160001324252883\&quot; chCanc=\&quot;CFe13180314200166000166599000108160001316693175\&quot; versao=\&quot;0.07\&quot;&gt;&lt;dEmi&gt;20180305&lt;/dEmi&gt;&lt;hEmi&gt;142819&lt;/hEmi&gt;&lt;ide&gt;&lt;cUF&gt;13&lt;/cUF&gt;&lt;cNF&gt;425288&lt;/cNF&gt;&lt;mod&gt;59&lt;/mod&gt;&lt;nserieSAT&gt;900010816&lt;/nserieSAT&gt;&lt;nCFe&gt;000132&lt;/nCFe&gt;&lt;dEmi&gt;20180305&lt;/dEmi&gt;&lt;hEmi&gt;142846&lt;/hEmi&gt;&lt;cDV&gt;3&lt;/cDV&gt;&lt;CNPJ&gt;16716114000172&lt;/CNPJ&gt;&lt;signAC&gt;SGR-SAT SISTEMA DE GESTAO E RETAGUARDA DO SAT&lt;/signAC&gt;&lt;assinaturaQRCODE&gt;Q5DLkpdRijIRGY6YSSNsTWK1TztHL1vD0V1Jc4spo/CEUqICEb9SFy82ym8EhBRZjbh3btsZhF+sjHqEMR159i4agru9x6KsepK/q0E2e5xlU5cv3m1woYfgHyOkWDNcSdMsS6bBh2Bpq6s89yJ9Q6qh/J8YHi306ce9Tqb/drKvN2XdE5noRSS32TAWuaQEVd7u+TrvXlOQsE3fHR1D5f1saUwQLPSdIv01NF6Ny7jZwjCwv1uNDgGZONJdlTJ6p0ccqnZvuE70aHOI09elpjEO6Cd+orI7XHHrFCwhFhAcbalc+ZfO5b/+vkyAHS6CYVFCDtYR9Hi5qgdk31v23w==&lt;/assinaturaQRCODE&gt;&lt;numeroCaixa&gt;001&lt;/numeroCaixa&gt;&lt;/ide&gt;&lt;emit&gt;&lt;CNPJ&gt;14200166000166&lt;/CNPJ&gt;&lt;xNome&gt;ELGIN INDUSTRIAL DA AMAZONIA LTDA&lt;/xNome&gt;&lt;enderEmit&gt;&lt;xLgr&gt;AVENIDA ABIURANA&lt;/xLgr&gt;&lt;nro&gt;579&lt;/nro&gt;&lt;xBairro&gt;DIST INDUSTRIAL&lt;/xBairro&gt;&lt;xMun&gt;MANAUS&lt;/xMun&gt;&lt;CEP&gt;69075010&lt;/CEP&gt;&lt;/enderEmit&gt;&lt;IE&gt;111111111111&lt;/IE&gt;&lt;IM&gt;111111&lt;/IM&gt;&lt;/emit&gt;&lt;dest&gt;&lt;CPF&gt;14808815893&lt;/CPF&gt;&lt;/dest&gt;&lt;total&gt;&lt;vCFe&gt;3.00&lt;/vCFe&gt;&lt;/total&gt;&lt;infAdic&gt;&lt;obsFisco xCampo=\&quot;xCampo1\&quot;&gt;&lt;xTexto&gt;xTexto1&lt;/xTexto&gt;&lt;/obsFisco&gt;&lt;/infAdic&gt;&lt;/infCFe&gt;&lt;Signature xmlns=\&quot;http://www.w3.org/2000/09/xmldsig#\&quot;&gt;&lt;SignedInfo&gt;&lt;CanonicalizationMethod Algorithm=\&quot;http://www.w3.org/TR/2001/REC-xml-c14n-20010315\&quot;/&gt;&lt;SignatureMethod Algorithm=\&quot;http://www.w3.org/2001/04/xmldsig-more#rsa-sha256\&quot;/&gt;&lt;Reference URI=\&quot;#CFe13180314200166000166599000108160001324252883\&quot;&gt;&lt;Transforms&gt;&lt;Transform Algorithm=\&quot;http://www.w3.org/2000/09/xmldsig#enveloped-signature\&quot;/&gt;&lt;Transform Algorithm=\&quot;http://www.w3.org/TR/2001/REC-xml-c14n-20010315\&quot;/&gt;&lt;/Transforms&gt;&lt;DigestMethod Algorithm=\&quot;http://www.w3.org/2001/04/xmlenc#sha256\&quot;/&gt;&lt;DigestValue&gt;pePcOYfIU+b59qGayJiJj492D9fTVhqbHEqFLDUi1Wc=&lt;/DigestValue&gt;&lt;/Reference&gt;&lt;/SignedInfo&gt;&lt;SignatureValue&gt;og35vHuErSOCB29ME4WRwdVPwps/mOUQJvk3nA4Oy//CVPIt0X/iGUZHMnJhQa4aS4c7dq5YUaE2yf8H9FY8xPkY9vDQW62ZzuM/6qSHeh9Ft09iP55T76h7iLY+QLl9FZL4WINmCikv/kzmCCi4+8miVwx1MnFiTNsgSMmzRnvAv1iVkhBogbAZES03iQIi7wZGzZDo7bFmWyXVdtNnjOke0WS0gTLhJbftpDT3gi0Muu8J+AfNjaziBMFQB3i1oN96EkpCKsT78o5Sb+uBux/bV3r79nrFk4MXzaFOgBoTqv1HF5RVNx2nWSoZrbpAV8zPB1icnAnfb4Qfh1oJdA==&lt;/SignatureValue&gt;&lt;KeyInfo&gt;&lt;X509Data&gt;&lt;X509Certificate&gt;MIIFzTCCBLWgAwIBAgICESswDQYJKoZIhvcNAQENBQAwaDELMAkGA1UEBhMCQlIxEjAQBgNVBAgMCVNBTyBQQVVMTzESMBAGA1UEBwwJU0FPIFBBVUxPMQ8wDQYDVQQKDAZBQ0ZVU1AxDzANBgNVBAsMBkFDRlVTUDEPMA0GA1UEAwwGQUNGVVNQMB4XDTE3MDEyNzEzMzMyMloXDTIyMDEyNjEzMzMyMlowgbIxCzAJBgNVBAYTAkJSMREwDwYDVQQIDAhBbWF6b25hczERMA8GA1UECgwIU0VGQVotU1AxGDAWBgNVBAsMD0FDIFNBVCBTRUZBWiBTUDEoMCYGA1UECwwfQXV0b3JpZGFkZSBkZSBSZWdpc3RybyBTRUZBWiBTUDE5MDcGA1UEAwwwRUxHSU4gSU5EVVNUUklBTCBEQSBBTUFaT05JQSBMVERBOjE0MjAwMTY2MDAwMTY2MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtyLG8URyX8fqjOQa+rj3Rl6Z6eIX/dndhNe0rw6inNAXt06HtXQslBqnReuSanN3ssgpV6oev0ikfXA7hhmpZM7qVigTJp3+h1K9vKUlPZ5ELT36yAokpxakIyYRy5ELjP4KwFrAjQUgB6xu5X/MOoUmBKRLIiwm3wh7kUA9jZArQGD4pRknuvFuQ99ot3y6u3lI7Oa2ZqJ1P2E7NBmfdswQL8VG51by0Weivugsv3xWAHvdXZmmOrmv2W5C2U2VnsTjA3p2zQVwitZBEh6JxqLE3KljXlokbhHb1m2moSbzRLCdAJHIq/6eWL8kl2OVWViECODGoYA0Qz0wSgk/vwIDAQABo4ICNDCCAjAwCQYDVR0TBAIwADAOBgNVHQ8BAf8EBAMCBeAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBTIeTKrUS19raxSgeeIHYSXclNYkDAfBgNVHSMEGDAWgBQVtOORhiQs6jNPBR4tL5O3SJfHeDATBgNVHSUEDDAKBggrBgEFBQcDAjBDBgNVHR8EPDA6MDigNqA0hjJodHRwOi8vYWNzYXQuZmF6ZW5kYS5zcC5nb3YuYnIvYWNzYXRzZWZhenNwY3JsLmNybDCBpwYIKwYBBQUHAQEEgZowgZcwNQYIKwYBBQUHMAGGKWh0dHA6Ly9vY3NwLXBpbG90LmltcHJlbnNhb2ZpY2lhbC5jb20uYnIvMF4GCCsGAQUFBzAChlJodHRwOi8vYWNzYXQtdGVzdGUuaW1wcmVuc2FvZmljaWFsLmNvbS5ici9yZXBvc2l0b3Jpby9jZXJ0aWZpY2Fkb3MvYWNzYXQtdGVzdGUucDdjMHsGA1UdIAR0MHIwcAYJKwYBBAGB7C0DMGMwYQYIKwYBBQUHAgEWVWh0dHA6Ly9hY3NhdC5pbXByZW5zYW9maWNpYWwuY29tLmJyL3JlcG9zaXRvcmlvL2RwYy9hY3NhdHNlZmF6c3AvZHBjX2Fjc2F0c2VmYXpzcC5wZGYwJAYDVR0RBB0wG6AZBgVgTAEDA6AQDA4xNDIwMDE2NjAwMDE2NjANBgkqhkiG9w0BAQ0FAAOCAQEAAhF7TLbDABp5MH0qTDWA73xEPt20Ohw28gnqdhUsQAII2gGSLt7D+0hvtr7X8K8gDS0hfEkv34sZ+YS9nuLQ7S1LbKGRUymphUZhAfOomYvGS56RIG3NMKnjLIxAPOHiuzauX1b/OwDRmHThgPVF4s+JZYt6tQLESEWtIjKadIr4ozUXI2AcWJZL1cKc/NI7Vx7l6Ji/66f8l4Qx704evTqN+PjzZbFNFvbdCeC3H3fKhVSj/75tmK2TBnqzdc6e1hrjwqQuxNCopUSV1EJSiW/LR+t3kfSoIuQCPhaiccJdAUMIqethyyfo0ie7oQSn9IfSms8aI4lh2BYNR1mf5w==&lt;/X509Certificate&gt;&lt;/X509Data&gt;&lt;/KeyInfo&gt;&lt;/Signature&gt;&lt;/CFeCanc&gt;&quot;,</div>
-<div class="line">                 &quot;assQRCode&quot;: &quot;blcamrPugGfK1VV8ixHUyfgh66vhzH7hVURbW1BaHR4eBHHtWBaZmcUuxSdpkaSl8WZ9umJkhJ4JXfKCAxJrJSRqQ6ZPpdFvEEnInJGbZ71mnM0ofTsN4+kJwem8Ky/nagqHSrZnVP3mr3L4j8c5eaiarSqu4tjgXSNnbhfntwhB8RNTxx1irsTZeJmqFOeQJ+XSkkW+ScWbGMw+gRlsI2ZTJgxaaTha1v6cltDscdeKuCYfVgu5U+WqffbAZrb9mw71rY4ccARpHo8c7qn+dEknS5f5LSfnm7llosFhlOwK+wvFKV47PRvrIHZStUxPZSw2F5FPq+IRtfvrB2EAuA==&quot;</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
+Informações que não estejam presentes no XML serão desconsideradas. </p>
 
 </div>
 </div>
@@ -2472,62 +1696,54 @@ O valor 0 não ativa nenhum bit e imprime o cupom padrão.<br  />
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#gab60bf4a0fda40a03899957b30be9de07" title="IMP_Erro_ValidacaoXMLNFCe enum -101 à -110.">IMP_Erro_ValidacaoXMLNFCe</a> ou <a class="el" href="group__g1.html#gaa2a78878de69f89d20efffa516879d4c" title="IMP_Erro_ValidacaoXML enum -71 à -80.">IMP_Erro_ValidacaoXML</a>.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#gab60bf4a0fda40a03899957b30be9de07" title="IMP_Erro_ValidacaoXMLNFCe enum -101 à -110.">IMP_Erro_ValidacaoXMLNFCe</a> ou <a class="el" href="group__g1.html#gaa2a78878de69f89d20efffa516879d4c" title="IMP_Erro_ValidacaoXML enum -71 à -80.">IMP_Erro_ValidacaoXML</a>. </li>
 </ul>
 </dd></dl>
-<p>Caso o XML apresente erros a função retornará a linha na qual encontrou o erro de acordo com XSD de validação.<br  />
-Informações que não estejam presentes no XML serão desconsideradas.</p>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;ImprimeXMLNFCe&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;dados&quot;: &quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;&lt;nfeProc versao=\&quot;4.00\&quot; xmlns=\&quot;http://www.portalfiscal.inf.br/nfe\&quot;&gt;&lt;NFe xmlns=\&quot;http://www.portalfiscal.inf.br/nfe\&quot;&gt;&lt;infNFe versao=\&quot;4.00\&quot; Id=\&quot;NFe33180705481336000137651000000916401000005909\&quot;&gt;&lt;ide&gt;&lt;cUF&gt;33&lt;/cUF&gt;&lt;cNF&gt;00000590&lt;/cNF&gt;&lt;natOp&gt;VENDA CONSUMIDOR&lt;/natOp&gt;&lt;mod&gt;65&lt;/mod&gt;&lt;serie&gt;100&lt;/serie&gt;&lt;nNF&gt;91640&lt;/nNF&gt;&lt;dhEmi&gt;2018-07-03T15:03:09-03:00&lt;/dhEmi&gt;&lt;tpNF&gt;1&lt;/tpNF&gt;&lt;idDest&gt;1&lt;/idDest&gt;&lt;cMunFG&gt;3304557&lt;/cMunFG&gt;&lt;tpImp&gt;4&lt;/tpImp&gt;&lt;tpEmis&gt;1&lt;/tpEmis&gt;&lt;cDV&gt;9&lt;/cDV&gt;&lt;tpAmb&gt;2&lt;/tpAmb&gt;&lt;finNFe&gt;1&lt;/finNFe&gt;&lt;indFinal&gt;1&lt;/indFinal&gt;&lt;indPres&gt;1&lt;/indPres&gt;&lt;procEmi&gt;0&lt;/procEmi&gt;&lt;verProc&gt;DJPDV 1.5.4&lt;/verProc&gt;&lt;/ide&gt;&lt;emit&gt;&lt;CNPJ&gt;00000000000000&lt;/CNPJ&gt;&lt;xNome&gt;Automacao Comercial&lt;/xNome&gt;&lt;xFant&gt;SYSTEM&lt;/xFant&gt;&lt;enderEmit&gt;&lt;xLgr&gt;Avenida ABC&lt;/xLgr&gt;&lt;nro&gt;70&lt;/nro&gt;&lt;xBairro&gt;Centro&lt;/xBairro&gt;&lt;cMun&gt;3304557&lt;/cMun&gt;&lt;xMun&gt;Rio de Janeiro&lt;/xMun&gt;&lt;UF&gt;RJ&lt;/UF&gt;&lt;CEP&gt;20071001&lt;/CEP&gt;&lt;cPais&gt;1058&lt;/cPais&gt;&lt;xPais&gt;BRASIL&lt;/xPais&gt;&lt;fone&gt;1133835927&lt;/fone&gt;&lt;/enderEmit&gt;&lt;IE&gt;11111111&lt;/IE&gt;&lt;IM&gt;0000000&lt;/IM&gt;&lt;CRT&gt;1&lt;/CRT&gt;&lt;/emit&gt;&lt;det nItem=\&quot;1\&quot;&gt;&lt;prod&gt;&lt;cProd&gt;1&lt;/cProd&gt;&lt;cEAN&gt;SEM GTIN&lt;/cEAN&gt;&lt;xProd&gt;NOTA FISCAL EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL&lt;/xProd&gt;&lt;NCM&gt;01022911&lt;/NCM&gt;&lt;cBenef&gt;1234567890&lt;/cBenef&gt;&lt;CFOP&gt;5102&lt;/CFOP&gt;&lt;uCom&gt;UN&lt;/uCom&gt;&lt;qCom&gt;10.0000&lt;/qCom&gt;&lt;vUnCom&gt;1.0000000000&lt;/vUnCom&gt;&lt;vProd&gt;10.00&lt;/vProd&gt;&lt;cEANTrib&gt;SEM GTIN&lt;/cEANTrib&gt;&lt;uTrib&gt;UN&lt;/uTrib&gt;&lt;qTrib&gt;10.0000&lt;/qTrib&gt;&lt;vUnTrib&gt;1.0000000000&lt;/vUnTrib&gt;&lt;indTot&gt;1&lt;/indTot&gt;&lt;/prod&gt;&lt;imposto&gt;&lt;vTotTrib&gt;1.62&lt;/vTotTrib&gt;&lt;ICMS&gt;&lt;ICMSSN102&gt;&lt;orig&gt;0&lt;/orig&gt;&lt;CSOSN&gt;102&lt;/CSOSN&gt;&lt;/ICMSSN102&gt;&lt;/ICMS&gt;&lt;PIS&gt;&lt;PISOutr&gt;&lt;CST&gt;49&lt;/CST&gt;&lt;vBC&gt;0.00&lt;/vBC&gt;&lt;pPIS&gt;0.0000&lt;/pPIS&gt;&lt;vPIS&gt;0.00&lt;/vPIS&gt;&lt;/PISOutr&gt;&lt;/PIS&gt;&lt;COFINS&gt;&lt;COFINSOutr&gt;&lt;CST&gt;49&lt;/CST&gt;&lt;vBC&gt;0.00&lt;/vBC&gt;&lt;pCOFINS&gt;0.0000&lt;/pCOFINS&gt;&lt;vCOFINS&gt;0.00&lt;/vCOFINS&gt;&lt;/COFINSOutr&gt;&lt;/COFINS&gt;&lt;/imposto&gt;&lt;infAdProd&gt;TESTE DE COMPLEMENTO A SER IMPRESSO NO CFE, COM PRODUTO COM DESCRICAO DE 120 CARACTERES&lt;/infAdProd&gt;&lt;/det&gt;&lt;total&gt;&lt;ICMSTot&gt;&lt;vBC&gt;0.00&lt;/vBC&gt;&lt;vICMS&gt;0.00&lt;/vICMS&gt;&lt;vICMSDeson&gt;0.00&lt;/vICMSDeson&gt;&lt;vFCP&gt;0.00&lt;/vFCP&gt;&lt;vBCST&gt;0.00&lt;/vBCST&gt;&lt;vST&gt;0.00&lt;/vST&gt;&lt;vFCPST&gt;0.00&lt;/vFCPST&gt;&lt;vFCPSTRet&gt;0.00&lt;/vFCPSTRet&gt;&lt;vProd&gt;10.00&lt;/vProd&gt;&lt;vFrete&gt;0.00&lt;/vFrete&gt;&lt;vSeg&gt;0.00&lt;/vSeg&gt;&lt;vDesc&gt;0.00&lt;/vDesc&gt;&lt;vII&gt;0.00&lt;/vII&gt;&lt;vIPI&gt;0.00&lt;/vIPI&gt;&lt;vIPIDevol&gt;0.00&lt;/vIPIDevol&gt;&lt;vPIS&gt;0.00&lt;/vPIS&gt;&lt;vCOFINS&gt;0.00&lt;/vCOFINS&gt;&lt;vOutro&gt;0.00&lt;/vOutro&gt;&lt;vNF&gt;10.00&lt;/vNF&gt;&lt;vTotTrib&gt;1.62&lt;/vTotTrib&gt;&lt;/ICMSTot&gt;&lt;/total&gt;&lt;transp&gt;&lt;modFrete&gt;9&lt;/modFrete&gt;&lt;/transp&gt;&lt;pag&gt;&lt;detPag&gt;&lt;tPag&gt;03&lt;/tPag&gt;&lt;vPag&gt;2.01&lt;/vPag&gt;&lt;card&gt;&lt;tpIntegra&gt;1&lt;/tpIntegra&gt;&lt;CNPJ&gt;84477152000170&lt;/CNPJ&gt;&lt;tBand&gt;01&lt;/tBand&gt;&lt;cAut&gt;000030034&lt;/cAut&gt;&lt;/card&gt;&lt;/detPag&gt;&lt;detPag&gt;&lt;tPag&gt;02&lt;/tPag&gt;&lt;vPag&gt;0.99&lt;/vPag&gt;&lt;/detPag&gt;&lt;detPag&gt;&lt;tPag&gt;01&lt;/tPag&gt;&lt;vPag&gt;3.00&lt;/vPag&gt;&lt;/detPag&gt;&lt;detPag&gt;&lt;tPag&gt;04&lt;/tPag&gt;&lt;vPag&gt;4.00&lt;/vPag&gt;&lt;card&gt;&lt;tpIntegra&gt;2&lt;/tpIntegra&gt;&lt;/card&gt;&lt;/detPag&gt;&lt;/pag&gt;&lt;infAdic&gt;&lt;infCpl&gt;Trib aprox R$:0,42 Federal, 1,20 Estadual;Fonte:IBPT F3W1D7;&lt;/infCpl&gt;&lt;/infAdic&gt;&lt;/infNFe&gt;&lt;Signature xmlns=\&quot;http://www.w3.org/2000/09/xmldsig#\&quot;&gt;&lt;SignedInfo&gt;&lt;CanonicalizationMethod Algorithm=\&quot;http://www.w3.org/TR/2001/REC-xml-c14n-20010315\&quot;/&gt;&lt;SignatureMethod Algorithm=\&quot;http://www.w3.org/2000/09/xmldsig#rsa-sha1\&quot;/&gt;&lt;Reference URI=\&quot;#NFe33180705481336000137651000000916401000005909\&quot;&gt;&lt;Transforms&gt;&lt;Transform Algorithm=\&quot;http://www.w3.org/2000/09/xmldsig#enveloped-signature\&quot;/&gt;&lt;Transform Algorithm=\&quot;http://www.w3.org/TR/2001/REC-xml-c14n-20010315\&quot;/&gt;&lt;/Transforms&gt;&lt;DigestMethod Algorithm=\&quot;http://www.w3.org/2000/09/xmldsig#sha1\&quot;/&gt;&lt;DigestValue&gt;7kCR1M/dm/DQM0WmQyXSLj7r6P4=&lt;/DigestValue&gt;&lt;/Reference&gt;&lt;/SignedInfo&gt;&lt;SignatureValue&gt;ycRA7XNdUmn401+kTovSXJtSh9+a+umgcJX92n+b0Zged2+qIjsv002RGK8fb8/3w5ypKQahsbl6lf/KV68UL8DXQW1SWt1Fqc6jDMg86IahOfMAeCVDGKY36kFH80QwZLyTnDq8Zmzi7cul+tJC+gIBtE2QMekO/GTpRlF6R0dDxswGcySJY3yUuitz/oMP8ZXNZGmaQemUSSeTNL4+5vAngzobc8ATu8WbC5T7q5G6GAwoXCzxsykZl46zezfcV1iymWn8KEw97aYrudDE8njklMyqeiFTb1aK7FQQ/Ru9hN8pkf8Pllc7KjMrnB+ApWhmNfxfJoNQax54hztDeg==&lt;/SignatureValue&gt;&lt;KeyInfo&gt;&lt;X509Data&gt;&lt;X509Certificate&gt;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&lt;/X509Certificate&gt;&lt;/X509Data&gt;&lt;/KeyInfo&gt;&lt;/Signature&gt;&lt;/NFe&gt;&lt;protNFe versao=\&quot;4.00\&quot;&gt;&lt;infProt&gt;&lt;tpAmb&gt;2&lt;/tpAmb&gt;&lt;verAplic&gt;SVRSnfce201806291346&lt;/verAplic&gt;&lt;chNFe&gt;33180705481336000137651000000916401000005909&lt;/chNFe&gt;&lt;dhRecbto&gt;2018-07-03T15:03:06-03:00&lt;/dhRecbto&gt;&lt;nProt&gt;333180005216730&lt;/nProt&gt;&lt;digVal&gt;7kCR1M/dm/DQM0WmQyXSLj7r6P4=&lt;/digVal&gt;&lt;cStat&gt;100&lt;/cStat&gt;&lt;xMotivo&gt;Autorizado o uso da NF-e&lt;/xMotivo&gt;&lt;/infProt&gt;&lt;/protNFe&gt;&lt;/nfeProc&gt;&quot;,</div>
-<div class="line">        &quot;indexcsc&quot;: 1,</div>
-<div class="line">        &quot;csc&quot;: &quot;CODIGO-CSC-CONTRIBUINTE-36-CARACTERES&quot;,</div>
-<div class="line">        &quot;param&quot;:0</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;ImprimeXMLNFCe&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                 &quot;dados&quot;: &quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;&lt;nfeProc versao=\&quot;4.00\&quot; xmlns=\&quot;http://www.portalfiscal.inf.br/nfe\&quot;&gt;&lt;NFe xmlns=\&quot;http://www.portalfiscal.inf.br/nfe\&quot;&gt;&lt;infNFe versao=\&quot;4.00\&quot; Id=\&quot;NFe33180705481336000137651000000916401000005909\&quot;&gt;&lt;ide&gt;&lt;cUF&gt;33&lt;/cUF&gt;&lt;cNF&gt;00000590&lt;/cNF&gt;&lt;natOp&gt;VENDA CONSUMIDOR&lt;/natOp&gt;&lt;mod&gt;65&lt;/mod&gt;&lt;serie&gt;100&lt;/serie&gt;&lt;nNF&gt;91640&lt;/nNF&gt;&lt;dhEmi&gt;2018-07-03T15:03:09-03:00&lt;/dhEmi&gt;&lt;tpNF&gt;1&lt;/tpNF&gt;&lt;idDest&gt;1&lt;/idDest&gt;&lt;cMunFG&gt;3304557&lt;/cMunFG&gt;&lt;tpImp&gt;4&lt;/tpImp&gt;&lt;tpEmis&gt;1&lt;/tpEmis&gt;&lt;cDV&gt;9&lt;/cDV&gt;&lt;tpAmb&gt;2&lt;/tpAmb&gt;&lt;finNFe&gt;1&lt;/finNFe&gt;&lt;indFinal&gt;1&lt;/indFinal&gt;&lt;indPres&gt;1&lt;/indPres&gt;&lt;procEmi&gt;0&lt;/procEmi&gt;&lt;verProc&gt;DJPDV 1.5.4&lt;/verProc&gt;&lt;/ide&gt;&lt;emit&gt;&lt;CNPJ&gt;00000000000000&lt;/CNPJ&gt;&lt;xNome&gt;Automacao Comercial&lt;/xNome&gt;&lt;xFant&gt;SYSTEM&lt;/xFant&gt;&lt;enderEmit&gt;&lt;xLgr&gt;Avenida ABC&lt;/xLgr&gt;&lt;nro&gt;70&lt;/nro&gt;&lt;xBairro&gt;Centro&lt;/xBairro&gt;&lt;cMun&gt;3304557&lt;/cMun&gt;&lt;xMun&gt;Rio de Janeiro&lt;/xMun&gt;&lt;UF&gt;RJ&lt;/UF&gt;&lt;CEP&gt;20071001&lt;/CEP&gt;&lt;cPais&gt;1058&lt;/cPais&gt;&lt;xPais&gt;BRASIL&lt;/xPais&gt;&lt;fone&gt;1133835927&lt;/fone&gt;&lt;/enderEmit&gt;&lt;IE&gt;11111111&lt;/IE&gt;&lt;IM&gt;0000000&lt;/IM&gt;&lt;CRT&gt;1&lt;/CRT&gt;&lt;/emit&gt;&lt;det nItem=\&quot;1\&quot;&gt;&lt;prod&gt;&lt;cProd&gt;1&lt;/cProd&gt;&lt;cEAN&gt;SEM GTIN&lt;/cEAN&gt;&lt;xProd&gt;NOTA FISCAL EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL&lt;/xProd&gt;&lt;NCM&gt;01022911&lt;/NCM&gt;&lt;cBenef&gt;1234567890&lt;/cBenef&gt;&lt;CFOP&gt;5102&lt;/CFOP&gt;&lt;uCom&gt;UN&lt;/uCom&gt;&lt;qCom&gt;10.0000&lt;/qCom&gt;&lt;vUnCom&gt;1.0000000000&lt;/vUnCom&gt;&lt;vProd&gt;10.00&lt;/vProd&gt;&lt;cEANTrib&gt;SEM GTIN&lt;/cEANTrib&gt;&lt;uTrib&gt;UN&lt;/uTrib&gt;&lt;qTrib&gt;10.0000&lt;/qTrib&gt;&lt;vUnTrib&gt;1.0000000000&lt;/vUnTrib&gt;&lt;indTot&gt;1&lt;/indTot&gt;&lt;/prod&gt;&lt;imposto&gt;&lt;vTotTrib&gt;1.62&lt;/vTotTrib&gt;&lt;ICMS&gt;&lt;ICMSSN102&gt;&lt;orig&gt;0&lt;/orig&gt;&lt;CSOSN&gt;102&lt;/CSOSN&gt;&lt;/ICMSSN102&gt;&lt;/ICMS&gt;&lt;PIS&gt;&lt;PISOutr&gt;&lt;CST&gt;49&lt;/CST&gt;&lt;vBC&gt;0.00&lt;/vBC&gt;&lt;pPIS&gt;0.0000&lt;/pPIS&gt;&lt;vPIS&gt;0.00&lt;/vPIS&gt;&lt;/PISOutr&gt;&lt;/PIS&gt;&lt;COFINS&gt;&lt;COFINSOutr&gt;&lt;CST&gt;49&lt;/CST&gt;&lt;vBC&gt;0.00&lt;/vBC&gt;&lt;pCOFINS&gt;0.0000&lt;/pCOFINS&gt;&lt;vCOFINS&gt;0.00&lt;/vCOFINS&gt;&lt;/COFINSOutr&gt;&lt;/COFINS&gt;&lt;/imposto&gt;&lt;infAdProd&gt;TESTE DE COMPLEMENTO A SER IMPRESSO NO CFE, COM PRODUTO COM DESCRICAO DE 120 CARACTERES&lt;/infAdProd&gt;&lt;/det&gt;&lt;total&gt;&lt;ICMSTot&gt;&lt;vBC&gt;0.00&lt;/vBC&gt;&lt;vICMS&gt;0.00&lt;/vICMS&gt;&lt;vICMSDeson&gt;0.00&lt;/vICMSDeson&gt;&lt;vFCP&gt;0.00&lt;/vFCP&gt;&lt;vBCST&gt;0.00&lt;/vBCST&gt;&lt;vST&gt;0.00&lt;/vST&gt;&lt;vFCPST&gt;0.00&lt;/vFCPST&gt;&lt;vFCPSTRet&gt;0.00&lt;/vFCPSTRet&gt;&lt;vProd&gt;10.00&lt;/vProd&gt;&lt;vFrete&gt;0.00&lt;/vFrete&gt;&lt;vSeg&gt;0.00&lt;/vSeg&gt;&lt;vDesc&gt;0.00&lt;/vDesc&gt;&lt;vII&gt;0.00&lt;/vII&gt;&lt;vIPI&gt;0.00&lt;/vIPI&gt;&lt;vIPIDevol&gt;0.00&lt;/vIPIDevol&gt;&lt;vPIS&gt;0.00&lt;/vPIS&gt;&lt;vCOFINS&gt;0.00&lt;/vCOFINS&gt;&lt;vOutro&gt;0.00&lt;/vOutro&gt;&lt;vNF&gt;10.00&lt;/vNF&gt;&lt;vTotTrib&gt;1.62&lt;/vTotTrib&gt;&lt;/ICMSTot&gt;&lt;/total&gt;&lt;transp&gt;&lt;modFrete&gt;9&lt;/modFrete&gt;&lt;/transp&gt;&lt;pag&gt;&lt;detPag&gt;&lt;tPag&gt;03&lt;/tPag&gt;&lt;vPag&gt;2.01&lt;/vPag&gt;&lt;card&gt;&lt;tpIntegra&gt;1&lt;/tpIntegra&gt;&lt;CNPJ&gt;84477152000170&lt;/CNPJ&gt;&lt;tBand&gt;01&lt;/tBand&gt;&lt;cAut&gt;000030034&lt;/cAut&gt;&lt;/card&gt;&lt;/detPag&gt;&lt;detPag&gt;&lt;tPag&gt;02&lt;/tPag&gt;&lt;vPag&gt;0.99&lt;/vPag&gt;&lt;/detPag&gt;&lt;detPag&gt;&lt;tPag&gt;01&lt;/tPag&gt;&lt;vPag&gt;3.00&lt;/vPag&gt;&lt;/detPag&gt;&lt;detPag&gt;&lt;tPag&gt;04&lt;/tPag&gt;&lt;vPag&gt;4.00&lt;/vPag&gt;&lt;card&gt;&lt;tpIntegra&gt;2&lt;/tpIntegra&gt;&lt;/card&gt;&lt;/detPag&gt;&lt;/pag&gt;&lt;infAdic&gt;&lt;infCpl&gt;Trib aprox R$:0,42 Federal, 1,20 Estadual;Fonte:IBPT F3W1D7;&lt;/infCpl&gt;&lt;/infAdic&gt;&lt;/infNFe&gt;&lt;Signature xmlns=\&quot;http://www.w3.org/2000/09/xmldsig#\&quot;&gt;&lt;SignedInfo&gt;&lt;CanonicalizationMethod Algorithm=\&quot;http://www.w3.org/TR/2001/REC-xml-c14n-20010315\&quot;/&gt;&lt;SignatureMethod Algorithm=\&quot;http://www.w3.org/2000/09/xmldsig#rsa-sha1\&quot;/&gt;&lt;Reference URI=\&quot;#NFe33180705481336000137651000000916401000005909\&quot;&gt;&lt;Transforms&gt;&lt;Transform Algorithm=\&quot;http://www.w3.org/2000/09/xmldsig#enveloped-signature\&quot;/&gt;&lt;Transform Algorithm=\&quot;http://www.w3.org/TR/2001/REC-xml-c14n-20010315\&quot;/&gt;&lt;/Transforms&gt;&lt;DigestMethod Algorithm=\&quot;http://www.w3.org/2000/09/xmldsig#sha1\&quot;/&gt;&lt;DigestValue&gt;7kCR1M/dm/DQM0WmQyXSLj7r6P4=&lt;/DigestValue&gt;&lt;/Reference&gt;&lt;/SignedInfo&gt;&lt;SignatureValue&gt;ycRA7XNdUmn401+kTovSXJtSh9+a+umgcJX92n+b0Zged2+qIjsv002RGK8fb8/3w5ypKQahsbl6lf/KV68UL8DXQW1SWt1Fqc6jDMg86IahOfMAeCVDGKY36kFH80QwZLyTnDq8Zmzi7cul+tJC+gIBtE2QMekO/GTpRlF6R0dDxswGcySJY3yUuitz/oMP8ZXNZGmaQemUSSeTNL4+5vAngzobc8ATu8WbC5T7q5G6GAwoXCzxsykZl46zezfcV1iymWn8KEw97aYrudDE8njklMyqeiFTb1aK7FQQ/Ru9hN8pkf8Pllc7KjMrnB+ApWhmNfxfJoNQax54hztDeg==&lt;/SignatureValue&gt;&lt;KeyInfo&gt;&lt;X509Data&gt;&lt;X509Certificate&gt;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&lt;/X509Certificate&gt;&lt;/X509Data&gt;&lt;/KeyInfo&gt;&lt;/Signature&gt;&lt;/NFe&gt;&lt;protNFe versao=\&quot;4.00\&quot;&gt;&lt;infProt&gt;&lt;tpAmb&gt;2&lt;/tpAmb&gt;&lt;verAplic&gt;SVRSnfce201806291346&lt;/verAplic&gt;&lt;chNFe&gt;33180705481336000137651000000916401000005909&lt;/chNFe&gt;&lt;dhRecbto&gt;2018-07-03T15:03:06-03:00&lt;/dhRecbto&gt;&lt;nProt&gt;333180005216730&lt;/nProt&gt;&lt;digVal&gt;7kCR1M/dm/DQM0WmQyXSLj7r6P4=&lt;/digVal&gt;&lt;cStat&gt;100&lt;/cStat&gt;&lt;xMotivo&gt;Autorizado o uso da NF-e&lt;/xMotivo&gt;&lt;/infProt&gt;&lt;/protNFe&gt;&lt;/nfeProc&gt;&quot;,</div>
-<div class="line">                 &quot;indexcsc&quot;: 1,</div>
-<div class="line">                 &quot;csc&quot;: &quot;CODIGO-CSC-CONTRIBUINTE-36-CARACTERES&quot;,</div>
-<div class="line">                 &quot;param&quot;:0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
+
+</div>
+</div>
+<a id="ga188be53e06bbc309dfe6364c4082835f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga188be53e06bbc309dfe6364c4082835f">&#9670;&nbsp;</a></span>ImprimeXMLCancelamentoNFCe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImprimeXMLCancelamentoNFCe </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dados</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ImprimeXMLCancelamentoNFCe Essa função recebe o conteúdo do XML de cancelamento do NFCe, valida o conteúdo, constrói o Danfe e realiza a impressão. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dados</td><td>- Conteúdo do XML retornado no processo de cancelamento<br  />
+ou<br  />
+Caminho para arquivo com dados da NFCe prefixado com "path=", ex:<br  />
+path=C:/Resposta NFCe/Canc_nfce.xml </td></tr>
+    <tr><td class="paramname">param</td><td>- Reservado para customizações. Passar valor ZERO. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A função bem sucedida deve retornar 0.<br  />
+<ul>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#gab60bf4a0fda40a03899957b30be9de07" title="IMP_Erro_ValidacaoXMLNFCe enum -101 à -110.">IMP_Erro_ValidacaoXMLNFCe</a> ou <a class="el" href="group__g1.html#gaa2a78878de69f89d20efffa516879d4c" title="IMP_Erro_ValidacaoXML enum -71 à -80.">IMP_Erro_ValidacaoXML</a>. </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -2551,48 +1767,9 @@ Informações que não estejam presentes no XML serão desconsideradas.</p>
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <b>Códigos de erro</b>.</li>
+<li>Para mais informações sobre retorno consulte <b>Códigos de erro</b>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;ModoPagina&quot;</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;ModoPagina&quot;</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -2634,54 +1811,9 @@ A função bem sucedida deve retornar 0.<br  />
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <b>Códigos de erro</b>.</li>
+<li>Para mais informações sobre retorno consulte <b>Códigos de erro</b>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;DirecaoImpressao&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;direcao&quot;: 0</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;DirecaoImpressao&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;direcao&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -2752,60 +1884,9 @@ A função bem sucedida deve retornar 0.<br  />
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5" title="IMP_Erro_ModoPagina enum -136 à -140.">IMP_Erro_ModoPagina</a>.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5" title="IMP_Erro_ModoPagina enum -136 à -140.">IMP_Erro_ModoPagina</a>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;DefineAreaImpressao&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;oHorizontal&quot;: 0,</div>
-<div class="line">        &quot;oVertical&quot;: 0,</div>
-<div class="line">        &quot;dHorizontal&quot;: 8,</div>
-<div class="line">        &quot;dVertical&quot;: 30</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;DefineAreaImpressao&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;oHorizontal&quot;: 0,</div>
-<div class="line">                &quot;oVertical&quot;: 0,</div>
-<div class="line">                &quot;dHorizontal&quot;: 8,</div>
-<div class="line">                &quot;dVertical&quot;: 30</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -2839,54 +1920,9 @@ A função bem sucedida deve retornar 0.<br  />
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5" title="IMP_Erro_ModoPagina enum -136 à -140.">IMP_Erro_ModoPagina</a>.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5" title="IMP_Erro_ModoPagina enum -136 à -140.">IMP_Erro_ModoPagina</a>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;PosicaoImpressaoHorizontal&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;nLnH&quot;: 0</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b> <br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;PosicaoImpressaoHorizontal&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                 &quot;nLnH&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -2923,54 +1959,9 @@ A função bem sucedida deve retornar 0.<br  />
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5" title="IMP_Erro_ModoPagina enum -136 à -140.">IMP_Erro_ModoPagina</a>.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5" title="IMP_Erro_ModoPagina enum -136 à -140.">IMP_Erro_ModoPagina</a>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;PosicaoImpressaoVertical&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;nLnH&quot;: 0</div>
-<div class="line">    }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;PosicaoImpressaoVertical&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                 &quot;nLnH&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -2994,48 +1985,9 @@ A função bem sucedida deve retornar 0.<br  />
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5" title="IMP_Erro_ModoPagina enum -136 à -140.">IMP_Erro_ModoPagina</a>.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5" title="IMP_Erro_ModoPagina enum -136 à -140.">IMP_Erro_ModoPagina</a>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;ImprimeModoPagina&quot;</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;ImprimeModoPagina&quot;</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -3062,48 +2014,10 @@ A função bem sucedida deve retornar 0.<br  />
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5" title="IMP_Erro_ModoPagina enum -136 à -140.">IMP_Erro_ModoPagina</a>.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5" title="IMP_Erro_ModoPagina enum -136 à -140.">IMP_Erro_ModoPagina</a>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;LimpaBufferModoPagina&quot;</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> <br  />
-</p><blockquote class="doxtable">
-<p><b><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;LimpaBufferModoPagina&quot;</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --> 
+
 </div>
 </div>
 <a id="gacee31e0a9e1d0a2a3e68ad14cf36acd0"></a>
@@ -3129,48 +2043,9 @@ A função bem sucedida deve retornar 0.<br  />
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5" title="IMP_Erro_ModoPagina enum -136 à -140.">IMP_Erro_ModoPagina</a>.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5" title="IMP_Erro_ModoPagina enum -136 à -140.">IMP_Erro_ModoPagina</a>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;ImprimeMPeRetornaPadrao&quot;</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b> <br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;ImprimeMPeRetornaPadrao&quot;</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -3197,48 +2072,9 @@ A função bem sucedida deve retornar 0.<br  />
 <dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5" title="IMP_Erro_ModoPagina enum -136 à -140.">IMP_Erro_ModoPagina</a>.</li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5" title="IMP_Erro_ModoPagina enum -136 à -140.">IMP_Erro_ModoPagina</a>. </li>
 </ul>
 </dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;ModoPadrao&quot;</div>
-<div class="line">}</div>
-</div><!-- fragment --><p><b><br  />
-</p><blockquote class="doxtable">
-<p><b><em> Exemplo json com n comandos para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line"> {</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [{</div>
-<div class="line">            &quot;Funcao&quot;: &quot;AbreConexaoImpressora&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;tipo&quot;: 1,</div>
-<div class="line">                &quot;modelo&quot;: &quot;i9&quot;,</div>
-<div class="line">                &quot;conexao&quot;: &quot;USB&quot;,</div>
-<div class="line">                &quot;parametro&quot;: 0</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;ModoPadrao&quot;</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;N&quot;,</div>
-<div class="line">            &quot;Parametros&quot;: [{</div>
-<div class="line">                &quot;dados&quot;: 1</div>
-<div class="line">            }]</div>
-<div class="line">        },</div>
-<div class="line">        {</div>
-<div class="line">            &quot;Funcao&quot;: &quot;FechaConexaoImpressora&quot;</div>
-<div class="line">        }</div>
-<div class="line">     ]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
 
 </div>
 </div>
@@ -3261,20 +2097,7 @@ A função bem sucedida deve retornar 0.<br  />
 <dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo caractere.<br  />
 <br  />
  A função bem-sucedida deve retornar ??.??.??, que representa a versão da DLL em que esta função foi chamada; cada <b>?</b> é um dígito entre 0 e 9. <br  />
- <blockquote class="doxtable">
-<p><b><em> Exemplo JSON para uso com Serviço. </em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [</div>
-<div class="line">        {&quot;Funcao&quot;: &quot;GetVersaoDLL&quot;,</div>
-<div class="line">        &quot;Parametros&quot;: [</div>
-<div class="line">            {</div>
-<div class="line">            }</div>
-<div class="line">        ]}</div>
-<div class="line">    ]</div>
-<div class="line">}</div>
-</div><!-- fragment --> </dd></dl>
+</dd></dl>
 
 </div>
 </div>
@@ -3344,26 +2167,7 @@ Este parâmetro recebe como argumento o caminho, no sistema de arquivos, onde a 
 <dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
 A função bem-sucedida deve retornar 0.<br  />
 <br  />
- <blockquote class="doxtable">
-<p><b><em> Exemplo JSON para uso com Serviço. </em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;Impressor&quot;,</div>
-<div class="line">    &quot;Comando&quot;: [</div>
-<div class="line">        {&quot;Funcao&quot;: &quot;ImprimeImagem&quot;,</div>
-<div class="line">        &quot;Parametros&quot;: [</div>
-<div class="line">            {&quot;path&quot;: &quot;C:\\Imagens\\logo.bmp&quot;</div>
-<div class="line">            }</div>
-<div class="line">        ]}</div>
-<div class="line">    ]</div>
-<div class="line">}</div>
-</div><!-- fragment --> <br  />
- <blockquote class="doxtable">
-<p><b><b><em> Exemplo de comando com separadores para uso com Serviço. </em> </b></b></p>
-</blockquote>
-<div class="fragment"><div class="line">Impressor:|ImprimeImagem</div>
-<div class="line">:|C:\\Imagens\\logo.bmp</div>
-</div><!-- fragment --> </dd></dl>
+</dd></dl>
 
 </div>
 </div>
