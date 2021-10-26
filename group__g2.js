@@ -4,7 +4,7 @@ var group__g2 =
     [ "AtivarSAT", "group__g2.html#ga01e9f27eedb0479120dc5d6b7797a4e3", null ],
     [ "EnviarDadosVenda", "group__g2.html#ga7325dbebf3ecb15d7214008d5ffaff83", null ],
     [ "CancelarUltimaVenda", "group__g2.html#ga21cf1f3afb98ffaae26373f5639d82b4", null ],
-    [ "ConsultarSat", "group__g2.html#gae1e6d06942146d021e89002e10c6c3db", null ],
+    [ "ConsultarSAT", "group__g2.html#ga04f288c0129cc5a2f3fe797ec7f08771", null ],
     [ "TesteFimAFim", "group__g2.html#ga3b6d10b9ea39a6eb754c93c6e1515ec5", null ],
     [ "ConsultarStatusOperacional", "group__g2.html#ga4b4ea1e75c811c3aca5a826ffbe786f3", null ],
     [ "ConsultarNumeroSessao", "group__g2.html#gae36689e0166dec73094db328744b5153", null ],

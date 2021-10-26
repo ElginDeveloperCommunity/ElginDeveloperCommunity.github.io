@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.16</span>
+   &#160;<span id="projectnumber">versão 2.17</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -721,6 +721,17 @@ Enumerações</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga2b9310cf04359e1e2e8d460964c499b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The PDF_Error enum -890 à -900.  <a href="group__g1.html#ga2b9310cf04359e1e2e8d460964c499b0">Mais...</a><br /></td></tr>
 <tr class="separator:ga2b9310cf04359e1e2e8d460964c499b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5cd98e71a4def637f833b40fe5116f3a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g1.html#ga5cd98e71a4def637f833b40fe5116f3a">Br_Erro_Config</a> { <br />
+&#160;&#160;<a class="el" href="group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa4f754573a802d2ffeec463b650e6a40c">BR_IP_TERMINAL_INVALIDO</a> = -1201
+, <a class="el" href="group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa17bda6994f8d8abf35749c2eaeb0425e">BR_PORTA_TRANSACAO_INVALIDA</a> = -1202
+, <a class="el" href="group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aab63658dc93200e3d744bbd42534cca57">BR_PORTA_STATUS_INVALIDA</a> = -1203
+, <a class="el" href="group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa8dadc2229421a51b6133d3c84089398e">BR_PORTAS_IGUAIS</a> = -1204
+, <br />
+&#160;&#160;<a class="el" href="group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa31d268463beb6c05c347aaabfd50e505">BR_TIMEOUT_INVALIDO</a> = -1205
+<br />
+ }</td></tr>
+<tr class="memdesc:ga5cd98e71a4def637f833b40fe5116f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Br_Erro_Config enum -1201 à -1210.  <a href="group__g1.html#ga5cd98e71a4def637f833b40fe5116f3a">Mais...</a><br /></td></tr>
+<tr class="separator:ga5cd98e71a4def637f833b40fe5116f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafd724a1fcc15d08d027120107767e201"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g1.html#gafd724a1fcc15d08d027120107767e201">UTIL_Erro_Interno</a> { <br />
 &#160;&#160;<a class="el" href="group__g1.html#ggafd724a1fcc15d08d027120107767e201a911e4e571fd43563ef664841302f2834">UTIL_DATA_INVALIDA</a> = -9000
 , <a class="el" href="group__g1.html#ggafd724a1fcc15d08d027120107767e201a76ffb9f4a51f435c683def4087a49697">UTIL_ERRO_CAMINHO_ABSOLUTO</a> = -9001
@@ -2497,6 +2508,36 @@ Faixa -890 até -900. </p>
 <tr><td class="fieldname"><a id="gga2b9310cf04359e1e2e8d460964c499b0a526f2dbefea3ba2b9b0c0692ef75c217"></a>DOCUMENTO_NAO_POSSUI_PAGINAS&#160;</td><td class="fielddoc"><p><b>(-896)</b> Dcocumento Pdf não possui paginas ou esté em branco. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga2b9310cf04359e1e2e8d460964c499b0a4cb98c48a825eff98e89f7377786f77a"></a>IMAGEM_NAO_FOI_GERADA&#160;</td><td class="fielddoc"><p><b>(-897)</b> Falha na geração de imagem ára impressão dee pdf. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga5cd98e71a4def637f833b40fe5116f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5cd98e71a4def637f833b40fe5116f3a">&#9670;&nbsp;</a></span>Br_Erro_Config</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__g1.html#ga5cd98e71a4def637f833b40fe5116f3a">Br_Erro_Config</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Br_Erro_Config enum -1201 à -1210. </p>
+<p>Define os erros relativos à configuração do E1_Bridge.<br  />
+Faixa -1201 à -1210. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="gga5cd98e71a4def637f833b40fe5116f3aa4f754573a802d2ffeec463b650e6a40c"></a>BR_IP_TERMINAL_INVALIDO&#160;</td><td class="fielddoc"><p><b>(-1201)</b> IP informado para o terminal não é um IPv4 válido. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5cd98e71a4def637f833b40fe5116f3aa17bda6994f8d8abf35749c2eaeb0425e"></a>BR_PORTA_TRANSACAO_INVALIDA&#160;</td><td class="fielddoc"><p><b>(-1202)</b> Porta de transação informada é inválida. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5cd98e71a4def637f833b40fe5116f3aab63658dc93200e3d744bbd42534cca57"></a>BR_PORTA_STATUS_INVALIDA&#160;</td><td class="fielddoc"><p><b>(-1203)</b> Porta de status informada é inválida. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5cd98e71a4def637f833b40fe5116f3aa8dadc2229421a51b6133d3c84089398e"></a>BR_PORTAS_IGUAIS&#160;</td><td class="fielddoc"><p><b>(-1204)</b> Portas de transação e de status não podem ser iguais. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5cd98e71a4def637f833b40fe5116f3aa31d268463beb6c05c347aaabfd50e505"></a>BR_TIMEOUT_INVALIDO&#160;</td><td class="fielddoc"><p><b>(-1205)</b> Timeout informado não está entre 1 e 10 minutos. </p>
 </td></tr>
 </table>
 

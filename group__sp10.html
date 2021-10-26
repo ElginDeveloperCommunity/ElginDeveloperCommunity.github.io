@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.16</span>
+   &#160;<span id="projectnumber">versão 2.17</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -117,7 +117,7 @@ Esse código identifica a <em>Intent</em> inicializada, para que a classe/ativid
 </li>
 <li>Por fim, para obter os dados retornados, sobrescreva o método <em>onActivityResult</em>, que é chamado sempre que a classe/atividade implementada receber os dados das <em>Intents</em> que ela executou.<br  />
 <br  />
- Nesse método, verifique se o código de requisição da <em>Intent</em> que retornou os dados é 1 (ou o valor usado em <em>startActivityResult</em>). Essa verificação é opcional se a classe/atividade implementada não receber dados de nenhuma outra <em>Intent</em>.<br  />
+ Nesse método, verifique se o código de requisição da <em>Intent</em> que retornou os dados é 1 (ou o valor usado em <em>startActivityForResult</em>). Essa verificação é opcional se a classe/atividade implementada não receber dados de nenhuma outra <em>Intent</em>.<br  />
 <br  />
  Depois de verificar se a <em>Intent</em> que enviou os dados é aquela que chamou a tela do Scanner, verifique se o código de resultado vale #2. Se esse código valer 2, então a <em>Intent</em> foi executada com sucesso; caso contrário, os dados da leitura do Scanner não estarão disponíveis.<br  />
 <br  />

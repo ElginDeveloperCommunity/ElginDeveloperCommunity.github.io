@@ -450,6 +450,13 @@ var group__g1 =
       [ "DOCUMENTO_NAO_POSSUI_PAGINAS", "group__g1.html#gga2b9310cf04359e1e2e8d460964c499b0a526f2dbefea3ba2b9b0c0692ef75c217", null ],
       [ "IMAGEM_NAO_FOI_GERADA", "group__g1.html#gga2b9310cf04359e1e2e8d460964c499b0a4cb98c48a825eff98e89f7377786f77a", null ]
     ] ],
+    [ "Br_Erro_Config", "group__g1.html#ga5cd98e71a4def637f833b40fe5116f3a", [
+      [ "BR_IP_TERMINAL_INVALIDO", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa4f754573a802d2ffeec463b650e6a40c", null ],
+      [ "BR_PORTA_TRANSACAO_INVALIDA", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa17bda6994f8d8abf35749c2eaeb0425e", null ],
+      [ "BR_PORTA_STATUS_INVALIDA", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aab63658dc93200e3d744bbd42534cca57", null ],
+      [ "BR_PORTAS_IGUAIS", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa8dadc2229421a51b6133d3c84089398e", null ],
+      [ "BR_TIMEOUT_INVALIDO", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa31d268463beb6c05c347aaabfd50e505", null ]
+    ] ],
     [ "UTIL_Erro_Interno", "group__g1.html#gafd724a1fcc15d08d027120107767e201", [
       [ "UTIL_DATA_INVALIDA", "group__g1.html#ggafd724a1fcc15d08d027120107767e201a911e4e571fd43563ef664841302f2834", null ],
       [ "UTIL_ERRO_CAMINHO_ABSOLUTO", "group__g1.html#ggafd724a1fcc15d08d027120107767e201a76ffb9f4a51f435c683def4087a49697", null ],

@@ -51,5 +51,11 @@ var searchData=
   ['box_5fcoordenada_5fx_5finvalida_73',['BOX_COORDENADA_X_INVALIDA',['../group__g1.html#ggac56d42ea70289626a54f9b7090ea6110a1f083eae48939946709ea34616143fe2',1,'codigoerro.h']]],
   ['box_5fcoordenada_5fy_5finvalida_74',['BOX_COORDENADA_Y_INVALIDA',['../group__g1.html#ggac56d42ea70289626a54f9b7090ea6110ae6d7a54addab87aed44c2f4b755b3d75',1,'codigoerro.h']]],
   ['box_5fgrossura_5fbordas_5fhorizontais_5finvalida_75',['BOX_GROSSURA_BORDAS_HORIZONTAIS_INVALIDA',['../group__g1.html#ggac56d42ea70289626a54f9b7090ea6110abc0d72dce162bc1ae243a865c166502d',1,'codigoerro.h']]],
-  ['box_5fgrossura_5fbordas_5fverticais_5finvalida_76',['BOX_GROSSURA_BORDAS_VERTICAIS_INVALIDA',['../group__g1.html#ggac56d42ea70289626a54f9b7090ea6110ac63185613719d9273a689fb091b3039e',1,'codigoerro.h']]]
+  ['box_5fgrossura_5fbordas_5fverticais_5finvalida_76',['BOX_GROSSURA_BORDAS_VERTICAIS_INVALIDA',['../group__g1.html#ggac56d42ea70289626a54f9b7090ea6110ac63185613719d9273a689fb091b3039e',1,'codigoerro.h']]],
+  ['br_5ferro_5fconfig_77',['Br_Erro_Config',['../group__g1.html#ga5cd98e71a4def637f833b40fe5116f3a',1,'codigoerro.h']]],
+  ['br_5fip_5fterminal_5finvalido_78',['BR_IP_TERMINAL_INVALIDO',['../group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa4f754573a802d2ffeec463b650e6a40c',1,'codigoerro.h']]],
+  ['br_5fporta_5fstatus_5finvalida_79',['BR_PORTA_STATUS_INVALIDA',['../group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aab63658dc93200e3d744bbd42534cca57',1,'codigoerro.h']]],
+  ['br_5fporta_5ftransacao_5finvalida_80',['BR_PORTA_TRANSACAO_INVALIDA',['../group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa17bda6994f8d8abf35749c2eaeb0425e',1,'codigoerro.h']]],
+  ['br_5fportas_5figuais_81',['BR_PORTAS_IGUAIS',['../group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa8dadc2229421a51b6133d3c84089398e',1,'codigoerro.h']]],
+  ['br_5ftimeout_5finvalido_82',['BR_TIMEOUT_INVALIDO',['../group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa31d268463beb6c05c347aaabfd50e505',1,'codigoerro.h']]]
 ];
