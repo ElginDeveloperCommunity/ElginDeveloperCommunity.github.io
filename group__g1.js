@@ -455,7 +455,37 @@ var group__g1 =
       [ "BR_PORTA_TRANSACAO_INVALIDA", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa17bda6994f8d8abf35749c2eaeb0425e", null ],
       [ "BR_PORTA_STATUS_INVALIDA", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aab63658dc93200e3d744bbd42534cca57", null ],
       [ "BR_PORTAS_IGUAIS", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa8dadc2229421a51b6133d3c84089398e", null ],
-      [ "BR_TIMEOUT_INVALIDO", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa31d268463beb6c05c347aaabfd50e505", null ]
+      [ "BR_TIMEOUT_INVALIDO", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa31d268463beb6c05c347aaabfd50e505", null ],
+      [ "BR_IP_TERMINAL_NAO_INFORMADO", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa4cf1081e338436d9ff43e0034c3e969c", null ]
+    ] ],
+    [ "Br_Erro_Param", "group__g1.html#ga7b91f88fc3df94aa2683c40f1854c4fb", [
+      [ "BR_VALOR_TOTAL_NULL", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba34381d1ef40b88daa4ab283069e273e8", null ],
+      [ "BR_VALOR_TOTAL_NAN", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbadf947e9691aeddfaae71e43099db2afd", null ],
+      [ "BR_VALOR_TOTAL_INVALIDO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbafc348192d1655775b49d2cd611899573", null ],
+      [ "BR_TIPO_CARTAO_INVALIDO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba53ffab16ab93e57c729798e42602e3b4", null ],
+      [ "BR_TIPO_FINANCIAMENTO_INVALIDO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba154ca04d76eb26164d5dc43c4c148c9a", null ],
+      [ "BR_NUM_PARCELAS_INVALIDO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbabffd804b9b0b908e351928c8df8b13d8", null ],
+      [ "BR_NSU_NULL", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba2a730c78e50cd551ea3b92de823ceef8", null ],
+      [ "BR_NSU_INVALIDO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba58dcebb164f82e73b1b7e15aa81ebf85", null ],
+      [ "BR_DATA_HORA_NULL", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbad7821e3ddd22913912e092e80b67b3b0", null ],
+      [ "BR_DATA_HORA_INVALIDA", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbafc1c740a9c643b60e02dd84552923db7", null ],
+      [ "BR_OPERACAO_INVALIDA", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba951409ac594f97fbfbcf21fb30ba5bfb", null ],
+      [ "BR_ERRO_ABERTURA_ARQUIVO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbaecb11bc6245b0f49b56c2058f7733389", null ],
+      [ "BR_ERRO_ESCREVER_ARQUIVO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbaf2072bbdaed6fa27681bbe7f94e64527", null ]
+    ] ],
+    [ "Br_Erro_Status", "group__g1.html#ga161eeb1d172e92f21fab4185bad6d51b", [
+      [ "BR_STATUS_EM_ANDAMENTO", "group__g1.html#gga161eeb1d172e92f21fab4185bad6d51bacd12e002896d64514ae2f082a68d32c3", null ],
+      [ "BR_ERRO_CONECTAR_STATUS", "group__g1.html#gga161eeb1d172e92f21fab4185bad6d51baf2a3109958f7210740fb074e90f41d3c", null ],
+      [ "BR_ERRO_LEITURA_STATUS", "group__g1.html#gga161eeb1d172e92f21fab4185bad6d51ba58a640bf883236b5876b608973e4b7d0", null ],
+      [ "BR_STATUS_NAO_RETORNADO", "group__g1.html#gga161eeb1d172e92f21fab4185bad6d51ba3a5570a1d441aa27d2212764e944914e", null ]
+    ] ],
+    [ "Br_Erro_Transacao", "group__g1.html#ga9e4e19001ea466e5ece45c959b1a26de", [
+      [ "BR_TRANSACAO_EM_ANDAMENTO", "group__g1.html#gga9e4e19001ea466e5ece45c959b1a26dea771c05733945251ce25232984f5e5f39", null ],
+      [ "BR_ERRO_CONECTAR_TRANSACAO", "group__g1.html#gga9e4e19001ea466e5ece45c959b1a26dea2b0194313d8fe36c1af4c3dd03869218", null ],
+      [ "BR_ERRO_ENVIO_TRANSACAO", "group__g1.html#gga9e4e19001ea466e5ece45c959b1a26dea66342ab2c36d86d8a4eff79dcdef26d9", null ],
+      [ "BR_ERRO_CONFIRMAR_TRANSACAO", "group__g1.html#gga9e4e19001ea466e5ece45c959b1a26dea71f0f758d152f8e8eb6edbb7a46e6f5e", null ],
+      [ "BR_ERRO_LEITURA_TRANSACAO", "group__g1.html#gga9e4e19001ea466e5ece45c959b1a26dead1b454754135ef273a0d5fc74c3f0e9b", null ],
+      [ "BR_TRANSACAO_NAO_RETORNADA", "group__g1.html#gga9e4e19001ea466e5ece45c959b1a26dea5e346728b64b39508d07926356eb9165", null ]
     ] ],
     [ "UTIL_Erro_Interno", "group__g1.html#gafd724a1fcc15d08d027120107767e201", [
       [ "UTIL_DATA_INVALIDA", "group__g1.html#ggafd724a1fcc15d08d027120107767e201a911e4e571fd43563ef664841302f2834", null ],

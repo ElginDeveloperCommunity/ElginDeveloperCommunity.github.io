@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Comunicação Elgin: Código-Fonte de D:/Documentos/Projetos/QT_Projetos/integrado/e1_nfce/exportafuncoes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Plataforma de Comunicação Elgin
+   &#160;<span id="projectnumber">versão 2.19</span>
+   </div>
+   <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('e1__nfce_2exportafuncoes_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">exportafuncoes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EXPORTAFUNCOES_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define EXPORTAFUNCOES_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;e1_nfce.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;factoryjsonnfce.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifdef __linux__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">    #define STDCALL</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#elif _WIN32</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">    #define STDCALL __stdcall</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//void __attribute__((constructor)) _initLibrary();</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//void __attribute__((destructor)) _exitLibrary();</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;E1_NFCe e;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;FactoryJsonNFCe fac;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="group__g11.html#gafd841a2391cdab971e4bbbf24f02495c">  102</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g11.html#gafd841a2391cdab971e4bbbf24f02495c">TestaConexaoNFCe</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="group__g11.html#ga3cd4681c162c88ac0af848f77ff1b416">  120</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__g11.html#ga3cd4681c162c88ac0af848f77ff1b416">EmitirNota</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *arquivo_nota, <span class="keywordtype">int</span> *ret);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="group__g11.html#gadd9eff7b1279230c008dd0dbc2dbe298">  138</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__g11.html#gadd9eff7b1279230c008dd0dbc2dbe298">ConsultarNota</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *chave_nota, <span class="keywordtype">int</span>* ret);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="group__g11.html#ga2287edb020c63e91c35c1783f671cdda">  160</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__g11.html#ga2287edb020c63e91c35c1783f671cdda">CancelarNota</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *chave_nota, <span class="keyword">const</span> <span class="keywordtype">char</span> *protocolo, <span class="keyword">const</span> <span class="keywordtype">char</span> *justificativa, <span class="keywordtype">int</span>* ret);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="group__g11.html#ga4fff010d41f1fe3cb7e7464efe7b47d1">  180</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__g11.html#ga4fff010d41f1fe3cb7e7464efe7b47d1">DecodificarNota</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_root, <span class="keyword">const</span> <span class="keywordtype">char</span> *resposta_emitir_nota, <span class="keywordtype">int</span>* ret);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="group__g11.html#gacece6dcf69dda03738e7b6349a4982a8">  198</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__g11.html#gacece6dcf69dda03738e7b6349a4982a8">ConsultarId</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *id_local, <span class="keywordtype">int</span>* ret); <span class="comment">//Edilson</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="group__g11.html#gab6feb5faa3fdd60ca0c8294544d22a1c">  216</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__g11.html#gab6feb5faa3fdd60ca0c8294544d22a1c">ListarEventos</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *chave_nota, <span class="keywordtype">int</span>* ret);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00406"></a><span class="lineno"><a class="line" href="group__g11.html#ga5d2367c4693343997e1c2369c1ec2c41">  406</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga771504399db187272626f3171e2dc261">AbreCupomVenda</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keyword">const</span> <span class="keywordtype">char</span> *UF, <span class="keyword">const</span> <span class="keywordtype">char</span> *cNF, <span class="keyword">const</span> <span class="keywordtype">char</span> *natOp, <span class="keywordtype">int</span> mod, <span class="keyword">const</span> <span class="keywordtype">char</span> *serie, <span class="keyword">const</span> <span class="keywordtype">char</span> *nNF, <span class="keyword">const</span> <span class="keywordtype">char</span> *dhEmi,</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                       <span class="keyword">const</span> <span class="keywordtype">char</span> *dhSaiEnt, <span class="keywordtype">int</span> tpNF, <span class="keywordtype">int</span> idDest, <span class="keyword">const</span> <span class="keywordtype">char</span> *cMunFG, <span class="keywordtype">int</span> tpImp, <span class="keywordtype">int</span> tpEmis, <span class="keywordtype">int</span> cDV, <span class="keywordtype">int</span> tpAmb, <span class="keywordtype">int</span> finNFe, <span class="keywordtype">int</span> indFinal,</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                       <span class="keywordtype">int</span> indPres, <span class="keywordtype">int</span> indIntermed, <span class="keywordtype">int</span> procEmi, <span class="keyword">const</span> <span class="keywordtype">char</span> *verProc, <span class="keyword">const</span> <span class="keywordtype">char</span> *dhCont, <span class="keyword">const</span> <span class="keywordtype">char</span> *xJust,<span class="keyword">const</span> <span class="keywordtype">char</span>* idLocal);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00535"></a><span class="lineno"><a class="line" href="group__g11.html#ga756a52dc48dba09a8b245a14cf3f08cb">  535</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g11.html#ga756a52dc48dba09a8b245a14cf3f08cb">InformaEmitente</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keyword">const</span> <span class="keywordtype">char</span> *CNPJ, <span class="keyword">const</span> <span class="keywordtype">char</span> *CPF, <span class="keyword">const</span> <span class="keywordtype">char</span> *xNome, <span class="keyword">const</span> <span class="keywordtype">char</span> *xFant,</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *xLgr, <span class="keyword">const</span> <span class="keywordtype">char</span> *nro, <span class="keyword">const</span> <span class="keywordtype">char</span> *xCpl, <span class="keyword">const</span> <span class="keywordtype">char</span> *xBairro, <span class="keywordtype">int</span> cMun, <span class="keyword">const</span> <span class="keywordtype">char</span> *xMun,</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *UF, <span class="keyword">const</span> <span class="keywordtype">char</span> *CEP, <span class="keywordtype">int</span> cPais, <span class="keyword">const</span> <span class="keywordtype">char</span> *xPais, <span class="keyword">const</span> <span class="keywordtype">char</span> *fone,</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *IE, <span class="keyword">const</span> <span class="keywordtype">char</span> *IEST, <span class="keyword">const</span> <span class="keywordtype">char</span> *IM, <span class="keyword">const</span> <span class="keywordtype">char</span> *CNAE, <span class="keywordtype">int</span> CRT);</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160; </div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;<span class="comment">//    int InformaDestinatario(const char *file_path, const char *CNPJ, const char *CPF, const char *idEstrangeiro, const char *xNome,</span></div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;<span class="comment">//                                                          int indIEDest, const char *IE, const char *ISUF, const char *IM, const char *email);</span></div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;<span class="comment">//    int InformaEnderecoDestinatario(const char *file_path, const char *xLgr, const char *nro, const char *xCpl, const char *xBairro, const char *cMun,</span></div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;<span class="comment">//                                                                  const char *xMun, int UF, const char *CEP, const char *cPais, const char *xPais, const char *fone);</span></div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;<span class="comment">//    int InformaLocalRetirada(const char *file_path, const char *CNPJ, const char *CPF, const char *xLgr, const char *nro,</span></div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="comment">//                                                                            const char *xCpl, const char *xBairro, const char *cMun, const char *xMun, int UF);</span></div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="comment">//    int InformaLocalEntrega(const char *file_path, const char *CNPJ, const char *CPF, const char *xLgr, const char *nro,</span></div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="comment">//                                                                           const char *xCpl, const char *xBairro, const char *cMun, const char *xMun, int UF);</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;<span class="comment">//    int InformaAutorizacaoAcessoXML(const char *file_path, const char *CNPJ, const char *CPF);</span></div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160; </div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00643"></a><span class="lineno"><a class="line" href="group__g11.html#gae41788f8f2358a5088d63b29ef909b3d">  643</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g11.html#gae41788f8f2358a5088d63b29ef909b3d">InformaTransporte</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keywordtype">int</span> modFrete, <span class="keyword">const</span> <span class="keywordtype">char</span> *CNPJ, <span class="keyword">const</span> <span class="keywordtype">char</span> *CPF, <span class="keyword">const</span> <span class="keywordtype">char</span> *xNome,</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;                          <span class="keyword">const</span> <span class="keywordtype">char</span> *IE, <span class="keyword">const</span> <span class="keywordtype">char</span> *xEnder, <span class="keyword">const</span> <span class="keywordtype">char</span> *xMun, <span class="keyword">const</span> <span class="keywordtype">char</span> *UF);</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160; </div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00705"></a><span class="lineno"><a class="line" href="group__g11.html#ga59f4d22c1b7a580bb38a562ed6ee801a">  705</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g11.html#ga59f4d22c1b7a580bb38a562ed6ee801a">InformaVolumes</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keyword">const</span> <span class="keywordtype">char</span> *qVol, <span class="keyword">const</span> <span class="keywordtype">char</span> *especie, <span class="keyword">const</span> <span class="keywordtype">char</span> *marca,</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;                       <span class="keyword">const</span> <span class="keywordtype">char</span> *nVol, <span class="keyword">const</span> <span class="keywordtype">char</span> *pesoL, <span class="keyword">const</span> <span class="keywordtype">char</span> *pesoB);</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160; </div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160; </div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00735"></a><span class="lineno"><a class="line" href="group__g11.html#gaa68f369c4255530317dbcb5cfdff77e3">  735</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g11.html#gaa68f369c4255530317dbcb5cfdff77e3">InformaLacres</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keyword">const</span> <span class="keywordtype">char</span> *nLacre, <span class="keywordtype">int</span> indexVolume);</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160; </div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00809"></a><span class="lineno"><a class="line" href="group__g11.html#gab8b8af8e479db51c433108cde6e97bf0">  809</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g11.html#gab8b8af8e479db51c433108cde6e97bf0">InformaPagamento</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keywordtype">int</span> indPag, <span class="keywordtype">int</span> tPag, <span class="keyword">const</span> <span class="keywordtype">char</span> *vPag, <span class="keywordtype">int</span> tpIntegra, <span class="keyword">const</span> <span class="keywordtype">char</span> *CNPJ, <span class="keywordtype">int</span> tBand, <span class="keyword">const</span> <span class="keywordtype">char</span> *cAut, <span class="keyword">const</span> <span class="keywordtype">char</span>* vTroco);</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;<span class="comment">//    int InformaInformacoesAdicionais(const char *file_path, const char *infAdFisco, const char *infCpl, const char *xCampoObsCont, const char *xTextoObsCont, const char *xCampoObsFisco, const char *xTextoObsFisco, const char *nProc, int indProc);</span></div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160; </div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160; </div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01002"></a><span class="lineno"><a class="line" href="group__g11.html#ga2033b697abbc55ee18db13ec9fb8209b"> 1002</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630">InformaProduto</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keyword">const</span> <span class="keywordtype">char</span> *cProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *cEAN, <span class="keyword">const</span> <span class="keywordtype">char</span> *xProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *NCM, <span class="keyword">const</span> <span class="keywordtype">char</span> *NVE,</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;                       <span class="keyword">const</span> <span class="keywordtype">char</span> *CEST, <span class="keyword">const</span> <span class="keywordtype">char</span> *indEscala, <span class="keyword">const</span> <span class="keywordtype">char</span> *CNPJFab, <span class="keyword">const</span> <span class="keywordtype">char</span> *cBenef, <span class="keyword">const</span> <span class="keywordtype">char</span>* EXTIPI, <span class="keyword">const</span> <span class="keywordtype">char</span> *CFOP,</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;                       <span class="keyword">const</span> <span class="keywordtype">char</span> *uCom, <span class="keyword">const</span> <span class="keywordtype">char</span> *qCom, <span class="keyword">const</span> <span class="keywordtype">char</span> *vUnCom, <span class="keyword">const</span> <span class="keywordtype">char</span> *vProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *cEANTrib, <span class="keyword">const</span> <span class="keywordtype">char</span> *uTrib,</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;                       <span class="keyword">const</span> <span class="keywordtype">char</span> *qTrib, <span class="keyword">const</span> <span class="keywordtype">char</span> *vUnTrib, <span class="keyword">const</span> <span class="keywordtype">char</span> *vFrete, <span class="keyword">const</span> <span class="keywordtype">char</span> *vSeg, <span class="keyword">const</span> <span class="keywordtype">char</span> *vDesc, <span class="keyword">const</span> <span class="keywordtype">char</span> *vOutro, <span class="keywordtype">int</span> indTot);</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160; </div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;<span class="comment">//    int InformaImposto(const char *file_path, int nItem, const char *vTotTrib);</span></div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160; </div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01061"></a><span class="lineno"><a class="line" href="group__g11.html#ga69b1d28956208ddcd41e345a269c71d1"> 1061</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga6043776737079a97599bd8cae6792a64">InformaPISAliq</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBC, <span class="keyword">const</span> <span class="keywordtype">char</span> *pPIS, <span class="keyword">const</span> <span class="keywordtype">char</span> *vPIS);</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160; </div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01112"></a><span class="lineno"><a class="line" href="group__g11.html#ga1050d5af3295fc7fcf832a6614ceb091"> 1112</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__s0.html#gac092e7a6302c422e5a81c58a4ab7434f">InformaPISQtde</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *qBCProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *vAliqProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *vPIS);</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160; </div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01142"></a><span class="lineno"><a class="line" href="group__g11.html#ga4db19fe8eb543cff4c25fbb08c92b64f"> 1142</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__s0.html#gaacfb75ef96b947a298203a08fc777805">InformaPISNT</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST);</div>
+<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160; </div>
+<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01199"></a><span class="lineno"><a class="line" href="group__g11.html#ga0357dcea7731ef48a652219d8f346185"> 1199</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__s0.html#gaf8e6667b2370bdf25646dd250c212afd">InformaPISOutr</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keywordtype">int</span> nItem, <span class="keywordtype">int</span> grupo, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBC_qBCProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *pPIS_vAliqProd,</div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;                                                     <span class="keyword">const</span> <span class="keywordtype">char</span> *vPIS);</div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160; </div>
+<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01251"></a><span class="lineno"><a class="line" href="group__g11.html#gab041a66d2901eafe678cf467d2b1ae91"> 1251</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g11.html#gab041a66d2901eafe678cf467d2b1ae91">InformaCofinsAliq</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBC, <span class="keyword">const</span> <span class="keywordtype">char</span> *pCOFINS, <span class="keyword">const</span> <span class="keywordtype">char</span> *vCOFINS);</div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160; </div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01303"></a><span class="lineno"><a class="line" href="group__g11.html#ga3b112801e5f0e2022f7853873f8c06c3"> 1303</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g11.html#ga3b112801e5f0e2022f7853873f8c06c3">InformaCofinsQtde</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *qBCProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *vAliqProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *vCOFINS);</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160; </div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01330"></a><span class="lineno"><a class="line" href="group__g11.html#ga2c51e25c3d5d68df2d39a480084ee6f7"> 1330</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g11.html#ga2c51e25c3d5d68df2d39a480084ee6f7">InformaCofinsNT</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST);</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160; </div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01387"></a><span class="lineno"><a class="line" href="group__g11.html#ga24eacb2d4b932846a7d3fc25478e54b4"> 1387</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g11.html#ga24eacb2d4b932846a7d3fc25478e54b4">InformaCofinsOutr</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keywordtype">int</span> nItem, <span class="keywordtype">int</span> grupo, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBC_qBCProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *pCOFINS_vAliqProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *vCOFINS);</div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160; </div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;<span class="comment">//    int InformaPISST(const char *file_path, int nItem, const char *vBC_qBCProd, const char *pPIS_vAliqProd, const char *vPIS, int grupo);</span></div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160; </div>
+<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;<span class="comment">//    int InformaCOFINSST(const char *file_path, int nItem, const char *vBC_qBCProd, const char *pCOFINS_vAliqProd, const char *vCOFINS, int grupo);</span></div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;<span class="comment">//    int InformaISSQN(const char *file_path, int nItem, const char *vBC, const char *vAliq, const char *vISSQN, const char *cMunFG,</span></div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;<span class="comment">//                                                   const char *cListServ, const char *vDeducao, const char *vOutro, const char *vDescIncond, const char *vDescCond,</span></div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;<span class="comment">//                                                   const char *vISSRet, int indISS, const char *cServico, const char *cMun, const char *cPais, const char *nProcesso,</span></div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;<span class="comment">//                                                   int indIncentivo);</span></div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;<span class="comment">//    int InformaIPI(const char *file_path, int nItem, const char *clEnq, const char *CNPJProd, const char *cSelo, const char *qSelo, const char *cEnq, const char *CST,</span></div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;<span class="comment">//                                                 const char *vBC, const char *pIPI, const char *qUnid, const char *vUnid, const char *vIPI, const char *IPINT_CST);</span></div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160; </div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;<span class="comment">//    int InformaImpostoImportacao(const char *file_path, int nItem, const char *vBC, const char *vDespAdu, const char *vII, const char *vIOF);</span></div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160; </div>
+<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01495"></a><span class="lineno"><a class="line" href="group__g11.html#ga4d1cbca4c120fba6fad319fca63b29ef"> 1495</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga73616de783fbbf4a8f0d0d003374d0ca">InformaICMS00</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keywordtype">int</span> nItem, <span class="keywordtype">int</span> orig, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *modBC, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBC, <span class="keyword">const</span> <span class="keywordtype">char</span> *pICMS, <span class="keyword">const</span> <span class="keywordtype">char</span> *vICMS, <span class="keyword">const</span> <span class="keywordtype">char</span> *pFCP, <span class="keyword">const</span> <span class="keywordtype">char</span> *vFCP);</div>
+<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160; </div>
+<div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01603"></a><span class="lineno"><a class="line" href="group__g11.html#ga13eab2a00da8d0ba6ff62197a08f17b6"> 1603</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g11.html#ga13eab2a00da8d0ba6ff62197a08f17b6">InformaICMS20</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keywordtype">int</span> nItem, <span class="keywordtype">int</span> orig, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *modBC, <span class="keyword">const</span> <span class="keywordtype">char</span> *pRedBC, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBC,</div>
+<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;                      <span class="keyword">const</span> <span class="keywordtype">char</span> *pICMS, <span class="keyword">const</span> <span class="keywordtype">char</span> *vICMS, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBCFCP, <span class="keyword">const</span> <span class="keywordtype">char</span> *pFCP, <span class="keyword">const</span> <span class="keywordtype">char</span> *vFCP, <span class="keyword">const</span> <span class="keywordtype">char</span> *vICMSDeson, <span class="keyword">const</span> <span class="keywordtype">char</span> *motDesICMS);</div>
+<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160; </div>
+<div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01657"></a><span class="lineno"><a class="line" href="group__g11.html#ga1ec64dfa85e02d898dca202972859b8c"> 1657</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__s0.html#gafda2992596e0a3b16849fc3f5359e6a8">InformaICMS40</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keywordtype">int</span> nItem, <span class="keywordtype">int</span> orig, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *vICMSDeson, <span class="keyword">const</span> <span class="keywordtype">char</span> *motDesICMS);</div>
+<div class="line"><a name="l01658"></a><span class="lineno"> 1658</span>&#160; </div>
+<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;    E1_NFCESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01773"></a><span class="lineno"><a class="line" href="group__g11.html#ga2a57df17fa8010c40f71f0fd14159ee8"> 1773</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g11.html#ga2a57df17fa8010c40f71f0fd14159ee8">InformaICMS60</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_path, <span class="keywordtype">int</span> nItem, <span class="keywordtype">int</span> orig, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBCSTRet, <span class="keyword">const</span> <span class="keywordtype">char</span> *pST, <span class="keyword">const</span> <span class="keywordtype">char</span> *vICMSSubstituto,</div>
+<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;                      <span class="keyword">const</span> <span class="keywordtype">char</span> *vICMSSTRet, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBCFCPSTRet, <span class="keyword">const</span> <span class="keywordtype">char</span> *pFCPSTRet, <span class="keyword">const</span> <span class="keywordtype">char</span> *vFCPSTRet, <span class="keyword">const</span> <span class="keywordtype">char</span> *pRedBCEfet,</div>
+<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;                      <span class="keyword">const</span> <span class="keywordtype">char</span> *vBCEfet, <span class="keyword">const</span> <span class="keywordtype">char</span> *pICMSEfet, <span class="keyword">const</span> <span class="keywordtype">char</span> *vICMSEfet);</div>
+<div class="line"><a name="l01776"></a><span class="lineno"> 1776</span>&#160; </div>
+<div class="line"><a name="l01777"></a><span class="lineno"> 1777</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160;<span class="comment">//    int InformaICMS90(const char *file_path, int nItem, int orig, const char *CST, const char *modBC, const char *pRedBC, const char *vBC, const char *pICMS, const char *vICMS,</span></div>
+<div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;<span class="comment">//                                                    const char *modBCST, const char *pMVAST, const char *pRedBCST, const char *vBCST, const char *pICMSST, const char *vICMSST, const char *vICMSDeson, const char *motDesICMS);</span></div>
+<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;<span class="comment">//    int InformaICMSSN102(const char *file_path, int nItem, int orig, const char *CSOSN);</span></div>
+<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;<span class="comment">//    int InformaICMSSN202(const char *file_path, int nItem, int orig, const char *CSOSN, const char *modBCST, const char *pMVAST, const char *pRedBCST,</span></div>
+<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;<span class="comment">//                                                       const char *vBCST, const char *pICMSST, const char *vICMSST);</span></div>
+<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;<span class="comment">//    int InformaICMSSN500(const char *file_path, int nItem, int orig, const char *vBCSTRet, const char *vICMSSTRet, const char *CSOSN);</span></div>
+<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;<span class="comment">//    ///@cond</span></div>
+<div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;<span class="comment">//    E1_NFCESHARED_EXPORT STDCALL</span></div>
+<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;<span class="comment">//    ///@endcond</span></div>
+<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;<span class="comment">//    int InformaICMSSN900(const char *file_path, int nItem, int orig, const char *modBC, const char *vBC, const char *pRedBC, const char *pICMS, const char *vICMS, const char *modBCST, const char *pMVAST,</span></div>
+<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;<span class="comment">//                                                       const char *pRedBCST, const char *vBCST, const char *pICMSST, const char *vICMSST, const char *CSOSN, const char *pCredSN, const char *vCredICMSSN);</span></div>
+<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160; </div>
+<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;}</div>
+<div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160; </div>
+<div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// EXPORTAFUNCOES_H</span></div>
+<div class="ttc" id="agroup__g11_html_ga13eab2a00da8d0ba6ff62197a08f17b6"><div class="ttname"><a href="group__g11.html#ga13eab2a00da8d0ba6ff62197a08f17b6">InformaICMS20</a></div><div class="ttdeci">int InformaICMS20(const char *file_path, int nItem, int orig, const char *CST, const char *modBC, const char *pRedBC, const char *vBC, const char *pICMS, const char *vICMS, const char *vBCFCP, const char *pFCP, const char *vFCP, const char *vICMSDeson, const char *motDesICMS)</div></div>
+<div class="ttc" id="agroup__g11_html_ga2287edb020c63e91c35c1783f671cdda"><div class="ttname"><a href="group__g11.html#ga2287edb020c63e91c35c1783f671cdda">CancelarNota</a></div><div class="ttdeci">const char * CancelarNota(const char *chave_nota, const char *protocolo, const char *justificativa, int *ret)</div></div>
+<div class="ttc" id="agroup__g11_html_ga24eacb2d4b932846a7d3fc25478e54b4"><div class="ttname"><a href="group__g11.html#ga24eacb2d4b932846a7d3fc25478e54b4">InformaCofinsOutr</a></div><div class="ttdeci">int InformaCofinsOutr(const char *file_path, int nItem, int grupo, const char *CST, const char *vBC_qBCProd, const char *pCOFINS_vAliqProd, const char *vCOFINS)</div></div>
+<div class="ttc" id="agroup__g11_html_ga2a57df17fa8010c40f71f0fd14159ee8"><div class="ttname"><a href="group__g11.html#ga2a57df17fa8010c40f71f0fd14159ee8">InformaICMS60</a></div><div class="ttdeci">int InformaICMS60(const char *file_path, int nItem, int orig, const char *CST, const char *vBCSTRet, const char *pST, const char *vICMSSubstituto, const char *vICMSSTRet, const char *vBCFCPSTRet, const char *pFCPSTRet, const char *vFCPSTRet, const char *pRedBCEfet, const char *vBCEfet, const char *pICMSEfet, const char *vICMSEfet)</div></div>
+<div class="ttc" id="agroup__g11_html_ga2c51e25c3d5d68df2d39a480084ee6f7"><div class="ttname"><a href="group__g11.html#ga2c51e25c3d5d68df2d39a480084ee6f7">InformaCofinsNT</a></div><div class="ttdeci">int InformaCofinsNT(const char *file_path, int nItem, const char *CST)</div></div>
+<div class="ttc" id="agroup__g11_html_ga3b112801e5f0e2022f7853873f8c06c3"><div class="ttname"><a href="group__g11.html#ga3b112801e5f0e2022f7853873f8c06c3">InformaCofinsQtde</a></div><div class="ttdeci">int InformaCofinsQtde(const char *file_path, int nItem, const char *CST, const char *qBCProd, const char *vAliqProd, const char *vCOFINS)</div></div>
+<div class="ttc" id="agroup__g11_html_ga3cd4681c162c88ac0af848f77ff1b416"><div class="ttname"><a href="group__g11.html#ga3cd4681c162c88ac0af848f77ff1b416">EmitirNota</a></div><div class="ttdeci">const char * EmitirNota(const char *arquivo_nota, int *ret)</div></div>
+<div class="ttc" id="agroup__g11_html_ga4fff010d41f1fe3cb7e7464efe7b47d1"><div class="ttname"><a href="group__g11.html#ga4fff010d41f1fe3cb7e7464efe7b47d1">DecodificarNota</a></div><div class="ttdeci">const char * DecodificarNota(const char *path_root, const char *resposta_emitir_nota, int *ret)</div></div>
+<div class="ttc" id="agroup__g11_html_ga59f4d22c1b7a580bb38a562ed6ee801a"><div class="ttname"><a href="group__g11.html#ga59f4d22c1b7a580bb38a562ed6ee801a">InformaVolumes</a></div><div class="ttdeci">int InformaVolumes(const char *file_path, const char *qVol, const char *especie, const char *marca, const char *nVol, const char *pesoL, const char *pesoB)</div></div>
+<div class="ttc" id="agroup__g11_html_ga756a52dc48dba09a8b245a14cf3f08cb"><div class="ttname"><a href="group__g11.html#ga756a52dc48dba09a8b245a14cf3f08cb">InformaEmitente</a></div><div class="ttdeci">int InformaEmitente(const char *path_file, const char *CNPJ, const char *CPF, const char *xNome, const char *xFant, const char *xLgr, const char *nro, const char *xCpl, const char *xBairro, int cMun, const char *xMun, const char *UF, const char *CEP, int cPais, const char *xPais, const char *fone, const char *IE, const char *IEST, const char *IM, const char *CNAE, int CRT)</div></div>
+<div class="ttc" id="agroup__g11_html_gaa68f369c4255530317dbcb5cfdff77e3"><div class="ttname"><a href="group__g11.html#gaa68f369c4255530317dbcb5cfdff77e3">InformaLacres</a></div><div class="ttdeci">int InformaLacres(const char *file_path, const char *nLacre, int indexVolume)</div></div>
+<div class="ttc" id="agroup__g11_html_gab041a66d2901eafe678cf467d2b1ae91"><div class="ttname"><a href="group__g11.html#gab041a66d2901eafe678cf467d2b1ae91">InformaCofinsAliq</a></div><div class="ttdeci">int InformaCofinsAliq(const char *file_path, int nItem, const char *CST, const char *vBC, const char *pCOFINS, const char *vCOFINS)</div></div>
+<div class="ttc" id="agroup__g11_html_gab6feb5faa3fdd60ca0c8294544d22a1c"><div class="ttname"><a href="group__g11.html#gab6feb5faa3fdd60ca0c8294544d22a1c">ListarEventos</a></div><div class="ttdeci">const char * ListarEventos(const char *chave_nota, int *ret)</div></div>
+<div class="ttc" id="agroup__g11_html_gab8b8af8e479db51c433108cde6e97bf0"><div class="ttname"><a href="group__g11.html#gab8b8af8e479db51c433108cde6e97bf0">InformaPagamento</a></div><div class="ttdeci">int InformaPagamento(const char *file_path, int indPag, int tPag, const char *vPag, int tpIntegra, const char *CNPJ, int tBand, const char *cAut, const char *vTroco)</div></div>
+<div class="ttc" id="agroup__g11_html_gacece6dcf69dda03738e7b6349a4982a8"><div class="ttname"><a href="group__g11.html#gacece6dcf69dda03738e7b6349a4982a8">ConsultarId</a></div><div class="ttdeci">const char * ConsultarId(const char *id_local, int *ret)</div></div>
+<div class="ttc" id="agroup__g11_html_gadd9eff7b1279230c008dd0dbc2dbe298"><div class="ttname"><a href="group__g11.html#gadd9eff7b1279230c008dd0dbc2dbe298">ConsultarNota</a></div><div class="ttdeci">const char * ConsultarNota(const char *chave_nota, int *ret)</div></div>
+<div class="ttc" id="agroup__g11_html_gae41788f8f2358a5088d63b29ef909b3d"><div class="ttname"><a href="group__g11.html#gae41788f8f2358a5088d63b29ef909b3d">InformaTransporte</a></div><div class="ttdeci">int InformaTransporte(const char *file_path, int modFrete, const char *CNPJ, const char *CPF, const char *xNome, const char *IE, const char *xEnder, const char *xMun, const char *UF)</div></div>
+<div class="ttc" id="agroup__g11_html_gafd841a2391cdab971e4bbbf24f02495c"><div class="ttname"><a href="group__g11.html#gafd841a2391cdab971e4bbbf24f02495c">TestaConexaoNFCe</a></div><div class="ttdeci">int TestaConexaoNFCe()</div></div>
+<div class="ttc" id="agroup__s0_html_ga11f5c8556b785241c2a004add7c49630"><div class="ttname"><a href="group__s0.html#ga11f5c8556b785241c2a004add7c49630">InformaProduto</a></div><div class="ttdeci">int InformaProduto(const char *path_file, const char *cProd, const char *cEAN, const char *xProd, const char *NCM, const char *CEST, const char *CFOP, const char *uCom, const char *qCom, const char *vUnCom, const char *indRegra, const char *vDesc, const char *vOutro)</div><div class="ttdoc">InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.</div></div>
+<div class="ttc" id="agroup__s0_html_ga6043776737079a97599bd8cae6792a64"><div class="ttname"><a href="group__s0.html#ga6043776737079a97599bd8cae6792a64">InformaPISAliq</a></div><div class="ttdeci">int InformaPISAliq(const char *path_file, int nItem, const char *CST, const char *vBC, const char *pPIS)</div><div class="ttdoc">InformaPISAliq Cria TAG PIS e PISAliq.  Grupo de PIS tributado pela alíquota.</div></div>
+<div class="ttc" id="agroup__s0_html_ga73616de783fbbf4a8f0d0d003374d0ca"><div class="ttname"><a href="group__s0.html#ga73616de783fbbf4a8f0d0d003374d0ca">InformaICMS00</a></div><div class="ttdeci">int InformaICMS00(const char *path_file, int nItem, int Orig, const char *CST, const char *pICMS)</div><div class="ttdoc">InformaICMS00 Cria Tag ICMS e ICMS00 CampocRegTrib=3 – Regime Normal Grupo de Tributação do ICMS= 00,...</div></div>
+<div class="ttc" id="agroup__s0_html_ga771504399db187272626f3171e2dc261"><div class="ttname"><a href="group__s0.html#ga771504399db187272626f3171e2dc261">AbreCupomVenda</a></div><div class="ttdeci">int AbreCupomVenda(const char *path_file, const char *versaoDadosEnt, const char *CNPJ_SH, const char *signAC, int numeroCaixa, const char *CNPJ_emit, const char *IE, const char *IM, const char *cRegTribISSQN, const char *indRatISSQN, const char *CNPJ_dest, const char *CPF_dest, const char *xNome_dest)</div><div class="ttdoc">AbreCupomVenda Esssa função deve ser a primeira a ser chamada pela aplicação para iniciar a criação d...</div></div>
+<div class="ttc" id="agroup__s0_html_gaacfb75ef96b947a298203a08fc777805"><div class="ttname"><a href="group__s0.html#gaacfb75ef96b947a298203a08fc777805">InformaPISNT</a></div><div class="ttdeci">int InformaPISNT(const char *path_file, int nItem, const char *CST)</div><div class="ttdoc">InformaPISNT Cria TAG PIS e PISNT. Grupo de PIS não tributado.</div></div>
+<div class="ttc" id="agroup__s0_html_gac092e7a6302c422e5a81c58a4ab7434f"><div class="ttname"><a href="group__s0.html#gac092e7a6302c422e5a81c58a4ab7434f">InformaPISQtde</a></div><div class="ttdeci">int InformaPISQtde(const char *path_file, int nItem, const char *CST, const char *qBCProd, const char *vAliqProd)</div><div class="ttdoc">InformaPISQtde Cria TAG PIS e PISQtde. Grupo de PIS tributado por Qtde.</div></div>
+<div class="ttc" id="agroup__s0_html_gaf8e6667b2370bdf25646dd250c212afd"><div class="ttname"><a href="group__s0.html#gaf8e6667b2370bdf25646dd250c212afd">InformaPISOutr</a></div><div class="ttdeci">int InformaPISOutr(const char *path_file, int nItem, int grupo, const char *CST, const char *vBC_qBCProd, const char *pPIS_vAliqProd)</div><div class="ttdoc">InformaPISOutr Cria TAG PIS e PISOutr. Grupo de PIS Outras Operações. CST = 99 Informar campos para c...</div></div>
+<div class="ttc" id="agroup__s0_html_gafda2992596e0a3b16849fc3f5359e6a8"><div class="ttname"><a href="group__s0.html#gafda2992596e0a3b16849fc3f5359e6a8">InformaICMS40</a></div><div class="ttdeci">int InformaICMS40(const char *path_file, int nItem, int Orig, const char *CST)</div><div class="ttdoc">InformaICMS40 Cria Tag ICMS e ICMS40 Campo cRegTrib=3 – Regime Normal Grupo de Tributação do ICMS = 4...</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f4896ef366e952bc0ca13504904c1e56.html">e1_nfce</a></li><li class="navelem"><b>exportafuncoes.h</b></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
