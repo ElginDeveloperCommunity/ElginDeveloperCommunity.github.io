@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.19</span>
+   &#160;<span id="projectnumber">versão 2.20</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -750,6 +750,11 @@ Enumerações</h2></td></tr>
 , <a class="el" href="group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbaecb11bc6245b0f49b56c2058f7733389">BR_ERRO_ABERTURA_ARQUIVO</a> = -1222
 , <br />
 &#160;&#160;<a class="el" href="group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbaf2072bbdaed6fa27681bbe7f94e64527">BR_ERRO_ESCREVER_ARQUIVO</a> = -1223
+, <a class="el" href="group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbae4cc435bf49439ea0125d8cf92792754">BR_OUTPUT_NULL</a> = -1224
+, <a class="el" href="group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbad30f13853f9bf56b450eeef2f60e427c">BR_ID_TRANSACAO_INVALIDO</a> = -1225
+, <a class="el" href="group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba71f9c484b1551439c04790496f1dafa0">BR_PDV_NULL</a> = -1226
+, <br />
+&#160;&#160;<a class="el" href="group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba203f26c54556caf8276f57dbc961c810">BR_PDV_INVALIDO</a> = -1227
 <br />
  }</td></tr>
 <tr class="memdesc:ga7b91f88fc3df94aa2683c40f1854c4fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Br_Erro_Param enum -1211 à -1230.  <a href="group__g1.html#ga7b91f88fc3df94aa2683c40f1854c4fb">Mais...</a><br /></td></tr>
@@ -2628,6 +2633,14 @@ Faixa -1211 à -1230. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga7b91f88fc3df94aa2683c40f1854c4fbaf2072bbdaed6fa27681bbe7f94e64527"></a>BR_ERRO_ESCREVER_ARQUIVO&#160;</td><td class="fielddoc"><p><b>(-1223)</b> Erro ao gravar o retorno no arquivo informado pelo parâmetro path. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga7b91f88fc3df94aa2683c40f1854c4fbae4cc435bf49439ea0125d8cf92792754"></a>BR_OUTPUT_NULL&#160;</td><td class="fielddoc"><p><b>(-1224)</b> Parâmetro retorno não pode ser null. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7b91f88fc3df94aa2683c40f1854c4fbad30f13853f9bf56b450eeef2f60e427c"></a>BR_ID_TRANSACAO_INVALIDO&#160;</td><td class="fielddoc"><p><b>(-1225)</b> Parâmetro idTransacao está fora dos limites. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7b91f88fc3df94aa2683c40f1854c4fba71f9c484b1551439c04790496f1dafa0"></a>BR_PDV_NULL&#160;</td><td class="fielddoc"><p><b>(-1226)</b> Parâmetro pdv não pode ser null. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7b91f88fc3df94aa2683c40f1854c4fba203f26c54556caf8276f57dbc961c810"></a>BR_PDV_INVALIDO&#160;</td><td class="fielddoc"><p><b>(-1227)</b> Parâmetro pdv inválido. </p>
+</td></tr>
 </table>
 
 </div>
@@ -2648,9 +2661,9 @@ Faixa -1211 à -1230. </p>
 <p>Define os erros relativos à função de status do E1_Bridge.<br  />
 Faixa -1231 à -1240. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="gga161eeb1d172e92f21fab4185bad6d51bacd12e002896d64514ae2f082a68d32c3"></a>BR_STATUS_EM_ANDAMENTO&#160;</td><td class="fielddoc"><p><b>(-1231)</b> Já existe uma consulta de status em andamento. </p>
+<tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="gga161eeb1d172e92f21fab4185bad6d51bacd12e002896d64514ae2f082a68d32c3"></a>BR_STATUS_EM_ANDAMENTO&#160;</td><td class="fielddoc"><p><b>(-1231)</b> Já existe uma consulta de status em andamento.\nA aplicação pode escolher outro terminal ou aguardar por alguns segundos e tentar novamente </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga161eeb1d172e92f21fab4185bad6d51baf2a3109958f7210740fb074e90f41d3c"></a>BR_ERRO_CONECTAR_STATUS&#160;</td><td class="fielddoc"><p><b>(-1232)</b> Erro ao se conectar com o serviço de status. </p>
+<tr><td class="fieldname"><a id="gga161eeb1d172e92f21fab4185bad6d51baf2a3109958f7210740fb074e90f41d3c"></a>BR_ERRO_CONECTAR_STATUS&#160;</td><td class="fielddoc"><p><b>(-1232)</b> Erro ao se conectar com o serviço de status.\nO usuário deve ser instruido a validar se a aplicação esta em execução no terminal e se a rede está ok no computador e no smartpos </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga161eeb1d172e92f21fab4185bad6d51ba58a640bf883236b5876b608973e4b7d0"></a>BR_ERRO_LEITURA_STATUS&#160;</td><td class="fielddoc"><p><b>(-1233)</b> Erro ao ler o retorno do status. </p>
 </td></tr>
@@ -2676,9 +2689,9 @@ Faixa -1231 à -1240. </p>
 <p>Define os erros relativos às funções de transação do E1_Bridge.<br  />
 Faixa -1241 à -1250. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="gga9e4e19001ea466e5ece45c959b1a26dea771c05733945251ce25232984f5e5f39"></a>BR_TRANSACAO_EM_ANDAMENTO&#160;</td><td class="fielddoc"><p><b>(-1241)</b> Já existe uma transação em andamento. </p>
+<tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="gga9e4e19001ea466e5ece45c959b1a26dea771c05733945251ce25232984f5e5f39"></a>BR_TRANSACAO_EM_ANDAMENTO&#160;</td><td class="fielddoc"><p><b>(-1241)</b> Já existe uma transação em andamento.\nA aplicação pode escolher outro terminal ou aguardar por alguns segundos e tentar novamente </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga9e4e19001ea466e5ece45c959b1a26dea2b0194313d8fe36c1af4c3dd03869218"></a>BR_ERRO_CONECTAR_TRANSACAO&#160;</td><td class="fielddoc"><p><b>(-1242)</b> Erro ao se conectar com o serviço de transação. </p>
+<tr><td class="fieldname"><a id="gga9e4e19001ea466e5ece45c959b1a26dea2b0194313d8fe36c1af4c3dd03869218"></a>BR_ERRO_CONECTAR_TRANSACAO&#160;</td><td class="fielddoc"><p><b>(-1242)</b> Erro ao se conectar com o serviço de transação.\nO usuário deve ser instruido a validar se a aplicação esta em execução no terminal e se a rede está ok no computador e no smartpos </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga9e4e19001ea466e5ece45c959b1a26dea66342ab2c36d86d8a4eff79dcdef26d9"></a>BR_ERRO_ENVIO_TRANSACAO&#160;</td><td class="fielddoc"><p><b>(-1243)</b> Erro ao enviar dados da transação ao terminal. </p>
 </td></tr>

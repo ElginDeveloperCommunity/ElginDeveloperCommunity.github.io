@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.19</span>
+   &#160;<span id="projectnumber">versão 2.20</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -226,7 +226,7 @@ Funções</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Função utilizada para teste de comunicação com API de autorização.</p>
-<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será um int indicando sucesso na requisição (HTTP 200). </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será o conteúdo da resposta HTTP(200). </dd></dl>
 
 </div>
 </div>
@@ -263,7 +263,7 @@ Funções</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será um int indicando sucesso na requisição HTTP (200). </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será o conteúdo da resposta HTTP(200). </dd></dl>
 
 </div>
 </div>
@@ -296,11 +296,11 @@ Funções</h2></td></tr>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">chave_nota</td><td>- Parâmetro tipo String que recebe a chave da nota a ser consultada.</td></tr>
-    <tr><td class="paramname">ret</td><td>- Parâmetro do tipo ponteiro para int que será passado por referência do ponteiro.</td></tr>
+    <tr><td class="paramname">ret</td><td>- Parâmetro do tipo ponteiro para int que será passado por referência.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será um int indicando sucesso na requisição HTTP (200). </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será o conteúdo da resposta HTTP(200). </dd></dl>
 
 </div>
 </div>
@@ -351,7 +351,7 @@ Funções</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será um int indicando sucesso na requisição HTTP (200). </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será o conteúdo da resposta HTTP(200). </dd></dl>
 
 </div>
 </div>
@@ -389,13 +389,13 @@ Funções</h2></td></tr>
 <p>Função utilizada na decodificação da Nota Fiscal Eletrônica.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">path_root</td><td>- Parâmetro tipo String.</td></tr>
-    <tr><td class="paramname">resposta_emitir_nota</td><td>- Parâmetro do tipo String.</td></tr>
+    <tr><td class="paramname">path_root</td><td>- Parâmetro tipo String contendo o caminho do arquivo contendo json com os dados da nota.</td></tr>
+    <tr><td class="paramname">resposta_emitir_nota</td><td>- Parâmetro do tipo String que recebe o dado da emissão em BASE64.</td></tr>
     <tr><td class="paramname">ret</td><td>- Parâmetro do tipo ponteiro para int que será passado por referência.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será um int indicando sucesso na requisição HTTP (200). </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso sera o dado da emissão decodificado. </dd></dl>
 
 </div>
 </div>
@@ -427,12 +427,12 @@ Funções</h2></td></tr>
 <p>Função utilizada para consulta de Id de uma operação específica de emissão de cupom.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id_local</td><td>- Parâmetro tipo String utilizado na emissão.</td></tr>
+    <tr><td class="paramname">id_local</td><td>- Parâmetro tipo String contendo Id usado na emissão a ser consultada.</td></tr>
     <tr><td class="paramname">ret</td><td>- Parâmetro do tipo ponteiro para int que será passado por referência.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será um int indicando sucesso na requisição HTTP (200). </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será o conteúdo da resposta HTTP(200). </dd></dl>
 
 </div>
 </div>
@@ -469,7 +469,7 @@ Funções</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será um int indicando sucesso na requisição HTTP (200). </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será o conteúdo da resposta HTTP(200). </dd></dl>
 
 </div>
 </div>
@@ -657,7 +657,7 @@ EX:<br  />
     <tr><td class="paramname">cNF</td><td>Código numérico que compõe a chave de acesso.<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B03<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 8 <br  />
 </p>
@@ -675,7 +675,7 @@ EX:<br  />
     <tr><td class="paramname">mod</td><td>Código do Modelo do Documento Fiscal <br  />
 55=NF-e emitida em substituição ao modelo 1 ou 1A; 65=NFC-e, utilizada nas operações de venda no varejo (a critério da UF aceitar este modelo de documento). <blockquote class="doxtable">
 <p><b>TAG:</b> B07<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 2<br  />
 </p>
@@ -684,7 +684,7 @@ EX:<br  />
     <tr><td class="paramname">serie</td><td>Série do Documento Fiscal.<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B07<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 1-3<br  />
 </p>
@@ -693,7 +693,7 @@ EX:<br  />
     <tr><td class="paramname">nNF</td><td>Número do documento fiscal.<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B08<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 1-9<br  />
 </p>
@@ -702,7 +702,7 @@ EX:<br  />
     <tr><td class="paramname">dhEmi</td><td>Data e hora de emissão do Documento Fiscal: AAAA-MM-DDThh:mm:ssTZD<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B09<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> &ndash;<br  />
 </p>
@@ -720,7 +720,7 @@ EX:<br  />
     <tr><td class="paramname">tpNF</td><td>Tipo de Operação da NF-e: 0=Entrada; 1=Saída<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B11<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 1 <br  />
 </p>
@@ -729,7 +729,7 @@ EX:<br  />
     <tr><td class="paramname">idDest</td><td>Identificador de local de destino da operação : 1=Operação interna; 2=Operação interestadual; 3=Operação com exterior. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B11a<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 1<br  />
 </p>
@@ -738,7 +738,7 @@ EX:<br  />
     <tr><td class="paramname">cMunFG</td><td>Código do Município de Ocorrência do Fato Gerador<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B12<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 7<br  />
 </p>
@@ -756,7 +756,7 @@ EX:<br  />
     <tr><td class="paramname">tpEmis</td><td>Tipo de Emissão da NF-e <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B22<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 1 <br  />
 </p>
@@ -765,7 +765,7 @@ EX:<br  />
     <tr><td class="paramname">cDV</td><td>Dígito Verificador da Chave de Acesso da NF-e <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B23<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 1 <br  />
 </p>
@@ -774,7 +774,7 @@ EX:<br  />
     <tr><td class="paramname">tpAmb</td><td>Identificação do Ambiente: 1=Produção/2= Homologação<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B24 <br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Numérico <br  />
 <b>Tamanho:</b> 1 <br  />
 </p>
@@ -783,7 +783,7 @@ EX:<br  />
     <tr><td class="paramname">finNFe</td><td>Finalidade de emissão da NF-e <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B25<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 1<br  />
 </p>
@@ -792,7 +792,7 @@ EX:<br  />
     <tr><td class="paramname">indFinal</td><td>Indica operação com Consumidor final: 0=Normal; 1=Consumidor final;<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B25a<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 1<br  />
 </p>
@@ -819,7 +819,7 @@ EX:<br  />
     <tr><td class="paramname">procEmi</td><td>Processo de emissão da NF-e<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B26<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 1 <br  />
 </p>
@@ -828,7 +828,7 @@ EX:<br  />
     <tr><td class="paramname">verProc</td><td>Versão do Processo de emissão da NF-e <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B27<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 1-20<br  />
 </p>
@@ -837,7 +837,7 @@ EX:<br  />
     <tr><td class="paramname">dhCont</td><td>Data e Hora da entrada em contingência <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B28<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> &ndash;<br  />
 </p>
@@ -846,7 +846,7 @@ EX:<br  />
     <tr><td class="paramname">xJust</td><td>Justificativa da entrada em contingência<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> B29<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 15-256<br  />
 </p>
@@ -1028,7 +1028,7 @@ EX:<br  />
     <tr><td class="paramname">CPF</td><td>CPF do remetente.<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> C02a<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 2-60 <br  />
 </p>
@@ -1037,7 +1037,7 @@ EX:<br  />
     <tr><td class="paramname">xNome</td><td>Razão Social ou Nome do emitente.<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> C03<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 60<br  />
 </p>
@@ -1046,7 +1046,7 @@ EX:<br  />
     <tr><td class="paramname">xFant</td><td>Nome fantasia.<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> C04<br  />
-<b>Parâmetro Opcional</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 1-60<br  />
 </p>
@@ -1055,7 +1055,7 @@ EX:<br  />
     <tr><td class="paramname">xLgr</td><td>Logradouro.<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> C06<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 2-60<br  />
 </p>
@@ -1064,7 +1064,7 @@ EX:<br  />
     <tr><td class="paramname">nro</td><td>Número.<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> C07<br  />
-<b>Parametro obrigatório</b><br  />
+<b>Parametro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 1-60<br  />
 </p>
@@ -1073,7 +1073,7 @@ EX:<br  />
     <tr><td class="paramname">xCpl</td><td>Complemento <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> C08<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 1-60<br  />
 </p>
@@ -1082,7 +1082,7 @@ EX:<br  />
     <tr><td class="paramname">xBairro</td><td>Bairro <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> C09<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 2-60<br  />
 </p>
@@ -1091,7 +1091,7 @@ EX:<br  />
     <tr><td class="paramname">cMun</td><td>Código do município<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> C10<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 7 <br  />
 </p>
@@ -1100,7 +1100,7 @@ EX:<br  />
     <tr><td class="paramname">xMun</td><td>Nome do município <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> C11<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 2-60<br  />
 </p>
@@ -1109,7 +1109,7 @@ EX:<br  />
     <tr><td class="paramname">IE</td><td>Inscrição Estadual do Emitente <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> C17<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 2-14<br  />
 </p>
@@ -1118,7 +1118,7 @@ EX:<br  />
     <tr><td class="paramname">IEST</td><td>IE do Substituto Tributário<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> C18<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 2-14<br  />
 </p>
@@ -1127,7 +1127,7 @@ EX:<br  />
     <tr><td class="paramname">IM</td><td>Inscrição Municipal do Prestador de Serviço <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> C19<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 1-15<br  />
 </p>
@@ -1145,7 +1145,7 @@ EX:<br  />
     <tr><td class="paramname">CRT</td><td>Código de Regime Tributário <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> C21<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 1<br  />
 </p>
@@ -1226,7 +1226,7 @@ EX:<br  />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Função uitlizada para informar transporte para composição das informações a serem enviadas para nuvem.<br  />
+<p>Função uitlizada para informar transporte para construção do cupoim.<br  />
  </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">file_path</td><td>Caminho absoluto onde o arquivo json será gerado.<br  />
@@ -1370,7 +1370,7 @@ EX:<br  />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Função utilizada para informar Volumes quando existir trasnporte para compor informações para emissão do cupom.<br  />
+<p>Função utilizada para informar Volumes quando existir trasnporte para compor informações pdo cupom.<br  />
  </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">file_path</td><td>Caminho absoluto onde o arquivo json será gerado.<br  />
@@ -1564,7 +1564,7 @@ EX:<br  />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Função utilizada para informar Pagamento na composição das informações para emissão.<br  />
+<p>Função utilizada para informar Pagamento na composição das informações para emissão do cupom.<br  />
  </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">file_path</td><td>Caminho absoluto onde o arquivo json será gerado.<br  />
@@ -1815,7 +1815,7 @@ EX:<br  />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Função utilizada para informar Produto na composição das informações para emissão.<br  />
+<p>Função utilizada para informar Produto na composição das informações para emissão do cupom NFCe.<br  />
  </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">file_path</td><td>Caminho absoluto onde o arquivo json será gerado.<br  />
@@ -1863,7 +1863,7 @@ EX:<br  />
     <tr><td class="paramname">NVE</td><td>Codificação NVE - Nomenclatura de Valor Aduaneiro e Estatística..<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> I05a<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 6<br  />
 </p>
@@ -1953,7 +1953,7 @@ EX:<br  />
     <tr><td class="paramname">vProd</td><td>Valor Total Bruto dos Produtos ou Serviços. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> I11<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 13v2<br  />
 </p>
@@ -2034,7 +2034,7 @@ EX:<br  />
     <tr><td class="paramname">indTot</td><td>Indica se valor do Item (vProd) entra no valor total da NF-e (vProd) <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> I17b<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 1<br  />
 </p>
@@ -2096,7 +2096,7 @@ EX:<br  />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Função utilizada para informar PISALIQ na composição das informações para emissão.<br  />
+<p>Função utilizada para informar PISALIQ na composição das informações para emissão da NFCe.<br  />
  </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">file_path</td><td>Caminho absoluto onde o arquivo json será gerado.<br  />
@@ -2381,7 +2381,6 @@ EX:<br  />
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Analisar esta função refernte aos dados.</p>
 <p>Função utilizada para informar PISOUTR na composição das informações para emissão.<br  />
  </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
@@ -2985,7 +2984,7 @@ EX:<br  />
     <tr><td class="paramname">vICMS</td><td>Valor do ICMS. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N17<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 13v2<br  />
 </p>
@@ -2994,7 +2993,7 @@ EX:<br  />
     <tr><td class="paramname">pFCP</td><td>Percentual do ICMS relativo ao Fundo de Combate à Pobreza (FCP). <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N17b<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 3v2-4<br  />
 </p>
@@ -3003,7 +3002,7 @@ EX:<br  />
     <tr><td class="paramname">vFCP</td><td>Valor do Fundo de Combate à Pobreza (FCP). <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N17c<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 13v2<br  />
 </p>
@@ -3186,7 +3185,7 @@ EX:<br  />
     <tr><td class="paramname">vICMS</td><td>Valor do ICMS. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N17<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 13v2<br  />
 </p>
@@ -3195,7 +3194,7 @@ EX:<br  />
     <tr><td class="paramname">vBCFCP</td><td>Valor da Base de Cálculo do FCP. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N17a<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 13v2<br  />
 </p>
@@ -3204,7 +3203,7 @@ EX:<br  />
     <tr><td class="paramname">pFCP</td><td>Percentual do ICMS relativo ao Fundo de Combate à Pobreza (FCP). <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N17b<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 3v2-4<br  />
 </p>
@@ -3213,7 +3212,7 @@ EX:<br  />
     <tr><td class="paramname">vFCP</td><td>Valor do Fundo de Combate à Pobreza (FCP). <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N17c<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 13v2<br  />
 </p>
@@ -3222,7 +3221,7 @@ EX:<br  />
     <tr><td class="paramname">vICMSDeson</td><td>Valor do ICMS desonerado. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N28a<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 13v2<br  />
 </p>
@@ -3231,7 +3230,7 @@ EX:<br  />
     <tr><td class="paramname">motDesICMS</td><td>Motivo da desoneração do ICMS. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N28<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 2<br  />
 </p>
@@ -3330,7 +3329,7 @@ EX:<br  />
     <tr><td class="paramname">vICMSDeson</td><td>Valor do ICMS desonerado. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N28a<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 13v2<br  />
 </p>
@@ -3339,7 +3338,7 @@ EX:<br  />
     <tr><td class="paramname">motDesICMS</td><td>Motivo da desoneração do ICMS. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N28<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 2<br  />
 </p>
@@ -3492,7 +3491,7 @@ EX:<br  />
     <tr><td class="paramname">vBCSTRet</td><td>Valor da BC do ICMS ST retido.<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N26<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 13v2 <br  />
 </p>
@@ -3501,7 +3500,7 @@ EX:<br  />
     <tr><td class="paramname">pST</td><td>Alíquota suportada pelo Consumidor Final. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N26a<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 3v2-4<br  />
 </p>
@@ -3519,7 +3518,7 @@ EX:<br  />
     <tr><td class="paramname">vICMSSTRet</td><td>Valor do ICMS ST retido. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N27<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 13v2<br  />
 </p>
@@ -3528,7 +3527,7 @@ EX:<br  />
     <tr><td class="paramname">vBCFCPSTRet</td><td>Valor da Base de Cálculo do FCP retido anteriormente. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N27a<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 13v2<br  />
 </p>
@@ -3537,7 +3536,7 @@ EX:<br  />
     <tr><td class="paramname">pFCPSTRet</td><td>Percentual do FCP retido anteriormente por Substituição Tributária. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N27b<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 3v2-4<br  />
 </p>
@@ -3546,7 +3545,7 @@ EX:<br  />
     <tr><td class="paramname">vFCPSTRet</td><td>Valor do FCP retido por Substituição Tributária. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N27d<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 13v2<br  />
 </p>
@@ -3555,7 +3554,7 @@ EX:<br  />
     <tr><td class="paramname">pRedBCEfet</td><td>Percentual de redução da base de cálculo efetiva. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N34<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 3v2-4<br  />
 </p>
@@ -3564,7 +3563,7 @@ EX:<br  />
     <tr><td class="paramname">vBCEfet</td><td>Valor da base de cálculo efetiva. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N35<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 13v2<br  />
 </p>
@@ -3573,7 +3572,7 @@ EX:<br  />
     <tr><td class="paramname">pICMSEfet</td><td>Alíquota do ICMS efetiva. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N36<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 3v2-4<br  />
 </p>
@@ -3582,7 +3581,7 @@ EX:<br  />
     <tr><td class="paramname">vICMSEfet</td><td>Alíquota do ICMS efetiva. <br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> N37<br  />
-<b>Parâmetro obrigatório</b><br  />
+<b>Parâmetro opcional</b><br  />
 <b>Tipo:</b> Numérico<br  />
 <b>Tamanho:</b> 13v2<br  />
 </p>

@@ -471,7 +471,11 @@ var group__g1 =
       [ "BR_DATA_HORA_INVALIDA", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbafc1c740a9c643b60e02dd84552923db7", null ],
       [ "BR_OPERACAO_INVALIDA", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba951409ac594f97fbfbcf21fb30ba5bfb", null ],
       [ "BR_ERRO_ABERTURA_ARQUIVO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbaecb11bc6245b0f49b56c2058f7733389", null ],
-      [ "BR_ERRO_ESCREVER_ARQUIVO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbaf2072bbdaed6fa27681bbe7f94e64527", null ]
+      [ "BR_ERRO_ESCREVER_ARQUIVO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbaf2072bbdaed6fa27681bbe7f94e64527", null ],
+      [ "BR_OUTPUT_NULL", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbae4cc435bf49439ea0125d8cf92792754", null ],
+      [ "BR_ID_TRANSACAO_INVALIDO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbad30f13853f9bf56b450eeef2f60e427c", null ],
+      [ "BR_PDV_NULL", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba71f9c484b1551439c04790496f1dafa0", null ],
+      [ "BR_PDV_INVALIDO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba203f26c54556caf8276f57dbc961c810", null ]
     ] ],
     [ "Br_Erro_Status", "group__g1.html#ga161eeb1d172e92f21fab4185bad6d51b", [
       [ "BR_STATUS_EM_ANDAMENTO", "group__g1.html#gga161eeb1d172e92f21fab4185bad6d51bacd12e002896d64514ae2f082a68d32c3", null ],
