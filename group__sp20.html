@@ -1,0 +1,877 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Comunicação Elgin: Funções</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Plataforma de Comunicação Elgin
+   &#160;<span id="projectnumber">versão 2.30</span>
+   </div>
+   <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group__sp20.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Enumerações</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Funções<div class="ingroups"><a class="el" href="group__g3.html">Android</a> &raquo; <a class="el" href="group__g31.html">SmartPOS</a> &raquo; <a class="el" href="group__sp2.html">E1_ElginPAY</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerações</h2></td></tr>
+<tr class="memitem:ga59529b807f980a3f1b2d0152ae27eb40"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga59529b807f980a3f1b2d0152ae27eb40">TipoImpressao</a> { <br />
+&#160;&#160;<a class="el" href="group__sp20.html#gga59529b807f980a3f1b2d0152ae27eb40a4563cdfe62208b1176e361ae18edc795">IMPRESSAO_PADRAO</a> =(0, "Padrao")
+, <a class="el" href="group__sp20.html#gga59529b807f980a3f1b2d0152ae27eb40aa625341079ec8c99bb1f3a1d12c9ab8c">IMPRESSAO_DIRETA_VIA_CLIENTE_VIA_ESTABELECIMENTO</a> =(1, "Ambas")
+, <a class="el" href="group__sp20.html#gga59529b807f980a3f1b2d0152ae27eb40a9fdacbc3ea7467032d1201de60952678">IMPRESSAO_DIRETA_VIA_CLIENTE</a> =(2, "Cliente")
+, <a class="el" href="group__sp20.html#gga59529b807f980a3f1b2d0152ae27eb40ac30575d4ba5b0b98855b264e15e15e99">IMPRESSAO_DIRETA_VIA_ESTABELECIMENTO</a> =(3, "Estabelecimento")
+, <br />
+&#160;&#160;<a class="el" href="group__sp20.html#gga59529b807f980a3f1b2d0152ae27eb40a66dec99afafea74f1ba85d2f4afda344">IMPRESSAO_DESABILITADA</a> =(4, "Nenhum")
+, <a class="el" href="group__sp20.html#gga59529b807f980a3f1b2d0152ae27eb40a0141f3e9da22bed82706b3444b1465ba">IMPRESSAO_INDEFINIDA</a> =(5, "Perguntar")
+<br />
+ }</td></tr>
+<tr class="separator:ga59529b807f980a3f1b2d0152ae27eb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:gaf2ac41e0fd67dad23471c9bd65ec99ef"><td class="memItemLeft" align="right" valign="top">public String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gaf2ac41e0fd67dad23471c9bd65ec99ef">getIdTransacao</a> ()</td></tr>
+<tr class="separator:gaf2ac41e0fd67dad23471c9bd65ec99ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga193326ad6f210e803deba42b43e6f694"><td class="memItemLeft" align="right" valign="top">public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga193326ad6f210e803deba42b43e6f694">setIdTransacao</a> (String midTransacao)</td></tr>
+<tr class="separator:ga193326ad6f210e803deba42b43e6f694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a650a4a0e002eb4d19e422ac4c950b4"><td class="memItemLeft" align="right" valign="top">public String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga0a650a4a0e002eb4d19e422ac4c950b4">getPdv</a> ()</td></tr>
+<tr class="separator:ga0a650a4a0e002eb4d19e422ac4c950b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3c1fae94a52557e9aa3d88f611e33f4"><td class="memItemLeft" align="right" valign="top">public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gae3c1fae94a52557e9aa3d88f611e33f4">setPdv</a> (String mpdv)</td></tr>
+<tr class="separator:gae3c1fae94a52557e9aa3d88f611e33f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b9b0af0c7756c7eee44b03ae8654337"><td class="memItemLeft" align="right" valign="top">public <a class="el" href="group__sp20.html#ga59529b807f980a3f1b2d0152ae27eb40">TipoImpressao</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga5b9b0af0c7756c7eee44b03ae8654337">getTipoImpressao</a> ()</td></tr>
+<tr class="separator:ga5b9b0af0c7756c7eee44b03ae8654337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae71c5e7677fb3b5efe3aa35d0f00f153"><td class="memItemLeft" align="right" valign="top">public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gae71c5e7677fb3b5efe3aa35d0f00f153">setTipoImpressao</a> (<a class="el" href="group__sp20.html#ga59529b807f980a3f1b2d0152ae27eb40">TipoImpressao</a> tipoImpressao)</td></tr>
+<tr class="separator:gae71c5e7677fb3b5efe3aa35d0f00f153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga091c22774c41dd2ff2a9de33ddca9c76"><td class="memItemLeft" align="right" valign="top">public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga091c22774c41dd2ff2a9de33ddca9c76">setColetarInfoCupomFiscal</a> (boolean coletarInfoCupomFiscal)</td></tr>
+<tr class="separator:ga091c22774c41dd2ff2a9de33ddca9c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd5215914ba997917a1f2227539a2d12"><td class="memItemLeft" align="right" valign="top">public boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gabd5215914ba997917a1f2227539a2d12">isColetarInfoCupomFiscal</a> ()</td></tr>
+<tr class="separator:gabd5215914ba997917a1f2227539a2d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf22e9e374301dc897b4171d39e467f4"><td class="memItemLeft" align="right" valign="top">public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gadf22e9e374301dc897b4171d39e467f4">iniciaVenda</a> (String valorTotal, Context context, Handler handler)</td></tr>
+<tr class="separator:gadf22e9e374301dc897b4171d39e467f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga536b4b782eae623d62f2a7d4fac9733c"><td class="memItemLeft" align="right" valign="top">public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga536b4b782eae623d62f2a7d4fac9733c">iniciaVendaDebito</a> (String valorTotal, Context context, Handler handler)</td></tr>
+<tr class="separator:ga536b4b782eae623d62f2a7d4fac9733c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafcbca74fc48c2ade0f00b05fb00f3223"><td class="memItemLeft" align="right" valign="top">public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gafcbca74fc48c2ade0f00b05fb00f3223">iniciaVendaCredito</a> (String valorTotal, int tipoFinanciamento, int numeroParcelas, Context context, Handler handler)</td></tr>
+<tr class="separator:gafcbca74fc48c2ade0f00b05fb00f3223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3faa18dde437bae0a097d14588ef150"><td class="memItemLeft" align="right" valign="top">public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gae3faa18dde437bae0a097d14588ef150">iniciaCancelamentoVenda</a> (String valorTotal, String ref, String data, Context context, Handler handler)</td></tr>
+<tr class="separator:gae3faa18dde437bae0a097d14588ef150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc3fa5b5b924b0a60047b3df8a61b981"><td class="memItemLeft" align="right" valign="top">public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gabc3fa5b5b924b0a60047b3df8a61b981">iniciaOperacaoAdministrativa</a> (Context context, Handler handler)</td></tr>
+<tr class="separator:gabc3fa5b5b924b0a60047b3df8a61b981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68a451efbb3655387c28e9262857f3af"><td class="memItemLeft" align="right" valign="top">Deprecated public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga68a451efbb3655387c28e9262857f3af">iniciarPagamentoDebito</a> (String valorTransacao, Context context, Handler handler)</td></tr>
+<tr class="separator:ga68a451efbb3655387c28e9262857f3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21db3abdc00c50b4cf1376f37c351c8a"><td class="memItemLeft" align="right" valign="top">Deprecated public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga21db3abdc00c50b4cf1376f37c351c8a">inciarPagamentoCredito</a> (String valorTransacao, int tipoFinanciamento, Context context, Handler handler)</td></tr>
+<tr class="separator:ga21db3abdc00c50b4cf1376f37c351c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac68a9e92957d794de2ad8648591bc281"><td class="memItemLeft" align="right" valign="top">Deprecated public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gac68a9e92957d794de2ad8648591bc281">iniciarPagamentoCredito</a> (String valorTransacao, int tipoFinanciamento, int numeroParcelas, Context context, Handler handler)</td></tr>
+<tr class="separator:gac68a9e92957d794de2ad8648591bc281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd9e04423e225d39e1b0bc1047a9f37b"><td class="memItemLeft" align="right" valign="top">Deprecated public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gabd9e04423e225d39e1b0bc1047a9f37b">iniciarCancelamentoVenda</a> (String valorTotal, Context context, Handler handler)</td></tr>
+<tr class="separator:gabd9e04423e225d39e1b0bc1047a9f37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad575761910841fbdc23122b15eaa6d2"><td class="memItemLeft" align="right" valign="top">Deprecated public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gaad575761910841fbdc23122b15eaa6d2">iniciarCancelamentoVenda</a> (String valorTotal, String ref, String data, Context context, Handler handler)</td></tr>
+<tr class="separator:gaad575761910841fbdc23122b15eaa6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe54b4a87666a9f955a78c3b7dad5043"><td class="memItemLeft" align="right" valign="top">Deprecated public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gabe54b4a87666a9f955a78c3b7dad5043">iniciarOperacaoAdministrativa</a> (Context context, Handler handler)</td></tr>
+<tr class="separator:gabe54b4a87666a9f955a78c3b7dad5043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<h2 class="groupheader">Enumerações</h2>
+<a id="ga59529b807f980a3f1b2d0152ae27eb40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga59529b807f980a3f1b2d0152ae27eb40">&#9670;&nbsp;</a></span>TipoImpressao</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__sp20.html#ga59529b807f980a3f1b2d0152ae27eb40">TipoImpressao</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enum responsavel por configurar os tipos de impressão que podem ser utilizadas pela classe de pagamento. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumeradores</th></tr><tr><td class="fieldname"><a id="gga59529b807f980a3f1b2d0152ae27eb40a4563cdfe62208b1176e361ae18edc795"></a>IMPRESSAO_PADRAO&#160;</td><td class="fielddoc"><p>IMPRIME DIRETO APENAS VIA DO ESTABELECIMENTO E PERGUNTA SOBRE VIA DO CLIENTE </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga59529b807f980a3f1b2d0152ae27eb40aa625341079ec8c99bb1f3a1d12c9ab8c"></a>IMPRESSAO_DIRETA_VIA_CLIENTE_VIA_ESTABELECIMENTO&#160;</td><td class="fielddoc"><p>IMPRIME DIRETO TODAS AS VIAS </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga59529b807f980a3f1b2d0152ae27eb40a9fdacbc3ea7467032d1201de60952678"></a>IMPRESSAO_DIRETA_VIA_CLIENTE&#160;</td><td class="fielddoc"><p>IMPRIME DIRETO APENAS VIA DO CLIENTE </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga59529b807f980a3f1b2d0152ae27eb40ac30575d4ba5b0b98855b264e15e15e99"></a>IMPRESSAO_DIRETA_VIA_ESTABELECIMENTO&#160;</td><td class="fielddoc"><p>IMPRIME DIRETO APENAS VIA DO ESTABELECIMENTO </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga59529b807f980a3f1b2d0152ae27eb40a66dec99afafea74f1ba85d2f4afda344"></a>IMPRESSAO_DESABILITADA&#160;</td><td class="fielddoc"><p>NÃO IMPRIME NENHUMA VIA </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga59529b807f980a3f1b2d0152ae27eb40a0141f3e9da22bed82706b3444b1465ba"></a>IMPRESSAO_INDEFINIDA&#160;</td><td class="fielddoc"><p>PERGUNTA AO USUÁRIOS QUAIS VIAS IMPRIMIR </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a id="gaf2ac41e0fd67dad23471c9bd65ec99ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2ac41e0fd67dad23471c9bd65ec99ef">&#9670;&nbsp;</a></span>getIdTransacao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public String getIdTransacao </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função para retornar o ID da Transação </p><dl class="section return"><dt>Retorna</dt><dd>string com o valor configurado pela função setIdTransacao ou um valor randomico gerado em casos onde o id não foi setado; </dd></dl>
+
+</div>
+</div>
+<a id="ga193326ad6f210e803deba42b43e6f694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga193326ad6f210e803deba42b43e6f694">&#9670;&nbsp;</a></span>setIdTransacao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public void setIdTransacao </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>midTransacao</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configura o ID da transação </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">midTransacao</td><td>String a ser usada como Identificador da transação </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga0a650a4a0e002eb4d19e422ac4c950b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a650a4a0e002eb4d19e422ac4c950b4">&#9670;&nbsp;</a></span>getPdv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public String getPdv </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função utilizada para retornar o código do PDV </p><dl class="section return"><dt>Retorna</dt><dd>retorno tipo string, podendo ser vazio caso não tenha sido configurado pela função setPdv; </dd></dl>
+
+</div>
+</div>
+<a id="gae3c1fae94a52557e9aa3d88f611e33f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae3c1fae94a52557e9aa3d88f611e33f4">&#9670;&nbsp;</a></span>setPdv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public void setPdv </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>mpdv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configura o código do pdv que sera acrescentado no retorno das operações </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mpdv</td><td>Tipo String com o valor a ser utilizado; </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga5b9b0af0c7756c7eee44b03ae8654337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b9b0af0c7756c7eee44b03ae8654337">&#9670;&nbsp;</a></span>getTipoImpressao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public <a class="el" href="group__sp20.html#ga59529b807f980a3f1b2d0152ae27eb40">TipoImpressao</a> getTipoImpressao </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retorna o tipo de impressão a ser realizado; </p><dl class="section return"><dt>Retorna</dt><dd>Enum TipoImpressao </dd></dl>
+
+</div>
+</div>
+<a id="gae71c5e7677fb3b5efe3aa35d0f00f153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae71c5e7677fb3b5efe3aa35d0f00f153">&#9670;&nbsp;</a></span>setTipoImpressao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public void setTipoImpressao </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__sp20.html#ga59529b807f980a3f1b2d0152ae27eb40">TipoImpressao</a>&#160;</td>
+          <td class="paramname"><em>tipoImpressao</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configura qual o tipo de impressão a ser realizado; </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tipoImpressao</td><td>- Enum TipoImpressao </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga091c22774c41dd2ff2a9de33ddca9c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga091c22774c41dd2ff2a9de33ddca9c76">&#9670;&nbsp;</a></span>setColetarInfoCupomFiscal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public void setColetarInfoCupomFiscal </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>coletarInfoCupomFiscal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Habilida/Desabilita popup para operador informar se o cupom fiscal deve ser emitido; </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coletarInfoCupomFiscal</td><td>- True para habilitar e false para desabilitar; </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gabd5215914ba997917a1f2227539a2d12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd5215914ba997917a1f2227539a2d12">&#9670;&nbsp;</a></span>isColetarInfoCupomFiscal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public boolean isColetarInfoCupomFiscal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função para retornar se esta Habilitado o popup para operador informar se deve ser emitido cupom fiscal Essa informação será retornada ao PDV para que possa ser emitido o cupom fiscal e em seguida seja impresso o danfe para o Cliente. Para impressão dos documentos podem ser utilizadas as funções de impressão de xml presentes no modulo termica ou no modulo brigde. </p><dl class="section return"><dt>Retorna</dt><dd>true caso o popup esteja habilidado. </dd></dl>
+
+</div>
+</div>
+<a id="gadf22e9e374301dc897b4171d39e467f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf22e9e374301dc897b4171d39e467f4">&#9670;&nbsp;</a></span>iniciaVenda()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public void iniciaVenda </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>valorTotal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicia uma transação. A modalidade (débito ou crédito) sera escolhido pelo operador </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valorTotal</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
+    <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga536b4b782eae623d62f2a7d4fac9733c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga536b4b782eae623d62f2a7d4fac9733c">&#9670;&nbsp;</a></span>iniciaVendaDebito()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public void iniciaVendaDebito </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>valorTotal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicia uma transação de débito </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valorTotal</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
+    <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gafcbca74fc48c2ade0f00b05fb00f3223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafcbca74fc48c2ade0f00b05fb00f3223">&#9670;&nbsp;</a></span>iniciaVendaCredito()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public void iniciaVendaCredito </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>valorTotal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tipoFinanciamento</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numeroParcelas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicia uma transação de crédito </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valorTotal</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
+    <tr><td class="paramname">tipoFinanciamento</td><td>- Tipo do financiamento (A vista(1), parcelado emissor(2) ou parcelado estabelecimento(3)) </td></tr>
+    <tr><td class="paramname">numeroParcelas</td><td>- Quantidade de parcelas para as transações parcelada. Para transação a vista o valor sera desconsiderado. </td></tr>
+    <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae3faa18dde437bae0a097d14588ef150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae3faa18dde437bae0a097d14588ef150">&#9670;&nbsp;</a></span>iniciaCancelamentoVenda()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public void iniciaCancelamentoVenda </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>valorTotal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>ref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função para transação de cancelamento de uma transação débito ou crédito </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valorTotal</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 (ValorTotal no json retornado da venda) </td></tr>
+    <tr><td class="paramname">ref</td><td>- Referencia da transação original (NSUTerminal no json retornado da venda) </td></tr>
+    <tr><td class="paramname">data</td><td>- Data da transação original no formato MMM dd, yyyy HH:mm:ss aaa (dataHoraTransacao no json retornado da venda) </td></tr>
+    <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gabc3fa5b5b924b0a60047b3df8a61b981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc3fa5b5b924b0a60047b3df8a61b981">&#9670;&nbsp;</a></span>iniciaOperacaoAdministrativa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public void iniciaOperacaoAdministrativa </td>
+          <td>(</td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicia uma operação administrativa </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga68a451efbb3655387c28e9262857f3af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68a451efbb3655387c28e9262857f3af">&#9670;&nbsp;</a></span>iniciarPagamentoDebito()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Deprecated public void iniciarPagamentoDebito </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>valorTransacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicia uma transação de débito </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Obsoleto(a):</a></b></dt><dd>Função descontinuada. Utilize <a class="el" href="group__sp20.html#ga536b4b782eae623d62f2a7d4fac9733c">ElginPay#iniciaVendaDebito(String, Context, Handler)</a> </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valorTransacao</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
+    <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga21db3abdc00c50b4cf1376f37c351c8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21db3abdc00c50b4cf1376f37c351c8a">&#9670;&nbsp;</a></span>inciarPagamentoCredito()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Deprecated public void inciarPagamentoCredito </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>valorTransacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tipoFinanciamento</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicia uma transação de crédito </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Obsoleto(a):</a></b></dt><dd>Função descontinuada. Utilize a função <a class="el" href="group__sp20.html#gafcbca74fc48c2ade0f00b05fb00f3223">ElginPay#iniciaVendaCredito(String, int, int, Context, Handler)</a> </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valorTransacao</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
+    <tr><td class="paramname">tipoFinanciamento</td><td>- Tipo do financiamento (A vista(0), parcelado emissor(1) ou parcelado estabelecimento(2)) </td></tr>
+    <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac68a9e92957d794de2ad8648591bc281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac68a9e92957d794de2ad8648591bc281">&#9670;&nbsp;</a></span>iniciarPagamentoCredito()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Deprecated public void iniciarPagamentoCredito </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>valorTransacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tipoFinanciamento</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numeroParcelas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicia uma transação de crédito </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Obsoleto(a):</a></b></dt><dd>Função descontinuada. Utilize a função <a class="el" href="group__sp20.html#gafcbca74fc48c2ade0f00b05fb00f3223">ElginPay#iniciaVendaCredito(String, int, int, Context, Handler)</a> </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valorTransacao</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
+    <tr><td class="paramname">tipoFinanciamento</td><td>- Tipo do financiamento (A vista(1), parcelado emissor(2) ou parcelado estabelecimento(3)) </td></tr>
+    <tr><td class="paramname">numeroParcelas</td><td>- Quantidade de parcelas para as transações parcelada. Para transação a vista o valor sera desconsiderado. <br  />
+ </td></tr>
+    <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gabd9e04423e225d39e1b0bc1047a9f37b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd9e04423e225d39e1b0bc1047a9f37b">&#9670;&nbsp;</a></span>iniciarCancelamentoVenda() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Deprecated public void iniciarCancelamentoVenda </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>valorTotal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função para transação de cancelamento de uma transação débito ou crédito </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Obsoleto(a):</a></b></dt><dd>Função descontinuada. Utilize a função <a class="el" href="group__sp20.html#gae3faa18dde437bae0a097d14588ef150">ElginPay#iniciaCancelamentoVenda(String, String, String, Context, Handler)</a> </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valorTotal</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
+    <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaad575761910841fbdc23122b15eaa6d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad575761910841fbdc23122b15eaa6d2">&#9670;&nbsp;</a></span>iniciarCancelamentoVenda() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Deprecated public void iniciarCancelamentoVenda </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>valorTotal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>ref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função para transação de cancelamento de uma transação débito ou crédito </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Obsoleto(a):</a></b></dt><dd>Função descontinuada. Utilize a função <a class="el" href="group__sp20.html#gae3faa18dde437bae0a097d14588ef150">ElginPay#iniciaCancelamentoVenda(String, String, String, Context, Handler)</a> </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valorTotal</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
+    <tr><td class="paramname">ref</td><td>- Ref (NSU) da transação original </td></tr>
+    <tr><td class="paramname">data</td><td>- Data da transação original no formato MMM dd, yyyy HH:mm:ss aaa </td></tr>
+    <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gabe54b4a87666a9f955a78c3b7dad5043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe54b4a87666a9f955a78c3b7dad5043">&#9670;&nbsp;</a></span>iniciarOperacaoAdministrativa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Deprecated public void iniciarOperacaoAdministrativa </td>
+          <td>(</td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicia uma operação administrativa </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Obsoleto(a):</a></b></dt><dd>Função descontinuada. Utilize a função <a class="el" href="group__sp20.html#gabc3fa5b5b924b0a60047b3df8a61b981">ElginPay#iniciaOperacaoAdministrativa(Context, Handler)</a> </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

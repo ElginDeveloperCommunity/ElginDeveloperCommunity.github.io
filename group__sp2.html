@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Comunicação Elgin: E1_ElginPAY</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Plataforma de Comunicação Elgin
+   &#160;<span id="projectnumber">versão 2.30</span>
+   </div>
+   <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group__sp2.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#groups">Módulos</a>  </div>
+  <div class="headertitle">
+<div class="title">E1_ElginPAY<div class="ingroups"><a class="el" href="group__g3.html">Android</a> &raquo; <a class="el" href="group__g31.html">SmartPOS</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Funções de pagamento simplificado.  
+<a href="#details">Mais...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
+Módulos</h2></td></tr>
+<tr class="memitem:group__sp21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp21.html">Retorno</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__sp20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html">Funções</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p>Funções de pagamento simplificado. </p>
+<h1>Módulo E1_ElginPAY - Funções facilitadoras</h1>
+<p>Todo o processo de pagamento usando a solução ElginPay ocorre atravez da biblioteca chamada <code>InterfaceAutomacao</code>, essa que possui muitos detalhes que precisam ser tratados pela aplicação que faz a integração, impressão de comprovantes, confirmação de transação, tratamento de transação pendente são alguns dos casos que precisam ser tratados quando a integração é feita via InterfaceAutomacao. <br  />
+Por esse motivo foi desenvolvido esse modulo de pagamento simplificado.<br  />
+ Esse módulo tem como objetivo simplificar o processo de pagamento utilizando a solução ElginPay através de uma codificação simples e objetiva, onde é possivel realizar as principais transações com apenas uma chamada de função. Espera-se que esse modulo diminua o nivel de dificuldade na integração com a solução Elgin Pay e o tempo gasto para tal.</p>
+<h2>Componentes</h2>
+<p>Para utilização desse módulo se faz necessário a importação dos componentes listados abaixo:</p>
+<p><b>E1</b> - Biblioteca padrão android(aar), onde estão definidas as funções facilitadoras. <code>e1-v1.0.14+</code></p>
+<p><b>Interface Automacao</b> - Biblioteca padrão android(aar), onde estão exportadas todas as funções para iniciar uma transação de pagamento, cancelamento ou operações administrativas. <code>InterfaceAutomacao-v2.0.0.8+</code></p>
+<p><b>cloud pos sdk</b> - Biblioteca padrão android(aar), dependência da biblioteca E1, responsável por acessar os periféricos do terminal de pagamento EP5855. <code>cloudpossdk-s-1.0.2+</code></p>
+<p>Todos os componentes acima devem ser adicionados como dependencias no projeto android. Normalmente são incluidos no arquivo build.gradle da aplicação.</p>
+<h2>Por onde começar?</h2>
+<p>O primeiro passo será a importação das bibliotecas para o projeto. Para importar essas bibliotecas ao seu projeto, siga os passos abaixo.</p>
+<ul>
+<li>Copie as bibliotecas AAR listadas acima (<em><code>e1-vx.y.z-release.aar</code></em>, <em><code>cloudpossdk-s-1.0.2.aar</code></em>, <em><code>InterfaceAutomacao-v2.0.0.8.aar</code></em>) para o diretório <em><code>libs</code></em>, localizado no diretório do módulo que irá acessá-las. Se o diretório <em>libs</em> não existir, crie-o.</li>
+<li>Adicione as seguintes linhas na seção <em>dependencies</em>, no arquivo <em>build.gradle</em>, do módulo que usará as bibliotecas (esse arquivo está no mesmo diretório da pasta <em>libs</em>):<br  />
+ <pre class="fragment">&gt; implementation files('libs/e1-vx.y.z-release.aar')
+&gt; implementation files('libs/InterfaceAutomacao-v2.0.0.8.aar')
+&gt; implementation files('libs/cloudpossdk-s-1.0.2.aar')
+&gt; implementation "androidx.startup:startup-runtime:1.0.0"
+&gt; implementation 'com.google.code.gson:gson:2.8.5'
+&gt; implementation group: 'org.apache.commons', name: 'commons-lang3', version:'3.4'
+&gt;
+&gt; // https://mvnrepository.com/artifact/com.google.zxing/core
+&gt; api group: 'com.google.zxing', name: 'core', version: '3.4.0'
+</pre></li>
+<li>Agora basta importar a classe ElginPay<br  />
+ <div class="fragment"><div class="line"><span class="keyword">import</span> com.elgin.e1.Pagamento.ElginPay;</div>
+</div><!-- fragment --></li>
+<li>E chamar a função de transação desejada<br  />
+ <div class="fragment"><div class="line">ElginPay elginPay = <span class="keyword">new</span> ElginPay();</div>
+<div class="line">elginPay.IniciaVendaDebito(<span class="stringliteral">&quot;1000&quot;</span>, MainActivity.this, handler);</div>
+</div><!-- fragment --></li>
+<li>O retorno será obtido conforme trecho abaixo <div class="fragment"><div class="line"><span class="keyword">private</span> Handler handler = <span class="keyword">new</span> Handler(Looper.getMainLooper()){</div>
+<div class="line">    @Override</div>
+<div class="line">    <span class="keyword">public</span> <span class="keywordtype">void</span> handleMessage(@NonNull Message msg) {</div>
+<div class="line">        super.handleMessage(msg);</div>
+<div class="line">        String saida = (String) msg.obj;</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+</div><!-- fragment --> </li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

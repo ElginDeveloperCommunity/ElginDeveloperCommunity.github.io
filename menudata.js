@@ -24,4 +24,5 @@
 */
 var menudata={children:[
 {text:"Página Principal",url:"index.html"},
+{text:"Páginas relacionadas",url:"pages.html"},
 {text:"Módulos",url:"modules.html"}]}

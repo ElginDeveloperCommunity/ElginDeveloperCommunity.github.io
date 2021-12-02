@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['erro_5fdesconhecido_894',['ERRO_DESCONHECIDO',['../group__g1.html#ga159f19f65fa0d13a7cf6c75ba2766e31',1,'codigoerro.h']]]
+  ['sucesso_1023',['SUCESSO',['../group__g1.html#ga1d62492955d62c9a5cf6217bb64b9760',1,'codigoerro.h']]]
 ];

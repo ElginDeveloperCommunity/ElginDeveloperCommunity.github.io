@@ -25,16 +25,18 @@
 var NAVTREE =
 [
   [ "Plataforma de Comunicação Elgin", "index.html", [
+    [ "e1_elginpay", "md_e1_elginpay.html", null ],
+    [ "Lista de itens obsoletos", "deprecated.html", null ],
     [ "Módulos", "modules.html", "modules" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"group___m0.html",
-"group__g1.html#gga2cc3b72b1510ab101e5cc94c48a2c981a7acb83eb44b6265f50117bfe2a88f8e6",
-"group__g1.html#ggaea850727996cb617abfc4737b3d3ab23a89798ba2a2798d99fa33e0a8f0cf277a",
-"group__sp11.html"
+"deprecated.html",
+"group__g1.html#gga2cc3b72b1510ab101e5cc94c48a2c981a3272bb5f219589511832a526fae99cd1",
+"group__g1.html#ggaea850727996cb617abfc4737b3d3ab23a36947c3e53860c7787bb167251a4cbc8",
+"group__sp10.html"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';
