@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Comunicação Elgin: Detalhes do JSON de retorno</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Plataforma de Comunicação Elgin
+   &#160;<span id="projectnumber">versão 2.31</span>
+   </div>
+   <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group__g120.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Detalhes do JSON de retorno<div class="ingroups"><a class="el" href="group__g12.html">E1_Brigde</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<h2>Detalhes de Retorno Transação</h2>
+<p>Todas as funções do módulo e1_brigde retornam em formato Json. As funções mais simples retornam um Json apenas com um código de operação e uma mensagem. <br  />
+ Vide exemplo abaixo:<br  />
+ </p><div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;e1_brigde_code&quot;: 0,</div>
+<div class="line">    &quot;e1_brigde_msg&quot;: &quot;Sucesso&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section note"><dt>Observação</dt><dd>Os valores de retorno para a chave e1_brigde_code em casos de falha ou o valores para as funções que retornam um int no output da função podem ser consultados na sessão #Códigos de erro.</dd></dl>
+<p>Abaixo estão listados todas informações do JSON retornado na saida da transação.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Parâmetro   </th><th class="markdownTableHeadNone">Descrição   </th><th class="markdownTableHeadNone">Retorno   </th><th class="markdownTableHeadNone">Tipo de Dado    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">e1_brigde_code   </td><td class="markdownTableBodyNone">Código de retorno da operação   </td><td class="markdownTableBodyNone">Valor tipo int (0 = sucesso ou &lt; 0 para falha)   </td><td class="markdownTableBodyNone">Int    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">e1_brigde_msg   </td><td class="markdownTableBodyNone">Mensagem referente ao processamento da operação   </td><td class="markdownTableBodyNone">Valor tipo String   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">e1_pdv   </td><td class="markdownTableBodyNone">Código de identificação do PDV   </td><td class="markdownTableBodyNone">Valor alfanumérico   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">e1_cupom_fiscal   </td><td class="markdownTableBodyNone">Informa ao PDV que o cliente deseja cupom fiscal   </td><td class="markdownTableBodyNone">True ou False   </td><td class="markdownTableBodyNone">Boolean    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">aidCartao   </td><td class="markdownTableBodyNone">Obtém o AID do cartão   </td><td class="markdownTableBodyNone">AID do cartão   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">comprovanteGraficoDisponivel   </td><td class="markdownTableBodyNone">Informa se os comprovantes estão disponíveis no formato gráfico   </td><td class="markdownTableBodyNone">True ou false   </td><td class="markdownTableBodyNone">Boolean    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">comprovanteGraficoLojista   </td><td class="markdownTableBodyNone">O comprovante será disponibilizado no formato PNG,codificado em base-64   </td><td class="markdownTableBodyNone">Comprovante gráfico - via do lojista   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">comprovanteGraficoPortador   </td><td class="markdownTableBodyNone">O comprovante será disponibilizado no formato PNG,codificado em base-64   </td><td class="markdownTableBodyNone">Comprovante gráfico - via do portador   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">modalidadeTransacao   </td><td class="markdownTableBodyNone">Modalidade da transação (online ou offline)   </td><td class="markdownTableBodyNone">Online ou Offline   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">codigoAutorizacao   </td><td class="markdownTableBodyNone">Obtém o código de autorização.   </td><td class="markdownTableBodyNone">Código de autorização   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">codigoAutorizacaoOriginal   </td><td class="markdownTableBodyNone">Obtém o código de autorização original   </td><td class="markdownTableBodyNone">Código de autorização original   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">identificadorTransacaoAutomacao   </td><td class="markdownTableBodyNone">identificador da transação (informado pela Automação).   </td><td class="markdownTableBodyNone">Identificador da transação   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nsuLocal   </td><td class="markdownTableBodyNone">NSU local   </td><td class="markdownTableBodyNone">NSU local   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">modoEntradaCartao   </td><td class="markdownTableBodyNone">Modo de entrada do cartão   </td><td class="markdownTableBodyNone">Modo de entrada do cartão   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">panMascarado   </td><td class="markdownTableBodyNone">Pan do cartão, mascarado ou truncado, de acordo com a especificação do provedor.   </td><td class="markdownTableBodyNone">Pan mascarado do cartão   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dataHoraTransacao   </td><td class="markdownTableBodyNone">Data\hora da transação   </td><td class="markdownTableBodyNone">Data\hora da transação-dd/MM/yyyy HH:mm:ss   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">comprovanteCompleto   </td><td class="markdownTableBodyNone">Comprovante completo da transação   </td><td class="markdownTableBodyNone">Comprovante completo   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dataHoraTransacaoOriginal   </td><td class="markdownTableBodyNone">Data\hora da transação original   </td><td class="markdownTableBodyNone">Data\hora da transação original-dd/MM/yyyy HH:mm:ss   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nomeCartao   </td><td class="markdownTableBodyNone">Nome do cartão (ou nome da administradora).   </td><td class="markdownTableBodyNone">Nome do cartão(ou nome da administradora)   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">comprovanteReduzidoPortador   </td><td class="markdownTableBodyNone">Comprovante reduzido para o portador do cartão   </td><td class="markdownTableBodyNone">Comprovante reduzido para o portador   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">documentoFiscal   </td><td class="markdownTableBodyNone">Número do documento fiscal (informado pela Automação)   </td><td class="markdownTableBodyNone">Número do documento fiscal   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">valorTroco   </td><td class="markdownTableBodyNone">Valor do troco, em centavos.   </td><td class="markdownTableBodyNone">Valor do troco   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">valorDesconto   </td><td class="markdownTableBodyNone">Valor do desconto, em centavos.   </td><td class="markdownTableBodyNone">Valor do desconto   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">identificadorEstabelecimento   </td><td class="markdownTableBodyNone">Identificador do estabelecimento   </td><td class="markdownTableBodyNone">Identificador do estabelecimento   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nomeProvedor   </td><td class="markdownTableBodyNone">Nome do provedor utilizado para processar a transação.   </td><td class="markdownTableBodyNone">Nome do Provedor   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">operacao   </td><td class="markdownTableBodyNone">Operação realizada.   </td><td class="markdownTableBodyNone">Operação realizada.   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">tipoCartao   </td><td class="markdownTableBodyNone">Tipo de cartão utilizado na transação.   </td><td class="markdownTableBodyNone">Tipo de cartão   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">tipoFinanciamento   </td><td class="markdownTableBodyNone">Tipo de financiamento utilizado na transação.   </td><td class="markdownTableBodyNone">Tipo de financiamento   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">numeroParcelas   </td><td class="markdownTableBodyNone">Numero de parcelas da transação.   </td><td class="markdownTableBodyNone">Número de parcelas   </td><td class="markdownTableBodyNone">Int    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">dataPredatado   </td><td class="markdownTableBodyNone">Data do pré-datado.   </td><td class="markdownTableBodyNone">Data do pré-datado   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">comprovanteDiferenciadoLoja   </td><td class="markdownTableBodyNone">Compovante diferenciado para o lojista   </td><td class="markdownTableBodyNone">Via diferenciada para a loja   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">comprovanteDiferenciadoPortador   </td><td class="markdownTableBodyNone">Compovante diferenciado para o portador do cartão   </td><td class="markdownTableBodyNone">Comprovante diferenciada para o portador   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">mensagemResultado   </td><td class="markdownTableBodyNone">Mensagem a ser exibida ao ao final da operação   </td><td class="markdownTableBodyNone">Mensagem a ser exibida   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">codigoMoeda   </td><td class="markdownTableBodyNone">Código da moeda utilizada (ISO 4217).   </td><td class="markdownTableBodyNone">Código da moeda   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">valorTotal   </td><td class="markdownTableBodyNone">Valor total da transação, em centavos.   </td><td class="markdownTableBodyNone">Valor total da transação   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">valorOriginal   </td><td class="markdownTableBodyNone">Valor original da transação, em centavos.   </td><td class="markdownTableBodyNone">Valor original da transação   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nsuHost   </td><td class="markdownTableBodyNone">NSU do host   </td><td class="markdownTableBodyNone">NSU do host   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">identificadorPontoCaptura   </td><td class="markdownTableBodyNone">Identificador do ponto de captura.   </td><td class="markdownTableBodyNone">Identificador do ponto de captura   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">informacaoConfirmacao   </td><td class="markdownTableBodyNone">Informação referente à obrigatoriedade de confirmação.   </td><td class="markdownTableBodyNone">True ou False   </td><td class="markdownTableBodyNone">Boolean    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">viasImprimir   </td><td class="markdownTableBodyNone">Vias a serem impressas.   </td><td class="markdownTableBodyNone">Vias a serem impressas   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">resultadoTransacao   </td><td class="markdownTableBodyNone">Resultado da operação realizada.   </td><td class="markdownTableBodyNone">Resultado da operação realizada   </td><td class="markdownTableBodyNone">Int    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">modoVerificacaoSenha   </td><td class="markdownTableBodyNone">Modo de verificação de senha.   </td><td class="markdownTableBodyNone">Modo de verificação de senha   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nsuLocalOriginal   </td><td class="markdownTableBodyNone">NSU local da transação original, em caso de cancelamento.   </td><td class="markdownTableBodyNone">NSU da transação original, cancelada   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">codigoRespostaProvedor   </td><td class="markdownTableBodyNone">Código de resposta da transação, proveniente do provedor.   </td><td class="markdownTableBodyNone">Código de resposta da transação   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">identificadorConfirmacaoTransacao   </td><td class="markdownTableBodyNone">Identificador de confirmação da transação.   </td><td class="markdownTableBodyNone">Identificador de confirmação da transação   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">existeTransacaoPendente   </td><td class="markdownTableBodyNone">Retorna se existe transação pendente.   </td><td class="markdownTableBodyNone">True ou False   </td><td class="markdownTableBodyNone">Boolean    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">saldoVoucher   </td><td class="markdownTableBodyNone">Saldo do cartão voucher, recebido do autorizador   </td><td class="markdownTableBodyNone">Saldo do cartão voucher   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">valorDevido   </td><td class="markdownTableBodyNone">Valor devido pelo usuário.   </td><td class="markdownTableBodyNone">Valor devido pelo usuário   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nomeEstabelecimento   </td><td class="markdownTableBodyNone">Nome do estabelecimento em que o ponto de captura está cadastrado.   </td><td class="markdownTableBodyNone">Nome do estabelecimento   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">panMascaradoPadrao   </td><td class="markdownTableBodyNone">Número do cartão, mascarado no formato BIN + *** + 4 últimos dígitos.   </td><td class="markdownTableBodyNone">Número do cartão padronizado   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nomeCartaoPadrao   </td><td class="markdownTableBodyNone">Descrição do produto bandeira padrão relacionado ao BIN.   </td><td class="markdownTableBodyNone">Descrição do produto bandeira padrão   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">nomePortadorCartao   </td><td class="markdownTableBodyNone">Nome do portador do cartão utilizado.   </td><td class="markdownTableBodyNone">Nome do portador do cartão utilizado   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">modalidadePagamento   </td><td class="markdownTableBodyNone">Modalidade de pagamento (cartão, dinheiro, cheque ou carteira virtual).   </td><td class="markdownTableBodyNone">cartão, dinheiro, cheque ou carteira virtual   </td><td class="markdownTableBodyNone">String    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">identificacaoPortadorCarteira   </td><td class="markdownTableBodyNone">Tipo de identificação do portador da carteira virtual.   </td><td class="markdownTableBodyNone">QRCode do checkout, CPF, outros   </td><td class="markdownTableBodyNone">String   </td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

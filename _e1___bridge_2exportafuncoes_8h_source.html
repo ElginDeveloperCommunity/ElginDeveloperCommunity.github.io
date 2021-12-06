@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Comunicação Elgin: Código-Fonte de D:/Documentos/Projetos/QT_Projetos/integrado/E1_Bridge/exportafuncoes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Plataforma de Comunicação Elgin
+   &#160;<span id="projectnumber">versão 2.31</span>
+   </div>
+   <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_e1___bridge_2exportafuncoes_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">exportafuncoes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EXPORTAFUNCOES_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define EXPORTAFUNCOES_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;e1_bridge.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifdef __WIN32</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define STDCALL __stdcall</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#elif __linux__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define STDCALL</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    Descricao:      Classe que exporta e documenta as funcoes da biblioteca E1_Bridge</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    Autor:          Rodrigo Angelo</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    Data:           21/10/2021</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;E1_Bridge br;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span>{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group__g12.html#ga63a4ac74b8b9cdfd0bb8eafb3bfa750c">   45</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group__g12.html#ga63a4ac74b8b9cdfd0bb8eafb3bfa750c">GetServer</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group__g12.html#ga17c48f56afb9fd79ed03252e59cc6e44">   64</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group__g12.html#ga17c48f56afb9fd79ed03252e59cc6e44">SetServer</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* ipTerminal, <span class="keywordtype">int</span> portaTransacao, <span class="keywordtype">int</span> portaStatus);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group__g12.html#ga945ab5c77412c177e36d0f57c81198e5">   79</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group__g12.html#ga945ab5c77412c177e36d0f57c81198e5">GetTimeout</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="group__g12.html#gae4bb88c362d2b22c77dc5a97c94a8b35">   95</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group__g12.html#gae4bb88c362d2b22c77dc5a97c94a8b35">SetTimeout</a>(<span class="keywordtype">int</span> timeout);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="group__g12.html#gab67b5206416a7848f095fdefeeed7ce7">  109</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group__g12.html#gab67b5206416a7848f095fdefeeed7ce7">ConsultarStatus</a>();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="group__g12.html#ga3bf08316fb1dda83a431f1a6cdaa72aa">  122</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group__g12.html#ga3bf08316fb1dda83a431f1a6cdaa72aa">ConsultarUltimaTransacao</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* pdv);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="group__g12.html#ga7ebf22ac1e4e4793f8f053dc3c203e22">  139</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group__g12.html#ga7ebf22ac1e4e4793f8f053dc3c203e22">ImprimirCupomSat</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* xml);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="group__g12.html#ga4305d9a22cfd66e1d3a81511a2781986">  157</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group__g12.html#ga4305d9a22cfd66e1d3a81511a2781986">ImprimirCupomSatCancelamento</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* xml, <span class="keyword">const</span> <span class="keywordtype">char</span>* assQRCode);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="group__g12.html#ga3d6d3e8a12851c1d983295324561cb47">  181</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group__g12.html#ga3d6d3e8a12851c1d983295324561cb47">ImprimirCupomNfce</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* xml, <span class="keywordtype">int</span> indexcsc, <span class="keyword">const</span> <span class="keywordtype">char</span>* csc);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="group__g12.html#ga7254304848ee5688c3f58d129522363c">  198</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group__g12.html#ga7254304848ee5688c3f58d129522363c">IniciaVenda</a>(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keyword">const</span> <span class="keywordtype">char</span>* valorTotal);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* IniciaVendaDebito(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keyword">const</span> <span class="keywordtype">char</span>* valorTotal);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="group__g12.html#ga4d3755c9f84a88b40fa2d598fcf57dc8">  232</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group__g12.html#ga4d3755c9f84a88b40fa2d598fcf57dc8">IniciaVendaCredito</a>(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keyword">const</span> <span class="keywordtype">char</span>* valorTotal, <span class="keywordtype">int</span> tipoFinanciamento, <span class="keywordtype">int</span> numParcelas);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="group__g12.html#gaffa01891a69e71a22abcd0956bdb5eba">  251</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group__g12.html#gaffa01891a69e71a22abcd0956bdb5eba">IniciaCancelamentoVenda</a>(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keyword">const</span> <span class="keywordtype">char</span>* valorTotal, <span class="keyword">const</span> <span class="keywordtype">char</span>* dataHora, <span class="keyword">const</span> <span class="keywordtype">char</span>* nsu);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="group__g12.html#ga97506485652a012c66bff9a910f2f7f9">  274</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group__g12.html#ga97506485652a012c66bff9a910f2f7f9">IniciaOperacaoAdministrativa</a>(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keywordtype">int</span> operacao);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordtype">int</span> GetServerRef(<span class="keywordtype">char</span>** retorno);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordtype">int</span> SetServerRef(<span class="keyword">const</span> <span class="keywordtype">char</span>* ipTerminal, <span class="keywordtype">int</span> portaTransacao, <span class="keywordtype">int</span> portaStatus, <span class="keywordtype">char</span>** retorno);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">int</span> GetTimeoutRef(<span class="keywordtype">char</span>** retorno);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">int</span> SetTimeoutRef(<span class="keywordtype">int</span> timeout, <span class="keywordtype">char</span>** retorno);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordtype">int</span> ConsultarStatusRef(<span class="keywordtype">char</span>** retorno);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">int</span> ConsultarUltimaTransacaoRef(<span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keywordtype">char</span>** retorno);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">int</span> ImprimirCupomSatRef(<span class="keyword">const</span> <span class="keywordtype">char</span>* xml, <span class="keywordtype">char</span>** retorno);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordtype">int</span> ImprimirCupomSatCancelamentoRef(<span class="keyword">const</span> <span class="keywordtype">char</span>* xml, <span class="keyword">const</span> <span class="keywordtype">char</span>* assQRCode, <span class="keywordtype">char</span>** retorno);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordtype">int</span> ImprimirCupomNfceRef(<span class="keyword">const</span> <span class="keywordtype">char</span>* xml, <span class="keywordtype">int</span> indexcsc, <span class="keyword">const</span> <span class="keywordtype">char</span>* csc, <span class="keywordtype">char</span>** retorno);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordtype">int</span> IniciaVendaRef(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keyword">const</span> <span class="keywordtype">char</span>* valorTotal, <span class="keywordtype">char</span>** retorno);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">int</span> IniciaVendaDebitoRef(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keyword">const</span> <span class="keywordtype">char</span>* valorTotal, <span class="keywordtype">char</span>** retorno);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordtype">int</span> IniciaVendaCreditoRef(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keyword">const</span> <span class="keywordtype">char</span>* valorTotal, <span class="keywordtype">int</span> tipoFinanciamento, <span class="keywordtype">int</span> numParcelas, <span class="keywordtype">char</span>** retorno);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordtype">int</span> IniciaCancelamentoVendaRef(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keyword">const</span> <span class="keywordtype">char</span>* valorTotal, <span class="keyword">const</span> <span class="keywordtype">char</span>* dataHora, <span class="keyword">const</span> <span class="keywordtype">char</span>* nsu, <span class="keywordtype">char</span>** retorno);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordtype">int</span> IniciaOperacaoAdministrativaRef(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keywordtype">int</span> operacao, <span class="keywordtype">char</span>** retorno);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="line" href="group__g12.html#gac4c35481d861cbdc516b605b0d057c52">  362</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g12.html#gac4c35481d861cbdc516b605b0d057c52">GetServerArq</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno"><a class="line" href="group__g12.html#ga025b0a62664e4ad290ac5f1bb979051d">  384</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g12.html#ga025b0a62664e4ad290ac5f1bb979051d">SetServerArq</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* ipTerminal, <span class="keywordtype">int</span> portaTransacao, <span class="keywordtype">int</span> portaStatus, <span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
+<div class="line"><a name="l00402"></a><span class="lineno"><a class="line" href="group__g12.html#ga5897fd28cd2d015f9f7340ecb3c744fb">  402</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g12.html#ga5897fd28cd2d015f9f7340ecb3c744fb">GetTimeoutArq</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
+<div class="line"><a name="l00421"></a><span class="lineno"><a class="line" href="group__g12.html#gae8e1a1fa9f29ca67000598dfef6b9866">  421</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g12.html#gae8e1a1fa9f29ca67000598dfef6b9866">SetTimeoutArq</a>(<span class="keywordtype">int</span> timeout, <span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
+<div class="line"><a name="l00438"></a><span class="lineno"><a class="line" href="group__g12.html#gacbf998bfeb80a15e21639a10437995fb">  438</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g12.html#gacbf998bfeb80a15e21639a10437995fb">ConsultarStatusArq</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160; </div>
+<div class="line"><a name="l00457"></a><span class="lineno"><a class="line" href="group__g12.html#gaf78d581f527e6c2cdffcbbdc6b18b861">  457</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g12.html#gaf78d581f527e6c2cdffcbbdc6b18b861">ConsultarUltimaTransacaoArq</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160; </div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <span class="keywordtype">int</span> ImprimirCupomSatArq(<span class="keyword">const</span> <span class="keywordtype">char</span>* xml, <span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160; </div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <span class="keywordtype">int</span> ImprimirCupomSatCancelamentoArq(<span class="keyword">const</span> <span class="keywordtype">char</span>* xml, <span class="keyword">const</span> <span class="keywordtype">char</span>* assQRCode, <span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160; </div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    <span class="keywordtype">int</span> ImprimirCupomNfceArq(<span class="keyword">const</span> <span class="keywordtype">char</span>* xml, <span class="keywordtype">int</span> indexcsc, <span class="keyword">const</span> <span class="keywordtype">char</span>* csc, <span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160; </div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160; </div>
+<div class="line"><a name="l00495"></a><span class="lineno"><a class="line" href="group__g12.html#ga21ce0a76097885216af8c458acd8b30f">  495</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g12.html#ga21ce0a76097885216af8c458acd8b30f">IniciaVendaArq</a>(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keyword">const</span> <span class="keywordtype">char</span>* valorTotal, <span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160; </div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160; </div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <span class="keywordtype">int</span> IniciaVendaDebitoArq(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keyword">const</span> <span class="keywordtype">char</span>* valorTotal, <span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160; </div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160; </div>
+<div class="line"><a name="l00541"></a><span class="lineno"><a class="line" href="group__g12.html#gacc1213a8716967be7ad4caf714d6a5fb">  541</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g12.html#gacc1213a8716967be7ad4caf714d6a5fb">IniciaVendaCreditoArq</a>(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keyword">const</span> <span class="keywordtype">char</span>* valorTotal, <span class="keywordtype">int</span> tipoFinanciamento, <span class="keywordtype">int</span> numParcelas, <span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160; </div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160; </div>
+<div class="line"><a name="l00566"></a><span class="lineno"><a class="line" href="group__g12.html#gae0dfb185e7137cdffb7f2eb645b95499">  566</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g12.html#gae0dfb185e7137cdffb7f2eb645b95499">IniciaCancelamentoVendaArq</a>(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keyword">const</span> <span class="keywordtype">char</span>* valorTotal, <span class="keyword">const</span> <span class="keywordtype">char</span>* dataHora, <span class="keyword">const</span> <span class="keywordtype">char</span>* nsu, <span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160; </div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    E1_BRIDGESHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160; </div>
+<div class="line"><a name="l00595"></a><span class="lineno"><a class="line" href="group__g12.html#ga1cbceda54be3f9f8ad65868c0d503ac2">  595</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="group__g12.html#ga1cbceda54be3f9f8ad65868c0d503ac2">IniciaOperacaoAdministrativaArq</a>(<span class="keywordtype">int</span> idTransacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* pdv, <span class="keywordtype">int</span> operacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160; </div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;}</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160; </div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160; </div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// EXPORTAFUNCOES_H</span></div>
+<div class="ttc" id="agroup__g12_html_ga025b0a62664e4ad290ac5f1bb979051d"><div class="ttname"><a href="group__g12.html#ga025b0a62664e4ad290ac5f1bb979051d">SetServerArq</a></div><div class="ttdeci">int SetServerArq(const char *ipTerminal, int portaTransacao, int portaStatus, const char *path)</div><div class="ttdoc">Configura servidor onde serão processadas as transações.</div></div>
+<div class="ttc" id="agroup__g12_html_ga17c48f56afb9fd79ed03252e59cc6e44"><div class="ttname"><a href="group__g12.html#ga17c48f56afb9fd79ed03252e59cc6e44">SetServer</a></div><div class="ttdeci">const char * SetServer(const char *ipTerminal, int portaTransacao, int portaStatus)</div><div class="ttdoc">Configura servidor onde serão processadas as transações.</div></div>
+<div class="ttc" id="agroup__g12_html_ga1cbceda54be3f9f8ad65868c0d503ac2"><div class="ttname"><a href="group__g12.html#ga1cbceda54be3f9f8ad65868c0d503ac2">IniciaOperacaoAdministrativaArq</a></div><div class="ttdeci">int IniciaOperacaoAdministrativaArq(int idTransacao, const char *pdv, int operacao, const char *path)</div><div class="ttdoc">Inicia uma operação administrativa. .</div></div>
+<div class="ttc" id="agroup__g12_html_ga21ce0a76097885216af8c458acd8b30f"><div class="ttname"><a href="group__g12.html#ga21ce0a76097885216af8c458acd8b30f">IniciaVendaArq</a></div><div class="ttdeci">int IniciaVendaArq(int idTransacao, const char *pdv, const char *valorTotal, const char *path)</div><div class="ttdoc">Inicia um operação de venda. O tipo da operação será definido pelo operador como débito ou crédito.</div></div>
+<div class="ttc" id="agroup__g12_html_ga3bf08316fb1dda83a431f1a6cdaa72aa"><div class="ttname"><a href="group__g12.html#ga3bf08316fb1dda83a431f1a6cdaa72aa">ConsultarUltimaTransacao</a></div><div class="ttdeci">const char * ConsultarUltimaTransacao(const char *pdv)</div><div class="ttdoc">Retorna ultima transação processada pelo terminal. Deve ser utilizada casos de timeout.</div></div>
+<div class="ttc" id="agroup__g12_html_ga3d6d3e8a12851c1d983295324561cb47"><div class="ttname"><a href="group__g12.html#ga3d6d3e8a12851c1d983295324561cb47">ImprimirCupomNfce</a></div><div class="ttdeci">const char * ImprimirCupomNfce(const char *xml, int indexcsc, const char *csc)</div><div class="ttdoc">Imprimir Cupom NFCe de acordo com a especificação da Sefaz para bobina de 55mm.</div></div>
+<div class="ttc" id="agroup__g12_html_ga4305d9a22cfd66e1d3a81511a2781986"><div class="ttname"><a href="group__g12.html#ga4305d9a22cfd66e1d3a81511a2781986">ImprimirCupomSatCancelamento</a></div><div class="ttdeci">const char * ImprimirCupomSatCancelamento(const char *xml, const char *assQRCode)</div><div class="ttdoc">Imprimir Cupom de cancelamento SAT de acordo com a especificação da Sefaz para bobina de 55mm.</div></div>
+<div class="ttc" id="agroup__g12_html_ga4d3755c9f84a88b40fa2d598fcf57dc8"><div class="ttname"><a href="group__g12.html#ga4d3755c9f84a88b40fa2d598fcf57dc8">IniciaVendaCredito</a></div><div class="ttdeci">const char * IniciaVendaCredito(int idTransacao, const char *pdv, const char *valorTotal, int tipoFinanciamento, int numParcelas)</div><div class="ttdoc">Inicia Venda no Crédito.</div></div>
+<div class="ttc" id="agroup__g12_html_ga5897fd28cd2d015f9f7340ecb3c744fb"><div class="ttname"><a href="group__g12.html#ga5897fd28cd2d015f9f7340ecb3c744fb">GetTimeoutArq</a></div><div class="ttdeci">int GetTimeoutArq(const char *path)</div><div class="ttdoc">Obtem o timeout definido para as transações em segundos; O valor padrão é de 180 segundos (3 minutos)...</div></div>
+<div class="ttc" id="agroup__g12_html_ga63a4ac74b8b9cdfd0bb8eafb3bfa750c"><div class="ttname"><a href="group__g12.html#ga63a4ac74b8b9cdfd0bb8eafb3bfa750c">GetServer</a></div><div class="ttdeci">const char * GetServer()</div><div class="ttdoc">Obtem configuração do servidor.</div></div>
+<div class="ttc" id="agroup__g12_html_ga7254304848ee5688c3f58d129522363c"><div class="ttname"><a href="group__g12.html#ga7254304848ee5688c3f58d129522363c">IniciaVenda</a></div><div class="ttdeci">const char * IniciaVenda(int idTransacao, const char *pdv, const char *valorTotal)</div><div class="ttdoc">Inicia um operação de venda. O tipo da operação será definido pelo operador como débito ou crédito.</div></div>
+<div class="ttc" id="agroup__g12_html_ga7ebf22ac1e4e4793f8f053dc3c203e22"><div class="ttname"><a href="group__g12.html#ga7ebf22ac1e4e4793f8f053dc3c203e22">ImprimirCupomSat</a></div><div class="ttdeci">const char * ImprimirCupomSat(const char *xml)</div><div class="ttdoc">Imprimir Cupom Sat de acordo com a especificação da Sefaz para bobina de 55mm.</div></div>
+<div class="ttc" id="agroup__g12_html_ga945ab5c77412c177e36d0f57c81198e5"><div class="ttname"><a href="group__g12.html#ga945ab5c77412c177e36d0f57c81198e5">GetTimeout</a></div><div class="ttdeci">const char * GetTimeout()</div><div class="ttdoc">Obtem o timeout definido para as transações em segundos; O valor padrão é de 180 segundos (3 minutos)...</div></div>
+<div class="ttc" id="agroup__g12_html_ga97506485652a012c66bff9a910f2f7f9"><div class="ttname"><a href="group__g12.html#ga97506485652a012c66bff9a910f2f7f9">IniciaOperacaoAdministrativa</a></div><div class="ttdeci">const char * IniciaOperacaoAdministrativa(int idTransacao, const char *pdv, int operacao)</div><div class="ttdoc">Inicia uma operação administrativa.</div></div>
+<div class="ttc" id="agroup__g12_html_gab67b5206416a7848f095fdefeeed7ce7"><div class="ttname"><a href="group__g12.html#gab67b5206416a7848f095fdefeeed7ce7">ConsultarStatus</a></div><div class="ttdeci">const char * ConsultarStatus()</div><div class="ttdoc">Consulta status de operação do terminal SmartPOS.</div></div>
+<div class="ttc" id="agroup__g12_html_gac4c35481d861cbdc516b605b0d057c52"><div class="ttname"><a href="group__g12.html#gac4c35481d861cbdc516b605b0d057c52">GetServerArq</a></div><div class="ttdeci">int GetServerArq(const char *path)</div><div class="ttdoc">Obtem configuração do servidor.</div></div>
+<div class="ttc" id="agroup__g12_html_gacbf998bfeb80a15e21639a10437995fb"><div class="ttname"><a href="group__g12.html#gacbf998bfeb80a15e21639a10437995fb">ConsultarStatusArq</a></div><div class="ttdeci">int ConsultarStatusArq(const char *path)</div><div class="ttdoc">Consulta status de operação do terminal SmartPOS.</div></div>
+<div class="ttc" id="agroup__g12_html_gacc1213a8716967be7ad4caf714d6a5fb"><div class="ttname"><a href="group__g12.html#gacc1213a8716967be7ad4caf714d6a5fb">IniciaVendaCreditoArq</a></div><div class="ttdeci">int IniciaVendaCreditoArq(int idTransacao, const char *pdv, const char *valorTotal, int tipoFinanciamento, int numParcelas, const char *path)</div><div class="ttdoc">Inicia Venda no Crédito. .</div></div>
+<div class="ttc" id="agroup__g12_html_gae0dfb185e7137cdffb7f2eb645b95499"><div class="ttname"><a href="group__g12.html#gae0dfb185e7137cdffb7f2eb645b95499">IniciaCancelamentoVendaArq</a></div><div class="ttdeci">int IniciaCancelamentoVendaArq(int idTransacao, const char *pdv, const char *valorTotal, const char *dataHora, const char *nsu, const char *path)</div><div class="ttdoc">Inicia um cancelamento de venda. .</div></div>
+<div class="ttc" id="agroup__g12_html_gae4bb88c362d2b22c77dc5a97c94a8b35"><div class="ttname"><a href="group__g12.html#gae4bb88c362d2b22c77dc5a97c94a8b35">SetTimeout</a></div><div class="ttdeci">const char * SetTimeout(int timeout)</div><div class="ttdoc">Configura um timeout para as funções de transação. O valor padrão é de 180 segundos (3 minutos);.</div></div>
+<div class="ttc" id="agroup__g12_html_gae8e1a1fa9f29ca67000598dfef6b9866"><div class="ttname"><a href="group__g12.html#gae8e1a1fa9f29ca67000598dfef6b9866">SetTimeoutArq</a></div><div class="ttdeci">int SetTimeoutArq(int timeout, const char *path)</div><div class="ttdoc">Configura um timeout para as funções de transação. O valor padrão é de 180 segundos (3 minutos);.</div></div>
+<div class="ttc" id="agroup__g12_html_gaf78d581f527e6c2cdffcbbdc6b18b861"><div class="ttname"><a href="group__g12.html#gaf78d581f527e6c2cdffcbbdc6b18b861">ConsultarUltimaTransacaoArq</a></div><div class="ttdeci">int ConsultarUltimaTransacaoArq(const char *pdv, const char *path)</div><div class="ttdoc">Retorna ultima transação processada pelo terminal. Deve ser utilizada casos de timeout.</div></div>
+<div class="ttc" id="agroup__g12_html_gaffa01891a69e71a22abcd0956bdb5eba"><div class="ttname"><a href="group__g12.html#gaffa01891a69e71a22abcd0956bdb5eba">IniciaCancelamentoVenda</a></div><div class="ttdeci">const char * IniciaCancelamentoVenda(int idTransacao, const char *pdv, const char *valorTotal, const char *dataHora, const char *nsu)</div><div class="ttdoc">Inicia um cancelamento de venda.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ba5ebe27397c1b68804be802a9ffd0e1.html">E1_Bridge</a></li><li class="navelem"><b>exportafuncoes.h</b></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

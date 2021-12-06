@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['retorno_1491',['Retorno',['../group__sp11.html',1,'(<em>Namespace</em> global)'],['../group__sp21.html',1,'(<em>Namespace</em> global)']]]
+  ['poste_20sinalizador_1556',['Poste Sinalizador',['../group__g10.html',1,'']]],
+  ['poste_20sinalizador_1557',['Poste sinalizador',['../group__g48.html',1,'']]]
 ];

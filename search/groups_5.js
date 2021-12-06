@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['gerador_20de_20pdf_1476',['Gerador de PDF',['../group__g47.html',1,'']]],
-  ['gerador_20pdf_1477',['Gerador PDF',['../group__g9.html',1,'']]]
+  ['formatação_20de_20label_1540',['Formatação de Label',['../group__ge2.html',1,'']]],
+  ['funções_1541',['Funções',['../group__sp20.html',1,'']]],
+  ['funções_20dll_20hprt_2e_1542',['Funções DLL HPRT.',['../group___m2.html',1,'']]]
 ];

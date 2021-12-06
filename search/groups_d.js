@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['termica_1496',['Termica',['../group__ma40.html',1,'']]],
-  ['texto_1497',['Texto',['../group__ge30.html',1,'']]],
-  ['térmica_1498',['Térmica',['../group__g40.html',1,'(<em>Namespace</em> global)'],['../group___m1.html',1,'(<em>Namespace</em> global)']]]
+  ['sat_1559',['SAT',['../group__g2.html',1,'(<em>Namespace</em> global)'],['../group__g43.html',1,'(<em>Namespace</em> global)'],['../group__ma2.html',1,'(<em>Namespace</em> global)'],['../group__ma42.html',1,'(<em>Namespace</em> global)']]],
+  ['scanner_1560',['Scanner',['../group__sp1.html',1,'']]],
+  ['serviço_1561',['Serviço',['../group__g45.html',1,'(<em>Namespace</em> global)'],['../group__g8.html',1,'(<em>Namespace</em> global)'],['../group__ma4.html',1,'(<em>Namespace</em> global)']]],
+  ['smartpos_1562',['SmartPOS',['../group__g31.html',1,'(<em>Namespace</em> global)'],['../group__g460.html',1,'(<em>Namespace</em> global)']]]
 ];

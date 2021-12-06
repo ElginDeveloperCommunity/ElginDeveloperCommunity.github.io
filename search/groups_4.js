@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['formatação_20de_20label_1473',['Formatação de Label',['../group__ge2.html',1,'']]],
-  ['funções_1474',['Funções',['../group__sp20.html',1,'']]],
-  ['funções_20dll_20hprt_2e_1475',['Funções DLL HPRT.',['../group___m2.html',1,'']]]
+  ['e1_5fbrigde_1536',['E1_Brigde',['../group__g12.html',1,'']]],
+  ['e1_5felginpay_1537',['E1_ElginPAY',['../group__sp2.html',1,'']]],
+  ['etiqueta_1538',['Etiqueta',['../group__g42.html',1,'(<em>Namespace</em> global)'],['../group___m0.html',1,'(<em>Namespace</em> global)'],['../group__ma41.html',1,'(<em>Namespace</em> global)']]],
+  ['exemplo_1539',['Exemplo',['../group__sp12.html',1,'']]]
 ];

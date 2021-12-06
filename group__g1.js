@@ -475,7 +475,10 @@ var group__g1 =
       [ "BR_OUTPUT_NULL", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbae4cc435bf49439ea0125d8cf92792754", null ],
       [ "BR_ID_TRANSACAO_INVALIDO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fbad30f13853f9bf56b450eeef2f60e427c", null ],
       [ "BR_PDV_NULL", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba71f9c484b1551439c04790496f1dafa0", null ],
-      [ "BR_PDV_INVALIDO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba203f26c54556caf8276f57dbc961c810", null ]
+      [ "BR_PDV_INVALIDO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba203f26c54556caf8276f57dbc961c810", null ],
+      [ "BR_TIPO_CUPOM_INVALIDO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba380fd196ae9f8b59cf835db659e4dc4c", null ],
+      [ "BR_XML_NULL", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba37c620cc8e3e953cc7f4b85e6daaf301", null ],
+      [ "BR_XML_INVALIDO", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba3784e6a446e8e12ec2101e06b038e3d0", null ]
     ] ],
     [ "Br_Erro_Status", "group__g1.html#ga161eeb1d172e92f21fab4185bad6d51b", [
       [ "BR_STATUS_EM_ANDAMENTO", "group__g1.html#gga161eeb1d172e92f21fab4185bad6d51bacd12e002896d64514ae2f082a68d32c3", null ],
@@ -490,6 +493,12 @@ var group__g1 =
       [ "BR_ERRO_CONFIRMAR_TRANSACAO", "group__g1.html#gga9e4e19001ea466e5ece45c959b1a26dea71f0f758d152f8e8eb6edbb7a46e6f5e", null ],
       [ "BR_ERRO_LEITURA_TRANSACAO", "group__g1.html#gga9e4e19001ea466e5ece45c959b1a26dead1b454754135ef273a0d5fc74c3f0e9b", null ],
       [ "BR_TRANSACAO_NAO_RETORNADA", "group__g1.html#gga9e4e19001ea466e5ece45c959b1a26dea5e346728b64b39508d07926356eb9165", null ]
+    ] ],
+    [ "Br_Erro_Param_Extras", "group__g1.html#gaeebb39d2f6b77c2deb742c51fc71a44d", [
+      [ "BR_ASS_QRCODE_NULL", "group__g1.html#ggaeebb39d2f6b77c2deb742c51fc71a44da2279af5644a12a8c0b0cbba215823cd7", null ],
+      [ "BR_ASS_QRCODE_INVALIDO", "group__g1.html#ggaeebb39d2f6b77c2deb742c51fc71a44da67bc1d3674a119574f7aca3997bfe099", null ],
+      [ "BR_CSC_NULL", "group__g1.html#ggaeebb39d2f6b77c2deb742c51fc71a44da2b6509f9006d5132de4c454e8e409546", null ],
+      [ "BR_CSC_INVALIDO", "group__g1.html#ggaeebb39d2f6b77c2deb742c51fc71a44daa2fd69fe6767de94575c5c75030215bc", null ]
     ] ],
     [ "UTIL_Erro_Interno", "group__g1.html#gafd724a1fcc15d08d027120107767e201", [
       [ "UTIL_DATA_INVALIDA", "group__g1.html#ggafd724a1fcc15d08d027120107767e201a911e4e571fd43563ef664841302f2834", null ],
