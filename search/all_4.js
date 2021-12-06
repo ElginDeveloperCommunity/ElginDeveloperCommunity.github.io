@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['e1_5fbrigde_228',['E1_Brigde',['../group__g12.html',1,'']]],
+  ['e1_5fbridge_228',['E1_Bridge',['../group__g12.html',1,'']]],
   ['e1_5fbrigde_5fretorno_229',['e1_brigde_retorno',['../md_e1_brigde_retorno.html',1,'']]],
   ['e1_5felginpay_230',['e1_elginpay',['../md_e1_elginpay.html',1,'']]],
   ['e1_5felginpay_231',['E1_ElginPAY',['../group__sp2.html',1,'']]],
