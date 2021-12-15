@@ -11,6 +11,7 @@ var group__g12 =
     [ "ImprimirCupomSatCancelamento", "group__g12.html#ga4305d9a22cfd66e1d3a81511a2781986", null ],
     [ "ImprimirCupomNfce", "group__g12.html#ga3d6d3e8a12851c1d983295324561cb47", null ],
     [ "IniciaVenda", "group__g12.html#ga7254304848ee5688c3f58d129522363c", null ],
+    [ "IniciaVendaDebito", "group__g12.html#ga150bc0f20d3f5549ca77bb39e20f3042", null ],
     [ "IniciaVendaCredito", "group__g12.html#ga4d3755c9f84a88b40fa2d598fcf57dc8", null ],
     [ "IniciaCancelamentoVenda", "group__g12.html#gaffa01891a69e71a22abcd0956bdb5eba", null ],
     [ "IniciaOperacaoAdministrativa", "group__g12.html#ga97506485652a012c66bff9a910f2f7f9", null ],
@@ -21,6 +22,7 @@ var group__g12 =
     [ "ConsultarStatusArq", "group__g12.html#gacbf998bfeb80a15e21639a10437995fb", null ],
     [ "ConsultarUltimaTransacaoArq", "group__g12.html#gaf78d581f527e6c2cdffcbbdc6b18b861", null ],
     [ "IniciaVendaArq", "group__g12.html#ga21ce0a76097885216af8c458acd8b30f", null ],
+    [ "IniciaVendaDebitoArq", "group__g12.html#ga768c78ba24f1ecffaba37443229c9c3b", null ],
     [ "IniciaVendaCreditoArq", "group__g12.html#gacc1213a8716967be7ad4caf714d6a5fb", null ],
     [ "IniciaCancelamentoVendaArq", "group__g12.html#gae0dfb185e7137cdffb7f2eb645b95499", null ],
     [ "IniciaOperacaoAdministrativaArq", "group__g12.html#ga1cbceda54be3f9f8ad65868c0d503ac2", null ]

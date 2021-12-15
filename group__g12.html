@@ -138,6 +138,10 @@ Deve ser utilizada casos de timeout.  <a href="group__g12.html#ga3bf08316fb1dda8
 <tr class="memdesc:ga7254304848ee5688c3f58d129522363c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia um operação de venda.<br  />
 O tipo da operação será definido pelo operador como débito ou crédito.  <a href="group__g12.html#ga7254304848ee5688c3f58d129522363c">Mais...</a><br /></td></tr>
 <tr class="separator:ga7254304848ee5688c3f58d129522363c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga150bc0f20d3f5549ca77bb39e20f3042"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g12.html#ga150bc0f20d3f5549ca77bb39e20f3042">IniciaVendaDebito</a> (int idTransacao, const char *pdv, const char *valorTotal)</td></tr>
+<tr class="memdesc:ga150bc0f20d3f5549ca77bb39e20f3042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia uma venda no débito.<br  />
+.  <a href="group__g12.html#ga150bc0f20d3f5549ca77bb39e20f3042">Mais...</a><br /></td></tr>
+<tr class="separator:ga150bc0f20d3f5549ca77bb39e20f3042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4d3755c9f84a88b40fa2d598fcf57dc8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g12.html#ga4d3755c9f84a88b40fa2d598fcf57dc8">IniciaVendaCredito</a> (int idTransacao, const char *pdv, const char *valorTotal, int tipoFinanciamento, int numParcelas)</td></tr>
 <tr class="memdesc:ga4d3755c9f84a88b40fa2d598fcf57dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia Venda no Crédito.  <a href="group__g12.html#ga4d3755c9f84a88b40fa2d598fcf57dc8">Mais...</a><br /></td></tr>
 <tr class="separator:ga4d3755c9f84a88b40fa2d598fcf57dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +176,10 @@ Deve ser utilizada casos de timeout.  <a href="group__g12.html#gaf78d581f527e6c2
 <tr class="memdesc:ga21ce0a76097885216af8c458acd8b30f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia um operação de venda.<br  />
 O tipo da operação será definido pelo operador como débito ou crédito.  <a href="group__g12.html#ga21ce0a76097885216af8c458acd8b30f">Mais...</a><br /></td></tr>
 <tr class="separator:ga21ce0a76097885216af8c458acd8b30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga768c78ba24f1ecffaba37443229c9c3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g12.html#ga768c78ba24f1ecffaba37443229c9c3b">IniciaVendaDebitoArq</a> (int idTransacao, const char *pdv, const char *valorTotal, const char *path)</td></tr>
+<tr class="memdesc:ga768c78ba24f1ecffaba37443229c9c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia uma venda no débito.<br  />
+.  <a href="group__g12.html#ga768c78ba24f1ecffaba37443229c9c3b">Mais...</a><br /></td></tr>
+<tr class="separator:ga768c78ba24f1ecffaba37443229c9c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc1213a8716967be7ad4caf714d6a5fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g12.html#gacc1213a8716967be7ad4caf714d6a5fb">IniciaVendaCreditoArq</a> (int idTransacao, const char *pdv, const char *valorTotal, int tipoFinanciamento, int numParcelas, const char *path)</td></tr>
 <tr class="memdesc:gacc1213a8716967be7ad4caf714d6a5fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia Venda no Crédito.<br  />
 .  <a href="group__g12.html#gacc1213a8716967be7ad4caf714d6a5fb">Mais...</a><br /></td></tr>
@@ -519,6 +527,54 @@ CSC era chamado de “Token”. </p>
 
 <p>Inicia um operação de venda.<br  />
 O tipo da operação será definido pelo operador como débito ou crédito. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idTransacao</td><td>- Código númerico gerenciado pelo PDV para identificar uma transação.<br  />
+Valor entre 0 e 999999. </td></tr>
+    <tr><td class="paramname">pdv</td><td>- Código identificador do PDV.<br  />
+Valor alfanumérico. </td></tr>
+    <tr><td class="paramname">valorTotal</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>String no formato Json com os dados da transação; Consulte a sessão retorno para ter um exemplo de um json de saída e todos os dados. </dd></dl>
+
+</div>
+</div>
+<a id="ga150bc0f20d3f5549ca77bb39e20f3042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga150bc0f20d3f5549ca77bb39e20f3042">&#9670;&nbsp;</a></span>IniciaVendaDebito()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* IniciaVendaDebito </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idTransacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pdv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>valorTotal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicia uma venda no débito.<br  />
+. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">idTransacao</td><td>- Código númerico gerenciado pelo PDV para identificar uma transação.<br  />
@@ -1015,6 +1071,69 @@ e os dados no formato json estaram disponiveis no arquivo informado por path.<br
 <p>Inicia um operação de venda.<br  />
 O tipo da operação será definido pelo operador como débito ou crédito. </p>
 <dl class="section note"><dt>Observação</dt><dd>Essa função é uma reescrita da função <a class="el" href="group__g12.html#ga7254304848ee5688c3f58d129522363c" title="Inicia um operação de venda. O tipo da operação será definido pelo operador como débito ou crédito.">IniciaVenda</a> alterando apenas o modo como os dados são retornados.<br  />
+ </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idTransacao</td><td>- Código númerico gerenciado pelo PDV para identificar uma transação.<br  />
+Valor entre 0 e 999999. </td></tr>
+    <tr><td class="paramname">pdv</td><td>- Código identificador do PDV.<br  />
+Valor alfanumérico. </td></tr>
+    <tr><td class="paramname">valorTotal</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
+    <tr><td class="paramname">path</td><td>- Caminho para o arquivo onde serão gravados os dados de resposta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorno tipo int. Operação realizada com sucesso deve retornar ZERO(0).<br  />
+e os dados no formato json estaram disponiveis no arquivo informado por path.<br  />
+<ul>
+<li>Consulte <b>Códigos de erro</b> para mais informações.<br  />
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga768c78ba24f1ecffaba37443229c9c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga768c78ba24f1ecffaba37443229c9c3b">&#9670;&nbsp;</a></span>IniciaVendaDebitoArq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IniciaVendaDebitoArq </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idTransacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pdv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>valorTotal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicia uma venda no débito.<br  />
+. </p>
+<dl class="section note"><dt>Observação</dt><dd>Essa função é uma reescrita da função <a class="el" href="group__g12.html#ga150bc0f20d3f5549ca77bb39e20f3042" title="Inicia uma venda no débito. .">IniciaVendaDebito</a> alterando apenas o modo como os dados são retornados.<br  />
  </dd></dl>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
