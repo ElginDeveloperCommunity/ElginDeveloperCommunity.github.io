@@ -1,7 +1,7 @@
 var searchData=
 [
   ['campos_20da_20etiqueta_122',['Campos da Etiqueta',['../group__ge3.html',1,'']]],
-  ['cancelarnota_123',['CancelarNota',['../group__g11.html#ga2287edb020c63e91c35c1783f671cdda',1,'exportafuncoes.h']]],
+  ['cancelarnota_123',['CancelarNota',['../group__g50.html#ga2287edb020c63e91c35c1783f671cdda',1,'exportafuncoes.h']]],
   ['cancelarultimavenda_124',['CancelarUltimaVenda',['../group__g2.html#ga21cf1f3afb98ffaae26373f5639d82b4',1,'exportafuncoes.h']]],
   ['cancelprintdatainpagemode_125',['CancelPrintDataInPageMode',['../group___m2.html#ga9d40e94d73fdf8306bcc477e258b4624',1,'exportafuncoes.h']]],
   ['cb_5faltura_5finvalida_126',['CB_ALTURA_INVALIDA',['../group__g1.html#ggaadd6dde8b5904c2bdb01d2b8567ca238aca99d5b9e87cd91e07f20a38b24b31a6',1,'codigoerro.h']]],
@@ -30,8 +30,8 @@ var searchData=
   ['configurarmodelobalanca_149',['ConfigurarModeloBalanca',['../group__g5.html#gabed56c6faf716867c79b20230da2c708',1,'exportafuncoes.h']]],
   ['configurarprotocolocomunicacao_150',['ConfigurarProtocoloComunicacao',['../group__g5.html#ga5dfef4c58be6722f2195bd507b21880d',1,'exportafuncoes.h']]],
   ['configuração_20de_20sistema_151',['Configuração de Sistema',['../group__ge0.html',1,'']]],
-  ['consultarid_152',['ConsultarId',['../group__g11.html#gacece6dcf69dda03738e7b6349a4982a8',1,'exportafuncoes.h']]],
-  ['consultarnota_153',['ConsultarNota',['../group__g11.html#gadd9eff7b1279230c008dd0dbc2dbe298',1,'exportafuncoes.h']]],
+  ['consultarid_152',['ConsultarId',['../group__g50.html#gacece6dcf69dda03738e7b6349a4982a8',1,'exportafuncoes.h']]],
+  ['consultarnota_153',['ConsultarNota',['../group__g50.html#gadd9eff7b1279230c008dd0dbc2dbe298',1,'exportafuncoes.h']]],
   ['consultarnumerosessao_154',['ConsultarNumeroSessao',['../group__g2.html#gae36689e0166dec73094db328744b5153',1,'exportafuncoes.h']]],
   ['consultarsat_155',['ConsultarSAT',['../group__g2.html#ga04f288c0129cc5a2f3fe797ec7f08771',1,'exportafuncoes.h']]],
   ['consultarstatus_156',['ConsultarStatus',['../group__g12.html#gab67b5206416a7848f095fdefeeed7ce7',1,'exportafuncoes.h']]],

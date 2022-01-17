@@ -31,7 +31,7 @@ var searchData=
   ['datamatrix_5fmultiplicador_5finvalido_201',['DATAMATRIX_MULTIPLICADOR_INVALIDO',['../group__g1.html#ggac7eaf2fbf92b322767e36e149c6e85d7a5e1e608d59c9fc8c4880f1f05c7c5f65',1,'codigoerro.h']]],
   ['datamatrix_5frotacao_5finvalida_202',['DATAMATRIX_ROTACAO_INVALIDA',['../group__g1.html#ggac7eaf2fbf92b322767e36e149c6e85d7a3438d4844ea4755afeef7d814a57969e',1,'codigoerro.h']]],
   ['datamatrix_5frows_5finvalidas_203',['DATAMATRIX_ROWS_INVALIDAS',['../group__g1.html#ggac7eaf2fbf92b322767e36e149c6e85d7a2e893548b171ba3380e78b9c3f9e33b9',1,'codigoerro.h']]],
-  ['decodificarnota_204',['DecodificarNota',['../group__g11.html#ga4fff010d41f1fe3cb7e7464efe7b47d1',1,'exportafuncoes.h']]],
+  ['decodificarnota_204',['DecodificarNota',['../group__g50.html#ga4fff010d41f1fe3cb7e7464efe7b47d1',1,'exportafuncoes.h']]],
   ['defineareaimpressao_205',['DefineAreaImpressao',['../group___m1.html#gaaf8135997bfdaaec07de62d7ba3575f6',1,'exportafuncoes.h']]],
   ['defineposicao_206',['DefinePosicao',['../group___m1.html#gaee4c087b368db5a467d2ed26afe1941a',1,'exportafuncoes.h']]],
   ['desabilitarconexaocontinua_207',['DesabilitarConexaoContinua',['../group__g2.html#ga63057f0618cbd9b657ebe37965ca2ba0',1,'exportafuncoes.h']]],
