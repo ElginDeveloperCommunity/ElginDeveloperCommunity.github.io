@@ -19,7 +19,7 @@ var searchData=
   ['selectstandardmode_670',['SelectStandardMode',['../group___m2.html#gac262c1e6c430d9e5b022feb9cad9dd46',1,'exportafuncoes.h']]],
   ['serial_5ftimeout_671',['SERIAL_TIMEOUT',['../group__g1.html#ggaea850727996cb617abfc4737b3d3ab23ab2612727b8bd9a9fc46ae632fd9b90ff',1,'codigoerro.h']]],
   ['servico_5focupado_672',['SERVICO_OCUPADO',['../group__g1.html#gga20c9fe838328460e9145419bd484c573ab2bc19e1276d34e4f1f6878672d7f962',1,'codigoerro.h']]],
-  ['serviço_673',['Serviço',['../group__g45.html',1,'(<em>Namespace</em> global)'],['../group__g8.html',1,'(<em>Namespace</em> global)'],['../group__ma4.html',1,'(<em>Namespace</em> global)']]],
+  ['serviço_673',['Serviço',['../group__g45.html',1,'(<em>Namespace</em> global)'],['../group__ma4.html',1,'(<em>Namespace</em> global)']]],
   ['setabsoluteprintposition_674',['SetAbSolutePrintPosition',['../group___m2.html#gadc70eea96c797343b2868cc4a360537b',1,'exportafuncoes.h']]],
   ['setabsoluteverticalprintpositioninpagemode_675',['SetAbsoluteVerticalPrintPositionInPageMode',['../group___m2.html#ga9af12791275ebb6aedc55731b5b39ca7',1,'exportafuncoes.h']]],
   ['setalign_676',['SetAlign',['../group___m2.html#gaa3754c2eed4570238863c1cfa45be309',1,'exportafuncoes.h']]],
