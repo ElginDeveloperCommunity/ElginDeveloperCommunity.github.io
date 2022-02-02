@@ -327,7 +327,10 @@ var group__g1 =
       [ "SIGNAC_INVALIDA", "group__g1.html#gga15d766683e4eca0e281addece3d04704a50a1c0b4fb48400156a3759a647052c7", null ],
       [ "NUMERO_CAIXA_INVALIDO", "group__g1.html#gga15d766683e4eca0e281addece3d04704a9248c32bfbcdf9e99923ae0b66fc64f4", null ],
       [ "ARQUIVO_NAO_ENCONTRADO", "group__g1.html#gga15d766683e4eca0e281addece3d04704acb820012a3f6424d1973b5f055f7f423", null ],
-      [ "NOME_DESTINARIO_INVALIDO", "group__g1.html#gga15d766683e4eca0e281addece3d04704a3b539c170939a1aba42e1c8da8dd1fc9", null ]
+      [ "NOME_DESTINARIO_INVALIDO", "group__g1.html#gga15d766683e4eca0e281addece3d04704a3b539c170939a1aba42e1c8da8dd1fc9", null ],
+      [ "CHAVES_CFE_INVALIDAS", "group__g1.html#gga15d766683e4eca0e281addece3d04704aa02efd49baa979423033bbd98523c5ee", null ],
+      [ "RESPOSTA_SESSAO_FISCAL_INVALIDA", "group__g1.html#gga15d766683e4eca0e281addece3d04704a96a152387f369c9232c7be8916201fc8", null ],
+      [ "ERRO_CONSULTAR_SAT", "group__g1.html#gga15d766683e4eca0e281addece3d04704a5235a4e142d5cc15d7de3abc09fd4908", null ]
     ] ],
     [ "SAT_Erro_Cupom_Cancelamento", "group__g1.html#ga208e07da48ed95c017fcc40106a1ecc6", [
       [ "CHAVE_CANCELAMENTO_INVALIDA", "group__g1.html#gga208e07da48ed95c017fcc40106a1ecc6a353d610b908e1209d739b1e1f6f1851f", null ]
@@ -456,7 +459,10 @@ var group__g1 =
       [ "BR_PORTA_STATUS_INVALIDA", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aab63658dc93200e3d744bbd42534cca57", null ],
       [ "BR_PORTAS_IGUAIS", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa8dadc2229421a51b6133d3c84089398e", null ],
       [ "BR_TIMEOUT_INVALIDO", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa31d268463beb6c05c347aaabfd50e505", null ],
-      [ "BR_IP_TERMINAL_NAO_INFORMADO", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa4cf1081e338436d9ff43e0034c3e969c", null ]
+      [ "BR_IP_TERMINAL_NAO_INFORMADO", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa4cf1081e338436d9ff43e0034c3e969c", null ],
+      [ "BR_SENHA_NULL", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa2aabb27d76332558ff20e7e6336c1652", null ],
+      [ "BR_SENHA_NAO_INFORMADA", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aadb800973fcfda8155872ae3f5cb2a5cc", null ],
+      [ "BR_MESMA_CONFIG_SENHA", "group__g1.html#gga5cd98e71a4def637f833b40fe5116f3aa3800e1e7a4cbc8a2786335ee2ff229b9", null ]
     ] ],
     [ "Br_Erro_Param", "group__g1.html#ga7b91f88fc3df94aa2683c40f1854c4fb", [
       [ "BR_VALOR_TOTAL_NULL", "group__g1.html#gga7b91f88fc3df94aa2683c40f1854c4fba34381d1ef40b88daa4ab283069e273e8", null ],

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.36</span>
+   &#160;<span id="projectnumber">versão 2.37</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -134,6 +134,10 @@ Funções</h2></td></tr>
 <tr class="separator:gae3faa18dde437bae0a097d14588ef150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabc3fa5b5b924b0a60047b3df8a61b981"><td class="memItemLeft" align="right" valign="top">public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gabc3fa5b5b924b0a60047b3df8a61b981">iniciaOperacaoAdministrativa</a> (Context context, Handler handler)</td></tr>
 <tr class="separator:gabc3fa5b5b924b0a60047b3df8a61b981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38c84a8d279ce45a08b4b54081fecbce"><td class="memItemLeft" align="right" valign="top">public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga38c84a8d279ce45a08b4b54081fecbce">iniciaOperacaoAdministrativa</a> (Operacoes operacoes, Context context, Handler handler)</td></tr>
+<tr class="separator:ga38c84a8d279ce45a08b4b54081fecbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafcc23530345f50fb41a9ec4b1ae69031"><td class="memItemLeft" align="right" valign="top">public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gafcc23530345f50fb41a9ec4b1ae69031">setPersonalizacao</a> (Personalizacao mPersonalizacao)</td></tr>
+<tr class="separator:gafcc23530345f50fb41a9ec4b1ae69031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga68a451efbb3655387c28e9262857f3af"><td class="memItemLeft" align="right" valign="top">Deprecated public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga68a451efbb3655387c28e9262857f3af">iniciarPagamentoDebito</a> (String valorTransacao, Context context, Handler handler)</td></tr>
 <tr class="separator:ga68a451efbb3655387c28e9262857f3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga21db3abdc00c50b4cf1376f37c351c8a"><td class="memItemLeft" align="right" valign="top">Deprecated public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga21db3abdc00c50b4cf1376f37c351c8a">inciarPagamentoCredito</a> (String valorTransacao, int tipoFinanciamento, Context context, Handler handler)</td></tr>
@@ -382,7 +386,7 @@ Funções</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">valorTotal</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
     <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
-    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON. Consulte <a class="el" href="group__sp21.html">Retorno</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -424,7 +428,7 @@ Funções</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">valorTotal</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
     <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
-    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON. Consulte <a class="el" href="group__sp21.html">Retorno</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -480,7 +484,7 @@ Funções</h2></td></tr>
     <tr><td class="paramname">tipoFinanciamento</td><td>- Tipo do financiamento (A vista(1), parcelado emissor(2) ou parcelado estabelecimento(3)) </td></tr>
     <tr><td class="paramname">numeroParcelas</td><td>- Quantidade de parcelas para as transações parcelada. Para transação a vista o valor sera desconsiderado. </td></tr>
     <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
-    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON. Consulte <a class="el" href="group__sp21.html">Retorno</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -536,7 +540,7 @@ Funções</h2></td></tr>
     <tr><td class="paramname">ref</td><td>- Referencia da transação original (NSUTerminal no json retornado da venda) </td></tr>
     <tr><td class="paramname">data</td><td>- Data da transação original no formato MMM dd, yyyy HH:mm:ss aaa (dataHoraTransacao no json retornado da venda) </td></tr>
     <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
-    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON. Consulte <a class="el" href="group__sp21.html">Retorno</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -544,7 +548,7 @@ Funções</h2></td></tr>
 </div>
 </div>
 <a id="gabc3fa5b5b924b0a60047b3df8a61b981"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabc3fa5b5b924b0a60047b3df8a61b981">&#9670;&nbsp;</a></span>iniciaOperacaoAdministrativa()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc3fa5b5b924b0a60047b3df8a61b981">&#9670;&nbsp;</a></span>iniciaOperacaoAdministrativa() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -571,7 +575,73 @@ Funções</h2></td></tr>
 <p>Inicia uma operação administrativa </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
-    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON. Consulte <a class="el" href="group__sp21.html">Retorno</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga38c84a8d279ce45a08b4b54081fecbce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga38c84a8d279ce45a08b4b54081fecbce">&#9670;&nbsp;</a></span>iniciaOperacaoAdministrativa() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public void iniciaOperacaoAdministrativa </td>
+          <td>(</td>
+          <td class="paramtype">Operacoes&#160;</td>
+          <td class="paramname"><em>operacoes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Context&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicia uma operação definida pelo Usuario </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">operacoes</td><td>- Enum de Operações disponiveis. </td></tr>
+    <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta do transação atravez do método handleMessage. A resposta será enviada como String no formato JSON. Consulte <a class="el" href="group__sp21.html">Retorno</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gafcc23530345f50fb41a9ec4b1ae69031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafcc23530345f50fb41a9ec4b1ae69031">&#9670;&nbsp;</a></span>setPersonalizacao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public void setPersonalizacao </td>
+          <td>(</td>
+          <td class="paramtype">Personalizacao&#160;</td>
+          <td class="paramname"><em>mPersonalizacao</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função para personalização da interface de pagamento </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mPersonalizacao</td><td>Objeto com as informações de personalização; </td></tr>
   </table>
   </dd>
 </dl>

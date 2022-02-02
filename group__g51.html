@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.36</span>
+   &#160;<span id="projectnumber">versão 2.37</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -97,6 +97,9 @@ Funções</h2></td></tr>
 <tr class="separator:ga63a4ac74b8b9cdfd0bb8eafb3bfa750c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17c48f56afb9fd79ed03252e59cc6e44"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g51.html#ga17c48f56afb9fd79ed03252e59cc6e44">SetServer</a> (const char *ipTerminal, int portaTransacao, int portaStatus)</td></tr>
 <tr class="separator:ga17c48f56afb9fd79ed03252e59cc6e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7bf245e114c8c0466dd0584b4165a30e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g51.html#ga7bf245e114c8c0466dd0584b4165a30e">SetSenha</a> (const char *senha, bool habilitada)</td></tr>
+<tr class="memdesc:ga7bf245e114c8c0466dd0584b4165a30e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura as senhas que a dll vai enviar para o terminal para as transações.  <a href="group__g51.html#ga7bf245e114c8c0466dd0584b4165a30e">Mais...</a><br /></td></tr>
+<tr class="separator:ga7bf245e114c8c0466dd0584b4165a30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga945ab5c77412c177e36d0f57c81198e5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g51.html#ga945ab5c77412c177e36d0f57c81198e5">GetTimeout</a> ()</td></tr>
 <tr class="separator:ga945ab5c77412c177e36d0f57c81198e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae4bb88c362d2b22c77dc5a97c94a8b35"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g51.html#gae4bb88c362d2b22c77dc5a97c94a8b35">SetTimeout</a> (int timeout)</td></tr>
@@ -111,6 +114,9 @@ Funções</h2></td></tr>
 <tr class="separator:ga4305d9a22cfd66e1d3a81511a2781986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3d6d3e8a12851c1d983295324561cb47"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g51.html#ga3d6d3e8a12851c1d983295324561cb47">ImprimirCupomNfce</a> (const char *xml, int indexcsc, const char *csc)</td></tr>
 <tr class="separator:ga3d6d3e8a12851c1d983295324561cb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c5068975edd60dd291694bb47d9a89f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g51.html#ga4c5068975edd60dd291694bb47d9a89f">SetSenhaServer</a> (const char *senha, bool habilitada)</td></tr>
+<tr class="memdesc:ga4c5068975edd60dd291694bb47d9a89f"><td class="mdescLeft">&#160;</td><td class="mdescRight">configura a senha do terminal remotamente.  <a href="group__g51.html#ga4c5068975edd60dd291694bb47d9a89f">Mais...</a><br /></td></tr>
+<tr class="separator:ga4c5068975edd60dd291694bb47d9a89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7254304848ee5688c3f58d129522363c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g51.html#ga7254304848ee5688c3f58d129522363c">IniciaVenda</a> (int idTransacao, const char *pdv, const char *valorTotal)</td></tr>
 <tr class="separator:ga7254304848ee5688c3f58d129522363c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga150bc0f20d3f5549ca77bb39e20f3042"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g51.html#ga150bc0f20d3f5549ca77bb39e20f3042">IniciaVendaDebito</a> (int idTransacao, const char *pdv, const char *valorTotal)</td></tr>
@@ -181,6 +187,46 @@ Funções</h2></td></tr>
 O valor deve ser entre 0 e 65535, onde 0 será para definir com o valor padrão de 3000. </td></tr>
     <tr><td class="paramname">portaStatus</td><td>- Identificação da porta onde serão obtido o status das transações. A porta padrão é 3001<br  />
 O valor deve ser entre 0 e 65535, onde 0 será para definir com o valor padrão de 3001. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>string no formato json Exemplo: <div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;Sucesso&quot;}</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a id="ga7bf245e114c8c0466dd0584b4165a30e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7bf245e114c8c0466dd0584b4165a30e">&#9670;&nbsp;</a></span>SetSenha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SetSenha </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>senha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>habilitada</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configura as senhas que a dll vai enviar para o terminal para as transações. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senha</td><td>- senha configurada pelo usuário </td></tr>
+    <tr><td class="paramname">habilitada</td><td>- boolean para saber se a senha vai estar habilitada ou não.<br  />
+ Ou seja se a senha será enviada para comunicar ou não. </td></tr>
   </table>
   </dd>
 </dl>
@@ -394,6 +440,48 @@ da Fazenda da Unidade Federada do emitente e do próprio contribuinte. Anteriorm
 CSC era chamado de “Token”. </p>
 </blockquote>
 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>string no formato json Exemplo: <div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;Sucesso&quot;}</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a id="ga4c5068975edd60dd291694bb47d9a89f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c5068975edd60dd291694bb47d9a89f">&#9670;&nbsp;</a></span>SetSenhaServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* SetSenhaServer </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>senha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>habilitada</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>configura a senha do terminal remotamente. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senha</td><td>- senha configurada pelo usuário </td></tr>
+    <tr><td class="paramname">habilitada</td><td>- booleano que configura se a senha vai ser ativada no servidor<br  />
+ou não. Se for true vai ser verificado as senhas que recebem as transações<br  />
+e se for false significa que vai ter uma senha que não vai estar em uso, portanto<br  />
+qualquer transação que chegar no terminal vai ser aceito direto </td></tr>
   </table>
   </dd>
 </dl>

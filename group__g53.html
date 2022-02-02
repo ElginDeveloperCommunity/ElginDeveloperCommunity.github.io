@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.36</span>
+   &#160;<span id="projectnumber">versão 2.37</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -97,6 +97,9 @@ Funções</h2></td></tr>
 <tr class="separator:gac4c35481d861cbdc516b605b0d057c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga025b0a62664e4ad290ac5f1bb979051d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g53.html#ga025b0a62664e4ad290ac5f1bb979051d">SetServerArq</a> (const char *ipTerminal, int portaTransacao, int portaStatus, const char *path)</td></tr>
 <tr class="separator:ga025b0a62664e4ad290ac5f1bb979051d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b260a18f8a15a75d5bb2045ab77c8bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g53.html#ga6b260a18f8a15a75d5bb2045ab77c8bb">SetSenhaArq</a> (const char *senha, bool habilitada, const char *path)</td></tr>
+<tr class="memdesc:ga6b260a18f8a15a75d5bb2045ab77c8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura as senhas que a dll vai enviar para o terminal para as transações.  <a href="group__g53.html#ga6b260a18f8a15a75d5bb2045ab77c8bb">Mais...</a><br /></td></tr>
+<tr class="separator:ga6b260a18f8a15a75d5bb2045ab77c8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5897fd28cd2d015f9f7340ecb3c744fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g53.html#ga5897fd28cd2d015f9f7340ecb3c744fb">GetTimeoutArq</a> (const char *path)</td></tr>
 <tr class="separator:ga5897fd28cd2d015f9f7340ecb3c744fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae8e1a1fa9f29ca67000598dfef6b9866"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g53.html#gae8e1a1fa9f29ca67000598dfef6b9866">SetTimeoutArq</a> (int timeout, const char *path)</td></tr>
@@ -105,6 +108,9 @@ Funções</h2></td></tr>
 <tr class="separator:gacbf998bfeb80a15e21639a10437995fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf78d581f527e6c2cdffcbbdc6b18b861"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g53.html#gaf78d581f527e6c2cdffcbbdc6b18b861">ConsultarUltimaTransacaoArq</a> (const char *pdv, const char *path)</td></tr>
 <tr class="separator:gaf78d581f527e6c2cdffcbbdc6b18b861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8521dfa96ca01c7db32abd722a5f7ba0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g53.html#ga8521dfa96ca01c7db32abd722a5f7ba0">SetSenhaServerArq</a> (const char *senha, bool habilitada, const char *path)</td></tr>
+<tr class="memdesc:ga8521dfa96ca01c7db32abd722a5f7ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">configura a senha do terminal remotamente.  <a href="group__g53.html#ga8521dfa96ca01c7db32abd722a5f7ba0">Mais...</a><br /></td></tr>
+<tr class="separator:ga8521dfa96ca01c7db32abd722a5f7ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga21ce0a76097885216af8c458acd8b30f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g53.html#ga21ce0a76097885216af8c458acd8b30f">IniciaVendaArq</a> (int idTransacao, const char *pdv, const char *valorTotal, const char *path)</td></tr>
 <tr class="separator:ga21ce0a76097885216af8c458acd8b30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga768c78ba24f1ecffaba37443229c9c3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g53.html#ga768c78ba24f1ecffaba37443229c9c3b">IniciaVendaDebitoArq</a> (int idTransacao, const char *pdv, const char *valorTotal, const char *path)</td></tr>
@@ -210,6 +216,54 @@ e os dados no formato json estaram disponiveis no arquivo informado por path.<br
 </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="ga6b260a18f8a15a75d5bb2045ab77c8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6b260a18f8a15a75d5bb2045ab77c8bb">&#9670;&nbsp;</a></span>SetSenhaArq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SetSenhaArq </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>senha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>habilitada</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configura as senhas que a dll vai enviar para o terminal para as transações. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senha</td><td>- senha configurada pelo usuário </td></tr>
+    <tr><td class="paramname">habilitada</td><td>- boolean para saber se a senha vai estar habilitada ou não.<br  />
+ Ou seja se a senha será enviada para comunicar ou não. </td></tr>
+    <tr><td class="paramname">path</td><td>- Caminho para o arquivo onde serão gravados os dados de resposta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>código numérico referente ao processamento da função.<br  />
+A função executada com sucesso deve retornar 0.<br  />
+Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
 
 </div>
 </div>
@@ -371,6 +425,56 @@ e os dados no formato json estaram disponiveis no arquivo informado por path.<br
 </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="ga8521dfa96ca01c7db32abd722a5f7ba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8521dfa96ca01c7db32abd722a5f7ba0">&#9670;&nbsp;</a></span>SetSenhaServerArq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SetSenhaServerArq </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>senha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>habilitada</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>configura a senha do terminal remotamente. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senha</td><td>- senha configurada pelo usuário </td></tr>
+    <tr><td class="paramname">habilitada</td><td>- boolean que configura se a senha vai ser ativada no servidor<br  />
+ou não. Se for true vai ser verificado as senhas que recebem as transações<br  />
+e se for false significa que vai ter uma senha que não vai estar em uso, portanto<br  />
+qualquer transação que chegar no terminal vai ser aceito direto </td></tr>
+    <tr><td class="paramname">path</td><td>- Caminho para o arquivo onde serão gravados os dados de resposta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>código numérico referente ao processamento da função.<br  />
+A função executada com sucesso deve retornar 0.<br  />
+Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
 
 </div>
 </div>

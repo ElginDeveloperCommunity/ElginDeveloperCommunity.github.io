@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.36</span>
+   &#160;<span id="projectnumber">versão 2.37</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -222,6 +222,11 @@ Caso a função seja processada com sucesso o XML usado sera atualizado com os d
 Caso a função seja processada com sucesso o XML usado sera atualizado com os dados de processamento do cancelamento no SAT.<br  />
 .  <a href="group__s0.html#ga52e84c9217e6dab93eca68ac86f2f7c3">Mais...</a><br /></td></tr>
 <tr class="separator:ga52e84c9217e6dab93eca68ac86f2f7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e089c60fe343854eb62c127ac324aa8"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__s0.html#ga7e089c60fe343854eb62c127ac324aa8">TrataTimeoutComunicacao</a> (const char *path_file, const char *codigo_ativacao_sat, int *resultadoOperacao)</td></tr>
+<tr class="memdesc:ga7e089c60fe343854eb62c127ac324aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">TrataTimeoutComunicacao Função para Tratamento de Timeout de Comunicação. Usada para recuperar um processamento que foi interrompido durante uma ocorrência de timeout no SAT.<br  />
+Caso a função seja processada com sucesso o arquivo será atualizado com os dados do ultima operação processada pelo SAT.<br  />
+.  <a href="group__s0.html#ga7e089c60fe343854eb62c127ac324aa8">Mais...</a><br /></td></tr>
+<tr class="separator:ga7e089c60fe343854eb62c127ac324aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <p>FUNCOES DE CRIAÇÃO DE XML SAT DA BIBLIOTECA E1_SAT. </p>
@@ -338,7 +343,7 @@ EX:<br  />
 <blockquote class="doxtable">
 <p><b>TAG:</b> A03<br  />
 <b>Parametro obrigatório</b><br  />
-<b>Tipo:</b> Numérico<br  />
+<b>Tipo:</b> Alfanumérico<br  />
 <b>Tamanho:</b> 1-4 <br  />
 <b>Casas decimais:</b> 2<br  />
 </p>
@@ -3379,6 +3384,72 @@ Caso ocorra algum erro será retornado um código númerico de erro.<br  />
 <br  />
  <blockquote class="doxtable">
 <p>Essa Função está disponível apenas para Equipamentos SAT Elgin e Bematech quando não estiver integrado com a plataforma Veraciti. </p>
+</blockquote>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga7e089c60fe343854eb62c127ac324aa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e089c60fe343854eb62c127ac324aa8">&#9670;&nbsp;</a></span>TrataTimeoutComunicacao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* TrataTimeoutComunicacao </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>codigo_ativacao_sat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>resultadoOperacao</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TrataTimeoutComunicacao Função para Tratamento de Timeout de Comunicação. Usada para recuperar um processamento que foi interrompido durante uma ocorrência de timeout no SAT.<br  />
+Caso a função seja processada com sucesso o arquivo será atualizado com os dados do ultima operação processada pelo SAT.<br  />
+. </p>
+<p>Essa função depende do arquivo <b>e1_conf.ini</b> no diretório da aplicação com as chaves <b>caminho_biblioteca_sat</b> e <b>ultimo_cfe_processado</b><br  />
+ Ex.<br  />
+</p><div class="fragment"><div class="line">[configuracao_sat]</div>
+<div class="line">caminho_biblioteca_sat=C:/Program Files (x86)/satelgin 7.0.1/lib/dllsat.dll</div>
+<div class="line">ultimo_cfe_processado=CFe35220114200166000166599000208640000612906931</div>
+</div><!-- fragment --><p> <br  />
+</p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path_file</td><td>Informa o caminho do arquivo que será atualizado em caso de sucesso da operação.<br  />
+ </td></tr>
+    <tr><td class="paramname">codigo_ativacao_sat</td><td>Código de ativação do equipamento para realização da operação<br  />
+ </td></tr>
+    <tr><td class="paramname">*resultadoOperacao</td><td>Ponteiro do tipo int que guarda a referência do resultado da operação!<br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A função retorna em caso de sucesso a resposta do SAT.<br  />
+Caso ocorra algum erro será retornado um código númerico de erro no parâmetro enviado por referência *resultadoOperacao.<br  />
+<ul>
+<li>Para mais informações consulte a sessão de codigo de erros. <br  />
+<br  />
+ <blockquote class="doxtable">
+<p>Essa Função está disponível apenas para Equipamentos Smart Sat Elgin. </p>
 </blockquote>
 </li>
 </ul>

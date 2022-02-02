@@ -21,6 +21,8 @@ var group__sp20 =
     [ "iniciaVendaCredito", "group__sp20.html#gafcbca74fc48c2ade0f00b05fb00f3223", null ],
     [ "iniciaCancelamentoVenda", "group__sp20.html#gae3faa18dde437bae0a097d14588ef150", null ],
     [ "iniciaOperacaoAdministrativa", "group__sp20.html#gabc3fa5b5b924b0a60047b3df8a61b981", null ],
+    [ "iniciaOperacaoAdministrativa", "group__sp20.html#ga38c84a8d279ce45a08b4b54081fecbce", null ],
+    [ "setPersonalizacao", "group__sp20.html#gafcc23530345f50fb41a9ec4b1ae69031", null ],
     [ "iniciarPagamentoDebito", "group__sp20.html#ga68a451efbb3655387c28e9262857f3af", null ],
     [ "inciarPagamentoCredito", "group__sp20.html#ga21db3abdc00c50b4cf1376f37c351c8a", null ],
     [ "iniciarPagamentoCredito", "group__sp20.html#gac68a9e92957d794de2ad8648591bc281", null ],

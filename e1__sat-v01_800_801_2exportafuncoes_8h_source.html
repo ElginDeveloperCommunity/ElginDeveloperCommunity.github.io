@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.36</span>
+   &#160;<span id="projectnumber">versão 2.37</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -313,14 +313,17 @@ $(document).ready(function(){initNavTree('e1__sat-v01_800_801_2exportafuncoes_8h
 <div class="line"><a name="l02581"></a><span class="lineno"> 2581</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
 <div class="line"><a name="l02583"></a><span class="lineno"><a class="line" href="group__s0.html#ga52e84c9217e6dab93eca68ac86f2f7c3"> 2583</a></span>&#160;     <span class="keywordtype">char</span> *<a class="code" href="group__s0.html#ga52e84c9217e6dab93eca68ac86f2f7c3">FechaCupomCancelamento</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keyword">const</span> <span class="keywordtype">char</span> *codigo_ativacao_sat);</div>
 <div class="line"><a name="l02584"></a><span class="lineno"> 2584</span>&#160; </div>
-<div class="line"><a name="l02585"></a><span class="lineno"> 2585</span>&#160; </div>
-<div class="line"><a name="l02586"></a><span class="lineno"> 2586</span>&#160; </div>
-<div class="line"><a name="l02587"></a><span class="lineno"> 2587</span>&#160; </div>
-<div class="line"><a name="l02596"></a><span class="lineno"> 2596</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
-<div class="line"><a name="l02598"></a><span class="lineno"> 2598</span>&#160;     <span class="keywordtype">int</span> outFile(<span class="keywordtype">void</span>* data, <span class="keywordtype">void</span>* file);</div>
-<div class="line"><a name="l02599"></a><span class="lineno"> 2599</span>&#160; </div>
-<div class="line"><a name="l02600"></a><span class="lineno"> 2600</span>&#160;}</div>
-<div class="line"><a name="l02601"></a><span class="lineno"> 2601</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// EXPORTAFUNCOES_H</span></div>
+<div class="line"><a name="l02620"></a><span class="lineno"> 2620</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02622"></a><span class="lineno"><a class="line" href="group__s0.html#ga7e089c60fe343854eb62c127ac324aa8"> 2622</a></span>&#160;     <span class="keywordtype">char</span> *<a class="code" href="group__s0.html#ga7e089c60fe343854eb62c127ac324aa8">TrataTimeoutComunicacao</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keyword">const</span> <span class="keywordtype">char</span> *codigo_ativacao_sat, <span class="keywordtype">int</span>* resultadoOperacao);</div>
+<div class="line"><a name="l02623"></a><span class="lineno"> 2623</span>&#160; </div>
+<div class="line"><a name="l02624"></a><span class="lineno"> 2624</span>&#160; </div>
+<div class="line"><a name="l02625"></a><span class="lineno"> 2625</span>&#160; </div>
+<div class="line"><a name="l02626"></a><span class="lineno"> 2626</span>&#160; </div>
+<div class="line"><a name="l02635"></a><span class="lineno"> 2635</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02637"></a><span class="lineno"> 2637</span>&#160;     <span class="keywordtype">int</span> outFile(<span class="keywordtype">void</span>* data, <span class="keywordtype">void</span>* file);</div>
+<div class="line"><a name="l02638"></a><span class="lineno"> 2638</span>&#160; </div>
+<div class="line"><a name="l02639"></a><span class="lineno"> 2639</span>&#160;}</div>
+<div class="line"><a name="l02640"></a><span class="lineno"> 2640</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// EXPORTAFUNCOES_H</span></div>
 <div class="ttc" id="agroup___m1_html_ga5bb8fac990198ebba5a789d5d87ee8cb"><div class="ttname"><a href="group___m1.html#ga5bb8fac990198ebba5a789d5d87ee8cb">GetVersaoDLL</a></div><div class="ttdeci">char * GetVersaoDLL()</div><div class="ttdoc">Retorna a versão da DLL E1_Impressora.</div></div>
 <div class="ttc" id="agroup__g2_html_ga01e9f27eedb0479120dc5d6b7797a4e3"><div class="ttname"><a href="group__g2.html#ga01e9f27eedb0479120dc5d6b7797a4e3">AtivarSAT</a></div><div class="ttdeci">char * AtivarSAT(int numSessao, int subComando, const char *codAtivacao, const char *cnpj, int cUF)</div></div>
 <div class="ttc" id="agroup__g2_html_ga04f288c0129cc5a2f3fe797ec7f08771"><div class="ttname"><a href="group__g2.html#ga04f288c0129cc5a2f3fe797ec7f08771">ConsultarSAT</a></div><div class="ttdeci">char * ConsultarSAT(int numSessao)</div></div>
@@ -358,6 +361,7 @@ $(document).ready(function(){initNavTree('e1__sat-v01_800_801_2exportafuncoes_8h
 <div class="ttc" id="agroup__s0_html_ga771504399db187272626f3171e2dc261"><div class="ttname"><a href="group__s0.html#ga771504399db187272626f3171e2dc261">AbreCupomVenda</a></div><div class="ttdeci">int AbreCupomVenda(const char *path_file, const char *versaoDadosEnt, const char *CNPJ_SH, const char *signAC, int numeroCaixa, const char *CNPJ_emit, const char *IE, const char *IM, const char *cRegTribISSQN, const char *indRatISSQN, const char *CNPJ_dest, const char *CPF_dest, const char *xNome_dest)</div><div class="ttdoc">AbreCupomVenda Esssa função deve ser a primeira a ser chamada pela aplicação para iniciar a criação d...</div></div>
 <div class="ttc" id="agroup__s0_html_ga787940bb6f7bdb75449fbf31d98065b3"><div class="ttname"><a href="group__s0.html#ga787940bb6f7bdb75449fbf31d98065b3">InformaTotal</a></div><div class="ttdeci">int InformaTotal(const char *path_file, const char *vDescSubtot, const char *vAcresSubtot, const char *vCFeLei12741)</div><div class="ttdoc">InformaTotal Informa Grupo de Valores Totais do CF-e.</div></div>
 <div class="ttc" id="agroup__s0_html_ga7a69a254333f2302b592121248231184"><div class="ttname"><a href="group__s0.html#ga7a69a254333f2302b592121248231184">InformaCOFINSST</a></div><div class="ttdeci">int InformaCOFINSST(const char *path_file, int nItem, int grupo, const char *vBC_qBCProd, const char *pCOFINS_vAliqProd)</div><div class="ttdoc">InformaCOFINSST Grupo de COFINS Substituição Tributária. Informar campos para cálculo do COFINS Subst...</div></div>
+<div class="ttc" id="agroup__s0_html_ga7e089c60fe343854eb62c127ac324aa8"><div class="ttname"><a href="group__s0.html#ga7e089c60fe343854eb62c127ac324aa8">TrataTimeoutComunicacao</a></div><div class="ttdeci">char * TrataTimeoutComunicacao(const char *path_file, const char *codigo_ativacao_sat, int *resultadoOperacao)</div><div class="ttdoc">TrataTimeoutComunicacao Função para Tratamento de Timeout de Comunicação. Usada para recuperar um pro...</div></div>
 <div class="ttc" id="agroup__s0_html_ga8b6d51d8a85db7214bf0e6529f1920f6"><div class="ttname"><a href="group__s0.html#ga8b6d51d8a85db7214bf0e6529f1920f6">InformaInfAdic</a></div><div class="ttdeci">int InformaInfAdic(const char *path_file, const char *infCpl)</div><div class="ttdoc">InformainfAdic Informa Grupo de Informações Adicionais.</div></div>
 <div class="ttc" id="agroup__s0_html_ga8b7f891b1d3acd314d147c5dc7efe12c"><div class="ttname"><a href="group__s0.html#ga8b7f891b1d3acd314d147c5dc7efe12c">InformaPISSN</a></div><div class="ttdeci">int InformaPISSN(const char *path_file, int nItem, const char *CST)</div><div class="ttdoc">InformaPISSN Cria TAG PIS e PISSN. Grupo de PIS para contribuinte do SIMPLES NACIONAL.</div></div>
 <div class="ttc" id="agroup__s0_html_ga8c864c85c5040162f422c6ec4659926d"><div class="ttname"><a href="group__s0.html#ga8c864c85c5040162f422c6ec4659926d">AbreCupomCancelamento</a></div><div class="ttdeci">int AbreCupomCancelamento(const char *path_file, const char *chCanc, const char *CNPJ, const char *signAC, int numeroCaixa)</div><div class="ttdoc">AbreCupomCancelamento Gera XML de Cancelamento para o SAT.</div></div>
