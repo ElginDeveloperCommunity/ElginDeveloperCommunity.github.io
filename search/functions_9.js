@@ -1,19 +1,8 @@
 var searchData=
 [
-  ['lerpeso_1007',['LerPeso',['../group__g5.html#ga2e8a4dca8cec805f4836a9598ab27eaa',1,'exportafuncoes.h']]],
-  ['lerpreco_1008',['LerPreco',['../group__g5.html#gabe76bc279a0bff0504081b44ad8be215',1,'exportafuncoes.h']]],
-  ['lertara_1009',['LerTara',['../group__g5.html#gac7ceabcbacb42c11d41bddae0dd875e4',1,'exportafuncoes.h']]],
-  ['lertotal_1010',['LerTotal',['../group__g5.html#ga35cb2806fe3bb06f10cc9a7b4f771d5a',1,'exportafuncoes.h']]],
-  ['ligaledamarelo_1011',['LigaLedAmarelo',['../group__g10.html#ga71afb5d5a7858b282f7a742c33ac9e7b',1,'exportafuncoesposte.h']]],
-  ['ligaledverde_1012',['LigaLedVerde',['../group__g10.html#gac015e47247d3f2ba4b481a9102978ea9',1,'exportafuncoesposte.h']]],
-  ['ligaledvermelho_1013',['LigaLedVermelho',['../group__g10.html#gaa834e6c2ee04270de78d491a0f754fe6',1,'exportafuncoesposte.h']]],
-  ['ligardesligardisplay_1014',['LigarDesligarDisplay',['../group__g5.html#ga80daeec9ea522fe30f56bd6a0156c68e',1,'exportafuncoes.h']]],
-  ['ligasirene_1015',['LigaSirene',['../group__g10.html#ga73acb4720389ea8e289280795bcb8261',1,'exportafuncoesposte.h']]],
-  ['limpa_1016',['Limpa',['../group___m0.html#ga050843aae323d2a0ae747b0478627335',1,'exportafuncoes.h']]],
-  ['limpabuffermodopagina_1017',['LimpaBufferModoPagina',['../group___m1.html#gacdc97edd24cfb9903abf0933996112f0',1,'exportafuncoes.h']]],
-  ['limpafiltrossat_1018',['LimpaFiltrosSAT',['../group__g2.html#gaa7dfa5bfc4e7a659602e85a9a7a0816a',1,'exportafuncoes.h']]],
-  ['limpamemoria_1019',['LimpaMemoria',['../group___m0.html#ga90c744271b59a250c3cf7cf0b291e63d',1,'exportafuncoes.h']]],
-  ['limpamodulo_1020',['LimpaModulo',['../group___m0.html#ga9cbbed7bb745ebc319cc712efd14642f',1,'exportafuncoes.h']]],
-  ['listareventos_1021',['ListarEventos',['../group__g50.html#gab6feb5faa3fdd60ca0c8294544d22a1c',1,'exportafuncoes.h']]],
-  ['listavailablesatasjson_1022',['ListAvailableSatAsJson',['../group__g2.html#ga06e25f3ff0f99a112de3d4c41762c8e4',1,'exportafuncoes.h']]]
+  ['obtemultimoarquivo_1010',['ObtemUltimoArquivo',['../group__g9.html#ga2785d304514f144e91123dc54c9c6747',1,'exportafuncoes.h']]],
+  ['obtermodelobalanca_1011',['ObterModeloBalanca',['../group__g5.html#ga17389b720b15d322a9e6cc02c0cd4f9c',1,'exportafuncoes.h']]],
+  ['obterprotocolocomunicacao_1012',['ObterProtocoloComunicacao',['../group__g5.html#ga0a5aed390271cd1296168fc6a1dc81db',1,'exportafuncoes.h']]],
+  ['obtertipoconexao_1013',['ObterTipoConexao',['../group__g5.html#ga2de74dd1f5d987754d775740f5764ce5',1,'exportafuncoes.h']]],
+  ['opencashdrawer_1014',['OpenCashDrawer',['../group___m2.html#ga4a982087db2fdbcc07407146ffb0f1a5',1,'exportafuncoes.h']]]
 ];

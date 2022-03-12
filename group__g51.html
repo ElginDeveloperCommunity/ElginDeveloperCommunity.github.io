@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.37</span>
+   &#160;<span id="projectnumber">versão 2.38</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -296,8 +296,27 @@ O valor padrão é de 180 segundos (3 minutos); </p><dl class="params"><dt>Parâ
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Consulta status de operação do terminal SmartPOS. </p><dl class="section return"><dt>Retorna</dt><dd>string no formato json Exemplo: <div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;Terminal livre&quot;}</div>
-</div><!-- fragment --> </dd></dl>
+<p>Obtém o status do terminal SmartPOS.<br  />
+Essa função disponibiliza o status de transação e de tela.</p>
+<dl class="section return"><dt>Retorna</dt><dd>String no formato JSON. Exemplo: <div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:2,&quot;e1_bridge_msg&quot;:&quot;Terminal livre|Tela bloqueada&quot;}</div>
+</div><!-- fragment --> <br  />
+Essa função trabalha com os bits de um inteiro positivo para indicar o status.<br  />
+Conforme descrição abaixo: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">BIT   </th><th class="markdownTableHeadCenter">STATUS   </th><th class="markdownTableHeadCenter">DESCRIÇÃO    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter" rowspan="2">0   </td><td class="markdownTableBodyCenter">LIGADO   </td><td class="markdownTableBodyCenter">Indica terminal ocupado    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">DESLIGADO   </td><td class="markdownTableBodyCenter">Indica terminal livre    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter" rowspan="2">1   </td><td class="markdownTableBodyCenter">LIGADO   </td><td class="markdownTableBodyCenter">Indica tela bloqueada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">DESLIGADO   </td><td class="markdownTableBodyCenter">Indica tela desbloqueada   </td></tr>
+</table>
+<ul>
+<li>Consulte <b>Códigos de erro</b> para mais informações. </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>

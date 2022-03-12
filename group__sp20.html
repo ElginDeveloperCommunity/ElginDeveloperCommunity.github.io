@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.37</span>
+   &#160;<span id="projectnumber">versão 2.38</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -639,9 +639,47 @@ Funções</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Função para personalização da interface de pagamento </p><dl class="params"><dt>Parâmetros</dt><dd>
+<p>Função para personalização da interface de pagamento.<br  />
+Por padrão o ElginPay tem a identidade visual da Elgin, azul com branco, mas isso pode ser alterado de acordo com a necessidade da automação.<br  />
+</p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mPersonalizacao</td><td>Objeto com as informações de personalização; </td></tr>
+    <tr><td class="paramname">mPersonalizacao</td><td>- Objeto com as informações de personalização.<br  />
+<br  />
+ Exemplo de personalização:<br  />
+<div class="fragment"><div class="line"><span class="comment">// ...</span></div>
+<div class="line"> </div>
+<div class="line">Personalizacao.Builder pb = <span class="keyword">new</span> Personalizacao.Builder();</div>
+<div class="line">pb.informaIconeToolbar(<span class="keyword">new</span> File(<span class="stringliteral">&quot;/sdcard/ic_launcher_round.png&quot;</span>));  <span class="comment">// Altera o ícone</span></div>
+<div class="line">pb.informaFonte(<span class="keyword">new</span> File(<span class="stringliteral">&quot;/system/fonts/Clockopia.ttf&quot;</span>));           <span class="comment">// Altera a fonte</span></div>
+<div class="line">pb.informaCorFonte(<span class="stringliteral">&quot;#FC9F00&quot;</span>);                                      <span class="comment">// Altera a cor da fonte</span></div>
+<div class="line">pb.informaCorFonteTeclado(<span class="stringliteral">&quot;#FC9F00&quot;</span>);                               <span class="comment">// Altera a cor da fonte do teclado</span></div>
+<div class="line">pb.informaCorFundoToolbar(<span class="stringliteral">&quot;#FC9F00&quot;</span>);                               <span class="comment">// Altera a cor do fundo da barra superior</span></div>
+<div class="line">pb.informaCorFundoTela(<span class="stringliteral">&quot;#0C0807&quot;</span>);                                  <span class="comment">// Altera a cor do fundo da tela</span></div>
+<div class="line">pb.informaCorTeclaLiberadaTeclado(<span class="stringliteral">&quot;#464B4E&quot;</span>);                       <span class="comment">// Altera a cor da tecla liberada do teclado</span></div>
+<div class="line">pb.informaCorFundoTeclado(<span class="stringliteral">&quot;#1B1A1C&quot;</span>);                               <span class="comment">// Altera a cor do fundo do teclado</span></div>
+<div class="line">pb.informaCorTextoCaixaEdicao(<span class="stringliteral">&quot;#464B4E&quot;</span>);                           <span class="comment">// Altera a cor do texto da caixa de edição</span></div>
+<div class="line">pb.informaCorSeparadorMenu(<span class="stringliteral">&quot;#FC9F00&quot;</span>);                              <span class="comment">// Altera a cor dos separadores do menu</span></div>
+<div class="line"> </div>
+<div class="line">Personalizacao personalizacao = pb.build(); <span class="comment">// Cria o objeto de personalização</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// ...</span></div>
+<div class="line"> </div>
+<div class="line">ElginPay elginPay = <span class="keyword">new</span> ElginPay();         <span class="comment">// Cria o objeto do ElginPay</span></div>
+<div class="line">elginPay.setPersonalizacao(personalizacao); <span class="comment">// Configura a personalização do ElginPay</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// ...</span></div>
+</div><!-- fragment --> <br  />
+ Notas:<br  />
+<ul>
+<li>O ícone utilizado no exemplo está localizado no diretório sdcard do dispositivo;<br  />
+</li>
+<li>A fonte utilizada no exemplo é uma fonte do sistema Android;<br  />
+</li>
+<li>As cores devem ser informadas em #rgb.<br  />
+<br  />
+</li>
+</ul>
+</td></tr>
   </table>
   </dd>
 </dl>

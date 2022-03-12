@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['obtemultimoarquivo_1026',['ObtemUltimoArquivo',['../group__g9.html#ga2785d304514f144e91123dc54c9c6747',1,'exportafuncoes.h']]],
-  ['obtermodelobalanca_1027',['ObterModeloBalanca',['../group__g5.html#ga17389b720b15d322a9e6cc02c0cd4f9c',1,'exportafuncoes.h']]],
-  ['obterprotocolocomunicacao_1028',['ObterProtocoloComunicacao',['../group__g5.html#ga0a5aed390271cd1296168fc6a1dc81db',1,'exportafuncoes.h']]],
-  ['obtertipoconexao_1029',['ObterTipoConexao',['../group__g5.html#ga2de74dd1f5d987754d775740f5764ce5',1,'exportafuncoes.h']]],
-  ['opencashdrawer_1030',['OpenCashDrawer',['../group___m2.html#ga4a982087db2fdbcc07407146ffb0f1a5',1,'exportafuncoes.h']]]
+  ['receberdados_1052',['ReceberDados',['../group__ma4.html#gaa7014a9b058e448e3e85ae96e9c2c8dc',1,'ReceberDados(Inteiro result):&#160;android.doxy'],['../group__ma4.html#ga7b13a7d64e32aee4cbbb9b3e68c21afa',1,'ReceberDados(Inteiro result, int timeout):&#160;android.doxy']]],
+  ['reset_1053',['Reset',['../group___m0.html#ga1ed4367feeae4f5daa20d54dc309f117',1,'exportafuncoes.h']]]
 ];

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.37</span>
+   &#160;<span id="projectnumber">versão 2.38</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -108,14 +108,14 @@ Módulos</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <p>E1 Bridge. </p>
 <p>Este módulo tem como objetivo fornecer comunicação entre ambiente desktop (Windows/Linux/Android) e SmartPos Elgin Pay, <br  />
- sendo possível realizar operações de venda utilizando uma biblioteca que faz comunicação com o terminal de pagamento utilizando conexão TCP/IP.<br  />
+ sendo possível realizar operações de venda utilizando uma biblioteca que faz comunicação com o terminal de pagamento via TCP/IP.<br  />
  </p><h3>Componentes</h3>
 <p><b>E1_Bridge</b> <b></b>(DLL/SO/AAR) <b>-</b> Extensão do aplicativo (DLL/SO/AAR) onde estão exportadas todas as funções para Iniciar uma venda ou operação administrativa no terminal de pagamento SmartPOS.<br  />
 <b>E1_DigitalHub</b> (antigo E1_bridge) <b></b>(APK) <b>-</b> Aplicativo android a ser instalado no SmartPOS para configurações de porta e ativação do serviço para comunicação com Windows.<br  />
-Este componente esta disponivel na loja Elgin. Você pode habilitar-lo na loja Elgin na sessão Token.</p>
+Este componente está disponível na loja Elgin. Você pode habilitá-lo na loja Elgin, na seção Token.</p>
 <h3>Por onde começar</h3>
 <ol type="1">
-<li>O primeiro passo é habilitar o app para que ele possa ser carregado no seu terminal. Para isso acesse seu perfil de software house no link abaixo: <br  />
+<li>O primeiro passo é habilitar o app para que ele possa ser carregado no seu terminal. Para isso, acesse seu perfil de software house no link abaixo: <br  />
 <a href="https://elgin.app.br/">https://elgin.app.br/</a></li>
 <li>Após acessar, no menu lateral você deve acessar a opção Token e então habilitar o aplicativo conforme imagem abaixo: <div class="image">
 <img src="imagem_token.jpeg" alt=""/>
@@ -129,7 +129,7 @@ Este componente esta disponivel na loja Elgin. Você pode habilitar-lo na loja E
 </li>
 <li>Com o app instalado você poderá começar a realizar as transações.<br  />
 • É importante que você verifique as configurações do app antes de começar os testes. <br  />
-• Para isso abra o aplicativo e role a pagina para cima. Um botão deve aparecer no rodapé, pressione-o e digite a senha de acesso as configurações <b>(987654321)</b> <div class="image">
+• Para isso abra o aplicativo e role a página para cima. Um botão deve aparecer no rodapé, pressione-o e digite a senha de acesso às configurações <b>(987654321)</b> <div class="image">
 <img src="app.jpg" alt=""/>
 </div>
 </li>
@@ -157,8 +157,8 @@ Feito isso você pode começar a implementação. Use como base os links abaixo 
 </p><blockquote class="doxtable">
 <p>import com.elgin.e1.Pagamento.Brigde.Bridge; </p>
 </blockquote>
-<h3>Diagramas de sequencia</h3>
-<p>Abaixo estão listados alguns diagramas de sequencia para exemplificar os casos de uso mais comuns.<br  />
+<h3>Diagramas de sequência</h3>
+<p>Abaixo estão listados alguns diagramas de sequência para exemplificar os casos de uso mais comuns.<br  />
  • Operação de venda débito executada com sucesso:<br  />
 </p><div class="image">
 <img src="success.png" alt=""/>
@@ -173,7 +173,7 @@ Feito isso você pode começar a implementação. Use como base os links abaixo 
 </div>
 <h3>Suporte</h3>
 <p>Para realizar a homologação você poderá solicitar ao nosso suporte o envio de um equipamento perfil de desenvolvimento. <br  />
-Caso tenha dificultades você pode contatar nosso suporte atravez do link abaixo: <a href="https://elginbematech.com.br/chamado/">https://elginbematech.com.br/chamado/</a> </p>
+Caso tenha dificuldades você pode contatar nosso suporte através do link abaixo: <a href="https://elginbematech.com.br/chamado/">https://elginbematech.com.br/chamado/</a> </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

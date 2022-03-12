@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.37</span>
+   &#160;<span id="projectnumber">versão 2.38</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -363,20 +363,29 @@ e os dados no formato json estaram disponiveis no arquivo informado por path.<br
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Consulta status de operação do terminal SmartPOS.</p>
-<dl class="section note"><dt>Observação</dt><dd>Essa função é uma reescrita da função <a class="el" href="group__g51.html#gab67b5206416a7848f095fdefeeed7ce7">ConsultarStatus</a> alterando apenas o modo como os dados são retornados.<br  />
- </dd></dl>
+<p>Obtém o status do terminal SmartPOS.<br  />
+Essa função disponibiliza o status de transação e de tela.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">path</td><td>- Caminho para o arquivo onde serão gravados os dados de resposta </td></tr>
+    <tr><td class="paramname">path</td><td>- Caminho do arquivo que receberá o JSON de retorno da função, conforme descrito em <a class="el" href="group__g51.html#gab67b5206416a7848f095fdefeeed7ce7">ConsultarStatus</a>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>Retorno tipo int. Operação realizada com sucesso deve retornar ZERO(0).<br  />
-e os dados no formato json estaram disponiveis no arquivo informado por path.<br  />
+<dl class="section return"><dt>Retorna</dt><dd>Um inteiro positivo para indicar o status, ou um inteiro negativo em caso de erro.<br  />
+Essa função trabalha com os bits conforme descrição abaixo: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">BIT   </th><th class="markdownTableHeadCenter">STATUS   </th><th class="markdownTableHeadCenter">DESCRIÇÃO    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter" rowspan="2">0   </td><td class="markdownTableBodyCenter">LIGADO   </td><td class="markdownTableBodyCenter">Indica terminal ocupado    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">DESLIGADO   </td><td class="markdownTableBodyCenter">Indica terminal livre    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter" rowspan="2">1   </td><td class="markdownTableBodyCenter">LIGADO   </td><td class="markdownTableBodyCenter">Indica tela bloqueada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">DESLIGADO   </td><td class="markdownTableBodyCenter">Indica tela desbloqueada   </td></tr>
+</table>
 <ul>
-<li>Consulte <b>Códigos de erro</b> para mais informações.<br  />
-</li>
+<li>Consulte <b>Códigos de erro</b> para mais informações. </li>
 </ul>
 </dd></dl>
 
