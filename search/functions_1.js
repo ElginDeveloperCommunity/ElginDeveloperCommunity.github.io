@@ -1,19 +1,4 @@
 var searchData=
 [
-  ['cancelarnota_851',['CancelarNota',['../group__g50.html#ga2287edb020c63e91c35c1783f671cdda',1,'exportafuncoes.h']]],
-  ['cancelprintdatainpagemode_852',['CancelPrintDataInPageMode',['../group___m2.html#ga9d40e94d73fdf8306bcc477e258b4624',1,'exportafuncoes.h']]],
-  ['configuradiretoriosaida_853',['ConfiguraDiretorioSaida',['../group__g9.html#ga307276d86f86a118c9b85b8207acb483',1,'exportafuncoes.h']]],
-  ['configurarmodelobalanca_854',['ConfigurarModeloBalanca',['../group__g5.html#gabed56c6faf716867c79b20230da2c708',1,'exportafuncoes.h']]],
-  ['configurarprotocolocomunicacao_855',['ConfigurarProtocoloComunicacao',['../group__g5.html#ga5dfef4c58be6722f2195bd507b21880d',1,'exportafuncoes.h']]],
-  ['consultarid_856',['ConsultarId',['../group__g50.html#gacece6dcf69dda03738e7b6349a4982a8',1,'exportafuncoes.h']]],
-  ['consultarnota_857',['ConsultarNota',['../group__g50.html#gadd9eff7b1279230c008dd0dbc2dbe298',1,'exportafuncoes.h']]],
-  ['consultarstatus_858',['ConsultarStatus',['../group__g51.html#gab67b5206416a7848f095fdefeeed7ce7',1,'exportafuncoes.h']]],
-  ['consultarstatusarq_859',['ConsultarStatusArq',['../group__g53.html#gacbf998bfeb80a15e21639a10437995fb',1,'exportafuncoes.h']]],
-  ['consultarstatusref_860',['ConsultarStatusRef',['../group__g52.html#ga007f4eae9caed7217d111ed3317b46f2',1,'exportafuncoes.h']]],
-  ['consultarultimatransacao_861',['ConsultarUltimaTransacao',['../group__g51.html#ga3bf08316fb1dda83a431f1a6cdaa72aa',1,'exportafuncoes.h']]],
-  ['consultarultimatransacaoarq_862',['ConsultarUltimaTransacaoArq',['../group__g53.html#gaf78d581f527e6c2cdffcbbdc6b18b861',1,'exportafuncoes.h']]],
-  ['consultarultimatransacaoref_863',['ConsultarUltimaTransacaoRef',['../group__g52.html#gae0e839dddcffbe9ee95024db9e245e36',1,'exportafuncoes.h']]],
-  ['corte_864',['Corte',['../group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade',1,'exportafuncoes.h']]],
-  ['cortetotal_865',['CorteTotal',['../group___m1.html#ga329c887a0b5731559d593aaa0ca0aa2b',1,'exportafuncoes.h']]],
-  ['cutpaper_866',['CutPaper',['../group___m2.html#ga48f74826596723a41e8e50a46d4cf2e7',1,'exportafuncoes.h']]]
+  ['bloquearsat_902',['BloquearSAT',['../group__g2.html#ga7ec222969b79dc416e9dcb3b1f89470f',1,'exportafuncoes.h']]]
 ];

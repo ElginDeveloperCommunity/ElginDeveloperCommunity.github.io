@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['fechaconexaoimpressora_881',['FechaConexaoImpressora',['../group___m1.html#ga520ec6fa932747f430c2a89bc46c8176',1,'exportafuncoes.h']]],
-  ['fechaportaserial_882',['FechaPortaSerial',['../group__g10.html#gac79a4fadebbebf781264238823489ca4',1,'exportafuncoesposte.h']]],
-  ['fechar_883',['Fechar',['../group__g5.html#gab3ba406567f579ce6c96d562035d79b0',1,'Fechar():&#160;exportafuncoes.h'],['../group__ma4.html#gab3ba406567f579ce6c96d562035d79b0',1,'Fechar():&#160;android.doxy']]],
-  ['feed_884',['Feed',['../group___m0.html#ga8ccb5a664b12914f4603c7b59e8899ae',1,'exportafuncoes.h']]],
-  ['feedline_885',['FeedLine',['../group___m2.html#gaa96e7d2679056c288acfee98bf4424fa',1,'exportafuncoes.h']]]
+  ['emitirnota_937',['EmitirNota',['../group__g50.html#ga3cd4681c162c88ac0af848f77ff1b416',1,'exportafuncoes.h']]],
+  ['enviaimagem_938',['EnviaImagem',['../group___m0.html#ga8ef71a5102630088a5b6af34dc92be37',1,'exportafuncoes.h']]],
+  ['enviardadosvenda_939',['EnviarDadosVenda',['../group__g2.html#ga7325dbebf3ecb15d7214008d5ffaff83',1,'exportafuncoes.h']]],
+  ['espacamentoentrelinhas_940',['EspacamentoEntreLinhas',['../group___m1.html#ga6dd4083b75e9221d85c780a9a35b5168',1,'exportafuncoes.h']]],
+  ['excluiimagem_941',['ExcluiImagem',['../group___m0.html#gaa33834742966c74e09d043b81f28b82a',1,'exportafuncoes.h']]],
+  ['extrairlogs_942',['ExtrairLogs',['../group__g2.html#ga2c0747e53ca09b26287ff5e9c5b623fa',1,'exportafuncoes.h']]]
 ];

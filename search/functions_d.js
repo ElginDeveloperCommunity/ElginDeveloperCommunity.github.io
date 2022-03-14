@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tararbalanca_1107',['TararBalanca',['../group__g5.html#ga24433d41a66f4d8974c359913827f4b9',1,'exportafuncoes.h']]],
-  ['testaconexaonfce_1108',['TestaConexaoNFCe',['../group__g50.html#gafd841a2391cdab971e4bbbf24f02495c',1,'exportafuncoes.h']]],
-  ['teste_1109',['Teste',['../group___m0.html#gae59c76694805242b556f36472f093a91',1,'exportafuncoes.h']]]
+  ['receberdados_1138',['ReceberDados',['../group__ma4.html#gaa7014a9b058e448e3e85ae96e9c2c8dc',1,'ReceberDados(Inteiro result):&#160;android.doxy'],['../group__ma4.html#ga7b13a7d64e32aee4cbbb9b3e68c21afa',1,'ReceberDados(Inteiro result, int timeout):&#160;android.doxy']]],
+  ['reset_1139',['Reset',['../group___m0.html#ga1ed4367feeae4f5daa20d54dc309f117',1,'exportafuncoes.h']]]
 ];

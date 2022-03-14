@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Comunicação Elgin: Código-Fonte de D:/Documentos/Projetos/QT_Projetos/integrado/E1_SAT/exportafuncoes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Plataforma de Comunicação Elgin
+   &#160;<span id="projectnumber">versão 2.38</span>
+   </div>
+   <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_e1___s_a_t_2exportafuncoes_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">exportafuncoes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EXPORTAFUNCOES_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define EXPORTAFUNCOES_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;e1_sat_global.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifdef __WIN32</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define STDCALL __stdcall</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#elif __linux__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define STDCALL</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">     Descrição: Classe principal que exporta as funções da biblioteca de comunicação do  SAT.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">     Autor:     Edilson Julio</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">     Data:      12/04/2019</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;__attribute__((constructor))<span class="keywordtype">void</span> initLib();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;__attribute__((destructor)) <span class="keywordtype">void</span> exitLib();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//    FUNÇÕES BASICAS DA DLL DO SAT - Versao 7.0.0</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="group__g2.html#ga01e9f27eedb0479120dc5d6b7797a4e3">  120</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#ga01e9f27eedb0479120dc5d6b7797a4e3">AtivarSAT</a>(<span class="keywordtype">int</span> numSessao,<span class="keywordtype">int</span> subComando, <span class="keyword">const</span> <span class="keywordtype">char</span> *codAtivacao,<span class="keyword">const</span> <span class="keywordtype">char</span>* cnpj,<span class="keywordtype">int</span> cUF);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="group__g2.html#ga7325dbebf3ecb15d7214008d5ffaff83">  161</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#ga7325dbebf3ecb15d7214008d5ffaff83">EnviarDadosVenda</a>(<span class="keywordtype">int</span> numSessao, <span class="keyword">const</span> <span class="keywordtype">char</span>* codAtivacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* dadosVenda);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="group__g2.html#ga21cf1f3afb98ffaae26373f5639d82b4">  206</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#ga21cf1f3afb98ffaae26373f5639d82b4">CancelarUltimaVenda</a>(<span class="keywordtype">int</span> numSessao, <span class="keyword">const</span> <span class="keywordtype">char</span>* codAtivacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* numeroCFe, <span class="keyword">const</span> <span class="keywordtype">char</span>* dadosCancelamento);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="group__g2.html#ga04f288c0129cc5a2f3fe797ec7f08771">  241</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#ga04f288c0129cc5a2f3fe797ec7f08771">ConsultarSAT</a>(<span class="keywordtype">int</span> numSessao);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="group__g2.html#ga3b6d10b9ea39a6eb754c93c6e1515ec5">  281</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#ga3b6d10b9ea39a6eb754c93c6e1515ec5">TesteFimAFim</a>(<span class="keywordtype">int</span> numSessao, <span class="keyword">const</span> <span class="keywordtype">char</span>* codAtivacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* dadosVenda);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="group__g2.html#ga4b4ea1e75c811c3aca5a826ffbe786f3">  318</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#ga4b4ea1e75c811c3aca5a826ffbe786f3">ConsultarStatusOperacional</a>(<span class="keywordtype">int</span> numSessao, <span class="keyword">const</span> <span class="keywordtype">char</span>* codAtivacao);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="group__g2.html#gae36689e0166dec73094db328744b5153">  358</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#gae36689e0166dec73094db328744b5153">ConsultarNumeroSessao</a>(<span class="keywordtype">int</span> numSessao, <span class="keyword">const</span> <span class="keywordtype">char</span>* codAtivacao, <span class="keywordtype">int</span> cNumeroDeSessao);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="group__g2.html#gad4ef75ca65ff26c6608d4f14cacf7193">  398</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#gad4ef75ca65ff26c6608d4f14cacf7193">ConsultarUltimaSessaoFiscal</a>(<span class="keywordtype">int</span> numSessao, <span class="keyword">const</span> <span class="keywordtype">char</span>* codAtivacao);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00439"></a><span class="lineno"><a class="line" href="group__g2.html#ga25032686b3530a9cb5c6b65eed04d830">  439</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#ga25032686b3530a9cb5c6b65eed04d830">ConfigurarInterfaceDeRede</a>(<span class="keywordtype">int</span> numSessao, <span class="keyword">const</span> <span class="keywordtype">char</span>* codAtivacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* dadosConfiguracao);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00484"></a><span class="lineno"><a class="line" href="group__g2.html#ga31de1c92a725e614a0c994bdca34ff2f">  484</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#ga31de1c92a725e614a0c994bdca34ff2f">AssociarAssinatura</a>(<span class="keywordtype">int</span> numSessao, <span class="keyword">const</span> <span class="keywordtype">char</span>* codAtivacao, <span class="keyword">const</span> <span class="keywordtype">char</span>* cnpjSH, <span class="keyword">const</span> <span class="keywordtype">char</span>* assinaturaAC);</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160; </div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00521"></a><span class="lineno"><a class="line" href="group__g2.html#ga26b29f83c0255a0ff69cbf86212a80be">  521</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#ga26b29f83c0255a0ff69cbf86212a80be">AtualizarSoftwareSAT</a>(<span class="keywordtype">int</span> numSessao, <span class="keyword">const</span> <span class="keywordtype">char</span>* codAtivacao);</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160; </div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00558"></a><span class="lineno"><a class="line" href="group__g2.html#ga2c0747e53ca09b26287ff5e9c5b623fa">  558</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#ga2c0747e53ca09b26287ff5e9c5b623fa">ExtrairLogs</a>(<span class="keywordtype">int</span> numSessao, <span class="keyword">const</span> <span class="keywordtype">char</span>* codAtivacao);</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160; </div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00595"></a><span class="lineno"><a class="line" href="group__g2.html#ga7ec222969b79dc416e9dcb3b1f89470f">  595</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#ga7ec222969b79dc416e9dcb3b1f89470f">BloquearSAT</a>(<span class="keywordtype">int</span> numSessao, <span class="keyword">const</span> <span class="keywordtype">char</span>* codAtivacao);</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160; </div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00632"></a><span class="lineno"><a class="line" href="group__g2.html#gab57bf2fc6f11c8d8103ea023fe73963e">  632</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#gab57bf2fc6f11c8d8103ea023fe73963e">DesbloquearSAT</a>(<span class="keywordtype">int</span> numSessao, <span class="keyword">const</span> <span class="keywordtype">char</span>* codAtivacao);</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160; </div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00675"></a><span class="lineno"><a class="line" href="group__g2.html#gab51d6fbd7ae01c4ce25f8fe005d66fd6">  675</a></span>&#160;     <span class="keywordtype">char</span>* <a class="code" href="group__g2.html#gab51d6fbd7ae01c4ce25f8fe005d66fd6">TrocarCodigoDeAtivacao</a>(<span class="keywordtype">int</span> numSessao, <span class="keyword">const</span> <span class="keywordtype">char</span>* codAtivacao, <span class="keywordtype">int</span> opcao, <span class="keyword">const</span> <span class="keywordtype">char</span>* novoCodigo, <span class="keyword">const</span> <span class="keywordtype">char</span>* confNovoCodigo);</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160; </div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00712"></a><span class="lineno"><a class="line" href="group__g2.html#ga5bb8fac990198ebba5a789d5d87ee8cb">  712</a></span>&#160;     <span class="keywordtype">char</span> *<a class="code" href="group___m1.html#ga5bb8fac990198ebba5a789d5d87ee8cb">GetVersaoDLL</a>();</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160; </div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00725"></a><span class="lineno"><a class="line" href="group__g2.html#ga167f444f0cb49803547909fcf1c20747">  725</a></span>&#160;     <span class="keywordtype">void</span> <a class="code" href="group__g2.html#ga167f444f0cb49803547909fcf1c20747">HabilitarConexaoContinua</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160; </div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00739"></a><span class="lineno"><a class="line" href="group__g2.html#ga63057f0618cbd9b657ebe37965ca2ba0">  739</a></span>&#160;     <span class="keywordtype">void</span> <a class="code" href="group__g2.html#ga63057f0618cbd9b657ebe37965ca2ba0">DesabilitarConexaoContinua</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160; </div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00754"></a><span class="lineno"><a class="line" href="group__g2.html#gae161c961a1d02061ee4136012977b13d">  754</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__g2.html#gae161c961a1d02061ee4136012977b13d">FiltraSATNumSerie</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *numero_serie);</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160; </div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00770"></a><span class="lineno"><a class="line" href="group__g2.html#ga978cc8dd5679f47517a41f960ff98df4">  770</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__g2.html#ga978cc8dd5679f47517a41f960ff98df4">FiltraSATUsb</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bus, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port);</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160; </div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160; </div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00783"></a><span class="lineno"><a class="line" href="group__g2.html#gaa7dfa5bfc4e7a659602e85a9a7a0816a">  783</a></span>&#160;     <span class="keywordtype">void</span> <a class="code" href="group__g2.html#gaa7dfa5bfc4e7a659602e85a9a7a0816a">LimpaFiltrosSAT</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160; </div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00810"></a><span class="lineno"><a class="line" href="group__g2.html#ga06e25f3ff0f99a112de3d4c41762c8e4">  810</a></span>&#160;     <span class="keywordtype">char</span> *<a class="code" href="group__g2.html#ga06e25f3ff0f99a112de3d4c41762c8e4">ListAvailableSatAsJson</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160; </div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160; </div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160; </div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00949"></a><span class="lineno"><a class="line" href="group__s0.html#ga771504399db187272626f3171e2dc261">  949</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga771504399db187272626f3171e2dc261">AbreCupomVenda</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file,</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *versaoDadosEnt,</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *CNPJ_SH,</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *signAC,</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;                        <span class="keywordtype">int</span> numeroCaixa,</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *CNPJ_emit,</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *IE,</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *IM,</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *cRegTribISSQN,</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *indRatISSQN,</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *CNPJ_dest,</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *CPF_dest,</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *xNome_dest);</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160; </div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l00988"></a><span class="lineno"><a class="line" href="group__s0.html#gaf7011e24e52c4f9b38259c1ddd95bec7">  988</a></span>&#160;     <span class="keywordtype">char</span> *<a class="code" href="group__s0.html#gaf7011e24e52c4f9b38259c1ddd95bec7">AbreCupomVenda2</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_root,</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span> *versaoDadosEnt,</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span> *CNPJ_SH,</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span> *signAC,</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;                           <span class="keywordtype">int</span> numeroCaixa,</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span> *CNPJ_emit,</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span> *IE,</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span> *IM,</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span> *cRegTribISSQN,</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span> *indRatISSQN,</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span> *CNPJ_dest,</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span> *CPF_dest,</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span> *xNome_dest);</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160; </div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01062"></a><span class="lineno"><a class="line" href="group__s0.html#gad77f4bb537baa165266c0af81116e545"> 1062</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#gad77f4bb537baa165266c0af81116e545">InformaEntrega</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keyword">const</span> <span class="keywordtype">char</span> *xLgr, <span class="keyword">const</span> <span class="keywordtype">char</span> *nro, <span class="keyword">const</span> <span class="keywordtype">char</span> *xCpl, <span class="keyword">const</span> <span class="keywordtype">char</span> *xBairro, <span class="keyword">const</span> <span class="keywordtype">char</span> *xMun, <span class="keyword">const</span> <span class="keywordtype">char</span> *UF);</div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160; </div>
+<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160; </div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01188"></a><span class="lineno"><a class="line" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630"> 1188</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630">InformaProduto</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file,</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *cProd,</div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *cEAN,</div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *xProd,</div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *NCM,</div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *CEST,</div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *CFOP,</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *uCom,</div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *qCom,</div>
+<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *vUnCom,</div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *indRegra,</div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *vDesc,</div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *vOutro);</div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160; </div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01250"></a><span class="lineno"><a class="line" href="group__s0.html#ga58e2fbf53ed959fd6b7f771544f34bcf"> 1250</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga58e2fbf53ed959fd6b7f771544f34bcf">InformaObsFiscoDet</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *xCampoDet, <span class="keyword">const</span> <span class="keywordtype">char</span> *xTextoDet);</div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160; </div>
+<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01293"></a><span class="lineno"><a class="line" href="group__s0.html#ga5159b95565289facf82dfdc11cf2d8fc"> 1293</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga5159b95565289facf82dfdc11cf2d8fc">InformaImposto</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *vItem12741);</div>
+<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160; </div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01365"></a><span class="lineno"><a class="line" href="group__s0.html#ga73616de783fbbf4a8f0d0d003374d0ca"> 1365</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga73616de783fbbf4a8f0d0d003374d0ca">InformaICMS00</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keywordtype">int</span> Orig, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *pICMS );</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160; </div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01430"></a><span class="lineno"><a class="line" href="group__s0.html#gafda2992596e0a3b16849fc3f5359e6a8"> 1430</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#gafda2992596e0a3b16849fc3f5359e6a8">InformaICMS40</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keywordtype">int</span> Orig, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST);</div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160; </div>
+<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01491"></a><span class="lineno"><a class="line" href="group__s0.html#ga36d89c9d23ac3ac04b5a06e9c852c6ab"> 1491</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga36d89c9d23ac3ac04b5a06e9c852c6ab">InformaICMSSN102</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keywordtype">int</span> Orig, <span class="keyword">const</span> <span class="keywordtype">char</span> *CSOSN);</div>
+<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160; </div>
+<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01555"></a><span class="lineno"><a class="line" href="group__s0.html#gac198e7982aa2ac0d9ebcb7756eb941bd"> 1555</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#gac198e7982aa2ac0d9ebcb7756eb941bd">InformaICMSSN900</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keywordtype">int</span> Orig, <span class="keyword">const</span> <span class="keywordtype">char</span> *CSOSN, <span class="keyword">const</span> <span class="keywordtype">char</span> *pICMS);</div>
+<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160; </div>
+<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01609"></a><span class="lineno"><a class="line" href="group__s0.html#ga6043776737079a97599bd8cae6792a64"> 1609</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga6043776737079a97599bd8cae6792a64">InformaPISAliq</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBC, <span class="keyword">const</span> <span class="keywordtype">char</span> *pPIS);</div>
+<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160; </div>
+<div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01661"></a><span class="lineno"><a class="line" href="group__s0.html#gac092e7a6302c422e5a81c58a4ab7434f"> 1661</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#gac092e7a6302c422e5a81c58a4ab7434f">InformaPISQtde</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *qBCProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *vAliqProd);</div>
+<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160; </div>
+<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01700"></a><span class="lineno"><a class="line" href="group__s0.html#gaacfb75ef96b947a298203a08fc777805"> 1700</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#gaacfb75ef96b947a298203a08fc777805">InformaPISNT</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST);</div>
+<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160; </div>
+<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01735"></a><span class="lineno"><a class="line" href="group__s0.html#ga8b7f891b1d3acd314d147c5dc7efe12c"> 1735</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga8b7f891b1d3acd314d147c5dc7efe12c">InformaPISSN</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST);</div>
+<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160; </div>
+<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01803"></a><span class="lineno"><a class="line" href="group__s0.html#gaf8e6667b2370bdf25646dd250c212afd"> 1803</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#gaf8e6667b2370bdf25646dd250c212afd">InformaPISOutr</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keywordtype">int</span> grupo , <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBC_qBCProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *pPIS_vAliqProd);</div>
+<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160; </div>
+<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01860"></a><span class="lineno"><a class="line" href="group__s0.html#ga9c8575bc0f71a8e62799b90f115c5e5f"> 1860</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga9c8575bc0f71a8e62799b90f115c5e5f">InformaPISST</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keywordtype">int</span> grupo, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBC_qBCProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *pPIS_vAliqProd);</div>
+<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160; </div>
+<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01915"></a><span class="lineno"><a class="line" href="group__s0.html#gaa6dfdb053733e23383b9220fa2342b08"> 1915</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#gaa6dfdb053733e23383b9220fa2342b08">InformaCOFINSAliq</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBC, <span class="keyword">const</span> <span class="keywordtype">char</span> *pCOFINS);</div>
+<div class="line"><a name="l01916"></a><span class="lineno"> 1916</span>&#160; </div>
+<div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l01967"></a><span class="lineno"><a class="line" href="group__s0.html#ga62e2a56698bd46a69307efb446e46bff"> 1967</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga62e2a56698bd46a69307efb446e46bff">InformaCOFINSQtde</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *qBCProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *vAliqProd);</div>
+<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160; </div>
+<div class="line"><a name="l02005"></a><span class="lineno"> 2005</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02007"></a><span class="lineno"><a class="line" href="group__s0.html#gaf971ca752a63b559461fac14b7475579"> 2007</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#gaf971ca752a63b559461fac14b7475579">InformaCOFINSNT</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST);</div>
+<div class="line"><a name="l02008"></a><span class="lineno"> 2008</span>&#160; </div>
+<div class="line"><a name="l02040"></a><span class="lineno"> 2040</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02042"></a><span class="lineno"><a class="line" href="group__s0.html#ga4914cee31abd8fced5ff0afc565af0d8"> 2042</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga4914cee31abd8fced5ff0afc565af0d8">InformaCOFINSSN</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST);</div>
+<div class="line"><a name="l02043"></a><span class="lineno"> 2043</span>&#160; </div>
+<div class="line"><a name="l02107"></a><span class="lineno"> 2107</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02109"></a><span class="lineno"><a class="line" href="group__s0.html#ga3e66e89fb43428097b206e0d6c500e51"> 2109</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga3e66e89fb43428097b206e0d6c500e51">InformaCOFINSOutr</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keywordtype">int</span> grupo, <span class="keyword">const</span> <span class="keywordtype">char</span> *CST, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBC_qBCProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *pCOFINS_vAliqProd);</div>
+<div class="line"><a name="l02110"></a><span class="lineno"> 2110</span>&#160; </div>
+<div class="line"><a name="l02163"></a><span class="lineno"> 2163</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02165"></a><span class="lineno"><a class="line" href="group__s0.html#ga7a69a254333f2302b592121248231184"> 2165</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga7a69a254333f2302b592121248231184">InformaCOFINSST</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keywordtype">int</span> grupo, <span class="keyword">const</span> <span class="keywordtype">char</span> *vBC_qBCProd, <span class="keyword">const</span> <span class="keywordtype">char</span> *pCOFINS_vAliqProd);</div>
+<div class="line"><a name="l02166"></a><span class="lineno"> 2166</span>&#160; </div>
+<div class="line"><a name="l02253"></a><span class="lineno"> 2253</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02255"></a><span class="lineno"><a class="line" href="group__s0.html#gadd3b118dc8040487094aff6e33ec28a0"> 2255</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#gadd3b118dc8040487094aff6e33ec28a0">InformaISSQN</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *vDeducISSQN, <span class="keyword">const</span> <span class="keywordtype">char</span> *vAliq, <span class="keyword">const</span> <span class="keywordtype">char</span> *cMunFG, <span class="keyword">const</span> <span class="keywordtype">char</span> *cListServ, <span class="keyword">const</span> <span class="keywordtype">char</span> *cServTribMun, <span class="keyword">const</span> <span class="keywordtype">char</span> *cNatOp, <span class="keyword">const</span> <span class="keywordtype">char</span> *indIncFisc);</div>
+<div class="line"><a name="l02256"></a><span class="lineno"> 2256</span>&#160; </div>
+<div class="line"><a name="l02287"></a><span class="lineno"> 2287</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02289"></a><span class="lineno"><a class="line" href="group__s0.html#ga5f9b0c6f2077e67c35dcbc7a24d25e98"> 2289</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga5f9b0c6f2077e67c35dcbc7a24d25e98">InformaInfAdProd</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keywordtype">int</span> nItem, <span class="keyword">const</span> <span class="keywordtype">char</span> *infAdProd);</div>
+<div class="line"><a name="l02290"></a><span class="lineno"> 2290</span>&#160; </div>
+<div class="line"><a name="l02347"></a><span class="lineno"> 2347</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02349"></a><span class="lineno"><a class="line" href="group__s0.html#ga787940bb6f7bdb75449fbf31d98065b3"> 2349</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga787940bb6f7bdb75449fbf31d98065b3">InformaTotal</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keyword">const</span> <span class="keywordtype">char</span> *vDescSubtot, <span class="keyword">const</span> <span class="keywordtype">char</span> *vAcresSubtot, <span class="keyword">const</span> <span class="keywordtype">char</span> *vCFeLei12741);</div>
+<div class="line"><a name="l02350"></a><span class="lineno"> 2350</span>&#160; </div>
+<div class="line"><a name="l02406"></a><span class="lineno"> 2406</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02408"></a><span class="lineno"><a class="line" href="group__s0.html#ga5f5c3ea4576a46875ca48045052744ef"> 2408</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga5f5c3ea4576a46875ca48045052744ef">InformaPgto</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keyword">const</span> <span class="keywordtype">char</span> *cMP, <span class="keyword">const</span> <span class="keywordtype">char</span> *vMP, <span class="keyword">const</span> <span class="keywordtype">char</span> *cAdmC);</div>
+<div class="line"><a name="l02409"></a><span class="lineno"> 2409</span>&#160; </div>
+<div class="line"><a name="l02434"></a><span class="lineno"> 2434</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02436"></a><span class="lineno"><a class="line" href="group__s0.html#ga8b6d51d8a85db7214bf0e6529f1920f6"> 2436</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga8b6d51d8a85db7214bf0e6529f1920f6">InformaInfAdic</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keyword">const</span> <span class="keywordtype">char</span> *infCpl);</div>
+<div class="line"><a name="l02437"></a><span class="lineno"> 2437</span>&#160; </div>
+<div class="line"><a name="l02468"></a><span class="lineno"> 2468</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02470"></a><span class="lineno"><a class="line" href="group__s0.html#ga955e6f25c690215026ca6d88ebae07cb"> 2470</a></span>&#160;     <span class="keywordtype">char</span> *<a class="code" href="group__s0.html#ga955e6f25c690215026ca6d88ebae07cb">FechaCupomVenda</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keyword">const</span> <span class="keywordtype">char</span> *codigo_ativacao_sat);</div>
+<div class="line"><a name="l02471"></a><span class="lineno"> 2471</span>&#160; </div>
+<div class="line"><a name="l02521"></a><span class="lineno"> 2521</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02523"></a><span class="lineno"><a class="line" href="group__s0.html#ga8c864c85c5040162f422c6ec4659926d"> 2523</a></span>&#160;     <span class="keywordtype">int</span> <a class="code" href="group__s0.html#ga8c864c85c5040162f422c6ec4659926d">AbreCupomCancelamento</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keyword">const</span> <span class="keywordtype">char</span> *chCanc, <span class="keyword">const</span> <span class="keywordtype">char</span> *CNPJ, <span class="keyword">const</span> <span class="keywordtype">char</span> *signAC, <span class="keywordtype">int</span> numeroCaixa);</div>
+<div class="line"><a name="l02524"></a><span class="lineno"> 2524</span>&#160; </div>
+<div class="line"><a name="l02548"></a><span class="lineno"> 2548</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02550"></a><span class="lineno"><a class="line" href="group__s0.html#gaf6acde1debf63a7845d07d71221d0b13"> 2550</a></span>&#160;     <span class="keywordtype">char</span> *<a class="code" href="group__s0.html#gaf6acde1debf63a7845d07d71221d0b13">AbreCupomCancelamento2</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_root, <span class="keyword">const</span> <span class="keywordtype">char</span> *chCanc, <span class="keyword">const</span> <span class="keywordtype">char</span> *CNPJ, <span class="keyword">const</span> <span class="keywordtype">char</span> *signAC, <span class="keywordtype">int</span> numeroCaixa);</div>
+<div class="line"><a name="l02551"></a><span class="lineno"> 2551</span>&#160; </div>
+<div class="line"><a name="l02581"></a><span class="lineno"> 2581</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02583"></a><span class="lineno"><a class="line" href="group__s0.html#ga52e84c9217e6dab93eca68ac86f2f7c3"> 2583</a></span>&#160;     <span class="keywordtype">char</span> *<a class="code" href="group__s0.html#ga52e84c9217e6dab93eca68ac86f2f7c3">FechaCupomCancelamento</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keyword">const</span> <span class="keywordtype">char</span> *codigo_ativacao_sat);</div>
+<div class="line"><a name="l02584"></a><span class="lineno"> 2584</span>&#160; </div>
+<div class="line"><a name="l02620"></a><span class="lineno"> 2620</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02622"></a><span class="lineno"><a class="line" href="group__s0.html#ga7e089c60fe343854eb62c127ac324aa8"> 2622</a></span>&#160;     <span class="keywordtype">char</span> *<a class="code" href="group__s0.html#ga7e089c60fe343854eb62c127ac324aa8">TrataTimeoutComunicacao</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path_file, <span class="keyword">const</span> <span class="keywordtype">char</span> *codigo_ativacao_sat, <span class="keywordtype">int</span>* resultadoOperacao);</div>
+<div class="line"><a name="l02623"></a><span class="lineno"> 2623</span>&#160; </div>
+<div class="line"><a name="l02624"></a><span class="lineno"> 2624</span>&#160; </div>
+<div class="line"><a name="l02625"></a><span class="lineno"> 2625</span>&#160; </div>
+<div class="line"><a name="l02626"></a><span class="lineno"> 2626</span>&#160; </div>
+<div class="line"><a name="l02635"></a><span class="lineno"> 2635</span>&#160;     E1_SATSHARED_EXPORT STDCALL</div>
+<div class="line"><a name="l02637"></a><span class="lineno"> 2637</span>&#160;     <span class="keywordtype">int</span> outFile(<span class="keywordtype">void</span>* data, <span class="keywordtype">void</span>* file);</div>
+<div class="line"><a name="l02638"></a><span class="lineno"> 2638</span>&#160; </div>
+<div class="line"><a name="l02639"></a><span class="lineno"> 2639</span>&#160;}</div>
+<div class="line"><a name="l02640"></a><span class="lineno"> 2640</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// EXPORTAFUNCOES_H</span></div>
+<div class="ttc" id="agroup___m1_html_ga5bb8fac990198ebba5a789d5d87ee8cb"><div class="ttname"><a href="group___m1.html#ga5bb8fac990198ebba5a789d5d87ee8cb">GetVersaoDLL</a></div><div class="ttdeci">char * GetVersaoDLL()</div><div class="ttdoc">Retorna a versão da DLL E1_Impressora.</div></div>
+<div class="ttc" id="agroup__g2_html_ga01e9f27eedb0479120dc5d6b7797a4e3"><div class="ttname"><a href="group__g2.html#ga01e9f27eedb0479120dc5d6b7797a4e3">AtivarSAT</a></div><div class="ttdeci">char * AtivarSAT(int numSessao, int subComando, const char *codAtivacao, const char *cnpj, int cUF)</div></div>
+<div class="ttc" id="agroup__g2_html_ga04f288c0129cc5a2f3fe797ec7f08771"><div class="ttname"><a href="group__g2.html#ga04f288c0129cc5a2f3fe797ec7f08771">ConsultarSAT</a></div><div class="ttdeci">char * ConsultarSAT(int numSessao)</div></div>
+<div class="ttc" id="agroup__g2_html_ga06e25f3ff0f99a112de3d4c41762c8e4"><div class="ttname"><a href="group__g2.html#ga06e25f3ff0f99a112de3d4c41762c8e4">ListAvailableSatAsJson</a></div><div class="ttdeci">char * ListAvailableSatAsJson(void)</div><div class="ttdoc">Lista todos os dispositivos SAT livres encontrados na máquina identificado o seu modelo,...</div></div>
+<div class="ttc" id="agroup__g2_html_ga167f444f0cb49803547909fcf1c20747"><div class="ttname"><a href="group__g2.html#ga167f444f0cb49803547909fcf1c20747">HabilitarConexaoContinua</a></div><div class="ttdeci">void HabilitarConexaoContinua(void)</div><div class="ttdoc">Permite que a biblioteca mantenha a conexão USB aberta até que a aplicação seja finalizada.</div></div>
+<div class="ttc" id="agroup__g2_html_ga21cf1f3afb98ffaae26373f5639d82b4"><div class="ttname"><a href="group__g2.html#ga21cf1f3afb98ffaae26373f5639d82b4">CancelarUltimaVenda</a></div><div class="ttdeci">char * CancelarUltimaVenda(int numSessao, const char *codAtivacao, const char *numeroCFe, const char *dadosCancelamento)</div></div>
+<div class="ttc" id="agroup__g2_html_ga25032686b3530a9cb5c6b65eed04d830"><div class="ttname"><a href="group__g2.html#ga25032686b3530a9cb5c6b65eed04d830">ConfigurarInterfaceDeRede</a></div><div class="ttdeci">char * ConfigurarInterfaceDeRede(int numSessao, const char *codAtivacao, const char *dadosConfiguracao)</div></div>
+<div class="ttc" id="agroup__g2_html_ga26b29f83c0255a0ff69cbf86212a80be"><div class="ttname"><a href="group__g2.html#ga26b29f83c0255a0ff69cbf86212a80be">AtualizarSoftwareSAT</a></div><div class="ttdeci">char * AtualizarSoftwareSAT(int numSessao, const char *codAtivacao)</div></div>
+<div class="ttc" id="agroup__g2_html_ga2c0747e53ca09b26287ff5e9c5b623fa"><div class="ttname"><a href="group__g2.html#ga2c0747e53ca09b26287ff5e9c5b623fa">ExtrairLogs</a></div><div class="ttdeci">char * ExtrairLogs(int numSessao, const char *codAtivacao)</div></div>
+<div class="ttc" id="agroup__g2_html_ga31de1c92a725e614a0c994bdca34ff2f"><div class="ttname"><a href="group__g2.html#ga31de1c92a725e614a0c994bdca34ff2f">AssociarAssinatura</a></div><div class="ttdeci">char * AssociarAssinatura(int numSessao, const char *codAtivacao, const char *cnpjSH, const char *assinaturaAC)</div></div>
+<div class="ttc" id="agroup__g2_html_ga3b6d10b9ea39a6eb754c93c6e1515ec5"><div class="ttname"><a href="group__g2.html#ga3b6d10b9ea39a6eb754c93c6e1515ec5">TesteFimAFim</a></div><div class="ttdeci">char * TesteFimAFim(int numSessao, const char *codAtivacao, const char *dadosVenda)</div></div>
+<div class="ttc" id="agroup__g2_html_ga4b4ea1e75c811c3aca5a826ffbe786f3"><div class="ttname"><a href="group__g2.html#ga4b4ea1e75c811c3aca5a826ffbe786f3">ConsultarStatusOperacional</a></div><div class="ttdeci">char * ConsultarStatusOperacional(int numSessao, const char *codAtivacao)</div></div>
+<div class="ttc" id="agroup__g2_html_ga63057f0618cbd9b657ebe37965ca2ba0"><div class="ttname"><a href="group__g2.html#ga63057f0618cbd9b657ebe37965ca2ba0">DesabilitarConexaoContinua</a></div><div class="ttdeci">void DesabilitarConexaoContinua(void)</div><div class="ttdoc">Fecha a conexao USB apos cada resposta ser recebida, permitindo que outras aplicacoes acessem o mesmo...</div></div>
+<div class="ttc" id="agroup__g2_html_ga7325dbebf3ecb15d7214008d5ffaff83"><div class="ttname"><a href="group__g2.html#ga7325dbebf3ecb15d7214008d5ffaff83">EnviarDadosVenda</a></div><div class="ttdeci">char * EnviarDadosVenda(int numSessao, const char *codAtivacao, const char *dadosVenda)</div></div>
+<div class="ttc" id="agroup__g2_html_ga7ec222969b79dc416e9dcb3b1f89470f"><div class="ttname"><a href="group__g2.html#ga7ec222969b79dc416e9dcb3b1f89470f">BloquearSAT</a></div><div class="ttdeci">char * BloquearSAT(int numSessao, const char *codAtivacao)</div></div>
+<div class="ttc" id="agroup__g2_html_ga978cc8dd5679f47517a41f960ff98df4"><div class="ttname"><a href="group__g2.html#ga978cc8dd5679f47517a41f960ff98df4">FiltraSATUsb</a></div><div class="ttdeci">int FiltraSATUsb(unsigned int bus, unsigned int port)</div><div class="ttdoc">Configura a biblioteca para utilizar um SAT na porta USB especificada.</div></div>
+<div class="ttc" id="agroup__g2_html_gaa7dfa5bfc4e7a659602e85a9a7a0816a"><div class="ttname"><a href="group__g2.html#gaa7dfa5bfc4e7a659602e85a9a7a0816a">LimpaFiltrosSAT</a></div><div class="ttdeci">void LimpaFiltrosSAT(void)</div><div class="ttdoc">Configura a biblioteca para utilizar o primeiro SAT encontrado.</div></div>
+<div class="ttc" id="agroup__g2_html_gab51d6fbd7ae01c4ce25f8fe005d66fd6"><div class="ttname"><a href="group__g2.html#gab51d6fbd7ae01c4ce25f8fe005d66fd6">TrocarCodigoDeAtivacao</a></div><div class="ttdeci">char * TrocarCodigoDeAtivacao(int numSessao, const char *codAtivacao, int opcao, const char *novoCodigo, const char *confNovoCodigo)</div></div>
+<div class="ttc" id="agroup__g2_html_gab57bf2fc6f11c8d8103ea023fe73963e"><div class="ttname"><a href="group__g2.html#gab57bf2fc6f11c8d8103ea023fe73963e">DesbloquearSAT</a></div><div class="ttdeci">char * DesbloquearSAT(int numSessao, const char *codAtivacao)</div></div>
+<div class="ttc" id="agroup__g2_html_gad4ef75ca65ff26c6608d4f14cacf7193"><div class="ttname"><a href="group__g2.html#gad4ef75ca65ff26c6608d4f14cacf7193">ConsultarUltimaSessaoFiscal</a></div><div class="ttdeci">char * ConsultarUltimaSessaoFiscal(int numSessao, const char *codAtivacao)</div></div>
+<div class="ttc" id="agroup__g2_html_gae161c961a1d02061ee4136012977b13d"><div class="ttname"><a href="group__g2.html#gae161c961a1d02061ee4136012977b13d">FiltraSATNumSerie</a></div><div class="ttdeci">int FiltraSATNumSerie(const char *numero_serie)</div><div class="ttdoc">Configura a biblioteca para utilizar um SAT com o numero de serie especificado.</div></div>
+<div class="ttc" id="agroup__g2_html_gae36689e0166dec73094db328744b5153"><div class="ttname"><a href="group__g2.html#gae36689e0166dec73094db328744b5153">ConsultarNumeroSessao</a></div><div class="ttdeci">char * ConsultarNumeroSessao(int numSessao, const char *codAtivacao, int cNumeroDeSessao)</div></div>
+<div class="ttc" id="agroup__s0_html_ga11f5c8556b785241c2a004add7c49630"><div class="ttname"><a href="group__s0.html#ga11f5c8556b785241c2a004add7c49630">InformaProduto</a></div><div class="ttdeci">int InformaProduto(const char *path_file, const char *cProd, const char *cEAN, const char *xProd, const char *NCM, const char *CEST, const char *CFOP, const char *uCom, const char *qCom, const char *vUnCom, const char *indRegra, const char *vDesc, const char *vOutro)</div><div class="ttdoc">InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.</div></div>
+<div class="ttc" id="agroup__s0_html_ga36d89c9d23ac3ac04b5a06e9c852c6ab"><div class="ttname"><a href="group__s0.html#ga36d89c9d23ac3ac04b5a06e9c852c6ab">InformaICMSSN102</a></div><div class="ttdeci">int InformaICMSSN102(const char *path_file, int nItem, int Orig, const char *CSOSN)</div><div class="ttdoc">InformaICMSSN102 Cria TAG ICMS e ICMSSN102 Campo cRegTrib=1 – Simples Nacional e CSOSN=102,...</div></div>
+<div class="ttc" id="agroup__s0_html_ga3e66e89fb43428097b206e0d6c500e51"><div class="ttname"><a href="group__s0.html#ga3e66e89fb43428097b206e0d6c500e51">InformaCOFINSOutr</a></div><div class="ttdeci">int InformaCOFINSOutr(const char *path_file, int nItem, int grupo, const char *CST, const char *vBC_qBCProd, const char *pCOFINS_vAliqProd)</div><div class="ttdoc">InformaCOFINSOutr Cria TAG COFINS e COFINSOutr. Grupo de COFINS Outras Operações. CST = 99 Informar c...</div></div>
+<div class="ttc" id="agroup__s0_html_ga4914cee31abd8fced5ff0afc565af0d8"><div class="ttname"><a href="group__s0.html#ga4914cee31abd8fced5ff0afc565af0d8">InformaCOFINSSN</a></div><div class="ttdeci">int InformaCOFINSSN(const char *path_file, int nItem, const char *CST)</div><div class="ttdoc">InformaCOFINSSN Cria TAG COFINS e COFINSSN. Grupo de COFINS para contribuinte do SIMPLES....</div></div>
+<div class="ttc" id="agroup__s0_html_ga5159b95565289facf82dfdc11cf2d8fc"><div class="ttname"><a href="group__s0.html#ga5159b95565289facf82dfdc11cf2d8fc">InformaImposto</a></div><div class="ttdeci">int InformaImposto(const char *path_file, int nItem, const char *vItem12741)</div><div class="ttdoc">IformaImposto Abre a tag imposto - M01. A automação não é obrigada a chamar essa função antes de info...</div></div>
+<div class="ttc" id="agroup__s0_html_ga52e84c9217e6dab93eca68ac86f2f7c3"><div class="ttname"><a href="group__s0.html#ga52e84c9217e6dab93eca68ac86f2f7c3">FechaCupomCancelamento</a></div><div class="ttdeci">char * FechaCupomCancelamento(const char *path_file, const char *codigo_ativacao_sat)</div><div class="ttdoc">FechaCupomCancelamento Função de fechamento para cancelamento de venda. Usada para enviar o XML criad...</div></div>
+<div class="ttc" id="agroup__s0_html_ga58e2fbf53ed959fd6b7f771544f34bcf"><div class="ttname"><a href="group__s0.html#ga58e2fbf53ed959fd6b7f771544f34bcf">InformaObsFiscoDet</a></div><div class="ttdeci">int InformaObsFiscoDet(const char *path_file, int nItem, const char *xCampoDet, const char *xTextoDet)</div><div class="ttdoc">InformaObsFiscoDet Grupo do campo de uso livre do Fisco com 10 ocorrencias no maximo.</div></div>
+<div class="ttc" id="agroup__s0_html_ga5f5c3ea4576a46875ca48045052744ef"><div class="ttname"><a href="group__s0.html#ga5f5c3ea4576a46875ca48045052744ef">InformaPgto</a></div><div class="ttdeci">int InformaPgto(const char *path_file, const char *cMP, const char *vMP, const char *cAdmC)</div><div class="ttdoc">Informapgto Informa Grupo de informações sobre Pagamento do CFe.</div></div>
+<div class="ttc" id="agroup__s0_html_ga5f9b0c6f2077e67c35dcbc7a24d25e98"><div class="ttname"><a href="group__s0.html#ga5f9b0c6f2077e67c35dcbc7a24d25e98">InformaInfAdProd</a></div><div class="ttdeci">int InformaInfAdProd(const char *path_file, int nItem, const char *infAdProd)</div><div class="ttdoc">InformainfAdProd Informações Adicionais do Produto. .</div></div>
+<div class="ttc" id="agroup__s0_html_ga6043776737079a97599bd8cae6792a64"><div class="ttname"><a href="group__s0.html#ga6043776737079a97599bd8cae6792a64">InformaPISAliq</a></div><div class="ttdeci">int InformaPISAliq(const char *path_file, int nItem, const char *CST, const char *vBC, const char *pPIS)</div><div class="ttdoc">InformaPISAliq Cria TAG PIS e PISAliq.  Grupo de PIS tributado pela alíquota.</div></div>
+<div class="ttc" id="agroup__s0_html_ga62e2a56698bd46a69307efb446e46bff"><div class="ttname"><a href="group__s0.html#ga62e2a56698bd46a69307efb446e46bff">InformaCOFINSQtde</a></div><div class="ttdeci">int InformaCOFINSQtde(const char *path_file, int nItem, const char *CST, const char *qBCProd, const char *vAliqProd)</div><div class="ttdoc">InformaCOFINSQtde Cria TAG COFINS e COFINSQtde. Grupo de COFINS tributado por Qtde....</div></div>
+<div class="ttc" id="agroup__s0_html_ga73616de783fbbf4a8f0d0d003374d0ca"><div class="ttname"><a href="group__s0.html#ga73616de783fbbf4a8f0d0d003374d0ca">InformaICMS00</a></div><div class="ttdeci">int InformaICMS00(const char *path_file, int nItem, int Orig, const char *CST, const char *pICMS)</div><div class="ttdoc">InformaICMS00 Cria Tag ICMS e ICMS00 CampocRegTrib=3 – Regime Normal Grupo de Tributação do ICMS= 00,...</div></div>
+<div class="ttc" id="agroup__s0_html_ga771504399db187272626f3171e2dc261"><div class="ttname"><a href="group__s0.html#ga771504399db187272626f3171e2dc261">AbreCupomVenda</a></div><div class="ttdeci">int AbreCupomVenda(const char *path_file, const char *versaoDadosEnt, const char *CNPJ_SH, const char *signAC, int numeroCaixa, const char *CNPJ_emit, const char *IE, const char *IM, const char *cRegTribISSQN, const char *indRatISSQN, const char *CNPJ_dest, const char *CPF_dest, const char *xNome_dest)</div><div class="ttdoc">AbreCupomVenda Esssa função deve ser a primeira a ser chamada pela aplicação para iniciar a criação d...</div></div>
+<div class="ttc" id="agroup__s0_html_ga787940bb6f7bdb75449fbf31d98065b3"><div class="ttname"><a href="group__s0.html#ga787940bb6f7bdb75449fbf31d98065b3">InformaTotal</a></div><div class="ttdeci">int InformaTotal(const char *path_file, const char *vDescSubtot, const char *vAcresSubtot, const char *vCFeLei12741)</div><div class="ttdoc">InformaTotal Informa Grupo de Valores Totais do CF-e.</div></div>
+<div class="ttc" id="agroup__s0_html_ga7a69a254333f2302b592121248231184"><div class="ttname"><a href="group__s0.html#ga7a69a254333f2302b592121248231184">InformaCOFINSST</a></div><div class="ttdeci">int InformaCOFINSST(const char *path_file, int nItem, int grupo, const char *vBC_qBCProd, const char *pCOFINS_vAliqProd)</div><div class="ttdoc">InformaCOFINSST Grupo de COFINS Substituição Tributária. Informar campos para cálculo do COFINS Subst...</div></div>
+<div class="ttc" id="agroup__s0_html_ga7e089c60fe343854eb62c127ac324aa8"><div class="ttname"><a href="group__s0.html#ga7e089c60fe343854eb62c127ac324aa8">TrataTimeoutComunicacao</a></div><div class="ttdeci">char * TrataTimeoutComunicacao(const char *path_file, const char *codigo_ativacao_sat, int *resultadoOperacao)</div><div class="ttdoc">TrataTimeoutComunicacao Função para Tratamento de Timeout de Comunicação. Usada para recuperar um pro...</div></div>
+<div class="ttc" id="agroup__s0_html_ga8b6d51d8a85db7214bf0e6529f1920f6"><div class="ttname"><a href="group__s0.html#ga8b6d51d8a85db7214bf0e6529f1920f6">InformaInfAdic</a></div><div class="ttdeci">int InformaInfAdic(const char *path_file, const char *infCpl)</div><div class="ttdoc">InformainfAdic Informa Grupo de Informações Adicionais.</div></div>
+<div class="ttc" id="agroup__s0_html_ga8b7f891b1d3acd314d147c5dc7efe12c"><div class="ttname"><a href="group__s0.html#ga8b7f891b1d3acd314d147c5dc7efe12c">InformaPISSN</a></div><div class="ttdeci">int InformaPISSN(const char *path_file, int nItem, const char *CST)</div><div class="ttdoc">InformaPISSN Cria TAG PIS e PISSN. Grupo de PIS para contribuinte do SIMPLES NACIONAL.</div></div>
+<div class="ttc" id="agroup__s0_html_ga8c864c85c5040162f422c6ec4659926d"><div class="ttname"><a href="group__s0.html#ga8c864c85c5040162f422c6ec4659926d">AbreCupomCancelamento</a></div><div class="ttdeci">int AbreCupomCancelamento(const char *path_file, const char *chCanc, const char *CNPJ, const char *signAC, int numeroCaixa)</div><div class="ttdoc">AbreCupomCancelamento Gera XML de Cancelamento para o SAT.</div></div>
+<div class="ttc" id="agroup__s0_html_ga955e6f25c690215026ca6d88ebae07cb"><div class="ttname"><a href="group__s0.html#ga955e6f25c690215026ca6d88ebae07cb">FechaCupomVenda</a></div><div class="ttdeci">char * FechaCupomVenda(const char *path_file, const char *codigo_ativacao_sat)</div><div class="ttdoc">FechaCupomVenda - Função de fechamento da venda. Usada para enviar o XML criado para o equipamento SA...</div></div>
+<div class="ttc" id="agroup__s0_html_ga9c8575bc0f71a8e62799b90f115c5e5f"><div class="ttname"><a href="group__s0.html#ga9c8575bc0f71a8e62799b90f115c5e5f">InformaPISST</a></div><div class="ttdeci">int InformaPISST(const char *path_file, int nItem, int grupo, const char *vBC_qBCProd, const char *pPIS_vAliqProd)</div><div class="ttdoc">InformaPISST Grupo de PIS Substituição Tributária. Informar campos para cálculo do PIS com aliquota e...</div></div>
+<div class="ttc" id="agroup__s0_html_gaa6dfdb053733e23383b9220fa2342b08"><div class="ttname"><a href="group__s0.html#gaa6dfdb053733e23383b9220fa2342b08">InformaCOFINSAliq</a></div><div class="ttdeci">int InformaCOFINSAliq(const char *path_file, int nItem, const char *CST, const char *vBC, const char *pCOFINS)</div><div class="ttdoc">InformaCOFINSAliq Cria TAG COFINS e COFINSAliq. Grupo de COFINS tributado pela alíquota....</div></div>
+<div class="ttc" id="agroup__s0_html_gaacfb75ef96b947a298203a08fc777805"><div class="ttname"><a href="group__s0.html#gaacfb75ef96b947a298203a08fc777805">InformaPISNT</a></div><div class="ttdeci">int InformaPISNT(const char *path_file, int nItem, const char *CST)</div><div class="ttdoc">InformaPISNT Cria TAG PIS e PISNT. Grupo de PIS não tributado.</div></div>
+<div class="ttc" id="agroup__s0_html_gac092e7a6302c422e5a81c58a4ab7434f"><div class="ttname"><a href="group__s0.html#gac092e7a6302c422e5a81c58a4ab7434f">InformaPISQtde</a></div><div class="ttdeci">int InformaPISQtde(const char *path_file, int nItem, const char *CST, const char *qBCProd, const char *vAliqProd)</div><div class="ttdoc">InformaPISQtde Cria TAG PIS e PISQtde. Grupo de PIS tributado por Qtde.</div></div>
+<div class="ttc" id="agroup__s0_html_gac198e7982aa2ac0d9ebcb7756eb941bd"><div class="ttname"><a href="group__s0.html#gac198e7982aa2ac0d9ebcb7756eb941bd">InformaICMSSN900</a></div><div class="ttdeci">int InformaICMSSN900(const char *path_file, int nItem, int Orig, const char *CSOSN, const char *pICMS)</div><div class="ttdoc">InformaICMSSN900 Cria a tag ICMS e ICMSSN900 Campo cRegTrib=1 – Simples Nacional e CSOSN=900.</div></div>
+<div class="ttc" id="agroup__s0_html_gad77f4bb537baa165266c0af81116e545"><div class="ttname"><a href="group__s0.html#gad77f4bb537baa165266c0af81116e545">InformaEntrega</a></div><div class="ttdeci">int InformaEntrega(const char *path_file, const char *xLgr, const char *nro, const char *xCpl, const char *xBairro, const char *xMun, const char *UF)</div><div class="ttdoc">InformaEntrega - Função para identificação do local de entrega. Informar apenas no caso de entrega da...</div></div>
+<div class="ttc" id="agroup__s0_html_gadd3b118dc8040487094aff6e33ec28a0"><div class="ttname"><a href="group__s0.html#gadd3b118dc8040487094aff6e33ec28a0">InformaISSQN</a></div><div class="ttdeci">int InformaISSQN(const char *path_file, int nItem, const char *vDeducISSQN, const char *vAliq, const char *cMunFG, const char *cListServ, const char *cServTribMun, const char *cNatOp, const char *indIncFisc)</div><div class="ttdoc">InformaISSQN.</div></div>
+<div class="ttc" id="agroup__s0_html_gaf6acde1debf63a7845d07d71221d0b13"><div class="ttname"><a href="group__s0.html#gaf6acde1debf63a7845d07d71221d0b13">AbreCupomCancelamento2</a></div><div class="ttdeci">char * AbreCupomCancelamento2(const char *path_root, const char *chCanc, const char *CNPJ, const char *signAC, int numeroCaixa)</div><div class="ttdoc">AbreCupomCancelamento2 Essa função cria o arquivo de cancelamento organizando os arquivos a partir do...</div></div>
+<div class="ttc" id="agroup__s0_html_gaf7011e24e52c4f9b38259c1ddd95bec7"><div class="ttname"><a href="group__s0.html#gaf7011e24e52c4f9b38259c1ddd95bec7">AbreCupomVenda2</a></div><div class="ttdeci">char * AbreCupomVenda2(const char *path_root, const char *versaoDadosEnt, const char *CNPJ_SH, const char *signAC, int numeroCaixa, const char *CNPJ_emit, const char *IE, const char *IM, const char *cRegTribISSQN, const char *indRatISSQN, const char *CNPJ_dest, const char *CPF_dest, const char *xNome_dest)</div><div class="ttdoc">AbreCupomVenda2 Essa função cria o arquivo de vanda organizando os arquivos a partir do diretório inf...</div></div>
+<div class="ttc" id="agroup__s0_html_gaf8e6667b2370bdf25646dd250c212afd"><div class="ttname"><a href="group__s0.html#gaf8e6667b2370bdf25646dd250c212afd">InformaPISOutr</a></div><div class="ttdeci">int InformaPISOutr(const char *path_file, int nItem, int grupo, const char *CST, const char *vBC_qBCProd, const char *pPIS_vAliqProd)</div><div class="ttdoc">InformaPISOutr Cria TAG PIS e PISOutr. Grupo de PIS Outras Operações. CST = 99 Informar campos para c...</div></div>
+<div class="ttc" id="agroup__s0_html_gaf971ca752a63b559461fac14b7475579"><div class="ttname"><a href="group__s0.html#gaf971ca752a63b559461fac14b7475579">InformaCOFINSNT</a></div><div class="ttdeci">int InformaCOFINSNT(const char *path_file, int nItem, const char *CST)</div><div class="ttdoc">InformaCOFINSNT Cria TAG COFINS e COFINSNT. Grupo de COFINS não tributado. CST = 04,...</div></div>
+<div class="ttc" id="agroup__s0_html_gafda2992596e0a3b16849fc3f5359e6a8"><div class="ttname"><a href="group__s0.html#gafda2992596e0a3b16849fc3f5359e6a8">InformaICMS40</a></div><div class="ttdeci">int InformaICMS40(const char *path_file, int nItem, int Orig, const char *CST)</div><div class="ttdoc">InformaICMS40 Cria Tag ICMS e ICMS40 Campo cRegTrib=3 – Regime Normal Grupo de Tributação do ICMS = 4...</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_848c142eef1aac5a8d70b71e7c021d91.html">E1_SAT</a></li><li class="navelem"><b>exportafuncoes.h</b></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
