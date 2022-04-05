@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.38</span>
+   &#160;<span id="projectnumber">versão 2.39</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -108,6 +108,12 @@ Funções</h2></td></tr>
 <tr class="separator:gacbf998bfeb80a15e21639a10437995fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf78d581f527e6c2cdffcbbdc6b18b861"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g53.html#gaf78d581f527e6c2cdffcbbdc6b18b861">ConsultarUltimaTransacaoArq</a> (const char *pdv, const char *path)</td></tr>
 <tr class="separator:gaf78d581f527e6c2cdffcbbdc6b18b861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba1e1311b834c293d9d809001bdc77d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g53.html#gaba1e1311b834c293d9d809001bdc77d5">ImprimirCupomSatArq</a> (const char *xml, const char *path)</td></tr>
+<tr class="separator:gaba1e1311b834c293d9d809001bdc77d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac45481bc41f9c2b50815f964fe0f99f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g53.html#gac45481bc41f9c2b50815f964fe0f99f4">ImprimirCupomSatCancelamentoArq</a> (const char *xml, const char *assQRCode, const char *path)</td></tr>
+<tr class="separator:gac45481bc41f9c2b50815f964fe0f99f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3187a1bda29ed27c93f3ffca64f0f271"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g53.html#ga3187a1bda29ed27c93f3ffca64f0f271">ImprimirCupomNfceArq</a> (const char *xml, int indexcsc, const char *csc, const char *path)</td></tr>
+<tr class="separator:ga3187a1bda29ed27c93f3ffca64f0f271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8521dfa96ca01c7db32abd722a5f7ba0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g53.html#ga8521dfa96ca01c7db32abd722a5f7ba0">SetSenhaServerArq</a> (const char *senha, bool habilitada, const char *path)</td></tr>
 <tr class="memdesc:ga8521dfa96ca01c7db32abd722a5f7ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">configura a senha do terminal remotamente.  <a href="group__g53.html#ga8521dfa96ca01c7db32abd722a5f7ba0">Mais...</a><br /></td></tr>
 <tr class="separator:ga8521dfa96ca01c7db32abd722a5f7ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -429,10 +435,157 @@ Deve ser utilizada casos de timeout.</p>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>Retorno tipo int. Operação realizada com sucesso deve retornar ZERO(0).<br  />
 e os dados no formato json estaram disponiveis no arquivo informado por path.<br  />
-<ul>
-<li>Consulte <b>Códigos de erro</b> para mais informações.<br  />
-</li>
-</ul>
+Consulte <b>Códigos de erro</b> para mais informações.<br  />
+</dd></dl>
+
+</div>
+</div>
+<a id="gaba1e1311b834c293d9d809001bdc77d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba1e1311b834c293d9d809001bdc77d5">&#9670;&nbsp;</a></span>ImprimirCupomSatArq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImprimirCupomSatArq </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>xml</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Imprimir Cupom Sat de acordo com a especificação da Sefaz para bobina de 55mm. </p><dl class="section note"><dt>Observação</dt><dd>Essa Função pode ser usada para impressão de Danfe do MFe (Ceará)</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xml</td><td>- Dados do XML retornado da operação de venda do SAT. </td></tr>
+    <tr><td class="paramname">path</td><td>- Caminho para o arquivo onde serão gravados os dados de resposta. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorno tipo int. Operação realizada com sucesso deve retornar ZERO(0).<br  />
+e os dados no formato json estarão disponíveis no arquivo informado por path.<br  />
+Consulte <b>Códigos de erro</b> para mais informações.<br  />
+</dd></dl>
+
+</div>
+</div>
+<a id="gac45481bc41f9c2b50815f964fe0f99f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac45481bc41f9c2b50815f964fe0f99f4">&#9670;&nbsp;</a></span>ImprimirCupomSatCancelamentoArq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImprimirCupomSatCancelamentoArq </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>xml</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>assQRCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Imprimir Cupom de cancelamento SAT de acordo com a especificação da Sefaz para bobina de 55mm. </p><dl class="section note"><dt>Observação</dt><dd>Essa Função pode ser usada para impressão de Danfe do MFe (Ceará)</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xml</td><td>- Dados do XML retornado da operação de cancelamento do SAT. </td></tr>
+    <tr><td class="paramname">assQRCode</td><td>- Assinatura do QRcode retornado na venda cancelada. </td></tr>
+    <tr><td class="paramname">path</td><td>- Caminho para o arquivo onde serão gravados os dados de resposta. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorno tipo int. Operação realizada com sucesso deve retornar ZERO(0).<br  />
+e os dados no formato json estarão disponíveis no arquivo informado por path.<br  />
+Consulte <b>Códigos de erro</b> para mais informações.<br  />
+</dd></dl>
+
+</div>
+</div>
+<a id="ga3187a1bda29ed27c93f3ffca64f0f271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3187a1bda29ed27c93f3ffca64f0f271">&#9670;&nbsp;</a></span>ImprimirCupomNfceArq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImprimirCupomNfceArq </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>xml</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indexcsc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>csc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Imprimir Cupom NFCe de acordo com a especificação da Sefaz para bobina de 55mm.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xml</td><td>- Dados do XML retornado da operação de venda nfce.<br  />
+</td></tr>
+    <tr><td class="paramname">indexcsc</td><td>- Identificador do CSC (Código de Segurança do Contribuinte no Banco de Dados da SEFAZ). <blockquote class="doxtable">
+<p>Deve ser informado sem os “0” (zeros) não significativos. A identificação do CSC corresponde à ordem do<br  />
+CSC no banco de dados da SEFAZ, não confundir com o próprio CSC. </p>
+</blockquote>
+</td></tr>
+    <tr><td class="paramname">csc</td><td>- Código de Segurança do Contribuinte. <blockquote class="doxtable">
+<p>Corresponde a um código de segurança alfanumérico (16 a 36 bytes) de conhecimento apenas da Secretaria da Fazenda<br  />
+da Fazenda da Unidade Federada do emitente e do próprio contribuinte. Anteriormente, o código de segurança<br  />
+CSC era chamado de “Token”. </p>
+</blockquote>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorno tipo int. Operação realizada com sucesso deve retornar ZERO(0).<br  />
+e os dados no formato json estarão disponíveis no arquivo informado por path.<br  />
+Consulte <b>Códigos de erro</b> para mais informações.<br  />
 </dd></dl>
 
 </div>

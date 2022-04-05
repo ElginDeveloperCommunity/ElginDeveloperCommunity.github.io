@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.38</span>
+   &#160;<span id="projectnumber">versão 2.39</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -112,7 +112,9 @@ Módulos</h2></td></tr>
  </p><h3>Componentes</h3>
 <p><b>E1_Bridge</b> <b></b>(DLL/SO/AAR) <b>-</b> Extensão do aplicativo (DLL/SO/AAR) onde estão exportadas todas as funções para Iniciar uma venda ou operação administrativa no terminal de pagamento SmartPOS.<br  />
 <b>E1_DigitalHub</b> (antigo E1_bridge) <b></b>(APK) <b>-</b> Aplicativo android a ser instalado no SmartPOS para configurações de porta e ativação do serviço para comunicação com Windows.<br  />
-Este componente está disponível na loja Elgin. Você pode habilitá-lo na loja Elgin, na seção Token.</p>
+Este componente está disponível na loja Elgin. Você pode habilitá-lo na loja Elgin, na seção Token.<br  />
+<b>e1_bridge_configs</b> <b></b>(JSON) <b>-</b> Arquivo de configuração da DLL gerado no workdir caso usuário nao especifique a variável de ambiente <b>e1_bridge_configfile</b>.<br  />
+</p>
 <h3>Por onde começar</h3>
 <ol type="1">
 <li>O primeiro passo é habilitar o app para que ele possa ser carregado no seu terminal. Para isso, acesse seu perfil de software house no link abaixo: <br  />
@@ -157,7 +159,18 @@ Feito isso você pode começar a implementação. Use como base os links abaixo 
 </p><blockquote class="doxtable">
 <p>import com.elgin.e1.Pagamento.Brigde.Bridge; </p>
 </blockquote>
-<h3>Diagramas de sequência</h3>
+<h3>Arquivo de Configuração</h3>
+<p><b>e1_bridge_configfile</b> - Nome da variável de ambiente para setar o path do arquivo de configuracao. <br  />
+Caso o usuário não especifique a variável de ambiente, o arquivo <b>e1_bridge_configs.json</b> será criado no workdir.<br  />
+Abaixo o exemplo de um arquivo de configuração gerado na pasta workdir. </p><div class="fragment"><div class="line">{</div>
+<div class="line">   <span class="stringliteral">&quot;ipTerminal&quot;</span>: <span class="stringliteral">&quot;192.168.0.1&quot;</span>,</div>
+<div class="line">   <span class="stringliteral">&quot;portaStatus&quot;</span>: 3001,</div>
+<div class="line">   <span class="stringliteral">&quot;portaTransacao&quot;</span>: 3000,</div>
+<div class="line">   <span class="stringliteral">&quot;senha&quot;</span>: <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line">   <span class="stringliteral">&quot;senhaHabilitada&quot;</span>: <span class="keyword">false</span>,</div>
+<div class="line">   <span class="stringliteral">&quot;timeoutResposta&quot;</span>: -1</div>
+<div class="line">}</div>
+</div><!-- fragment --><h3>Diagramas de sequência</h3>
 <p>Abaixo estão listados alguns diagramas de sequência para exemplificar os casos de uso mais comuns.<br  />
  • Operação de venda débito executada com sucesso:<br  />
 </p><div class="image">
