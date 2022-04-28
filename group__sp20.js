@@ -23,6 +23,8 @@ var group__sp20 =
     [ "iniciaOperacaoAdministrativa", "group__sp20.html#gabc3fa5b5b924b0a60047b3df8a61b981", null ],
     [ "iniciaOperacaoAdministrativa", "group__sp20.html#ga38c84a8d279ce45a08b4b54081fecbce", null ],
     [ "setPersonalizacao", "group__sp20.html#gafcc23530345f50fb41a9ec4b1ae69031", null ],
+    [ "configuraCupomPersonalizado", "group__sp20.html#ga3a8c1a2db075881ed3ec1685928ef71c", null ],
+    [ "configuraCupomPersonalizado", "group__sp20.html#ga1de158cee03c727b8b3391b1e831e95f", null ],
     [ "iniciarPagamentoDebito", "group__sp20.html#ga68a451efbb3655387c28e9262857f3af", null ],
     [ "inciarPagamentoCredito", "group__sp20.html#ga21db3abdc00c50b4cf1376f37c351c8a", null ],
     [ "iniciarPagamentoCredito", "group__sp20.html#gac68a9e92957d794de2ad8648591bc281", null ],

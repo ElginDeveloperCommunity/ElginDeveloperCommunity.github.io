@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.39</span>
+   &#160;<span id="projectnumber">versão 2.40</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -138,6 +138,10 @@ Funções</h2></td></tr>
 <tr class="separator:ga38c84a8d279ce45a08b4b54081fecbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafcc23530345f50fb41a9ec4b1ae69031"><td class="memItemLeft" align="right" valign="top">public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#gafcc23530345f50fb41a9ec4b1ae69031">setPersonalizacao</a> (Personalizacao mPersonalizacao)</td></tr>
 <tr class="separator:gafcc23530345f50fb41a9ec4b1ae69031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a8c1a2db075881ed3ec1685928ef71c"><td class="memItemLeft" align="right" valign="top">public int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga3a8c1a2db075881ed3ec1685928ef71c">configuraCupomPersonalizado</a> (String caminhoImagem)</td></tr>
+<tr class="separator:ga3a8c1a2db075881ed3ec1685928ef71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1de158cee03c727b8b3391b1e831e95f"><td class="memItemLeft" align="right" valign="top">public int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga1de158cee03c727b8b3391b1e831e95f">configuraCupomPersonalizado</a> (@NonNull Bitmap Imagembitmap)</td></tr>
+<tr class="separator:ga1de158cee03c727b8b3391b1e831e95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga68a451efbb3655387c28e9262857f3af"><td class="memItemLeft" align="right" valign="top">Deprecated public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga68a451efbb3655387c28e9262857f3af">iniciarPagamentoDebito</a> (String valorTransacao, Context context, Handler handler)</td></tr>
 <tr class="separator:ga68a451efbb3655387c28e9262857f3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga21db3abdc00c50b4cf1376f37c351c8a"><td class="memItemLeft" align="right" valign="top">Deprecated public void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp20.html#ga21db3abdc00c50b4cf1376f37c351c8a">inciarPagamentoCredito</a> (String valorTransacao, int tipoFinanciamento, Context context, Handler handler)</td></tr>
@@ -683,6 +687,83 @@ Por padrão o ElginPay tem a identidade visual da Elgin, azul com branco, mas is
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ga3a8c1a2db075881ed3ec1685928ef71c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a8c1a2db075881ed3ec1685928ef71c">&#9670;&nbsp;</a></span>configuraCupomPersonalizado() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public int configuraCupomPersonalizado </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>caminhoImagem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função utilizada para personalizar a imagem do cupom, sendo defindo através do caminho onde se encontra a imagem. </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">caminhoImagem</td><td>- Parâmetro do tipo String utilizado para informar o caminho absoluto da imagem.<br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>- o Retorno será do tipo inteiro, onde : <blockquote class="doxtable">
+<p>0 = SUCESSO<br  />
+-1 = O ARQUIVO NÃO EXISTE OU NÃO FOI ENCONTRADO<br  />
+</p>
+</blockquote>
+Exemplo de personalização:<br  />
+<div class="fragment"><div class="line"><span class="comment">// ...</span></div>
+<div class="line">ElginPay pay = <span class="keyword">new</span> ElginPay();</div>
+<div class="line">pay.configuraCupomPersonalizado( Environment.getExternalStorageDirectory().getPath() + <span class="stringliteral">&quot;/Download/novoLogoElgin.png&quot;</span>);</div>
+<div class="line"><span class="comment">// ...</span></div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a id="ga1de158cee03c727b8b3391b1e831e95f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1de158cee03c727b8b3391b1e831e95f">&#9670;&nbsp;</a></span>configuraCupomPersonalizado() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">public int configuraCupomPersonalizado </td>
+          <td>(</td>
+          <td class="paramtype">@NonNull Bitmap&#160;</td>
+          <td class="paramname"><em>Imagembitmap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Função utilizada para personalizar a imagem do cupom, sendo defindo através de um objeto bitmap onde se encontra a imagem. </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Imagembitmap</td><td>- Parâmetro do tipo Bitmap, utilizado para informar a imagem de personalização.<br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>- o Retorno será do tipo inteiro, onde : <blockquote class="doxtable">
+<p>0 = SUCESSO<br  />
+-1 = O OBJETO BITMAP NÃO EXISTENTE<br  />
+</p>
+</blockquote>
+Exemplo de personalização usando um bitmap presente na pasta asserts:<br  />
+<div class="fragment"><div class="line"><span class="comment">// ...</span></div>
+<div class="line">AssetManager am = this.getAssets();</div>
+<div class="line">InputStream inputStream = <span class="keyword">null</span>;</div>
+<div class="line"><span class="keywordflow">try</span> {</div>
+<div class="line">   inputStream = am.open(<span class="stringliteral">&quot;novoLogoElgin.png&quot;</span>);</div>
+<div class="line">   Bitmap bitmap = BitmapFactory.decodeStream(inputStream);</div>
+<div class="line">   ElginPay pay = <span class="keyword">new</span> ElginPay();</div>
+<div class="line">   pay.configuraCupomPersonalizado(bitmap);</div>
+<div class="line"><span class="comment">// ...</span></div>
+</div><!-- fragment --> </dd></dl>
 
 </div>
 </div>
