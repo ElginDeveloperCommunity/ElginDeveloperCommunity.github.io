@@ -113,9 +113,9 @@ $(document).ready(function(){initNavTree('group__g120.html',''); initResizable()
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">existeComprovanteGrafico   </td><td class="markdownTableBodyNone">Informa se os comprovantes estão disponíveis no formato gráfico   </td><td class="markdownTableBodyNone">True ou false   </td><td class="markdownTableBodyNone">Boolean    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">comprovanteGraficoLojista   </td><td class="markdownTableBodyNone">O comprovante será disponibilizado no formato PNG,codificado em base-64   </td><td class="markdownTableBodyNone">Comprovante gráfico - via do lojista   </td><td class="markdownTableBodyNone">ArrayList&lt;String&gt;    </td></tr>
+<td class="markdownTableBodyNone">comprovanteGraficoLojista   </td><td class="markdownTableBodyNone">O comprovante será disponibilizado no formato PNG,codificado em base-64   </td><td class="markdownTableBodyNone">Comprovante gráfico - via do lojista   </td><td class="markdownTableBodyNone">String    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">comprovanteGraficoPortador   </td><td class="markdownTableBodyNone">O comprovante será disponibilizado no formato PNG,codificado em base-64   </td><td class="markdownTableBodyNone">Comprovante gráfico - via do portador   </td><td class="markdownTableBodyNone">ArrayList&lt;String&gt;    </td></tr>
+<td class="markdownTableBodyNone">comprovanteGraficoPortador   </td><td class="markdownTableBodyNone">O comprovante será disponibilizado no formato PNG,codificado em base-64   </td><td class="markdownTableBodyNone">Comprovante gráfico - via do portador   </td><td class="markdownTableBodyNone">String    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">modalidadeTransacao   </td><td class="markdownTableBodyNone">Modalidade da transação (online ou offline)   </td><td class="markdownTableBodyNone">Online ou Offline   </td><td class="markdownTableBodyNone">String    </td></tr>
 <tr class="markdownTableRowEven">
@@ -159,9 +159,9 @@ $(document).ready(function(){initNavTree('group__g120.html',''); initResizable()
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">dataPredatado   </td><td class="markdownTableBodyNone">Data do pré-datado.   </td><td class="markdownTableBodyNone">Data do pré-datado   </td><td class="markdownTableBodyNone">String    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">comprovanteDiferenciadoLoja   </td><td class="markdownTableBodyNone">Compovante diferenciado para o lojista   </td><td class="markdownTableBodyNone">Via diferenciada para a loja   </td><td class="markdownTableBodyNone">String    </td></tr>
+<td class="markdownTableBodyNone">comprovanteDiferenciadoLoja   </td><td class="markdownTableBodyNone">Compovante diferenciado para o lojista   </td><td class="markdownTableBodyNone">Via diferenciada para a loja   </td><td class="markdownTableBodyNone">ArrayList&lt;String&gt;    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">comprovanteDiferenciadoPortador   </td><td class="markdownTableBodyNone">Compovante diferenciado para o portador do cartão   </td><td class="markdownTableBodyNone">Comprovante diferenciada para o portador   </td><td class="markdownTableBodyNone">String    </td></tr>
+<td class="markdownTableBodyNone">comprovanteDiferenciadoPortador   </td><td class="markdownTableBodyNone">Compovante diferenciado para o portador do cartão   </td><td class="markdownTableBodyNone">Comprovante diferenciada para o portador   </td><td class="markdownTableBodyNone">ArrayList&lt;String&gt;    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">mensagemResultado   </td><td class="markdownTableBodyNone">Mensagem a ser exibida ao ao final da operação   </td><td class="markdownTableBodyNone">Mensagem a ser exibida   </td><td class="markdownTableBodyNone">String    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('group__g120.html',''); initResizable()
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">nsuTransacao   </td><td class="markdownTableBodyNone">NSU do host.   </td><td class="markdownTableBodyNone">NSU do host.   </td><td class="markdownTableBodyNone">String    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nsuTerminal   </td><td class="markdownTableBodyNone">Informa o NSU local gerado na transação   </td><td class="markdownTableBodyNone">NSU local gerado na transação   </td><td class="markdownTableBodyNone">String    </td></tr>
+<td class="markdownTableBodyNone">nsuTerminal   </td><td class="markdownTableBodyNone">Informa o NSU local gerado na transação. Usado para realizar o cancelamento   </td><td class="markdownTableBodyNone">NSU local gerado na transação   </td><td class="markdownTableBodyNone">String    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">provedor   </td><td class="markdownTableBodyNone">Obtém o nome do Provedor.   </td><td class="markdownTableBodyNone">Provedor utilizado para processar a transação.   </td><td class="markdownTableBodyNone">String    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('group__g120.html',''); initResizable()
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">respostaRede   </td><td class="markdownTableBodyNone">Código de resposta da transação, proveniente da rede adquirente.   </td><td class="markdownTableBodyNone">Código de resposta da rede   </td><td class="markdownTableBodyNone">String    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">nsuTransacaoOriginal   </td><td class="markdownTableBodyNone">NSU do Host original, para transações de cancelamento.   </td><td class="markdownTableBodyNone">NSU do host original   </td><td class="markdownTableBodyNone">String    </td></tr>
+<td class="markdownTableBodyNone">nsuTransacaoOriginal   </td><td class="markdownTableBodyNone">NSU do Host original.   </td><td class="markdownTableBodyNone">NSU do host original   </td><td class="markdownTableBodyNone">String    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nsuTerminalOriginal   </td><td class="markdownTableBodyNone">NSU local gerado na transação original que foi cancelada.   </td><td class="markdownTableBodyNone">NSU local gerado na transação cancelada   </td><td class="markdownTableBodyNone">String    </td></tr>
 <tr class="markdownTableRowEven">
