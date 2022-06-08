@@ -572,7 +572,9 @@ var group__g1 =
       [ "BR_ASS_QRCODE_NULL", "group__g1.html#ggaeebb39d2f6b77c2deb742c51fc71a44da2279af5644a12a8c0b0cbba215823cd7", null ],
       [ "BR_ASS_QRCODE_INVALIDO", "group__g1.html#ggaeebb39d2f6b77c2deb742c51fc71a44da67bc1d3674a119574f7aca3997bfe099", null ],
       [ "BR_CSC_NULL", "group__g1.html#ggaeebb39d2f6b77c2deb742c51fc71a44da2b6509f9006d5132de4c454e8e409546", null ],
-      [ "BR_CSC_INVALIDO", "group__g1.html#ggaeebb39d2f6b77c2deb742c51fc71a44daa2fd69fe6767de94575c5c75030215bc", null ]
+      [ "BR_CSC_INVALIDO", "group__g1.html#ggaeebb39d2f6b77c2deb742c51fc71a44daa2fd69fe6767de94575c5c75030215bc", null ],
+      [ "BR_PARAMETRO_NULL", "group__g1.html#ggaeebb39d2f6b77c2deb742c51fc71a44dad4128f6efdbb7febe1aada09d2171750", null ],
+      [ "BR_PARAMETRO_INVALIDO", "group__g1.html#ggaeebb39d2f6b77c2deb742c51fc71a44dabeafd560a4345565b46d8179991dab91", null ]
     ] ],
     [ "UTIL_Erro_Interno", "group__g1.html#gafd724a1fcc15d08d027120107767e201", [
       [ "UTIL_DATA_INVALIDA", "group__g1.html#ggafd724a1fcc15d08d027120107767e201a911e4e571fd43563ef664841302f2834", null ],
