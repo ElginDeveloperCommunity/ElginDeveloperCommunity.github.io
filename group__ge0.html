@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Plataforma de Comunicação Elgin: Configuração de Sistema</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -23,11 +23,10 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.41</span>
+  <td id="projectalign">
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 2.42</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -36,21 +35,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Gerado por Doxygen 1.9.1 -->
+<!-- Gerado por Doxygen 1.9.4 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','Busca');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -64,7 +64,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('group__ge0.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -86,15 +86,14 @@ $(document).ready(function(){initNavTree('group__ge0.html',''); initResizable();
 <div class="header">
   <div class="summary">
 <a href="#func-members">Funções</a>  </div>
-  <div class="headertitle">
-<div class="title">Configuração de Sistema<div class="ingroups"><a class="el" href="group__g0.html">Impressoras</a> &raquo; <a class="el" href="group___m0.html">Etiqueta</a></div></div>  </div>
+  <div class="headertitle"><div class="title">Configuração de Sistema<div class="ingroups"><a class="el" href="group__g0.html">Impressoras</a> &raquo; <a class="el" href="group___m0.html">Etiqueta</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Comandos de Configuração de Sistema (System Setting Commands) fornecem funções para configurar as propriedades relacionadas à impressora.  
 <a href="#details">Mais...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Funções</h2></td></tr>
 <tr class="memitem:ga5023cf5d081a139cb9dab16ceb4c6b9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ge0.html#ga5023cf5d081a139cb9dab16ceb4c6b9d">SetAlturaGap</a> (int tipo, const char *modelo, const char *conexao, int param, int altura)</td></tr>
 <tr class="memdesc:ga5023cf5d081a139cb9dab16ceb4c6b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a altura do gap.  <a href="group__ge0.html#ga5023cf5d081a139cb9dab16ceb4c6b9d">Mais...</a><br /></td></tr>
@@ -110,20 +109,20 @@ Funções</h2></td></tr>
 <tr class="separator:ga9eae5a557c9ef4f285027b2fefa5b13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
-<p>Comandos de Configuração de Sistema (System Setting Commands) fornecem funções para configurar as propriedades relacionadas à impressora. </p>
-<p>Estes parâmetros são gravados na EPROM, logo, serão preservados mesmo com um desligamento ou uma reinicialização da impressora. Se um novo comando, com parâmetros diferentes, for usado, estes novos parâmetros substituirão os antigos.</p>
-<p>Convenções usadas nas chamadas das funções da biblioteca:<br  />
+<p >Comandos de Configuração de Sistema (System Setting Commands) fornecem funções para configurar as propriedades relacionadas à impressora. </p>
+<p >Estes parâmetros são gravados na EPROM, logo, serão preservados mesmo com um desligamento ou uma reinicialização da impressora. Se um novo comando, com parâmetros diferentes, for usado, estes novos parâmetros substituirão os antigos.</p>
+<p >Convenções usadas nas chamadas das funções da biblioteca:<br  />
 <b>Windows</b><br  />
 </p><blockquote class="doxtable">
-<p>__stdcall </p>
+<p >&zwj;__stdcall </p>
 </blockquote>
 <p><b>Linux</b><br  />
 </p><blockquote class="doxtable">
-<p>__cdecl<br  />
+<p >&zwj;__cdecl<br  />
 </p>
 </blockquote>
 <h2 class="groupheader">Funções</h2>
-<a id="ga5023cf5d081a139cb9dab16ceb4c6b9d"></a>
+<a id="ga5023cf5d081a139cb9dab16ceb4c6b9d" name="ga5023cf5d081a139cb9dab16ceb4c6b9d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5023cf5d081a139cb9dab16ceb4c6b9d">&#9670;&nbsp;</a></span>SetAlturaGap()</h2>
 
 <div class="memitem">
@@ -187,7 +186,7 @@ Conforme tabela a seguir: <table class="markdownTable">
     <tr><td class="paramname">modelo</td><td>- Parâmetro do tipo caractere que especifica o modelo para conexão.<br  />
 <br  />
 Conforme lista: <blockquote class="doxtable">
-<p><b>Valores</b><br  />
+<p >&zwj;<b>Valores</b><br  />
 L42<br  />
 L42PRO<br  />
 TT042-50<br  />
@@ -221,7 +220,7 @@ Utilizado para especificar <b>baudrate</b> ou <b>porta de comunicação TCP/IP</
     <tr><td class="paramname">altura</td><td>- Parâmetro do tipo numérico que define a altura do gap, em <b>milímetros</b>.<br  />
 <br  />
 Valores válidos: <blockquote class="doxtable">
-<p>Números entre 0 e 99 (0, 1, 2, ..., 99).<br  />
+<p >&zwj;Números entre 0 e 99 (0, 1, 2, ..., 99).<br  />
 </p>
 </blockquote>
 <br  />
@@ -249,7 +248,7 @@ A função bem-sucedida deve retornar 0.<br  />
 
 </div>
 </div>
-<a id="gaf22fd8d76a9515294fda161676265c91"></a>
+<a id="gaf22fd8d76a9515294fda161676265c91" name="gaf22fd8d76a9515294fda161676265c91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf22fd8d76a9515294fda161676265c91">&#9670;&nbsp;</a></span>SetTipoTransferencia()</h2>
 
 <div class="memitem">
@@ -313,7 +312,7 @@ Conforme tabela a seguir: <table class="markdownTable">
     <tr><td class="paramname">modelo</td><td>- Parâmetro do tipo caractere que especifica o modelo para conexão.<br  />
 <br  />
 Conforme lista: <blockquote class="doxtable">
-<p><b>Valores</b><br  />
+<p >&zwj;<b>Valores</b><br  />
 L42<br  />
 L42PRO<br  />
 TT042-50<br  />
@@ -370,7 +369,7 @@ A função bem-sucedida deve retornar 0.<br  />
 
 </div>
 </div>
-<a id="gab11a4019e58a1886358c303de9dfcfd7"></a>
+<a id="gab11a4019e58a1886358c303de9dfcfd7" name="gab11a4019e58a1886358c303de9dfcfd7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab11a4019e58a1886358c303de9dfcfd7">&#9670;&nbsp;</a></span>SetBaudrate()</h2>
 
 <div class="memitem">
@@ -455,7 +454,7 @@ Conforme tabela a seguir: <table class="markdownTable">
     <tr><td class="paramname">modelo</td><td>- Parâmetro do tipo caractere que especifica o modelo para conexão.<br  />
 <br  />
 Conforme lista: <blockquote class="doxtable">
-<p><b>Valores</b><br  />
+<p >&zwj;<b>Valores</b><br  />
 L42<br  />
 L42PRO<br  />
 TT042-50<br  />
@@ -571,7 +570,7 @@ A função bem-sucedida deve retornar 0.<br  />
 
 </div>
 </div>
-<a id="ga9eae5a557c9ef4f285027b2fefa5b13f"></a>
+<a id="ga9eae5a557c9ef4f285027b2fefa5b13f" name="ga9eae5a557c9ef4f285027b2fefa5b13f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9eae5a557c9ef4f285027b2fefa5b13f">&#9670;&nbsp;</a></span>SetSymbolASD()</h2>
 
 <div class="memitem">
@@ -638,7 +637,7 @@ Conforme tabela a seguir: <table class="markdownTable">
     <tr><td class="paramname">modelo</td><td>- Parâmetro do tipo caractere que especifica o modelo para conexão.<br  />
 <br  />
 Conforme lista: <blockquote class="doxtable">
-<p><b>Valores</b><br  />
+<p >&zwj;<b>Valores</b><br  />
 L42<br  />
 L42PRO<br  />
 TT042-50<br  />
@@ -712,7 +711,7 @@ A função bem-sucedida deve retornar 0.<br  />
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

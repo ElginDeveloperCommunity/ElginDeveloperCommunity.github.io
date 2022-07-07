@@ -2,9 +2,9 @@ var searchData=
 [
   ['abreconexaoimpressora_0',['AbreConexaoImpressora',['../group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d',1,'exportafuncoes.h']]],
   ['abrecupomcancelamento_1',['AbreCupomCancelamento',['../group__s0.html#ga8c864c85c5040162f422c6ec4659926d',1,'exportafuncoes.h']]],
-  ['abrecupomcancelamento2_2',['AbreCupomCancelamento2',['../group__s0.html#gaf6acde1debf63a7845d07d71221d0b13',1,'exportafuncoes.h']]],
+  ['abrecupomcancelamento2_2',['AbreCupomCancelamento2',['../group__s0.html#ga60895496e944399f60d9cb6ee8606545',1,'exportafuncoes.h']]],
   ['abrecupomvenda_3',['AbreCupomVenda',['../group__s0.html#ga771504399db187272626f3171e2dc261',1,'AbreCupomVenda(const char *path_file, const char *versaoDadosEnt, const char *CNPJ_SH, const char *signAC, int numeroCaixa, const char *CNPJ_emit, const char *IE, const char *IM, const char *cRegTribISSQN, const char *indRatISSQN, const char *CNPJ_dest, const char *CPF_dest, const char *xNome_dest):&#160;exportafuncoes.h'],['../group__g50.html#gaac86a98c391135a7d0510c5fb1614df5',1,'AbreCupomVenda(const char *path_file, const char *cUF, const char *cNF, const char *natOp, int mod, const char *serie, const char *nNF, const char *dhEmi, const char *dhSaiEnt, int tpNF, int idDest, const char *cMunFG, int tpImp, int tpEmis, int cDV, int tpAmb, int finNFe, int indFinal, int indPres, int indIntermed, int procEmi, const char *verProc, const char *dhCont, const char *xJust, const char *idLocal):&#160;exportafuncoes.h']]],
-  ['abrecupomvenda2_4',['AbreCupomVenda2',['../group__s0.html#gaf7011e24e52c4f9b38259c1ddd95bec7',1,'exportafuncoes.h']]],
+  ['abrecupomvenda2_4',['AbreCupomVenda2',['../group__s0.html#ga6a8099778f297a9c1269f0d323b5e98f',1,'exportafuncoes.h']]],
   ['abregaveta_5',['AbreGaveta',['../group___m1.html#ga82f718c7155c604104b0b2fb5e800a40',1,'exportafuncoes.h']]],
   ['abregavetaelgin_6',['AbreGavetaElgin',['../group___m1.html#ga0477cb1087969802c31407757eb23073',1,'exportafuncoes.h']]],
   ['abreportaserial_7',['AbrePortaSerial',['../group__g10.html#gaa4cbd7569b6235c42acab08776874d47',1,'exportafuncoesposte.h']]],
@@ -27,8 +27,8 @@ var searchData=
   ['arquivo_5fxml_5fnao_5fpode_5fser_5faberto_24',['ARQUIVO_XML_NAO_PODE_SER_ABERTO',['../group__g1.html#gga9aa34265329d5ba253910de84799f82ea05fd73e71650f45752fdf43b486f69a2',1,'codigoerro.h']]],
   ['arquivo_5fxml_5fnfce_5fnao_5fpode_5fser_5faberto_25',['ARQUIVO_XML_NFCE_NAO_PODE_SER_ABERTO',['../group__g1.html#ggab60bf4a0fda40a03899957b30be9de07a846cac825af1703c9c9245f598b5c0e1',1,'codigoerro.h']]],
   ['assinatura_5fqrcode_5finvalida_26',['ASSINATURA_QRCODE_INVALIDA',['../group__g1.html#gga9aa34265329d5ba253910de84799f82eaa71a1918f443234115e988eb9c45cf24',1,'codigoerro.h']]],
-  ['associarassinatura_27',['AssociarAssinatura',['../group__g2.html#ga31de1c92a725e614a0c994bdca34ff2f',1,'exportafuncoes.h']]],
-  ['ativarsat_28',['AtivarSAT',['../group__g2.html#ga01e9f27eedb0479120dc5d6b7797a4e3',1,'exportafuncoes.h']]],
-  ['atualizarsoftwaresat_29',['AtualizarSoftwareSAT',['../group__g2.html#ga26b29f83c0255a0ff69cbf86212a80be',1,'exportafuncoes.h']]],
+  ['associarassinatura_27',['AssociarAssinatura',['../group__g2.html#ga03348b399781fdd1a601d8c9a7b41986',1,'exportafuncoes.h']]],
+  ['ativarsat_28',['AtivarSAT',['../group__g2.html#gad4a90343e6150d00b8f80a35e105ff4c',1,'exportafuncoes.h']]],
+  ['atualizarsoftwaresat_29',['AtualizarSoftwareSAT',['../group__g2.html#gad70e1ce0b0e09c7c5b86c9da990a1b6f',1,'exportafuncoes.h']]],
   ['avancapapel_30',['AvancaPapel',['../group___m1.html#ga7bb867ac58bdce583d497d05aa125732',1,'exportafuncoes.h']]]
 ];

@@ -10,6 +10,6 @@ var group__ma4 =
     [ "SetSepValores", "group__ma4.html#ga13112293cc4e5bf980183a062f0be006", null ],
     [ "Abrir", "group__ma4.html#gaf9766ee3b5a26364cdbe1f47ff0f05fd", null ],
     [ "Fechar", "group__ma4.html#gab3ba406567f579ce6c96d562035d79b0", null ],
-    [ "ReceberDados", "group__ma4.html#gaa7014a9b058e448e3e85ae96e9c2c8dc", null ],
-    [ "ReceberDados", "group__ma4.html#ga7b13a7d64e32aee4cbbb9b3e68c21afa", null ]
+    [ "ReceberDados", "group__ma4.html#ga92dd4369978a9fd27b0cde73daa452b8", null ],
+    [ "ReceberDados", "group__ma4.html#gac24595519ff95f0ee8e1760f616f79c3", null ]
 ];

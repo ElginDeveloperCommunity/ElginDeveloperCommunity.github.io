@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['zerarbalanca_922',['ZerarBalanca',['../group__g5.html#gafb63f48220b6308edfb3eb61f5ed4cd3',1,'exportafuncoes.h']]],
-  ['zint_5fnao_5fcarregada_923',['ZINT_NAO_CARREGADA',['../group__g1.html#gga2b9310cf04359e1e2e8d460964c499b0a4f8bbcadbb54a693f3d5394fc00846f6',1,'codigoerro.h']]]
+  ['xml_20sat_0',['XML SAT',['../group__s0.html',1,'']]],
+  ['xsd_5fnao_5fencontrado_1',['XSD_NAO_ENCONTRADO',['../group__g1.html#ggaa2a78878de69f89d20efffa516879d4ca5fcf7b9dff3a168116bf78795c0cf9b9',1,'codigoerro.h']]]
 ];

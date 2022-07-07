@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Plataforma de Comunicação Elgin: E1 NFC-e</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -23,11 +23,10 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plataforma de Comunicação Elgin
-   &#160;<span id="projectnumber">versão 2.41</span>
+  <td id="projectalign">
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 2.42</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -36,21 +35,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Gerado por Doxygen 1.9.1 -->
+<!-- Gerado por Doxygen 1.9.4 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','Busca');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -64,7 +64,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('group__g11.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -86,26 +86,25 @@ $(document).ready(function(){initNavTree('group__g11.html',''); initResizable();
 <div class="header">
   <div class="summary">
 <a href="#groups">Módulos</a>  </div>
-  <div class="headertitle">
-<div class="title">E1 NFC-e</div>  </div>
+  <div class="headertitle"><div class="title">E1 NFC-e</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>E1 NFC-e.  
 <a href="#details">Mais...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
 Módulos</h2></td></tr>
 <tr class="memitem:group__g50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html">Funcoes NFC-e E1</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
-<p>E1 NFC-e. </p>
-<p>Esse módulo tem como objetivo simplificar o processo de integração dos pontos de venda (PDV) com o ambiente SEFAZ de emissão de nota fiscal do consumidor (NFCe). A aplicação de PDV deverá utilizar o módulo E1_NFCe para gerar os arquivos que serão transmitidos para sefaz e ao fim da geração devera enviar o arquivo gerado para função de emissão. Antes de entrar nos detalhes de integração se faz necessários alguns esclarecimentos sobre esse módulo. Abaixo estão detalhados os componentes desse módulo.</p>
+<p >E1 NFC-e. </p>
+<p >Esse módulo tem como objetivo simplificar o processo de integração dos pontos de venda (PDV) com o ambiente SEFAZ de emissão de nota fiscal do consumidor (NFCe). A aplicação de PDV deverá utilizar o módulo E1_NFCe para gerar os arquivos que serão transmitidos para sefaz e ao fim da geração devera enviar o arquivo gerado para função de emissão. Antes de entrar nos detalhes de integração se faz necessários alguns esclarecimentos sobre esse módulo. Abaixo estão detalhados os componentes desse módulo.</p>
 <h3>Componentes</h3>
-<p><b>E1_NFCe</b> <b></b>(DLL/SO) <b>-</b> Extensão de aplicativo (DLL/SO) onde estão exportadas todas as funções para criação do documento, emissão, consulta e cancelamento de notas. É por meio dessa que o PDV fara toda a integração com o sistema de NFCe.</p>
-<p><b>api_settings.ini</b> <b>-</b> Arquivo de configuração da DLL, onde estão as configurações de timeout, identificação do PDV, URL da plataforma cloud e configurações de proxy.</p>
-<p><b>NFCe</b> <b>Veraciti</b> <b>-</b> Plataforma cloud responsavel por realizar a assinatura e transmissão para a SEFAZ. Nesse sistema o parceiro irá criar toda sua estrutura, desde a empresa, PDVs, configuração dos certificados. Também será nessa plataforma onde o cliente poderá consultar as notas emitidas, status das notas, valores processados, etc.</p>
+<p ><b>E1_NFCe</b> <b></b>(DLL/SO) <b>-</b> Extensão de aplicativo (DLL/SO) onde estão exportadas todas as funções para criação do documento, emissão, consulta e cancelamento de notas. É por meio dessa que o PDV fara toda a integração com o sistema de NFCe.</p>
+<p ><b>api_settings.ini</b> <b>-</b> Arquivo de configuração da DLL, onde estão as configurações de timeout, identificação do PDV, URL da plataforma cloud e configurações de proxy.</p>
+<p ><b>NFCe</b> <b>Veraciti</b> <b>-</b> Plataforma cloud responsavel por realizar a assinatura e transmissão para a SEFAZ. Nesse sistema o parceiro irá criar toda sua estrutura, desde a empresa, PDVs, configuração dos certificados. Também será nessa plataforma onde o cliente poderá consultar as notas emitidas, status das notas, valores processados, etc.</p>
 <h3>Por onde começar</h3>
 <h3>Cloud</h3>
 <ol type="1">
@@ -140,7 +139,7 @@ Módulos</h2></td></tr>
 </li>
 </ol>
 <h3>Local</h3>
-<p>• O primeiro passo será configurar no arquivo api_settings.ini os dados do PDV que está sendo configurado. Por padrão a DLL irá criar o arquivo caso no encontre o mesmo na pasta de trabalho. Seu conteúdo padrão deve ser parecido com o descrito abaixo:</p>
+<p >• O primeiro passo será configurar no arquivo api_settings.ini os dados do PDV que está sendo configurado. Por padrão a DLL irá criar o arquivo caso no encontre o mesmo na pasta de trabalho. Seu conteúdo padrão deve ser parecido com o descrito abaixo:</p>
 <div class="fragment"><div class="line"><span class="preprocessor"># Endereços da plataforma NFCE Veraciti</span></div>
 <div class="line">[ENDPOINTS]</div>
 <div class="line">raiz=https:<span class="comment">//console.veraciti.com.br/api/v1/</span></div>
@@ -155,23 +154,23 @@ Módulos</h2></td></tr>
 <div class="line">ativado=0</div>
 <div class="line">endereco_ip=127.0.0.1</div>
 <div class="line">porta=8080</div>
-<div class="line">usuario=<span class="keyword">null</span></div>
-<div class="line">senha=<span class="keyword">null</span></div>
+<div class="line">usuario=null</div>
+<div class="line">senha=null</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor"># Dados de autenticação com plataforma Veraciti</span></div>
 <div class="line">[DADOS_CLIENTE]</div>
 <div class="line"><span class="preprocessor"># Substituir por dados gerados na criação do PDV</span></div>
-<div class="line">client_id=<span class="keyword">null</span></div>
-<div class="line">client_secret=<span class="keyword">null</span></div>
+<div class="line">client_id=null</div>
+<div class="line">client_secret=null</div>
 <div class="line">timeout_comunicacao=30</div>
-</div><!-- fragment --><p>Convenções usada nas chamadas das funções da biblioteca: <br  />
+</div><!-- fragment --><p >Convenções usada nas chamadas das funções da biblioteca: <br  />
 <b>Windows</b><br  />
 </p><blockquote class="doxtable">
-<p>__stdcall </p>
+<p >&zwj;__stdcall </p>
 </blockquote>
 <p><b>Linux</b><br  />
 </p><blockquote class="doxtable">
-<p>__cdecl<br  />
+<p >&zwj;__cdecl<br  />
 </p>
 </blockquote>
 <p>• Localmente, o PDV deve carregar a DLL/SO e realizar as chamadas referente a criação do documento de<br  />
@@ -190,7 +189,7 @@ Módulos</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

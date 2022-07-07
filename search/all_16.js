@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['xml_20sat_920',['XML SAT',['../group__s0.html',1,'']]],
-  ['xsd_5fnao_5fencontrado_921',['XSD_NAO_ENCONTRADO',['../group__g1.html#ggaa2a78878de69f89d20efffa516879d4ca5fcf7b9dff3a168116bf78795c0cf9b9',1,'codigoerro.h']]]
+  ['width_5finvalido_0',['WIDTH_INVALIDO',['../group__g1.html#ggaf06e08f141e869b84df32c20e7b08e82a05304df74185d034fffdeb3e824289fb',1,'codigoerro.h']]]
 ];

@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Comunicação Elgin: JSON Retorno PIX</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
+  <td id="projectalign">
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 2.42</span>
+   </div>
+   <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__sp30.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">JSON Retorno PIX<div class="ingroups"><a class="el" href="group__g3.html">Android</a> &raquo; <a class="el" href="group__g31.html">SmartPOS</a> &raquo; <a class="el" href="group__sp3.html">PIX</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Detalhes do retorno da transação PIX.  
+</p>
+<p >Detalhes do retorno da transação PIX. </p>
+<h1>Detalhes do Retorno da Transação PIX</h1>
+<p >Para as transações executadas no modo Ativo o retorno será enviado para a implementação do Handler.handlerMessage em uma string no formato Json. Ex:</p>
+<div class="fragment"><div class="line"><span class="keyword">private</span> Handler handler = <span class="keyword">new</span> Handler(Looper.getMainLooper()){​​​​</div>
+<div class="line">    @Override</div>
+<div class="line">    <span class="keyword">public</span> <span class="keywordtype">void</span> handleMessage(@NonNull Message msg) {​​​​</div>
+<div class="line">        super.handleMessage(msg);</div>
+<div class="line">        String saida = (String) msg.obj;</div>
+<div class="line">    }​​​​</div>
+<div class="line">}​​​​;</div>
+</div><!-- fragment --><p >Abaixo estão detalhados os campos retornados:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Chave   </th><th class="markdownTableHeadLeft">Tipo de dado   </th><th class="markdownTableHeadLeft">Descrição    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">statusTransacaoPIX   </td><td class="markdownTableBodyLeft">int   </td><td class="markdownTableBodyLeft">Status de processamento da transação PIX<br  />
+PROCESSADA_SUCESSO = 0 <br  />
+NAO_PROCESSADA = -1 <br  />
+ERRO_AUTENTICACAO = -2 <br  />
+ERRO_GERACAO_QRCODE = -3 <br  />
+CANCELADA_OPERADOR = -4 <br  />
+ERRO_DESCONHECIDO = -5    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">informacoesQRCode.dataHoraCriacao   </td><td class="markdownTableBodyLeft">String   </td><td class="markdownTableBodyLeft">Data da criação da transação    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">informacoesQRCode.idConsultaQRCode   </td><td class="markdownTableBodyLeft">String   </td><td class="markdownTableBodyLeft">Id de consulta da transação    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">informacoesQRCode.imageBase64   </td><td class="markdownTableBodyLeft">String   </td><td class="markdownTableBodyLeft">Conteúdo em base64 do bitmap do QRCode    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">informacoesQRCode.pixCopiaCola   </td><td class="markdownTableBodyLeft">String   </td><td class="markdownTableBodyLeft">Chave utilizada para realizar o pagamento na impossibilidade de fazer a leitura do QR Code gerado no Pix    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">informacoesQRCode.tipoQRCode   </td><td class="markdownTableBodyLeft">String   </td><td class="markdownTableBodyLeft">Tipo do QRCode    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">informacoesQRCode.validade   </td><td class="markdownTableBodyLeft">int   </td><td class="markdownTableBodyLeft">Tempo de validade da transação em segundos    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">informacoesQRCode.valor   </td><td class="markdownTableBodyLeft">double   </td><td class="markdownTableBodyLeft">Valor com descontos    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">informacoesQRCode.valorOriginal   </td><td class="markdownTableBodyLeft">double   </td><td class="markdownTableBodyLeft">Valor original    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">statusTransacao.chave   </td><td class="markdownTableBodyLeft">String   </td><td class="markdownTableBodyLeft">Chave da consulta    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">statusTransacao.codigoStatusTransacao   </td><td class="markdownTableBodyLeft">int   </td><td class="markdownTableBodyLeft">Código de status da transação    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">statusTransacao.id   </td><td class="markdownTableBodyLeft">int   </td><td class="markdownTableBodyLeft">ID de consulta    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">statusTransacao.mensagem   </td><td class="markdownTableBodyLeft">String   </td><td class="markdownTableBodyLeft">Mensagem    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">statusTransacao.statusTransacao   </td><td class="markdownTableBodyLeft">String   </td><td class="markdownTableBodyLeft">Status da transação (="APROVED" quando a transação estiver paga) ou (= "Transferência {​​​​mensagem}​​​​​​​​ não confirmada" quando não estiver paga)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">statusTransacao.sucesso   </td><td class="markdownTableBodyLeft">bool   </td><td class="markdownTableBodyLeft">True se estiver Pago ou false caso contrario   </td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
+</body>
+</html>

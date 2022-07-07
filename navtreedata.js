@@ -25,8 +25,6 @@
 var NAVTREE =
 [
   [ "Plataforma de Comunicação Elgin", "index.html", [
-    [ "e1_elginpay", "md_e1_elginpay.html", null ],
-    [ "e1_brigde_retorno", "md_e1_brigde_retorno.html", null ],
     [ "Lista de itens obsoletos", "deprecated.html", null ],
     [ "Módulos", "modules.html", "modules" ]
   ] ]
@@ -37,7 +35,7 @@ var NAVTREEINDEX =
 "deprecated.html",
 "group__g1.html#gga27af06c8572a3ef6daf38e465dd6f153a29f35569889bf52c4e82a54bf406f298",
 "group__g1.html#ggaadd6dde8b5904c2bdb01d2b8567ca238ae014a9ade90bc2388cb4e04ff3de6d6d",
-"group__g51.html#ga945ab5c77412c177e36d0f57c81198e5"
+"group__g51.html#gab43c0c1fa48b3c387a965499e9677a48"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';

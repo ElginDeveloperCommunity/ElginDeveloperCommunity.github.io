@@ -8,7 +8,7 @@ var group__g54 =
     [ "AdicionarCodigoBarras", "group__g54.html#gaa542c8d7f609fbaf0b46702a26e6e9c7", null ],
     [ "AdicionarQRCode", "group__g54.html#ga64fa0e21e6de431692406ceab0f39470", null ],
     [ "AdicionarImagem", "group__g54.html#gaa3adfd556d208dd1ec89b099cd5a54fd", null ],
-    [ "ImprimirLayout", "group__g54.html#gac4eb23b94820e1cd1230175b393be39c", null ],
-    [ "ReimprimirLayout", "group__g54.html#ga92f2681df6b5661a7347590cb6b2c335", null ],
-    [ "StatusImpressora", "group__g54.html#gad3f9a53a4c81597ad4a96e6bb4ee07e1", null ]
+    [ "ImprimirLayout", "group__g54.html#gafaffd90a3b1908a81663dd1538631660", null ],
+    [ "ReimprimirLayout", "group__g54.html#ga003fe82046b1a88e05606560f4527397", null ],
+    [ "StatusImpressora", "group__g54.html#ga783fdb391f221443bfbbe82460535360", null ]
 ];

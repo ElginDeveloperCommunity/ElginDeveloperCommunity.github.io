@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Comunicação Elgin: PIX</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
+  <td id="projectalign">
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 2.42</span>
+   </div>
+   <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__sp3.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#groups">Módulos</a>  </div>
+  <div class="headertitle"><div class="title">PIX<div class="ingroups"><a class="el" href="group__g3.html">Android</a> &raquo; <a class="el" href="group__g31.html">SmartPOS</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Funções de PIX.  
+<a href="#details">Mais...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
+Módulos</h2></td></tr>
+<tr class="memitem:group__sp31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp31.html">Funções</a></td></tr>
+<tr class="memdesc:group__sp31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descrição das funções de PIX. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__sp30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sp30.html">JSON Retorno PIX</a></td></tr>
+<tr class="memdesc:group__sp30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detalhes do retorno da transação PIX. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<p >Funções de PIX. </p>
+<h1>Módulo PIX</h1>
+<p >O processo de pagamento PIX ocorre por meio da biblioteca chamada <code>pagamentos-V1.0-dev-release.aar</code>. Essa biblioteca tem funções que facilitam o fluxo de uma transação PIX.</p>
+<h2>Fluxo da Transação</h2>
+<p >Os elementos necessários para que a transação PIX seja feita são: Autenticação, Geração do QRCode e Consulta do QRCode.</p><ul>
+<li><b>Autenticação</b>: irá identificar para quem é a transação</li>
+<li><b>Geração QRCode</b>: irá gerar o QRCode da transação</li>
+<li><b>Consulta QRCode</b>: irá verificar se a transação foi finalizada.</li>
+</ul>
+<h2>Componentes</h2>
+<p >Para utilizar esse módulo deverão ser importados no projeto os seguintes componentes:</p>
+<p ><b>Pagamentos</b>: Biblioteca padrão Android (aar), Modulo de Pagamento que contempla as funcionalidade de pix <code>pagamentos-V1.0-dev-release.aar</code><br  />
+ <b>Comunicação</b>: Biblioteca padrão Android (aar), Modulo de comunicação HTTP necessário para as requisições PIX <code>comunicacao-release.aar</code></p>
+<dl class="section warning"><dt>Aviso</dt><dd>A biblioteca de pagamento possui versão de homologação e produção. Certifique-se de usar a versão de homologação durante sua implementação e após finalizada altere para a versão de produção.<ul>
+<li>Versão de desenvolvimento: <code>pagamentos-V1.0-dev-release.aar</code></li>
+<li>Versão de produção: <code>pagamentos-V1.0-prod-release.aar</code></li>
+</ul>
+</dd></dl>
+<h3>Modo Ativo</h3>
+<p >A transaçao acontece automaticamente.</p><ol type="1">
+<li>envia para a API a chave e o valor</li>
+<li>API toma controle até o final da transação: gera qr code, consulta o status do pagamento em intervalos de 1 segundo até que a transação seja finalizada.</li>
+<li>API retorna o Json.</li>
+</ol>
+<h2>Por onde começar?</h2>
+<p >O primeiro passo será a importação das bibliotecas para o projeto. Para importar essas bibliotecas ao seu projeto, siga os passos abaixo.</p>
+<ul>
+<li>Copie as bibliotecas AAR listadas acima (<em><code>pagamentos-V1.0-dev-release.aar</code></em>, <em><code>comunicacao-release.aar</code></em>) para o diretório <em><code>libs</code></em>, localizado no diretório do módulo que irá acessá-las. Se o diretório <em>libs</em> não existir, crie-o.</li>
+<li><p class="startli">Adicione as seguintes linhas na seção <em>dependencies</em>, no arquivo <em>build.gradle</em>, do módulo que usará as bibliotecas (esse arquivo está no mesmo diretório da pasta <em>libs</em>):<br  />
+</p>
+<div class="fragment"><div class="line">implementation <span class="stringliteral">&#39;com.squareup.retrofit2:retrofit:2.9.0&#39;</span></div>
+<div class="line">implementation <span class="stringliteral">&#39;com.squareup.retrofit2:converter-gson:2.9.0&#39;</span></div>
+<div class="line">implementation <span class="stringliteral">&#39;com.squareup.retrofit2:converter-scalars:2.9.0&#39;</span></div>
+<div class="line">implementation <span class="stringliteral">&#39;com.squareup.okhttp3:okhttp:4.9.3&#39;</span></div>
+<div class="line">implementation <span class="stringliteral">&#39;com.squareup.okhttp3:logging-interceptor:4.9.3&#39;</span></div>
+<div class="line">implementation files(<span class="stringliteral">&#39;libs/pagamentos-debug.aar&#39;</span>)</div>
+<div class="line">implementation files(&#39;libs/comunicacao-debug.aar&#39;)</div>
+</div><!-- fragment --></li>
+<li>Agora basta importar a classe pixElgin<br  />
+ <div class="fragment"><div class="line"><span class="keyword">import</span> com.elgin.e1.pagamentos.pix.PIXElgin;</div>
+</div><!-- fragment --></li>
+<li>E chamar a função de transação desejada<br  />
+ <div class="fragment"><div class="line">PIXElgin pixElgin = <span class="keyword">new</span> PIXElgin(<span class="stringliteral">&quot;&lt;chave-autenticação&gt;&quot;</span>);</div>
+<div class="line">pixElgin.iniciarVendaPIX(<span class="stringliteral">&quot;1000&quot;</span>, MainActivity.this, handler);</div>
+</div><!-- fragment --></li>
+<li>O retorno será obtido conforme trecho abaixo <div class="fragment"><div class="line"><span class="keyword">private</span> Handler handler = <span class="keyword">new</span> Handler(Looper.getMainLooper()){</div>
+<div class="line">    @Override</div>
+<div class="line">    <span class="keyword">public</span> <span class="keywordtype">void</span> handleMessage(@NonNull Message msg) {</div>
+<div class="line">        super.handleMessage(msg);</div>
+<div class="line">        String saida = (String) msg.obj;</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+</div><!-- fragment --> </li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
+</body>
+</html>

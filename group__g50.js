@@ -1,12 +1,12 @@
 var group__g50 =
 [
     [ "TestaConexaoNFCe", "group__g50.html#gafd841a2391cdab971e4bbbf24f02495c", null ],
-    [ "EmitirNota", "group__g50.html#ga3cd4681c162c88ac0af848f77ff1b416", null ],
-    [ "ConsultarNota", "group__g50.html#gadd9eff7b1279230c008dd0dbc2dbe298", null ],
-    [ "CancelarNota", "group__g50.html#ga2287edb020c63e91c35c1783f671cdda", null ],
-    [ "DecodificarNota", "group__g50.html#ga4fff010d41f1fe3cb7e7464efe7b47d1", null ],
-    [ "ConsultarId", "group__g50.html#gacece6dcf69dda03738e7b6349a4982a8", null ],
-    [ "ListarEventos", "group__g50.html#gab6feb5faa3fdd60ca0c8294544d22a1c", null ],
+    [ "EmitirNota", "group__g50.html#gaf7dd95f30cfdef6d9a27dc0ea4c5820f", null ],
+    [ "ConsultarNota", "group__g50.html#ga71bff54c464f64f3e2ae98f09a9e5feb", null ],
+    [ "CancelarNota", "group__g50.html#ga52322a752894e0dc3ce071b511df37e7", null ],
+    [ "DecodificarNota", "group__g50.html#gacff27f063bd937cee1b4aac0f3b55cea", null ],
+    [ "ConsultarId", "group__g50.html#gae103f3cf0de97b706be55aad44893858", null ],
+    [ "ListarEventos", "group__g50.html#gaba33a5a6ed32a7e13144477919e0bc71", null ],
     [ "AbreCupomVenda", "group__g50.html#gaac86a98c391135a7d0510c5fb1614df5", null ],
     [ "InformaEmitente", "group__g50.html#ga756a52dc48dba09a8b245a14cf3f08cb", null ],
     [ "InformaTransporte", "group__g50.html#gae41788f8f2358a5088d63b29ef909b3d", null ],

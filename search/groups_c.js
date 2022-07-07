@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['retorno_1835',['Retorno',['../group__sp11.html',1,'(<em>Namespace</em> global)'],['../group__sp21.html',1,'(<em>Namespace</em> global)']]]
+  ['pix_0',['PIX',['../group__sp3.html',1,'']]],
+  ['poste_20sinalizador_1',['Poste Sinalizador',['../group__g10.html',1,'']]],
+  ['poste_20sinalizador_2',['Poste sinalizador',['../group__g48.html',1,'']]]
 ];

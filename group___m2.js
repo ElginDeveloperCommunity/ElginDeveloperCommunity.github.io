@@ -1,7 +1,7 @@
 var group___m2 =
 [
     [ "PrinterCreator", "group___m2.html#gac4467d6cd7f9a2ad7444b3205eeef014", null ],
-    [ "PrinterCreatorS", "group___m2.html#ga441bc0a4624097af7c8084eaec09d5bc", null ],
+    [ "PrinterCreatorS", "group___m2.html#ga8064ffa2e179df5c4c999bfc59c07436", null ],
     [ "PrinterDestroy", "group___m2.html#ga70d127a38ae71f1ef1fa594b3c6112df", null ],
     [ "PortOpen", "group___m2.html#ga39636d3b356259d93e042236b123ebc3", null ],
     [ "PortClose", "group___m2.html#ga989fb56b4df6390148b2de1f84ffdb0c", null ],
