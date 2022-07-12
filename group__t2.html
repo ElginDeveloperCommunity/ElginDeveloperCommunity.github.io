@@ -34,7 +34,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 2.43.00</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 2.44.00</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -138,13 +138,16 @@ $(document).ready(function(){initNavTree('group__t2.html',''); initResizable(); 
 <p >A seguir um fluxograma básico do funcionamento da <b>API TEF Elgin</b> independemente do ambiente em que esteja executando.</p>
 <p > <div class="mermaid"> 
    flowchart TB
-    inicio((Início)) --> inOp(Iniciar Operação TEF)
-    inOp --> req[/Requisitar Comando TEF\]
-    req --> exCom(Executar Comando)
-    exCom --> fin{É comando final?}
-    fin -->|Não| req
-    fin -->|Sim| finaliza(Finalizar Operação TEF)
-    finaliza --> fim([Fim])  
+    inicio((Início)) --- inOp(Iniciar Operação TEF)
+    inOp --- req[/Requisitar Comando TEF\]
+    req --- exCom(Executar Comando)
+    exCom --- fin{É comando final?}
+    fin ---|Não| req
+    fin ---|Sim| finaliza(Finalizar Operação TEF)
+    finaliza --- fim([Fim])
+    class fin mDecision
+    class inOp,exCom,finaliza,req mOp
+    class inicio,fim mInFim  
   </div> </p>
 <h2>Fluxo de Operação</h2>
 <ol type="1">

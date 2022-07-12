@@ -25,24 +25,16 @@
 var NAVTREE =
 [
   [ "Plataforma de Comunicação Elgin", "index.html", [
-    [ "e1_brigde_retorno", "md_src__e1__bridge_e1_brigde_retorno.html", null ],
-    [ "e1_tef_description", "md_src__e1__t_e_f_e1_tef_description.html", null ],
-    [ "e1_tef_ativo", "md_src__e1__t_e_f_e1_tef_ativo.html", null ],
-    [ "e1_tef_passivo", "md_src__e1__t_e_f_e1_tef_passivo.html", null ],
-    [ "pix", "md_src__pix_pix.html", null ],
-    [ "pixRetorno", "md_src__pix_pix_retorno.html", null ],
-    [ "e1_elginpay", "md_src__android_e1_elginpay.html", null ],
-    [ "Lista de itens obsoletos", "deprecated.html", null ],
     [ "Módulos", "modules.html", "modules" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"deprecated.html",
-"group__g1.html#gga27af06c8572a3ef6daf38e465dd6f153a29f35569889bf52c4e82a54bf406f298",
-"group__g1.html#ggaaf847b41b132e891ed9cd18f57c1d54caaf8e1937d6859798168de2e5ad06675f",
-"group__g51.html#gab43c0c1fa48b3c387a965499e9677a48"
+"group___m0.html",
+"group__g1.html#gga27af06c8572a3ef6daf38e465dd6f153a2a30ae94e967c2d96fde804f9be0c0ba",
+"group__g1.html#ggaaf847b41b132e891ed9cd18f57c1d54cabe84edaa058bf3ec5a95596e08d061eb",
+"group__g51.html#gac413e2029eef240e6ab0a0f8f86aa519"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';
