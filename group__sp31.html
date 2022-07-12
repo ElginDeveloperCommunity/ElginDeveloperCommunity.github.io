@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.4-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,8 +18,15 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<style>
+  .mermaid {
+    display: flex;
+    justify-content: center;
+  }
+</style>
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -139,21 +147,32 @@ Funções</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">valor</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
     <tr><td class="paramname">context</td><td>- Activity atual utilizada para apresentação de Dialogos com o usuário </td></tr>
-    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta da transação por meio do método handleMessage. </td></tr>
+    <tr><td class="paramname">handler</td><td>- Objeto handler utilizado para receber a resposta da transação por meio do método handleMessage. *Retorno A resposta será enviada como String no formato JSON no Handler. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>A resposta será enviada como String no formato JSON. </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base', 
+    themeVariables: {
+      primaryColor: '#f4f4ff',
+      secondaryColor: 'rgba(244,244,255,0.9)',
+      tertiaryColor: '#F9FAFC',
+    },
+  });
+</script>
 </body>
 </html>

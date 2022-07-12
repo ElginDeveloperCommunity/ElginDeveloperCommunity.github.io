@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.4-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,8 +18,15 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<style>
+  .mermaid {
+    display: flex;
+    justify-content: center;
+  }
+</style>
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -144,8 +152,18 @@ Funções</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Função utilizada para obter configuração do servidor Exemplo: </p><div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;192.168.0.1|3000|3001&quot;}</div>
-</div><!-- fragment --> 
+<p >Função utilizada para obter configuração do servidor </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">retorno</td><td>- parametro passado por referência que ira armazenar os dados<br  />
+de retorno ao fim da transação. Exemplo: <div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;192.168.0.1|3000|3001&quot;}</div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>código numérico referente ao processamento da função.<br  />
+A função executada com sucesso deve retornar 0.<br  />
+Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
+
 </div>
 </div>
 <a id="ga996167c661f736d8022f0d4a2bd1465f" name="ga996167c661f736d8022f0d4a2bd1465f"></a>
@@ -191,11 +209,16 @@ Funções</h2></td></tr>
     <tr><td class="paramname">portaTransacao</td><td>- Identificação da porta de comunicação. A porta padrão é 3000<br  />
 O valor deve ser entre 0 e 65535, onde 0 será para definir com o valor padrão de 3000. </td></tr>
     <tr><td class="paramname">portaStatus</td><td>- Identificação da porta onde serão obtido o status das transações. A porta padrão é 3001<br  />
-O valor deve ser entre 0 e 65535, onde 0 será para definir com o valor padrão de 3001. Exemplo: <div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;Sucesso&quot;}</div>
+O valor deve ser entre 0 e 65535, onde 0 será para definir com o valor padrão de 3001. </td></tr>
+    <tr><td class="paramname">retorno</td><td>- parametro passado por referência que ira armazenar os dados<br  />
+de retorno ao fim da transação. Exemplo: <div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;Sucesso&quot;}</div>
 </div><!-- fragment --> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Retorna</dt><dd>código numérico referente ao processamento da função.<br  />
+A função executada com sucesso deve retornar 0.<br  />
+Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
 
 </div>
 </div>
@@ -264,8 +287,18 @@ Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></d
       </table>
 </div><div class="memdoc">
 <p >Obtem o timeout definido para as transações em segundos;<br  />
-O valor padrão é de 180 segundos (3 minutos); Exemplo: </p><div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;180000&quot;}</div>
-</div><!-- fragment --> 
+O valor padrão é de 180 segundos (3 minutos); </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">retorno</td><td>- parametro passado por referência que ira armazenar os dados<br  />
+de retorno ao fim da transação. Exemplo: <div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;180000&quot;}</div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>código numérico referente ao processamento da função.<br  />
+A função executada com sucesso deve retornar 0.<br  />
+Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
+
 </div>
 </div>
 <a id="ga4e458327a7e40d029247316f088830ba" name="ga4e458327a7e40d029247316f088830ba"></a>
@@ -296,11 +329,16 @@ O valor padrão é de 180 segundos (3 minutos); Exemplo: </p><div class="fragmen
 <p >Configura um timeout para as funções de transação.<br  />
 O valor padrão é de 180 segundos (3 minutos); </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timeout</td><td>- Valor em segundos a ser definido. Exemplo: <div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;Sucesso&quot;}</div>
+    <tr><td class="paramname">timeout</td><td>- Valor em segundos a ser definido. </td></tr>
+    <tr><td class="paramname">retorno</td><td>- parametro passado por referência que ira armazenar os dados<br  />
+de retorno ao fim da transação. Exemplo: <div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;Sucesso&quot;}</div>
 </div><!-- fragment --> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Retorna</dt><dd>código numérico referente ao processamento da função.<br  />
+A função executada com sucesso deve retornar 0.<br  />
+Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
 
 </div>
 </div>
@@ -376,9 +414,14 @@ Essa função trabalha com os bits conforme descrição abaixo: <table class="ma
 Deve ser utilizada casos de timeout. </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">pdv</td><td>- Identificação do PDV utilizada nas transações. Consulte a sessão retorno para ter um exemplo de um json de saída e todos os dados. </td></tr>
+    <tr><td class="paramname">retorno</td><td>- parametro passado por referência que ira armazenar os dados<br  />
+de retorno ao fim da transação. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Retorna</dt><dd>código numérico referente ao processamento da função.<br  />
+A função executada com sucesso deve retornar 0.<br  />
+Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
 
 </div>
 </div>
@@ -411,11 +454,17 @@ Deve ser utilizada casos de timeout. </p><dl class="params"><dt>Parâmetros</dt>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">xml</td><td>- Dados do XML retornado da operação de venda do SAT. </td></tr>
+    <tr><td class="paramname">retorno</td><td>- parametro passado por referência que ira armazenar os dados<br  />
+de retorno ao fim da transação. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>string no formato json Exemplo: <div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;Sucesso&quot;}</div>
-</div><!-- fragment --> </dd></dl>
+</div><!-- fragment --> </dd>
+<dd>
+código numérico referente ao processamento da função.<br  />
+A função executada com sucesso deve retornar 0.<br  />
+Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
 
 </div>
 </div>
@@ -455,11 +504,17 @@ Deve ser utilizada casos de timeout. </p><dl class="params"><dt>Parâmetros</dt>
   <table class="params">
     <tr><td class="paramname">xml</td><td>- Dados do XML retornado da operação de cancelamento do SAT. </td></tr>
     <tr><td class="paramname">assQRCode</td><td>- Assinatura do QRcode retornado na venda cancelada. </td></tr>
+    <tr><td class="paramname">retorno</td><td>- parametro passado por referência que ira armazenar os dados<br  />
+de retorno ao fim da transação. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>string no formato json Exemplo: <div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;Sucesso&quot;}</div>
-</div><!-- fragment --> </dd></dl>
+</div><!-- fragment --> </dd>
+<dd>
+código numérico referente ao processamento da função.<br  />
+A função executada com sucesso deve retornar 0.<br  />
+Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
 
 </div>
 </div>
@@ -516,11 +571,15 @@ da Fazenda da Unidade Federada do emitente e do próprio contribuinte. Anteriorm
 CSC era chamado de “Token”. </p>
 </blockquote>
 </td></tr>
+    <tr><td class="paramname">retorno</td><td>- parametro passado por referência que ira armazenar os dados<br  />
+de retorno ao fim da transação. Exemplo: <div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;Sucesso&quot;}</div>
+</div><!-- fragment --> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>string no formato json Exemplo: <div class="fragment"><div class="line">{&quot;e1_bridge_code&quot;:0,&quot;e1_bridge_msg&quot;:&quot;Sucesso&quot;}</div>
-</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>código numérico referente ao processamento da função.<br  />
+A função executada com sucesso deve retornar 0.<br  />
+Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
 
 </div>
 </div>
@@ -620,10 +679,14 @@ Valor entre 0 e 999999. </td></tr>
     <tr><td class="paramname">pdv</td><td>- Código identificador do PDV.<br  />
 Valor alfanumérico. </td></tr>
     <tr><td class="paramname">valorTotal</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
+    <tr><td class="paramname">retorno</td><td>- parametro passado por referência que ira armazenar os dados<br  />
+ de retorno ao fim da transação. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>String no formato Json com os dados da transação; Consulte a sessão retorno para ter um exemplo de um json de saída e todos os dados. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>código numérico referente ao processamento da função.<br  />
+ A função executada com sucesso deve retornar 0.<br  />
+ Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
 
 </div>
 </div>
@@ -672,10 +735,14 @@ Valor entre 0 e 999999. </td></tr>
     <tr><td class="paramname">pdv</td><td>- Código identificador do PDV.<br  />
 Valor alfanumérico. </td></tr>
     <tr><td class="paramname">valorTotal</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
+    <tr><td class="paramname">retorno</td><td>- parametro passado por referência que ira armazenar os dados<br  />
+de retorno ao fim da transação. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>String no formato Json com os dados da transação; Consulte a sessão retorno para ter um exemplo de um json de saída e todos os dados. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>código numérico referente ao processamento da função.<br  />
+A função executada com sucesso deve retornar 0.<br  />
+Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
 
 </div>
 </div>
@@ -737,10 +804,14 @@ Valor alfanumérico. </td></tr>
     <tr><td class="paramname">valorTotal</td><td>- Valor total da venda em centavos, ex: 100 para venda de R$1,00 </td></tr>
     <tr><td class="paramname">tipoFinanciamento</td><td>- Tipo do financiamento (A vista = 1, parcelado emissor = 2 ou parcelado estabelecimento = 3) </td></tr>
     <tr><td class="paramname">numParcelas</td><td>- Quantidade de parcelas para as transações parcelada. Para transação a vista o valor sera desconsiderado. </td></tr>
+    <tr><td class="paramname">retorno</td><td>- parametro passado por referência que ira armazenar os dados<br  />
+de retorno ao fim da transação. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>String no formato Json com os dados da transação; Consulte a sessão retorno para ter um exemplo de um json de saída e todos os dados. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>código numérico referente ao processamento da função.<br  />
+A função executada com sucesso deve retornar 0.<br  />
+Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
 
 </div>
 </div>
@@ -803,10 +874,14 @@ Valor alfanumérico. </td></tr>
     <tr><td class="paramname">dataHora</td><td>- Data e hora da transação no formato dd/MM/yyyy HH:mm:ss ou dd/MM/yyyy.<br  />
 Este valor é retornado no JSON das vendas na chave dataHoraTransacao. </td></tr>
     <tr><td class="paramname">nsu</td><td>- nsu da transação que é retornado no JSON das vendas na chave nsuLocal. </td></tr>
+    <tr><td class="paramname">retorno</td><td>- parametro passado por referência que ira armazenar os dados<br  />
+de retorno ao fim da transação. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>String no formato Json com os dados da transação; Consulte a sessão retorno para ter um exemplo de um json de saída e todos os dados. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>código numérico referente ao processamento da função.<br  />
+A função executada com sucesso deve retornar 0.<br  />
+Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
 
 </div>
 </div>
@@ -863,20 +938,36 @@ Operação de reimpressão de comprovante = 5<br  />
 </p>
 </blockquote>
 </td></tr>
+    <tr><td class="paramname">retorno</td><td>- parametro passado por referência que ira armazenar os dados<br  />
+de retorno ao fim da transação. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>String no formato Json com os dados da transação; Consulte a sessão retorno para ter um exemplo de um json de saída e todos os dados. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>código numérico referente ao processamento da função.<br  />
+A função executada com sucesso deve retornar 0.<br  />
+Para mais detalhes sobre o retorno consulte a sessão códigos de erro. </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base', 
+    themeVariables: {
+      primaryColor: '#f4f4ff',
+      secondaryColor: 'rgba(244,244,255,0.9)',
+      tertiaryColor: '#F9FAFC',
+    },
+  });
+</script>
 </body>
 </html>

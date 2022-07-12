@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.4-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,8 +18,15 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<style>
+  .mermaid {
+    display: flex;
+    justify-content: center;
+  }
+</style>
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -590,6 +598,140 @@ ss = SEGUNDO<br  />
   </dd>
 </dl>
 <dl class="section note"><dt>Observação</dt><dd>Os demais parametros são identicos aos da função <a class="el" href="group__s0.html#ga771504399db187272626f3171e2dc261" title="AbreCupomVenda Esssa função deve ser a primeira a ser chamada pela aplicação para iniciar a criação d...">AbreCupomVenda</a></dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">versaoDadosEnt</td><td>Versão do leiautedo arquivo dedados do AC. (Ex: 0.07 ou 0.08).<br  />
+<blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> A03<br  />
+<b>Parametro obrigatório</b><br  />
+<b>Tipo:</b> Alfanumérico<br  />
+<b>Tamanho:</b> 1-4 <br  />
+<b>Casas decimais:</b> 2<br  />
+</p>
+</blockquote>
+</td></tr>
+    <tr><td class="paramname">CNPJ_SH</td><td>CNPJ Software House.<br  />
+Deve ser informado apenas números. Caracteres (ponto, barra, hífen, etc.) serão removidos.<br  />
+Caso o CNPJ tenha menos que 14 digitos a tag será preenchida com 0 não significativos.<br  />
+Nos casos de teste fim-a-fim de ativação, completar com 14 dígitos “0”(zero).<br  />
+<blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> B11<br  />
+<b>Parametro obrigatório</b><br  />
+<b>Tipo:</b> Numérico<br  />
+<b>Tamanho:</b> 14<br  />
+</p>
+</blockquote>
+</td></tr>
+    <tr><td class="paramname">signAC</td><td>Assinatura do Aplicativo Comercial<br  />
+Assinatura de (CNPJ Software House + CNPJ Emitente) que gerou o CF-e.<br  />
+Nos casos de teste fim-a-fim de ativação, completar com 344 dígitos “0”(zero).<br  />
+<blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> B12<br  />
+<b>Parametro obrigatório</b><br  />
+<b>Tipo:</b> Alfanumérico<br  />
+<b>Tamanho:</b> 1-344 <br  />
+</p>
+</blockquote>
+</td></tr>
+    <tr><td class="paramname">numeroCaixa</td><td>Número de 0 a 999 referente ao Caixa em que o SAT está conectado.<br  />
+<blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> B14<br  />
+<b>Parametro obrigatório</b><br  />
+<b>Tipo:</b> Numérico<br  />
+<b>Tamanho:</b> 3 <br  />
+</p>
+</blockquote>
+</td></tr>
+    <tr><td class="paramname">CNPJ_emit</td><td>CNPJ do emitente.<br  />
+Deve ser informado apenas números. Caracteres (ponto, barra, hífen, etc.) serão removidos.<br  />
+Caso o CNPJ tenha menos que 14 digitos a tag será preenchida com 0 não significativos.<br  />
+<blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> C02<br  />
+<b>Parametro obrigatório</b><br  />
+<b>Tipo:</b> Numérico<br  />
+<b>Tamanho:</b> 14 <br  />
+</p>
+</blockquote>
+</td></tr>
+    <tr><td class="paramname">IE</td><td>Deve ser informado apenas caracteres alfanumérico. Caracteres (ponto, barra, hífen, etc.) serão removidos.<br  />
+Caso IE tenha menos que 12 digitos a tag será preenchida com espaços a direita.<br  />
+<blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> C12<br  />
+<b>Parametro obrigatório</b><br  />
+<b>Tipo:</b> Numérico<br  />
+<b>Tamanho:</b> 2-14 <br  />
+</p>
+</blockquote>
+</td></tr>
+    <tr><td class="paramname">IM</td><td>Inscrição Municipal.<br  />
+Este campo deve ser informado, quando ocorrer a emissão de CF-e conjugada, com prestação de serviços sujeitos ao ISSQN e fornecimento de peças sujeitos ao ICMS.<br  />
+<blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> C13<br  />
+Essa TAG não é obrigatória e para que não seja incluida no XML deve-se passar parametro vazio.<br  />
+<b>Tipo:</b> Numérico<br  />
+<b>Tamanho:</b> 1-15 <br  />
+</p>
+</blockquote>
+</td></tr>
+    <tr><td class="paramname">cRegTribISSQN</td><td>Regime Especial de Tributação do ISSQN<br  />
+1 - Microempresa Municipal;<br  />
+2 - Estimativa;<br  />
+3 - Sociedade de Profissionais;<br  />
+4 - Cooperativa;<br  />
+5 - Microempresário Individual(MEI);<br  />
+<blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> C15<br  />
+Essa TAG não é obrigatória e para que não seja incluida no XML deve-se passar parametro vazio.<br  />
+<b>Tipo:</b> Numérico<br  />
+<b>Tamanho:</b> 1 <br  />
+</p>
+</blockquote>
+</td></tr>
+    <tr><td class="paramname">indRatISSQN</td><td>Indicador de rateio do Desconto sobre subtotal entre itens sujeitos à tributação pelo ISSQN. Informa se o Desconto sobre subtotal deve ser rateado entre os itens sujeitos à tributação pelo ISSQN.<br  />
+'S' - Desconto sobre subtotal será rateado entre os itens sujeitos ao ISSQN.<br  />
+'N' - Desconto sobre subtotal não será rateado entre os itens sujeitos ao ISSQN.<br  />
+<blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> C16<br  />
+<b>Parametro obrigatório</b><br  />
+<b>Tipo:</b> Alfanumérico<br  />
+<b>Tamanho:</b> 1 <br  />
+</p>
+</blockquote>
+</td></tr>
+    <tr><td class="paramname">CNPJ_dest</td><td>CNPJ do destinatário.<br  />
+Deve ser informado apenas números. Caracteres (ponto, barra, hífen, etc.) serão removidos.<br  />
+Caso o CNPJ tenha menos que 14 digitos a tag será preenchida com 0 não significativos.<br  />
+<blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> E02<br  />
+Essa TAG não é obrigatória e para que não seja incluida no XML deve-se passar parametro vazio.<br  />
+<b>Tipo:</b> Numérico<br  />
+<b>Tamanho:</b> 14 <br  />
+</p>
+</blockquote>
+</td></tr>
+    <tr><td class="paramname">CPF_dest</td><td>CPF do destinatário.<br  />
+Deve ser informado apenas números. Caracteres (ponto, barra, etc.) serão removidos.<br  />
+Caso o CPF tenha menos que 11 digitos a tag será preenchida com 0 não significativos.<br  />
+<blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> E03<br  />
+Essa TAG não é obrigatória e para que não seja incluida no XML deve-se passar parametro vazio.<br  />
+<b>Tipo:</b> Numérico<br  />
+<b>Tamanho:</b> 11 <br  />
+</p>
+</blockquote>
+* Caso o CNPJ do destinatário tenha sido informado, a tag CPF não será incluida.<br  />
+ </td></tr>
+    <tr><td class="paramname">xNome_dest</td><td>Razão Social ou Nome do destinatário <blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> E04<br  />
+Essa TAG não é obrigatória e para que não seja incluida no XML deve-se passar parametro vazio.<br  />
+<b>Tipo:</b> Alfanumérico<br  />
+<b>Tamanho:</b> 2-60 <br  />
+</p>
+</blockquote>
+</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Retorna</dt><dd>O retorno dessa função deve ser o caminho absoluto onde o arquivo foi gerado. </dd></dl>
 
 </div>
@@ -976,7 +1118,7 @@ EX:<br  />
 <p >&zwj;C:/sat/venda_0001.xml </p>
 </blockquote>
 </td></tr>
-    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag obsFiscoDet. Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag obsFiscoDet. Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -1053,7 +1195,7 @@ EX:<br  />
 <p >&zwj;C:/sat/venda_0001.xml </p>
 </blockquote>
 </td></tr>
-    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag imposto. Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag imposto. Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -1138,7 +1280,7 @@ EX:<br  />
 <p >&zwj;C:/sat/venda_0001.xml </p>
 </blockquote>
 </td></tr>
-    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag ICMS00. Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag ICMS00. Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -1236,7 +1378,7 @@ EX:<br  />
 <p >&zwj;C:/sat/venda_0001.xml </p>
 </blockquote>
 </td></tr>
-    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag ICMS40. Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag ICMS40. Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -1325,7 +1467,7 @@ EX:<br  />
 <p >&zwj;C:/sat/venda_0001.xml </p>
 </blockquote>
 </td></tr>
-    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag ICMSSN102. Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag ICMSSN102. Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -1422,7 +1564,7 @@ EX:<br  />
 </blockquote>
 </td></tr>
     <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag ICMSSN900.<br  />
-Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -1531,7 +1673,7 @@ EX:<br  />
 <p >&zwj;C:/sat/venda_0001.xml </p>
 </blockquote>
 </td></tr>
-    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag PISAliq. Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag PISAliq. Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -1633,7 +1775,7 @@ EX:<br  />
 </blockquote>
 </td></tr>
     <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag PISQtde.<br  />
-Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -1718,7 +1860,7 @@ EX:<br  />
 </blockquote>
 </td></tr>
     <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag PISNT.<br  />
-Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -1789,7 +1931,7 @@ EX:<br  />
 <p >&zwj;C:/sat/venda_0001.xml </p>
 </blockquote>
 </td></tr>
-    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag PISSN. Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag PISSN. Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -1877,7 +2019,7 @@ EX:<br  />
 </blockquote>
 </td></tr>
     <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag PISOutr.<br  />
-Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -1994,7 +2136,7 @@ EX:<br  />
 </blockquote>
 </td></tr>
     <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag PISST.<br  />
-Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -2100,7 +2242,7 @@ EX:<br  />
 <p >&zwj;C:/sat/venda_0001.xml </p>
 </blockquote>
 </td></tr>
-    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag COFINSAliq. Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag COFINSAliq. Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -2204,7 +2346,7 @@ EX:<br  />
 <p >&zwj;C:/sat/venda_0001.xml </p>
 </blockquote>
 </td></tr>
-    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag COFINSQtde. Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag COFINSQtde. Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -2291,7 +2433,7 @@ EX:<br  />
 <p >&zwj;C:/sat/venda_0001.xml </p>
 </blockquote>
 </td></tr>
-    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag COFINSNT. Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag COFINSNT. Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -2364,7 +2506,7 @@ EX:<br  />
 <p >&zwj;C:/sat/venda_0001.xml </p>
 </blockquote>
 </td></tr>
-    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag COFINSSN. Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag COFINSSN. Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -2451,7 +2593,7 @@ EX:<br  />
 <p >&zwj;C:/sat/venda_0001.xml </p>
 </blockquote>
 </td></tr>
-    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag obsFiscoDet. Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag obsFiscoDet. Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -2568,7 +2710,7 @@ EX:<br  />
 </blockquote>
 </td></tr>
     <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag obsFiscoDet.<br  />
-Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -2697,7 +2839,7 @@ EX:<br  />
 <p >&zwj;C:/sat/venda_0001.xml </p>
 </blockquote>
 </td></tr>
-    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag obsFiscoDet. Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag obsFiscoDet. Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -2825,7 +2967,7 @@ EX:<br  />
 <p >&zwj;C:/sat/venda_0001.xml </p>
 </blockquote>
 </td></tr>
-    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag obsFiscoDet. Este parametro é retornado da função #informaProduto <blockquote class="doxtable">
+    <tr><td class="paramname">nItem</td><td>Identificação do produto ao qual será acrecentado a tag obsFiscoDet. Este parametro é retornado da função <a class="el" href="group__s0.html#ga11f5c8556b785241c2a004add7c49630" title="InformaProduto Adiciona produto ao xml de venda. 500 ocorrencias no maximo.">InformaProduto</a> <blockquote class="doxtable">
 <p >&zwj;<b>Parametro obrigatório</b> </p>
 </blockquote>
 </td></tr>
@@ -3035,12 +3177,6 @@ Essa TAG não é obrigatória e para que não seja incluida no XML deve-se passa
 <b>Tamanho:</b> 3<br  />
 </p>
 </blockquote>
-<div class="image">
-<img src="C:\Users\bruno.cruz\Pictures\anexo03.JPG" alt=""/>
-</div>
- <div class="image">
-<img src="C:\Users\bruno.cruz\Pictures\anexo03-a.JPG" alt=""/>
-</div>
 </td></tr>
   </table>
   </dd>
@@ -3329,6 +3465,47 @@ ss = SEGUNDO<br  />
   </dd>
 </dl>
 <dl class="section note"><dt>Observação</dt><dd>Os demais parametros são identicos aos da função <a class="el" href="group__s0.html#ga8c864c85c5040162f422c6ec4659926d" title="AbreCupomCancelamento Gera XML de Cancelamento para o SAT.">AbreCupomCancelamento</a></dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chCanc</td><td>informar a chave de acesso do CF-e a ser cancelado, precedida do literal ‘CFe’,<br  />
+acrescentada a validação do formato. <blockquote class="doxtable">
+<p >&zwj;TAG : A06<br  />
+<b>Parametro obrigatório</b><br  />
+<b>Tipo:</b> Alfanumérico<br  />
+<b>Tamanho:</b> 47<br  />
+</p>
+</blockquote>
+</td></tr>
+    <tr><td class="paramname">CNPJ</td><td>Informar o CNPJ da empresa desenvolvedora do Aplicativo Comercial.<br  />
+Deve ser informado apenas números. Caracteres (ponto, barra, hífen, etc.) serão removidos.<br  />
+Caso o CNPJ tenha menos que 14 digitos a tag será preenchida com 0 não significativos.<br  />
+zeros não significativos. <blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> B10<br  />
+<b>Parametro obrigatório</b><br  />
+<b>Tipo:</b> Numérico<br  />
+<b>Tamanho:</b> 14<br  />
+</p>
+</blockquote>
+</td></tr>
+    <tr><td class="paramname">signAC</td><td>Assinatura de (CNPJ Software House + CNPJ Emitente) que gerou o CF-e de cancelamento. <blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> B11<br  />
+<b>Parametro obrigatório</b><br  />
+<b>Tipo:</b> Alfanumérico<br  />
+<b>Tamanho:</b> 1-344<br  />
+</p>
+</blockquote>
+</td></tr>
+    <tr><td class="paramname">numeroCaixa</td><td>Número de 0 a 999 referente ao caixa em que o SAT está conectado. <blockquote class="doxtable">
+<p >&zwj;<b>TAG:</b> B13<br  />
+<b>Parametro obrigatório</b><br  />
+<b>Tipo:</b> Numérico<br  />
+<b>Tamanho:</b> 3<br  />
+</p>
+</blockquote>
+</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Retorna</dt><dd>O retorno dessa função deve ser o caminho absoluto onde o arquivo foi gerado. </dd></dl>
 
 </div>
@@ -3458,11 +3635,23 @@ Caso ocorra algum erro será retornado um código númerico de erro no parâmetr
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base', 
+    themeVariables: {
+      primaryColor: '#f4f4ff',
+      secondaryColor: 'rgba(244,244,255,0.9)',
+      tertiaryColor: '#F9FAFC',
+    },
+  });
+</script>
 </body>
 </html>

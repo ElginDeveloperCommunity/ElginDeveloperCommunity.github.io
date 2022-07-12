@@ -3,7 +3,7 @@ var searchData=
   ['nao_5ffoi_5fpossivel_5finiciar_5fo_5fservico_0',['NAO_FOI_POSSIVEL_INICIAR_O_SERVICO',['../group__g1.html#gga20c9fe838328460e9145419bd484c573a599edd9c1acaa923b74436b7ef36a1ab',1,'codigoerro.h']]],
   ['natureza_5foperacao_5finvalida_1',['NATUREZA_OPERACAO_INVALIDA',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda824b15c1b25f15a576a78a2977bdcc67',1,'codigoerro.h']]],
   ['ncm_5finvalido_2',['NCM_INVALIDO',['../group__g1.html#ggab2fabaa4c9e7eb63e28651ed9515ec7aa44e1a04b0047987672c93587a20080cd',1,'codigoerro.h']]],
-  ['nenhum_5fdado_5fretornado_3',['NENHUM_DADO_RETORNADO',['../group__g1.html#gga2b35be00026d04777fac00ddb2100923a348af8f1dcfc395b11104065469eeccf',1,'codigoerro.h']]],
+  ['nenhum_5fdado_5fretornado_3',['NENHUM_DADO_RETORNADO',['../group__g1.html#ggac34b8a950212ec91c4e28df08684e49ba348af8f1dcfc395b11104065469eeccf',1,'codigoerro.h']]],
   ['nfce_5faliquota_5fimposto_5finvalida_4',['NFCE_ALIQUOTA_IMPOSTO_INVALIDA',['../group__g1.html#gga27af06c8572a3ef6daf38e465dd6f153ac6c4d13ce1271b1519460bf805500830',1,'codigoerro.h']]],
   ['nfce_5fcodigo_5fmunicipio_5ffato_5fgerador_5fissqn_5finvalido_5',['NFCE_CODIGO_MUNICIPIO_FATO_GERADOR_ISSQN_INVALIDO',['../group__g1.html#gga27af06c8572a3ef6daf38e465dd6f153adcef819b2338d1e5e97cb22fcb1d7e27',1,'codigoerro.h']]],
   ['nfce_5fcodigo_5fmunicipio_5fissqn_5finvalido_6',['NFCE_CODIGO_MUNICIPIO_ISSQN_INVALIDO',['../group__g1.html#gga27af06c8572a3ef6daf38e465dd6f153abe2a4e773ba254cd3700cda18d02cec4',1,'codigoerro.h']]],

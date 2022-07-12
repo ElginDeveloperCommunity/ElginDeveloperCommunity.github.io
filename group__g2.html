@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.4-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,8 +18,15 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<style>
+  .mermaid {
+    display: flex;
+    justify-content: center;
+  }
+</style>
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -166,13 +174,10 @@ Bematech SATGO<br  />
 </p>
 </blockquote>
 <p>Convenções usadas nas chamadas das funções da biblioteca:<br  />
-<b>Windows</b><br  />
+ Windows**<br  />
 </p><blockquote class="doxtable">
-<p >&zwj;__stdcall </p>
-</blockquote>
-<p><b>Linux</b><br  />
-</p><blockquote class="doxtable">
-<p >&zwj;__cdecl<br  />
+<p >&zwj;__stdcall Linux**<br  />
+__cdecl<br  />
 </p>
 </blockquote>
 <h3>Arquivo de configuracao</h3>
@@ -256,7 +261,7 @@ Bematech SATGO<br  />
 <p><br  />
 <br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo json para uso com Serviço.</em> </b></p>
+<p >&zwj;**<em> Exemplo json para uso com Serviço.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
@@ -269,13 +274,12 @@ Bematech SATGO<br  />
 <div class="line">       &quot;cUF&quot;: &quot;15&quot;</div>
 <div class="line">     }]</div>
 <div class="line">}</div>
-</div><!-- fragment --><p ><b><br  />
+</div><!-- fragment --><p ><br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em> </b></p>
+<p >&zwj;**<em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">SAT:|AtivarSAT:|00008:|2:|123456789:|14200166000166:|15</div>
-</div><!-- fragment --><p> </b></p>
-
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="ga403fca8ecae9abeb9dd05b5b81ffa61e" name="ga403fca8ecae9abeb9dd05b5b81ffa61e"></a>
@@ -320,9 +324,8 @@ Bematech SATGO<br  />
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será um string informando resultado da operação.</dd></dl>
 <p><br  />
-<br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo json para uso com Serviço.</em> </b></p>
+<p >&zwj;Exemplo json para uso com Serviço </p>
 </blockquote>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
@@ -333,13 +336,12 @@ Bematech SATGO<br  />
 <div class="line">           &quot;dadosVenda&quot;: &quot;&lt;?xml version=\&quot;1.0\&quot;?&gt; &lt;CFe&gt; &lt;infCFe versaoDadosEnt=\&quot;0.07\&quot;&gt; &lt;ide&gt;&lt;CNPJ&gt;16716114000172&lt;/CNPJ&gt;&lt;signAC&gt;SGR-SAT SISTEMA DE GESTAO E RETAGUARDA DO SAT&lt;/signAC&gt;&lt;numeroCaixa&gt;001&lt;/numeroCaixa&gt; &lt;/ide&gt;&lt;emit&gt;&lt;CNPJ&gt;14200166000166&lt;/CNPJ&gt;&lt;IE&gt;111111111111&lt;/IE&gt;&lt;indRatISSQN&gt;N&lt;/indRatISSQN&gt;&lt;/emit&gt;&lt;dest&gt;&lt;/dest&gt;&lt;det nItem=\&quot;1\&quot;&gt; &lt;prod&gt; &lt;cProd&gt;00000000000001&lt;/cProd&gt; &lt;xProd&gt;PRODUTO NFCE 1&lt;/xProd&gt; &lt;NCM&gt;94034000&lt;/NCM&gt; &lt;CFOP&gt;5102&lt;/CFOP&gt; &lt;uCom&gt;UN&lt;/uCom&gt; &lt;qCom&gt;1.0000&lt;/qCom&gt; &lt;vUnCom&gt;3.51&lt;/vUnCom&gt; &lt;indRegra&gt;T&lt;/indRegra&gt; &lt;/prod&gt; &lt;imposto&gt; &lt;ICMS&gt;&lt;ICMS00&gt;&lt;Orig&gt;0&lt;/Orig&gt;&lt;CST&gt;00&lt;/CST&gt;&lt;pICMS&gt;7.00&lt;/pICMS&gt;&lt;/ICMS00&gt; &lt;/ICMS&gt;&lt;PIS&gt;&lt;PISAliq&gt;&lt;CST&gt;01&lt;/CST&gt;&lt;vBC&gt;6.51&lt;/vBC&gt;&lt;pPIS&gt;0.0165&lt;/pPIS&gt;&lt;/PISAliq&gt; &lt;/PIS&gt; &lt;COFINS&gt;&lt;COFINSAliq&gt;&lt;CST&gt;01&lt;/CST&gt;&lt;vBC&gt;6.51&lt;/vBC&gt;&lt;pCOFINS&gt;0.0760&lt;/pCOFINS&gt;&lt;/COFINSAliq&gt; &lt;/COFINS&gt; &lt;/imposto&gt; &lt;/det&gt; &lt;total&gt;&lt;DescAcrEntr&gt;&lt;vDescSubtot&gt;0.51&lt;/vDescSubtot&gt;&lt;/DescAcrEntr&gt;&lt;vCFeLei12741&gt;0.56&lt;/vCFeLei12741&gt;&lt;/total&gt;&lt;pgto&gt; &lt;MP&gt; &lt;cMP&gt;01&lt;/cMP&gt; &lt;vMP&gt;6.51&lt;/vMP&gt; &lt;/MP&gt;&lt;/pgto&gt;&lt;infAdic&gt; &lt;infCpl&gt;Trib aprox R$ 0,36 federal, R$ 1,24 estadual e R$ 0,00 municipal&amp;lt;br&amp;gt;CAIXA: 001 OPERADOR: ROOT&lt;/infCpl&gt;&lt;/infAdic&gt;&lt;/infCFe&gt;&lt;/CFe&gt;&quot;</div>
 <div class="line">     }]</div>
 <div class="line">}</div>
-</div><!-- fragment --><p ><b><br  />
+</div><!-- fragment --><p ><br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em> </b></p>
+<p >&zwj;Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos </p>
 </blockquote>
 <div class="fragment"><div class="line">SAT:|EnviarDadosVenda:|00009:|123456789:|&lt;?xml version=\&quot;1.0\&quot;?&gt; &lt;CFe&gt; &lt;infCFe versaoDadosEnt=\&quot;0.07\&quot;&gt; &lt;ide&gt;&lt;CNPJ&gt;16716114000172&lt;/CNPJ&gt;&lt;signAC&gt;SGR-SAT SISTEMA DE GESTAO E RETAGUARDA DO SAT&lt;/signAC&gt;&lt;numeroCaixa&gt;001&lt;/numeroCaixa&gt; &lt;/ide&gt;&lt;emit&gt;&lt;CNPJ&gt;14200166000166&lt;/CNPJ&gt;&lt;IE&gt;111111111111&lt;/IE&gt;&lt;indRatISSQN&gt;N&lt;/indRatISSQN&gt;&lt;/emit&gt;&lt;dest&gt;&lt;/dest&gt;&lt;det nItem=\&quot;1\&quot;&gt; &lt;prod&gt; &lt;cProd&gt;00000000000001&lt;/cProd&gt; &lt;xProd&gt;PRODUTO NFCE 1&lt;/xProd&gt; &lt;NCM&gt;94034000&lt;/NCM&gt; &lt;CFOP&gt;5102&lt;/CFOP&gt; &lt;uCom&gt;UN&lt;/uCom&gt; &lt;qCom&gt;1.0000&lt;/qCom&gt; &lt;vUnCom&gt;3.51&lt;/vUnCom&gt; &lt;indRegra&gt;T&lt;/indRegra&gt; &lt;/prod&gt; &lt;imposto&gt; &lt;ICMS&gt;&lt;ICMS00&gt;&lt;Orig&gt;0&lt;/Orig&gt;&lt;CST&gt;00&lt;/CST&gt;&lt;pICMS&gt;7.00&lt;/pICMS&gt;&lt;/ICMS00&gt; &lt;/ICMS&gt;&lt;PIS&gt;&lt;PISAliq&gt;&lt;CST&gt;01&lt;/CST&gt;&lt;vBC&gt;6.51&lt;/vBC&gt;&lt;pPIS&gt;0.0165&lt;/pPIS&gt;&lt;/PISAliq&gt; &lt;/PIS&gt; &lt;COFINS&gt;&lt;COFINSAliq&gt;&lt;CST&gt;01&lt;/CST&gt;&lt;vBC&gt;6.51&lt;/vBC&gt;&lt;pCOFINS&gt;0.0760&lt;/pCOFINS&gt;&lt;/COFINSAliq&gt; &lt;/COFINS&gt; &lt;/imposto&gt; &lt;/det&gt; &lt;total&gt;&lt;DescAcrEntr&gt;&lt;vDescSubtot&gt;0.51&lt;/vDescSubtot&gt;&lt;/DescAcrEntr&gt;&lt;vCFeLei12741&gt;0.56&lt;/vCFeLei12741&gt;&lt;/total&gt;&lt;pgto&gt; &lt;MP&gt; &lt;cMP&gt;01&lt;/cMP&gt; &lt;vMP&gt;6.51&lt;/vMP&gt; &lt;/MP&gt;&lt;/pgto&gt;&lt;infAdic&gt; &lt;infCpl&gt;Trib aprox R$ 0,36 federal, R$ 1,24 estadual e R$ 0,00 municipal&amp;lt;br&amp;gt;CAIXA: 001 OPERADOR: ROOT&lt;/infCpl&gt;&lt;/infAdic&gt;&lt;/infCFe&gt;&lt;/CFe&gt;</div>
-</div><!-- fragment --><p> </b></p>
-
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="gacfab3974c80bd4f3c716345a14562a9a" name="gacfab3974c80bd4f3c716345a14562a9a"></a>
@@ -391,7 +393,7 @@ Bematech SATGO<br  />
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>O retorno, em caso de sucesso, será uma string informando o resultado da operação. <br  />
  <blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo JSON para uso com Serviço. </em> </b></p>
+<p >&zwj;**<em> Exemplo JSON para uso com Serviço. </em>** </p>
 </blockquote>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
@@ -408,7 +410,7 @@ Bematech SATGO<br  />
 <div class="line">}</div>
 </div><!-- fragment --> <br  />
  <blockquote class="doxtable">
-<p ><b>&zwj;<b><em> Exemplo de comando com separadores para uso com Serviço. </em> </b></b></p>
+<p >&zwj;**<em> Exemplo de comando com separadores para uso com Serviço. </em>** </p>
 </blockquote>
 <div class="fragment"><div class="line">SAT:|CancelarUltimaVenda:|00001:|123456789:|CFe13181114200166000166599000162500104927318337:|&lt;CFeCanc&gt;&lt;infCFe chCanc=\&quot;CFe13181114200166000166599000162500104927318337\&quot;&gt;&lt;ide&gt;&lt;CNPJ&gt;16716114000172&lt;/CNPJ&gt;&lt;signAC&gt;MD2Nof/O0tQMPKiYeeAydSjYt7YV9kU0nWKZGXHVdYIzR2W9Z6tgXni/Y5bnjmUAk8MkqlBJIiOOIskKCjJ086k7vAP0EU5cBRYj/nzHUiRdu9AVD7WRfVs00BDyb5fsnnKg7gAXXH6SBgCxG9yjAkxJ0l2E2idsWBAJ5peQEBZqtHytRUC+FLaSfd3+66QNxIBlDwQIRzUGPaU6fvErVDSfMUf8WpkwnPz36fCQnyLypqe/5mbox9pt3RCbbXcYqnR/4poYGr9M9Kymj4/PyX9xGeiXwbgzOOHNIU5M/aAs0rulXz948bZla0eXABgEcp6mDkTzweLPZTbmOhX+eA==&lt;/signAC&gt;&lt;numeroCaixa&gt;001&lt;/numeroCaixa&gt;&lt;/ide&gt;&lt;emit/&gt;&lt;dest&gt;&lt;/dest&gt;&lt;total/&gt;&lt;/infCFe&gt;&lt;/CFeCanc&gt;</div>
 </div><!-- fragment --> </dd></dl>
@@ -441,7 +443,7 @@ Bematech SATGO<br  />
 <p><br  />
 <br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo json para uso com Serviço.</em> </b></p>
+<p >&zwj;**<em> Exemplo json para uso com Serviço.</em>** </p>
 </blockquote>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
@@ -450,13 +452,12 @@ Bematech SATGO<br  />
 <div class="line">        &quot;numSessao&quot;: 00004</div>
 <div class="line">     }]</div>
 <div class="line">}</div>
-</div><!-- fragment --><p ><b><br  />
+</div><!-- fragment --><p ><br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em> </b></p>
+<p >&zwj;**<em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em>** </p>
 </blockquote>
 <div class="fragment"><div class="line">SAT:|ConsultarSat:|00004</div>
-</div><!-- fragment --><p> </b></p>
-
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="ga5dc413d155b0cce13065fbc8bcd62647" name="ga5dc413d155b0cce13065fbc8bcd62647"></a>
@@ -504,7 +505,7 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <p><br  />
 <br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo json para uso com Serviço.</em> </b></p>
+<p >&zwj;**<em> Exemplo json para uso com Serviço.</em>** </p>
 </blockquote>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
@@ -513,13 +514,12 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <div class="line">        &quot;numSessao&quot;: 00002</div>
 <div class="line">     }]</div>
 <div class="line">}</div>
-</div><!-- fragment --><p ><b><br  />
+</div><!-- fragment --><p ><br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em> </b></p>
+<p >&zwj;**<em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em>** </p>
 </blockquote>
 <div class="fragment"><div class="line">SAT:|TesteFimAFim:|00002</div>
-</div><!-- fragment --><p> </b></p>
-
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="ga2b343adc1e85a4204ffb88219fcddd2e" name="ga2b343adc1e85a4204ffb88219fcddd2e"></a>
@@ -559,7 +559,7 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <p><br  />
 <br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo json para uso com Serviço.</em> </b></p>
+<p >&zwj;**<em> Exemplo json para uso com Serviço.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
@@ -569,13 +569,12 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <div class="line">        &quot;codAtivacao&quot;: &quot;123456789&quot;</div>
 <div class="line">     }]</div>
 <div class="line">}</div>
-</div><!-- fragment --><p ><b><br  />
+</div><!-- fragment --><p ><br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em> </b></p>
+<p >&zwj;**<em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">SAT:|ConsultarStatusOperacional:|00002:|123456789</div>
-</div><!-- fragment --><p> </b></p>
-
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="gaae8d194e2b3d6b0affaf22fb3d68e10f" name="gaae8d194e2b3d6b0affaf22fb3d68e10f"></a>
@@ -622,7 +621,7 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <p><br  />
 <br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo json para uso com Serviço.</em> </b></p>
+<p >&zwj;**<em> Exemplo json para uso com Serviço.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
@@ -633,13 +632,12 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <div class="line">        &quot;cNumeroDeSessao&quot;: &quot;1800&quot;</div>
 <div class="line">     }]</div>
 <div class="line">}</div>
-</div><!-- fragment --><p ><b><br  />
+</div><!-- fragment --><p ><br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em> </b></p>
+<p >&zwj;**<em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">SAT:|ConsultarNumeroSessao:|00002:|123456789:|1800</div>
-</div><!-- fragment --><p> </b></p>
-
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="gae3aa97e65d4617f4733c1c0e63abd00e" name="gae3aa97e65d4617f4733c1c0e63abd00e"></a>
@@ -677,7 +675,7 @@ com a Secretaria da Fazenda estão funcionando.</p>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>O retorno, em caso de sucesso, será uma string informando o resultado da operação. <br  />
  <blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo JSON para uso com Serviço. </em> </b></p>
+<p >&zwj;**<em> Exemplo JSON para uso com Serviço. **</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
@@ -692,7 +690,7 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <div class="line">}</div>
 </div><!-- fragment --> <br  />
  <blockquote class="doxtable">
-<p ><b>&zwj;<b><em> Exemplo de comando com separadores para uso com Serviço. </em> </b></b></p>
+<p >&zwj;**<em> Exemplo de comando com separadores para uso com Serviço. **</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">SAT:|ConsultarUltimaSessaoFiscal:|00001:|123456789</div>
 </div><!-- fragment --> </dd></dl>
@@ -743,7 +741,7 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <p><br  />
 <br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo json para uso com Serviço.</em> </p><div class="fragment"><div class="line">{</div>
+<p >&zwj;**<em> Exemplo json para uso com Serviço.**</em> </p><div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
 <div class="line">    &quot;Comando&quot;: &quot;ConfigurarInterfaceDeRede&quot;,</div>
 <div class="line">    &quot;Parametros&quot;: [{</div>
@@ -752,13 +750,11 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <div class="line">        &quot;dadosConfiguracao&quot;: &quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF - 8\&quot;?&gt;&lt;config&gt;&lt;tipoInter&gt;ETHE&lt;/tipoInter&gt;&lt;tipoLan&gt;DHCP&lt;/tipoLan&gt;&lt;/config&gt;&quot;</div>
 <div class="line">     }]</div>
 <div class="line">}</div>
-</div><!-- fragment --><p> </b></p>
-</blockquote>
+</div><!-- fragment --> </blockquote>
 <p><br  />
 </p><blockquote class="doxtable">
-<p ><b>&zwj;<b><em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em> </p><div class="fragment"><div class="line">SAT:|ConfigurarInterfaceDeRede:|00001:|123456789:|&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF - 8\&quot;?&gt;&lt;config&gt;&lt;tipoInter&gt;ETHE&lt;/tipoInter&gt;&lt;tipoLan&gt;DHCP&lt;/tipoLan&gt;&lt;/config&gt;</div>
-</div><!-- fragment --><p> </b></b></p>
-</blockquote>
+<p >&zwj;**<em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.**</em> </p><div class="fragment"><div class="line">SAT:|ConfigurarInterfaceDeRede:|00001:|123456789:|&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF - 8\&quot;?&gt;&lt;config&gt;&lt;tipoInter&gt;ETHE&lt;/tipoInter&gt;&lt;tipoLan&gt;DHCP&lt;/tipoLan&gt;&lt;/config&gt;</div>
+</div><!-- fragment --> </blockquote>
 
 </div>
 </div>
@@ -813,7 +809,7 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <p><br  />
 <br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo json para uso com Serviço.</em> </b></p>
+<p >&zwj;**<em> Exemplo json para uso com Serviço.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
@@ -825,13 +821,12 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <div class="line">        &quot;assinaturaAC&quot;: &quot;SGR-SAT SISTEMA DE GESTAO E RETAGUARDA DO SAT&quot;</div>
 <div class="line">     }]</div>
 <div class="line">}</div>
-</div><!-- fragment --><p ><b><br  />
+</div><!-- fragment --><p ><br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em> </b></p>
+<p >&zwj;**<em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">SAT:|AssociarAssinatura:|00002:|123456789:|16716114000172:|SGR-SAT SISTEMA DE GESTAO E RETAGUARDA DO SAT</div>
-</div><!-- fragment --><p> </b></p>
-
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="gad70e1ce0b0e09c7c5b86c9da990a1b6f" name="gad70e1ce0b0e09c7c5b86c9da990a1b6f"></a>
@@ -871,7 +866,7 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <p><br  />
 <br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo json para uso com Serviço.</em> </b></p>
+<p >&zwj;**<em> Exemplo json para uso com Serviço.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
@@ -881,13 +876,12 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <div class="line">        &quot;codAtivacao&quot;: &quot;123456789&quot;,</div>
 <div class="line">     }]</div>
 <div class="line">}</div>
-</div><!-- fragment --><p ><b><br  />
+</div><!-- fragment --><p ><br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em> </b></p>
+<p >&zwj;**<em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">SAT:|AtualizarSoftwareSAT:|00005:|123456789</div>
-</div><!-- fragment --><p> </b></p>
-
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="ga427d70f5890ec157f91550eb092f097d" name="ga427d70f5890ec157f91550eb092f097d"></a>
@@ -927,7 +921,7 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <p><br  />
 <br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo json para uso com Serviço.</em> </b></p>
+<p >&zwj;**<em> Exemplo json para uso com Serviço.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
@@ -937,13 +931,12 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <div class="line">        &quot;codAtivacao&quot;: &quot;123456789&quot;</div>
 <div class="line">     }]</div>
 <div class="line">}</div>
-</div><!-- fragment --><p ><b><br  />
+</div><!-- fragment --><p ><br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em> </b></p>
+<p >&zwj;**<em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">SAT:|ExtrairLogs:|00006:|123456789</div>
-</div><!-- fragment --><p> </b></p>
-
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="ga81d97b87e7633d45c2d8069ddff4f530" name="ga81d97b87e7633d45c2d8069ddff4f530"></a>
@@ -983,7 +976,7 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <p><br  />
 <br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo json para uso com Serviço.</em> </b></p>
+<p >&zwj;**<em> Exemplo json para uso com Serviço.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
@@ -993,13 +986,12 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <div class="line">        &quot;codAtivacao&quot;: &quot;123456789&quot;</div>
 <div class="line">     }]</div>
 <div class="line">}</div>
-</div><!-- fragment --><p ><b><br  />
+</div><!-- fragment --><p ><br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em> </b></p>
+<p >&zwj;**<em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">SAT:|BloquearSAT:|00008:|123456789</div>
-</div><!-- fragment --><p> </b></p>
-
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="gaf459e9346eb1f443030f02bb8ac33c6b" name="gaf459e9346eb1f443030f02bb8ac33c6b"></a>
@@ -1039,7 +1031,7 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <p><br  />
 <br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo json para uso com Serviço.</em> </b></p>
+<p >&zwj;**<em> Exemplo json para uso com Serviço.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
@@ -1049,13 +1041,12 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <div class="line">        &quot;codAtivacao&quot;: &quot;123456789&quot;</div>
 <div class="line">     }]</div>
 <div class="line">}</div>
-</div><!-- fragment --><p ><b><br  />
+</div><!-- fragment --><p ><br  />
 </p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em> </b></p>
+<p >&zwj;**<em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.**</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">SAT:|DesbloquearSAT:|00008:|123456789</div>
-</div><!-- fragment --><p> </b></p>
-
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="ga1a972ef2847ce97a80ce4704ecb3f442" name="ga1a972ef2847ce97a80ce4704ecb3f442"></a>
@@ -1107,33 +1098,13 @@ com a Secretaria da Fazenda estão funcionando.</p>
     <tr><td class="paramname">numSessao</td><td>- Parâmetro do tipo numérico que informa o numero de sessão.</td></tr>
     <tr><td class="paramname">codAtivacao</td><td>- Parâmetro do tipo caracter que informa o código de ativação definido pelo usuário.</td></tr>
     <tr><td class="paramname">opcao</td><td>- Parâmetro do tipo inteiro que especifica qual opcao da troca : (1) Troca de Código tradicional <br  />
- (2) Troca usando Código de Emergência. </td></tr>
+ (2) Troca usando Código de Emergência.</td></tr>
+    <tr><td class="paramname">novoCodigo</td><td>- Novo código de ativação a ser salvo no equipamento.</td></tr>
+    <tr><td class="paramname">confNovoCodigo</td><td>- Confirmação do novo código de ativação.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd></dd></dl>
-<p><br  />
-<br  />
-</p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo json para uso com Serviço.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">{</div>
-<div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
-<div class="line">    &quot;Comando&quot;: &quot;TrocarCodigoDeAtivacao&quot;,</div>
-<div class="line">    &quot;Parametros&quot;: [{</div>
-<div class="line">        &quot;numSessao&quot;: 00009,</div>
-<div class="line">        &quot;codAtivacao&quot;: &quot;123456789&quot;,</div>
-<div class="line">        &quot;opcao&quot;: 1,</div>
-<div class="line">        &quot;novoCodigo&quot;: &quot;1234567890&quot;,</div>
-<div class="line">        &quot;confNovoCodigo&quot;: &quot;1234567890&quot;</div>
-<div class="line">     }]</div>
-<div class="line">}</div>
-</div><!-- fragment --><p ><b><br  />
-</p><blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo de comando com separadores para uso do Serviço no modo troca de arquivos.</em> </b></p>
-</blockquote>
-<div class="fragment"><div class="line">SAT:|TrocarCodigoDeAtivacao:|00009:|123456789:|1:|1234567890:|1234567890</div>
-</div><!-- fragment --><p> </b></p>
+<dl class="section return"><dt>Retorna</dt><dd>A função deverá retornar um valor do tipo string contendo os dados separados por pipe “|”. Segue a estrutura do retorno de dados Retorno: “numeroSessao|EEEEE|mensagem|cod|mensagemSEFAZ” </dd></dl>
 
 </div>
 </div>
@@ -1157,7 +1128,7 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <br  />
  A função bem-sucedida deve retornar ??.??.??, que representa a versão da DLL em que esta função foi chamada; cada <b>?</b> é um dígito entre 0 e 9. <br  />
  <blockquote class="doxtable">
-<p >&zwj;<b><em> Exemplo JSON para uso com Serviço. </em> </b></p>
+<p >&zwj;**<em> Exemplo JSON para uso com Serviço. **</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;Modulo&quot;: &quot;SAT&quot;,</div>
@@ -1171,7 +1142,7 @@ com a Secretaria da Fazenda estão funcionando.</p>
 <div class="line">}</div>
 </div><!-- fragment --> <br  />
  <blockquote class="doxtable">
-<p ><b>&zwj;<b><em> Exemplo de comando com separadores para uso com Serviço. </em> </b></b></p>
+<p >&zwj;**<em> Exemplo de comando com separadores para uso com Serviço. **</em> </p>
 </blockquote>
 <div class="fragment"><div class="line">SAT:|GetVersaoDLL</div>
 </div><!-- fragment --> </dd></dl>
@@ -1344,11 +1315,23 @@ com a Secretaria da Fazenda estão funcionando.</p>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base', 
+    themeVariables: {
+      primaryColor: '#f4f4ff',
+      secondaryColor: 'rgba(244,244,255,0.9)',
+      tertiaryColor: '#F9FAFC',
+    },
+  });
+</script>
 </body>
 </html>

@@ -8,5 +8,5 @@ var searchData=
   ['funções_20de_20impressão_5',['Funções de Impressão',['../group__g54.html',1,'']]],
   ['funções_20de_20personalização_6',['Funções de Personalização',['../group__g56.html',1,'']]],
   ['funcoes_20nfc_2de_20e1_7',['Funcoes NFC-e E1',['../group__g50.html',1,'']]],
-  ['funções_8',['Funções',['../group__sp20.html',1,'(<em>Namespace</em> global)'],['../group__sp31.html',1,'(<em>Namespace</em> global)']]]
+  ['funções_8',['Funções',['../group__sp31.html',1,'(<em>Namespace</em> global)'],['../group__sp20.html',1,'(<em>Namespace</em> global)']]]
 ];

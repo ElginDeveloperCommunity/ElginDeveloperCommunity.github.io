@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.4-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plataforma de Comunicação Elgin: Código-Fonte de C:/Users/gabriel.franzeri/Documents/Elgin/Docs/E1_Etiqueta/exportafuncoes.h</title>
+<title>Plataforma de Comunicação Elgin: Código-Fonte de src/E1_Etiqueta/exportafuncoes.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,8 +18,15 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<style>
+  .mermaid {
+    display: flex;
+    justify-content: center;
+  }
+</style>
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -293,18 +301,18 @@ $(document).ready(function(){initNavTree('_e1___etiqueta_2exportafuncoes_8h_sour
 <div class="line"><a id="l03068" name="l03068"></a><span class="lineno"> 3068</span>    E1_ETIQUETASHARED_EXPORT STDCALL</div>
 <div class="line"><a id="l03070" name="l03070"></a><span class="lineno"><a class="line" href="group___m0.html#ga599cd446dffa98a0b8843373cbc92a15"> 3070</a></span>    <span class="keywordtype">char</span> *<a class="code hl_function" href="group___m1.html#ga599cd446dffa98a0b8843373cbc92a15">GetVersaoDLL</a>();</div>
 <div class="line"><a id="l03071" name="l03071"></a><span class="lineno"> 3071</span> </div>
-<div class="line"><a id="l03175" name="l03175"></a><span class="lineno"> 3175</span>    E1_ETIQUETASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l03177" name="l03177"></a><span class="lineno"><a class="line" href="group___m0.html#ga21d8875002b3fd505691355d044dd645"> 3177</a></span>    <span class="keywordtype">int</span> *<a class="code hl_function" href="group___m1.html#ga44b4bdd6ff22dddf5ce8945bcff10f2a">DirectIO</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* writeData, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> writeNum, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* readData, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> readNum);</div>
-<div class="line"><a id="l03178" name="l03178"></a><span class="lineno"> 3178</span> </div>
-<div class="line"><a id="l03243" name="l03243"></a><span class="lineno"> 3243</span>    E1_ETIQUETASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l03245" name="l03245"></a><span class="lineno"><a class="line" href="group___m0.html#ga529861151c23db0a2d64829aac45e94b"> 3245</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m0.html#ga529861151c23db0a2d64829aac45e94b">DespejarArquivo</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keyword">const</span> <span class="keywordtype">char</span> *caminho);</div>
-<div class="line"><a id="l03246" name="l03246"></a><span class="lineno"> 3246</span> </div>
-<div class="line"><a id="l03248" name="l03248"></a><span class="lineno"> 3248</span>    E1_ETIQUETASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l03250" name="l03250"></a><span class="lineno"> 3250</span>    <span class="keywordtype">int</span> DespejarArquivoLF(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keyword">const</span> <span class="keywordtype">char</span> *caminho);</div>
-<div class="line"><a id="l03251" name="l03251"></a><span class="lineno"> 3251</span>}</div>
+<div class="line"><a id="l03174" name="l03174"></a><span class="lineno"> 3174</span>    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l03176" name="l03176"></a><span class="lineno"><a class="line" href="group___m0.html#ga21d8875002b3fd505691355d044dd645"> 3176</a></span>    <span class="keywordtype">int</span> *<a class="code hl_function" href="group___m1.html#ga44b4bdd6ff22dddf5ce8945bcff10f2a">DirectIO</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* writeData, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> writeNum, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* readData, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> readNum);</div>
+<div class="line"><a id="l03177" name="l03177"></a><span class="lineno"> 3177</span> </div>
+<div class="line"><a id="l03242" name="l03242"></a><span class="lineno"> 3242</span>    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l03244" name="l03244"></a><span class="lineno"><a class="line" href="group___m0.html#ga529861151c23db0a2d64829aac45e94b"> 3244</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m0.html#ga529861151c23db0a2d64829aac45e94b">DespejarArquivo</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keyword">const</span> <span class="keywordtype">char</span> *caminho);</div>
+<div class="line"><a id="l03245" name="l03245"></a><span class="lineno"> 3245</span> </div>
+<div class="line"><a id="l03247" name="l03247"></a><span class="lineno"> 3247</span>    E1_ETIQUETASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l03249" name="l03249"></a><span class="lineno"> 3249</span>    <span class="keywordtype">int</span> DespejarArquivoLF(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span> *modelo, <span class="keyword">const</span> <span class="keywordtype">char</span> *conexao, <span class="keywordtype">int</span> param, <span class="keyword">const</span> <span class="keywordtype">char</span> *caminho);</div>
+<div class="line"><a id="l03250" name="l03250"></a><span class="lineno"> 3250</span>}</div>
+<div class="line"><a id="l03251" name="l03251"></a><span class="lineno"> 3251</span> </div>
 <div class="line"><a id="l03252" name="l03252"></a><span class="lineno"> 3252</span> </div>
-<div class="line"><a id="l03253" name="l03253"></a><span class="lineno"> 3253</span> </div>
-<div class="line"><a id="l03254" name="l03254"></a><span class="lineno"> 3254</span><span class="preprocessor">#endif </span><span class="comment">// EXPORTAFUNCOES_H</span></div>
+<div class="line"><a id="l03253" name="l03253"></a><span class="lineno"> 3253</span><span class="preprocessor">#endif </span><span class="comment">// EXPORTAFUNCOES_H</span></div>
 <div class="ttc" id="agroup___m0_html_ga050843aae323d2a0ae747b0478627335"><div class="ttname"><a href="group___m0.html#ga050843aae323d2a0ae747b0478627335">Limpa</a></div><div class="ttdeci">int Limpa(int keepProps)</div><div class="ttdoc">Comando para limpar a etiqueta, isto é, remover todos os campos criados.</div></div>
 <div class="ttc" id="agroup___m0_html_ga1ed4367feeae4f5daa20d54dc309f117"><div class="ttname"><a href="group___m0.html#ga1ed4367feeae4f5daa20d54dc309f117">Reset</a></div><div class="ttdeci">int Reset(int tipo, const char *modelo, const char *conexao, int param)</div><div class="ttdoc">Aplica um reset na impressora.</div></div>
 <div class="ttc" id="agroup___m0_html_ga2feb22d19c8ab021c57c63b23cbe9a2e"><div class="ttname"><a href="group___m0.html#ga2feb22d19c8ab021c57c63b23cbe9a2e">Status</a></div><div class="ttdeci">char * Status(int tipo, const char *modelo, const char *conexao, int param)</div><div class="ttdoc">Retorna uma sequência de 8 bytes que descreve o status geral da impressora.</div></div>
@@ -355,12 +363,24 @@ $(document).ready(function(){initNavTree('_e1___etiqueta_2exportafuncoes_8h_sour
 <div class="ttc" id="agroup__ge3_html_ga3b3da89d8749b8e1d57b5b53dc797399"><div class="ttname"><a href="group__ge3.html#ga3b3da89d8749b8e1d57b5b53dc797399">GerarBox</a></div><div class="ttdeci">int GerarBox(int coordY, int coordX, int comprimento, int altura, int grosBordasH, int grosBordasV)</div><div class="ttdoc">Gera um box na etiqueta.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_8094c0841e6a2a14f983857de26f1179.html">E1_Etiqueta</a></li><li class="navelem"><b>exportafuncoes.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3cb698a5a852fa1b4a54f3c3f5871eff.html">E1_Etiqueta</a></li><li class="navelem"><b>exportafuncoes.h</b></li>
     <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base', 
+    themeVariables: {
+      primaryColor: '#f4f4ff',
+      secondaryColor: 'rgba(244,244,255,0.9)',
+      tertiaryColor: '#F9FAFC',
+    },
+  });
+</script>
 </body>
 </html>

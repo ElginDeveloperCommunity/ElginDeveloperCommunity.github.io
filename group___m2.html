@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.4-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,8 +18,15 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<style>
+  .mermaid {
+    display: flex;
+    justify-content: center;
+  }
+</style>
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -1188,7 +1196,7 @@ A função bem sucedida deve retornar 0.<br  />
 Segue tabela de tipos disponíveis: Valor | Modelo 101 | Padrão PDF417 102 | QRCode Simples PDF417 103 | QRCode Tipo 1 104 | QRCode Tipo 2</td></tr>
     <tr><td class="paramname">data</td><td>- Parametro do tipo caractere que deve receber as informações que compõe o código.<br  />
  </td></tr>
-    <tr><td class="paramname">nivelCorrecao</td><td>- Define o nível de correção a ser configurado para o QRCode.<br  />
+    <tr><td class="paramname">errLevel</td><td>- Define o nível de correção a ser configurado para o QRCode.<br  />
 Conforme tabela a seguir: <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Nivel de correção    </th></tr>
@@ -1653,7 +1661,7 @@ A função bem sucedida deve retornar 0.<br  />
   <table class="params">
     <tr><td class="paramname">handle</td><td>- Parâmetro do tipo ponteiro que apontará o espaço na memória referente a impressora.<br  />
  </td></tr>
-    <tr><td class="paramname">posicao</td><td>- Parâmetro tipo numérico para indica a posição.<br  />
+    <tr><td class="paramname">align</td><td>- Parâmetro tipo numérico para indica a posição.<br  />
 Os valores possiveis são: <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Descrição    </th></tr>
@@ -2368,6 +2376,8 @@ A função bem sucedida deve retornar 0.<br  />
 . </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
+    <tr><td class="paramname">handle</td><td>- Parâmetro do tipo ponteiro que apontará o espaço na memória referente a impressora.<br  />
+ </td></tr>
     <tr><td class="paramname">data</td><td>- Parametro do tipo caracter com a informação que será enviada ao buffer para impressão.<br  />
  </td></tr>
     <tr><td class="paramname">alignment</td><td>- Parametro do tipo inteiro que defini a posição do texto a ser impresso.<br  />
@@ -2513,7 +2523,7 @@ A função bem sucedida deve retornar 0.<br  />
   <table class="params">
     <tr><td class="paramname">handle</td><td>- Parametro do tipo ponteiro que apontará o espaço na memória referente a impressora.<br  />
  </td></tr>
-    <tr><td class="paramname">-</td><td>Parametro do tipo inteiro que define o modelo do código de barras a ser impresso.<br  />
+    <tr><td class="paramname">bcType</td><td>- Parametro do tipo inteiro que define o modelo do código de barras a ser impresso.<br  />
 Segue tabela de tipos disponíveis: <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadCenter">Modelo   </th><th class="markdownTableHeadCenter">Quantidade de dados   </th><th class="markdownTableHeadCenter">Caracteres   </th><th class="markdownTableHeadCenter">Regras    </th></tr>
@@ -2845,7 +2855,7 @@ A função bem sucedida deve retornar 0.<br  />
   <table class="params">
     <tr><td class="paramname">handle</td><td>- Parametro do tipo ponteiro que apontará o espaço na memória referente a impressora.<br  />
  </td></tr>
-    <tr><td class="paramname">posicao</td><td>- Parametro tipo numérico para indica a posição.<br  />
+    <tr><td class="paramname">position</td><td>- Parametro tipo numérico para indica a posição.<br  />
 Os valores possiveis são: <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Valor   </th><th class="markdownTableHeadNone">Descrição    </th></tr>
@@ -3212,11 +3222,23 @@ A função bem sucedida deve retornar 0.<br  />
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base', 
+    themeVariables: {
+      primaryColor: '#f4f4ff',
+      secondaryColor: 'rgba(244,244,255,0.9)',
+      tertiaryColor: '#F9FAFC',
+    },
+  });
+</script>
 </body>
 </html>

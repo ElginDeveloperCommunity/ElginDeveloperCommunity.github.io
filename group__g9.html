@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.4-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,8 +18,15 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<style>
+  .mermaid {
+    display: flex;
+    justify-content: center;
+  }
+</style>
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -183,7 +191,7 @@ ss = SEGUNDO<br  />
 <p>Gera PDF Danfe SAT. </p>
 <p >Essa função recebe o XML de retorno da venda do SAT, valida o conteúdo, constrói o Danfe e realiza a geração do pdf de acordo com a especificação da SEFAZ SP. </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dados</td><td>- Conteúdo do XML de retorno da venda do SAT.</td></tr>
+    <tr><td class="paramname">dados_xml</td><td>- Conteúdo do XML de retorno da venda do SAT.</td></tr>
     <tr><td class="paramname">param</td><td>- Parâmetro do tipo numérico para ativar bits que modificam o cupom a ser impresso.<br  />
 <br  />
 Os bits disponíveis e seus respectivos efeitos no cupom (quando ativados) são descritos a seguir: <table class="markdownTable">
@@ -255,7 +263,7 @@ A função bem sucedida deve retornar 0 e o arquivo PDF será salvo conforme def
 <p>Gera PDF Danfe de cancelamento SAT. </p>
 <p >Essa função recebe o XML de retorno da operação de cancelamento e os dados de assinatura do QRCode de venda, valida as informações, constrói o Danfe e realiza geração do cupom no formato PDF de acordo com a especificação da SEFAZ SP. </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dados</td><td>- Conteúdo do XML de cancelamento retornado pelo SAT. </td></tr>
+    <tr><td class="paramname">dados_xml</td><td>- Conteúdo do XML de cancelamento retornado pelo SAT. </td></tr>
     <tr><td class="paramname">assQRCode</td><td>- Assinatura do QRCode retornado na operação de Venda. Essa informação é necessária porque o XML de retorno da operação de cancelamento não contém essa informação.</td></tr>
     <tr><td class="paramname">param</td><td>- Parâmetro do tipo numérico para ativar bits que modificam o cupom a ser impresso.<br  />
 <br  />
@@ -479,11 +487,23 @@ A função bem sucedida deve retornar 0 Para mais informações sobre retorno co
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base', 
+    themeVariables: {
+      primaryColor: '#f4f4ff',
+      secondaryColor: 'rgba(244,244,255,0.9)',
+      tertiaryColor: '#F9FAFC',
+    },
+  });
+</script>
 </body>
 </html>

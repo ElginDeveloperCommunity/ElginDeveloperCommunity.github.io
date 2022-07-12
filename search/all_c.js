@@ -11,11 +11,13 @@ var searchData=
   ['maxicode_5fsecondary_5fzip_5finvalido_8',['MAXICODE_SECONDARY_ZIP_INVALIDO',['../group__g1.html#gga6959fba31e9b668a537ca2679f4a2a49a1788129ff4b784a5b2c21534321243b8',1,'codigoerro.h']]],
   ['memorystatus_9',['MemoryStatus',['../group___m0.html#ga5150b1080221c212fe33a70ae2864054',1,'exportafuncoes.h']]],
   ['modelo_5finvalido_10',['MODELO_INVALIDO',['../group__g1.html#ggaaf847b41b132e891ed9cd18f57c1d54cadafeee84c40bbb5b5622c1ea10685006',1,'codigoerro.h']]],
-  ['modopadrao_11',['ModoPadrao',['../group___m1.html#ga26d6f65fe8192b33fd6df6fa4450d585',1,'exportafuncoes.h']]],
-  ['modopagina_12',['ModoPagina',['../group___m1.html#ga7e6a7e1acce3d656659a471fb6dd0458',1,'exportafuncoes.h']]],
-  ['modulo_5ffuncao_5fnao_5fencontrado_13',['MODULO_FUNCAO_NAO_ENCONTRADO',['../group__g1.html#gga997c5e807d27e95e6e2cf73714524876aea472d99b895e3a157e572f20cb046be',1,'codigoerro.h']]],
-  ['municipio_5finvalido_14',['MUNICIPIO_INVALIDO',['../group__g1.html#ggabce12b1307411516d5ae219d5e3da4fca89d540303aa3aa027688c95e19c3fdef',1,'codigoerro.h']]],
-  ['módulos_15',['Módulos',['../group__g32.html',1,'']]],
-  ['mini_20pdv_20m10_16',['Mini PDV M10',['../group__g30.html',1,'']]],
-  ['mini_20pdv_20m8_17',['Mini PDV M8',['../group__g461.html',1,'']]]
+  ['modo_20ativo_11',['Modo Ativo',['../group__t2.html',1,'']]],
+  ['modo_20passivo_12',['Modo Passivo',['../group__t0.html',1,'']]],
+  ['modopadrao_13',['ModoPadrao',['../group___m1.html#ga26d6f65fe8192b33fd6df6fa4450d585',1,'exportafuncoes.h']]],
+  ['modopagina_14',['ModoPagina',['../group___m1.html#ga7e6a7e1acce3d656659a471fb6dd0458',1,'exportafuncoes.h']]],
+  ['modulo_5ffuncao_5fnao_5fencontrado_15',['MODULO_FUNCAO_NAO_ENCONTRADO',['../group__g1.html#gga997c5e807d27e95e6e2cf73714524876aea472d99b895e3a157e572f20cb046be',1,'codigoerro.h']]],
+  ['municipio_5finvalido_16',['MUNICIPIO_INVALIDO',['../group__g1.html#ggabce12b1307411516d5ae219d5e3da4fca89d540303aa3aa027688c95e19c3fdef',1,'codigoerro.h']]],
+  ['módulos_17',['Módulos',['../group__g32.html',1,'']]],
+  ['mini_20pdv_20m10_18',['Mini PDV M10',['../group__g30.html',1,'']]],
+  ['mini_20pdv_20m8_19',['Mini PDV M8',['../group__g461.html',1,'']]]
 ];

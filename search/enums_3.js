@@ -5,7 +5,7 @@ var searchData=
   ['imp_5ferro_5femissao_5fsinal_5fsonoro_2',['IMP_Erro_Emissao_Sinal_Sonoro',['../group__g1.html#ga733196ade50d170de34347e330c1d4e5',1,'codigoerro.h']]],
   ['imp_5ferro_5fescrita_5fimpressora_3',['IMP_Erro_Escrita_Impressora',['../group__g1.html#ga2cc3b72b1510ab101e5cc94c48a2c981',1,'codigoerro.h']]],
   ['imp_5ferro_5fimagem_4',['IMP_Erro_Imagem',['../group__g1.html#gabd2708e8049494ee2601085eb9c1046d',1,'codigoerro.h']]],
-  ['imp_5ferro_5fleitura_5',['IMP_Erro_Leitura',['../group__g1.html#ga2b35be00026d04777fac00ddb2100923',1,'codigoerro.h']]],
+  ['imp_5ferro_5fleitura_5fimpressora_5',['IMP_Erro_Leitura_Impressora',['../group__g1.html#gac34b8a950212ec91c4e28df08684e49b',1,'codigoerro.h']]],
   ['imp_5ferro_5fmodopagina_6',['IMP_Erro_ModoPagina',['../group__g1.html#ga1cc7bb016fa904455070ff3401aa46d5',1,'codigoerro.h']]],
   ['imp_5ferro_5fpdf417_7',['IMP_Erro_PDF417',['../group__g1.html#gaf06e08f141e869b84df32c20e7b08e82',1,'codigoerro.h']]],
   ['imp_5ferro_5fqrcode_8',['IMP_Erro_QRCode',['../group__g1.html#gad19ba2237e07d2d45162e5834f084300',1,'codigoerro.h']]],

@@ -49,9 +49,9 @@ var group__g1 =
       [ "ERRO_XSD", "group__g1.html#ggaa2a78878de69f89d20efffa516879d4ca362f430c94ba01e22a8563241a75a577", null ],
       [ "XSD_NAO_ENCONTRADO", "group__g1.html#ggaa2a78878de69f89d20efffa516879d4ca5fcf7b9dff3a168116bf78795c0cf9b9", null ]
     ] ],
-    [ "IMP_Erro_Leitura", "group__g1.html#ga2b35be00026d04777fac00ddb2100923", [
-      [ "NENHUM_DADO_RETORNADO", "group__g1.html#gga2b35be00026d04777fac00ddb2100923a348af8f1dcfc395b11104065469eeccf", null ],
-      [ "FALHA_AO_ABRIR_ARQUIVO", "group__g1.html#gga2b35be00026d04777fac00ddb2100923a4468be01189e0d06e8b35cdfc46e9c1b", null ]
+    [ "IMP_Erro_Leitura_Impressora", "group__g1.html#gac34b8a950212ec91c4e28df08684e49b", [
+      [ "NENHUM_DADO_RETORNADO", "group__g1.html#ggac34b8a950212ec91c4e28df08684e49ba348af8f1dcfc395b11104065469eeccf", null ],
+      [ "FALHA_AO_ABRIR_ARQUIVO", "group__g1.html#ggac34b8a950212ec91c4e28df08684e49ba4468be01189e0d06e8b35cdfc46e9c1b", null ]
     ] ],
     [ "IMP_Erro_ValidacaoXMLSAT", "group__g1.html#ga9aa34265329d5ba253910de84799f82e", [
       [ "ASSINATURA_QRCODE_INVALIDA", "group__g1.html#gga9aa34265329d5ba253910de84799f82eaa71a1918f443234115e988eb9c45cf24", null ],

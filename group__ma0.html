@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.4-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,8 +18,15 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<style>
+  .mermaid {
+    display: flex;
+    justify-content: center;
+  }
+</style>
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -287,10 +295,7 @@ Funções</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Envia comandos ESCPOS direto para a porta de comunicação. </p>
-<p >Função de despejo de comandos na porta de comunicação. Essa função também recebe dados da porta de comunicação.</p><ul>
-<li>OBS: Este método não está disponível para uso com o g8.</li>
-<li>OBS: Se o <b>tipo</b> de conexão (definido na função <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a>) for o <b>5</b>, não será possível realizar a leitura da porta e os parâmetros <b>readData</b> e <b>readNum</b> podem ser definidos como <b>null</b>, pois não serão utilizados na função.</li>
-</ul>
+<p >Função de despejo de comandos na porta de comunicação. Essa função também recebe dados da porta de comunicação. </p><dl class="section note"><dt>Observação</dt><dd>OBS: Se o <b>tipo</b> de conexão (definido na função <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a>) for o <b>5</b>, não será possível realizar a leitura da porta e os parâmetros <b>readData</b> e <b>readNum</b> podem ser definidos como <b>null</b>, pois não serão utilizados na função.</dd></dl>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">writeData</td><td>- Sequência de bytes que devem ser enviados para a porta de comunicação.<br  />
@@ -344,7 +349,7 @@ Funções</h2></td></tr>
  </p><dl class="section return"><dt>Retorna</dt><dd>O retorno é numérico.<br  />
 A função bem-sucedida deve retornar 0.<br  />
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga42887be3dd7140bef19a0ab8b8246f8b" title="IMP_Erro_ConexaoAndroid enum -171 à -180 e -391 à -400.">Erro_ConexaoAndroid</a> e <a class="el" href="group__g1.html#ga2b35be00026d04777fac00ddb2100923" title="IMP_Erro_Leitura_Impressora enum -81 à -90.">IMP_Erro_Leitura</a>. </li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga42887be3dd7140bef19a0ab8b8246f8b" title="IMP_Erro_ConexaoAndroid enum -171 à -180 e -391 à -400.">Erro_ConexaoAndroid</a> e <a class="el" href="group__g1.html#gac34b8a950212ec91c4e28df08684e49b" title="IMP_Erro_Leitura_Impressora enum -81 à -90.">IMP_Erro_Leitura_Impressora</a>. </li>
 </ul>
 </dd></dl>
 
@@ -352,11 +357,23 @@ A função bem-sucedida deve retornar 0.<br  />
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base', 
+    themeVariables: {
+      primaryColor: '#f4f4ff',
+      secondaryColor: 'rgba(244,244,255,0.9)',
+      tertiaryColor: '#F9FAFC',
+    },
+  });
+</script>
 </body>
 </html>

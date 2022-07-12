@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.4-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,8 +18,15 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<style>
+  .mermaid {
+    display: flex;
+    justify-content: center;
+  }
+</style>
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -371,7 +379,7 @@ Funções</h2></td></tr>
 <p >Personalizar a cor da fonte.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">corBackground</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
+    <tr><td class="paramname">corFonte</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
 </td></tr>
   </table>
   </dd>
@@ -403,7 +411,7 @@ Funções</h2></td></tr>
 <p >Personalizar a cor da fonte do teclado.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">corBackground</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
+    <tr><td class="paramname">corFonteTeclado</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
 </td></tr>
   </table>
   </dd>
@@ -435,7 +443,7 @@ Funções</h2></td></tr>
 <p >Personalizar a cor de fundo da toolbar.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">corBackground</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
+    <tr><td class="paramname">corFundoToolbar</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
 </td></tr>
   </table>
   </dd>
@@ -467,7 +475,7 @@ Funções</h2></td></tr>
 <p >Personalizar a cor do fundo de tela.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">corBackground</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
+    <tr><td class="paramname">corFundoTela</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
 </td></tr>
   </table>
   </dd>
@@ -499,7 +507,7 @@ Funções</h2></td></tr>
 <p >Personalizar a cor da tecla liberada no teclado.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">corBackground</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
+    <tr><td class="paramname">corTeclaLiberadaTeclado</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
 </td></tr>
   </table>
   </dd>
@@ -531,7 +539,7 @@ Funções</h2></td></tr>
 <p >Personalizar a cor de fundo do teclado.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">corBackground</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
+    <tr><td class="paramname">corFundoTeclado</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
 </td></tr>
   </table>
   </dd>
@@ -563,7 +571,7 @@ Funções</h2></td></tr>
 <p >Personalizar a cor do texto da caixa de edição.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">corBackground</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
+    <tr><td class="paramname">corTextoCaixaEdicao</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
 </td></tr>
   </table>
   </dd>
@@ -595,7 +603,7 @@ Funções</h2></td></tr>
 <p >Personalizar a cor do separador do menu.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">corBackground</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
+    <tr><td class="paramname">corSeparadorMenu</td><td>- Cor no formato hexadecimal. Ex: "#FFA500".<br  />
 </td></tr>
   </table>
   </dd>
@@ -643,11 +651,23 @@ Funções</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base', 
+    themeVariables: {
+      primaryColor: '#f4f4ff',
+      secondaryColor: 'rgba(244,244,255,0.9)',
+      tertiaryColor: '#F9FAFC',
+    },
+  });
+</script>
 </body>
 </html>
