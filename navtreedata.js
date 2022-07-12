@@ -25,6 +25,13 @@
 var NAVTREE =
 [
   [ "Plataforma de Comunicação Elgin", "index.html", [
+    [ "e1_brigde_retorno", "md_src__e1__bridge_e1_brigde_retorno.html", null ],
+    [ "e1_tef_description", "md_src__e1__t_e_f_e1_tef_description.html", null ],
+    [ "e1_tef_ativo", "md_src__e1__t_e_f_e1_tef_ativo.html", null ],
+    [ "e1_tef_passivo", "md_src__e1__t_e_f_e1_tef_passivo.html", null ],
+    [ "pix", "md_src__pix_pix.html", null ],
+    [ "pixRetorno", "md_src__pix_pix_retorno.html", null ],
+    [ "e1_elginpay", "md_src__android_e1_elginpay.html", null ],
     [ "Lista de itens obsoletos", "deprecated.html", null ],
     [ "Módulos", "modules.html", "modules" ]
   ] ]
