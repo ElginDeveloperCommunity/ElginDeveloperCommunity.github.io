@@ -1,0 +1,76 @@
+html {
+    --primary-color: #1779c4;
+
+    --side-nav-arrow-opacity: 0.9;
+    --side-nav-arrow-hover-opacity: 0.9;
+
+    --fragment-keyword: #f73aa5; /* class, public, namespace */
+    --fragment-token: #0e0ae0; /* "string" */
+
+}
+
+html.dark-mode {
+    /* fragment colors */
+    --fragment-background: #282a36; /* background */
+    --fragment-foreground: #f8f8f2; /* foreground */
+    --fragment-keyword: #ff79c6; /* class, public, namespace */
+    --fragment-keywordtype: #ff79c6; /* int, string, const */
+    --fragment-keywordflow: #8be9fd; /* if, while, for */
+    --fragment-token: #50fa7b; /* "string" */
+    --fragment-comment: #6272a4;
+    --fragment-link: #50fa7b;
+    --fragment-preprocessor: #46aaa5;
+    --fragment-linenumber-color: #797979;
+    --fragment-linenumber-background: #f4f4f5;
+    --fragment-linenumber-border: #e3e5e7;
+    --fragment-lineheight: 20px;
+}
+
+#projectlogo {
+    vertical-align: middle;
+}
+
+#projectlogo img {
+    max-height: calc(var(--title-font-size) * 2);
+    margin-right: var(--spacing-small);
+}
+
+html #projectlogo img {
+    content: url('logo-light.png');
+}
+
+html.dark-mode #projectlogo img {
+    content: url('logo-dark.png');
+}
+
+html .footer img {
+    content: url('logo-light.png');
+}
+
+html.dark-mode .footer img {
+    content: url('logo-dark.png');
+}
+
+blockquote::before, blockquote::after {
+    font-weight: bold;
+    font-family: serif;
+    font-size: 360%;
+    opacity: .15;
+    position: absolute;
+}
+
+blockquote::before {
+    content: "";
+    left: -10px;
+    top: 4px;
+}
+
+blockquote::after {
+    content: "";
+    right: -8px;
+    bottom: -25px;
+}
+
+img.footer {
+    width: 100px;
+}

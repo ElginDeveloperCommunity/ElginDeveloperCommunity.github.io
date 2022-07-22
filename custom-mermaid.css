@@ -1,0 +1,86 @@
+.mermaid-center {
+  display: flex;
+  justify-content: center;
+}
+
+html.dark-mode .flowchart-link {
+    stroke:#50fa7b !important;
+}
+
+.edge-thickness-normal {
+    stroke-width:4px !important;
+}
+
+.mDecision > rect, 
+.mDecision > circle, 
+.mDecision > polygon{
+  fill:#2167eb !important;
+  color:#f0f0f0 !important;
+  stroke:#afafaf !important;
+  stroke-width: 2px !important;
+}
+
+.mOp > rect, 
+.mOp > circle, 
+.mOp > polygon {
+  fill:#aabcdd !important;
+  color:#060c04 !important;
+  stroke:#afafaf !important;
+  stroke-width: 2px !important;
+}
+
+.mInFim > rect, 
+.mInFim > circle, 
+.mInFim > polygon {
+  fill:#d8d8da !important;
+  color:#060c04 !important;
+  stroke:#afafaf !important;
+  stroke-width: 2px !important;
+}
+
+html .msubgraph > rect,
+html .msubgraph > circle,
+html .msubgraph > polygon {
+  fill: #6272a4 !important;
+  stroke: #ffb86c !important;
+  stroke-width: 1px !important;
+}
+
+html.dark-mode .mDecision > rect, 
+html.dark-mode .mDecision > circle, 
+html.dark-mode .mDecision > polygon{
+  fill:#282a36 !important;
+  stroke:#ff79c6 !important;
+  stroke-width: 2px !important;
+}
+
+html.dark-mode .mOp > rect, 
+html.dark-mode .mOp > circle, 
+html.dark-mode .mOp > polygon {
+  fill:#282a36 !important;
+  stroke:#ff79c6 !important;
+  stroke-width: 2px !important;
+}
+
+html.dark-mode .mInFim > rect, 
+html.dark-mode .mInFim > circle, 
+html.dark-mode .mInFim > polygon {
+  fill:#282a36 !important;
+  stroke:#ff79c6 !important;
+  stroke-width: 2px !important;
+}
+
+html.dark-mode .mDecision span,
+html.dark-mode .mOp span,
+html.dark-mode .mInFim span,
+html.dark-mode .msubgraph span {
+  color:#f8f8f2 !important;
+}
+
+html.dark-mode .msubgraph > rect,
+html.dark-mode .msubgraph > circle,
+html.dark-mode .msubgraph > polygon {
+  fill: #6272a4 !important;
+  stroke: #ffb86c !important;
+  stroke-width: 2px !important;
+}
