@@ -130,78 +130,78 @@ $(document).ready(function(){initNavTree('_e1___balanca_2exportafuncoes_8h_sourc
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span>{</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// METODOS PARA CONFIGURACAO DA BALANCA</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"></span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="group__g5.html#ga17389b720b15d322a9e6cc02c0cd4f9c">   99</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#ga17389b720b15d322a9e6cc02c0cd4f9c">ObterModeloBalanca</a>();</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="group__g5.html#gabed56c6faf716867c79b20230da2c708">  123</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#gabed56c6faf716867c79b20230da2c708">ConfigurarModeloBalanca</a>(<span class="keywordtype">int</span> modeloBalanca);</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="comment">// METODOS PARA CONFIGURACAO DO PROTOCOLO</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment"></span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="group__g5.html#ga0a5aed390271cd1296168fc6a1dc81db">  152</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#ga0a5aed390271cd1296168fc6a1dc81db">ObterProtocoloComunicacao</a>();</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="group__g5.html#ga5dfef4c58be6722f2195bd507b21880d">  179</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#ga5dfef4c58be6722f2195bd507b21880d">ConfigurarProtocoloComunicacao</a>(<span class="keywordtype">int</span> protocoloComunicacao);</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="comment">// METODOS PARA COMUNICACAO COM A BALANCA</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment"></span> </div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno"><a class="line" href="group__g5.html#ga7a2a471dd1975ddb354aa54957689f45">  243</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#ga7a2a471dd1975ddb354aa54957689f45">AbrirSerial</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* device, <span class="keywordtype">int</span> baudrate, <span class="keywordtype">int</span> length, <span class="keywordtype">char</span> parity, <span class="keywordtype">int</span> stopbits);</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment">//    ///@cond</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment">//    E1_BALANCASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment">//    ///@endcond</span></div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">//    int AbrirTCP(const char* enderecoIP, int porta);</span></div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="group__g5.html#gaaa1cae14fe00890f9b468f438f4e4c12">  276</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga44b4bdd6ff22dddf5ce8945bcff10f2a">DirectIO</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* wbuffer, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> wlen, <span class="keywordtype">char</span>* rdbuffer, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> rdlen);</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="group__g5.html#gab3ba406567f579ce6c96d562035d79b0">  291</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#gab3ba406567f579ce6c96d562035d79b0">Fechar</a>();</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno"><a class="line" href="group__g5.html#ga2de74dd1f5d987754d775740f5764ce5">  311</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#ga2de74dd1f5d987754d775740f5764ce5">ObterTipoConexao</a>();</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    <span class="comment">// METODOS PARA CONTROLE DA BALANCA</span></div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="comment"></span> </div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno"><a class="line" href="group__g5.html#ga6d803d69bf202f686b3f2df8f71adb9a">  338</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="group__g5.html#ga6d803d69bf202f686b3f2df8f71adb9a">LerPeso</a>(<span class="keywordtype">int</span> qtdLeituras);</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno"><a class="line" href="group__g5.html#ga3554b9b28a88ab0f50724bac189c2d79">  361</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="group__g5.html#ga3554b9b28a88ab0f50724bac189c2d79">LerPreco</a>(<span class="keywordtype">int</span> qtdLeituras);</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno"><a class="line" href="group__g5.html#ga9d4253790deb2c6644d9581956c73f47">  378</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="group__g5.html#ga9d4253790deb2c6644d9581956c73f47">LerTara</a>(); <span class="comment">// TESTAR!!!</span></div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno"><a class="line" href="group__g5.html#ga8a40877108e2ab5bf56fe442a8b5a3c1">  402</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="group__g5.html#ga8a40877108e2ab5bf56fe442a8b5a3c1">LerTotal</a>(<span class="keywordtype">double</span> preco); <span class="comment">// TESTAR PROTOCOLOS #4 E #5</span></div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno"><a class="line" href="group__g5.html#ga24433d41a66f4d8974c359913827f4b9">  418</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#ga24433d41a66f4d8974c359913827f4b9">TararBalanca</a>(); <span class="comment">// TESTAR!!!</span></div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span> </div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno"><a class="line" href="group__g5.html#gafb63f48220b6308edfb3eb61f5ed4cd3">  434</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#gafb63f48220b6308edfb3eb61f5ed4cd3">ZerarBalanca</a>(); <span class="comment">// TESTAR!!!</span></div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span> </div>
-<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno"><a class="line" href="group__g5.html#ga80daeec9ea522fe30f56bd6a0156c68e">  450</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#ga80daeec9ea522fe30f56bd6a0156c68e">LigarDesligarDisplay</a>(); <span class="comment">// TESTAR!!!</span></div>
-<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span> </div>
-<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span> </div>
-<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00468" name="l00468"></a><span class="lineno"><a class="line" href="group__g5.html#gae7d43d8af4b950d574fe4e118312d3bb">  468</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#gae7d43d8af4b950d574fe4e118312d3bb">GetContinuousReadTime</a>();</div>
-<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span> </div>
-<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00481" name="l00481"></a><span class="lineno"><a class="line" href="group__g5.html#gab655dc39daafe9a8cad5cf8b0feec037">  481</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="group__g5.html#gab655dc39daafe9a8cad5cf8b0feec037">SetContinuousReadTime</a>(<span class="keywordtype">int</span> continuousReadTime);</div>
-<div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span> </div>
-<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>}</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">// METODOS PARA CONFIGURACAO DA BALANCA</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"></span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="group__g5.html#ga17389b720b15d322a9e6cc02c0cd4f9c">  101</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#ga17389b720b15d322a9e6cc02c0cd4f9c">ObterModeloBalanca</a>();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="group__g5.html#gabed56c6faf716867c79b20230da2c708">  125</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#gabed56c6faf716867c79b20230da2c708">ConfigurarModeloBalanca</a>(<span class="keywordtype">int</span> modeloBalanca);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="comment">// METODOS PARA CONFIGURACAO DO PROTOCOLO</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment"></span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="group__g5.html#ga0a5aed390271cd1296168fc6a1dc81db">  154</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#ga0a5aed390271cd1296168fc6a1dc81db">ObterProtocoloComunicacao</a>();</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="group__g5.html#ga5dfef4c58be6722f2195bd507b21880d">  181</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#ga5dfef4c58be6722f2195bd507b21880d">ConfigurarProtocoloComunicacao</a>(<span class="keywordtype">int</span> protocoloComunicacao);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="comment">// METODOS PARA COMUNICACAO COM A BALANCA</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment"></span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="group__g5.html#ga7a2a471dd1975ddb354aa54957689f45">  245</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#ga7a2a471dd1975ddb354aa54957689f45">AbrirSerial</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* device, <span class="keywordtype">int</span> baudrate, <span class="keywordtype">int</span> length, <span class="keywordtype">char</span> parity, <span class="keywordtype">int</span> stopbits);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment">//    ///@cond</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">//    E1_BALANCASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment">//    ///@endcond</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">//    int AbrirTCP(const char* enderecoIP, int porta);</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="group__g5.html#gaaa1cae14fe00890f9b468f438f4e4c12">  278</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga44b4bdd6ff22dddf5ce8945bcff10f2a">DirectIO</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* wbuffer, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> wlen, <span class="keywordtype">char</span>* rdbuffer, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> rdlen);</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="group__g5.html#gab3ba406567f579ce6c96d562035d79b0">  293</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#gab3ba406567f579ce6c96d562035d79b0">Fechar</a>();</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="group__g5.html#ga2de74dd1f5d987754d775740f5764ce5">  313</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#ga2de74dd1f5d987754d775740f5764ce5">ObterTipoConexao</a>();</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    <span class="comment">// METODOS PARA CONTROLE DA BALANCA</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="comment"></span> </div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="group__g5.html#ga6d803d69bf202f686b3f2df8f71adb9a">  340</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="group__g5.html#ga6d803d69bf202f686b3f2df8f71adb9a">LerPeso</a>(<span class="keywordtype">int</span> qtdLeituras);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="group__g5.html#ga3554b9b28a88ab0f50724bac189c2d79">  363</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="group__g5.html#ga3554b9b28a88ab0f50724bac189c2d79">LerPreco</a>(<span class="keywordtype">int</span> qtdLeituras);</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno"><a class="line" href="group__g5.html#ga9d4253790deb2c6644d9581956c73f47">  380</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="group__g5.html#ga9d4253790deb2c6644d9581956c73f47">LerTara</a>(); <span class="comment">// TESTAR!!!</span></div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno"><a class="line" href="group__g5.html#ga8a40877108e2ab5bf56fe442a8b5a3c1">  404</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="group__g5.html#ga8a40877108e2ab5bf56fe442a8b5a3c1">LerTotal</a>(<span class="keywordtype">double</span> preco); <span class="comment">// TESTAR PROTOCOLOS #4 E #5</span></div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span> </div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno"><a class="line" href="group__g5.html#ga24433d41a66f4d8974c359913827f4b9">  420</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#ga24433d41a66f4d8974c359913827f4b9">TararBalanca</a>(); <span class="comment">// TESTAR!!!</span></div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno"><a class="line" href="group__g5.html#gafb63f48220b6308edfb3eb61f5ed4cd3">  436</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#gafb63f48220b6308edfb3eb61f5ed4cd3">ZerarBalanca</a>(); <span class="comment">// TESTAR!!!</span></div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span> </div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno"><a class="line" href="group__g5.html#ga80daeec9ea522fe30f56bd6a0156c68e">  452</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#ga80daeec9ea522fe30f56bd6a0156c68e">LigarDesligarDisplay</a>(); <span class="comment">// TESTAR!!!</span></div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span> </div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span> </div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno"><a class="line" href="group__g5.html#gae7d43d8af4b950d574fe4e118312d3bb">  470</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group__g5.html#gae7d43d8af4b950d574fe4e118312d3bb">GetContinuousReadTime</a>();</div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span> </div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>    E1_BALANCASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00483" name="l00483"></a><span class="lineno"><a class="line" href="group__g5.html#gab655dc39daafe9a8cad5cf8b0feec037">  483</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="group__g5.html#gab655dc39daafe9a8cad5cf8b0feec037">SetContinuousReadTime</a>(<span class="keywordtype">int</span> continuousReadTime);</div>
 <div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span> </div>
-<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span> </div>
-<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span><span class="preprocessor">#endif </span><span class="comment">// EXPORTAFUNCOES_H</span></div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>}</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span> </div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span> </div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span><span class="preprocessor">#endif </span><span class="comment">// EXPORTAFUNCOES_H</span></div>
 <div class="ttc" id="agroup___m1_html_ga44b4bdd6ff22dddf5ce8945bcff10f2a"><div class="ttname"><a href="group___m1.html#ga44b4bdd6ff22dddf5ce8945bcff10f2a">DirectIO</a></div><div class="ttdeci">int DirectIO(unsigned char *writeData, unsigned int writeNum, unsigned char *readData, unsigned int *readNum)</div><div class="ttdoc">Envia comandos ESCPOS direto para a porta de comunicação.</div></div>
 <div class="ttc" id="agroup__g5_html_ga0a5aed390271cd1296168fc6a1dc81db"><div class="ttname"><a href="group__g5.html#ga0a5aed390271cd1296168fc6a1dc81db">ObterProtocoloComunicacao</a></div><div class="ttdeci">int ObterProtocoloComunicacao()</div><div class="ttdoc">Obtém o protocolo de comunicação configurado para uso na biblioteca.</div></div>
 <div class="ttc" id="agroup__g5_html_ga17389b720b15d322a9e6cc02c0cd4f9c"><div class="ttname"><a href="group__g5.html#ga17389b720b15d322a9e6cc02c0cd4f9c">ObterModeloBalanca</a></div><div class="ttdeci">int ObterModeloBalanca()</div><div class="ttdoc">Obtém o modelo da balança configurado para uso na biblioteca.</div></div>
