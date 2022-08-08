@@ -1,5 +1,6 @@
 var group__g3 =
 [
+    [ "IntentDigitalHub", "group__idh1.html", "group__idh1" ],
     [ "Módulos", "group__g32.html", "group__g32" ],
     [ "SmartPOS", "group__g31.html", "group__g31" ],
     [ "Mini PDV M10", "group__g30.html", "group__g30" ],

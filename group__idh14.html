@@ -1,0 +1,231 @@
+<!-- HTML header for doxygen 1.9.4-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="light-mode">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Comunicação Elgin: Utilizando Payloads</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom-mermaid.css" rel="stylesheet" type="text/css"/>
+<!-- ... other metadata & script includes ... -->
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeDarkModeToggle.title = "Trocar entre Light / Dark Mode"
+  // DoxygenAwesomeDarkModeToggle.lightModeIcon = '🌞'
+  // // icon from https://fonts.google.com/icons
+  // DoxygenAwesomeDarkModeToggle.darkModeIcon = `<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#009793"><g><rect fill="none" height="24" width="24"/></g><g><g><path d="M8.1,14.15C9.77,14.63,11,16.17,11,18c0,0.68-0.19,1.31-0.48,1.87c0.48,0.09,0.97,0.14,1.48,0.14 c1.48,0,2.9-0.41,4.13-1.15c-2.62-0.92-5.23-2.82-6.8-5.86C7.74,9.94,7.78,7.09,8.29,4.9c-2.57,1.33-4.3,4.01-4.3,7.1c0,0,0,0,0,0 c0.01,0,0.01,0,0.02,0C5.66,12,7.18,12.83,8.1,14.15z" opacity=".3"/><path d="M19.78,17.51c-2.47,0-6.57-1.33-8.68-5.43C8.77,7.57,10.6,3.6,11.63,2.01C6.27,2.2,1.98,6.59,1.98,12 c0,0.14,0.02,0.28,0.02,0.42C2.61,12.16,3.28,12,3.98,12c0,0,0,0,0,0c0-3.09,1.73-5.77,4.3-7.1C7.78,7.09,7.74,9.94,9.32,13 c1.57,3.04,4.18,4.95,6.8,5.86c-1.23,0.74-2.65,1.15-4.13,1.15c-0.5,0-1-0.05-1.48-0.14c-0.37,0.7-0.94,1.27-1.64,1.64 c0.98,0.32,2.03,0.5,3.11,0.5c3.5,0,6.58-1.8,8.37-4.52C20.18,17.5,19.98,17.51,19.78,17.51z"/><path d="M7,16l-0.18,0C6.4,14.84,5.3,14,4,14c-1.66,0-3,1.34-3,3s1.34,3,3,3c0.62,0,2.49,0,3,0c1.1,0,2-0.9,2-2 C9,16.9,8.1,16,7,16z"/></g></g></svg>`
+  DoxygenAwesomeDarkModeToggle.init()
+</script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript">
+    // DoxygenAwesomeFragmentCopyButton.title = "In die Zwischenablage kopieren"
+    DoxygenAwesomeFragmentCopyButton.init()
+</script>
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
+  <td id="projectalign">
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.00</span>
+   </div>
+   <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Gerado por Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__idh14.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Utilizando Payloads<div class="ingroups"><a class="el" href="group__g3.html">Android</a> &raquo; <a class="el" href="group__idh1.html">IntentDigitalHub</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<h1>Utilizando Payloads</h1>
+<p >Nesta seção veremos:</p><ol type="1">
+<li>Payload de envio</li>
+<li>Payload de retorno</li>
+</ol>
+<h2>ENVIO</h2>
+<p >Os componentes Json para realizar o Payload de envio serão os seguintes:</p><ul>
+<li>String</li>
+<li>Array</li>
+<li>Object</li>
+</ul>
+<p ><b>Exemplo</b> </p><div class="fragment"><div class="line">[                       // Array</div>
+<div class="line">    {                   // Object</div>
+<div class="line">        &quot;key&quot;: &quot;value&quot;  // String</div>
+<div class="line">    }</div>
+<div class="line">]</div>
+</div><!-- fragment --><p ><br  />
+</p>
+<p >O componente raiz é o <code>Array</code>, ele terá 1 ou mais <code>Objects</code>, ou seja, o Array representará uma lista de <b>comandos</b> que serão invocados. Estes comandos serão compostos por Objects. Cada um desdes Objects deve ter dois componentes:</p><ol type="1">
+<li>String - será o nome do método a ser chamado</li>
+<li>Object - serão os parâmetros desde método. <br  />
+</li>
+</ol>
+<p >Para melhor contextualização, vamos fazer um exemplo com o método <code>AbreConexaoImpressora</code> do módulo <a class="el" href="group__ma0.html">Impressora Térmica</a> : <a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a>.</p>
+<p ><b>Exemplo</b> </p><div class="fragment"><div class="line">[// início do Array (Json)</div>
+<div class="line">    {                                       // início do Object (Json) </div>
+<div class="line">        &quot;funcao&quot;: &quot;AbreConexaoImpressora&quot;,  // String com nome da função </div>
+<div class="line">        &quot;parametros&quot;: {                     // início do Object com os parâmetro </div>
+<div class="line">            &quot;tipo&quot;: 5,                      // chave: tipo e valor: 5 (int)</div>
+<div class="line">            &quot;modelo&quot;: &quot;&quot;,                   // chave: modelo e valor: vazio (String) </div>
+<div class="line">            &quot;conexao&quot;: &quot;&quot;,                  // chave: conexao e valor: vazio (String) </div>
+<div class="line">            &quot;parametro&quot;: 0                  // chave: parametro e valor: 0 (int) </div>
+<div class="line">        }                                   // final do Object com os parâmetro </div>
+<div class="line">    }                                       // final do Object (Json) </div>
+<div class="line">]                                           // final do Array (Json)</div>
+</div><!-- fragment --><dl class="section note"><dt>Observação</dt><dd>Veja, estamos fazendo a chamada de somente 1 método.</dd></dl>
+<p>Agora vamos ver como ficaria um caso real para realizar uma impressão de texto. Vamos chamar 2 funções:</p><ol type="1">
+<li><a class="el" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d" title="Abre conexão com a impressora.">AbreConexaoImpressora</a></li>
+<li><a class="el" href="group___m1.html#ga6c9bc310ba0f45001cca6420c09e77c7" title="Envia informações de texto para o buffer da impressora.">ImpressaoTexto</a></li>
+<li><a class="el" href="group___m1.html#ga520ec6fa932747f430c2a89bc46c8176" title="Fecha conexão com a impressora.">FechaConexaoImpressora</a></li>
+</ol>
+<p ><b>Exemplo</b> </p><div class="fragment"><div class="line">[ </div>
+<div class="line">    { </div>
+<div class="line">        &quot;funcao&quot;: &quot;AbreConexaoImpressora&quot;, </div>
+<div class="line">        &quot;parametros&quot;: { </div>
+<div class="line">            &quot;tipo&quot;: 5, </div>
+<div class="line">            &quot;modelo&quot;: &quot;&quot;, </div>
+<div class="line">            &quot;conexao&quot;: &quot;&quot;, </div>
+<div class="line">            &quot;parametro&quot;: 0 </div>
+<div class="line">    } </div>
+<div class="line">    }, </div>
+<div class="line">    { </div>
+<div class="line">        &quot;funcao&quot;: &quot;ImpressaoTexto&quot;, </div>
+<div class="line">        &quot;parametros&quot;: { </div>
+<div class="line">            &quot;dados&quot;: &quot;teste de impressão&quot;, </div>
+<div class="line">            &quot;posicao&quot;: 0, </div>
+<div class="line">            &quot;stilo&quot;: 0, </div>
+<div class="line">            &quot;tamanho&quot;: 0 </div>
+<div class="line">    } </div>
+<div class="line">    }, </div>
+<div class="line">    { </div>
+<div class="line">        &quot;funcao&quot;: &quot;FechaConexaoImpressora&quot;, </div>
+<div class="line">        &quot;parametros&quot;: {} </div>
+<div class="line">    } </div>
+<div class="line">]</div>
+</div><!-- fragment --><dl class="section note"><dt>Observação</dt><dd>Basta seguir estes modelos para realizar as chamadas dos métodos.</dd></dl>
+<h2>RETORNO</h2>
+<p >Assim como no Envio, o Retorno também é composto por um componente raiz Array. Este contém um ou mais Objects, representando uma lista de <b>retornos</b> dos métodos que foram solicitados. Os Objects são compostos por 3 componentes:</p><ol type="1">
+<li>String - com o nome da função que foi invocada</li>
+<li>String - com uma mensagem de execução ou Exception gerada</li>
+<li>Object - com o resultado da função (se ela retorna um int, será int, se ela retorna String, será String, etc..)</li>
+</ol>
+<p ><b>Exemplo</b> </p><div class="fragment"><div class="line">[                                   // início do Array (Json)</div>
+<div class="line">    {                               // início do Object (Json) </div>
+<div class="line">        &quot;funcao&quot;: &quot;Método&quot;,         // String com nome da método </div>
+<div class="line">        &quot;mensagem&quot;: &quot;Executado”,    // String com mensagem de retorno </div>
+<div class="line">        &quot;resultado&quot;: 0              // Object com resultado </div>
+<div class="line">    }                               // final do Object (Json) </div>
+<div class="line">]                                   // final do Array (Json) </div>
+</div><!-- fragment --><p >Agora vamos ver como ficaria o retorno dos 3 métodos de impressão do exemplo Envio.</p>
+<p ><b>Exemplo</b> </p><div class="fragment"><div class="line">[</div>
+<div class="line">    { </div>
+<div class="line">        &quot;funcao&quot;: &quot;AbreConexaoImpressora&quot;, </div>
+<div class="line">        &quot;mensagem&quot;: &quot;Método executado&quot;, </div>
+<div class="line">        &quot;resultado&quot;: 0 </div>
+<div class="line">    }, </div>
+<div class="line">    { </div>
+<div class="line">        &quot;funcao&quot;: &quot;ImpressaoTexto&quot;, </div>
+<div class="line">        &quot;mensagem&quot;: &quot;Método executado&quot;, </div>
+<div class="line">        &quot;resultado&quot;: 0 </div>
+<div class="line">    }, </div>
+<div class="line">    { </div>
+<div class="line">        &quot;funcao&quot;: &quot;FechaConexaoImpressora&quot;, </div>
+<div class="line">        &quot;mensagem&quot;: &quot;Método executado&quot;, </div>
+<div class="line">        &quot;resultado&quot;: 0 </div>
+<div class="line">    } </div>
+<div class="line">]</div>
+</div><!-- fragment --><dl class="section note"><dt>Observação</dt><dd>Note que o resultado é <code>int</code>, no caso de funções que retornam String, o campo <b>resultado</b> será uma String.</dd></dl>
+<p><br  />
+</p>
+<p >Próximo passo: usar em suas aplicações Android intents para usar o <b>IntentDigitalHUB</b>. Para saber quais caminhos de filtro usar e se basear em exemplos acesse a página <a class="el" href="group__idh00.html">Caminho Filtros</a> . </p>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer"><a href="https://github.com/ElginDeveloperCommunity"><img class="footer" src="https://avatars.githubusercontent.com/u/78883867?s=400&u=9b127079a21ee35fed37a704c5a0204fd5c7b1c3&v=4" width="90" height="20" alt="ElginDeveloperCommunity"/></a>  </li>
+  </ul>
+</div>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base', 
+    themeVariables: {
+      primaryColor: '#f4f4ff',
+      secondaryColor: 'rgba(244,244,255,0.9)',
+      tertiaryColor: '#F9FAFC',
+    },
+  });
+</script>
+</body>
+</html>
