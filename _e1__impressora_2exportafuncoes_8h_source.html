@@ -140,390 +140,390 @@ $(document).ready(function(){initNavTree('_e1__impressora_2exportafuncoes_8h_sou
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span>{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// Funcoes da impressora</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment"></span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d">  136</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d">AbreConexaoImpressora</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span>* modelo, <span class="keyword">const</span> <span class="keywordtype">char</span>* conexao, <span class="keywordtype">int</span> parametro);</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="group___m1.html#ga520ec6fa932747f430c2a89bc46c8176">  153</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga520ec6fa932747f430c2a89bc46c8176">FechaConexaoImpressora</a>();</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="group___m1.html#ga6dd4083b75e9221d85c780a9a35b5168">  169</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga6dd4083b75e9221d85c780a9a35b5168">EspacamentoEntreLinhas</a>(<span class="keywordtype">int</span> tamanho);</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="group___m1.html#ga6c9bc310ba0f45001cca6420c09e77c7">  238</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga6c9bc310ba0f45001cca6420c09e77c7">ImpressaoTexto</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dados, <span class="keywordtype">int</span> posicao, <span class="keywordtype">int</span> stilo, <span class="keywordtype">int</span> tamanho);</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade">  258</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade">Corte</a>(<span class="keywordtype">int</span> avanco);</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="group___m1.html#ga329c887a0b5731559d593aaa0ca0aa2b">  277</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga329c887a0b5731559d593aaa0ca0aa2b">CorteTotal</a>(<span class="keywordtype">int</span> avanco);</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="group___m1.html#gace32a45c3d64239fc38f773f199ddf2e">  308</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gace32a45c3d64239fc38f773f199ddf2e">ImpressaoQRCode</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dados, <span class="keywordtype">int</span> tamanho, <span class="keywordtype">int</span> nivelCorrecao);</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="group___m1.html#gaf4424cf8fcb9917a27c53a2972ca1626">  398</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gaf4424cf8fcb9917a27c53a2972ca1626">ImpressaoPDF417</a>(<span class="keywordtype">int</span> numCols, <span class="keywordtype">int</span> numRows, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> errCorLvl, <span class="keywordtype">int</span> options, <span class="keyword">const</span> <span class="keywordtype">char</span> *dados);</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno"><a class="line" href="group___m1.html#ga52b5a949b98c3163709b09762a17e794">  439</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga52b5a949b98c3163709b09762a17e794">ImpressaoCodigoBarras</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span>* dados, <span class="keywordtype">int</span> altura, <span class="keywordtype">int</span> largura, <span class="keywordtype">int</span> HRI);</div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span> </div>
-<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00455" name="l00455"></a><span class="lineno"><a class="line" href="group___m1.html#ga7bb867ac58bdce583d497d05aa125732">  455</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga7bb867ac58bdce583d497d05aa125732">AvancaPapel</a>(<span class="keywordtype">int</span> linhas);</div>
-<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span> </div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno"><a class="line" href="group___m1.html#gacd752d6dc3de8bd572757c58baad9abb">  529</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gacd752d6dc3de8bd572757c58baad9abb">StatusImpressora</a>(<span class="keywordtype">int</span> param);</div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span> </div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno"><a class="line" href="group___m1.html#ga0477cb1087969802c31407757eb23073">  557</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga0477cb1087969802c31407757eb23073">AbreGavetaElgin</a>();</div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span> </div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno"><a class="line" href="group___m1.html#ga82f718c7155c604104b0b2fb5e800a40">  590</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga82f718c7155c604104b0b2fb5e800a40">AbreGaveta</a>(<span class="keywordtype">int</span> pino, <span class="keywordtype">int</span> ti, <span class="keywordtype">int</span> tf);</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno"><a class="line" href="group___m1.html#gac15aad13ce53d650c10bd74e286170ec">  607</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gac15aad13ce53d650c10bd74e286170ec">InicializaImpressora</a>();</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span> </div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno"><a class="line" href="group___m1.html#gaee4c087b368db5a467d2ed26afe1941a">  634</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gaee4c087b368db5a467d2ed26afe1941a">DefinePosicao</a>(<span class="keywordtype">int</span> posicao);</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span> </div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno"><a class="line" href="group___m1.html#gaccc3718d7089288a2135d9b4a4377785">  657</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gaccc3718d7089288a2135d9b4a4377785">SinalSonoro</a>(<span class="keywordtype">int</span> qtd, <span class="keywordtype">int</span> tempoInicio, <span class="keywordtype">int</span> tempoFim);</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span> </div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno"><a class="line" href="group___m1.html#ga44b4bdd6ff22dddf5ce8945bcff10f2a">  680</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga44b4bdd6ff22dddf5ce8945bcff10f2a">DirectIO</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* writeData, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> writeNum, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* readData, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* readNum);</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span> </div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno"><a class="line" href="group___m1.html#ga64bca702d7d0dec0d3ba82257848c83e">  710</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga64bca702d7d0dec0d3ba82257848c83e">ImprimeImagemMemoria</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* key, <span class="keywordtype">int</span> scala);</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span> </div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span> </div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    <span class="comment">// Funções da integração com SAT</span></div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span><span class="comment"></span> </div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno"><a class="line" href="group___m1.html#ga0e73b993587e826d44d95b4f2382e1f0">  754</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga0e73b993587e826d44d95b4f2382e1f0">ImprimeXMLSAT</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dados, <span class="keywordtype">int</span> param);</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span> </div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno"><a class="line" href="group___m1.html#ga14dad45b993f1f7ca6b99081084a5c12">  796</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga14dad45b993f1f7ca6b99081084a5c12">ImprimeXMLCancelamentoSAT</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dados, <span class="keyword">const</span> <span class="keywordtype">char</span>* assQRCode, <span class="keywordtype">int</span> param);</div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span> </div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    <span class="comment">//Funções de integração com NFCe</span></div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span><span class="comment"></span> </div>
-<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno"><a class="line" href="group___m1.html#gace248799521dc829ed65a6a60f25ab8b">  846</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gace248799521dc829ed65a6a60f25ab8b">ImprimeXMLNFCe</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dados, <span class="keywordtype">int</span> indexcsc, <span class="keyword">const</span> <span class="keywordtype">char</span>* csc, <span class="keywordtype">int</span> param);</div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span> </div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno"><a class="line" href="group___m1.html#ga188be53e06bbc309dfe6364c4082835f">  863</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga188be53e06bbc309dfe6364c4082835f">ImprimeXMLCancelamentoNFCe</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *dados, <span class="keywordtype">int</span> param);</div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span> </div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno"><a class="line" href="group___m1.html#ga7e6a7e1acce3d656659a471fb6dd0458">  880</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga7e6a7e1acce3d656659a471fb6dd0458">ModoPagina</a>();</div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span> </div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span> </div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno"><a class="line" href="group___m1.html#ga5a040acbc7d4a42ab7714972c0579076">  907</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga5a040acbc7d4a42ab7714972c0579076">DirecaoImpressao</a>(<span class="keywordtype">int</span> direcao);</div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span> </div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno"><a class="line" href="group___m1.html#gaaf8135997bfdaaec07de62d7ba3575f6">  937</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gaaf8135997bfdaaec07de62d7ba3575f6">DefineAreaImpressao</a>(<span class="keywordtype">int</span> oHorizontal, <span class="keywordtype">int</span> oVertical, <span class="keywordtype">int</span> dHorizontal, <span class="keywordtype">int</span> dVertical);</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span> </div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno"><a class="line" href="group___m1.html#ga702f50865da261d69afd60618041d6a0">  958</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga702f50865da261d69afd60618041d6a0">PosicaoImpressaoHorizontal</a>(<span class="keywordtype">int</span> nLnH);</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span> </div>
-<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno"><a class="line" href="group___m1.html#ga31c2805a817a8b8049c60c4ac76ae3e7">  981</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga31c2805a817a8b8049c60c4ac76ae3e7">PosicaoImpressaoVertical</a>(<span class="keywordtype">int</span> nLnH);</div>
-<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span> </div>
-<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l00999" name="l00999"></a><span class="lineno"><a class="line" href="group___m1.html#ga3be49ecd34cd40e445e2bac306d5714c">  999</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga3be49ecd34cd40e445e2bac306d5714c">ImprimeModoPagina</a>();</div>
-<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span> </div>
-<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"><a class="line" href="group___m1.html#gacdc97edd24cfb9903abf0933996112f0"> 1019</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gacdc97edd24cfb9903abf0933996112f0">LimpaBufferModoPagina</a>();</div>
-<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span> </div>
-<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"><a class="line" href="group___m1.html#gacee31e0a9e1d0a2a3e68ad14cf36acd0"> 1039</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gacee31e0a9e1d0a2a3e68ad14cf36acd0">ImprimeMPeRetornaPadrao</a>();</div>
-<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span> </div>
-<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"><a class="line" href="group___m1.html#ga26d6f65fe8192b33fd6df6fa4450d585"> 1060</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga26d6f65fe8192b33fd6df6fa4450d585">ModoPadrao</a>();</div>
-<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span> </div>
-<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>    <span class="keywordtype">char</span> *IdImpressora(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
-<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span> </div>
-<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"><a class="line" href="group___m1.html#ga599cd446dffa98a0b8843373cbc92a15"> 1084</a></span>    <span class="keywordtype">char</span> *<a class="code hl_function" href="group___m1.html#ga599cd446dffa98a0b8843373cbc92a15">GetVersaoDLL</a>();</div>
-<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span> </div>
-<div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"><a class="line" href="group___m1.html#gae1e5566e27106c82cdbd137c5b4599c6"> 1109</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gae1e5566e27106c82cdbd137c5b4599c6">ImprimeCupomTEF</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dados);</div>
-<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span> </div>
-<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"><a class="line" href="group___m1.html#gad6742274b49f7d997254981d3f44e5f1"> 1130</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gad6742274b49f7d997254981d3f44e5f1">ImprimeImagem</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * path);</div>
-<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span> </div>
-<div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">// Funcoes da impressora</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment"></span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d">  138</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d">AbreConexaoImpressora</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span>* modelo, <span class="keyword">const</span> <span class="keywordtype">char</span>* conexao, <span class="keywordtype">int</span> parametro);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="group___m1.html#ga520ec6fa932747f430c2a89bc46c8176">  155</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga520ec6fa932747f430c2a89bc46c8176">FechaConexaoImpressora</a>();</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="group___m1.html#ga6dd4083b75e9221d85c780a9a35b5168">  171</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga6dd4083b75e9221d85c780a9a35b5168">EspacamentoEntreLinhas</a>(<span class="keywordtype">int</span> tamanho);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="group___m1.html#ga6c9bc310ba0f45001cca6420c09e77c7">  240</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga6c9bc310ba0f45001cca6420c09e77c7">ImpressaoTexto</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dados, <span class="keywordtype">int</span> posicao, <span class="keywordtype">int</span> stilo, <span class="keywordtype">int</span> tamanho);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade">  260</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade">Corte</a>(<span class="keywordtype">int</span> avanco);</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="group___m1.html#ga329c887a0b5731559d593aaa0ca0aa2b">  279</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga329c887a0b5731559d593aaa0ca0aa2b">CorteTotal</a>(<span class="keywordtype">int</span> avanco);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno"><a class="line" href="group___m1.html#gace32a45c3d64239fc38f773f199ddf2e">  310</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gace32a45c3d64239fc38f773f199ddf2e">ImpressaoQRCode</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dados, <span class="keywordtype">int</span> tamanho, <span class="keywordtype">int</span> nivelCorrecao);</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno"><a class="line" href="group___m1.html#gaf4424cf8fcb9917a27c53a2972ca1626">  400</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gaf4424cf8fcb9917a27c53a2972ca1626">ImpressaoPDF417</a>(<span class="keywordtype">int</span> numCols, <span class="keywordtype">int</span> numRows, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> errCorLvl, <span class="keywordtype">int</span> options, <span class="keyword">const</span> <span class="keywordtype">char</span> *dados);</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno"><a class="line" href="group___m1.html#ga52b5a949b98c3163709b09762a17e794">  441</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga52b5a949b98c3163709b09762a17e794">ImpressaoCodigoBarras</a>(<span class="keywordtype">int</span> tipo, <span class="keyword">const</span> <span class="keywordtype">char</span>* dados, <span class="keywordtype">int</span> altura, <span class="keywordtype">int</span> largura, <span class="keywordtype">int</span> HRI);</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span> </div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno"><a class="line" href="group___m1.html#ga7bb867ac58bdce583d497d05aa125732">  457</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga7bb867ac58bdce583d497d05aa125732">AvancaPapel</a>(<span class="keywordtype">int</span> linhas);</div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span> </div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno"><a class="line" href="group___m1.html#gacd752d6dc3de8bd572757c58baad9abb">  531</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gacd752d6dc3de8bd572757c58baad9abb">StatusImpressora</a>(<span class="keywordtype">int</span> param);</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span> </div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno"><a class="line" href="group___m1.html#ga0477cb1087969802c31407757eb23073">  559</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga0477cb1087969802c31407757eb23073">AbreGavetaElgin</a>();</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span> </div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno"><a class="line" href="group___m1.html#ga82f718c7155c604104b0b2fb5e800a40">  592</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga82f718c7155c604104b0b2fb5e800a40">AbreGaveta</a>(<span class="keywordtype">int</span> pino, <span class="keywordtype">int</span> ti, <span class="keywordtype">int</span> tf);</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span> </div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno"><a class="line" href="group___m1.html#gac15aad13ce53d650c10bd74e286170ec">  609</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gac15aad13ce53d650c10bd74e286170ec">InicializaImpressora</a>();</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span> </div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno"><a class="line" href="group___m1.html#gaee4c087b368db5a467d2ed26afe1941a">  636</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gaee4c087b368db5a467d2ed26afe1941a">DefinePosicao</a>(<span class="keywordtype">int</span> posicao);</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span> </div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno"><a class="line" href="group___m1.html#gaccc3718d7089288a2135d9b4a4377785">  659</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gaccc3718d7089288a2135d9b4a4377785">SinalSonoro</a>(<span class="keywordtype">int</span> qtd, <span class="keywordtype">int</span> tempoInicio, <span class="keywordtype">int</span> tempoFim);</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span> </div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno"><a class="line" href="group___m1.html#ga44b4bdd6ff22dddf5ce8945bcff10f2a">  682</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga44b4bdd6ff22dddf5ce8945bcff10f2a">DirectIO</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* writeData, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> writeNum, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* readData, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* readNum);</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span> </div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno"><a class="line" href="group___m1.html#ga64bca702d7d0dec0d3ba82257848c83e">  712</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga64bca702d7d0dec0d3ba82257848c83e">ImprimeImagemMemoria</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* key, <span class="keywordtype">int</span> scala);</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span> </div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span> </div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>    <span class="comment">// Funções da integração com SAT</span></div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span><span class="comment"></span> </div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno"><a class="line" href="group___m1.html#ga0e73b993587e826d44d95b4f2382e1f0">  756</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga0e73b993587e826d44d95b4f2382e1f0">ImprimeXMLSAT</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dados, <span class="keywordtype">int</span> param);</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span> </div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno"><a class="line" href="group___m1.html#ga14dad45b993f1f7ca6b99081084a5c12">  798</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga14dad45b993f1f7ca6b99081084a5c12">ImprimeXMLCancelamentoSAT</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dados, <span class="keyword">const</span> <span class="keywordtype">char</span>* assQRCode, <span class="keywordtype">int</span> param);</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span> </div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    <span class="comment">//Funções de integração com NFCe</span></div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span><span class="comment"></span> </div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno"><a class="line" href="group___m1.html#gace248799521dc829ed65a6a60f25ab8b">  848</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gace248799521dc829ed65a6a60f25ab8b">ImprimeXMLNFCe</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dados, <span class="keywordtype">int</span> indexcsc, <span class="keyword">const</span> <span class="keywordtype">char</span>* csc, <span class="keywordtype">int</span> param);</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span> </div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span> </div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno"><a class="line" href="group___m1.html#ga188be53e06bbc309dfe6364c4082835f">  865</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga188be53e06bbc309dfe6364c4082835f">ImprimeXMLCancelamentoNFCe</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *dados, <span class="keywordtype">int</span> param);</div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span> </div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno"><a class="line" href="group___m1.html#ga7e6a7e1acce3d656659a471fb6dd0458">  882</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga7e6a7e1acce3d656659a471fb6dd0458">ModoPagina</a>();</div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span> </div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span> </div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno"><a class="line" href="group___m1.html#ga5a040acbc7d4a42ab7714972c0579076">  909</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga5a040acbc7d4a42ab7714972c0579076">DirecaoImpressao</a>(<span class="keywordtype">int</span> direcao);</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span> </div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno"><a class="line" href="group___m1.html#gaaf8135997bfdaaec07de62d7ba3575f6">  939</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gaaf8135997bfdaaec07de62d7ba3575f6">DefineAreaImpressao</a>(<span class="keywordtype">int</span> oHorizontal, <span class="keywordtype">int</span> oVertical, <span class="keywordtype">int</span> dHorizontal, <span class="keywordtype">int</span> dVertical);</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span> </div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno"><a class="line" href="group___m1.html#ga702f50865da261d69afd60618041d6a0">  960</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga702f50865da261d69afd60618041d6a0">PosicaoImpressaoHorizontal</a>(<span class="keywordtype">int</span> nLnH);</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span> </div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l00983" name="l00983"></a><span class="lineno"><a class="line" href="group___m1.html#ga31c2805a817a8b8049c60c4ac76ae3e7">  983</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga31c2805a817a8b8049c60c4ac76ae3e7">PosicaoImpressaoVertical</a>(<span class="keywordtype">int</span> nLnH);</div>
+<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span> </div>
+<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"><a class="line" href="group___m1.html#ga3be49ecd34cd40e445e2bac306d5714c"> 1001</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga3be49ecd34cd40e445e2bac306d5714c">ImprimeModoPagina</a>();</div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span> </div>
+<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"><a class="line" href="group___m1.html#gacdc97edd24cfb9903abf0933996112f0"> 1021</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gacdc97edd24cfb9903abf0933996112f0">LimpaBufferModoPagina</a>();</div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span> </div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"><a class="line" href="group___m1.html#gacee31e0a9e1d0a2a3e68ad14cf36acd0"> 1041</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gacee31e0a9e1d0a2a3e68ad14cf36acd0">ImprimeMPeRetornaPadrao</a>();</div>
+<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span> </div>
+<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"><a class="line" href="group___m1.html#ga26d6f65fe8192b33fd6df6fa4450d585"> 1062</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#ga26d6f65fe8192b33fd6df6fa4450d585">ModoPadrao</a>();</div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span> </div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>    <span class="keywordtype">char</span> *IdImpressora(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span> </div>
+<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"><a class="line" href="group___m1.html#ga599cd446dffa98a0b8843373cbc92a15"> 1086</a></span>    <span class="keywordtype">char</span> *<a class="code hl_function" href="group___m1.html#ga599cd446dffa98a0b8843373cbc92a15">GetVersaoDLL</a>();</div>
+<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span> </div>
+<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"><a class="line" href="group___m1.html#gae1e5566e27106c82cdbd137c5b4599c6"> 1111</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gae1e5566e27106c82cdbd137c5b4599c6">ImprimeCupomTEF</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dados);</div>
+<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span> </div>
+<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01132" name="l01132"></a><span class="lineno"><a class="line" href="group___m1.html#gad6742274b49f7d997254981d3f44e5f1"> 1132</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m1.html#gad6742274b49f7d997254981d3f44e5f1">ImprimeImagem</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * path);</div>
 <div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span> </div>
-<div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span><span class="comment">    /***********************************************************************************************************</span></div>
-<div class="line"><a id="l01135" name="l01135"></a><span class="lineno"> 1135</span><span class="comment">        Implementações HPRT</span></div>
-<div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span><span class="comment"></span> </div>
-<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span><span class="comment">        Descrição:  Classe que exporta as funções da biblioteca HPRT.</span></div>
-<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span><span class="comment">        Autor:      George Rocha</span></div>
-<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span><span class="comment">        Data:       08/01/2018</span></div>
-<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span><span class="comment"></span> </div>
-<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span><span class="comment">    ***********************************************************************************************************/</span></div>
-<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span> </div>
-<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>    <span class="comment">// Funções da impressora</span></div>
-<div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span><span class="comment"></span> </div>
-<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01177" name="l01177"></a><span class="lineno"><a class="line" href="group___m2.html#gac4467d6cd7f9a2ad7444b3205eeef014"> 1177</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gac4467d6cd7f9a2ad7444b3205eeef014">PrinterCreator</a>(<span class="keywordtype">void</span>* handle, <span class="keyword">const</span> TCHAR* model);</div>
-<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span> </div>
-<div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"><a class="line" href="group___m2.html#ga8064ffa2e179df5c4c999bfc59c07436"> 1194</a></span>    <span class="keywordtype">void</span>* <a class="code hl_function" href="group___m2.html#ga8064ffa2e179df5c4c999bfc59c07436">PrinterCreatorS</a>(<span class="keyword">const</span> TCHAR* model);</div>
-<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span> </div>
-<div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"><a class="line" href="group___m2.html#ga70d127a38ae71f1ef1fa594b3c6112df"> 1210</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga70d127a38ae71f1ef1fa594b3c6112df">PrinterDestroy</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span> </div>
-<div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"><a class="line" href="group___m2.html#ga39636d3b356259d93e042236b123ebc3"> 1236</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga39636d3b356259d93e042236b123ebc3">PortOpen</a>(<span class="keywordtype">void</span>* handle, <span class="keyword">const</span> TCHAR* ioSettings);</div>
-<div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span> </div>
-<div class="line"><a id="l01251" name="l01251"></a><span class="lineno"> 1251</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01253" name="l01253"></a><span class="lineno"><a class="line" href="group___m2.html#ga989fb56b4df6390148b2de1f84ffdb0c"> 1253</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga989fb56b4df6390148b2de1f84ffdb0c">PortClose</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l01254" name="l01254"></a><span class="lineno"> 1254</span> </div>
-<div class="line"><a id="l01268" name="l01268"></a><span class="lineno"> 1268</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"><a class="line" href="group___m2.html#gaecae5df1d76782dde8c82a28ee70d1db"> 1270</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaecae5df1d76782dde8c82a28ee70d1db">PrinterInitialize</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span> </div>
-<div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"><a class="line" href="group___m2.html#ga9d40e94d73fdf8306bcc477e258b4624"> 1287</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga9d40e94d73fdf8306bcc477e258b4624">CancelPrintDataInPageMode</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span> </div>
-<div class="line"><a id="l01313" name="l01313"></a><span class="lineno"> 1313</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01315" name="l01315"></a><span class="lineno"><a class="line" href="group___m2.html#ga6c904e8e96fdd44f41282ad7843000fb"> 1315</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga6c904e8e96fdd44f41282ad7843000fb">GetPrinterState</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* printerStatus);</div>
-<div class="line"><a id="l01316" name="l01316"></a><span class="lineno"> 1316</span> </div>
-<div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01341" name="l01341"></a><span class="lineno"><a class="line" href="group___m2.html#ga48f74826596723a41e8e50a46d4cf2e7"> 1341</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga48f74826596723a41e8e50a46d4cf2e7">CutPaper</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> cutMode, <span class="keywordtype">int</span> distance);</div>
-<div class="line"><a id="l01342" name="l01342"></a><span class="lineno"> 1342</span> </div>
-<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01360" name="l01360"></a><span class="lineno"><a class="line" href="group___m2.html#gaa96e7d2679056c288acfee98bf4424fa"> 1360</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaa96e7d2679056c288acfee98bf4424fa">FeedLine</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> lines);</div>
-<div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span> </div>
-<div class="line"><a id="l01388" name="l01388"></a><span class="lineno"> 1388</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01390" name="l01390"></a><span class="lineno"><a class="line" href="group___m2.html#ga4a982087db2fdbcc07407146ffb0f1a5"> 1390</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga4a982087db2fdbcc07407146ffb0f1a5">OpenCashDrawer</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> pinMode, <span class="keywordtype">int</span> onTime, <span class="keywordtype">int</span> offTime);</div>
-<div class="line"><a id="l01391" name="l01391"></a><span class="lineno"> 1391</span> </div>
-<div class="line"><a id="l01393" name="l01393"></a><span class="lineno"> 1393</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01395" name="l01395"></a><span class="lineno"> 1395</span>    <span class="keywordtype">int</span> OpenDrawer(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> pinMode, <span class="keywordtype">int</span> onTime, <span class="keywordtype">int</span> offTime);</div>
-<div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span> </div>
-<div class="line"><a id="l01455" name="l01455"></a><span class="lineno"> 1455</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01457" name="l01457"></a><span class="lineno"><a class="line" href="group___m2.html#ga31548499655c8b1c3636741b1a0b57da"> 1457</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga31548499655c8b1c3636741b1a0b57da">PrintText</a>(<span class="keywordtype">void</span>* handle, <span class="keyword">const</span> TCHAR* data, <span class="keywordtype">int</span> alignment, <span class="keywordtype">int</span> attribute, <span class="keywordtype">int</span> textSize);</div>
-<div class="line"><a id="l01458" name="l01458"></a><span class="lineno"> 1458</span> </div>
-<div class="line"><a id="l01474" name="l01474"></a><span class="lineno"> 1474</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01476" name="l01476"></a><span class="lineno"><a class="line" href="group___m2.html#gaa74d41158238948b2cb4d7fa7943381c"> 1476</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaa74d41158238948b2cb4d7fa7943381c">PrintTextS</a>(<span class="keywordtype">void</span>* handle, <span class="keyword">const</span> TCHAR* data);</div>
-<div class="line"><a id="l01477" name="l01477"></a><span class="lineno"> 1477</span> </div>
-<div class="line"><a id="l01530" name="l01530"></a><span class="lineno"> 1530</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01532" name="l01532"></a><span class="lineno"><a class="line" href="group___m2.html#ga2a4d42f1e9a38b79932b5c79cca1a277"> 1532</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga2a4d42f1e9a38b79932b5c79cca1a277">PrintBarCode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> bcType, <span class="keyword">const</span> TCHAR* bcData, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> alignment, <span class="keywordtype">int</span> hriPosition);</div>
-<div class="line"><a id="l01533" name="l01533"></a><span class="lineno"> 1533</span> </div>
-<div class="line"><a id="l01581" name="l01581"></a><span class="lineno"> 1581</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01583" name="l01583"></a><span class="lineno"><a class="line" href="group___m2.html#ga7951fb2f435a5c2a53c4857488acde3e"> 1583</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga7951fb2f435a5c2a53c4857488acde3e">PrintSymbol</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> type, <span class="keyword">const</span> TCHAR* data, <span class="keywordtype">int</span> errLevel, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> alignment);</div>
-<div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span> </div>
-<div class="line"><a id="l01599" name="l01599"></a><span class="lineno"> 1599</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01601" name="l01601"></a><span class="lineno"><a class="line" href="group___m2.html#ga2bbf362218e810493bab67f561bb18b2"> 1601</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga2bbf362218e810493bab67f561bb18b2">SelectPageMode</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l01602" name="l01602"></a><span class="lineno"> 1602</span> </div>
-<div class="line"><a id="l01624" name="l01624"></a><span class="lineno"> 1624</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01626" name="l01626"></a><span class="lineno"><a class="line" href="group___m2.html#ga57941f6e3d6cc29ac7eaff00a46f928c"> 1626</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga57941f6e3d6cc29ac7eaff00a46f928c">SelectPrintDirectionInPageMode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> direction);</div>
-<div class="line"><a id="l01627" name="l01627"></a><span class="lineno"> 1627</span> </div>
-<div class="line"><a id="l01645" name="l01645"></a><span class="lineno"> 1645</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01647" name="l01647"></a><span class="lineno"><a class="line" href="group___m2.html#ga9af12791275ebb6aedc55731b5b39ca7"> 1647</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga9af12791275ebb6aedc55731b5b39ca7">SetAbsoluteVerticalPrintPositionInPageMode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> position);</div>
-<div class="line"><a id="l01648" name="l01648"></a><span class="lineno"> 1648</span> </div>
-<div class="line"><a id="l01663" name="l01663"></a><span class="lineno"> 1663</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01665" name="l01665"></a><span class="lineno"><a class="line" href="group___m2.html#gaeed3e2119ae72d4dd556ee374f9d6ef1"> 1665</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaeed3e2119ae72d4dd556ee374f9d6ef1">SetPrintAndReturnStandardMode</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l01666" name="l01666"></a><span class="lineno"> 1666</span> </div>
-<div class="line"><a id="l01689" name="l01689"></a><span class="lineno"> 1689</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01691" name="l01691"></a><span class="lineno"><a class="line" href="group___m2.html#ga7ede972453407e48176057ec2e05a7c9"> 1691</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga7ede972453407e48176057ec2e05a7c9">SetPrintAreaInPageMode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> horizontal, <span class="keywordtype">int</span> vertical, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
-<div class="line"><a id="l01692" name="l01692"></a><span class="lineno"> 1692</span> </div>
-<div class="line"><a id="l01707" name="l01707"></a><span class="lineno"> 1707</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01709" name="l01709"></a><span class="lineno"><a class="line" href="group___m2.html#ga5dc93e8b5a845a68292bbf39fa5c8406"> 1709</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga5dc93e8b5a845a68292bbf39fa5c8406">PrintDataInPageMode</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l01710" name="l01710"></a><span class="lineno"> 1710</span> </div>
-<div class="line"><a id="l01728" name="l01728"></a><span class="lineno"> 1728</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01730" name="l01730"></a><span class="lineno"><a class="line" href="group___m2.html#gadc70eea96c797343b2868cc4a360537b"> 1730</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gadc70eea96c797343b2868cc4a360537b">SetAbSolutePrintPosition</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> position);</div>
-<div class="line"><a id="l01731" name="l01731"></a><span class="lineno"> 1731</span> </div>
-<div class="line"><a id="l01753" name="l01753"></a><span class="lineno"> 1753</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01755" name="l01755"></a><span class="lineno"><a class="line" href="group___m2.html#ga0b858cb07cb324aa9f40b42c936a90e6"> 1755</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga0b858cb07cb324aa9f40b42c936a90e6">GetCashDrawerState</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span>* drawerState);</div>
-<div class="line"><a id="l01756" name="l01756"></a><span class="lineno"> 1756</span> </div>
-<div class="line"><a id="l01758" name="l01758"></a><span class="lineno"> 1758</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01760" name="l01760"></a><span class="lineno"> 1760</span>    <span class="keywordtype">int</span> GetDrawerState(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span>* drawerState);</div>
-<div class="line"><a id="l01761" name="l01761"></a><span class="lineno"> 1761</span> </div>
-<div class="line"><a id="l01783" name="l01783"></a><span class="lineno"> 1783</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01785" name="l01785"></a><span class="lineno"><a class="line" href="group___m2.html#gaa3754c2eed4570238863c1cfa45be309"> 1785</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaa3754c2eed4570238863c1cfa45be309">SetAlign</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> align);</div>
-<div class="line"><a id="l01786" name="l01786"></a><span class="lineno"> 1786</span> </div>
-<div class="line"><a id="l01807" name="l01807"></a><span class="lineno"> 1807</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"><a class="line" href="group___m2.html#ga2ce118f8b6995901658c2abee9537d10"> 1809</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga2ce118f8b6995901658c2abee9537d10">SetTextBold</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> bold);</div>
-<div class="line"><a id="l01810" name="l01810"></a><span class="lineno"> 1810</span> </div>
-<div class="line"><a id="l01831" name="l01831"></a><span class="lineno"> 1831</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01833" name="l01833"></a><span class="lineno"><a class="line" href="group___m2.html#gac53161222c0ffd0e59d6386d66b17a43"> 1833</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gac53161222c0ffd0e59d6386d66b17a43">SetTextFont</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> font);</div>
-<div class="line"><a id="l01834" name="l01834"></a><span class="lineno"> 1834</span> </div>
-<div class="line"><a id="l01835" name="l01835"></a><span class="lineno"> 1835</span>    E1_IMPRESSORASHARED_EXPORT <span class="keywordtype">int</span> STDCALL SetLog(<span class="keywordtype">int</span> enable, <span class="keyword">const</span> TCHAR* path);</div>
+<div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span> </div>
+<div class="line"><a id="l01135" name="l01135"></a><span class="lineno"> 1135</span> </div>
+<div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span><span class="comment">    /***********************************************************************************************************</span></div>
+<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span><span class="comment">        Implementações HPRT</span></div>
+<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span><span class="comment"></span> </div>
+<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span><span class="comment">        Descrição:  Classe que exporta as funções da biblioteca HPRT.</span></div>
+<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span><span class="comment">        Autor:      George Rocha</span></div>
+<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span><span class="comment">        Data:       08/01/2018</span></div>
+<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span><span class="comment"></span> </div>
+<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span><span class="comment">    ***********************************************************************************************************/</span></div>
+<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span> </div>
+<div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span>    <span class="comment">// Funções da impressora</span></div>
+<div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span><span class="comment"></span> </div>
+<div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"><a class="line" href="group___m2.html#gac4467d6cd7f9a2ad7444b3205eeef014"> 1179</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gac4467d6cd7f9a2ad7444b3205eeef014">PrinterCreator</a>(<span class="keywordtype">void</span>* handle, <span class="keyword">const</span> TCHAR* model);</div>
+<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span> </div>
+<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"><a class="line" href="group___m2.html#ga8064ffa2e179df5c4c999bfc59c07436"> 1196</a></span>    <span class="keywordtype">void</span>* <a class="code hl_function" href="group___m2.html#ga8064ffa2e179df5c4c999bfc59c07436">PrinterCreatorS</a>(<span class="keyword">const</span> TCHAR* model);</div>
+<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span> </div>
+<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"><a class="line" href="group___m2.html#ga70d127a38ae71f1ef1fa594b3c6112df"> 1212</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga70d127a38ae71f1ef1fa594b3c6112df">PrinterDestroy</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span> </div>
+<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"><a class="line" href="group___m2.html#ga39636d3b356259d93e042236b123ebc3"> 1238</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga39636d3b356259d93e042236b123ebc3">PortOpen</a>(<span class="keywordtype">void</span>* handle, <span class="keyword">const</span> TCHAR* ioSettings);</div>
+<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span> </div>
+<div class="line"><a id="l01253" name="l01253"></a><span class="lineno"> 1253</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01255" name="l01255"></a><span class="lineno"><a class="line" href="group___m2.html#ga989fb56b4df6390148b2de1f84ffdb0c"> 1255</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga989fb56b4df6390148b2de1f84ffdb0c">PortClose</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span> </div>
+<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01272" name="l01272"></a><span class="lineno"><a class="line" href="group___m2.html#gaecae5df1d76782dde8c82a28ee70d1db"> 1272</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaecae5df1d76782dde8c82a28ee70d1db">PrinterInitialize</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l01273" name="l01273"></a><span class="lineno"> 1273</span> </div>
+<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01289" name="l01289"></a><span class="lineno"><a class="line" href="group___m2.html#ga9d40e94d73fdf8306bcc477e258b4624"> 1289</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga9d40e94d73fdf8306bcc477e258b4624">CancelPrintDataInPageMode</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l01290" name="l01290"></a><span class="lineno"> 1290</span> </div>
+<div class="line"><a id="l01315" name="l01315"></a><span class="lineno"> 1315</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01317" name="l01317"></a><span class="lineno"><a class="line" href="group___m2.html#ga6c904e8e96fdd44f41282ad7843000fb"> 1317</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga6c904e8e96fdd44f41282ad7843000fb">GetPrinterState</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* printerStatus);</div>
+<div class="line"><a id="l01318" name="l01318"></a><span class="lineno"> 1318</span> </div>
+<div class="line"><a id="l01341" name="l01341"></a><span class="lineno"> 1341</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01343" name="l01343"></a><span class="lineno"><a class="line" href="group___m2.html#ga48f74826596723a41e8e50a46d4cf2e7"> 1343</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga48f74826596723a41e8e50a46d4cf2e7">CutPaper</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> cutMode, <span class="keywordtype">int</span> distance);</div>
+<div class="line"><a id="l01344" name="l01344"></a><span class="lineno"> 1344</span> </div>
+<div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"><a class="line" href="group___m2.html#gaa96e7d2679056c288acfee98bf4424fa"> 1362</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaa96e7d2679056c288acfee98bf4424fa">FeedLine</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> lines);</div>
+<div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span> </div>
+<div class="line"><a id="l01390" name="l01390"></a><span class="lineno"> 1390</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01392" name="l01392"></a><span class="lineno"><a class="line" href="group___m2.html#ga4a982087db2fdbcc07407146ffb0f1a5"> 1392</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga4a982087db2fdbcc07407146ffb0f1a5">OpenCashDrawer</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> pinMode, <span class="keywordtype">int</span> onTime, <span class="keywordtype">int</span> offTime);</div>
+<div class="line"><a id="l01393" name="l01393"></a><span class="lineno"> 1393</span> </div>
+<div class="line"><a id="l01395" name="l01395"></a><span class="lineno"> 1395</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span>    <span class="keywordtype">int</span> OpenDrawer(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> pinMode, <span class="keywordtype">int</span> onTime, <span class="keywordtype">int</span> offTime);</div>
+<div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span> </div>
+<div class="line"><a id="l01457" name="l01457"></a><span class="lineno"> 1457</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01459" name="l01459"></a><span class="lineno"><a class="line" href="group___m2.html#ga31548499655c8b1c3636741b1a0b57da"> 1459</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga31548499655c8b1c3636741b1a0b57da">PrintText</a>(<span class="keywordtype">void</span>* handle, <span class="keyword">const</span> TCHAR* data, <span class="keywordtype">int</span> alignment, <span class="keywordtype">int</span> attribute, <span class="keywordtype">int</span> textSize);</div>
+<div class="line"><a id="l01460" name="l01460"></a><span class="lineno"> 1460</span> </div>
+<div class="line"><a id="l01476" name="l01476"></a><span class="lineno"> 1476</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01478" name="l01478"></a><span class="lineno"><a class="line" href="group___m2.html#gaa74d41158238948b2cb4d7fa7943381c"> 1478</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaa74d41158238948b2cb4d7fa7943381c">PrintTextS</a>(<span class="keywordtype">void</span>* handle, <span class="keyword">const</span> TCHAR* data);</div>
+<div class="line"><a id="l01479" name="l01479"></a><span class="lineno"> 1479</span> </div>
+<div class="line"><a id="l01532" name="l01532"></a><span class="lineno"> 1532</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01534" name="l01534"></a><span class="lineno"><a class="line" href="group___m2.html#ga2a4d42f1e9a38b79932b5c79cca1a277"> 1534</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga2a4d42f1e9a38b79932b5c79cca1a277">PrintBarCode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> bcType, <span class="keyword">const</span> TCHAR* bcData, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> alignment, <span class="keywordtype">int</span> hriPosition);</div>
+<div class="line"><a id="l01535" name="l01535"></a><span class="lineno"> 1535</span> </div>
+<div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01585" name="l01585"></a><span class="lineno"><a class="line" href="group___m2.html#ga7951fb2f435a5c2a53c4857488acde3e"> 1585</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga7951fb2f435a5c2a53c4857488acde3e">PrintSymbol</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> type, <span class="keyword">const</span> TCHAR* data, <span class="keywordtype">int</span> errLevel, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> alignment);</div>
+<div class="line"><a id="l01586" name="l01586"></a><span class="lineno"> 1586</span> </div>
+<div class="line"><a id="l01601" name="l01601"></a><span class="lineno"> 1601</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01603" name="l01603"></a><span class="lineno"><a class="line" href="group___m2.html#ga2bbf362218e810493bab67f561bb18b2"> 1603</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga2bbf362218e810493bab67f561bb18b2">SelectPageMode</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l01604" name="l01604"></a><span class="lineno"> 1604</span> </div>
+<div class="line"><a id="l01626" name="l01626"></a><span class="lineno"> 1626</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01628" name="l01628"></a><span class="lineno"><a class="line" href="group___m2.html#ga57941f6e3d6cc29ac7eaff00a46f928c"> 1628</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga57941f6e3d6cc29ac7eaff00a46f928c">SelectPrintDirectionInPageMode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> direction);</div>
+<div class="line"><a id="l01629" name="l01629"></a><span class="lineno"> 1629</span> </div>
+<div class="line"><a id="l01647" name="l01647"></a><span class="lineno"> 1647</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01649" name="l01649"></a><span class="lineno"><a class="line" href="group___m2.html#ga9af12791275ebb6aedc55731b5b39ca7"> 1649</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga9af12791275ebb6aedc55731b5b39ca7">SetAbsoluteVerticalPrintPositionInPageMode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> position);</div>
+<div class="line"><a id="l01650" name="l01650"></a><span class="lineno"> 1650</span> </div>
+<div class="line"><a id="l01665" name="l01665"></a><span class="lineno"> 1665</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01667" name="l01667"></a><span class="lineno"><a class="line" href="group___m2.html#gaeed3e2119ae72d4dd556ee374f9d6ef1"> 1667</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaeed3e2119ae72d4dd556ee374f9d6ef1">SetPrintAndReturnStandardMode</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l01668" name="l01668"></a><span class="lineno"> 1668</span> </div>
+<div class="line"><a id="l01691" name="l01691"></a><span class="lineno"> 1691</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01693" name="l01693"></a><span class="lineno"><a class="line" href="group___m2.html#ga7ede972453407e48176057ec2e05a7c9"> 1693</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga7ede972453407e48176057ec2e05a7c9">SetPrintAreaInPageMode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> horizontal, <span class="keywordtype">int</span> vertical, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
+<div class="line"><a id="l01694" name="l01694"></a><span class="lineno"> 1694</span> </div>
+<div class="line"><a id="l01709" name="l01709"></a><span class="lineno"> 1709</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01711" name="l01711"></a><span class="lineno"><a class="line" href="group___m2.html#ga5dc93e8b5a845a68292bbf39fa5c8406"> 1711</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga5dc93e8b5a845a68292bbf39fa5c8406">PrintDataInPageMode</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l01712" name="l01712"></a><span class="lineno"> 1712</span> </div>
+<div class="line"><a id="l01730" name="l01730"></a><span class="lineno"> 1730</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01732" name="l01732"></a><span class="lineno"><a class="line" href="group___m2.html#gadc70eea96c797343b2868cc4a360537b"> 1732</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gadc70eea96c797343b2868cc4a360537b">SetAbSolutePrintPosition</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> position);</div>
+<div class="line"><a id="l01733" name="l01733"></a><span class="lineno"> 1733</span> </div>
+<div class="line"><a id="l01755" name="l01755"></a><span class="lineno"> 1755</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01757" name="l01757"></a><span class="lineno"><a class="line" href="group___m2.html#ga0b858cb07cb324aa9f40b42c936a90e6"> 1757</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga0b858cb07cb324aa9f40b42c936a90e6">GetCashDrawerState</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span>* drawerState);</div>
+<div class="line"><a id="l01758" name="l01758"></a><span class="lineno"> 1758</span> </div>
+<div class="line"><a id="l01760" name="l01760"></a><span class="lineno"> 1760</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01762" name="l01762"></a><span class="lineno"> 1762</span>    <span class="keywordtype">int</span> GetDrawerState(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span>* drawerState);</div>
+<div class="line"><a id="l01763" name="l01763"></a><span class="lineno"> 1763</span> </div>
+<div class="line"><a id="l01785" name="l01785"></a><span class="lineno"> 1785</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01787" name="l01787"></a><span class="lineno"><a class="line" href="group___m2.html#gaa3754c2eed4570238863c1cfa45be309"> 1787</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaa3754c2eed4570238863c1cfa45be309">SetAlign</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> align);</div>
+<div class="line"><a id="l01788" name="l01788"></a><span class="lineno"> 1788</span> </div>
+<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01811" name="l01811"></a><span class="lineno"><a class="line" href="group___m2.html#ga2ce118f8b6995901658c2abee9537d10"> 1811</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga2ce118f8b6995901658c2abee9537d10">SetTextBold</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> bold);</div>
+<div class="line"><a id="l01812" name="l01812"></a><span class="lineno"> 1812</span> </div>
+<div class="line"><a id="l01833" name="l01833"></a><span class="lineno"> 1833</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01835" name="l01835"></a><span class="lineno"><a class="line" href="group___m2.html#gac53161222c0ffd0e59d6386d66b17a43"> 1835</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gac53161222c0ffd0e59d6386d66b17a43">SetTextFont</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> font);</div>
 <div class="line"><a id="l01836" name="l01836"></a><span class="lineno"> 1836</span> </div>
-<div class="line"><a id="l01851" name="l01851"></a><span class="lineno"> 1851</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01853" name="l01853"></a><span class="lineno"><a class="line" href="group___m2.html#gac262c1e6c430d9e5b022feb9cad9dd46"> 1853</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gac262c1e6c430d9e5b022feb9cad9dd46">SelectStandardMode</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l01854" name="l01854"></a><span class="lineno"> 1854</span> </div>
-<div class="line"><a id="l01871" name="l01871"></a><span class="lineno"> 1871</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01873" name="l01873"></a><span class="lineno"><a class="line" href="group___m2.html#ga38dd02d2e3bfaf62e3818a3dfabf1fed"> 1873</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga38dd02d2e3bfaf62e3818a3dfabf1fed">PrtPrinterCreator</a>(<span class="keywordtype">void</span> **phandle, <span class="keyword">const</span> TCHAR *model);</div>
-<div class="line"><a id="l01874" name="l01874"></a><span class="lineno"> 1874</span> </div>
-<div class="line"><a id="l01887" name="l01887"></a><span class="lineno"> 1887</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01889" name="l01889"></a><span class="lineno"><a class="line" href="group___m2.html#ga8403377e2faec5d5ac4b439e929f33a8"> 1889</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga8403377e2faec5d5ac4b439e929f33a8">PrtPrinterDestroy</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l01890" name="l01890"></a><span class="lineno"> 1890</span> </div>
-<div class="line"><a id="l01913" name="l01913"></a><span class="lineno"> 1913</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01915" name="l01915"></a><span class="lineno"><a class="line" href="group___m2.html#gacca9c3a0cb0c610297ac4f0941972637"> 1915</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gacca9c3a0cb0c610297ac4f0941972637">PrtPortOpen</a>(<span class="keywordtype">void</span>* handle, <span class="keyword">const</span> TCHAR *ioSettings);</div>
-<div class="line"><a id="l01916" name="l01916"></a><span class="lineno"> 1916</span> </div>
-<div class="line"><a id="l01930" name="l01930"></a><span class="lineno"> 1930</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01932" name="l01932"></a><span class="lineno"><a class="line" href="group___m2.html#ga75a00fb65e23f292de15a96ede1b03d9"> 1932</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga75a00fb65e23f292de15a96ede1b03d9">PrtPortClose</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l01933" name="l01933"></a><span class="lineno"> 1933</span> </div>
-<div class="line"><a id="l01947" name="l01947"></a><span class="lineno"> 1947</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01949" name="l01949"></a><span class="lineno"><a class="line" href="group___m2.html#gaedaa5c8abbf0304c17243c4130ded53e"> 1949</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaedaa5c8abbf0304c17243c4130ded53e">PrtPrinterInitialize</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l01950" name="l01950"></a><span class="lineno"> 1950</span> </div>
-<div class="line"><a id="l01975" name="l01975"></a><span class="lineno"> 1975</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l01977" name="l01977"></a><span class="lineno"><a class="line" href="group___m2.html#gaee4ed59acd1c2807971ade5585a6e563"> 1977</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaee4ed59acd1c2807971ade5585a6e563">PrtCheckPrinterState</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* printerStatus);</div>
-<div class="line"><a id="l01978" name="l01978"></a><span class="lineno"> 1978</span> </div>
-<div class="line"><a id="l02001" name="l02001"></a><span class="lineno"> 2001</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02003" name="l02003"></a><span class="lineno"><a class="line" href="group___m2.html#ga11733652cf70b9394b8fe0cc41090ee2"> 2003</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga11733652cf70b9394b8fe0cc41090ee2">PrtCutPaper</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> cutMode, <span class="keywordtype">int</span> distance);</div>
-<div class="line"><a id="l02004" name="l02004"></a><span class="lineno"> 2004</span> </div>
-<div class="line"><a id="l02020" name="l02020"></a><span class="lineno"> 2020</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02022" name="l02022"></a><span class="lineno"><a class="line" href="group___m2.html#ga8b9e7f569a560bb71b4daea778df5c7b"> 2022</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga8b9e7f569a560bb71b4daea778df5c7b">PrtFeedLine</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span>  lines);</div>
-<div class="line"><a id="l02023" name="l02023"></a><span class="lineno"> 2023</span> </div>
-<div class="line"><a id="l02050" name="l02050"></a><span class="lineno"> 2050</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02052" name="l02052"></a><span class="lineno"><a class="line" href="group___m2.html#ga9dc0dee0b05b7418f0ace5801da07932"> 2052</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga9dc0dee0b05b7418f0ace5801da07932">PrtOpenDrawer</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> pin, <span class="keywordtype">int</span> onTime, <span class="keywordtype">int</span> offTime);</div>
-<div class="line"><a id="l02053" name="l02053"></a><span class="lineno"> 2053</span> </div>
-<div class="line"><a id="l02075" name="l02075"></a><span class="lineno"> 2075</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02077" name="l02077"></a><span class="lineno"><a class="line" href="group___m2.html#ga39546c400aa0f06bace2b01411207dcf"> 2077</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga39546c400aa0f06bace2b01411207dcf">PrtGetDrawerState</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span>* drawerState);</div>
-<div class="line"><a id="l02078" name="l02078"></a><span class="lineno"> 2078</span> </div>
-<div class="line"><a id="l02137" name="l02137"></a><span class="lineno"> 2137</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02139" name="l02139"></a><span class="lineno"><a class="line" href="group___m2.html#gafdeb4ce35a857204ca1a566d3e8289b8"> 2139</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gafdeb4ce35a857204ca1a566d3e8289b8">PrtPrintText</a>(<span class="keywordtype">void</span> *handle,<span class="keyword">const</span> TCHAR* data, <span class="keywordtype">int</span> alignment, <span class="keywordtype">int</span> attribute, <span class="keywordtype">int</span> textSize);</div>
-<div class="line"><a id="l02140" name="l02140"></a><span class="lineno"> 2140</span> </div>
-<div class="line"><a id="l02191" name="l02191"></a><span class="lineno"> 2191</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02193" name="l02193"></a><span class="lineno"><a class="line" href="group___m2.html#ga2ce2e54a8bdda24e6bc15a3c6686487d"> 2193</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga2ce2e54a8bdda24e6bc15a3c6686487d">PrtPrintBarCode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> bcType, <span class="keyword">const</span> TCHAR* bcData, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> alignment, <span class="keywordtype">int</span> hriPosition);</div>
-<div class="line"><a id="l02194" name="l02194"></a><span class="lineno"> 2194</span> </div>
-<div class="line"><a id="l02242" name="l02242"></a><span class="lineno"> 2242</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02244" name="l02244"></a><span class="lineno"><a class="line" href="group___m2.html#gaea9179738ac3ebb5be78a3f669da4dc1"> 2244</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaea9179738ac3ebb5be78a3f669da4dc1">PrtPrintSymbol</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> type, <span class="keyword">const</span> TCHAR* data, <span class="keywordtype">int</span> errLevel, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> alignment);</div>
-<div class="line"><a id="l02245" name="l02245"></a><span class="lineno"> 2245</span> </div>
-<div class="line"><a id="l02260" name="l02260"></a><span class="lineno"> 2260</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02262" name="l02262"></a><span class="lineno"><a class="line" href="group___m2.html#ga6458e244b4a1fa104300d224d9cfc6d1"> 2262</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga6458e244b4a1fa104300d224d9cfc6d1">PrtSelectPageMode</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l02263" name="l02263"></a><span class="lineno"> 2263</span> </div>
-<div class="line"><a id="l02278" name="l02278"></a><span class="lineno"> 2278</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02280" name="l02280"></a><span class="lineno"><a class="line" href="group___m2.html#gad67f9fb6cb4981897026897c731fb3bd"> 2280</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gad67f9fb6cb4981897026897c731fb3bd">PrtSelectStandardMode</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l02281" name="l02281"></a><span class="lineno"> 2281</span> </div>
-<div class="line"><a id="l02302" name="l02302"></a><span class="lineno"> 2302</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02304" name="l02304"></a><span class="lineno"><a class="line" href="group___m2.html#gad263ba466a2c8dec09f9979bd2a0b402"> 2304</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gad263ba466a2c8dec09f9979bd2a0b402">PrtSelectPrintDirectionInPageMode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> direction);</div>
-<div class="line"><a id="l02305" name="l02305"></a><span class="lineno"> 2305</span> </div>
-<div class="line"><a id="l02327" name="l02327"></a><span class="lineno"> 2327</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02329" name="l02329"></a><span class="lineno"><a class="line" href="group___m2.html#ga7e0b0fe93e96b56e1f76cefa8ddf664b"> 2329</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga7e0b0fe93e96b56e1f76cefa8ddf664b">PrtSetTextPosition</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> position);</div>
-<div class="line"><a id="l02330" name="l02330"></a><span class="lineno"> 2330</span> </div>
-<div class="line"><a id="l02348" name="l02348"></a><span class="lineno"> 2348</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02350" name="l02350"></a><span class="lineno"><a class="line" href="group___m2.html#gafae340a6fcd06e06fd163c408d2c4b0c"> 2350</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gafae340a6fcd06e06fd163c408d2c4b0c">PrtSetAbsoluteVerticalPrintPositionInPageMode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> position);</div>
-<div class="line"><a id="l02351" name="l02351"></a><span class="lineno"> 2351</span> </div>
-<div class="line"><a id="l02366" name="l02366"></a><span class="lineno"> 2366</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02368" name="l02368"></a><span class="lineno"><a class="line" href="group___m2.html#ga26ed87225223f6944cff4655baf00056"> 2368</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga26ed87225223f6944cff4655baf00056">PrtSetPrintAndReturnStandardMode</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l02369" name="l02369"></a><span class="lineno"> 2369</span> </div>
-<div class="line"><a id="l02384" name="l02384"></a><span class="lineno"> 2384</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02386" name="l02386"></a><span class="lineno"><a class="line" href="group___m2.html#ga39150079dcff9bb71a2ff7d0e472986d"> 2386</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga39150079dcff9bb71a2ff7d0e472986d">PrtCancelPrintDataInPageMode</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l02387" name="l02387"></a><span class="lineno"> 2387</span> </div>
-<div class="line"><a id="l02410" name="l02410"></a><span class="lineno"> 2410</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02412" name="l02412"></a><span class="lineno"><a class="line" href="group___m2.html#gaa22d74683bdfcacb023bd23e9ab3ac5b"> 2412</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaa22d74683bdfcacb023bd23e9ab3ac5b">PrtSetPrintAreaInPageMode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> horizontal, <span class="keywordtype">int</span> vertical, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
-<div class="line"><a id="l02413" name="l02413"></a><span class="lineno"> 2413</span> </div>
-<div class="line"><a id="l02428" name="l02428"></a><span class="lineno"> 2428</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02430" name="l02430"></a><span class="lineno"><a class="line" href="group___m2.html#ga55cebaae8af4b3705e26df994ff925aa"> 2430</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga55cebaae8af4b3705e26df994ff925aa">PrtPrintDataInPageMode</a>(<span class="keywordtype">void</span>* handle);</div>
-<div class="line"><a id="l02431" name="l02431"></a><span class="lineno"> 2431</span> </div>
-<div class="line"><a id="l02452" name="l02452"></a><span class="lineno"> 2452</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02454" name="l02454"></a><span class="lineno"><a class="line" href="group___m2.html#ga1bd1c563783d17c2f971b45dfb2e3974"> 2454</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga1bd1c563783d17c2f971b45dfb2e3974">PrtSetTextBold</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> bold);</div>
-<div class="line"><a id="l02455" name="l02455"></a><span class="lineno"> 2455</span> </div>
-<div class="line"><a id="l02476" name="l02476"></a><span class="lineno"> 2476</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02478" name="l02478"></a><span class="lineno"><a class="line" href="group___m2.html#gadf180bda36b8523b01f33ce688aba805"> 2478</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gadf180bda36b8523b01f33ce688aba805">PrtSetTextFont</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> font);</div>
-<div class="line"><a id="l02479" name="l02479"></a><span class="lineno"> 2479</span> </div>
-<div class="line"><a id="l02481" name="l02481"></a><span class="lineno"> 2481</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02483" name="l02483"></a><span class="lineno"> 2483</span>    <span class="keywordtype">int</span> SetTextLineSpace(<span class="keywordtype">void</span>* handle,<span class="keywordtype">int</span> lineSpace);</div>
-<div class="line"><a id="l02484" name="l02484"></a><span class="lineno"> 2484</span> </div>
-<div class="line"><a id="l02485" name="l02485"></a><span class="lineno"> 2485</span>    <span class="comment">//PARA COMPATIBILIDADE COM SOCIN</span></div>
-<div class="line"><a id="l02487" name="l02487"></a><span class="lineno"> 2487</span><span class="comment"></span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02489" name="l02489"></a><span class="lineno"> 2489</span>    <span class="keywordtype">int</span> DefineNVImage(<span class="keywordtype">void</span>* handle, <span class="keyword">const</span> <span class="keywordtype">char</span>* imagePath, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> kc1, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> kc2);</div>
-<div class="line"><a id="l02490" name="l02490"></a><span class="lineno"> 2490</span> </div>
-<div class="line"><a id="l02492" name="l02492"></a><span class="lineno"> 2492</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
-<div class="line"><a id="l02494" name="l02494"></a><span class="lineno"> 2494</span>    <span class="keywordtype">int</span> PrintNVImage(<span class="keywordtype">void</span>* handle, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> kc1, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> kc2);</div>
-<div class="line"><a id="l02495" name="l02495"></a><span class="lineno"> 2495</span> </div>
-<div class="line"><a id="l02496" name="l02496"></a><span class="lineno"> 2496</span> </div>
-<div class="line"><a id="l02497" name="l02497"></a><span class="lineno"> 2497</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l02499" name="l02499"></a><span class="lineno"> 2499</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02501" name="l02501"></a><span class="lineno"> 2501</span><span class="comment">    int DirectIO(void* handle, unsigned char* writeData, unsigned char* writeNum, unsigned char* readData, unsigned char* readNum, unsigned char* preadedNum);</span></div>
-<div class="line"><a id="l02502" name="l02502"></a><span class="lineno"> 2502</span><span class="comment"></span> </div>
-<div class="line"><a id="l02504" name="l02504"></a><span class="lineno"> 2504</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02506" name="l02506"></a><span class="lineno"> 2506</span><span class="comment">    int PrtDirectIO(void* handle, unsigned char* writeData, unsigned int writeNum, unsigned char* readData, unsigned int readNum, unsigned int* preadedNum);</span></div>
-<div class="line"><a id="l02507" name="l02507"></a><span class="lineno"> 2507</span><span class="comment"></span> </div>
-<div class="line"><a id="l02509" name="l02509"></a><span class="lineno"> 2509</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02511" name="l02511"></a><span class="lineno"> 2511</span><span class="comment">    int PrtSetTextLineSpace(void* handle, int lineSpace);</span></div>
-<div class="line"><a id="l02512" name="l02512"></a><span class="lineno"> 2512</span><span class="comment"></span> </div>
-<div class="line"><a id="l02514" name="l02514"></a><span class="lineno"> 2514</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02516" name="l02516"></a><span class="lineno"> 2516</span><span class="comment">    int PrtSetCharacterSet(void* handle, int characterSet);</span></div>
-<div class="line"><a id="l02517" name="l02517"></a><span class="lineno"> 2517</span><span class="comment"></span> </div>
-<div class="line"><a id="l02519" name="l02519"></a><span class="lineno"> 2519</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02521" name="l02521"></a><span class="lineno"> 2521</span><span class="comment">    int PrtPrintImage(void* handle, const TCHAR* filePath, int scaleMode);</span></div>
-<div class="line"><a id="l02522" name="l02522"></a><span class="lineno"> 2522</span><span class="comment"></span> </div>
-<div class="line"><a id="l02524" name="l02524"></a><span class="lineno"> 2524</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02526" name="l02526"></a><span class="lineno"> 2526</span><span class="comment">    int PrtGetPrinterVersion(void* handle, int* version, int versionLen);</span></div>
-<div class="line"><a id="l02527" name="l02527"></a><span class="lineno"> 2527</span><span class="comment"></span> </div>
-<div class="line"><a id="l02529" name="l02529"></a><span class="lineno"> 2529</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02531" name="l02531"></a><span class="lineno"> 2531</span><span class="comment">    int SetTextLineSpace(void* handle,int lineSpace);</span></div>
-<div class="line"><a id="l02532" name="l02532"></a><span class="lineno"> 2532</span><span class="comment"></span> </div>
-<div class="line"><a id="l02534" name="l02534"></a><span class="lineno"> 2534</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02536" name="l02536"></a><span class="lineno"> 2536</span><span class="comment">    int SetCodePage(void* handle, int characterSet, int type);</span></div>
-<div class="line"><a id="l02537" name="l02537"></a><span class="lineno"> 2537</span><span class="comment"></span> </div>
-<div class="line"><a id="l02539" name="l02539"></a><span class="lineno"> 2539</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02541" name="l02541"></a><span class="lineno"> 2541</span><span class="comment">    int SetInternationalCharacter(void* handle, int characterSet);</span></div>
-<div class="line"><a id="l02542" name="l02542"></a><span class="lineno"> 2542</span><span class="comment"></span> </div>
-<div class="line"><a id="l02544" name="l02544"></a><span class="lineno"> 2544</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02546" name="l02546"></a><span class="lineno"> 2546</span><span class="comment">    int PrintTwoQRCode(void* handle, TCHAR* data1, int data1Len, int width1, int hAlign1, int vAlign1, TCHAR* data2, int data2Len, int width2, int hAlign2, int vAlign2);</span></div>
-<div class="line"><a id="l02547" name="l02547"></a><span class="lineno"> 2547</span><span class="comment"></span> </div>
-<div class="line"><a id="l02549" name="l02549"></a><span class="lineno"> 2549</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02551" name="l02551"></a><span class="lineno"> 2551</span><span class="comment">    int PrintImage(void* handle, const TCHAR* filePath, int scaleMode);</span></div>
-<div class="line"><a id="l02552" name="l02552"></a><span class="lineno"> 2552</span><span class="comment"></span> </div>
-<div class="line"><a id="l02554" name="l02554"></a><span class="lineno"> 2554</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02556" name="l02556"></a><span class="lineno"> 2556</span><span class="comment">    int PrintBitMapData(void* handle, int scaleMode, int width, int height, unsigned char* data);</span></div>
-<div class="line"><a id="l02557" name="l02557"></a><span class="lineno"> 2557</span><span class="comment"></span> </div>
-<div class="line"><a id="l02559" name="l02559"></a><span class="lineno"> 2559</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02561" name="l02561"></a><span class="lineno"> 2561</span><span class="comment">    int DefineNVImageCompatible(void* handle, const TCHAR** filePathList, int imageQty);</span></div>
-<div class="line"><a id="l02562" name="l02562"></a><span class="lineno"> 2562</span><span class="comment"></span> </div>
-<div class="line"><a id="l02564" name="l02564"></a><span class="lineno"> 2564</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02566" name="l02566"></a><span class="lineno"> 2566</span><span class="comment">    int PrintNVImageCompatible(void* handle, int imgNo, int scaleMode);</span></div>
-<div class="line"><a id="l02567" name="l02567"></a><span class="lineno"> 2567</span><span class="comment"></span> </div>
-<div class="line"><a id="l02569" name="l02569"></a><span class="lineno"> 2569</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02571" name="l02571"></a><span class="lineno"> 2571</span><span class="comment">    int DefineDownloadedImageCompatible(void* handle, const TCHAR* filePath);</span></div>
-<div class="line"><a id="l02572" name="l02572"></a><span class="lineno"> 2572</span><span class="comment"></span> </div>
-<div class="line"><a id="l02574" name="l02574"></a><span class="lineno"> 2574</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02576" name="l02576"></a><span class="lineno"> 2576</span><span class="comment">    int PrintDownloadedImageCompatible(void* handle, int scaleMode);</span></div>
-<div class="line"><a id="l02577" name="l02577"></a><span class="lineno"> 2577</span><span class="comment"></span> </div>
-<div class="line"><a id="l02579" name="l02579"></a><span class="lineno"> 2579</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02581" name="l02581"></a><span class="lineno"> 2581</span><span class="comment">    int GetFirmwareVersion(void* handle, int* version, int versionLen);</span></div>
-<div class="line"><a id="l02582" name="l02582"></a><span class="lineno"> 2582</span><span class="comment"></span> </div>
-<div class="line"><a id="l02584" name="l02584"></a><span class="lineno"> 2584</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02586" name="l02586"></a><span class="lineno"> 2586</span><span class="comment">    int PositionNextLabel(void* handle);</span></div>
-<div class="line"><a id="l02587" name="l02587"></a><span class="lineno"> 2587</span><span class="comment"></span> </div>
-<div class="line"><a id="l02589" name="l02589"></a><span class="lineno"> 2589</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02591" name="l02591"></a><span class="lineno"> 2591</span><span class="comment">    int DefineDownloadedImage(void* handle, const char* imagePath, unsigned char kc1, unsigned char kc2);</span></div>
-<div class="line"><a id="l02592" name="l02592"></a><span class="lineno"> 2592</span><span class="comment"></span> </div>
-<div class="line"><a id="l02594" name="l02594"></a><span class="lineno"> 2594</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02596" name="l02596"></a><span class="lineno"> 2596</span><span class="comment">    int PrintDownloadedImage(void* handle, unsigned char kc1, unsigned char kc2);</span></div>
-<div class="line"><a id="l02597" name="l02597"></a><span class="lineno"> 2597</span><span class="comment"></span> </div>
-<div class="line"><a id="l02599" name="l02599"></a><span class="lineno"> 2599</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02601" name="l02601"></a><span class="lineno"> 2601</span><span class="comment">    int DefineBufferedImage(void* handle, const char* imagePath);</span></div>
-<div class="line"><a id="l02602" name="l02602"></a><span class="lineno"> 2602</span><span class="comment"></span> </div>
-<div class="line"><a id="l02604" name="l02604"></a><span class="lineno"> 2604</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02606" name="l02606"></a><span class="lineno"> 2606</span><span class="comment">    int PrintBufferedImage(void* handle);</span></div>
-<div class="line"><a id="l02607" name="l02607"></a><span class="lineno"> 2607</span><span class="comment"></span> </div>
-<div class="line"><a id="l02609" name="l02609"></a><span class="lineno"> 2609</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02611" name="l02611"></a><span class="lineno"> 2611</span><span class="comment">    int DeletAllNVImages(void* handle);</span></div>
-<div class="line"><a id="l02612" name="l02612"></a><span class="lineno"> 2612</span><span class="comment"></span> </div>
-<div class="line"><a id="l02614" name="l02614"></a><span class="lineno"> 2614</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02616" name="l02616"></a><span class="lineno"> 2616</span><span class="comment">    int ClearBuffer(void* handle);</span></div>
-<div class="line"><a id="l02617" name="l02617"></a><span class="lineno"> 2617</span><span class="comment"></span> </div>
-<div class="line"><a id="l02619" name="l02619"></a><span class="lineno"> 2619</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02621" name="l02621"></a><span class="lineno"> 2621</span><span class="comment">    int FormatError(int errorNo, int landid, unsigned char* buf, int pos, int bufSize);</span></div>
-<div class="line"><a id="l02622" name="l02622"></a><span class="lineno"> 2622</span><span class="comment"></span> </div>
-<div class="line"><a id="l02624" name="l02624"></a><span class="lineno"> 2624</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02626" name="l02626"></a><span class="lineno"> 2626</span><span class="comment">    int SetBuzzer(void* handle, int enable);</span></div>
-<div class="line"><a id="l02627" name="l02627"></a><span class="lineno"> 2627</span><span class="comment"></span> </div>
-<div class="line"><a id="l02629" name="l02629"></a><span class="lineno"> 2629</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
-<div class="line"><a id="l02631" name="l02631"></a><span class="lineno"> 2631</span><span class="comment">    int SetLog(void* handle, const TCHAR* path);</span></div>
-<div class="line"><a id="l02632" name="l02632"></a><span class="lineno"> 2632</span><span class="comment">    */</span></div>
-<div class="line"><a id="l02633" name="l02633"></a><span class="lineno"> 2633</span>}</div>
-<div class="line"><a id="l02634" name="l02634"></a><span class="lineno"> 2634</span> </div>
-<div class="line"><a id="l02635" name="l02635"></a><span class="lineno"> 2635</span><span class="preprocessor">#endif </span><span class="comment">// EXPORTAFUNCOES_H</span></div>
+<div class="line"><a id="l01837" name="l01837"></a><span class="lineno"> 1837</span>    E1_IMPRESSORASHARED_EXPORT <span class="keywordtype">int</span> STDCALL SetLog(<span class="keywordtype">int</span> enable, <span class="keyword">const</span> TCHAR* path);</div>
+<div class="line"><a id="l01838" name="l01838"></a><span class="lineno"> 1838</span> </div>
+<div class="line"><a id="l01853" name="l01853"></a><span class="lineno"> 1853</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01855" name="l01855"></a><span class="lineno"><a class="line" href="group___m2.html#gac262c1e6c430d9e5b022feb9cad9dd46"> 1855</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gac262c1e6c430d9e5b022feb9cad9dd46">SelectStandardMode</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l01856" name="l01856"></a><span class="lineno"> 1856</span> </div>
+<div class="line"><a id="l01873" name="l01873"></a><span class="lineno"> 1873</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01875" name="l01875"></a><span class="lineno"><a class="line" href="group___m2.html#ga38dd02d2e3bfaf62e3818a3dfabf1fed"> 1875</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga38dd02d2e3bfaf62e3818a3dfabf1fed">PrtPrinterCreator</a>(<span class="keywordtype">void</span> **phandle, <span class="keyword">const</span> TCHAR *model);</div>
+<div class="line"><a id="l01876" name="l01876"></a><span class="lineno"> 1876</span> </div>
+<div class="line"><a id="l01889" name="l01889"></a><span class="lineno"> 1889</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01891" name="l01891"></a><span class="lineno"><a class="line" href="group___m2.html#ga8403377e2faec5d5ac4b439e929f33a8"> 1891</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga8403377e2faec5d5ac4b439e929f33a8">PrtPrinterDestroy</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l01892" name="l01892"></a><span class="lineno"> 1892</span> </div>
+<div class="line"><a id="l01915" name="l01915"></a><span class="lineno"> 1915</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01917" name="l01917"></a><span class="lineno"><a class="line" href="group___m2.html#gacca9c3a0cb0c610297ac4f0941972637"> 1917</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gacca9c3a0cb0c610297ac4f0941972637">PrtPortOpen</a>(<span class="keywordtype">void</span>* handle, <span class="keyword">const</span> TCHAR *ioSettings);</div>
+<div class="line"><a id="l01918" name="l01918"></a><span class="lineno"> 1918</span> </div>
+<div class="line"><a id="l01932" name="l01932"></a><span class="lineno"> 1932</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01934" name="l01934"></a><span class="lineno"><a class="line" href="group___m2.html#ga75a00fb65e23f292de15a96ede1b03d9"> 1934</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga75a00fb65e23f292de15a96ede1b03d9">PrtPortClose</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l01935" name="l01935"></a><span class="lineno"> 1935</span> </div>
+<div class="line"><a id="l01949" name="l01949"></a><span class="lineno"> 1949</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01951" name="l01951"></a><span class="lineno"><a class="line" href="group___m2.html#gaedaa5c8abbf0304c17243c4130ded53e"> 1951</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaedaa5c8abbf0304c17243c4130ded53e">PrtPrinterInitialize</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l01952" name="l01952"></a><span class="lineno"> 1952</span> </div>
+<div class="line"><a id="l01977" name="l01977"></a><span class="lineno"> 1977</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l01979" name="l01979"></a><span class="lineno"><a class="line" href="group___m2.html#gaee4ed59acd1c2807971ade5585a6e563"> 1979</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaee4ed59acd1c2807971ade5585a6e563">PrtCheckPrinterState</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* printerStatus);</div>
+<div class="line"><a id="l01980" name="l01980"></a><span class="lineno"> 1980</span> </div>
+<div class="line"><a id="l02003" name="l02003"></a><span class="lineno"> 2003</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02005" name="l02005"></a><span class="lineno"><a class="line" href="group___m2.html#ga11733652cf70b9394b8fe0cc41090ee2"> 2005</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga11733652cf70b9394b8fe0cc41090ee2">PrtCutPaper</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> cutMode, <span class="keywordtype">int</span> distance);</div>
+<div class="line"><a id="l02006" name="l02006"></a><span class="lineno"> 2006</span> </div>
+<div class="line"><a id="l02022" name="l02022"></a><span class="lineno"> 2022</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02024" name="l02024"></a><span class="lineno"><a class="line" href="group___m2.html#ga8b9e7f569a560bb71b4daea778df5c7b"> 2024</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga8b9e7f569a560bb71b4daea778df5c7b">PrtFeedLine</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span>  lines);</div>
+<div class="line"><a id="l02025" name="l02025"></a><span class="lineno"> 2025</span> </div>
+<div class="line"><a id="l02052" name="l02052"></a><span class="lineno"> 2052</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02054" name="l02054"></a><span class="lineno"><a class="line" href="group___m2.html#ga9dc0dee0b05b7418f0ace5801da07932"> 2054</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga9dc0dee0b05b7418f0ace5801da07932">PrtOpenDrawer</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> pin, <span class="keywordtype">int</span> onTime, <span class="keywordtype">int</span> offTime);</div>
+<div class="line"><a id="l02055" name="l02055"></a><span class="lineno"> 2055</span> </div>
+<div class="line"><a id="l02077" name="l02077"></a><span class="lineno"> 2077</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02079" name="l02079"></a><span class="lineno"><a class="line" href="group___m2.html#ga39546c400aa0f06bace2b01411207dcf"> 2079</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga39546c400aa0f06bace2b01411207dcf">PrtGetDrawerState</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span>* drawerState);</div>
+<div class="line"><a id="l02080" name="l02080"></a><span class="lineno"> 2080</span> </div>
+<div class="line"><a id="l02139" name="l02139"></a><span class="lineno"> 2139</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02141" name="l02141"></a><span class="lineno"><a class="line" href="group___m2.html#gafdeb4ce35a857204ca1a566d3e8289b8"> 2141</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gafdeb4ce35a857204ca1a566d3e8289b8">PrtPrintText</a>(<span class="keywordtype">void</span> *handle,<span class="keyword">const</span> TCHAR* data, <span class="keywordtype">int</span> alignment, <span class="keywordtype">int</span> attribute, <span class="keywordtype">int</span> textSize);</div>
+<div class="line"><a id="l02142" name="l02142"></a><span class="lineno"> 2142</span> </div>
+<div class="line"><a id="l02193" name="l02193"></a><span class="lineno"> 2193</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02195" name="l02195"></a><span class="lineno"><a class="line" href="group___m2.html#ga2ce2e54a8bdda24e6bc15a3c6686487d"> 2195</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga2ce2e54a8bdda24e6bc15a3c6686487d">PrtPrintBarCode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> bcType, <span class="keyword">const</span> TCHAR* bcData, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> alignment, <span class="keywordtype">int</span> hriPosition);</div>
+<div class="line"><a id="l02196" name="l02196"></a><span class="lineno"> 2196</span> </div>
+<div class="line"><a id="l02244" name="l02244"></a><span class="lineno"> 2244</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02246" name="l02246"></a><span class="lineno"><a class="line" href="group___m2.html#gaea9179738ac3ebb5be78a3f669da4dc1"> 2246</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaea9179738ac3ebb5be78a3f669da4dc1">PrtPrintSymbol</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> type, <span class="keyword">const</span> TCHAR* data, <span class="keywordtype">int</span> errLevel, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> alignment);</div>
+<div class="line"><a id="l02247" name="l02247"></a><span class="lineno"> 2247</span> </div>
+<div class="line"><a id="l02262" name="l02262"></a><span class="lineno"> 2262</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02264" name="l02264"></a><span class="lineno"><a class="line" href="group___m2.html#ga6458e244b4a1fa104300d224d9cfc6d1"> 2264</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga6458e244b4a1fa104300d224d9cfc6d1">PrtSelectPageMode</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l02265" name="l02265"></a><span class="lineno"> 2265</span> </div>
+<div class="line"><a id="l02280" name="l02280"></a><span class="lineno"> 2280</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02282" name="l02282"></a><span class="lineno"><a class="line" href="group___m2.html#gad67f9fb6cb4981897026897c731fb3bd"> 2282</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gad67f9fb6cb4981897026897c731fb3bd">PrtSelectStandardMode</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l02283" name="l02283"></a><span class="lineno"> 2283</span> </div>
+<div class="line"><a id="l02304" name="l02304"></a><span class="lineno"> 2304</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02306" name="l02306"></a><span class="lineno"><a class="line" href="group___m2.html#gad263ba466a2c8dec09f9979bd2a0b402"> 2306</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gad263ba466a2c8dec09f9979bd2a0b402">PrtSelectPrintDirectionInPageMode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> direction);</div>
+<div class="line"><a id="l02307" name="l02307"></a><span class="lineno"> 2307</span> </div>
+<div class="line"><a id="l02329" name="l02329"></a><span class="lineno"> 2329</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02331" name="l02331"></a><span class="lineno"><a class="line" href="group___m2.html#ga7e0b0fe93e96b56e1f76cefa8ddf664b"> 2331</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga7e0b0fe93e96b56e1f76cefa8ddf664b">PrtSetTextPosition</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> position);</div>
+<div class="line"><a id="l02332" name="l02332"></a><span class="lineno"> 2332</span> </div>
+<div class="line"><a id="l02350" name="l02350"></a><span class="lineno"> 2350</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02352" name="l02352"></a><span class="lineno"><a class="line" href="group___m2.html#gafae340a6fcd06e06fd163c408d2c4b0c"> 2352</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gafae340a6fcd06e06fd163c408d2c4b0c">PrtSetAbsoluteVerticalPrintPositionInPageMode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> position);</div>
+<div class="line"><a id="l02353" name="l02353"></a><span class="lineno"> 2353</span> </div>
+<div class="line"><a id="l02368" name="l02368"></a><span class="lineno"> 2368</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02370" name="l02370"></a><span class="lineno"><a class="line" href="group___m2.html#ga26ed87225223f6944cff4655baf00056"> 2370</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga26ed87225223f6944cff4655baf00056">PrtSetPrintAndReturnStandardMode</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l02371" name="l02371"></a><span class="lineno"> 2371</span> </div>
+<div class="line"><a id="l02386" name="l02386"></a><span class="lineno"> 2386</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02388" name="l02388"></a><span class="lineno"><a class="line" href="group___m2.html#ga39150079dcff9bb71a2ff7d0e472986d"> 2388</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga39150079dcff9bb71a2ff7d0e472986d">PrtCancelPrintDataInPageMode</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l02389" name="l02389"></a><span class="lineno"> 2389</span> </div>
+<div class="line"><a id="l02412" name="l02412"></a><span class="lineno"> 2412</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02414" name="l02414"></a><span class="lineno"><a class="line" href="group___m2.html#gaa22d74683bdfcacb023bd23e9ab3ac5b"> 2414</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gaa22d74683bdfcacb023bd23e9ab3ac5b">PrtSetPrintAreaInPageMode</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> horizontal, <span class="keywordtype">int</span> vertical, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
+<div class="line"><a id="l02415" name="l02415"></a><span class="lineno"> 2415</span> </div>
+<div class="line"><a id="l02430" name="l02430"></a><span class="lineno"> 2430</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02432" name="l02432"></a><span class="lineno"><a class="line" href="group___m2.html#ga55cebaae8af4b3705e26df994ff925aa"> 2432</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga55cebaae8af4b3705e26df994ff925aa">PrtPrintDataInPageMode</a>(<span class="keywordtype">void</span>* handle);</div>
+<div class="line"><a id="l02433" name="l02433"></a><span class="lineno"> 2433</span> </div>
+<div class="line"><a id="l02454" name="l02454"></a><span class="lineno"> 2454</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02456" name="l02456"></a><span class="lineno"><a class="line" href="group___m2.html#ga1bd1c563783d17c2f971b45dfb2e3974"> 2456</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#ga1bd1c563783d17c2f971b45dfb2e3974">PrtSetTextBold</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> bold);</div>
+<div class="line"><a id="l02457" name="l02457"></a><span class="lineno"> 2457</span> </div>
+<div class="line"><a id="l02478" name="l02478"></a><span class="lineno"> 2478</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02480" name="l02480"></a><span class="lineno"><a class="line" href="group___m2.html#gadf180bda36b8523b01f33ce688aba805"> 2480</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="group___m2.html#gadf180bda36b8523b01f33ce688aba805">PrtSetTextFont</a>(<span class="keywordtype">void</span>* handle, <span class="keywordtype">int</span> font);</div>
+<div class="line"><a id="l02481" name="l02481"></a><span class="lineno"> 2481</span> </div>
+<div class="line"><a id="l02483" name="l02483"></a><span class="lineno"> 2483</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02485" name="l02485"></a><span class="lineno"> 2485</span>    <span class="keywordtype">int</span> SetTextLineSpace(<span class="keywordtype">void</span>* handle,<span class="keywordtype">int</span> lineSpace);</div>
+<div class="line"><a id="l02486" name="l02486"></a><span class="lineno"> 2486</span> </div>
+<div class="line"><a id="l02487" name="l02487"></a><span class="lineno"> 2487</span>    <span class="comment">//PARA COMPATIBILIDADE COM SOCIN</span></div>
+<div class="line"><a id="l02489" name="l02489"></a><span class="lineno"> 2489</span><span class="comment"></span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02491" name="l02491"></a><span class="lineno"> 2491</span>    <span class="keywordtype">int</span> DefineNVImage(<span class="keywordtype">void</span>* handle, <span class="keyword">const</span> <span class="keywordtype">char</span>* imagePath, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> kc1, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> kc2);</div>
+<div class="line"><a id="l02492" name="l02492"></a><span class="lineno"> 2492</span> </div>
+<div class="line"><a id="l02494" name="l02494"></a><span class="lineno"> 2494</span>    E1_IMPRESSORASHARED_EXPORT STDCALL</div>
+<div class="line"><a id="l02496" name="l02496"></a><span class="lineno"> 2496</span>    <span class="keywordtype">int</span> PrintNVImage(<span class="keywordtype">void</span>* handle, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> kc1, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> kc2);</div>
+<div class="line"><a id="l02497" name="l02497"></a><span class="lineno"> 2497</span> </div>
+<div class="line"><a id="l02498" name="l02498"></a><span class="lineno"> 2498</span> </div>
+<div class="line"><a id="l02499" name="l02499"></a><span class="lineno"> 2499</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l02501" name="l02501"></a><span class="lineno"> 2501</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02503" name="l02503"></a><span class="lineno"> 2503</span><span class="comment">    int DirectIO(void* handle, unsigned char* writeData, unsigned char* writeNum, unsigned char* readData, unsigned char* readNum, unsigned char* preadedNum);</span></div>
+<div class="line"><a id="l02504" name="l02504"></a><span class="lineno"> 2504</span><span class="comment"></span> </div>
+<div class="line"><a id="l02506" name="l02506"></a><span class="lineno"> 2506</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02508" name="l02508"></a><span class="lineno"> 2508</span><span class="comment">    int PrtDirectIO(void* handle, unsigned char* writeData, unsigned int writeNum, unsigned char* readData, unsigned int readNum, unsigned int* preadedNum);</span></div>
+<div class="line"><a id="l02509" name="l02509"></a><span class="lineno"> 2509</span><span class="comment"></span> </div>
+<div class="line"><a id="l02511" name="l02511"></a><span class="lineno"> 2511</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02513" name="l02513"></a><span class="lineno"> 2513</span><span class="comment">    int PrtSetTextLineSpace(void* handle, int lineSpace);</span></div>
+<div class="line"><a id="l02514" name="l02514"></a><span class="lineno"> 2514</span><span class="comment"></span> </div>
+<div class="line"><a id="l02516" name="l02516"></a><span class="lineno"> 2516</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02518" name="l02518"></a><span class="lineno"> 2518</span><span class="comment">    int PrtSetCharacterSet(void* handle, int characterSet);</span></div>
+<div class="line"><a id="l02519" name="l02519"></a><span class="lineno"> 2519</span><span class="comment"></span> </div>
+<div class="line"><a id="l02521" name="l02521"></a><span class="lineno"> 2521</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02523" name="l02523"></a><span class="lineno"> 2523</span><span class="comment">    int PrtPrintImage(void* handle, const TCHAR* filePath, int scaleMode);</span></div>
+<div class="line"><a id="l02524" name="l02524"></a><span class="lineno"> 2524</span><span class="comment"></span> </div>
+<div class="line"><a id="l02526" name="l02526"></a><span class="lineno"> 2526</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02528" name="l02528"></a><span class="lineno"> 2528</span><span class="comment">    int PrtGetPrinterVersion(void* handle, int* version, int versionLen);</span></div>
+<div class="line"><a id="l02529" name="l02529"></a><span class="lineno"> 2529</span><span class="comment"></span> </div>
+<div class="line"><a id="l02531" name="l02531"></a><span class="lineno"> 2531</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02533" name="l02533"></a><span class="lineno"> 2533</span><span class="comment">    int SetTextLineSpace(void* handle,int lineSpace);</span></div>
+<div class="line"><a id="l02534" name="l02534"></a><span class="lineno"> 2534</span><span class="comment"></span> </div>
+<div class="line"><a id="l02536" name="l02536"></a><span class="lineno"> 2536</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02538" name="l02538"></a><span class="lineno"> 2538</span><span class="comment">    int SetCodePage(void* handle, int characterSet, int type);</span></div>
+<div class="line"><a id="l02539" name="l02539"></a><span class="lineno"> 2539</span><span class="comment"></span> </div>
+<div class="line"><a id="l02541" name="l02541"></a><span class="lineno"> 2541</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02543" name="l02543"></a><span class="lineno"> 2543</span><span class="comment">    int SetInternationalCharacter(void* handle, int characterSet);</span></div>
+<div class="line"><a id="l02544" name="l02544"></a><span class="lineno"> 2544</span><span class="comment"></span> </div>
+<div class="line"><a id="l02546" name="l02546"></a><span class="lineno"> 2546</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02548" name="l02548"></a><span class="lineno"> 2548</span><span class="comment">    int PrintTwoQRCode(void* handle, TCHAR* data1, int data1Len, int width1, int hAlign1, int vAlign1, TCHAR* data2, int data2Len, int width2, int hAlign2, int vAlign2);</span></div>
+<div class="line"><a id="l02549" name="l02549"></a><span class="lineno"> 2549</span><span class="comment"></span> </div>
+<div class="line"><a id="l02551" name="l02551"></a><span class="lineno"> 2551</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02553" name="l02553"></a><span class="lineno"> 2553</span><span class="comment">    int PrintImage(void* handle, const TCHAR* filePath, int scaleMode);</span></div>
+<div class="line"><a id="l02554" name="l02554"></a><span class="lineno"> 2554</span><span class="comment"></span> </div>
+<div class="line"><a id="l02556" name="l02556"></a><span class="lineno"> 2556</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02558" name="l02558"></a><span class="lineno"> 2558</span><span class="comment">    int PrintBitMapData(void* handle, int scaleMode, int width, int height, unsigned char* data);</span></div>
+<div class="line"><a id="l02559" name="l02559"></a><span class="lineno"> 2559</span><span class="comment"></span> </div>
+<div class="line"><a id="l02561" name="l02561"></a><span class="lineno"> 2561</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02563" name="l02563"></a><span class="lineno"> 2563</span><span class="comment">    int DefineNVImageCompatible(void* handle, const TCHAR** filePathList, int imageQty);</span></div>
+<div class="line"><a id="l02564" name="l02564"></a><span class="lineno"> 2564</span><span class="comment"></span> </div>
+<div class="line"><a id="l02566" name="l02566"></a><span class="lineno"> 2566</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02568" name="l02568"></a><span class="lineno"> 2568</span><span class="comment">    int PrintNVImageCompatible(void* handle, int imgNo, int scaleMode);</span></div>
+<div class="line"><a id="l02569" name="l02569"></a><span class="lineno"> 2569</span><span class="comment"></span> </div>
+<div class="line"><a id="l02571" name="l02571"></a><span class="lineno"> 2571</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02573" name="l02573"></a><span class="lineno"> 2573</span><span class="comment">    int DefineDownloadedImageCompatible(void* handle, const TCHAR* filePath);</span></div>
+<div class="line"><a id="l02574" name="l02574"></a><span class="lineno"> 2574</span><span class="comment"></span> </div>
+<div class="line"><a id="l02576" name="l02576"></a><span class="lineno"> 2576</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02578" name="l02578"></a><span class="lineno"> 2578</span><span class="comment">    int PrintDownloadedImageCompatible(void* handle, int scaleMode);</span></div>
+<div class="line"><a id="l02579" name="l02579"></a><span class="lineno"> 2579</span><span class="comment"></span> </div>
+<div class="line"><a id="l02581" name="l02581"></a><span class="lineno"> 2581</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02583" name="l02583"></a><span class="lineno"> 2583</span><span class="comment">    int GetFirmwareVersion(void* handle, int* version, int versionLen);</span></div>
+<div class="line"><a id="l02584" name="l02584"></a><span class="lineno"> 2584</span><span class="comment"></span> </div>
+<div class="line"><a id="l02586" name="l02586"></a><span class="lineno"> 2586</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02588" name="l02588"></a><span class="lineno"> 2588</span><span class="comment">    int PositionNextLabel(void* handle);</span></div>
+<div class="line"><a id="l02589" name="l02589"></a><span class="lineno"> 2589</span><span class="comment"></span> </div>
+<div class="line"><a id="l02591" name="l02591"></a><span class="lineno"> 2591</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02593" name="l02593"></a><span class="lineno"> 2593</span><span class="comment">    int DefineDownloadedImage(void* handle, const char* imagePath, unsigned char kc1, unsigned char kc2);</span></div>
+<div class="line"><a id="l02594" name="l02594"></a><span class="lineno"> 2594</span><span class="comment"></span> </div>
+<div class="line"><a id="l02596" name="l02596"></a><span class="lineno"> 2596</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02598" name="l02598"></a><span class="lineno"> 2598</span><span class="comment">    int PrintDownloadedImage(void* handle, unsigned char kc1, unsigned char kc2);</span></div>
+<div class="line"><a id="l02599" name="l02599"></a><span class="lineno"> 2599</span><span class="comment"></span> </div>
+<div class="line"><a id="l02601" name="l02601"></a><span class="lineno"> 2601</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02603" name="l02603"></a><span class="lineno"> 2603</span><span class="comment">    int DefineBufferedImage(void* handle, const char* imagePath);</span></div>
+<div class="line"><a id="l02604" name="l02604"></a><span class="lineno"> 2604</span><span class="comment"></span> </div>
+<div class="line"><a id="l02606" name="l02606"></a><span class="lineno"> 2606</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02608" name="l02608"></a><span class="lineno"> 2608</span><span class="comment">    int PrintBufferedImage(void* handle);</span></div>
+<div class="line"><a id="l02609" name="l02609"></a><span class="lineno"> 2609</span><span class="comment"></span> </div>
+<div class="line"><a id="l02611" name="l02611"></a><span class="lineno"> 2611</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02613" name="l02613"></a><span class="lineno"> 2613</span><span class="comment">    int DeletAllNVImages(void* handle);</span></div>
+<div class="line"><a id="l02614" name="l02614"></a><span class="lineno"> 2614</span><span class="comment"></span> </div>
+<div class="line"><a id="l02616" name="l02616"></a><span class="lineno"> 2616</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02618" name="l02618"></a><span class="lineno"> 2618</span><span class="comment">    int ClearBuffer(void* handle);</span></div>
+<div class="line"><a id="l02619" name="l02619"></a><span class="lineno"> 2619</span><span class="comment"></span> </div>
+<div class="line"><a id="l02621" name="l02621"></a><span class="lineno"> 2621</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02623" name="l02623"></a><span class="lineno"> 2623</span><span class="comment">    int FormatError(int errorNo, int landid, unsigned char* buf, int pos, int bufSize);</span></div>
+<div class="line"><a id="l02624" name="l02624"></a><span class="lineno"> 2624</span><span class="comment"></span> </div>
+<div class="line"><a id="l02626" name="l02626"></a><span class="lineno"> 2626</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02628" name="l02628"></a><span class="lineno"> 2628</span><span class="comment">    int SetBuzzer(void* handle, int enable);</span></div>
+<div class="line"><a id="l02629" name="l02629"></a><span class="lineno"> 2629</span><span class="comment"></span> </div>
+<div class="line"><a id="l02631" name="l02631"></a><span class="lineno"> 2631</span><span class="comment">    E1_IMPRESSORASHARED_EXPORT STDCALL</span></div>
+<div class="line"><a id="l02633" name="l02633"></a><span class="lineno"> 2633</span><span class="comment">    int SetLog(void* handle, const TCHAR* path);</span></div>
+<div class="line"><a id="l02634" name="l02634"></a><span class="lineno"> 2634</span><span class="comment">    */</span></div>
+<div class="line"><a id="l02635" name="l02635"></a><span class="lineno"> 2635</span>}</div>
+<div class="line"><a id="l02636" name="l02636"></a><span class="lineno"> 2636</span> </div>
+<div class="line"><a id="l02637" name="l02637"></a><span class="lineno"> 2637</span><span class="preprocessor">#endif </span><span class="comment">// EXPORTAFUNCOES_H</span></div>
 <div class="ttc" id="agroup___m1_html_ga0477cb1087969802c31407757eb23073"><div class="ttname"><a href="group___m1.html#ga0477cb1087969802c31407757eb23073">AbreGavetaElgin</a></div><div class="ttdeci">int AbreGavetaElgin()</div><div class="ttdoc">Abre gavetas Elgin.</div></div>
 <div class="ttc" id="agroup___m1_html_ga0e73b993587e826d44d95b4f2382e1f0"><div class="ttname"><a href="group___m1.html#ga0e73b993587e826d44d95b4f2382e1f0">ImprimeXMLSAT</a></div><div class="ttdeci">int ImprimeXMLSAT(const char *dados, int param)</div><div class="ttdoc">Imprime Danfe SAT.</div></div>
 <div class="ttc" id="agroup___m1_html_ga14dad45b993f1f7ca6b99081084a5c12"><div class="ttname"><a href="group___m1.html#ga14dad45b993f1f7ca6b99081084a5c12">ImprimeXMLCancelamentoSAT</a></div><div class="ttdeci">int ImprimeXMLCancelamentoSAT(const char *dados, const char *assQRCode, int param)</div><div class="ttdoc">Imprime Danfe de cancelamento SAT.</div></div>
