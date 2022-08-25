@@ -26,7 +26,7 @@ var group__sp20 =
     [ "configuraCupomPersonalizado", "group__sp20.html#ga3a8c1a2db075881ed3ec1685928ef71c", null ],
     [ "configuraCupomPersonalizado", "group__sp20.html#ga1de158cee03c727b8b3391b1e831e95f", null ],
     [ "iniciarPagamentoDebito", "group__sp20.html#ga68a451efbb3655387c28e9262857f3af", null ],
-    [ "inciarPagamentoCredito", "group__sp20.html#ga21db3abdc00c50b4cf1376f37c351c8a", null ],
+    [ "iniciarPagamentoCredito", "group__sp20.html#ga94e99168d4518a6bd160a0a0a8acc206", null ],
     [ "iniciarPagamentoCredito", "group__sp20.html#gac68a9e92957d794de2ad8648591bc281", null ],
     [ "iniciarCancelamentoVenda", "group__sp20.html#gabd9e04423e225d39e1b0bc1047a9f37b", null ],
     [ "iniciarCancelamentoVenda", "group__sp20.html#gaad575761910841fbdc23122b15eaa6d2", null ],
