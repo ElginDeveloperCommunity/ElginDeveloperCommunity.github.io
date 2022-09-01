@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plataforma de Comunicação Elgin: Referência do diretório src/E1_Pix4</title>
+<title>Plataforma de Comunicação Elgin: Pix4</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,7 +84,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('dir_12f9e6b55b4340799febebe38b51b0fc.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('group__ma5.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,22 +103,53 @@ $(document).ready(function(){initNavTree('dir_12f9e6b55b4340799febebe38b51b0fc.h
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Referência do diretório E1_Pix4</div></div>
+  <div class="headertitle"><div class="title">Pix4<div class="ingroups"><a class="el" href="group__g3.html">Android</a> &raquo; <a class="el" href="group__g32.html">Módulos</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
-Arquivos</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">arquivo &#160;</td><td class="memItemRight" valign="bottom"><b>e1_pix4_funcoes.h</b> <a href="e1__pix4__funcoes_8h_source.html">[código]</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
+<h1>Módulo para comunicação com Pix4.</h1>
+<p >Para utilizar essas funções em ambiente Android, é necessário importar a classe referente a este módulo: </p><div class="fragment"><div class="line"><span class="keyword">import</span> com.elgin.e1.DisplayPIX4.PIX4;</div>
+</div><!-- fragment --><p >Após importar a classe, no evento da Activity <code>onCreate</code> deve ser criado o objeto que irá chamar os métodos, passando o context da aplicação:.<br  />
+</p><div class="fragment"><div class="line">@Override</div>
+<div class="line"><span class="keyword">protected</span> <span class="keywordtype">void</span> onCreate(Bundle savedInstanceState) {</div>
+<div class="line">    super.onCreate(savedInstanceState);</div>
+<div class="line">    setContentView(R.layout.activity_main);</div>
+<div class="line"> </div>
+<div class="line">    mContext = this.getApplicationContext();</div>
+<div class="line"> </div>
+<div class="line">    display = <span class="keyword">new</span> PIX4(mContext); <span class="comment">// cria o objeto passando o context da activity</span></div>
+<div class="line">    <span class="comment">// ....</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><p >Feito isso, já será possível acessar os métodos com o operador (.) no objeto criado, no caso do exemplo, o objeto <code>display</code>.</p>
+<p >Por exemplo, para abrir a conexão com o Pix4 poderia-se fazer: </p><div class="fragment"><div class="line"><span class="keyword">private</span> <span class="keywordtype">void</span> connect()  {</div>
+<div class="line">    result = display.AbreConexaoDisplay();</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span>(result == 0){</div>
+<div class="line">        Toast.makeText(<span class="keyword">this</span>, <span class="stringliteral">&quot;Conexao realizada com sucesso&quot;</span> + result, Toast.LENGTH_SHORT).show();</div>
+<div class="line">    }<span class="keywordflow">else</span>{</div>
+<div class="line">        Toast.makeText(<span class="keyword">this</span>, <span class="stringliteral">&quot;Não foi possivel realizar a conexão&quot;</span> + result, Toast.LENGTH_SHORT).show();</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h3>Funções do Pix4</h3>
+<p ><a class="el" href="group__g130.html#ga438acbaa12c823456a108e6cae01ff84" title="Método utilizado para estabelecer conexão usb com PIX4.">AbreConexaoDisplay()</a> <br  />
+<a class="el" href="group__g130.html#ga0c1f4cadd82111b70713f04f288eaf40" title="Método utilizado para obter a versão atual do firmware.">ObtemVersaoFirmware()</a> <br  />
+<a class="el" href="group__g130.html#ga92c53f1386895cfea17e77eca376502c" title="Método utilizado para obter o estado atual da conexão do equipamento.">ObtemConexao()</a> <br  />
+<a class="el" href="group__g130.html#gaaf2d174c574dfafbd873793ac2bd7cdc" title="Método usado para desconectar o PIX4.">DesconectarDisplay()</a> <br  />
+<a class="el" href="group__g130.html#ga1b68d315057c73e6097d3443c5443af9" title="Método utilizado na inicialização e limpeza da tela para novas apresentações.">InicializaDisplay()</a> <br  />
+<a class="el" href="group__g130.html#ga4f4094578dbcaf9dd734d2438e6e0692" title="Método usado na reinicialização do Display PIX4, após reinicialização necessário realizar uma nova ab...">ReinicializaDisplay()</a> <br  />
+<a class="el" href="group__g130.html#ga473a0c5f17d6a431ca9187621f245d37" title="Método utilizado para gravar imagem no dispositivo.">CarregaImagemDisplay()</a> <br  />
+<a class="el" href="group__g130.html#ga143d3a0177344be0531cfa418a3bd104" title="Método utilizado para apresentar uma imagem gravada anteriormente usando método CarregaImagemDisplay(...">ApresentaImagemDisplay()</a> <br  />
+<a class="el" href="group__g130.html#gaf592d782c9c610be03ba325ea4b4bb05" title="Método utilizado para apresentar o qrCode na coordenada especificada.">ApresentaQRCode()</a> <br  />
+<a class="el" href="group__g130.html#ga22930e1deda626fcd674bbd845b509f4" title="Método utilizado para apresentar um texto colorido na coordenada especificada.">ApresentaTextoColorido()</a> <br  />
+<a class="el" href="group__g130.html#ga6c442cee4a3350cf7af0540b9df9e750" title="Método utilizado para apresentar uma lista dinâmica de compras.">ApresentaListaCompras()</a> <br  />
+<a class="el" href="group__g130.html#ga21af575fa1867c2f44c352f8fa89d0d6" title="Método utilizado para inicializar a tela de finalização de venda.">InicializaLayoutPagamento()</a> <br  />
+<a class="el" href="group__g130.html#gaa07e2dd3995b884bcb26355006b37438" title="Método utilizado para adicionar uma forma de pagamento ao layout de finalização da venda.">AdicionaFormaPagamento()</a> <br  />
+</p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_12f9e6b55b4340799febebe38b51b0fc.html">E1_Pix4</a></li>
     <li class="footer"><a href="https://github.com/ElginDeveloperCommunity"><img class="footer" src="https://avatars.githubusercontent.com/u/78883867?s=400&u=9b127079a21ee35fed37a704c5a0204fd5c7b1c3&v=4" width="90" height="20" alt="ElginDeveloperCommunity"/></a>  </li>
   </ul>
 </div>

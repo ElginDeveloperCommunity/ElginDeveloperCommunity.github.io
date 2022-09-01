@@ -8,7 +8,8 @@ var searchData=
   ['recurso_5findisponivel_5',['RECURSO_INDISPONIVEL',['../group__g1.html#ggaea850727996cb617abfc4737b3d3ab23a89798ba2a2798d99fa33e0a8f0cf277a',1,'codigoerro.h']]],
   ['regra_5fcalculo_5finvalida_6',['REGRA_CALCULO_INVALIDA',['../group__g1.html#ggab2fabaa4c9e7eb63e28651ed9515ec7aa76b48379f8dbe7d022655735646642bc',1,'codigoerro.h']]],
   ['reimprimirlayout_7',['ReimprimirLayout',['../group__g54.html#ga003fe82046b1a88e05606560f4527397',1,'exportafuncoes.h']]],
-  ['reset_8',['Reset',['../group___m0.html#ga1ed4367feeae4f5daa20d54dc309f117',1,'exportafuncoes.h']]],
-  ['resposta_5fsessao_5ffiscal_5finvalida_9',['RESPOSTA_SESSAO_FISCAL_INVALIDA',['../group__g1.html#gga15d766683e4eca0e281addece3d04704a96a152387f369c9232c7be8916201fc8',1,'codigoerro.h']]],
-  ['retorno_10',['Retorno',['../group__sp11.html',1,'(<em>Namespace</em> global)'],['../group__sp21.html',1,'(<em>Namespace</em> global)']]]
+  ['reinicializadisplay_8',['ReinicializaDisplay',['../group__g130.html#ga4f4094578dbcaf9dd734d2438e6e0692',1,'e1_pix4_funcoes.h']]],
+  ['reset_9',['Reset',['../group___m0.html#ga1ed4367feeae4f5daa20d54dc309f117',1,'exportafuncoes.h']]],
+  ['resposta_5fsessao_5ffiscal_5finvalida_10',['RESPOSTA_SESSAO_FISCAL_INVALIDA',['../group__g1.html#gga15d766683e4eca0e281addece3d04704a96a152387f369c9232c7be8916201fc8',1,'codigoerro.h']]],
+  ['retorno_11',['Retorno',['../group__sp11.html',1,'(<em>Namespace</em> global)'],['../group__sp21.html',1,'(<em>Namespace</em> global)']]]
 ];
