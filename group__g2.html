@@ -46,7 +46,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.5</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.8</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -192,8 +192,12 @@ __cdecl<br  />
 </p>
 </blockquote>
 <h3>Arquivo de configuracao</h3>
-<p >O arquivo de configuração é carregado do diretório atual onde a aplicação está<br  />
- sendo executada. Um exemplo do arquivo sat-config.ini pode ser visto abaixo:</p>
+<p >A biblioteca (dll) irá procurar o arquivo de configuração nos seguintes diretórios:<br  />
+ Linux: <code>/etc/elgin/sat-config.ini</code><br  />
+ Windows: <code>C:\windows\system32\sat-config.ini</code><br  />
+ Se a biblioteca não encontrar o arquivo de configuração no diretório padrão, a lib irá procurar no diretório onde a aplicação está sendo executada.<br  />
+<br  />
+ Um exemplo do arquivo sat-config.ini pode ser visto abaixo:</p>
 <div class="fragment"><div class="line">[Logging]</div>
 <div class="line"><span class="preprocessor"># Aceita info, debug ou trace</span></div>
 <div class="line">level = trace</div>

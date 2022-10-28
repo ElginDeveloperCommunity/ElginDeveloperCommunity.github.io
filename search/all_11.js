@@ -10,6 +10,7 @@ var searchData=
   ['reimprimirlayout_7',['ReimprimirLayout',['../group__g54.html#ga003fe82046b1a88e05606560f4527397',1,'exportafuncoes.h']]],
   ['reinicializadisplay_8',['ReinicializaDisplay',['../group__g130.html#ga4f4094578dbcaf9dd734d2438e6e0692',1,'e1_pix4_funcoes.h']]],
   ['reset_9',['Reset',['../group___m0.html#ga1ed4367feeae4f5daa20d54dc309f117',1,'exportafuncoes.h']]],
-  ['resposta_5fsessao_5ffiscal_5finvalida_10',['RESPOSTA_SESSAO_FISCAL_INVALIDA',['../group__g1.html#gga15d766683e4eca0e281addece3d04704a96a152387f369c9232c7be8916201fc8',1,'codigoerro.h']]],
-  ['retorno_11',['Retorno',['../group__sp11.html',1,'(<em>Namespace</em> global)'],['../group__sp21.html',1,'(<em>Namespace</em> global)']]]
+  ['resposta_20intent_10',['Resposta Intent',['../group__idh201.html',1,'']]],
+  ['resposta_5fsessao_5ffiscal_5finvalida_11',['RESPOSTA_SESSAO_FISCAL_INVALIDA',['../group__g1.html#gga15d766683e4eca0e281addece3d04704a96a152387f369c9232c7be8916201fc8',1,'codigoerro.h']]],
+  ['retorno_12',['Retorno',['../group__sp11.html',1,'(<em>Namespace</em> global)'],['../group__sp21.html',1,'(<em>Namespace</em> global)']]]
 ];
