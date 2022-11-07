@@ -120,8 +120,8 @@ $(document).ready(function(){initNavTree('group__t0.html',''); initResizable(); 
 </ul>
 <p >Há 2 tipos de arquivos para troca de dados entre automação e API TEF. Um deles serve para enviar dados e o outro para enviar uma resposta confirmando o recebimento dos dados. O arquivo de dados recebe o nome “INTPOS.001”. Já o arquivo de confirmação de recebimento de dados recebe o nome “INTPOS.STS”.</p>
 <p >Abaixo segue um diagrama do fluxo de iterações entre PDV e E1_TEFPay_Passivo e logo adiante um exemplo dos arquivos de requisição e resposta:</p>
-<p >![<a href="https://user-images.githubusercontent.com/78883867/117910368-2fc08100-b2b2-11eb-8b97-952024370e13.png">Diagrama de sequencia para fluxo de comunicação entre PDV e Módulo de troca de arquivos</a></p>
-<p >Exemplo de Transação Venda Débito/Crédito</p>
+<p ><img src="https://user-images.githubusercontent.com/78883867/117910368-2fc08100-b2b2-11eb-8b97-952024370e13.png" alt="Diagrama de sequencia para fluxo de comunicação entre PDV e Módulo de troca de arquivos" class="inline"/></p>
+<h1>Exemplo de Transação Venda Débito/Crédito</h1>
 <p >Arquivo IntPos.001 gerado pela Automação na Etapa 1 de uma operação CRT. <code>C:\Cliente\Req\IntPos.001</code></p>
 <p >Dados escritos: </p><pre class="fragment">000-000 = CRT
 001-000 = 1
@@ -208,7 +208,27 @@ $(document).ready(function(){initNavTree('group__t0.html',''); initResizable(); 
 <p >Dados Retornados pela API: </p><pre class="fragment">000-000 = CNF
 001-000 = 1
 999-999 = 0
-</pre> </div><!-- contents -->
+</pre> <h2>Operações com Pix</h2>
+<p >Para realizar uma operação Pix, a automação deve gerar um arquivo IntPos.001 com os seguintes dados:</p>
+<p >Dados escritos: </p><pre class="fragment">000-000 = PIX
+001-000 = 1
+002-000 = 123456
+003-000 = 400
+999-999 = 0
+</pre> <h2>Utilizar o PIX4 para transações TEF Pix</h2>
+<p >Para utilizar o PIX4 para transações com Pix, basta alterar no arquivo de configurações <code>config_tef.json</code> a chave <code>"pix4": 0</code> para <code>"pix4": 1</code>. <br  />
+ Exemplo de arquivo de configuração: <br  />
+ </p><div class="fragment"><div class="line">{</div>
+<div class="line">&quot;file_req&quot;: &quot;IntPos.001&quot;,</div>
+<div class="line">&quot;file_resp&quot;: &quot;IntPos.Sts&quot;,</div>
+<div class="line">&quot;log&quot;: 1,</div>
+<div class="line">&quot;path_in&quot;: &quot;C:/Cliente/Req&quot;,</div>
+<div class="line">&quot;path_out&quot;: &quot;C:/Cliente/Resp&quot;,</div>
+<div class="line">&quot;pix4&quot;: 1,</div>
+<div class="line">&quot;produto_tef&quot;: 2,</div>
+<div class="line">&quot;tag_comprovante&quot;: 0</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
