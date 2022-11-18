@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plataforma de Comunicação Elgin: Módulos</title>
+<title>Plataforma de Comunicação Elgin: Parâmetros</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,7 +84,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('group__g32.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('group__idh202.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,45 +103,25 @@ $(document).ready(function(){initNavTree('group__g32.html',''); initResizable();
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#groups">Módulos</a>  </div>
-  <div class="headertitle"><div class="title">Módulos<div class="ingroups"><a class="el" href="group__g3.html">Android</a></div></div></div>
+  <div class="headertitle"><div class="title">Parâmetros<div class="ingroups"><a class="el" href="group__g3.html">Android</a> &raquo; <a class="el" href="group__idh1.html">IntentDigitalHub</a> &raquo; <a class="el" href="group__idh20.html">IDH Tef Android</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Módulos disponíveis para utilização no ambiente Android.  
-<a href="#details">Mais...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
-Módulos</h2></td></tr>
-<tr class="memitem:group__ma5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ma5.html">Pix4</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__ma0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ma0.html">Impressora Térmica</a></td></tr>
-<tr class="memdesc:group__ma0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Módulo para comunicação com as impressoras térmicas. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__ma1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ma1.html">Impressora de Etiquetas</a></td></tr>
-<tr class="memdesc:group__ma1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Módulo para comunicação com as impressoras de etiqueta. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__ma2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ma2.html">SAT</a></td></tr>
-<tr class="memdesc:group__ma2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Módulo para comunicação com o Smart SAT. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__ma3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ma3.html">Balança</a></td></tr>
-<tr class="memdesc:group__ma3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Módulo para comunicação com as balanças. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__ma4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ma4.html">Serviço</a></td></tr>
-<tr class="memdesc:group__ma4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Módulo para comunicação via serviço. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__ma6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ma6.html">Tef Android</a></td></tr>
-<tr class="memdesc:group__ma6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tef Android API. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Parâmetro   </th><th class="markdownTableHeadCenter">Tipo   </th><th class="markdownTableHeadLeft">Descrição    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">empresaSitef   </td><td class="markdownTableBodyCenter">Obrigatório   </td><td class="markdownTableBodyLeft">Empresa Sitef. <br  />
+ O tamanho é de 8 dígitos alfanuméricos.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">terminalSitef   </td><td class="markdownTableBodyCenter">Opcional   </td><td class="markdownTableBodyLeft">Número de terminal Sitef. <br  />
+Se não informado o IDH irá usar o número de série do APOS ou    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">modalidade   </td><td class="markdownTableBodyCenter">Obrigatório   </td><td class="markdownTableBodyLeft">Funcionalidade do ElginTef que deseja executar. Por exemplo: <br  />
+0 - pagamento<br  />
+200 - cancelamento <br  />
+114 - reimpressão <br  />
+? - configurações   </td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
-<p >Módulos disponíveis para utilização no ambiente Android. </p>
-<p >Após a compatibilização do projeto, as funções dos módulos listados acima estarão disponíveis para uso em ambiente Android.<br  />
-<br  />
- De maneira geral, o uso e o funcionamento delas é idêntico àquelas apresentadas nos módulos <a class="el" href="group___m1.html">Térmica</a>, <a class="el" href="group___m0.html">Etiqueta</a>, <a class="el" href="group__g2.html">SAT</a> e <a class="el" href="group__g5.html">Balança</a>, com exceção de algumas, cujas diferenças são comentadas ao longo da documentação.<br  />
-<br  />
-</p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->

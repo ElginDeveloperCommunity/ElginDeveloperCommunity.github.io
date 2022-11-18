@@ -1,5 +1,11 @@
 var group__g1 =
 [
+    [ "Tef_Erro_Android", "group__g1.html#gaa5dca26c760c8ee5b73367aebaa93a76", [
+      [ "TEF_PIN_PAD_NAO_ENCONTRADO", "group__g1.html#ggaa5dca26c760c8ee5b73367aebaa93a76afae92cb2be9f4fb31ae67baa77475c07", null ],
+      [ "TEF_CANCELADO_OPERADOR", "group__g1.html#ggaa5dca26c760c8ee5b73367aebaa93a76add981d8d97736dfba20d6e92365013d2", null ],
+      [ "TEF_CANCELADO_SERVER", "group__g1.html#ggaa5dca26c760c8ee5b73367aebaa93a76a7f20f4c101536a56c2065cb7292a855e", null ],
+      [ "TEF_CANCELADO_SISTEMA", "group__g1.html#ggaa5dca26c760c8ee5b73367aebaa93a76a4f56db8b605ba01dec7e2dbaca27db45", null ]
+    ] ],
     [ "GER_Erro_Conexao", "group__g1.html#gaaf847b41b132e891ed9cd18f57c1d54c", [
       [ "TIPO_INVALIDO", "group__g1.html#ggaaf847b41b132e891ed9cd18f57c1d54cade79caf92db1c9d9754baa722d16e9a5", null ],
       [ "MODELO_INVALIDO", "group__g1.html#ggaaf847b41b132e891ed9cd18f57c1d54cadafeee84c40bbb5b5622c1ea10685006", null ],

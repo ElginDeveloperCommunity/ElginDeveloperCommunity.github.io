@@ -20,5 +20,7 @@ var searchData=
   ['funções_20de_20impressão_17',['Funções de Impressão',['../group__g54.html',1,'']]],
   ['funções_20de_20personalização_18',['Funções de Personalização',['../group__g56.html',1,'']]],
   ['funcoes_20nfc_2de_20e1_19',['Funcoes NFC-e E1',['../group__g50.html',1,'']]],
-  ['funções_20',['Funções',['../group__g130.html',1,'(<em>Namespace</em> global)'],['../group__sp31.html',1,'(<em>Namespace</em> global)'],['../group__sp20.html',1,'(<em>Namespace</em> global)']]]
+  ['funções_20',['Funções',['../group__g130.html',1,'(<em>Namespace</em> global)'],['../group__sp31.html',1,'(<em>Namespace</em> global)'],['../group__sp20.html',1,'(<em>Namespace</em> global)'],['../group__ma60.html',1,'(<em>Namespace</em> global)']]],
+  ['funções_20de_20configuração_21',['Funções de Configuração',['../group__ma600.html',1,'']]],
+  ['funções_20de_20transação_22',['Funções de Transação',['../group__ma601.html',1,'']]]
 ];

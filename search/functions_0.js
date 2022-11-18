@@ -24,6 +24,7 @@ var searchData=
   ['apresentatextocolorido_21',['ApresentaTextoColorido',['../group__g130.html#ga22930e1deda626fcd674bbd845b509f4',1,'e1_pix4_funcoes.h']]],
   ['associarassinatura_22',['AssociarAssinatura',['../group__g2.html#ga03348b399781fdd1a601d8c9a7b41986',1,'exportafuncoes.h']]],
   ['ativarsat_23',['AtivarSAT',['../group__g2.html#gad4a90343e6150d00b8f80a35e105ff4c',1,'exportafuncoes.h']]],
-  ['atualizarsoftwaresat_24',['AtualizarSoftwareSAT',['../group__g2.html#gad70e1ce0b0e09c7c5b86c9da990a1b6f',1,'exportafuncoes.h']]],
-  ['avancapapel_25',['AvancaPapel',['../group___m1.html#ga7bb867ac58bdce583d497d05aa125732',1,'exportafuncoes.h']]]
+  ['ativarterminal_24',['AtivarTerminal',['../group__ma600.html#ga8d583e0e54f80ce13957781ba514b95a',1,'tef_android_funcoes.doxy']]],
+  ['atualizarsoftwaresat_25',['AtualizarSoftwareSAT',['../group__g2.html#gad70e1ce0b0e09c7c5b86c9da990a1b6f',1,'exportafuncoes.h']]],
+  ['avancapapel_26',['AvancaPapel',['../group___m1.html#ga7bb867ac58bdce583d497d05aa125732',1,'exportafuncoes.h']]]
 ];

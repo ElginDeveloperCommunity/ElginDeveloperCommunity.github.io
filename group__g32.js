@@ -5,5 +5,6 @@ var group__g32 =
     [ "Impressora de Etiquetas", "group__ma1.html", "group__ma1" ],
     [ "SAT", "group__ma2.html", null ],
     [ "Balança", "group__ma3.html", null ],
-    [ "Serviço", "group__ma4.html", "group__ma4" ]
+    [ "Serviço", "group__ma4.html", "group__ma4" ],
+    [ "Tef Android", "group__ma6.html", "group__ma6" ]
 ];

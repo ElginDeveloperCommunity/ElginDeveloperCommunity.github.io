@@ -51,12 +51,13 @@ var searchData=
   ['consultarultimatransacaoarq_48',['ConsultarUltimaTransacaoArq',['../group__g53.html#gaf78d581f527e6c2cdffcbbdc6b18b861',1,'exportafuncoes.h']]],
   ['consultarultimatransacaoref_49',['ConsultarUltimaTransacaoRef',['../group__g52.html#gae0e839dddcffbe9ee95024db9e245e36',1,'exportafuncoes.h']]],
   ['conteudo_5fcampo_5finvalido_50',['CONTEUDO_CAMPO_INVALIDO',['../group__g1.html#gga8dc854771e10d750b6a0c4724a046d80a8b7dc74c92a5bdeb720ea1963d9c534f',1,'codigoerro.h']]],
-  ['corte_51',['Corte',['../group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade',1,'exportafuncoes.h']]],
-  ['cortetotal_52',['CorteTotal',['../group___m1.html#ga329c887a0b5731559d593aaa0ca0aa2b',1,'exportafuncoes.h']]],
-  ['cpf_5finvalido_53',['CPF_INVALIDO',['../group__g1.html#gga15d766683e4eca0e281addece3d04704af5a7e7a7fe0750f0826ee2e303ee495b',1,'codigoerro.h']]],
-  ['credenciadora_5fcartao_5finvalido_54',['CREDENCIADORA_CARTAO_INVALIDO',['../group__g1.html#gga016ca53373099dfbefdd44124f9797b2aaba1536427be55568a5d48a57d26f698',1,'codigoerro.h']]],
-  ['cregtribissqn_5finvalido_55',['CREGTRIBISSQN_INVALIDO',['../group__g1.html#gga2135434c111b0c910df2d58bc4d2e41ba3aa5c8fec0365fd1c31941d8b585891a',1,'codigoerro.h']]],
-  ['csosn_5finvalido_56',['CSOSN_INVALIDO',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda86cb1d37c4315af7e732c9c10ce07358',1,'codigoerro.h']]],
-  ['cst_5finvalido_57',['CST_INVALIDO',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda3885a81f5a793c427b183d5650e10443',1,'codigoerro.h']]],
-  ['cutpaper_58',['CutPaper',['../group___m2.html#ga48f74826596723a41e8e50a46d4cf2e7',1,'exportafuncoes.h']]]
+  ['contextualização_20elgintef_51',['Contextualização ElginTef',['../group__ma62.html',1,'']]],
+  ['corte_52',['Corte',['../group___m1.html#gab6411e97bf638b98b5acfcc621ec0ade',1,'exportafuncoes.h']]],
+  ['cortetotal_53',['CorteTotal',['../group___m1.html#ga329c887a0b5731559d593aaa0ca0aa2b',1,'exportafuncoes.h']]],
+  ['cpf_5finvalido_54',['CPF_INVALIDO',['../group__g1.html#gga15d766683e4eca0e281addece3d04704af5a7e7a7fe0750f0826ee2e303ee495b',1,'codigoerro.h']]],
+  ['credenciadora_5fcartao_5finvalido_55',['CREDENCIADORA_CARTAO_INVALIDO',['../group__g1.html#gga016ca53373099dfbefdd44124f9797b2aaba1536427be55568a5d48a57d26f698',1,'codigoerro.h']]],
+  ['cregtribissqn_5finvalido_56',['CREGTRIBISSQN_INVALIDO',['../group__g1.html#gga2135434c111b0c910df2d58bc4d2e41ba3aa5c8fec0365fd1c31941d8b585891a',1,'codigoerro.h']]],
+  ['csosn_5finvalido_57',['CSOSN_INVALIDO',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda86cb1d37c4315af7e732c9c10ce07358',1,'codigoerro.h']]],
+  ['cst_5finvalido_58',['CST_INVALIDO',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda3885a81f5a793c427b183d5650e10443',1,'codigoerro.h']]],
+  ['cutpaper_59',['CutPaper',['../group___m2.html#ga48f74826596723a41e8e50a46d4cf2e7',1,'exportafuncoes.h']]]
 ];
