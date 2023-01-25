@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pix_0',['pix',['../md_src__pix_pix.html',1,'']]],
-  ['pixretorno_1',['pixRetorno',['../md_src__pix_pix_retorno.html',1,'']]]
+  ['modo_2dkiosk_0',['modo-kiosk',['../md_src__android__kiosk_modo_kiosk.html',1,'']]]
 ];

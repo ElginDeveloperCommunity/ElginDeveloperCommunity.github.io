@@ -19,5 +19,7 @@ var searchData=
   ['municipio_5finvalido_16',['MUNICIPIO_INVALIDO',['../group__g1.html#ggabce12b1307411516d5ae219d5e3da4fca89d540303aa3aa027688c95e19c3fdef',1,'codigoerro.h']]],
   ['módulos_17',['Módulos',['../group__g32.html',1,'']]],
   ['mini_20pdv_20m10_18',['Mini PDV M10',['../group__g30.html',1,'']]],
-  ['mini_20pdv_20m8_19',['Mini PDV M8',['../group__g461.html',1,'']]]
+  ['mini_20pdv_20m8_19',['Mini PDV M8',['../group__g461.html',1,'']]],
+  ['modo_20kiosk_20',['Modo Kiosk',['../group__ma7.html',1,'']]],
+  ['modo_2dkiosk_21',['modo-kiosk',['../md_src__android__kiosk_modo_kiosk.html',1,'']]]
 ];
