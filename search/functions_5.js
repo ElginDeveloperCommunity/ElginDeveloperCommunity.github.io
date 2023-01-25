@@ -9,5 +9,5 @@ var searchData=
   ['feedline_6',['FeedLine',['../group___m2.html#gaa96e7d2679056c288acfee98bf4424fa',1,'exportafuncoes.h']]],
   ['filtrasatnumserie_7',['FiltraSATNumSerie',['../group__g2.html#gae161c961a1d02061ee4136012977b13d',1,'exportafuncoes.h']]],
   ['filtrasatusb_8',['FiltraSATUsb',['../group__g2.html#ga978cc8dd5679f47517a41f960ff98df4',1,'exportafuncoes.h']]],
-  ['finalizaroperacaotef_9',['FinalizarOperacaoTEF',['../group__t2.html#ga2ac63e2c98e7b2d8045ce4afd58f6cee',1,'e1_tef_funcoes.h']]]
+  ['finalizaroperacaotef_9',['FinalizarOperacaoTEF',['../group__tf.html#ga2ac63e2c98e7b2d8045ce4afd58f6cee',1,'funcoes.h']]]
 ];

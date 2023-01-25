@@ -1,0 +1,796 @@
+<!-- HTML header for doxygen 1.9.4-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="light-mode">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Comunicação Elgin: Funções</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom-mermaid.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<!-- ... other metadata & script includes ... -->
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeDarkModeToggle.title = "Trocar entre Light / Dark Mode"
+  // DoxygenAwesomeDarkModeToggle.lightModeIcon = '🌞'
+  // // icon from https://fonts.google.com/icons
+  // DoxygenAwesomeDarkModeToggle.darkModeIcon = `<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#009793"><g><rect fill="none" height="24" width="24"/></g><g><g><path d="M8.1,14.15C9.77,14.63,11,16.17,11,18c0,0.68-0.19,1.31-0.48,1.87c0.48,0.09,0.97,0.14,1.48,0.14 c1.48,0,2.9-0.41,4.13-1.15c-2.62-0.92-5.23-2.82-6.8-5.86C7.74,9.94,7.78,7.09,8.29,4.9c-2.57,1.33-4.3,4.01-4.3,7.1c0,0,0,0,0,0 c0.01,0,0.01,0,0.02,0C5.66,12,7.18,12.83,8.1,14.15z" opacity=".3"/><path d="M19.78,17.51c-2.47,0-6.57-1.33-8.68-5.43C8.77,7.57,10.6,3.6,11.63,2.01C6.27,2.2,1.98,6.59,1.98,12 c0,0.14,0.02,0.28,0.02,0.42C2.61,12.16,3.28,12,3.98,12c0,0,0,0,0,0c0-3.09,1.73-5.77,4.3-7.1C7.78,7.09,7.74,9.94,9.32,13 c1.57,3.04,4.18,4.95,6.8,5.86c-1.23,0.74-2.65,1.15-4.13,1.15c-0.5,0-1-0.05-1.48-0.14c-0.37,0.7-0.94,1.27-1.64,1.64 c0.98,0.32,2.03,0.5,3.11,0.5c3.5,0,6.58-1.8,8.37-4.52C20.18,17.5,19.98,17.51,19.78,17.51z"/><path d="M7,16l-0.18,0C6.4,14.84,5.3,14,4,14c-1.66,0-3,1.34-3,3s1.34,3,3,3c0.62,0,2.49,0,3,0c1.1,0,2-0.9,2-2 C9,16.9,8.1,16,7,16z"/></g></g></svg>`
+  DoxygenAwesomeDarkModeToggle.init()
+</script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript">
+    // DoxygenAwesomeFragmentCopyButton.title = "In die Zwischenablage kopieren"
+    DoxygenAwesomeFragmentCopyButton.init()
+</script>
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
+  <td id="projectalign">
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.9.0</span>
+   </div>
+   <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Gerado por Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__tf.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Funções<div class="ingroups"><a class="el" href="group__g7.html">E1 TEF</a> &raquo; <a class="el" href="group__t2.html">Modo Ativo</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="memitem:gaefe61a04d683cda55b140be443fa43d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tf.html#gaefe61a04d683cda55b140be443fa43d0">GetProdutoTef</a> ()</td></tr>
+<tr class="memdesc:gaefe61a04d683cda55b140be443fa43d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetProdutoTef.  <a href="group__tf.html#gaefe61a04d683cda55b140be443fa43d0">Mais...</a><br /></td></tr>
+<tr class="separator:gaefe61a04d683cda55b140be443fa43d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf90752d7895f6c53adde5f4e16aad02"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tf.html#gaaf90752d7895f6c53adde5f4e16aad02">GetClientTCP</a> ()</td></tr>
+<tr class="memdesc:gaaf90752d7895f6c53adde5f4e16aad02"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetClientTCP.  <a href="group__tf.html#gaaf90752d7895f6c53adde5f4e16aad02">Mais...</a><br /></td></tr>
+<tr class="separator:gaaf90752d7895f6c53adde5f4e16aad02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f891f10c6bb98d703737aa357f942d6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tf.html#ga5f891f10c6bb98d703737aa357f942d6">SetClientTCP</a> (const char *ip, int porta)</td></tr>
+<tr class="memdesc:ga5f891f10c6bb98d703737aa357f942d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura o IP e a porta onde o ElginTEF está operando;.  <a href="group__tf.html#ga5f891f10c6bb98d703737aa357f942d6">Mais...</a><br /></td></tr>
+<tr class="separator:ga5f891f10c6bb98d703737aa357f942d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab06e26fc973f68f06aa0f1355c8353be"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tf.html#gab06e26fc973f68f06aa0f1355c8353be">ConfigurarDadosPDV</a> (const char *textoPinpad, const char *versaoAC, const char *nomeEstabelecimento, const char *loja, const char *identificadorPontoCaptura)</td></tr>
+<tr class="memdesc:gab06e26fc973f68f06aa0f1355c8353be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura os dados do PDV.  <a href="group__tf.html#gab06e26fc973f68f06aa0f1355c8353be">Mais...</a><br /></td></tr>
+<tr class="separator:gab06e26fc973f68f06aa0f1355c8353be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bf9edea41af3c30936caf5ce7f8c988"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tf.html#ga1bf9edea41af3c30936caf5ce7f8c988">IniciarOperacaoTEF</a> (const char *dadosCaptura)</td></tr>
+<tr class="memdesc:ga1bf9edea41af3c30936caf5ce7f8c988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia Operação.  <a href="group__tf.html#ga1bf9edea41af3c30936caf5ce7f8c988">Mais...</a><br /></td></tr>
+<tr class="separator:ga1bf9edea41af3c30936caf5ce7f8c988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga897d2c146bcaa9d1dec4b4e7ed1c94e4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tf.html#ga897d2c146bcaa9d1dec4b4e7ed1c94e4">RecuperarOperacaoTEF</a> (const char *dadosCaptura)</td></tr>
+<tr class="memdesc:ga897d2c146bcaa9d1dec4b4e7ed1c94e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que recupera a operação cancelada.  <a href="group__tf.html#ga897d2c146bcaa9d1dec4b4e7ed1c94e4">Mais...</a><br /></td></tr>
+<tr class="separator:ga897d2c146bcaa9d1dec4b4e7ed1c94e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09d2bd1b1adb661b08e35f983b412d6a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tf.html#ga09d2bd1b1adb661b08e35f983b412d6a">RealizarPagamentoTEF</a> (int codigoOperacao, const char *dadosCaptura, bool novaTransacao)</td></tr>
+<tr class="memdesc:ga09d2bd1b1adb661b08e35f983b412d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia uma operação de pagamento.  <a href="group__tf.html#ga09d2bd1b1adb661b08e35f983b412d6a">Mais...</a><br /></td></tr>
+<tr class="separator:ga09d2bd1b1adb661b08e35f983b412d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88e523b3e6b568d94aec4cef32b89f7f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tf.html#ga88e523b3e6b568d94aec4cef32b89f7f">RealizarAdmTEF</a> (int codigoOperacao, const char *dadosCaptura, bool novaTransacao)</td></tr>
+<tr class="memdesc:ga88e523b3e6b568d94aec4cef32b89f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia uma operação administrativa.  <a href="group__tf.html#ga88e523b3e6b568d94aec4cef32b89f7f">Mais...</a><br /></td></tr>
+<tr class="separator:ga88e523b3e6b568d94aec4cef32b89f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fe2f4724571a101290b4c1ce3d475a9"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tf.html#ga9fe2f4724571a101290b4c1ce3d475a9">RealizarPixTEF</a> (const char *dadosCaptura, bool novaTransacao)</td></tr>
+<tr class="memdesc:ga9fe2f4724571a101290b4c1ce3d475a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza uma operação de PIX. Essa função segue o mesmo fluxo da função RealizarPagamentoTEF e depende do serviço habilitado na operadora de TEF. ​​ * ​​​​​É importante que após a finalização da transação a automação realize a confirmação da transação usando a função de confirmação.  <a href="group__tf.html#ga9fe2f4724571a101290b4c1ce3d475a9">Mais...</a><br /></td></tr>
+<tr class="separator:ga9fe2f4724571a101290b4c1ce3d475a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d3fcd251005e36af7f0572698df4c18"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tf.html#ga9d3fcd251005e36af7f0572698df4c18">ConfirmarOperacaoTEF</a> (int id, int acao)</td></tr>
+<tr class="memdesc:ga9d3fcd251005e36af7f0572698df4c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para confirmar ou cancelar uma operação recém-realizada.  <a href="group__tf.html#ga9d3fcd251005e36af7f0572698df4c18">Mais...</a><br /></td></tr>
+<tr class="separator:ga9d3fcd251005e36af7f0572698df4c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ac63e2c98e7b2d8045ce4afd58f6cee"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tf.html#ga2ac63e2c98e7b2d8045ce4afd58f6cee">FinalizarOperacaoTEF</a> (int id)</td></tr>
+<tr class="memdesc:ga2ac63e2c98e7b2d8045ce4afd58f6cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finaliza a conexão com o ElginTEF.  <a href="group__tf.html#ga2ac63e2c98e7b2d8045ce4afd58f6cee">Mais...</a><br /></td></tr>
+<tr class="separator:ga2ac63e2c98e7b2d8045ce4afd58f6cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c183edd9667ece4e0dcf52ea192bdfd"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tf.html#ga4c183edd9667ece4e0dcf52ea192bdfd">RealizarColetaPinPad</a> (int tipoColeta, bool confirmar)</td></tr>
+<tr class="memdesc:ga4c183edd9667ece4e0dcf52ea192bdfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza a coleta de um dado no PINPAD. Os dados inseridos são apresentados no display do pinpad mascarados com (*).  <a href="group__tf.html#ga4c183edd9667ece4e0dcf52ea192bdfd">Mais...</a><br /></td></tr>
+<tr class="separator:ga4c183edd9667ece4e0dcf52ea192bdfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0352ac0a8be580209a107f204ccadcde"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tf.html#ga0352ac0a8be580209a107f204ccadcde">ConfirmarCapturaPinPad</a> (int tipoCaptura, const char *dadosCaptura)</td></tr>
+<tr class="memdesc:ga0352ac0a8be580209a107f204ccadcde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza a confirmação de um dado coletado usando o pinpad.  <a href="group__tf.html#ga0352ac0a8be580209a107f204ccadcde">Mais...</a><br /></td></tr>
+<tr class="separator:ga0352ac0a8be580209a107f204ccadcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<h2 class="groupheader">Funções</h2>
+<a id="gaefe61a04d683cda55b140be443fa43d0" name="gaefe61a04d683cda55b140be443fa43d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaefe61a04d683cda55b140be443fa43d0">&#9670;&nbsp;</a></span>GetProdutoTef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GetProdutoTef </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GetProdutoTef. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna o código do produto TEF em uso </dd></dl>
+
+</div>
+</div>
+<a id="gaaf90752d7895f6c53adde5f4e16aad02" name="gaaf90752d7895f6c53adde5f4e16aad02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf90752d7895f6c53adde5f4e16aad02">&#9670;&nbsp;</a></span>GetClientTCP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * GetClientTCP </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GetClientTCP. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna a configuração atual do Client, no formato ip_client|porta_client </dd></dl>
+
+</div>
+</div>
+<a id="ga5f891f10c6bb98d703737aa357f942d6" name="ga5f891f10c6bb98d703737aa357f942d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5f891f10c6bb98d703737aa357f942d6">&#9670;&nbsp;</a></span>SetClientTCP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * SetClientTCP </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>porta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configura o IP e a porta onde o ElginTEF está operando;. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ip</td><td>string do IP a ser usado pelo ElginTEF </td></tr>
+    <tr><td class="paramname">porta</td><td>int da porta a ser usada pelo ElginTEF </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna o resultado da operação (erro ou sucesso). Em caso de sucesso, esses parâmetros serão persistidos no arquivo de configuração. </dd></dl>
+
+</div>
+</div>
+<a id="gab06e26fc973f68f06aa0f1355c8353be" name="gab06e26fc973f68f06aa0f1355c8353be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab06e26fc973f68f06aa0f1355c8353be">&#9670;&nbsp;</a></span>ConfigurarDadosPDV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * ConfigurarDadosPDV </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>textoPinpad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>versaoAC</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nomeEstabelecimento</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>loja</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>identificadorPontoCaptura</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configura os dados do PDV. </p>
+<p >Necessários para operação com ElginTEF e persiste-os no arquivo de configuração</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">textoPinpad</td><td>O texto que será exibido no visor do Pinpad conectado à AC, normalmente o nome da AC </td></tr>
+    <tr><td class="paramname">versaoAC</td><td>String indicando a versão da AC; esse texto também é exibido no visor do Pinpad </td></tr>
+    <tr><td class="paramname">nomeEstabelecimento</td><td>O nome do estabelecimento no qual a AC está em execução </td></tr>
+    <tr><td class="paramname">loja</td><td>O nome/código (String) da loja (pertencente ao estabelecimento) na qual a AC está em execução </td></tr>
+    <tr><td class="paramname">identificadorPontoCaptura</td><td>O nome/código (String) do terminal (pertencente à loja) no qual a AC está em execução </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna sucesso, se o arquivo for criado/atualizado com sucesso, ou erro, caso contrário. </dd></dl>
+
+</div>
+</div>
+<a id="ga1bf9edea41af3c30936caf5ce7f8c988" name="ga1bf9edea41af3c30936caf5ce7f8c988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1bf9edea41af3c30936caf5ce7f8c988">&#9670;&nbsp;</a></span>IniciarOperacaoTEF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * IniciarOperacaoTEF </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dadosCaptura</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicia Operação. </p>
+<p >Estabelece uma conexão com o ElginTEF, permitindo que a API realize transações com o Client. Este método deve ser chamado sempre que a API for carregada ou após a execução do método <a class="el" href="group__tf.html#ga2ac63e2c98e7b2d8045ce4afd58f6cee" title="Finaliza a conexão com o ElginTEF.">FinalizarOperacaoTEF</a>. Este método lê o arquivo de configuração para obter os dados do Client e do PDV, conforme documentado nas funções <a class="el" href="group__tf.html#ga5f891f10c6bb98d703737aa357f942d6" title="Configura o IP e a porta onde o ElginTEF está operando;.">SetClientTCP</a> e <a class="el" href="group__tf.html#gab06e26fc973f68f06aa0f1355c8353be" title="Configura os dados do PDV.">ConfigurarDadosPDV</a>. <br  />
+ Caso a leitura do arquivo falhe e essas funções ainda não foram chamadas no carregamento atual da biblioteca (execução da aplicação), elas deverão ser chamadas antes de prosseguir com a inicialização. Opcionalmente, pode-se passar um JSON com os dados do PDV que serão usados nas operações subsequentes, sobrescrevendo os valores definidos no método <a class="el" href="group__tf.html#gab06e26fc973f68f06aa0f1355c8353be" title="Configura os dados do PDV.">ConfigurarDadosPDV</a> (o arquivo de configuração não é alterado nesse caso). </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dadosCaptura</td><td>Recebe payload com informações da Automação Comercial. <b>Parâmetro opcional</b>.<ul>
+<li>Se não for passado, a API irá consumir os dados presentes no arquivo de configuração <b>e1_tef_configs.json</b> com as informações dadas às funções <a class="el" href="group__tf.html#ga5f891f10c6bb98d703737aa357f942d6" title="Configura o IP e a porta onde o ElginTEF está operando;.">SetClientTCP</a> e <a class="el" href="group__tf.html#gab06e26fc973f68f06aa0f1355c8353be" title="Configura os dados do PDV.">ConfigurarDadosPDV</a>.</li>
+<li>Se for passado, a API usará os dados passados no payload com as seguintes chaves: <code>textoPinpad</code>, <code>versaoAC</code>, <code>nomeEstabelecimento</code>, <code>loja</code>, <code>identificadorPontoCaptura</code>.</li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Uma string JSON com a seguinte estrutura: <div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;codigo&quot;: 0,</div>
+<div class="line">    &quot;mensagem&quot;: &quot;Sucesso&quot;,</div>
+<div class="line">    &quot;tef&quot;: {</div>
+<div class="line">        ...</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --></dd></dl>
+<ul>
+<li><b>codigo</b>: chave do tipo <code>int</code> que indica o resultado da função chamada pela API, <b>sempre</b> presente no JSON de resposta.</li>
+<li><b>mensagem</b>: chave do tipo <code>string</code> que indica a mensagem / resposta referente ao <b>codigo</b> retornado, de acordo com a função chamada pela API, <b>sempre</b> presente no JSON de resposta.</li>
+<li><b>tef</b>: chave do tipo <code>objeto JSON</code> que contém as chaves de resposta do TEF Elgin. <br  />
+ Essa chave é <b>retornada somente</b> em casos de sucesso com as funções de operação TEF: <code><a class="el" href="group__tf.html#ga1bf9edea41af3c30936caf5ce7f8c988" title="Inicia Operação.">IniciarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga897d2c146bcaa9d1dec4b4e7ed1c94e4" title="Função que recupera a operação cancelada.">RecuperarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga09d2bd1b1adb661b08e35f983b412d6a" title="Inicia uma operação de pagamento.">RealizarPagamentoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga88e523b3e6b568d94aec4cef32b89f7f" title="Inicia uma operação administrativa.">RealizarAdmTEF()</a></code>, <code><a class="el" href="group__tf.html#ga9d3fcd251005e36af7f0572698df4c18" title="Função utilizada para confirmar ou cancelar uma operação recém-realizada.">ConfirmarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga2ac63e2c98e7b2d8045ce4afd58f6cee" title="Finaliza a conexão com o ElginTEF.">FinalizarOperacaoTEF()</a></code>. </li>
+</ul>
+
+</div>
+</div>
+<a id="ga897d2c146bcaa9d1dec4b4e7ed1c94e4" name="ga897d2c146bcaa9d1dec4b4e7ed1c94e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga897d2c146bcaa9d1dec4b4e7ed1c94e4">&#9670;&nbsp;</a></span>RecuperarOperacaoTEF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * RecuperarOperacaoTEF </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dadosCaptura</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que recupera a operação cancelada. </p>
+<p >Caso alguma operação falhe antes de ser concluída/confirmada (porque o "PDV caiu", por exemplo), este método pode ser chamado para iniciar uma nova comunicação com ElginTEF e recuperar os dados da operação interrompida, de forma que ela possa ser confirmada ou cancelada através do método <a class="el" href="group__tf.html#ga9d3fcd251005e36af7f0572698df4c18" title="Função utilizada para confirmar ou cancelar uma operação recém-realizada.">ConfirmarOperacaoTEF</a>. Opcionalmente, pode-se passar um JSON com os dados do PDV, sobrescrevendo os valores definidos no método <a class="el" href="group__tf.html#gab06e26fc973f68f06aa0f1355c8353be" title="Configura os dados do PDV.">ConfigurarDadosPDV</a> (o arquivo de configuração não é alterado nesse caso). Esse método foi criado com o intuito de simplificar a recuperação de operações interrompidas e não substitui o serviço administrativo destinado a esse fim (Administração Pendências).</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dadosCaptura</td><td>Recebe payload com informações da Automação Comercial. <b>Parâmetro opcional</b>.<ul>
+<li>Se não for passado, a API irá consumir os dados presentes no arquivo de configuração <b>e1_tef_configs.json</b> com as informações dadas às funções <a class="el" href="group__tf.html#ga5f891f10c6bb98d703737aa357f942d6" title="Configura o IP e a porta onde o ElginTEF está operando;.">SetClientTCP</a> e <a class="el" href="group__tf.html#gab06e26fc973f68f06aa0f1355c8353be" title="Configura os dados do PDV.">ConfigurarDadosPDV</a>.</li>
+<li>Se for passado, a API usará os dados passados no payload com as seguintes chaves: <code>textoPinpad</code>, <code>versaoAC</code>, <code>nomeEstabelecimento</code>, <code>loja</code>, <code>identificadorPontoCaptura</code>.</li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Uma string JSON com a seguinte estrutura: <div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;codigo&quot;: 0,</div>
+<div class="line">    &quot;mensagem&quot;: &quot;Sucesso&quot;,</div>
+<div class="line">    &quot;tef&quot;: {</div>
+<div class="line">        ...</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --></dd></dl>
+<ul>
+<li><b>codigo</b>: chave do tipo <code>int</code> que indica o resultado da função chamada pela API, <b>sempre</b> presente no JSON de resposta.</li>
+<li><b>mensagem</b>: chave do tipo <code>string</code> que indica a mensagem / resposta referente ao <b>codigo</b> retornado, de acordo com a função chamada pela API, <b>sempre</b> presente no JSON de resposta.</li>
+<li><b>tef</b>: chave do tipo <code>objeto JSON</code> que contém as chaves de resposta do TEF Elgin. <br  />
+ Essa chave é <b>retornada somente</b> em casos de sucesso com as funções de operação TEF: <code><a class="el" href="group__tf.html#ga1bf9edea41af3c30936caf5ce7f8c988" title="Inicia Operação.">IniciarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga897d2c146bcaa9d1dec4b4e7ed1c94e4" title="Função que recupera a operação cancelada.">RecuperarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga09d2bd1b1adb661b08e35f983b412d6a" title="Inicia uma operação de pagamento.">RealizarPagamentoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga88e523b3e6b568d94aec4cef32b89f7f" title="Inicia uma operação administrativa.">RealizarAdmTEF()</a></code>, <code><a class="el" href="group__tf.html#ga9d3fcd251005e36af7f0572698df4c18" title="Função utilizada para confirmar ou cancelar uma operação recém-realizada.">ConfirmarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga2ac63e2c98e7b2d8045ce4afd58f6cee" title="Finaliza a conexão com o ElginTEF.">FinalizarOperacaoTEF()</a></code>. </li>
+</ul>
+
+</div>
+</div>
+<a id="ga09d2bd1b1adb661b08e35f983b412d6a" name="ga09d2bd1b1adb661b08e35f983b412d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga09d2bd1b1adb661b08e35f983b412d6a">&#9670;&nbsp;</a></span>RealizarPagamentoTEF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * RealizarPagamentoTEF </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>codigoOperacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dadosCaptura</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>novaTransacao</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicia uma operação de pagamento. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">codigoOperacao</td><td>Indica o tipo de cartão a ser utilizado no pagamento, conforme lista a seguir esse parâmetro é ignorado caso a operação esteja em estado de coleta. 0 - Ignora cartão (o tipo de cartão será perguntado durante o processo de coleta) 1 - Cartão de crédito 2 - Cartão de débito 3 - Voucher (débito) 4 - Frota (débito) 5 - Private label (crédito)</td></tr>
+    <tr><td class="paramname">dadosCaptura</td><td>JSON com as informações iniciais do pagamento ou os dados de resposta da coleta. Para detalhes sobre os valores possíveis conferir a seção Payloads em <a class="el" href="group__t2.html">Modo Ativo</a> </td></tr>
+    <tr><td class="paramname">novaTransacao</td><td>Informa à função em qual estado encontra-se o processo de pagamento:<ul>
+<li>true - indica o início de uma nova operação de pagamento</li>
+<li>false - indica uma operação já iniciada, em estado de coleta em <a class="el" href="group__t2.html">Modo Ativo</a> </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Uma string JSON com a seguinte estrutura: <div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;codigo&quot;: 0,</div>
+<div class="line">    &quot;mensagem&quot;: &quot;Sucesso&quot;,</div>
+<div class="line">    &quot;tef&quot;: {</div>
+<div class="line">        ...</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --></dd></dl>
+<ul>
+<li><b>codigo</b>: chave do tipo <code>int</code> que indica o resultado da função chamada pela API, <b>sempre</b> presente no JSON de resposta.</li>
+<li><b>mensagem</b>: chave do tipo <code>string</code> que indica a mensagem / resposta referente ao <b>codigo</b> retornado, de acordo com a função chamada pela API, <b>sempre</b> presente no JSON de resposta.</li>
+<li><b>tef</b>: chave do tipo <code>objeto JSON</code> que contém as chaves de resposta do TEF Elgin. <br  />
+ Essa chave é <b>retornada somente</b> em casos de sucesso com as funções de operação TEF: <code><a class="el" href="group__tf.html#ga1bf9edea41af3c30936caf5ce7f8c988" title="Inicia Operação.">IniciarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga897d2c146bcaa9d1dec4b4e7ed1c94e4" title="Função que recupera a operação cancelada.">RecuperarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga09d2bd1b1adb661b08e35f983b412d6a" title="Inicia uma operação de pagamento.">RealizarPagamentoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga88e523b3e6b568d94aec4cef32b89f7f" title="Inicia uma operação administrativa.">RealizarAdmTEF()</a></code>, <code><a class="el" href="group__tf.html#ga9d3fcd251005e36af7f0572698df4c18" title="Função utilizada para confirmar ou cancelar uma operação recém-realizada.">ConfirmarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga2ac63e2c98e7b2d8045ce4afd58f6cee" title="Finaliza a conexão com o ElginTEF.">FinalizarOperacaoTEF()</a></code>. </li>
+</ul>
+
+</div>
+</div>
+<a id="ga88e523b3e6b568d94aec4cef32b89f7f" name="ga88e523b3e6b568d94aec4cef32b89f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga88e523b3e6b568d94aec4cef32b89f7f">&#9670;&nbsp;</a></span>RealizarAdmTEF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * RealizarAdmTEF </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>codigoOperacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dadosCaptura</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>novaTransacao</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicia uma operação administrativa. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">codigoOperacao</td><td>Indica o tipo de operação administrativa a ser realizada, conforme lista a seguir Esse parâmetro é ignorado caso a operação esteja em estado de coleta. 0 - Perguntar operação no processo de coleta 1 - Cancelamento 2 - Pendências 3 - Reimpressão </td></tr>
+    <tr><td class="paramname">dadosCaptura</td><td>JSON com as informações iniciais da operação administrativa ou os dados de resposta da coleta. Para detalhes sobre os valores possíveis conferir a seção <b>Payloads</b> em <a class="el" href="group__t2.html">Modo Ativo</a> </td></tr>
+    <tr><td class="paramname">novaTransacao</td><td>Informa à função em qual estado encontra-se o processo administrativo:<ul>
+<li>true - indica o início de uma nova operação administrativa</li>
+<li>false - indica uma operação já iniciada, em estado de coleta </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Uma string JSON com a seguinte estrutura: <div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;codigo&quot;: 0,</div>
+<div class="line">    &quot;mensagem&quot;: &quot;Sucesso&quot;,</div>
+<div class="line">    &quot;tef&quot;: {</div>
+<div class="line">        ...</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --></dd></dl>
+<ul>
+<li><b>codigo</b>: chave do tipo <code>int</code> que indica o resultado da função chamada pela API, <b>sempre</b> presente no JSON de resposta.</li>
+<li><b>mensagem</b>: chave do tipo <code>string</code> que indica a mensagem / resposta referente ao <b>codigo</b> retornado, de acordo com a função chamada pela API, <b>sempre</b> presente no JSON de resposta.</li>
+<li><b>tef</b>: chave do tipo <code>objeto JSON</code> que contém as chaves de resposta do TEF Elgin. <br  />
+ Essa chave é <b>retornada somente</b> em casos de sucesso com as funções de operação TEF: <code><a class="el" href="group__tf.html#ga1bf9edea41af3c30936caf5ce7f8c988" title="Inicia Operação.">IniciarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga897d2c146bcaa9d1dec4b4e7ed1c94e4" title="Função que recupera a operação cancelada.">RecuperarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga09d2bd1b1adb661b08e35f983b412d6a" title="Inicia uma operação de pagamento.">RealizarPagamentoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga88e523b3e6b568d94aec4cef32b89f7f" title="Inicia uma operação administrativa.">RealizarAdmTEF()</a></code>, <code><a class="el" href="group__tf.html#ga9d3fcd251005e36af7f0572698df4c18" title="Função utilizada para confirmar ou cancelar uma operação recém-realizada.">ConfirmarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga2ac63e2c98e7b2d8045ce4afd58f6cee" title="Finaliza a conexão com o ElginTEF.">FinalizarOperacaoTEF()</a></code>. </li>
+</ul>
+
+</div>
+</div>
+<a id="ga9fe2f4724571a101290b4c1ce3d475a9" name="ga9fe2f4724571a101290b4c1ce3d475a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fe2f4724571a101290b4c1ce3d475a9">&#9670;&nbsp;</a></span>RealizarPixTEF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * RealizarPixTEF </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dadosCaptura</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>novaTransacao</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Realiza uma operação de PIX. Essa função segue o mesmo fluxo da função RealizarPagamentoTEF e depende do serviço habilitado na operadora de TEF. ​​ * ​​​​​É importante que após a finalização da transação a automação realize a confirmação da transação usando a função de confirmação. </p>
+<dl class="section note"><dt>Observação</dt><dd>É obrigatório que se tenha um pinpad para a apresentação do QRCode. </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dadosCaptura</td><td>Usado para enviar o valor da transação em centavos. Ex: 1000 = R$10,00 </td></tr>
+    <tr><td class="paramname">novaTransacao</td><td>Usado para indicar o inicio de uma transação. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O Retorno será um JSON no padrão da API onde serão retornadas as informações de acordo com o processamento da transação. Durante o processamento os dados utilizados para gerar a imagem do QRCode em tela devem ser retornados na chave "mensagemResultado" do obj "tef". Tal mensagem tem a seguinte estrutura: QRCODE;[dados];[infoComplementaresEmBase64] sendo que o index 1 dessa estrutura pode ser usado para gerar a imagem de apresentação. <h3>Exemplo de retorno</h3>
+</dd></dl>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;codigo&quot;: 0,</div>
+<div class="line">    &quot;mensagem&quot;: &quot;Sucesso&quot;,</div>
+<div class="line">    &quot;tef&quot;: {</div>
+<div class="line">        &quot;automacao_coleta_retorno&quot;: &quot;0&quot;,</div>
+<div class="line">        &quot;automacao_coleta_sequencial&quot;: &quot;2&quot;,</div>
+<div class="line">        &quot;mensagemResultado&quot;: &quot;QRCODE;89504E470D0A1A0A0000000D4...hIEVMR0lOIn1dfQ&quot;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> Após o pagador realizar a leitura e pagamento da transação o retorno da transação deve ser similar ao retorno da transação convencional. </p>
+
+</div>
+</div>
+<a id="ga9d3fcd251005e36af7f0572698df4c18" name="ga9d3fcd251005e36af7f0572698df4c18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d3fcd251005e36af7f0572698df4c18">&#9670;&nbsp;</a></span>ConfirmarOperacaoTEF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * ConfirmarOperacaoTEF </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>acao</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para confirmar ou cancelar uma operação recém-realizada. </p>
+<p >Deve ser chamada após o término da coleta, quando a chave <code>resultadoTransacao</code> == 0.</p>
+<p >Essa função exige que alguma operação esteja em andamento. Caso ocorra algum erro durante a operação (queda de conexão, queda de energia ou qualquer outro problema que interrompa a comunicação entre API &lt;--&gt; ElginTEF), existem duas formas para cancelá-la ou confirmá-la:</p>
+<p >a. Chamar os métodos <a class="el" href="group__tf.html#ga897d2c146bcaa9d1dec4b4e7ed1c94e4" title="Função que recupera a operação cancelada.">RecuperarOperacaoTEF()</a> + <a class="el" href="group__tf.html#ga9d3fcd251005e36af7f0572698df4c18" title="Função utilizada para confirmar ou cancelar uma operação recém-realizada.">ConfirmarOperacaoTEF()</a></p><ul>
+<li>Devem ser chamadas imediatamente após a solução do problema b. Chamar os métodos <a class="el" href="group__tf.html#ga1bf9edea41af3c30936caf5ce7f8c988" title="Inicia Operação.">IniciarOperacaoTEF()</a> + <a class="el" href="group__tf.html#ga88e523b3e6b568d94aec4cef32b89f7f" title="Inicia uma operação administrativa.">RealizarAdmTEF()</a> // codigoOperacao = 2 (pendências)</li>
+<li>Forma recomendada, pode ser chamada a qualquer momento</li>
+</ul>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Indica o sequencial utilizado na operação a ser confirmada/cancelada. Esse é o sequencial opcionalmente informado no payload no início da operação, que também é retornado ao usuário ao término da coleta. </td></tr>
+    <tr><td class="paramname">acao</td><td>Indica a ação a ser realizada com a operação em questão: 0 - Cancelar 1 - Confirmar</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Uma string JSON com a seguinte estrutura: <div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;codigo&quot;: 0,</div>
+<div class="line">    &quot;mensagem&quot;: &quot;Sucesso&quot;,</div>
+<div class="line">    &quot;tef&quot;: {</div>
+<div class="line">        ...</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --></dd></dl>
+<ul>
+<li><b>codigo</b>: chave do tipo <code>int</code> que indica o resultado da função chamada pela API, <b>sempre</b> presente no JSON de resposta.</li>
+<li><b>mensagem</b>: chave do tipo <code>string</code> que indica a mensagem / resposta referente ao <b>codigo</b> retornado, de acordo com a função chamada pela API, <b>sempre</b> presente no JSON de resposta.</li>
+<li><b>tef</b>: chave do tipo <code>objeto JSON</code> que contém as chaves de resposta do TEF Elgin. <br  />
+ Essa chave é <b>retornada somente</b> em casos de sucesso com as funções de operação TEF: <code><a class="el" href="group__tf.html#ga1bf9edea41af3c30936caf5ce7f8c988" title="Inicia Operação.">IniciarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga897d2c146bcaa9d1dec4b4e7ed1c94e4" title="Função que recupera a operação cancelada.">RecuperarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga09d2bd1b1adb661b08e35f983b412d6a" title="Inicia uma operação de pagamento.">RealizarPagamentoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga88e523b3e6b568d94aec4cef32b89f7f" title="Inicia uma operação administrativa.">RealizarAdmTEF()</a></code>, <code><a class="el" href="group__tf.html#ga9d3fcd251005e36af7f0572698df4c18" title="Função utilizada para confirmar ou cancelar uma operação recém-realizada.">ConfirmarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga2ac63e2c98e7b2d8045ce4afd58f6cee" title="Finaliza a conexão com o ElginTEF.">FinalizarOperacaoTEF()</a></code>. </li>
+</ul>
+
+</div>
+</div>
+<a id="ga2ac63e2c98e7b2d8045ce4afd58f6cee" name="ga2ac63e2c98e7b2d8045ce4afd58f6cee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ac63e2c98e7b2d8045ce4afd58f6cee">&#9670;&nbsp;</a></span>FinalizarOperacaoTEF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * FinalizarOperacaoTEF </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finaliza a conexão com o ElginTEF. </p>
+<p >Após essa chamada a API não realizará novas transações com o Client até que uma nova chamada de <a class="el" href="group__tf.html#ga1bf9edea41af3c30936caf5ce7f8c988" title="Inicia Operação.">IniciarOperacaoTEF()</a> seja feita.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Indica o sequencial a ser utilizado na finalização, devendo ser o valor do sequencial usado na última operação somado com 1. Pode-se passar o valor 1, uma vez que a API resolve com o ElginTEF o sequencial correto a ser utilizado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Uma string JSON com a seguinte estrutura: <div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;codigo&quot;: 0,</div>
+<div class="line">    &quot;mensagem&quot;: &quot;Sucesso&quot;,</div>
+<div class="line">    &quot;tef&quot;: {</div>
+<div class="line">        ...</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --></dd></dl>
+<ul>
+<li><b>codigo</b>: chave do tipo <code>int</code> que indica o resultado da função chamada pela API, <b>sempre</b> presente no JSON de resposta.</li>
+<li><b>mensagem</b>: chave do tipo <code>string</code> que indica a mensagem / resposta referente ao <b>codigo</b> retornado, de acordo com a função chamada pela API, <b>sempre</b> presente no JSON de resposta.</li>
+<li><b>tef</b>: chave do tipo <code>objeto JSON</code> que contém as chaves de resposta do TEF Elgin. <br  />
+ Essa chave é <b>retornada somente</b> em casos de sucesso com as funções de operação TEF: <code><a class="el" href="group__tf.html#ga1bf9edea41af3c30936caf5ce7f8c988" title="Inicia Operação.">IniciarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga897d2c146bcaa9d1dec4b4e7ed1c94e4" title="Função que recupera a operação cancelada.">RecuperarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga09d2bd1b1adb661b08e35f983b412d6a" title="Inicia uma operação de pagamento.">RealizarPagamentoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga88e523b3e6b568d94aec4cef32b89f7f" title="Inicia uma operação administrativa.">RealizarAdmTEF()</a></code>, <code><a class="el" href="group__tf.html#ga9d3fcd251005e36af7f0572698df4c18" title="Função utilizada para confirmar ou cancelar uma operação recém-realizada.">ConfirmarOperacaoTEF()</a></code>, <code><a class="el" href="group__tf.html#ga2ac63e2c98e7b2d8045ce4afd58f6cee" title="Finaliza a conexão com o ElginTEF.">FinalizarOperacaoTEF()</a></code>. </li>
+</ul>
+
+</div>
+</div>
+<a id="ga4c183edd9667ece4e0dcf52ea192bdfd" name="ga4c183edd9667ece4e0dcf52ea192bdfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c183edd9667ece4e0dcf52ea192bdfd">&#9670;&nbsp;</a></span>RealizarColetaPinPad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * RealizarColetaPinPad </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tipoColeta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>confirmar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Realiza a coleta de um dado no PINPAD. Os dados inseridos são apresentados no display do pinpad mascarados com (*). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tipoColeta</td><td>Identifica qual coleta deve ser realizada. Os valores possíveis são: 1(RG), 2(CPF), 3(CNPJ) e 4(Telefone) </td></tr>
+    <tr><td class="paramname">confirmar</td><td>Indica que ao fim da operação deve ser realizada a confirmação do dado pelo pinpad. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno será um JSON no padrão da API onde a informação coletada esta preenchida na chave "resultadoCapturaPinPad" do obj "tef". A automação deve validar o valor de "retorno", quando igual a 1 a operação pode ser considerada como sucesso. Quando igual a 9 indica que o usuário não cancelou a operação. <h3>Exemplo Sucesso</h3>
+</dd></dl>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;codigo&quot;: 0,</div>
+<div class="line">    &quot;mensagem&quot;: &quot;Sucesso&quot;,</div>
+<div class="line">    &quot;tef&quot;: {</div>
+<div class="line">        &quot;mensagemResultado&quot;: &quot;CNPJC+691980880001&quot;,</div>
+<div class="line">        &quot;resultadoCapturaPinPad&quot;: &quot;691980880001&quot;,</div>
+<div class="line">        &quot;retorno&quot;: &quot;1&quot;,</div>
+<div class="line">        &quot;sequencial&quot;: &quot;101&quot;,</div>
+<div class="line">        &quot;servico&quot;: &quot;perguntar&quot;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h3>Exemplo Cancelamento</h3>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;codigo&quot;: 0,</div>
+<div class="line">    &quot;mensagem&quot;: &quot;Sucesso&quot;,</div>
+<div class="line">    &quot;tef&quot;: {</div>
+<div class="line">        &quot;mensagemResultado&quot;: &quot;Operacao cancelada pelo cliente&quot;,</div>
+<div class="line">        &quot;retorno&quot;: &quot;9&quot;,</div>
+<div class="line">        &quot;sequencial&quot;: &quot;8&quot;,</div>
+<div class="line">        &quot;servico&quot;: &quot;coletar&quot;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="ga0352ac0a8be580209a107f204ccadcde" name="ga0352ac0a8be580209a107f204ccadcde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0352ac0a8be580209a107f204ccadcde">&#9670;&nbsp;</a></span>ConfirmarCapturaPinPad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * ConfirmarCapturaPinPad </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tipoCaptura</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dadosCaptura</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Realiza a confirmação de um dado coletado usando o pinpad. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tipoCaptura</td><td>Indica qual o tipo da confirmação a ser realizada. Os valores possíveis são: 1(RG), 2(CPF), 3(CNPJ), 4(Telefone), 5(seleção) ou 6(Operadora) </td></tr>
+    <tr><td class="paramname">dadosCaptura</td><td>Dados a serem apresentados no display do pinpad. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno será um JSON no padrão da API onde a informação coletada esta preenchida na chave "resultadoCapturaPinPad" do obj "tef". A automação deve validar o valor de "retorno", quando igual a 1 a operação pode ser considerada como sucesso. Quando igual a 9 indica que o usuário não confirmou a operação. <h3>Exemplo Sucesso</h3>
+</dd></dl>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;codigo&quot;: 0,</div>
+<div class="line">    &quot;mensagem&quot;: &quot;Sucesso&quot;,</div>
+<div class="line">    &quot;tef&quot;: {</div>
+<div class="line">        &quot;mensagemResultado&quot;: &quot;CNPJC+691980880001&quot;,</div>
+<div class="line">        &quot;resultadoCapturaPinPad&quot;: &quot;691980880001&quot;,</div>
+<div class="line">        &quot;retorno&quot;: &quot;1&quot;,</div>
+<div class="line">        &quot;sequencial&quot;: &quot;101&quot;,</div>
+<div class="line">        &quot;servico&quot;: &quot;perguntar&quot;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h3>Exemplo Cancelamento</h3>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;codigo&quot;: 0,</div>
+<div class="line">    &quot;mensagem&quot;: &quot;Sucesso&quot;,</div>
+<div class="line">    &quot;tef&quot;: {</div>
+<div class="line">        &quot;mensagemResultado&quot;: &quot;RGC+000000000&quot;,</div>
+<div class="line">        &quot;retorno&quot;: &quot;9&quot;,</div>
+<div class="line">        &quot;sequencial&quot;: &quot;9&quot;,</div>
+<div class="line">        &quot;servico&quot;: &quot;perguntar&quot;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.4-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer"><a href="https://github.com/ElginDeveloperCommunity"><img class="footer" src="https://avatars.githubusercontent.com/u/78883867?s=400&u=9b127079a21ee35fed37a704c5a0204fd5c7b1c3&v=4" width="90" height="20" alt="ElginDeveloperCommunity"/></a>  </li>
+  </ul>
+</div>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base', 
+    themeVariables: {
+      primaryColor: '#f4f4ff',
+      secondaryColor: 'rgba(244,244,255,0.9)',
+      tertiaryColor: '#F9FAFC',
+    },
+  });
+</script>
+</body>
+</html>

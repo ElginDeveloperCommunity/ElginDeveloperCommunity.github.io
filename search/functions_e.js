@@ -10,7 +10,7 @@ var searchData=
   ['setbackfeed_7',['SetBackfeed',['../group__ge1.html#ga761bd344ffc5c161aecdc95761e16219',1,'exportafuncoes.h']]],
   ['setbaudrate_8',['SetBaudrate',['../group__ge0.html#gab11a4019e58a1886358c303de9dfcfd7',1,'exportafuncoes.h']]],
   ['setcalor_9',['SetCalor',['../group__ge2.html#gab4fea706ac0baa7cc9f098d674185322',1,'exportafuncoes.h']]],
-  ['setclienttcp_10',['SetClientTCP',['../group__t2.html#ga5f891f10c6bb98d703737aa357f942d6',1,'e1_tef_funcoes.h']]],
+  ['setclienttcp_10',['SetClientTCP',['../group__tf.html#ga5f891f10c6bb98d703737aa357f942d6',1,'funcoes.h']]],
   ['setcoletarinfocupomfiscal_11',['setColetarInfoCupomFiscal',['../group__sp20.html#ga091c22774c41dd2ff2a9de33ddca9c76',1,'ElginPay.h']]],
   ['setcontext_12',['setContext',['../group__ma600.html#ga7128bad4089c1008a76e5b8243cedd7a',1,'tef_android_funcoes.doxy']]],
   ['setcontinuousreadtime_13',['SetContinuousReadTime',['../group__g5.html#gab655dc39daafe9a8cad5cf8b0feec037',1,'exportafuncoes.h']]],
