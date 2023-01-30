@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.9.0</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.9.1</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -122,6 +122,19 @@ Módulos</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <p >Funções do Modo Kiosk. </p>
 <p >O modo Kiosk permite limitar o acesso a alguns recursos do dispositivo. Isso torna o dispositivo bastante adaptável para que o equipamento seja usado como um 'quiosque digital', mas pode ter outras utilidades.</p>
+<p >Veja as seguintes imagens:</p>
+<p >Por exemplo ao usar o MiniPDV M10, normalmente ele possui a seguinte aparência: </p><div class="image">
+<img src="modo-kiosk.jpg" alt=""/>
+</div>
+<p >Porém, após chamar a função <a class="el" href="group__ma70.html#ga680afecd7b1ac8eaae5e7481e727dfcb">desabilitaBarraStatus</a> : </p><div class="image">
+<img src="modo-kiosk-barra-status.jpg" alt=""/>
+</div>
+<p >E após chamar a função <a class="el" href="group__ma70.html#ga84c144fb6ca603855fbf47f38926c3dd">desabilitaBarraNavegacao</a> : </p><div class="image">
+<img src="modo-kiosk-barra-navegacao.jpg" alt=""/>
+</div>
+<p >Repare que tanto a barra de status quanto a barra de navegação não são mais visíveis para o usuário.</p>
+<p >Também é possível desabilitar o botão liga/desliga usando a função <a class="el" href="group__ma70.html#ga0d2123c502b42b73877b5c506f9230b0">desabilitaBotaoPower</a>.</p>
+<p >Todas as funcionalidades que são desabilitadas podem também ser habilitadas, sempre por meio das funções presentes na biblioteca.</p>
 <p >As funções que podem ser usadas são as seguintes:</p>
 <p ><a class="el" href="group__ma70.html#ga680afecd7b1ac8eaae5e7481e727dfcb">desabilitaBarraStatus</a> <br  />
  <a class="el" href="group__ma70.html#ga5360e55b3f629451e87fb0631dc37d15">habilitaBarraStatus</a> <br  />

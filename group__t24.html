@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.9.0</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.9.1</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -108,121 +108,80 @@ $(document).ready(function(){initNavTree('group__t24.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <h2>INFORMAÇÕES</h2>
-<p ><code>loja</code>: EnviadopelaAplicação Comercial para oElginTefem todos osserviços e conterá o código da loja cadastrado dentro do estabelecimento noElginTef para a qual as transações serão realizadas</p>
-<p ><br  />
-</p>
-<p ><code>vercaoAc</code>:</p>
-<p >Enviado obrigatoriamente no serviçoiniciar. Contém a versão de quem enviou(ElginTef ou Aplicação Comercial).</p>
-<p ><br  />
-</p>
-<p >mensagem, mensagemResultado Mensagem complementar do serviço executado. Pode estar presente tanto emcaso de sucesso quanto em caso de erro. Pode ser enviada pelaAplicaçãoComercial parao ElginTef e vice-versa.No caso dos serviços coletar, mostrar e perguntar ela é obrigatória. Para maisdetalhes de como utilizar estes serviços recorrer aos seus respectivos tópicos.</p>
-<p ><br  />
-</p>
-<p ><code>nomeAC</code>:</p>
-<p >Enviado obrigatoriamente no serviçoiniciar e contém o nome da aplicação.Quando enviado pelaAplicação Comercial deve conter o seu nome, e quandoenviado pelo ElginTef conterá "ElginTef".</p>
-<p ><br  />
-</p>
-<p ><code>transacao</code>: No servico=”consultar“oElginTefretornará a lista de transaçõeshabilitadas. Exemplo:transacao="Administracao Cancelar";"Cartao Vender";"Cheque Garantir";”Banco Pagar”;”Digital Pagar”N oservico=”executar”aAplicação Comercial deve enviar aoElginTef a transação a ser executada.</p>
-<p ><code>sequencial</code>: Deve estar presente em todas as mensagens. É um número sequencial únicocrescente, enviado pelaAplicação Comercialpara oElginTefa cadanovo serviço solicitado, e que deve permanecer o mesmo durante toda aexecução daquele serviço. OElginTefresponderá com o mesmosequencial. Se aAplicação Comercialenviar um sequencial inválido parainiciar um novo serviço, isto é, menor ou igual ao último utilizado, receberácomo resposta oretorno=”2”e o próximo sequencial válido. Este procedimentoé útil quando aAplicação Comercialfor reiniciada, perdendo o últimosequencial utilizado.</p>
-<p ><code>textoPinpad</code>:</p>
-<p >Enviado pelaAplicação Comercial e conterá a informação a ser exibida na telado PIN-Pad. Deve ter no máximo 32 posições.</p>
-<p ><code>nomeEstabelecimento</code>:</p>
-<p >Enviado pela Aplicação Comercial para o ElginTef em todos os serviços e conterá o código do estabelecimento cadastrado no ElginTef para o qual as transações serão realizadas.</p>
+<p ><code>loja</code>: Conterá o código da loja cadastrado dentro do estabelecimento no ElginTef para a qual as transações serão realizadas. A automação comercial cadastrará esse dado apenas uma vez usando a função <a class="el" href="group__tf.html#gab06e26fc973f68f06aa0f1355c8353be">ConfigurarDadosPDV</a></p>
+<p ><code>vercaoAc</code>: Contém a versão da automação comercial. A automação comercial cadastrará esse dado apenas uma vez usando a função <a class="el" href="group__tf.html#gab06e26fc973f68f06aa0f1355c8353be">ConfigurarDadosPDV</a> Enviado obrigatoriamente no serviçoiniciar.</p>
+<p ><code>resultadoTransacao</code>: Contém o código com a solicitação ou resultado do serviço, onde:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">Código   </th><th class="markdownTableHeadCenter">Situação   </th><th class="markdownTableHeadLeft">ElginTef -&gt; Aplicação Comercial   </th><th class="markdownTableHeadLeft">Aplicação Comercial -&gt; ElginTef    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">0   </td><td class="markdownTableBodyCenter">sucesso   </td><td class="markdownTableBodyLeft">Com confirmação da <b>Aplicação Comercial</b>   </td><td class="markdownTableBodyLeft">Confirmar transação    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">1   </td><td class="markdownTableBodyCenter">sucesso   </td><td class="markdownTableBodyLeft">Sem confirmação da <b>Aplicação Comercial</b>   </td><td class="markdownTableBodyLeft">Executar serviço    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">2   </td><td class="markdownTableBodyCenter">erro   </td><td class="markdownTableBodyLeft">Sequencial inválido   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">3   </td><td class="markdownTableBodyCenter">erro   </td><td class="markdownTableBodyLeft">Transação cancelada pelo operador   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">4   </td><td class="markdownTableBodyCenter">erro   </td><td class="markdownTableBodyLeft">Transação cancelada pelo cliente   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">5   </td><td class="markdownTableBodyCenter">erro   </td><td class="markdownTableBodyLeft">Parâmetros insuficientes ou inválidos   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">6   </td><td class="markdownTableBodyCenter">erro   </td><td class="markdownTableBodyLeft">Problemas na conexão do ElginTef   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">7   </td><td class="markdownTableBodyCenter">erro   </td><td class="markdownTableBodyLeft">Problemas entre o ElginTef e a Rede   </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">8   </td><td class="markdownTableBodyCenter">erro   </td><td class="markdownTableBodyLeft">Tempo limite de espera excedido   </td><td class="markdownTableBodyLeft">Tempo limite de espera excedido    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">9   </td><td class="markdownTableBodyCenter">erro   </td><td class="markdownTableBodyLeft">Problema desconhecido   </td><td class="markdownTableBodyLeft">Cancelar transação   </td></tr>
+</table>
+<p >As mensagens enviadas do ElginTef para a Aplicação Comercial com sucesso (retorno="0"ou "1") diferem por necessitar uma resposta (se sucesso ou não) por parte da Aplicação Comercial ou não, respectivamente. Normalmente, as transações que necessitam de confirmação, são as que fazem movimentação de dinheiro (ex.: Vendas, Pagamentos, etc.), sendo que asdemais não necessitam.</p>
+<p ><code>identificadorPontoCaptura</code>: Enviado pela Aplicação Comercial para o ElginTef em todos os serviços e conterá o código do terminal cadastrado dentro da loja no ElginTef através do qual as transações serão realizadas.</p>
+<p ><code>mensagemResultado</code>: Mensagem complementar do serviço executado. Pode estar presente tanto em caso de sucesso quanto em caso de erro. Pode ser enviada pela Aplicação Comercial para o ElginTef e vice-versa. No caso do serviço coletar ela é obrigatória.</p>
+<p ><code>sequencial</code>: Deve estar presente em todas as mensagens. É um número sequencial único crescente, enviado pela Aplicação Comercial para o ElginTef a cada novo serviço solicitado, e que deve permanecer o mesmo durante toda a execução daquele serviço. O ElginTef responderá com o mesmo sequencial. Se a Aplicação Comercial enviar um sequencial inválido para iniciar um novo serviço, isto é, menor ou igual ao último utilizado, receberá como resposta o <code>retorno="2"</code> e o próximo sequencial válido. Este procedimento é útil quando a Aplicação Comercial for reiniciada, perdendo o último sequencial utilizado.</p>
+<p ><code>textoPinpad</code>: Enviado pela Aplicação Comercial e conterá a informação a ser exibida na telado PIN-Pad. Deve ter no máximo 32 posições.</p>
+<p ><code>nomeEstabelecimento</code>: Conterá o código do estabelecimento cadastrado no ElginTef para o qual as transações serão realizadas. A automação comercial cadastrará esse dado apenas uma vez usando a função <a class="el" href="group__tf.html#gab06e26fc973f68f06aa0f1355c8353be">ConfigurarDadosPDV</a></p>
 <h2>TRANSAÇÕES</h2>
-<p ><code>nsuTerminal</code>:</p>
-<p >É oNúmero Sequencial Único (NSU) gerado peloElginTef usado paraidentificar uma transação dentro de uma rede em uma data especifica. Enviadopelo ElginTef para a Aplicação Comercial ao executar uma transação. Pode ser enviadopelaAplicação Comercial para oElginTefnas transações de cancelamento, reimpressão e tratamento de pendências,evitando assim sua coleta. Para processar a última transação deve-se enviarzero.</p>
-<p ><code>nomeProvedor</code>:</p>
-<p >É a rede responsável pelo roteamento e/ou execução da transação (ex.:Banrisul,Cielo,Redecard,Tecban, etc.), também conhecida comocredenciadora. Quando enviado pelaAplicação Comercialconterá as redesque podem ser utilizadas na transação solicitada. Quando enviado peloElginTef conterá a rede que foi utilizada na execução da transação.No servico=”consultar” retornará as redes habilitadas.</p>
-<p ><code>valorTotal</code>:</p>
-<p >Quando informado deve ser maior que zero e contém o valor da transação a serou que foi executada. Quando enviado peloElginTef, é o valor datransação que foi executada.Quando enviado pelaAplicação Comercial, éovalor a ser apresentado no campo de coleta do valor da transação. Setransacao_valor_minimoe / o utransacao_valor_maximo f o r (e m )especificado(s), será permitido a alteração do valor da transação na sua coleta, respeitando os limites especificados</p>
-<p ><code>numeroParcelas</code>:</p>
-<p >Quando informado conterá a quantidade de parcelas. Quando enviado pelaAplicação Comercialconterá a quantidade de parcelas a ser utilizada naexecução da transação solicitada. Quando enviado peloElginTefconterá a quantidade de parcelas da transação executada.</p>
-<p ><code>nomeProduto</code>:</p>
-<p >Produto é uma denominação muito utilizada hoje pelas redes de cartões, parapersonalizar os seus produtos (ex.:VisaVale,Voucher,VisaCash,CDC,PrivateLabel, etc.), e que se são ramificações das opçõesCréditoeDébito, seconfundindo com eles próprios. Quando especificado deve conter um produtoválido. Quando enviado pelaAplicação Comercialpara oElginTefconterá os produtos que podem ser utilizados na execução da transaçãosolicitada. Quando enviado peloElginTef paraAplicação Comercialconterá o produto utilizado na transação executada.Noservico=”consultar” será enviado peloElginTef para aAplicaçãoComercial os produtos disponiveis e suas respectivas redes.Exemplo:transacao_produto="VisaCash-Cielo”;”Credito-Redecard”;”Debito-Banrisul”;”PIX-Bradesco”;”PIX-Shipay” ...
-
-&lt;tt&gt;nsuTransacao&lt;/tt&gt;:
-
-É oNúmero Sequencial Único (NSU) gerado por algumasRedes usado paraidentificar  uma  transação.  Enviado  peloElginTefpara  aAplicaçãoComercial  ao  executar  uma  transação  quando  o  mesmo  existir,  isto  é,  forgerado pela Rede.
-
-&lt;tt&gt;cnpjCredenciadora&lt;/tt&gt;:
-
-Enviado  peloElginTef  paraAplicação  Comercial,  normalmente  emuma transação aprovada, e contém o CNPJ da  Rede(chamada também deCredenciadora)  responsável  pelo  roteamento  e/ou  execução  da  transação,quando o CNPJ estiver cadastrado noElginTef. Está implementação é paraatender às exigências das Secretarias da Fazenda dos Estados referente aoPAF, ECF, NFC-e, SAT, etc..
-
-&lt;tt&gt;formaPagamento&lt;/tt&gt;:
-
-Quando informado deve ser"A vista","Parcelado"ou"Pre-datado". Quandoenviado  pelaAplicação  Comercialconterá  a  forma  de  pagamento  a  serutilizado na transação solicitada. Quando enviado peloElginTefconteráa forma de pagamento utilizado na transação executada.
-
-&lt;tt&gt;tipoFinanciamento&lt;/tt&gt;:
-
-Aplica-se somente parapagamento="Parcelado". Quando especificado deveser "Estabelecimento"ou "Administradora". Quando enviado pela AplicaçãoComercialconterá  quem  deve  ser  o  financiador  utilizado  na  transaçãosolicitada. Quando enviado peloElginTefconterá o financiador utilizadona transação executada.
-
-&lt;tt&gt;tipoCartao&lt;/tt&gt;:
-
-Quando  informado  deve  ser"Debito"  ou"Credito".  Quando  enviado  pelaAplicação  Comercialconterá os tipos de cartão que podem ser utilizados naexecução  da  transação  solicitada.  Quando  enviado  peloElginTefconterá o tipo de cartão utilizado na transação executada. 
-
-&lt;tt&gt;codigoAutorizacao&lt;/tt&gt;:
-
-Quando existir conterá o código de autorização da transação que foi executada,normalmente gerado pela administradora.
-
-&lt;tt&gt;panMascarado&lt;/tt&gt;:
-
-Enviado pelaAplicação Comercial para oElginTef. Contém o númeroimpresso  no  cartão  e  é  utilizado  normalmente  em  transações  digitadas,  talcomo soluções WEB.
-
-&lt;tt&gt;nomeBandeira&lt;/tt&gt;:
-
-É  a  administradora  responsável  pela  autorização  da  transação  (ex.: Banricompras,Mastercard,Santander,Visa,  etc.),  também  conhecida  comobandeira.  Quando  enviada  pelaAplicação  Comercialconterá  asadministradoras  que  podem  ser  utilizadas  na  transação  solicitada.  Quandoenviado  peloElginTefconterá  a  administradora  que  foi  utilizada  naexecução da transação.
-
-&lt;tt&gt;uniqueID&lt;/tt&gt;:
-
-É um código único de transação criado pelo sistemaElginTef, e enviado peloElginTefparaAplicação Comercial. Ao solicitar um cancelamento oure-impressão, aAplicação  Comercialpode enviar este código para execuçãoda  transação.  Atransacao_codigo_vespaguenão deve ser mais utilizada eserá descontinuada em versões futuras.
-
-&lt;tt&gt;comprovanteDiferenciadoPortador&lt;/tt&gt;:
-
-Quando especificado conterá(ão) o(s) comprovantes gerados pela execução datransação,  enviados  peloElginTefpara  aAplicação  Comercial.  Asequência  de  caracteresCarriage-Return/Line-Feed(CR/LFou0x0D/0x0A)serão utilizados para separar as linhas.
-
-&lt;tt&gt;comprovanteDiferenciadoLoja&lt;/tt&gt;:
-
-Quando especificado conterá(ão) o(s) comprovantes gerados pela execução datransação,  enviados  peloElginTefpara  aAplicação  Comercial.  Asequência  de  caracteresCarriage-Return/Line-Feed(CR/LFou0x0D/0x0A)serão utilizados para separar as linhas.
-
-&lt;tt&gt;admSenha&lt;/tt&gt;:
-
-É  a  senha  do  usuário  enviado  pelaAplicação  Comercialpara  oElginTef para autenticação nas transações administrativas.
-
-&lt;tt&gt;admUsuario&lt;/tt&gt;:
-transacao_administracao_usuario
-É  o  código  do  usuário  enviado  pelaAplicação  Comercialpara  oElginTef para autenticação nas transações administrativas.
-
-
-&lt;h2&gt;COLETA&lt;/h2&gt;
-
-&lt;tt&gt;automacao_coleta_tipo&lt;/tt&gt;:
-Enviado  peloElginTefparaAplicação  Comercialsempre quando forcoletar alguma informação, e conterá o tipo de informação a ser coletada, onde:(*)Não exibivel podendo ser alfanumérico ou caracter especial;(A)Alfabético;(D)Data/hora;(N)Numérico com casas decimais ou não;(X)Alfanumérico;
-Quando informado e automacao_coleta_mascara não informado, as máscaraspadrões serão:(*)Não exibivel com tamanho ilimitado;(A)Letras com tamanho ilimitado;(D)Data no formato "dd/MM/yy";(N)Numérico no formato ".";(X)Alfanumérico com tamanho ilimitado.
-
-&lt;tt&gt;automacao_coleta_opcao&lt;/tt&gt;:
-Enviado  peloElginTef  paraAplicação  Comercial.Quando informadoconterá a lista com as opções permitidas para seleção. Uma delas deverá serselecionada. Os valores serão separados por ponto e virgula.  Seguem alguns exemplos:automacao_coleta_opcao="1.00";”2.00”;”3.00” indica  os  valores dos  quaisum deve ser selecionado ou coletado;
-automacao_coleta_opcao="Redecard";"Cielo";"Hipercard"  lista  as  redes,das quais uma deve ser coletada;
-
-&lt;tt&gt;automacao_coleta_timeout&lt;/tt&gt;:
-Pode ser enviado doElginTef paraAplicação Comercial e vice-versa.Quando  informado  conterá  o  tempo  máximo  em  segundos  que  o  enviadoraguardará  a  resposta  do  recebedor.  Quando  o  tempo  for  ultrapassado  atransação será abortada com retorno=”8”.
-
-
-
-
-
-
-
-
-
-&lt;tt&gt;automacao_coleta_informacao&lt;/tt&gt;:
-Enviado  pelaAplicação  Comercialpara  oElginTef.  Contém  ainformação coletada pela Aplicação Comercial.
-
-&lt;tt&gt;automacao_coleta_sequencial&lt;/tt&gt;:
-Número  sequencial  único  enviado  em  todas  as  mensagens,  para  garantir  aconsistencia na troca de informações entre oElginTefe  aAplicaçãoComercial.  Ao  iniciar  uma  nova  coleta  de  informações  oElginTefiniciará  este  valor  em  1  (um),  incrementando  de  1  em  1  a  cada  novamensagem, e a Aplicação Comercial deve devolver na mensagem de respostao mesmo valor recebido.
-
-&lt;tt&gt;automacao_coleta_palavra_chave&lt;/tt&gt;:
-Enviada  peloElginTef  paraAplicação Comercial quando solicitado acoleta de alguma informação, e conterá a palavra-chave referente à informaçãoque está sendo coletada. Exemplos:automacao_coleta_palavra_chave="transacao_valor"  indica  a  coleta  dovalor da transação;automacao_coleta_palavra_chave="transacao_cartao_numero"indica acoleta do número do cartão.</p>
-<p ><code>automacao_coleta_mensagem_tipo</code>: Pode ser enviado peloElginTef para Aplicação Comercial e vice-versa.Conterão os tipos de dados informados emautomacao_coleta_mensagem, eestão diretamente relacionados às suas respectivas ocorrências. Os tipospermitidos são os mesmos definidos em transacao_binario_tipo.ATENÇÃO: quando esta palavra-chave não estiver presente assumir o tipo TXTpara manter a compatibilidade com versões anteriores. </p>
+<p ><code>nsuTerminal</code>: É o Número Sequencial Único (NSU) gerado pelo ElginTef usado para identificar uma transação dentro de uma rede em uma data especifica. Enviado pelo ElginTef para a Aplicação Comercial ao executar uma transação. Pode ser enviado pela Aplicação Comercial para o ElginTef nas transações de cancelamento, reimpressão e tratamento de pendências, evitando assim sua coleta. Para processar a última transação deve-se enviar zero.</p>
+<p ><code>valorTotal</code>: Quando informado deve ser maior que zero e contém o valor da transação a ser ou que foi executada. Quando enviado pelo ElginTef, é o valor da transação que foi executada. Quando enviado pela Aplicação Comercial, é o valor a ser apresentado no campo de coleta do valor da transação.</p>
+<p ><code>numeroParcelas</code>: Quando informado conterá a quantidade de parcelas. Quando enviado pela Aplicação Comercial conterá a quantidade de parcelas a ser utilizada na execução da transação solicitada. Quando enviado pelo ElginTef conterá a quantidade de parcelas da transação executada.</p>
+<p ><code>nsuTransacao</code>: É o Número Sequencial Único (NSU) gerado por algumas Redes usado para identificar uma transação. Enviado pelo ElginTef para a Aplicação Comercial ao executar uma transação quando o mesmo existir, isto é, for gerado pela Rede.</p>
+<p ><code>cnpjCredenciadora</code>: Enviado pelo ElginTef para Aplicação Comercial, normalmente em uma transação aprovada, e contém o CNPJ da Rede (chamada também de Credenciadora) responsável pelo roteamento e/ou execução da transação, quando o CNPJ estiver cadastrado no ElginTef. Está implementação é para atender às exigências das Secretarias da Fazenda dos Estados referente ao PAF, ECF, NFC-e, SAT, etc..</p>
+<p ><code>formaPagamento</code>: Quando informado deve ser "A vista", "Parcelado" ou "Pre-datado". Quando enviado pela Aplicação Comercial conterá a forma de pagamento a ser utilizado na transação solicitada. Quando enviado pelo ElginTef conterá a forma de pagamento utilizado na transação executada.</p>
+<p ><code>tipoFinanciamento</code>: Aplica-se somente para pagamento="Parcelado". Quando especificado deve ser "Estabelecimento" ou "Administradora". Quando enviado pela Aplicação Comercial conterá quem deve ser o financiador utilizado na transação solicitada. Quando enviado pelo ElginTef conterá o financiador utilizado na transação executada.</p>
+<p ><code>tipoCartao</code>: Quando informado deve ser "Debito" ou "Credito". Quando enviado pela Aplicação Comercial conterá os tipos de cartão que podem ser utilizados na execução da transação solicitada. Quando enviado pelo ElginTef conterá o tipo de cartão utilizado na transação executada.</p>
+<p ><code>codigoAutorizacao</code>: Quando existir conterá o código de autorização da transação que foi executada, normalmente gerado pela administradora.</p>
+<p ><code>panMascarado</code>: Enviado pela Aplicação Comercial para o ElginTef. Contém o número impresso no cartão e é utilizado normalmente em transações digitadas.</p>
+<p ><code>nomeBandeira</code>: É a administradora responsável pela autorização da transação (ex.: Banricompras, Mastercard, Santander, Visa, etc.), também conhecida como bandeira. Quando enviada pela Aplicação Comercial conterá as administradoras que podem ser utilizadas na transação solicitada. Quando enviado pelo ElginTef conterá a administradora que foi utilizada na execução da transação.</p>
+<p ><code>comprovanteDiferenciadoPortador</code>: Quando especificado conterá(ão) o(s) comprovantes gerados pela execução da transação, enviados pelo ElginTef para a Aplicação Comercial. A sequência de caracteres Carriage-Return/Line-Feed (CR/LFou0x0D/0x0A) serão utilizados para separar as linhas.</p>
+<p ><code>comprovanteDiferenciadoLoja</code>: Quando especificado conterá(ão) o(s) comprovantes gerados pela execução da transação, enviados pelo ElginTef para a Aplicação Comercial. A sequência de caracteres Carriage-Return/Line-Feed (CR/LFou0x0D/0x0A) serão utilizados para separar as linhas.</p>
+<p ><code>admSenha</code>: É a senha do usuário enviado pela Aplicação Comercial para o ElginTef para autenticação nas transações administrativas.</p>
+<p ><code>admUsuario</code>: É o código do usuário enviado pela Aplicação Comercial para o ElginTef para autenticação nas transações administrativas.</p>
+<h2>COLETA</h2>
+<p ><code>automacao_coleta_tipo</code>: Enviado pelo ElginTef para Aplicação Comercial sempre quando for coletar alguma informação, e conterá o tipo de informação a ser coletada, onde:</p><ul>
+<li>(*) Não exibivel podendo ser alfanumérico ou caracter especial;</li>
+<li>(A) Alfabético;</li>
+<li>(D) Data/hora;</li>
+<li>(N) Numérico com casas decimais ou não;</li>
+<li>(X) Alfanumérico;</li>
+</ul>
+<p >Quando informado e <code>automacao_coleta_mascara</code> não informado, as máscaraspadrões serão:</p><ul>
+<li>(*) Não exibivel com tamanho ilimitado;</li>
+<li>(A) Letras com tamanho ilimitado;</li>
+<li>(D) Data no formato "dd/MM/yy";</li>
+<li>(N) Numérico no formato ".";</li>
+<li>(X) Alfanumérico com tamanho ilimitado.</li>
+</ul>
+<p ><code>automacao_coleta_opcao</code>: Enviado pelo ElginTef para Aplicação Comercial. Quando informado conterá a lista com as opções permitidas para seleção. Uma delas deverá ser selecionada. Os valores serão separados por ponto e virgula. Seguem alguns exemplos:</p><ul>
+<li><code>automacao_coleta_opcao="1.00";”2.00”;”3.00”</code> indica os valores dos quais um deve ser selecionado ou coletado;</li>
+<li><code>automacao_coleta_opcao="Redecard";"Cielo";"Hipercard"</code> lista as redes, das quais uma deve ser coletada;</li>
+</ul>
+<p ><code>automacao_coleta_timeout</code>: Pode ser enviado do ElginTef para Aplicação Comercial e vice-versa. Quando informado conterá o tempo máximo em segundos que o enviador aguardará a resposta do recebedor. Quando o tempo for ultrapassado a transação será abortada com retorno=”8”.</p>
+<p ><code>automacao_coleta_retorno</code>: Código utilizado na interação entre o ElginTef e a Aplicação Comercial. Estará presente em todas as mensagens, e será utilizado para conduzir todo o processo. Após o ElginTef receber a solicitação de execução de uma transação da Aplicação Comercial, e este estiver configurado para coletar as informações através da Aplicação Comercial, o ElginTef coletará as informações enviando &lsquo;automacao_coleta_retorno='0&rsquo;<code>e recebendo a resposta com</code>automacao_coleta_retorno='0'` com os dados solicitados até a coleta de todas as informações necessárias para execução da transação.</p>
+<p ><code>mensagemResultado</code>: Enviado pelo ElginTef para Aplicação Comercial e vice-versa. Quando enviado pelo ElginTef para a Aplicação Comercial e coletando alguma informação conterá o título do campo a ser coletado, e se não coletando conterá uma mensagem a ser exibida pela Aplicação Comercial para o operador. Pode ser enviado pela Aplicação Comercial para ElginTef, por exemplo quando uma transação for abortada e a Aplicação Comercial quer informar o motivo. Esta mensagem poderá conter mais de uma linha, quando existirão a sequênciade caracteres Carriage-Return/Line-Feed (CR/LFou0x0D/0x0A) para separá-las, e neste caso deve ser exibida semelhante a um comprovante, de forma que o operador possa visualizar todo seu conteúdo.</p>
+<p ><code>automacao_coleta_informacao</code>: Enviado pela Aplicação Comercial para o ElginTef. Contém a informação coletada pela Aplicação Comercial.</p>
+<p ><code>automacao_coleta_sequencial</code>: Número sequencial único enviado em todas as mensagens, para garantir a consistencia na troca de informações entre o ElginTef e a Aplicação Comercial. Ao iniciar uma nova coleta de informações o ElginTef iniciará este valor em 1 (um), incrementando de 1 em 1 a cada nova mensagem, e a Aplicação Comercial deve devolver na mensagem de resposta o mesmo valor recebido.</p>
+<p ><code>automacao_coleta_palavra_chave</code>: Enviada pelo ElginTef para Aplicação Comercial quando solicitado a coleta de alguma informação, e conterá a palavra-chave referente à informação que está sendo coletada. Exemplos: <code>automacao_coleta_palavra_chave="transacao_valor"</code> indica a coleta do valor da transação;<code>automacao_coleta_palavra_chave="transacao_cartao_numero"</code> indica a coleta do número do cartão. </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->

@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.9.0</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.9.1</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -677,6 +677,7 @@ $(document).ready(function(){initNavTree('group__tf.html',''); initResizable(); 
 </div><div class="memdoc">
 
 <p>Realiza a coleta de um dado no PINPAD. Os dados inseridos são apresentados no display do pinpad mascarados com (*). </p>
+<dl class="section note"><dt>Observação</dt><dd>Essa função não tem correlação com o processo de transação.</dd></dl>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">tipoColeta</td><td>Identifica qual coleta deve ser realizada. Os valores possíveis são: 1(RG), 2(CPF), 3(CNPJ) e 4(Telefone) </td></tr>
@@ -738,6 +739,8 @@ $(document).ready(function(){initNavTree('group__tf.html',''); initResizable(); 
 </div><div class="memdoc">
 
 <p>Realiza a confirmação de um dado coletado usando o pinpad. </p>
+<p >A função deve ser utilizada após um dado ter sido coletado com a função <a class="el" href="group__tf.html#ga4c183edd9667ece4e0dcf52ea192bdfd">RealizarColetaPinPad</a>, permitindo ao usuário visualizar o dado coletado sem a máscara, assim podendo confirmar o se o dado está correto por meio do pinpad.</p>
+<dl class="section note"><dt>Observação</dt><dd>Essa função não tem correlação com o processo de transação.</dd></dl>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">tipoCaptura</td><td>Indica qual o tipo da confirmação a ser realizada. Os valores possíveis são: 1(RG), 2(CPF), 3(CNPJ), 4(Telefone), 5(seleção) ou 6(Operadora) </td></tr>
