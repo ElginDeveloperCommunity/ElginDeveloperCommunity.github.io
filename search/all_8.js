@@ -60,5 +60,6 @@ var searchData=
   ['cregtribissqn_5finvalido_57',['CREGTRIBISSQN_INVALIDO',['../group__g1.html#gga2135434c111b0c910df2d58bc4d2e41ba3aa5c8fec0365fd1c31941d8b585891a',1,'codigoerro.h']]],
   ['csosn_5finvalido_58',['CSOSN_INVALIDO',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda86cb1d37c4315af7e732c9c10ce07358',1,'codigoerro.h']]],
   ['cst_5finvalido_59',['CST_INVALIDO',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda3885a81f5a793c427b183d5650e10443',1,'codigoerro.h']]],
-  ['cutpaper_60',['CutPaper',['../group___m2.html#ga48f74826596723a41e8e50a46d4cf2e7',1,'exportafuncoes.h']]]
+  ['customização_20gp_60',['Customização GP',['../group__t02.html',1,'']]],
+  ['cutpaper_61',['CutPaper',['../group___m2.html#ga48f74826596723a41e8e50a46d4cf2e7',1,'exportafuncoes.h']]]
 ];
