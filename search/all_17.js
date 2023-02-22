@@ -17,7 +17,7 @@ var searchData=
   ['reimprimirultimocomprovante_14',['ReimprimirUltimoComprovante',['../group__ma601.html#ga0cf617c1375aa537d97e15aa10628b4e',1,'tef_android_funcoes.doxy']]],
   ['reinicializadisplay_15',['ReinicializaDisplay',['../group__g130.html#ga4f4094578dbcaf9dd734d2438e6e0692',1,'e1_pix4_funcoes.h']]],
   ['reset_16',['Reset',['../group___m0.html#ga1ed4367feeae4f5daa20d54dc309f117',1,'exportafuncoes.h']]],
-  ['resposta_20intent_17',['Resposta Intent',['../group__idh201.html',1,'']]],
+  ['resposta_20intent_20tef_17',['Resposta Intent TEF',['../group__idh201.html',1,'']]],
   ['resposta_5fsessao_5ffiscal_5finvalida_18',['RESPOSTA_SESSAO_FISCAL_INVALIDA',['../group__g1.html#gga15d766683e4eca0e281addece3d04704a96a152387f369c9232c7be8916201fc8',1,'codigoerro.h']]],
   ['retorno_19',['Retorno',['../group__sp11.html',1,'(<em>Namespace</em> global)'],['../group__sp21.html',1,'(<em>Namespace</em> global)']]]
 ];

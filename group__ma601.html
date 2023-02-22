@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.9.1</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.11.0</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -141,6 +141,9 @@ $(document).ready(function(){initNavTree('group__ma601.html',''); initResizable(
 <tr class="memitem:ga0cf617c1375aa537d97e15aa10628b4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ma601.html#ga0cf617c1375aa537d97e15aa10628b4e">ReimprimirUltimoComprovante</a> ()</td></tr>
 <tr class="memdesc:ga0cf617c1375aa537d97e15aa10628b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função responsável pela reimpressão do último comprovante autorizado em uma transação.  <a href="group__ma601.html#ga0cf617c1375aa537d97e15aa10628b4e">Mais...</a><br /></td></tr>
 <tr class="separator:ga0cf617c1375aa537d97e15aa10628b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ce737ea0be08bc744fe6e334e32b4ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ma601.html#ga0ce737ea0be08bc744fe6e334e32b4ab">iniciarTransacaoPIX</a> (String valorTransacao, Handler appHandler)</td></tr>
+<tr class="memdesc:ga0ce737ea0be08bc744fe6e334e32b4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para inciar uma transação pix.  <a href="group__ma601.html#ga0ce737ea0be08bc744fe6e334e32b4ab">Mais...</a><br /></td></tr>
+<tr class="separator:ga0ce737ea0be08bc744fe6e334e32b4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <p >Funções a ser adicionadas para o processamento da transação. </p>
@@ -399,6 +402,43 @@ $(document).ready(function(){initNavTree('group__ma601.html',''); initResizable(
 </div><div class="memdoc">
 
 <p>Função responsável pela reimpressão do último comprovante autorizado em uma transação. </p>
+
+</div>
+</div>
+<a id="ga0ce737ea0be08bc744fe6e334e32b4ab" name="ga0ce737ea0be08bc744fe6e334e32b4ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ce737ea0be08bc744fe6e334e32b4ab">&#9670;&nbsp;</a></span>iniciarTransacaoPIX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void iniciarTransacaoPIX </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>valorTransacao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>appHandler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para inciar uma transação pix. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valorTransacao</td><td>(String) Valor do pagamento da transação PIX (formato em centavos 0000) </td></tr>
+    <tr><td class="paramname">appHandler</td><td>appHandler (Handler) Objeto para rebecer as mensagens das operações PIX. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

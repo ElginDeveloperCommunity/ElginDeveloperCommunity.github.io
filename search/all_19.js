@@ -25,11 +25,11 @@ var searchData=
   ['texto_5ffonte_5finvalida_22',['TEXTO_FONTE_INVALIDA',['../group__g1.html#ggab177931814c079c7600a35e5ccccd911ada1e828a11202b68c5809e8518cad4f4',1,'codigoerro.h']]],
   ['texto_5fmultiplicador_5fhorizontal_5finvalido_23',['TEXTO_MULTIPLICADOR_HORIZONTAL_INVALIDO',['../group__g1.html#ggab177931814c079c7600a35e5ccccd911aaa7b950f00fb9211ce2899d0bf6bc8a0',1,'codigoerro.h']]],
   ['texto_5fmultiplicador_5fvertical_5finvalido_24',['TEXTO_MULTIPLICADOR_VERTICAL_INVALIDO',['../group__g1.html#ggab177931814c079c7600a35e5ccccd911a5f93de14da819f3e78eb11bda81c7abf',1,'codigoerro.h']]],
-  ['térmica_25',['Térmica',['../group__g40.html',1,'']]],
-  ['termica_26',['Termica',['../group__ma40.html',1,'']]],
-  ['térmica_27',['Térmica',['../group___m1.html',1,'']]],
-  ['texto_28',['Texto',['../group__ge30.html',1,'']]],
-  ['texto_5frotacao_5finvalida_29',['TEXTO_ROTACAO_INVALIDA',['../group__g1.html#ggab177931814c079c7600a35e5ccccd911a6221bfb3020ec04be5a8869ecf724bc5',1,'codigoerro.h']]],
+  ['texto_5frotacao_5finvalida_25',['TEXTO_ROTACAO_INVALIDA',['../group__g1.html#ggab177931814c079c7600a35e5ccccd911a6221bfb3020ec04be5a8869ecf724bc5',1,'codigoerro.h']]],
+  ['térmica_26',['Térmica',['../group__g40.html',1,'']]],
+  ['termica_27',['Termica',['../group__ma40.html',1,'']]],
+  ['térmica_28',['Térmica',['../group___m1.html',1,'']]],
+  ['texto_29',['Texto',['../group__ge30.html',1,'']]],
   ['texto_5ftexto_5finvalido_30',['TEXTO_TEXTO_INVALIDO',['../group__g1.html#ggab177931814c079c7600a35e5ccccd911a7c6c56b8bfca73a9ff3bd7b7245d6c20',1,'codigoerro.h']]],
   ['textoasd_5fcoordenada_5fx_5finvalida_31',['TEXTOASD_COORDENADA_X_INVALIDA',['../group__g1.html#gga2fb0ffd53b0426aed92bd0b0267d97bda7cb0873a8937d814671438cbf54870e5',1,'codigoerro.h']]],
   ['textoasd_5fcoordenada_5fy_5finvalida_32',['TEXTOASD_COORDENADA_Y_INVALIDA',['../group__g1.html#gga2fb0ffd53b0426aed92bd0b0267d97bda1c6fd3f2f76e3ac25a04b64fc9ed8d85',1,'codigoerro.h']]],
@@ -51,6 +51,7 @@ var searchData=
   ['tipo_5finvalido_48',['TIPO_INVALIDO',['../group__g1.html#ggaaf847b41b132e891ed9cd18f57c1d54cade79caf92db1c9d9754baa722d16e9a5',1,'codigoerro.h']]],
   ['tipo_5fparametro_5finvalido_49',['TIPO_PARAMETRO_INVALIDO',['../group__g1.html#gga997c5e807d27e95e6e2cf73714524876a92a623e57f2022dbe40cf8bbdcb5cd1d',1,'codigoerro.h']]],
   ['tipoimpressao_50',['TipoImpressao',['../group__sp20.html#ga59529b807f980a3f1b2d0152ae27eb40',1,'ElginPay.h']]],
-  ['tratatimeoutcomunicacao_51',['TrataTimeoutComunicacao',['../group__s0.html#ga8212114daaa11e5b118a36260d77f0df',1,'exportafuncoes.h']]],
-  ['trocarcodigodeativacao_52',['TrocarCodigoDeAtivacao',['../group__g2.html#ga1a972ef2847ce97a80ce4704ecb3f442',1,'exportafuncoes.h']]]
+  ['transação_20pix_20idh_51',['Transação PIX IDH',['../group__idh205.html',1,'']]],
+  ['tratatimeoutcomunicacao_52',['TrataTimeoutComunicacao',['../group__s0.html#ga8212114daaa11e5b118a36260d77f0df',1,'exportafuncoes.h']]],
+  ['trocarcodigodeativacao_53',['TrocarCodigoDeAtivacao',['../group__g2.html#ga1a972ef2847ce97a80ce4704ecb3f442',1,'exportafuncoes.h']]]
 ];

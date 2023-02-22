@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.9.1</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.11.0</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -131,8 +131,11 @@ $(document).ready(function(){initNavTree('group__ma63.html',''); initResizable()
 <li>tef_componente2.arrr</li>
 </ol>
 <p ><br  />
- Com estas bibliotecas configuradas no arquivo <code>build.gradle</code>(:app) do projeto você consegue iniciar o desenvolvimento da sua aplicação. Mas ainda existe mais uma <em>lib</em> externa que devemos adicionar para dar suporte nas conversões internas:</p><ul>
-<li>&lsquo;implementation 'com.squareup.retrofit2:converter-gson:2.9.0&rsquo;</li>
+ Com estas bibliotecas configuradas no arquivo <code>build.gradle</code>(:app) do projeto você consegue iniciar o desenvolvimento da sua aplicação chamando as funções da seguinte maneira:</p><ul>
+<li><code>import com.elgin.e1.pagamentos.tef.*;</code></li>
+</ul>
+<p >Mas ainda existe mais uma <em>lib</em> externa que devemos adicionar para dar suporte nas conversões internas:</p><ul>
+<li><code>implementation 'com.squareup.retrofit2:converter-gson:2.9.0</code></li>
 </ul>
 <p >Sua configurações no arquivo build.gradle(:app) deve conter os componentes conforma abaixo:</p>
 <div class="fragment"><div class="line">dependencies {</div>
@@ -163,6 +166,7 @@ $(document).ready(function(){initNavTree('group__ma63.html',''); initResizable()
 <a class="el" href="group__ma601.html#ga41c2635565ed9a05c205b5da6b61aa53" title="Função responsável por realizar o processo de cancelamento de uma transação autorizada.">RealizarCancelamentoTransacao()</a> <br  />
 <a class="el" href="group__ma601.html#ga45434d7b7a15e1ba05194b66e82e7343" title="Função responsável pela impressão do relatório de transações (débito e crédito) do dia atual.">ImprimirRelatorioDiario()</a> <br  />
 <a class="el" href="group__ma601.html#ga0cf617c1375aa537d97e15aa10628b4e" title="Função responsável pela reimpressão do último comprovante autorizado em uma transação.">ReimprimirUltimoComprovante()</a> <br  />
+<a class="el" href="group__ma601.html#ga0ce737ea0be08bc744fe6e334e32b4ab" title="Função utilizada para inciar uma transação pix.">iniciarTransacaoPIX()</a> <br  />
  </p><h2>Handler - Como utilizar na API</h2>
 <p >Aqui vamos explorar este tipo de dado que é responsável direto por enviar e receber mensagens para a API após as transações (venda, cancelamento ou administrativas) serem inicializadas. Se a implementação estiver errada, provavelmente você receberá informações nos passos errados durante uma operação. Então vamos deixar claro a forma que estamos utilizando este componente em nossa API.</p>
 <h3>Definiçao de Handler</h3>

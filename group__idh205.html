@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plataforma de Comunicação Elgin: Referência do diretório src/IDH/idh_tef_android</title>
+<title>Plataforma de Comunicação Elgin: Transação PIX IDH</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,7 +85,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('dir_567caa5e127dc1fa08031ca778450211.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('group__idh205.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -104,16 +104,58 @@ $(document).ready(function(){initNavTree('dir_567caa5e127dc1fa08031ca778450211.h
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Referência do diretório idh_tef_android</div></div>
+  <div class="headertitle"><div class="title">Transação PIX IDH<div class="ingroups"><a class="el" href="group__g3.html">Android</a> &raquo; <a class="el" href="group__idh1.html">IntentDigitalHub</a> &raquo; <a class="el" href="group__idh20.html">IDH Tef Android</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<h2>Envio</h2>
+<p >Para efetuar uma transação PIX via <b>Intent Digital Hub</b> é necessário realizar uma instância do Intent da seguinte forma:</p>
+<div class="fragment"><div class="line">@Override</div>
+<div class="line"><span class="keyword">protected</span> <span class="keywordtype">void</span> onCreate(Bundle savedInstanceState) {​​​​​</div>
+<div class="line">    super.onCreate(savedInstanceState);</div>
+<div class="line">    setContentView(R.layout.activity_main);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">try</span> {​​​​​​</div>
+<div class="line">    <span class="comment">// 1) realiza uma instância do objeto do tipo Intent passando a rota no seu construtor </span></div>
+<div class="line">    Intent intent = <span class="keyword">new</span> Intent(<span class="stringliteral">&quot;com.elgin.e1.digitalhub.TEF&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 2) utilizando putExtra para definir qual modalidade ultilizar </span></div>
+<div class="line">    intent.putExtra(<span class="stringliteral">&quot;modalidade&quot;</span>,<span class="stringliteral">&quot;pix&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 3) utilizando putExtra para definir qual o valor da transação</span></div>
+<div class="line">    intent.putExtra(<span class="stringliteral">&quot;valor&quot;</span>, <span class="stringliteral">&quot;1000&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 4) Método Receiver para iniciar a Activity e receber o retorno da transação</span></div>
+<div class="line">    startActivityResultLauncher.launch(intent);</div>
+<div class="line">    }​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​ <span class="keywordflow">catch</span> (Exception e) {​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
+<div class="line">        Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();</div>
+<div class="line">    }​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
+<div class="line">}​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
+</div><!-- fragment --><h2>Retorno</h2>
+<p >Após realizar o envio, vamos obter o retorno. São <b>2 passos</b>:</p>
+<ol type="1">
+<li>Implementar a sobrecarga da função</li>
+</ol>
+<div class="fragment"><div class="line">startActivityResultLauncher</div>
+</div><!-- fragment --><ol type="1">
+<li>Obter os dados de retorno da transação via Intent através de getStringExtra():</li>
+</ol>
+<div class="fragment"><div class="line">String retornoIntent = result.getData().getStringExtra(<span class="stringliteral">&quot;VIA_CLIENTE&quot;</span>);</div>
+</div><!-- fragment --><p >Exemplo de implementação da sobrecarga startActivityResultLauncher:</p>
+<div class="fragment"><div class="line"><span class="comment">//Sobrecarga Método Receiver para iniciar e receber o retorno da Transação</span></div>
+<div class="line">ActivityResultLauncher&lt;Intent&gt; startActivityResultLauncher = registerForActivityResult(</div>
+<div class="line">    <span class="keyword">new</span> ActivityResultContracts.StartActivityForResult(), result -&gt; {​​​​​​​​​​​​​​​​</div>
+<div class="line">        if (result.getResultCode() == Activity.RESULT_OK) {​​​​​​​​​​​​​​​​</div>
+<div class="line">            String retornoIntent = result.getData().getStringExtra(<span class="stringliteral">&quot;VIA_CLIENTE&quot;</span>);</div>
+<div class="line">            Toast.makeText(getApplicationContext(), retornoIntent,Toast.LENGTH_LONG).show();</div>
+<div class="line">        }​​​​​​​​​​​​​​​​</div>
+<div class="line">    }​​​​​​​​​​​​​​​​);</div>
+<div class="line">}​​​​​​​​​​​​​​​​</div>
+</div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c3263e4d675c4bc71acbcc42675ad443.html">IDH</a></li><li class="navelem"><a class="el" href="dir_567caa5e127dc1fa08031ca778450211.html">idh_tef_android</a></li>
     <li class="footer"><a href="https://github.com/ElginDeveloperCommunity"><img class="footer" src="https://avatars.githubusercontent.com/u/78883867?s=400&u=9b127079a21ee35fed37a704c5a0204fd5c7b1c3&v=4" width="90" height="20" alt="ElginDeveloperCommunity"/></a>  </li>
   </ul>
 </div>
