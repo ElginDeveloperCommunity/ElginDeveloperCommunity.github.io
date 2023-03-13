@@ -10,5 +10,6 @@ var searchData=
   ['idh_5ftef_5f0_5fdescription_7',['idh_tef_0_description',['../md_src__i_d_h_idh_tef_android_idh_tef_0_description.html',1,'']]],
   ['idh_5ftef_5f1_5finiciando_5fintent_8',['idh_tef_1_iniciando_intent',['../md_src__i_d_h_idh_tef_android_idh_tef_1_iniciando_intent.html',1,'']]],
   ['idh_5ftef_5f2_5ftratamento_5fresultado_9',['idh_tef_2_tratamento_resultado',['../md_src__i_d_h_idh_tef_android_idh_tef_2_tratamento_resultado.html',1,'']]],
-  ['idh_5ftef_5f3_5fparametros_10',['idh_tef_3_parametros',['../md_src__i_d_h_idh_tef_android_idh_tef_3_parametros.html',1,'']]]
+  ['idh_5ftef_5f3_5fparametros_10',['idh_tef_3_parametros',['../md_src__i_d_h_idh_tef_android_idh_tef_3_parametros.html',1,'']]],
+  ['idh_5ftef_5f4_5fretorno_11',['idh_tef_4_retorno',['../md_src__i_d_h_idh_tef_android_idh_tef_4_retorno.html',1,'']]]
 ];
