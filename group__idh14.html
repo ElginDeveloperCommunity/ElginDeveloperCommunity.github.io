@@ -172,42 +172,7 @@ $(document).ready(function(){initNavTree('group__idh14.html',''); initResizable(
 <div class="line">        &quot;parametros&quot;: {} </div>
 <div class="line">    } </div>
 <div class="line">]</div>
-</div><!-- fragment --><dl class="section note"><dt>Observação</dt><dd>Basta seguir estes modelos para realizar as chamadas dos métodos.</dd></dl>
-<h2>RETORNO</h2>
-<p >Assim como no Envio, o Retorno também é composto por um componente raiz Array. Este contém um ou mais Objects, representando uma lista de <b>retornos</b> dos métodos que foram solicitados. Os Objects são compostos por 3 componentes:</p><ol type="1">
-<li>String - com o nome da função que foi invocada</li>
-<li>String - com uma mensagem de execução ou Exception gerada</li>
-<li>Object - com o resultado da função (se ela retorna um int, será int, se ela retorna String, será String, etc..)</li>
-</ol>
-<p ><b>Exemplo</b> </p><div class="fragment"><div class="line">[                                   // início do Array (Json)</div>
-<div class="line">    {                               // início do Object (Json) </div>
-<div class="line">        &quot;funcao&quot;: &quot;Método&quot;,         // String com nome da método </div>
-<div class="line">        &quot;mensagem&quot;: &quot;Executado”,    // String com mensagem de retorno </div>
-<div class="line">        &quot;resultado&quot;: 0              // Object com resultado </div>
-<div class="line">    }                               // final do Object (Json) </div>
-<div class="line">]                                   // final do Array (Json) </div>
-</div><!-- fragment --><p >Agora vamos ver como ficaria o retorno dos 3 métodos de impressão do exemplo Envio.</p>
-<p ><b>Exemplo</b> </p><div class="fragment"><div class="line">[</div>
-<div class="line">    { </div>
-<div class="line">        &quot;funcao&quot;: &quot;AbreConexaoImpressora&quot;, </div>
-<div class="line">        &quot;mensagem&quot;: &quot;Método executado&quot;, </div>
-<div class="line">        &quot;resultado&quot;: 0 </div>
-<div class="line">    }, </div>
-<div class="line">    { </div>
-<div class="line">        &quot;funcao&quot;: &quot;ImpressaoTexto&quot;, </div>
-<div class="line">        &quot;mensagem&quot;: &quot;Método executado&quot;, </div>
-<div class="line">        &quot;resultado&quot;: 0 </div>
-<div class="line">    }, </div>
-<div class="line">    { </div>
-<div class="line">        &quot;funcao&quot;: &quot;FechaConexaoImpressora&quot;, </div>
-<div class="line">        &quot;mensagem&quot;: &quot;Método executado&quot;, </div>
-<div class="line">        &quot;resultado&quot;: 0 </div>
-<div class="line">    } </div>
-<div class="line">]</div>
-</div><!-- fragment --><dl class="section note"><dt>Observação</dt><dd>Note que o resultado é <code>int</code>, no caso de funções que retornam String, o campo <b>resultado</b> será uma String.</dd></dl>
-<p><br  />
-</p>
-<p >Próximo passo: usar em suas aplicações Android intents para usar o <b>IntentDigitalHUB</b>. Para saber quais caminhos de filtro usar e se basear em exemplos acesse a página <a class="el" href="group__idh00.html">Caminho Filtros</a> . </p>
+</div><!-- fragment --><dl class="section note"><dt>Observação</dt><dd>Basta seguir estes modelos para realizar as chamadas dos métodos. </dd></dl>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
