@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plataforma de Comunicação Elgin: Referência do diretório src/E1_SAT</title>
+<title>Plataforma de Comunicação Elgin: Tef Web</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,7 +85,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('dir_94da8497cefacc6789260bb316d028c8.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('group__g14.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -104,22 +104,101 @@ $(document).ready(function(){initNavTree('dir_94da8497cefacc6789260bb316d028c8.h
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Referência do diretório E1_SAT</div></div>
+  <div class="headertitle"><div class="title">Tef Web</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
-Arquivos</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">arquivo &#160;</td><td class="memItemRight" valign="bottom"><b>exportafuncoes.h</b> <a href="_e1___s_a_t_2exportafuncoes_8h_source.html">[código]</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-</div><!-- contents -->
+
+<p>API do Tef Web.  
+</p>
+<p >API do Tef Web. </p>
+<h1>Tef Web</h1>
+<p >O Elgin Tef Web permite que você faça transações de TEF em um equipamento a partir de uma aplicação Web, basta ter instalado os módulos mais recentes do Tef Elgin (IDH no Android).</p>
+<p >Tendo o ElginTef instalado no equipamento, será possível fazer chamadas GET e POST para realizar as operações de TEF.</p>
+<h2>Start e Stop do Plugin</h2>
+<p >No Android, o plugin para Tef Web precisa ser iniciado uma vez para começar a realizar as operações. Isso pode ser feito por exemplo no evento <code>window.onload</code>, ou então ter um botão específico para isso. <br  />
+ Para dar o start e stop no plugin, são utilizados os <b>deeplink</b>, portanto existem 2 maneiras de fazer isso. Por anchor tag, ou por windows location.</p>
+<h3>Anchor Tag</h3>
+<div class="fragment"><div class="line">&lt;a href=&quot;intent://connect/start&quot;&gt;Start&lt;/a&gt;</div>
+<div class="line">&lt;a href=&quot;intent://connect/stop&quot;&gt;Stop&lt;/a&gt;</div>
+</div><!-- fragment --><h3>Window location</h3>
+<div class="fragment"><div class="line">&lt;script&gt;</div>
+<div class="line">    function start() { window.location.href = &#39;intent://connect/start&#39; }</div>
+<div class="line">    function stop()  { window.location.href = &#39;intent://connect/stop&#39; }</div>
+<div class="line">&lt;/script&gt;</div>
+<div class="line">...</div>
+<div class="line">&lt;button onclick=&quot;start()&quot;&gt;Start&lt;/button&gt;</div>
+<div class="line">&lt;button onclick=&quot;stop()&quot;&gt;Stop&lt;/button&gt;</div>
+</div><!-- fragment --><h1>Endpoints Operações</h1>
+<p >URL Base para todos os endpoints: <code><a href="http://localhost:2001/tef/v1">http://localhost:2001/tef/v1</a></code> <br  />
+ Headers necessários para todas as chamadas API:</p>
+<div class="fragment"><div class="line">headers: {</div>
+<div class="line">    &#39;Accept&#39;: &#39;application/json&#39;,</div>
+<div class="line">    &#39;Content-Type&#39;: &#39;application/json&#39;</div>
+<div class="line">},</div>
+</div><!-- fragment --><h2>Configuração</h2>
+<p >URL: <code><a href="http://localhost:2001/tef/v1/configuracao">http://localhost:2001/tef/v1/configuracao</a></code> <br  />
+ Método: <code>POST</code> <br  />
+ body:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    nome: string                // nome da aplicação</div>
+<div class="line">    versao: string              // versão da aplicação, será exibido no visor do pinpad</div>
+<div class="line">    textoPinpad: string         // texto que será exibido no visor do pinpad</div>
+<div class="line">    macPinpad: string           // opcional</div>
+<div class="line">    producao: string            //  0 ou 1 para homologação ou produção</div>
+<div class="line">    estabelecimento: string     // o nome do estabelecimento no qual a AC está em execução</div>
+<div class="line">    terminal: string            // o nome / código do terminal (pertencente ao estabelecimento) na qual a AC está em execução</div>
+<div class="line">    loja: string                // o nome / código da loja (pertencente ao estabelecimento) na qual a AC está em execução</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2>Ativação</h2>
+<p >URL: <code><a href="http://localhost:2001/tef/v1/ativacao">http://localhost:2001/tef/v1/ativacao</a></code> <br  />
+ Método: <code>POST</code> <br  />
+ body:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    cnpjCpf: string // cnpj ou cpf cadastrado no ElginTEF com pontuação</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2>Reimpressão</h2>
+<p >URL: <code><a href="http://localhost:2001/tef/v1/adm/reimpressao">http://localhost:2001/tef/v1/adm/reimpressao</a></code> <br  />
+ Método: <code>GET</code> <br  />
+ body: não existe</p>
+<h2>Relatório</h2>
+<p >URL: <code><a href="http://localhost:2001/tef/v1/adm/relatorio">http://localhost:2001/tef/v1/adm/relatorio</a></code> <br  />
+ Método: <code>GET</code> <br  />
+ body: não existe</p>
+<h2>Venda</h2>
+<p >URL: <code><a href="http://localhost:2001/tef/v1/venda">http://localhost:2001/tef/v1/venda</a></code> <br  />
+ Método: <code>POST</code> <br  />
+ body: não existe</p>
+<h2>Débito</h2>
+<p >URL: <code><a href="http://localhost:2001/tef/v1/venda/debito">http://localhost:2001/tef/v1/venda/debito</a></code> <br  />
+ Método: <code>POST</code> <br  />
+ body:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    valor: string           // valor maior que zero e contém valor da transação em R$ com ponto: &#39;12.99</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2>Crédito</h2>
+<p >URL: <code><a href="http://localhost:2001/tef/v1/venda/credito">http://localhost:2001/tef/v1/venda/credito</a></code> <br  />
+ Método: <code>POST</code> <br  />
+ body:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    valor: string           // valor maior que zero e contém valor da transação em R$ com ponto: &#39;12.99</div>
+<div class="line">    parcelas: string        // número de parcelas a ser utilizada an transação</div>
+<div class="line">    financiamento: string   // Somente aplicado quando parcelas for maior que 1, opções: &quot;Estabelecimento&quot; ou &quot;Administradora&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2>Cancelamento</h2>
+<p >URL: <code><a href="http://localhost:2001/tef/v1/adm/cancelamento">http://localhost:2001/tef/v1/adm/cancelamento</a></code> <br  />
+ Método: <code>POST</code> <br  />
+ body:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    nsu: string         // nsu da transação a ser cancelada, deve conter 6 dígitos</div>
+<div class="line">    valor: string       // valor maior que zero e contém valor da transação em R$ com ponto: &#39;12.99</div>
+<div class="line">    data: string        // data da transação no formato dd/mm/aa</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_94da8497cefacc6789260bb316d028c8.html">E1_SAT</a></li>
     <li class="footer"><a href="https://github.com/ElginDeveloperCommunity"><img class="footer" src="https://avatars.githubusercontent.com/u/78883867?s=400&u=9b127079a21ee35fed37a704c5a0204fd5c7b1c3&v=4" width="90" height="20" alt="ElginDeveloperCommunity"/></a>  </li>
   </ul>
 </div>
