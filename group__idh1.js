@@ -5,5 +5,6 @@ var group__idh1 =
     [ "Utilizando Intents", "group__idh12.html", null ],
     [ "Payloads", "group__idh13.html", null ],
     [ "Utilizando Payloads", "group__idh14.html", null ],
-    [ "IDH Tef Android", "group__idh20.html", "group__idh20" ]
+    [ "IDH Tef Android", "group__idh20.html", "group__idh20" ],
+    [ "IDH Customização Android", "group__idh21.html", "group__idh21" ]
 ];
