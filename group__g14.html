@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.0</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.1</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -136,6 +136,7 @@ $(document).ready(function(){initNavTree('group__g14.html',''); initResizable();
 <div class="line">    &#39;Content-Type&#39;: &#39;application/json&#39;</div>
 <div class="line">},</div>
 </div><!-- fragment --><h2>Configuração</h2>
+<p >Função responsável por coletar informações que serão utilizadas internamente para realizar configurações do produto TEF</p>
 <p >URL: <code><a href="http://localhost:2001/tef/v1/configuracao">http://localhost:2001/tef/v1/configuracao</a></code> <br  />
  Método: <code>POST</code> <br  />
  body:</p>
@@ -143,56 +144,85 @@ $(document).ready(function(){initNavTree('group__g14.html',''); initResizable();
 <div class="line">    nome: string                // nome da aplicação</div>
 <div class="line">    versao: string              // versão da aplicação, será exibido no visor do pinpad</div>
 <div class="line">    textoPinpad: string         // texto que será exibido no visor do pinpad</div>
-<div class="line">    macPinpad: string           // opcional</div>
-<div class="line">    producao: string            //  0 ou 1 para homologação ou produção</div>
-<div class="line">    estabelecimento: string     // o nome do estabelecimento no qual a AC está em execução</div>
-<div class="line">    terminal: string            // o nome / código do terminal (pertencente ao estabelecimento) na qual a AC está em execução</div>
-<div class="line">    loja: string                // o nome / código da loja (pertencente ao estabelecimento) na qual a AC está em execução</div>
+<div class="line">    macPinpad: string           // Endereço Mac do PIN-PAD pareado com dispositivo (Preencher somente quando houver dispositivos)</div>
+<div class="line">    producao: string            // Flag para indicação do ambiente de transação (0 - Testes e 1 - Produção)</div>
+<div class="line">    estabelecimento: string     // Nome do estabelecimento definido com a operadora de TEF (Opcional)    </div>
+<div class="line">    terminal: string            // Nome da loja definida com a operadora de TEF (Opcional)    </div>
+<div class="line">    loja: string                // Número do terminal definido com a operadora de TEF (Opcional)</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2>Ativação</h2>
+<p >Função responsável pela ativação do terminal para realizar as transações e operações com ElginTef</p>
 <p >URL: <code><a href="http://localhost:2001/tef/v1/ativacao">http://localhost:2001/tef/v1/ativacao</a></code> <br  />
  Método: <code>POST</code> <br  />
  body:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">    cnpjCpf: string // cnpj ou cpf cadastrado no ElginTEF com pontuação</div>
+<div class="line">    cnpjCpf: string // Documento (CNPJ ou CPF) que foi informado para cadastro</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2>Reimpressão</h2>
+<p >Função responsável pela reimpressão do último comprovante autorizado em uma transação</p>
 <p >URL: <code><a href="http://localhost:2001/tef/v1/adm/reimpressao">http://localhost:2001/tef/v1/adm/reimpressao</a></code> <br  />
  Método: <code>GET</code> <br  />
  body: não existe</p>
 <h2>Relatório</h2>
+<p >Função responsável pela impressão do relatorio de transações (débito, crédito e cancelamentos) do dia atual</p>
 <p >URL: <code><a href="http://localhost:2001/tef/v1/adm/relatorio">http://localhost:2001/tef/v1/adm/relatorio</a></code> <br  />
  Método: <code>GET</code> <br  />
  body: não existe</p>
 <h2>Venda</h2>
+<p >Função responsável por iniciar uma venda e obter os dados dinâmicamente</p>
 <p >URL: <code><a href="http://localhost:2001/tef/v1/venda">http://localhost:2001/tef/v1/venda</a></code> <br  />
  Método: <code>POST</code> <br  />
  body: não existe</p>
 <h2>Débito</h2>
+<p >Função responsável por iniciar uma transação TEF com tipo de pagamento em débito</p>
 <p >URL: <code><a href="http://localhost:2001/tef/v1/venda/debito">http://localhost:2001/tef/v1/venda/debito</a></code> <br  />
  Método: <code>POST</code> <br  />
  body:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">    valor: string           // valor maior que zero e contém valor da transação em R$ com ponto: &#39;12.99</div>
+<div class="line">    valor: string           // Valor do pagamento realizado na operação com TEF (formato 00.00)</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2>Crédito</h2>
+<p >Função responsável por iniciar uma transação TEF com tipo de pagamento em crédito</p>
 <p >URL: <code><a href="http://localhost:2001/tef/v1/venda/credito">http://localhost:2001/tef/v1/venda/credito</a></code> <br  />
  Método: <code>POST</code> <br  />
  body:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">    valor: string           // valor maior que zero e contém valor da transação em R$ com ponto: &#39;12.99</div>
-<div class="line">    parcelas: string        // número de parcelas a ser utilizada an transação</div>
-<div class="line">    financiamento: string   // Somente aplicado quando parcelas for maior que 1, opções: &quot;Estabelecimento&quot; ou &quot;Administradora&quot;</div>
+<div class="line">    valor: string           // Valor do pagamento realizado na operação com TEF (formato 00.00)</div>
+<div class="line">    parcelas: string        // Quantidade de parcelas para as transações parcelada</div>
+<div class="line">    financiamento: string   // Tipo do financiamento (A vista(1), parcelado emissor(2) ou parcelado estabelecimento(3))</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2>Cancelamento</h2>
+<p >Função responsável por realizar o processo de cancelamento de uma transação autorizada</p>
 <p >URL: <code><a href="http://localhost:2001/tef/v1/adm/cancelamento">http://localhost:2001/tef/v1/adm/cancelamento</a></code> <br  />
  Método: <code>POST</code> <br  />
  body:</p>
 <div class="fragment"><div class="line">{</div>
-<div class="line">    nsu: string         // nsu da transação a ser cancelada, deve conter 6 dígitos</div>
-<div class="line">    valor: string       // valor maior que zero e contém valor da transação em R$ com ponto: &#39;12.99</div>
-<div class="line">    data: string        // data da transação no formato dd/mm/aa</div>
+<div class="line">    valor: string       // Valor do pagamento da transação autorizada TEF (formato 00.00)</div>
+<div class="line">    nsu: string         // Documento NSU da transação autorizada TEF com 6 dígitos</div>
+<div class="line">    data: string        // Data da transação autorizada TEF (formato dd/MM/yy)</div>
 <div class="line">}</div>
+</div><!-- fragment --><h2>IntPos</h2>
+<dl class="section note"><dt>Observação</dt><dd>Esse endpoint pode ser chamado apenas em ambientes integrados com o TEF GP Elgin, ou seja, Windows e Linux.</dd></dl>
+<p>URL: <code><a href="http://localhost:2001/tef/v1/intpos">http://localhost:2001/tef/v1/intpos</a></code> <br  />
+ Método: <code>POST</code> <br  />
+ body:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    intpos: string       // chaves iguais as enviadas em uma integração com o GP, porém as linhas devem ser separadas por \n ou \r\n</div>
+<div class="line">}</div>
+</div><!-- fragment --><p >Exemplo:</p>
+<div class="fragment"><div class="line">const responseData = await fetch(BASE_URL + rota, {</div>
+<div class="line">    headers: {</div>
+<div class="line">        &#39;Accept&#39;: &#39;application/json&#39;,</div>
+<div class="line">        &#39;Content-Type&#39;: &#39;application/json&#39;</div>
+<div class="line">    },</div>
+<div class="line">    method: &#39;POST&#39;,</div>
+<div class="line">    body: JSON.stringify({</div>
+<div class="line">        &#39;intpos&#39;: &#39;000-000 = ADM\n001-000 = 123\n999-999 = 0\n&#39;</div>
+<div class="line">    })</div>
+<div class="line">})</div>
+<div class="line">const data = await responseData.json()</div>
+<div class="line">console.log(&#39;data json post&#39;, data)</div>
+<div class="line">alert(JSON.stringify(data))</div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
