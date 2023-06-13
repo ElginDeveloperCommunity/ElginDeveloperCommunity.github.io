@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plataforma de Comunicação Elgin: Modo Ativo</title>
+<title>Plataforma de Comunicação Elgin: Descrição Completa Fluxo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,7 +85,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('group__t2.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('group__t25.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -104,53 +104,59 @@ $(document).ready(function(){initNavTree('group__t2.html',''); initResizable(); 
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#groups">Módulos</a>  </div>
-  <div class="headertitle"><div class="title">Modo Ativo<div class="ingroups"><a class="el" href="group__g7.html">E1 TEF</a></div></div></div>
+  <div class="headertitle"><div class="title">Descrição Completa Fluxo<div class="ingroups"><a class="el" href="group__g7.html">E1 TEF</a> &raquo; <a class="el" href="group__t2.html">Modo Ativo</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Descrição do modo ativo.  
-<a href="#details">Mais...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
-Módulos</h2></td></tr>
-<tr class="memitem:group__t20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__t20.html">Fluxo da Operação</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__t21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__t21.html">API</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__t22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__t22.html">Payloads</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__t23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__t23.html">Arquivo de Configuração</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__t24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__t24.html">Descrição das Chaves</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__t25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__t25.html">Descrição Completa Fluxo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__tf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tf.html">Funções</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
-<p >Descrição do modo ativo. </p>
-<h1>TEF Ativo</h1>
-<h2>Funcionamento API TEF Elgin</h2>
-<p >A <b>API TEF Elgin</b> fornece a Automação Comercial uma integração para que seja possível a captura de transações financeiras através de diversos concentradores TEF do mercado. Os ambientes atendidos são Windows e Linux. A solução <b>API TEF Elgin</b> foi pensada para facilitar a utilização de Transferências Eletrônicas de Fundos (TEF) por parte da Automação Comercial, oferecendo um pacote completo para atender da melhor forma possível o mercado.</p>
-<p >A seguir um fluxograma básico do funcionamento da <b>API TEF Elgin</b> independemente do ambiente em que esteja executando.</p>
-<p > <div class="mermaid mermaid-center"> 
-   flowchart TB
-    inicio((Início)) --- inOp(Iniciar Operação TEF)
-    inOp --- req[/Requisitar Comando TEF\]
-    req --- exCom(Executar Comando)
-    exCom --- fin{É comando final?}
-    fin ---|Não| req
-    fin ---|Sim| finaliza(Finalizar Operação TEF)
-    finaliza --- fim([Fim])
-    class fin mDecision
-    class inOp,exCom,finaliza,req mOp
-    class inicio,fim mInFim  
-  </div> </p>
-<p ><br  />
- <a class="el" href="group__t20.html">Fluxo da Operação</a> <a class="el" href="group__t21.html">API</a> <a class="el" href="group__t22.html">Payloads</a> <a class="el" href="group__t23.html">Arquivo de Configuração</a> </p>
+<h1><a class="anchor" id="fluxo_tef"></a>
+Fluxo TEF</h1>
+<ol type="1">
+<li>Inciar conexão com Client: <code><a class="el" href="group__tf.html#ga1bf9edea41af3c30936caf5ce7f8c988" title="Inicia Operação.">IniciarOperacaoTEF()</a></code><sup>(1)</sup><ol type="a">
+<li>Se as funções <code><a class="el" href="group__tf.html#ga5f891f10c6bb98d703737aa357f942d6" title="Configura o IP e a porta onde o ElginTEF está operando;.">SetClientTCP()</a></code> e <code><a class="el" href="group__tf.html#gab06e26fc973f68f06aa0f1355c8353be" title="Configura os dados do PDV.">ConfigurarDadosPDV()</a></code> já tiverem sido chamadas, a função <a class="el" href="group__tf.html#ga1bf9edea41af3c30936caf5ce7f8c988" title="Inicia Operação.">IniciarOperacaoTEF()</a> pode ser chamada com um payload vazio, se não, passar como argumento um payload <a class="el" href="group__t23.html">inicial de configuração</a>.</li>
+<li>no json de retorno, se a chave <code>retorno</code> for diferente de <code>0</code> ou <code>1</code> significa que ocorreu algum erro. Se não, continuar o fluxo. <hr  />
+</li>
+</ol>
+</li>
+<li>Realizar operação: <code><a class="el" href="group__tf.html#ga09d2bd1b1adb661b08e35f983b412d6a" title="Inicia uma operação de pagamento.">RealizarPagamentoTEF()</a></code>/<code><a class="el" href="group__tf.html#ga88e523b3e6b568d94aec4cef32b89f7f" title="Inicia uma operação administrativa.">RealizarAdmTEF()</a></code>/<code><a class="el" href="group__tf.html#ga9fe2f4724571a101290b4c1ce3d475a9" title="Realiza uma operação de PIX. Essa função segue o mesmo fluxo da função RealizarPagamentoTEF e depende...">RealizarPixTEF()</a></code><ol type="a">
+<li><p class="startli">Realizar primeira chamada da operação passando um <a class="el" href="group__t22.html">payload inicial</a>. Por exemplo: um payload inicial da função RealizarPagamentoTEF poderia ser: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;sequencial&quot;: &quot;2&quot;,</div>
+<div class="line">    &quot;valorTotal&quot;: &quot;12.99&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p class="startli">Verificar se nenhum erro ocorreu, e então prosseguir com o fluxo.</p>
+</li>
+<li><b>Fase da coleta de dados</b> (Fluxo sugerido)<ol type="i">
+<li>Fazer o parse do json de retorno da chamada anterior da função da operação</li>
+<li>Verificar que a chave retorno não está presente (o que indicaria que a transação finalizou, conforme a <a class="el" href="group__t21.html#tef_api_identifica_erro_sucesso">documentação</a>) e então continuar o fluxo de coleta</li>
+<li><b>Fase de coleta a ser repetida até a finalização da coleta</b><ol type="A">
+<li>Extrair as chaves do json do retorno da chamada anterior da função da operação que está sendo realizada. Para um breve descrição das chaves e seus usos veja a <a class="el" href="group__t21.html#tef_api_chaves_importantes">documentação da API</a> ou para entender mais a fundo veja <a class="el" href="group__t24.html#tef_api_coleta">aqui</a>.</li>
+<li>Verificar se a chave <code>automacao_coleta_retorno = 0</code>, se não, encerrar coleta</li>
+<li>Criar um novo payload a ser enviado para à API com as chaves e os valores de <code>automacao_coleta_retorno</code> e <code>automacao_coleta_sequencial</code></li>
+<li><b>Coletar Dados do Usuário</b>:<ol type="1">
+<li>se <code>automacao_coleta_tipo</code> for diferente de nulo, significa que deve algum dados deve ser coletado do usuário</li>
+<li>se <code>automacao_coleta_opcao</code> for nulo, a coleta do usuário é do tipo texto, ou seja, usuário deve digitar a informação pedida</li>
+<li>se <code>automacao_coleta_opcao</code> for direrente de nulo, o usuário precisará escolher uma das opções fornecidadas.</li>
+<li>qualquer que seja o tipo de coleta, uma vez que o usuário digitou ou escolheu uma opção, adicionar valor ao payload com a chave <code>automacao_coleta_informacao</code></li>
+<li>caso o usuário queira cancelar a operação, apenas alterar o valor da chave <code>automacao_coleta_retorno</code> para '9'.</li>
+</ol>
+</li>
+<li>Informar os dados coletados chamando a função da operação (por exemplo a <code><a class="el" href="group__tf.html#ga09d2bd1b1adb661b08e35f983b412d6a" title="Inicia uma operação de pagamento.">RealizarPagamentoTEF()</a></code>) passando como argumento o payload.</li>
+<li>Verificar que a chave retorno não está presente (o que indicaria que a transação finalizou, conforme a <a class="el" href="group__t21.html#tef_api_identifica_erro_sucesso">documentação</a>) e então continuar o fluxo</li>
+<li>Repetir a fase de coleta passando o json de retorno. <hr  />
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Confirmar a operação: <code><a class="el" href="group__tf.html#ga9d3fcd251005e36af7f0572698df4c18" title="Função utilizada para confirmar ou cancelar uma operação recém-realizada.">ConfirmarOperacaoTEF()</a></code><ol type="a">
+<li>Fazer o parse do retorno da coleta</li>
+<li>Verificar pela chave <code>retorno</code> se algum erro ocorreu, se não, pode-se extrair do json de retorno os valores que forem necessários para aplicação, como por exemplo, os comprovantes.</li>
+<li>Se a chave <code>retorno</code> for <code>1</code>, não será necessário realizar a confirmação da transação. Se for <code>0</code>, passar o valor do sequencial retornado na função anterior como argumento da função <code><a class="el" href="group__tf.html#ga9d3fcd251005e36af7f0572698df4c18" title="Função utilizada para confirmar ou cancelar uma operação recém-realizada.">ConfirmarOperacaoTEF()</a></code> e também <code>1</code> como segundo argumento para identificar a ação de confirmação. <hr  />
+</li>
+</ol>
+</li>
+<li>Finalizar a operação: <code><a class="el" href="group__tf.html#ga2ac63e2c98e7b2d8045ce4afd58f6cee" title="Finaliza a conexão com o ElginTEF.">FinalizarOperacaoTEF()</a></code> </li>
+</ol>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->

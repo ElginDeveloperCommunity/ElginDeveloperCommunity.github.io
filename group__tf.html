@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.1</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.2</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -579,7 +579,7 @@ $(document).ready(function(){initNavTree('group__tf.html',''); initResizable(); 
 </div><div class="memdoc">
 
 <p>Função utilizada para confirmar ou cancelar uma operação recém-realizada. </p>
-<p >Deve ser chamada após o término da coleta, quando a chave <code>resultadoTransacao</code> == 0.</p>
+<p >Deve ser chamada após o término da coleta, quando a chave <code>retorno</code> == 0.</p>
 <p >Essa função exige que alguma operação esteja em andamento. Caso ocorra algum erro durante a operação (queda de conexão, queda de energia ou qualquer outro problema que interrompa a comunicação entre API &lt;--&gt; ElginTEF), existem duas formas para cancelá-la ou confirmá-la:</p>
 <p >a. Chamar os métodos <a class="el" href="group__tf.html#ga897d2c146bcaa9d1dec4b4e7ed1c94e4" title="Função que recupera a operação cancelada.">RecuperarOperacaoTEF()</a> + <a class="el" href="group__tf.html#ga9d3fcd251005e36af7f0572698df4c18" title="Função utilizada para confirmar ou cancelar uma operação recém-realizada.">ConfirmarOperacaoTEF()</a></p><ul>
 <li>Devem ser chamadas imediatamente após a solução do problema b. Chamar os métodos <a class="el" href="group__tf.html#ga1bf9edea41af3c30936caf5ce7f8c988" title="Inicia Operação.">IniciarOperacaoTEF()</a> + <a class="el" href="group__tf.html#ga88e523b3e6b568d94aec4cef32b89f7f" title="Inicia uma operação administrativa.">RealizarAdmTEF()</a> // codigoOperacao = 2 (pendências)</li>

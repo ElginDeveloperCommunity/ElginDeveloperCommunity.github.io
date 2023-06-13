@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.1</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.2</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -107,22 +107,26 @@ $(document).ready(function(){initNavTree('group__t21.html',''); initResizable();
   <div class="headertitle"><div class="title">API<div class="ingroups"><a class="el" href="group__g7.html">E1 TEF</a> &raquo; <a class="el" href="group__t2.html">Modo Ativo</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<h2>API</h2>
-<h3>Identificando erro / sucesso nas operações TEF</h3>
-<p >A chave <code>tef: { resultadoTransacao: ... }</code> indica se a operação TEF foi bem-sucedida ou não:</p><ul>
+<h1><a class="anchor" id="tef_api_api"></a>
+API</h1>
+<h2><a class="anchor" id="tef_api_identifica_erro_sucesso"></a>
+Identificando erro / sucesso nas operações TEF</h2>
+<p >A chave <code>tef: { retorno: ... }</code> indica se a operação TEF foi bem-sucedida ou não:</p><ul>
 <li><b>0</b> - Sucesso, confirmação necessária</li>
 <li><b>1</b> - Sucesso, não precisa confirmar</li>
-<li>Valores diferentes de 0 / 1 indicam erros.</li>
+<li>Valores diferentes de 0 / 1 indicam erros. Veja a descrição dos códigos <a class="el" href="group__t24.html#tef_api_informacoes">aqui</a></li>
 </ul>
-<h3>Fase de Coleta</h3>
+<dl class="section note"><dt>Observação</dt><dd>A chave <code>tef: { retorno: ... }</code> não estará presente no json de retorno enquanto a operação estiver ocorrendo.</dd></dl>
+<h2>Fase de Coleta</h2>
 <p >A operação se encontra em estado de coleta sempre que a resposta da API contiver chaves do tipo <code>tef: { automacao_coleta_xxx: ... }</code></p>
 <p >Normalmente a coleta incia após as chamadas bem sucedidas das funções <code><a class="el" href="group__tf.html#ga1bf9edea41af3c30936caf5ce7f8c988" title="Inicia Operação.">IniciarOperacaoTEF()</a></code> e <code><a class="el" href="group__tf.html#ga09d2bd1b1adb661b08e35f983b412d6a" title="Inicia uma operação de pagamento.">RealizarPagamentoTEF()</a></code>/<code><a class="el" href="group__tf.html#ga88e523b3e6b568d94aec4cef32b89f7f" title="Inicia uma operação administrativa.">RealizarAdmTEF()</a></code> (passando o parâmetro <code>novaTransacao = true</code>) e encerra quando:</p><ul>
-<li>A chave <code>tef: { resultadoTransacao: ... }</code> for retornada, indicando o término da coleta.</li>
+<li>A chave <code>tef: { retorno: ... }</code> for retornada, indicando o término da coleta.</li>
 <li>A chave <code>tef: { automacao_coleta_retorno: ... }</code> for diferente de 0, indicando erro durante a coleta.</li>
 </ul>
-<h4>Chaves importantes de retorno da API durante a coleta</h4>
+<h3><a class="anchor" id="tef_api_chaves_importantes"></a>
+Chaves importantes de retorno da API durante a coleta</h3>
 <ul>
-<li><code>automacao_coleta_mensagem</code> : Mensagem sobre o dado a ser coletado, para exibir ao usuário</li>
+<li><code>mensagemResultado</code> : Mensagem sobre o dado a ser coletado, para exibir ao usuário</li>
 <li><code>automacao_coleta_palavra_chave</code> : Indica a chave correspondente ao dado sendo coletado</li>
 <li><code>automacao_coleta_tipo</code> : Indica o tipo de dado que se espera coletar (numérico, alfanumérico, data, etc) e, portanto, <u>se o dado a ser coletado precisa ser passado no payload da próxima chamada ou não</u>:<ul>
 <li>Se esta chave estiver presente, significa que o dado solicitado precisa ser informado no payload da próxima chamada na chave <code>automacao_coleta_informacao</code></li>
@@ -133,7 +137,7 @@ $(document).ready(function(){initNavTree('group__t21.html',''); initResizable();
 </ul>
 </li>
 <li><code>automacao_coleta_mascara</code> : Se estiver presente, indica o formato em que o dado da coleta deverá ser informado. i.e. :<ul>
-<li>datas devem ser enviadas no formato dd/MM/yy</li>
+<li>datas devem ser enviadas no formato dd/MM/yy ou dd/MM/yyyy</li>
 <li>valores monetários devem ser enviados no formato .##</li>
 </ul>
 </li>
@@ -144,7 +148,8 @@ $(document).ready(function(){initNavTree('group__t21.html',''); initResizable();
 </li>
 <li><code>automacao_coleta_sequencial</code> : Sequencial ou "passo" atual da coleta (1, 2, 3, ...). Esse mesmo valor deverá ser informado nesta chave no payload da próxima chamada de coleta.</li>
 </ul>
-<h4>Chaves que devem ser enviadas no payload durante a coleta</h4>
+<h3><a class="anchor" id="tef_api_chaves_payload"></a>
+Chaves que devem ser enviadas no payload durante a coleta</h3>
 <ul>
 <li><code>automacao_coleta_sequencial</code> : deve-se enviar o mesmo valor que é recebido no JSON durante a coleta, caso contrário a operação será cancelada.</li>
 <li><code>automacao_coleta_retorno</code> : indica continuidade ou cancelamento da coleta<ul>

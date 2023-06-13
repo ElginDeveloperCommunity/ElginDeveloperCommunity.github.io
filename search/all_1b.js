@@ -1,17 +1,14 @@
 var searchData=
 [
-  ['valor_5facrescimo_5finvalido_0',['VALOR_ACRESCIMO_INVALIDO',['../group__g1.html#ggab2fabaa4c9e7eb63e28651ed9515ec7aa83be0d1dc4fb3d73f0f9b4aeb42fca00',1,'codigoerro.h']]],
-  ['valor_5facrescimo_5fsubtotal_5finvalido_1',['VALOR_ACRESCIMO_SUBTOTAL_INVALIDO',['../group__g1.html#gga2c9f115c611f288143e0de8b62b42ab4ac6619788c441a69d413f2de3d024df71',1,'codigoerro.h']]],
-  ['valor_5faliquota_5fcofins_5finvalida_2',['VALOR_ALIQUOTA_COFINS_INVALIDA',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda48e93fb486279e38bd05ad55b335ae11',1,'codigoerro.h']]],
-  ['valor_5faliquota_5fpis_5finvalida_3',['VALOR_ALIQUOTA_PIS_INVALIDA',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bdabe7bdca1f3c8ba60bb1b2e81d65b07f2',1,'codigoerro.h']]],
-  ['valor_5fdeducoes_5fissqn_5finvalida_4',['VALOR_DEDUCOES_ISSQN_INVALIDA',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda42805c9448f5e8f418fc017f1f801b22',1,'codigoerro.h']]],
-  ['valor_5fdesconto_5finvalido_5',['VALOR_DESCONTO_INVALIDO',['../group__g1.html#ggab2fabaa4c9e7eb63e28651ed9515ec7aad9d8fcbf42138abd6763f95537130289',1,'codigoerro.h']]],
-  ['valor_5fdesconto_5fsubtotal_5finvalido_6',['VALOR_DESCONTO_SUBTOTAL_INVALIDO',['../group__g1.html#gga2c9f115c611f288143e0de8b62b42ab4a29447e6f077edc5f5a5d46dec390cfcc',1,'codigoerro.h']]],
-  ['valor_5fmeio_5fpagamento_5finvalido_7',['VALOR_MEIO_PAGAMENTO_INVALIDO',['../group__g1.html#gga016ca53373099dfbefdd44124f9797b2af9ec779081116232dbadc3e613a7b267',1,'codigoerro.h']]],
-  ['valor_5funitario_5finvalido_8',['VALOR_UNITARIO_INVALIDO',['../group__g1.html#ggab2fabaa4c9e7eb63e28651ed9515ec7aa9b890ff6fca26dc9feadbe618d062032',1,'codigoerro.h']]],
-  ['valor_5fvcfelei12741_5finvalido_9',['VALOR_VCFELEI12741_INVALIDO',['../group__g1.html#gga2c9f115c611f288143e0de8b62b42ab4abb0e72d46bcebb5139c0c9e0c33ef86f',1,'codigoerro.h']]],
-  ['versao_5fdados_5fent_5finvalido_10',['VERSAO_DADOS_ENT_INVALIDO',['../group__g1.html#gga2135434c111b0c910df2d58bc4d2e41ba82e87b7fd2289a198ebab5d802d97f63',1,'codigoerro.h']]],
-  ['versao_5fxmlnfce_5findefinida_11',['VERSAO_XMLNFCE_INDEFINIDA',['../group__g1.html#ggab60bf4a0fda40a03899957b30be9de07a0c355c8865a05bb0125472a0680526aa',1,'codigoerro.h']]],
-  ['versao_5fxmlnfce_5fnao_5fsuportada_12',['VERSAO_XMLNFCE_NAO_SUPORTADA',['../group__g1.html#ggab60bf4a0fda40a03899957b30be9de07a5704edac635051de3456acc5587901da',1,'codigoerro.h']]],
-  ['vitem12741_5finvalido_13',['VITEM12741_INVALIDO',['../group__g1.html#gga97f1fb31f129eb1b814dccd42f4457bda1d019e20370a0068c9dd7359699efbad',1,'codigoerro.h']]]
+  ['uf_5finvalido_0',['UF_INVALIDO',['../group__g1.html#ggabce12b1307411516d5ae219d5e3da4fca03226eb4e8c653c72038d45d693bf26c',1,'codigoerro.h']]],
+  ['unidade_5fcomercial_5finvalida_1',['UNIDADE_COMERCIAL_INVALIDA',['../group__g1.html#ggab2fabaa4c9e7eb63e28651ed9515ec7aaf819d22635b1137ce1414ba190547fd9',1,'codigoerro.h']]],
+  ['util_5fdata_5finvalida_2',['UTIL_DATA_INVALIDA',['../group__g1.html#ggafd724a1fcc15d08d027120107767e201a911e4e571fd43563ef664841302f2834',1,'codigoerro.h']]],
+  ['util_5ferro_5facessar_5festrutura_3',['UTIL_ERRO_ACESSAR_ESTRUTURA',['../group__g1.html#ggafd724a1fcc15d08d027120107767e201a9dfeb12b1208a1e63ee38144ebc647e0',1,'codigoerro.h']]],
+  ['util_5ferro_5fcaminho_5fabsoluto_4',['UTIL_ERRO_CAMINHO_ABSOLUTO',['../group__g1.html#ggafd724a1fcc15d08d027120107767e201a76ffb9f4a51f435c683def4087a49697',1,'codigoerro.h']]],
+  ['util_5ferro_5fgerar_5festrutura_5',['UTIL_ERRO_GERAR_ESTRUTURA',['../group__g1.html#ggafd724a1fcc15d08d027120107767e201ad8ee88c283792416e981a5a41823932d',1,'codigoerro.h']]],
+  ['util_5ferro_5finterno_6',['UTIL_Erro_Interno',['../group__g1.html#gafd724a1fcc15d08d027120107767e201',1,'codigoerro.h']]],
+  ['util_5fextensao_5finvalida_7',['UTIL_EXTENSAO_INVALIDA',['../group__g1.html#ggafd724a1fcc15d08d027120107767e201a4f7d48b00ce6635b77da4f1a75437619',1,'codigoerro.h']]],
+  ['util_5ftipo_5finvalido_8',['UTIL_TIPO_INVALIDO',['../group__g1.html#ggafd724a1fcc15d08d027120107767e201a53b898c7b558725fbdc80a6aca76a8bd',1,'codigoerro.h']]],
+  ['utilizando_20intents_9',['Utilizando Intents',['../group__idh12.html',1,'']]],
+  ['utilizando_20payloads_10',['Utilizando Payloads',['../group__idh14.html',1,'']]]
 ];

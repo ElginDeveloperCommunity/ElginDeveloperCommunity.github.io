@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.1</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.2</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -107,10 +107,13 @@ $(document).ready(function(){initNavTree('group__t24.html',''); initResizable();
   <div class="headertitle"><div class="title">Descrição das Chaves<div class="ingroups"><a class="el" href="group__g7.html">E1 TEF</a> &raquo; <a class="el" href="group__t2.html">Modo Ativo</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<h2>INFORMAÇÕES</h2>
+<h1><a class="anchor" id="tef_api_chaves"></a>
+Chaves</h1>
+<h2><a class="anchor" id="tef_api_informacoes"></a>
+INFORMAÇÕES</h2>
 <p ><code>loja</code>: Conterá o código da loja cadastrado dentro do estabelecimento no ElginTef para a qual as transações serão realizadas. A automação comercial cadastrará esse dado apenas uma vez usando a função <a class="el" href="group__tf.html#gab06e26fc973f68f06aa0f1355c8353be">ConfigurarDadosPDV</a></p>
 <p ><code>vercaoAc</code>: Contém a versão da automação comercial. A automação comercial cadastrará esse dado apenas uma vez usando a função <a class="el" href="group__tf.html#gab06e26fc973f68f06aa0f1355c8353be">ConfigurarDadosPDV</a> Enviado obrigatoriamente no serviçoiniciar.</p>
-<p ><code>resultadoTransacao</code>: Contém o código com a solicitação ou resultado do serviço, onde:</p>
+<p ><code>retorno</code>: Contém o código com a solicitação ou resultado do serviço, onde:</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadCenter">Código   </th><th class="markdownTableHeadCenter">Situação   </th><th class="markdownTableHeadLeft">ElginTef -&gt; Aplicação Comercial   </th><th class="markdownTableHeadLeft">Aplicação Comercial -&gt; ElginTef    </th></tr>
@@ -141,7 +144,8 @@ $(document).ready(function(){initNavTree('group__t24.html',''); initResizable();
 <p ><code>sequencial</code>: Deve estar presente em todas as mensagens. É um número sequencial único crescente, enviado pela Aplicação Comercial para o ElginTef a cada novo serviço solicitado, e que deve permanecer o mesmo durante toda a execução daquele serviço. O ElginTef responderá com o mesmo sequencial. Se a Aplicação Comercial enviar um sequencial inválido para iniciar um novo serviço, isto é, menor ou igual ao último utilizado, receberá como resposta o <code>retorno="2"</code> e o próximo sequencial válido. Este procedimento é útil quando a Aplicação Comercial for reiniciada, perdendo o último sequencial utilizado.</p>
 <p ><code>textoPinpad</code>: Enviado pela Aplicação Comercial e conterá a informação a ser exibida na telado PIN-Pad. Deve ter no máximo 32 posições.</p>
 <p ><code>nomeEstabelecimento</code>: Conterá o código do estabelecimento cadastrado no ElginTef para o qual as transações serão realizadas. A automação comercial cadastrará esse dado apenas uma vez usando a função <a class="el" href="group__tf.html#gab06e26fc973f68f06aa0f1355c8353be">ConfigurarDadosPDV</a></p>
-<h2>TRANSAÇÕES</h2>
+<h2><a class="anchor" id="tef_api_transacoes"></a>
+TRANSAÇÕES</h2>
 <p ><code>nsuTerminal</code>: É o Número Sequencial Único (NSU) gerado pelo ElginTef usado para identificar uma transação dentro de uma rede em uma data especifica. Enviado pelo ElginTef para a Aplicação Comercial ao executar uma transação. Pode ser enviado pela Aplicação Comercial para o ElginTef nas transações de cancelamento, reimpressão e tratamento de pendências, evitando assim sua coleta. Para processar a última transação deve-se enviar zero.</p>
 <p ><code>valorTotal</code>: Quando informado deve ser maior que zero e contém o valor da transação a ser ou que foi executada. Quando enviado pelo ElginTef, é o valor da transação que foi executada. Quando enviado pela Aplicação Comercial, é o valor a ser apresentado no campo de coleta do valor da transação.</p>
 <p ><code>numeroParcelas</code>: Quando informado conterá a quantidade de parcelas. Quando enviado pela Aplicação Comercial conterá a quantidade de parcelas a ser utilizada na execução da transação solicitada. Quando enviado pelo ElginTef conterá a quantidade de parcelas da transação executada.</p>
@@ -157,7 +161,8 @@ $(document).ready(function(){initNavTree('group__t24.html',''); initResizable();
 <p ><code>comprovanteDiferenciadoLoja</code>: Quando especificado conterá(ão) o(s) comprovantes gerados pela execução da transação, enviados pelo ElginTef para a Aplicação Comercial. A sequência de caracteres Carriage-Return/Line-Feed (CR/LFou0x0D/0x0A) serão utilizados para separar as linhas.</p>
 <p ><code>admSenha</code>: É a senha do usuário enviado pela Aplicação Comercial para o ElginTef para autenticação nas transações administrativas.</p>
 <p ><code>admUsuario</code>: É o código do usuário enviado pela Aplicação Comercial para o ElginTef para autenticação nas transações administrativas.</p>
-<h2>COLETA</h2>
+<h2><a class="anchor" id="tef_api_coleta"></a>
+COLETA</h2>
 <p ><code>automacao_coleta_tipo</code>: Enviado pelo ElginTef para Aplicação Comercial sempre quando for coletar alguma informação, e conterá o tipo de informação a ser coletada, onde:</p><ul>
 <li>(*) Não exibivel podendo ser alfanumérico ou caracter especial;</li>
 <li>(A) Alfabético;</li>
@@ -165,7 +170,7 @@ $(document).ready(function(){initNavTree('group__t24.html',''); initResizable();
 <li>(N) Numérico com casas decimais ou não;</li>
 <li>(X) Alfanumérico;</li>
 </ul>
-<p >Quando informado e <code>automacao_coleta_mascara</code> não informado, as máscaraspadrões serão:</p><ul>
+<p >Quando informado e <code>automacao_coleta_mascara</code> não informado, as máscaras padrões serão:</p><ul>
 <li>(*) Não exibivel com tamanho ilimitado;</li>
 <li>(A) Letras com tamanho ilimitado;</li>
 <li>(D) Data no formato "dd/MM/yy";</li>
