@@ -107,6 +107,10 @@ $(document).ready(function(){initNavTree('group__idh203.html',''); initResizable
   <div class="headertitle"><div class="title">Retorno ElginTEF IDH<div class="ingroups"><a class="el" href="group__g3.html">Android</a> &raquo; <a class="el" href="group__idh1.html">IntentDigitalHub</a> &raquo; <a class="el" href="group__idh20.html">IDH Tef Android</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+<h1><a class="anchor" id="retornos_idh"></a>
+Retono IDH Tef</h1>
+<h2><a class="anchor" id="retornos_idh_tef_comp"></a>
+Retorno para Compatibilidade Sitef</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadLeft">Chaves   </th><th class="markdownTableHeadLeft">Descrição    </th></tr>
@@ -137,7 +141,106 @@ $(document).ready(function(){initNavTree('group__idh203.html',''); initResizable
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft">CODRESP   </td><td class="markdownTableBodyLeft">Código de resposta da transação realizada com o SiTef.Veja a tabela a seguir para maiores detalhes   </td></tr>
 </table>
-</div><!-- contents -->
+<h2><a class="anchor" id="retornos_idh_tef_elgin"></a>
+Retornos Protocolo Elgin</h2>
+<p >Os retornos estarão sempre no seguinte formato:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;funcao&quot;: &quot;&lt;nome da função chamada&gt;&quot;,</div>
+<div class="line">    &quot;mensagem&quot;: &quot;&lt;mensagem &#39;Sucesso&#39; ou com descrição do erro&gt;&quot;,</div>
+<div class="line">    &quot;resultado&quot;: &quot;&lt;chave com json de retorno da função&gt;&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p >Nas descrições a seguir, as chaves que tiverem <code>[Opcional]</code> indica que são opcionais, e no caso de uma transação não bem sucedida podem não se encontrar no json de retorno.</p>
+<h3>Configuração</h3>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;funcao&quot;: string,</div>
+<div class="line">    &quot;mensagem&quot;: string,</div>
+<div class="line">    &quot;resultado&quot;: {</div>
+<div class="line">        &quot;mensagem&quot;: string</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h3>Ativação</h3>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;funcao&quot;: string,</div>
+<div class="line">    &quot;mensagem&quot;: string,</div>
+<div class="line">    &quot;resultado&quot;: { } // retorno vazio</div>
+<div class="line">}</div>
+</div><!-- fragment --><h3>Reimpressão</h3>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;funcao&quot;: string,</div>
+<div class="line">    &quot;mensagem&quot;: string,</div>
+<div class="line">    &quot;resultado&quot;: {</div>
+<div class="line">        &quot;mensagem&quot;: string,               // [Opcional]</div>
+<div class="line">        &quot;administradora&quot;: string,         // [Opcional]</div>
+<div class="line">        &quot;autorizacao&quot;: string,            // [Opcional]</div>
+<div class="line">        &quot;data&quot;: string,                   // [Opcional]</div>
+<div class="line">        &quot;nsu&quot;: string,                    // [Opcional]</div>
+<div class="line">        &quot;nsuRede&quot;: string,                // [Opcional]</div>
+<div class="line">        &quot;numeroCartao&quot;: string,           // [Opcional]</div>
+<div class="line">        &quot;pagamento&quot;: string,              // [Opcional]</div>
+<div class="line">        &quot;rede&quot;: string,                   // [Opcional]</div>
+<div class="line">        &quot;tipoCartao&quot;: string,             // [Opcional]</div>
+<div class="line">        &quot;valor&quot;: string,                  // [Opcional]</div>
+<div class="line">        &quot;vencimento&quot;: string,             // [Opcional]</div>
+<div class="line">        &quot;viaCliente&quot;: string,             // [Opcional]</div>
+<div class="line">        &quot;viaEstabelecimento&quot;: string,     // [Opcional]</div>
+<div class="line">        &quot;viaSMS&quot;: string,                 // [Opcional]</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h3>Relatório</h3>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;funcao&quot;: string,</div>
+<div class="line">    &quot;mensagem&quot;: string,</div>
+<div class="line">    &quot;resultado&quot;: {</div>
+<div class="line">        &quot;mensagem&quot;: string,          </div>
+<div class="line">        &quot;relatorioTransacoes&quot;: string</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h3>Venda e Débito e Crédito</h3>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;funcao&quot;: string,</div>
+<div class="line">    &quot;mensagem&quot;: string,</div>
+<div class="line">    &quot;resultado&quot;: {</div>
+<div class="line">        &quot;mensagem&quot;: string,</div>
+<div class="line">        &quot;administradora&quot;: string,           // [Opcional]</div>
+<div class="line">        &quot;autorizacao&quot;: string,              // [Opcional]</div>
+<div class="line">        &quot;cnpjRede&quot;: string,                 // [Opcional]</div>
+<div class="line">        &quot;data&quot;: string,                     // [Opcional]</div>
+<div class="line">        &quot;nsu&quot;: string,                      // [Opcional]</div>
+<div class="line">        &quot;nsuRede&quot;: string,                  // [Opcional]</div>
+<div class="line">        &quot;numeroCartao&quot;: string,             // [Opcional]</div>
+<div class="line">        &quot;pagamento&quot;: string,                // [Opcional]</div>
+<div class="line">        &quot;rede&quot;: string,                     // [Opcional]</div>
+<div class="line">        &quot;tipoCartao&quot;: string,               // [Opcional]</div>
+<div class="line">        &quot;valor&quot;: string,                    // [Opcional]</div>
+<div class="line">        &quot;vencimento&quot;: string,               // [Opcional]</div>
+<div class="line">        &quot;viaCliente&quot;: string,               // [Opcional]</div>
+<div class="line">        &quot;viaEstabelecimento&quot;: string,       // [Opcional]</div>
+<div class="line">        &quot;viaSMS&quot;: string,                   // [Opcional]</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h3>Cancelamento</h3>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;funcao&quot;: string,</div>
+<div class="line">    &quot;mensagem&quot;: string,</div>
+<div class="line">    &quot;resultado&quot;: {</div>
+<div class="line">        &quot;mensagem&quot;: string,</div>
+<div class="line">        &quot;administradora&quot;: string,           // [Opcional]</div>
+<div class="line">        &quot;cnpjRede&quot;: string,                 // [Opcional]</div>
+<div class="line">        &quot;data&quot;: string,                     // [Opcional]</div>
+<div class="line">        &quot;nsu&quot;: string,                      // [Opcional]</div>
+<div class="line">        &quot;nsuRede&quot;: string,                  // [Opcional]</div>
+<div class="line">        &quot;numeroCartao&quot;: string,             // [Opcional]</div>
+<div class="line">        &quot;pagamento&quot;: string,                // [Opcional]</div>
+<div class="line">        &quot;rede&quot;: string,                     // [Opcional]</div>
+<div class="line">        &quot;tipoCartao&quot;: string,               // [Opcional]</div>
+<div class="line">        &quot;valor&quot;: string,                    // [Opcional]</div>
+<div class="line">        &quot;vencimento&quot;: string,               // [Opcional]</div>
+<div class="line">        &quot;viaCliente&quot;: string,               // [Opcional]</div>
+<div class="line">        &quot;viaEstabelecimento&quot;: string,       // [Opcional]</div>
+<div class="line">        &quot;viaSMS&quot;: string,                   // [Opcional]</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
