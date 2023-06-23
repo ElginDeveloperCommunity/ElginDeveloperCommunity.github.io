@@ -537,7 +537,7 @@ $(document).ready(function(){initNavTree('group__tf.html',''); initResizable(); 
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>O Retorno será um JSON no padrão da API onde serão retornadas as informações de acordo com o processamento da transação. Durante o processamento os dados utilizados para gerar a imagem do QRCode em tela devem ser retornados na chave "mensagemResultado" do obj "tef". Tal mensagem tem a seguinte estrutura: QRCODE;[dados];[infoComplementaresEmBase64] sendo que o index 1 dessa estrutura pode ser usado para gerar a imagem de apresentação. <h3>Exemplo de retorno</h3>
+<dl class="section return"><dt>Retorna</dt><dd>O Retorno será um JSON no padrão da API onde serão retornadas as informações de acordo com o processamento da transação. Durante o processamento os dados utilizados para gerar a imagem do QRCode em tela devem ser retornados na chave "mensagemResultado" do obj "tef". Tal mensagem tem a seguinte estrutura: QRCODE;[dadosEmHexadecimal];[infoComplementaresEmBase64] sendo que o index 1 dessa estrutura pode ser usado para gerar a imagem de apresentação. <h3>Exemplo de retorno</h3>
 </dd></dl>
 <div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;codigo&quot;: 0,</div>
