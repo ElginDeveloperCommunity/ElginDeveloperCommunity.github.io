@@ -232,6 +232,34 @@ $(document).ready(function(){initNavTree('group__t03.html',''); initResizable();
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">300&minus;001   </td><td class="markdownTableBodyLeft">DATA_VALIDADE_CARTAO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Informa a data de vencimento do cartão    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">375&minus;000   </td><td class="markdownTableBodyLeft">CODIGO_OPERACAO   </td><td class="markdownTableBodyCenter">(*O)   </td><td class="markdownTableBodyLeft">Código de retorno da operação realizada no produto de tef, normalmente retorno da DLL do produto configurado para chamada da operação    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">375&minus;001   </td><td class="markdownTableBodyLeft">MENSAGEM_OPERACAO   </td><td class="markdownTableBodyCenter">(*O)   </td><td class="markdownTableBodyLeft">Mensagem referente ao código de retorno    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">375&minus;002   </td><td class="markdownTableBodyLeft">SOLICITA_CUPOM_FISCAL   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Chave utilizada para indicar ao POS ElginPay que deve ser questionado ao cliente se o mesmo deseja cupom fiscal    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">375&minus;008   </td><td class="markdownTableBodyLeft">MODO_ENTRADA_CARTAO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Indica o modo como foi realizado a captura do cartão    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">375&minus;016   </td><td class="markdownTableBodyLeft">ESTABELECIMENTO   </td><td class="markdownTableBodyCenter">(I)(O)   </td><td class="markdownTableBodyLeft">Nome do estabelecimento    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">375&minus;017   </td><td class="markdownTableBodyLeft">APLICACAO   </td><td class="markdownTableBodyCenter">(I)   </td><td class="markdownTableBodyLeft">Nome da aplicação usado nos arquivos de entrada    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">375&minus;018   </td><td class="markdownTableBodyLeft">VERSAO_APLICACAO   </td><td class="markdownTableBodyCenter">(I)   </td><td class="markdownTableBodyLeft">Versão da aplicação usado nos arquivos de entrada    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">375&minus;019   </td><td class="markdownTableBodyLeft">LOJA   </td><td class="markdownTableBodyCenter">(I)(O)   </td><td class="markdownTableBodyLeft">Nome da Loja    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">375&minus;023   </td><td class="markdownTableBodyLeft">TEXTO_PINPAD   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Texto a ser apresentado no PINPAD    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">375&minus;024   </td><td class="markdownTableBodyLeft">ADM_USUARIO   </td><td class="markdownTableBodyCenter">(I)   </td><td class="markdownTableBodyLeft">Usuario para operações administrativas    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">375&minus;025   </td><td class="markdownTableBodyLeft">ADM_SENHA   </td><td class="markdownTableBodyCenter">(I)   </td><td class="markdownTableBodyLeft">Senha para operações administrativas    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">375&ndash;028   </td><td class="markdownTableBodyLeft">RETORNO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">0 = Requer confirmação da transação com CNF ou NCN/ 1 = não requer confirmação/ if &gt;= 2 = Erro    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">376&ndash;000   </td><td class="markdownTableBodyLeft">OPCAO_COLETA   </td><td class="markdownTableBodyCenter">(*I)   </td><td class="markdownTableBodyLeft">Tipo da coleta a ser realizada no pinpad ( 1 = RG, 2 = CPF, 3 = CNPJ, 4 = FONE)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">376&ndash;001   </td><td class="markdownTableBodyLeft">DADO_COLETADO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Resultado da captura no pinpad de acordo com a solicitação 376-000    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">504&minus;000   </td><td class="markdownTableBodyLeft">CODIGO_OP_CELULAR   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Informa o código da operadora recarregado    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">600&minus;000   </td><td class="markdownTableBodyLeft">CNPJ_CREDENCIADORA   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">É o CNPJ da rede credenciadora do cartão de débito/crédito.    </td></tr>
@@ -266,35 +294,7 @@ $(document).ready(function(){initNavTree('group__t03.html',''); initResizable();
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">805&minus;000   </td><td class="markdownTableBodyLeft">NUMERO_TELEFONE   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Campo que fornece o telefone do cliente, informação retornada do Autorizador.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">999&minus;999   </td><td class="markdownTableBodyLeft">REGISTRO_FINAL   </td><td class="markdownTableBodyCenter">(*I)(*O)   </td><td class="markdownTableBodyLeft">Indica o final do arquivo.    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">375&minus;000   </td><td class="markdownTableBodyLeft">CODIGO_OPERACAO   </td><td class="markdownTableBodyCenter">(*O)   </td><td class="markdownTableBodyLeft">Código de retorno da operação realizada no produto de tef, normalmente retorno da DLL do produto configurado para chamada da operação    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">375&minus;001   </td><td class="markdownTableBodyLeft">MENSAGEM_OPERACAO   </td><td class="markdownTableBodyCenter">(*O)   </td><td class="markdownTableBodyLeft">Mensagem referente ao código de retorno    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">375&minus;002   </td><td class="markdownTableBodyLeft">SOLICITA_CUPOM_FISCAL   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Chave utilizada para indicar ao POS ElginPay que deve ser questionado ao cliente se o mesmo deseja cupom fiscal    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">375&minus;008   </td><td class="markdownTableBodyLeft">MODO_ENTRADA_CARTAO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Indica o modo como foi realizado a captura do cartão    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">375&minus;016   </td><td class="markdownTableBodyLeft">ESTABELECIMENTO   </td><td class="markdownTableBodyCenter">(I)(O)   </td><td class="markdownTableBodyLeft">Nome do estabelecimento    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">375&minus;017   </td><td class="markdownTableBodyLeft">APLICACAO   </td><td class="markdownTableBodyCenter">(I)   </td><td class="markdownTableBodyLeft">Nome da aplicação usado nos arquivos de entrada    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">375&minus;018   </td><td class="markdownTableBodyLeft">VERSAO_APLICACAO   </td><td class="markdownTableBodyCenter">(I)   </td><td class="markdownTableBodyLeft">Versão da aplicação usado nos arquivos de entrada    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">375&minus;019   </td><td class="markdownTableBodyLeft">LOJA   </td><td class="markdownTableBodyCenter">(I)(O)   </td><td class="markdownTableBodyLeft">Nome da Loja    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">375&minus;023   </td><td class="markdownTableBodyLeft">TEXTO_PINPAD   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Texto a ser apresentado no PINPAD    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">375&minus;024   </td><td class="markdownTableBodyLeft">ADM_USUARIO   </td><td class="markdownTableBodyCenter">(I)   </td><td class="markdownTableBodyLeft">Usuario para operações administrativas    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">375&minus;025   </td><td class="markdownTableBodyLeft">ADM_SENHA   </td><td class="markdownTableBodyCenter">(I)   </td><td class="markdownTableBodyLeft">Senha para operações administrativas    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">375&ndash;028   </td><td class="markdownTableBodyLeft">RETORNO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">0 = Requer confirmação da transação com CNF ou NCN/ 1 = não requer confirmação/ if &gt;= 2 = Erro    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">376&ndash;000   </td><td class="markdownTableBodyLeft">OPCAO_COLETA   </td><td class="markdownTableBodyCenter">(*I)   </td><td class="markdownTableBodyLeft">Tipo da coleta a ser realizada no pinpad ( 1 = RG, 2 = CPF, 3 = CNPJ, 4 = FONE)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">376&ndash;001   </td><td class="markdownTableBodyLeft">DADO_COLETADO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Resultado da captura no pinpad de acordo com a solicitação 376-000   </td></tr>
+<td class="markdownTableBodyCenter">999&minus;999   </td><td class="markdownTableBodyLeft">REGISTRO_FINAL   </td><td class="markdownTableBodyCenter">(*I)(*O)   </td><td class="markdownTableBodyLeft">Indica o final do arquivo.   </td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
