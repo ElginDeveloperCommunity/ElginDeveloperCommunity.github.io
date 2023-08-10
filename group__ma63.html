@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('group__ma63.html',''); initResizable()
 <a class="el" href="group__ma601.html#ga41c2635565ed9a05c205b5da6b61aa53" title="Função responsável por realizar o processo de cancelamento de uma transação autorizada.">RealizarCancelamentoTransacao()</a> <br  />
 <a class="el" href="group__ma601.html#ga45434d7b7a15e1ba05194b66e82e7343" title="Função responsável pela impressão do relatório de transações (débito e crédito) do dia atual.">ImprimirRelatorioDiario()</a> <br  />
 <a class="el" href="group__ma601.html#ga0cf617c1375aa537d97e15aa10628b4e" title="Função responsável pela reimpressão do último comprovante autorizado em uma transação.">ReimprimirUltimoComprovante()</a> <br  />
-<a class="el" href="group__ma601.html#ga0ce737ea0be08bc744fe6e334e32b4ab" title="Função utilizada para inciar uma transação pix.">iniciarTransacaoPIX()</a> <br  />
+<a class="el" href="group__ma601.html#ga112253643de728432383014a5fa3f869" title="Função utilizada para inciar uma transação pix.">RealizarTransacaoPIX()</a> <br  />
  </p><h2>Handler - Como utilizar na API</h2>
 <p >Aqui vamos explorar este tipo de dado que é responsável direto por enviar e receber mensagens para a API após as transações (venda, cancelamento ou administrativas) serem inicializadas. Se a implementação estiver errada, provavelmente você receberá informações nos passos errados durante uma operação. Então vamos deixar claro a forma que estamos utilizando este componente em nossa API.</p>
 <h3>Definiçao de Handler</h3>
@@ -214,8 +214,10 @@ $(document).ready(function(){initNavTree('group__ma63.html',''); initResizable()
 <p >Para que possa receber as mensagens de processo da transação, você deve definir em sua aplicação os seguintes <code>message.what</code>:</p><ul>
 <li>Mensagens de progresso = 1</li>
 <li>Opções de coleta = 2</li>
-<li>Dados da transação = 3</li>
-<li>Finalização = 4</li>
+<li>Informar Valor 3</li>
+<li>Dados da transação = 4</li>
+<li>Finalização = 5</li>
+<li>Hex da imagem qrcode pix = 6</li>
 </ul>
 <p >O exemplo abaixo mostra como você deverá definir o <code>message.what</code> conforme o progresso da transação.</p>
 <dl class="section note"><dt>Observação</dt><dd>Vale a pena ressaltar que essas mensagens não tem uma sequência a ser seguida e sim as respostas dos <code>callbacks</code> (função passada a outra função como argumento, que é então invocada dentro da função externa para completar algum tipo de rotina ou ação) internos da API.</dd></dl>

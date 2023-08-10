@@ -10,5 +10,5 @@ var group__ma601 =
     [ "RealizarCancelamentoTransacao", "group__ma601.html#ga41c2635565ed9a05c205b5da6b61aa53", null ],
     [ "ImprimirRelatorioDiario", "group__ma601.html#ga45434d7b7a15e1ba05194b66e82e7343", null ],
     [ "ReimprimirUltimoComprovante", "group__ma601.html#ga0cf617c1375aa537d97e15aa10628b4e", null ],
-    [ "iniciarTransacaoPIX", "group__ma601.html#ga0ce737ea0be08bc744fe6e334e32b4ab", null ]
+    [ "RealizarTransacaoPIX", "group__ma601.html#ga112253643de728432383014a5fa3f869", null ]
 ];
