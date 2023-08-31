@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.2</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.3</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -200,6 +200,14 @@ $(document).ready(function(){initNavTree('group__g14.html',''); initResizable();
 <div class="line">    valor: string       // Valor do pagamento da transação autorizada TEF (formato 00.00)</div>
 <div class="line">    nsu: string         // Documento NSU da transação autorizada TEF com 6 dígitos</div>
 <div class="line">    data: string        // Data da transação autorizada TEF (formato dd/MM/yy)</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2>PIX</h2>
+<p >Função responsável por realizar a operação de pix</p>
+<p >URL: <code><a href="http://localhost:2001/tef/v1/pix">http://localhost:2001/tef/v1/pix</a></code> <br  />
+ Método: <code>POST</code> <br  />
+ body:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    valor: string       // Valor do pagamento da transação PIX (formato 00.00)</div>
 <div class="line">}</div>
 </div><!-- fragment --><h2>IntPos</h2>
 <dl class="section note"><dt>Observação</dt><dd>Esse endpoint pode ser chamado apenas em ambientes integrados com o TEF GP Elgin, ou seja, Windows e Linux.</dd></dl>
