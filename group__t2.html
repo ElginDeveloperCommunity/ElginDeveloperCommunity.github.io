@@ -135,22 +135,16 @@ Módulos</h2></td></tr>
 <h1>TEF Ativo</h1>
 <h2>Funcionamento API TEF Elgin</h2>
 <p >A <b>API TEF Elgin</b> fornece a Automação Comercial uma integração para que seja possível a captura de transações financeiras através de diversos concentradores TEF do mercado. Os ambientes atendidos são Windows e Linux. A solução <b>API TEF Elgin</b> foi pensada para facilitar a utilização de Transferências Eletrônicas de Fundos (TEF) por parte da Automação Comercial, oferecendo um pacote completo para atender da melhor forma possível o mercado.</p>
-<p >A seguir um fluxograma básico do funcionamento da <b>API TEF Elgin</b> independemente do ambiente em que esteja executando.</p>
-<p > <div class="mermaid mermaid-center"> 
-   flowchart TB
-    inicio((Início)) --- inOp(Iniciar Operação TEF)
-    inOp --- req[/Requisitar Comando TEF\]
-    req --- exCom(Executar Comando)
-    exCom --- fin{É comando final?}
-    fin ---|Não| req
-    fin ---|Sim| finaliza(Finalizar Operação TEF)
-    finaliza --- fim([Fim])
-    class fin mDecision
-    class inOp,exCom,finaliza,req mOp
-    class inicio,fim mInFim  
-  </div> </p>
+<p >A seguir um fluxograma completo do funcionamento da <b>API TEF Elgin</b> independemente do ambiente em que esteja executando.</p>
 <p ><br  />
- <a class="el" href="group__t20.html">Fluxo da Operação</a> <a class="el" href="group__t21.html">API</a> <a class="el" href="group__t22.html">Payloads</a> <a class="el" href="group__t23.html">Arquivo de Configuração</a> </p>
+</p>
+<p ><img src="tef_api_fluxo_3scale.png" alt="Fluxograma Completo Elgin TEF Biblioteca Windows / Linux" class="inline"/></p>
+<p ><br  />
+ <a class="el" href="group__t20.html">Fluxo da Operação</a> <br  />
+ <a class="el" href="group__t21.html">API</a> <br  />
+ <a class="el" href="group__t22.html">Payloads</a> <br  />
+ <a class="el" href="group__t23.html">Arquivo de Configuração</a> <br  />
+ </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
