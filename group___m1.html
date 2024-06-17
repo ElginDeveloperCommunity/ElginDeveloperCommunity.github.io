@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Plataforma de Comunicação Elgin: Térmica</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -45,9 +45,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo-light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.4</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.5</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -55,7 +55,7 @@
  </tbody>
 </table>
 </div>
-<!-- end header part --><!-- Gerado por Doxygen 1.9.4 -->
+<!-- end header part --><!-- Gerado por Doxygen 1.9.3 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
@@ -1073,7 +1073,7 @@ A função bem sucedida deve retornar 0.<br  />
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">param</td><td>- Parâmetro tipo numérico para indicar qual status deve ser retornado.<br  />
-Os possíveis valores são: <blockquote class="doxtable">
+ Os possíveis valores são: <blockquote class="doxtable">
 <p >&zwj;1 - Gaveta<br  />
 2 - Tampa<br  />
 3 - Papel<br  />
@@ -1086,9 +1086,14 @@ Os possíveis valores são: <blockquote class="doxtable">
   </dd>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>Retorno tipo numérico de acordo com a descrição a seguir:<ul>
+<li><b>0- Status de impressão.(*)</b><ul>
+<li>10- Indica impressora ocupada.</li>
+<li>11- Indica impressora livre.</li>
+</ul>
+</li>
 <li><b>1- Status da gaveta.</b><ul>
 <li>1- Indica gaveta aberta.</li>
-<li>2- indica gaveta fechada.</li>
+<li>2- Indica gaveta fechada.</li>
 </ul>
 </li>
 <li><b>2- Status de tampa.</b><ul>
@@ -1108,8 +1113,8 @@ Os possíveis valores são: <blockquote class="doxtable">
 </ul>
 </li>
 <li><b>5- Retorna status geral.</b><br  />
-Essa função trabalha com bits de um byte para indicar os status.<br  />
-Conforme descrição abaixo: <table class="markdownTable">
+ Essa função trabalha com bits de um byte para indicar os status.<br  />
+ Conforme descrição abaixo: <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadCenter">BIT   </th><th class="markdownTableHeadCenter">STATUS   </th><th class="markdownTableHeadCenter">DESCRIÇÃO    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -1143,8 +1148,9 @@ Conforme descrição abaixo: <table class="markdownTable">
 </ul>
 </dd></dl>
 <ul>
-<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga186538095591690d8b4cea2e5ed46363" title="IMP_Erro_Status enum -126 à -130.">IMP_Erro_Status</a> ou <a class="el" href="group__g1.html#gac34b8a950212ec91c4e28df08684e49b" title="IMP_Erro_Leitura_Impressora enum -81 à -90.">IMP_Erro_Leitura_Impressora</a>. </li>
+<li>Para mais informações sobre retorno consulte <a class="el" href="group__g1.html#ga186538095591690d8b4cea2e5ed46363" title="IMP_Erro_Status enum -126 à -130.">IMP_Erro_Status</a> ou <a class="el" href="group__g1.html#gac34b8a950212ec91c4e28df08684e49b" title="IMP_Erro_Leitura_Impressora enum -81 à -90.">IMP_Erro_Leitura_Impressora</a>.</li>
 </ul>
+<p >(*) Somente para impressora MP4200 ADV a partir da versão de FW 04.09. </p>
 
 </div>
 </div>
