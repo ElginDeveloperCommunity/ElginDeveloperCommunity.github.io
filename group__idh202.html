@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo-light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.6</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.7</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -111,41 +111,36 @@ $(document).ready(function(){initNavTree('group__idh202.html',''); initResizable
 <tr class="markdownTableHead">
 <th class="markdownTableHeadLeft">Parâmetro   </th><th class="markdownTableHeadLeft">Descrição    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">empresaSitef   </td><td class="markdownTableBodyLeft">Empresa Sitef. <br  />
- O tamanho é de 8 dígitos alfanuméricos.    </td></tr>
+<td class="markdownTableBodyLeft">funcao   </td><td class="markdownTableBodyLeft">Funções que podem ser chamadas pelo intent: <br  />
+configurar<br  />
+ativar<br  />
+vender<br  />
+debito<br  />
+credito<br  />
+pix<br  />
+cancelar<br  />
+relatorio<br  />
+reimprimir    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">modalidade   </td><td class="markdownTableBodyLeft">Funcionalidade do ElginTef que deseja executar. Por exemplo: <br  />
-0 - venda<br  />
-2 - débito<br  />
-3 - crédito<br  />
-200 - cancelamento <br  />
-114 - reimpressão <br  />
-    </td></tr>
+<td class="markdownTableBodyLeft">nome   </td><td class="markdownTableBodyLeft">Nome da aplicação    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">terminalSitef   </td><td class="markdownTableBodyLeft">Número de terminal Sitef. <br  />
-Se não informado o IDH irá usar o número de série do APOS ou    </td></tr>
+<td class="markdownTableBodyLeft">versao   </td><td class="markdownTableBodyLeft">Versão da aplicação    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">operador   </td><td class="markdownTableBodyLeft">Código do operador. O campo é alfanumérico com tamanho até 20 caracteres.    </td></tr>
+<td class="markdownTableBodyLeft">textoPinpad   </td><td class="markdownTableBodyLeft">Texto que vai aparecer no pinpad    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">data   </td><td class="markdownTableBodyLeft">Data fiscal no formato AAAAMMDD ou DD/MM/AA.    </td></tr>
+<td class="markdownTableBodyLeft">cnpjCpf   </td><td class="markdownTableBodyLeft">CNPJ ou CPF a ser ativado    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">hora   </td><td class="markdownTableBodyLeft">Hora fiscal no formato HHMMSS.    </td></tr>
+<td class="markdownTableBodyLeft">valor   </td><td class="markdownTableBodyLeft">Valor da transação    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">numeroCupom   </td><td class="markdownTableBodyLeft">Número do cupom fiscal correspondente à venda. O campo é alfanumérico com tamanho até 20 caracteres.    </td></tr>
+<td class="markdownTableBodyLeft">parcelas   </td><td class="markdownTableBodyLeft">Quantidade de parcelas    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">valor   </td><td class="markdownTableBodyLeft">Valor da venda. O campo é numérico com tamanho até 12 algarismos, onde os dois últimos dígitos são decimais, com vírgula ou ponto    </td></tr>
+<td class="markdownTableBodyLeft">financiamento   </td><td class="markdownTableBodyLeft">A vista(1), parcelado emissor(2) ou parcelado estabelecimento(3)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">CNPJ_CPF   </td><td class="markdownTableBodyLeft">CNPJ ou CPF do estabelecimento.Este campo não deve conter caracteres especiais e pode ser utilizado nos dados de subadquirência e no ParmsClient.    </td></tr>
+<td class="markdownTableBodyLeft">nsu   </td><td class="markdownTableBodyLeft">NSU da transação    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyLeft">numParcelas   </td><td class="markdownTableBodyLeft">Número de parcelas, em caso de compra parcelada. O campo é numérico e varia de acordo com o cartão utilizado.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">transacoesHabilitadas   </td><td class="markdownTableBodyLeft">Opções de pagamento que serão habilitadas. <br  />
-16: Débito <br  />
-26: A vista <br  />
-27: Loja <br  />
-28: ADM    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">comExterna   </td><td class="markdownTableBodyLeft">0   </td></tr>
+<td class="markdownTableBodyLeft">data   </td><td class="markdownTableBodyLeft">data no formato dd/mm/aa   </td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

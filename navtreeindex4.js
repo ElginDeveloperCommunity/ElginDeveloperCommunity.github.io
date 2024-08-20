@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"group__sp20.html#ga5b9b0af0c7756c7eee44b03ae8654337":[0,10,2,2,1,5],
 "group__sp20.html#ga68a451efbb3655387c28e9262857f3af":[0,10,2,2,1,18],
 "group__sp20.html#ga94e99168d4518a6bd160a0a0a8acc206":[0,10,2,2,1,19],
 "group__sp20.html#gaad575761910841fbdc23122b15eaa6d2":[0,10,2,2,1,22],
