@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo-light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.7</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.8</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -587,7 +587,7 @@ $(document).ready(function(){initNavTree('group__tf.html',''); initResizable(); 
 </ul>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>Indica o sequencial utilizado na operação a ser confirmada/cancelada. Esse é o sequencial opcionalmente informado no payload no início da operação, que também é retornado ao usuário ao término da coleta. </td></tr>
+    <tr><td class="paramname">id</td><td>Indica o sequencial utilizado na operação a ser confirmada/cancelada. Esse sequencial é coletado no final da operação solicitada, retornado ao usuário ao término da coleta. </td></tr>
     <tr><td class="paramname">acao</td><td>Indica a ação a ser realizada com a operação em questão: 0 - Cancelar 1 - Confirmar</td></tr>
   </table>
   </dd>
