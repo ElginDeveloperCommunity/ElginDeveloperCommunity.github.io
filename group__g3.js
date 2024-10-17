@@ -3,7 +3,7 @@ var group__g3 =
     [ "IntentDigitalHub", "group__idh1.html", "group__idh1" ],
     [ "Módulos", "group__g32.html", "group__g32" ],
     [ "SmartPOS", "group__g31.html", "group__g31" ],
-    [ "Mini PDV M10", "group__g30.html", "group__g30" ],
+    [ "Linha PosGo e M10", "group__g30.html", "group__g30" ],
     [ "GetNumeroSerie", "group__g3.html#ga97cbc158a3f59286945e59cc003dc81c", null ],
     [ "GetClasseDispositivo", "group__g3.html#gaf12e3b30983ce3a8997ac76a8f422fe7", null ],
     [ "GetModeloDispositivo", "group__g3.html#gac24e8343bf896c3c80dfaa09fdf8f8bb", null ],

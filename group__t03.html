@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Plataforma de Comunicação Elgin: Descrição das Chaves</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -45,9 +45,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo-light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.4</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.8</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -55,7 +55,7 @@
  </tbody>
 </table>
 </div>
-<!-- end header part --><!-- Gerado por Doxygen 1.9.4 -->
+<!-- end header part --><!-- Gerado por Doxygen 1.9.3 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('group__t03.html',''); initResizable();
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Descrição das Chaves<div class="ingroups"><a class="el" href="group__g7.html">E1 TEF</a> &raquo; <a class="el" href="group__t0.html">Modo Passivo</a></div></div></div>
+  <div class="headertitle"><div class="title">Descrição das Chaves<div class="ingroups"><a class="el" href="group__g7.html">E1 TEF</a> &raquo; <a class="el" href="group__t0.html">Modo Passivo (Troca de arquivos/GP)</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <h1>TRANSACOES SUPORTADAS</h1>
@@ -174,9 +174,9 @@ $(document).ready(function(){initNavTree('group__t03.html',''); initResizable();
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">010&minus;007   </td><td class="markdownTableBodyLeft">CODIGO_SERVICO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Indica o código do serviço.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">011&minus;000   </td><td class="markdownTableBodyLeft">CODIGO_DA_TRANSACAO   </td><td class="markdownTableBodyCenter">(I)(O)   </td><td class="markdownTableBodyLeft">Código identificador do tipo da transação.    </td></tr>
+<td class="markdownTableBodyCenter">011&minus;000   </td><td class="markdownTableBodyLeft">CODIGO_DA_TRANSACAO   </td><td class="markdownTableBodyCenter">(I)(O)   </td><td class="markdownTableBodyLeft">Código identificador do tipo da transação. [10: Cartão de crédito - à vista. 11: Cartào de crédito - parcelado pelo Estabelecimento. 12: Cartao de crédito - parcelado pelo Emissor. 20: Cartao de débito - à vista. 22: Cartào de débito - parcelado pelo Estabelecimento. 21: Cartào de débito - pré-datado]    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">012&minus;000   </td><td class="markdownTableBodyLeft">NUMERO_TRANSACAO_NSU   </td><td class="markdownTableBodyCenter">(I)(O)   </td><td class="markdownTableBodyLeft">Contém o Número Sequencial Único (NSU) da transação.    </td></tr>
+<td class="markdownTableBodyCenter">012&minus;000   </td><td class="markdownTableBodyLeft">NUMERO_TRANSACAO_NSU   </td><td class="markdownTableBodyCenter">(I)(O)   </td><td class="markdownTableBodyLeft">Contém o Número Sequencial Único (NSU) da transação. *OBS: Preencher com zeros a esquerda até completar 6 digitos em casos de cancelamento    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">013&minus;000   </td><td class="markdownTableBodyLeft">CODIGO_AUTORIZACAO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Contém um número de autorização de transação gerado pelo emissor do cartão    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -202,98 +202,104 @@ $(document).ready(function(){initNavTree('group__t03.html',''); initResizable();
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">028&minus;001   </td><td class="markdownTableBodyLeft">MARCA_RECORTE   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Indica a(s) linha(s) do comprovante onde há recorte    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">029&minus;xxx   </td><td class="markdownTableBodyLeft">VIA_UNICA   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Via única do comprovante    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">030&minus;000   </td><td class="markdownTableBodyLeft">TEXTO_OPERADOR   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Texto que, quando presente, deve ser apresentado pelo Terminal solicitador de TEF ao operador    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">040&minus;000   </td><td class="markdownTableBodyLeft">NOME_CARTAO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Nome do cartão ou do Emissor. O mesmo cartão pode ter nomes diferentes de acordo com a Rede Adquirente utilizada.    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">043&minus;000   </td><td class="markdownTableBodyLeft">NSU_HOST   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Indica o número de seqüência (NSU – Número Seqüencial Único) da transação atribuído pelo GP.    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">043&minus;001   </td><td class="markdownTableBodyLeft">NSU_HOST_TRANSACAO_ORIGINAL   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Indica o número de seqüência (NSU – Número Seqüencial Único) da transação atribuído pelo GP referente a venda cancelada    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">047&minus;000   </td><td class="markdownTableBodyLeft">CODIGO_RESPOSTA   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Código de resposta alfanumérico, validado em situações específicas.    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">050&minus;000   </td><td class="markdownTableBodyLeft">TAXA_SERVICO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Valor referente à taxa de serviço.    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">050&minus;001   </td><td class="markdownTableBodyLeft">TAXA_EMBARQUE   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Valor referente à taxa de embarque.    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">150&minus;000   </td><td class="markdownTableBodyLeft">CODIGO_ESTABELECIMENTO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Código do estabelecimento registrado no cadastro.    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">150&minus;001   </td><td class="markdownTableBodyLeft">CODIGO_CONTRATO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Código do contrato no servidor.    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">150&minus;003   </td><td class="markdownTableBodyLeft">CODIGO_AREA   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">É um campo para informar o Código de Área da Cidade.    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">200&minus;000   </td><td class="markdownTableBodyLeft">VALOR_SAQUE   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Valor do saque realizado    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">210&minus;004   </td><td class="markdownTableBodyLeft">NUMERO_TRILHA2   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Indica o número do cartão utilizado na transação para pagamento    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">210&minus;052   </td><td class="markdownTableBodyLeft">NUMERO_PDV   </td><td class="markdownTableBodyCenter">(I)(O)   </td><td class="markdownTableBodyLeft">Informa o número do PDV para o registro de ocorrência. Normalmente esta relacionado com o computador    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">210&minus;065   </td><td class="markdownTableBodyLeft">SALDO_DISPONIVEL   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Indica o valor do Saldo Disponível no cartão.    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">300&minus;001   </td><td class="markdownTableBodyLeft">DATA_VALIDADE_CARTAO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Informa a data de vencimento do cartão    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">375&minus;000   </td><td class="markdownTableBodyLeft">CODIGO_OPERACAO   </td><td class="markdownTableBodyCenter">(*O)   </td><td class="markdownTableBodyLeft">Código de retorno da operação realizada no produto de tef, normalmente retorno da DLL do produto configurado para chamada da operação    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">375&minus;001   </td><td class="markdownTableBodyLeft">MENSAGEM_OPERACAO   </td><td class="markdownTableBodyCenter">(*O)   </td><td class="markdownTableBodyLeft">Mensagem referente ao código de retorno    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">375&minus;002   </td><td class="markdownTableBodyLeft">SOLICITA_CUPOM_FISCAL   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Chave utilizada para indicar ao POS ElginPay que deve ser questionado ao cliente se o mesmo deseja cupom fiscal    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">375&minus;008   </td><td class="markdownTableBodyLeft">MODO_ENTRADA_CARTAO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Indica o modo como foi realizado a captura do cartão    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">375&minus;016   </td><td class="markdownTableBodyLeft">ESTABELECIMENTO   </td><td class="markdownTableBodyCenter">(I)(O)   </td><td class="markdownTableBodyLeft">Nome do estabelecimento    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">375&minus;017   </td><td class="markdownTableBodyLeft">APLICACAO   </td><td class="markdownTableBodyCenter">(I)   </td><td class="markdownTableBodyLeft">Nome da aplicação usado nos arquivos de entrada    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">375&minus;018   </td><td class="markdownTableBodyLeft">VERSAO_APLICACAO   </td><td class="markdownTableBodyCenter">(I)   </td><td class="markdownTableBodyLeft">Versão da aplicação usado nos arquivos de entrada    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">375&minus;019   </td><td class="markdownTableBodyLeft">LOJA   </td><td class="markdownTableBodyCenter">(I)(O)   </td><td class="markdownTableBodyLeft">Nome da Loja    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">375&minus;023   </td><td class="markdownTableBodyLeft">TEXTO_PINPAD   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Texto a ser apresentado no PINPAD    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">375&minus;024   </td><td class="markdownTableBodyLeft">ADM_USUARIO   </td><td class="markdownTableBodyCenter">(I)   </td><td class="markdownTableBodyLeft">Usuario para operações administrativas    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">375&minus;025   </td><td class="markdownTableBodyLeft">ADM_SENHA   </td><td class="markdownTableBodyCenter">(I)   </td><td class="markdownTableBodyLeft">Senha para operações administrativas    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">375&ndash;028   </td><td class="markdownTableBodyLeft">RETORNO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">0 = Requer confirmação da transação com CNF ou NCN/ 1 = não requer confirmação/ if &gt;= 2 = Erro    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">376&ndash;000   </td><td class="markdownTableBodyLeft">OPCAO_COLETA   </td><td class="markdownTableBodyCenter">(*I)   </td><td class="markdownTableBodyLeft">Tipo da coleta a ser realizada no pinpad ( 1 = RG, 2 = CPF, 3 = CNPJ, 4 = FONE)    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">376&ndash;001   </td><td class="markdownTableBodyLeft">DADO_COLETADO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Resultado da captura no pinpad de acordo com a solicitação 376-000    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">504&minus;000   </td><td class="markdownTableBodyLeft">CODIGO_OP_CELULAR   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Informa o código da operadora recarregado    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">600&minus;000   </td><td class="markdownTableBodyLeft">CNPJ_CREDENCIADORA   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">É o CNPJ da rede credenciadora do cartão de débito/crédito.    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">707&minus;000   </td><td class="markdownTableBodyLeft">VALOR_ORIGINAL   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Valor original da transação informado pela AC no campo 003-000 do arquivo de solicitação, em centavos. Este campo é informado pelo GP caso seja diferente do valor final da transação informado no campo 003-000 do arquivo de resposta.    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">708&minus;000   </td><td class="markdownTableBodyLeft">VALOR_TROCO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Valor de retirada em dinheiro (saque no cartão) realizada em conjunto com a transação de venda, em centavos.    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">709&minus;000   </td><td class="markdownTableBodyLeft">VALOR_DESCONTO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Valor do desconto concedido ao Cliente pela Rede Adquirente ou pelo Emissor para uma transação de venda, em centavos.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">713&minus;xxx   </td><td class="markdownTableBodyLeft">VIA_CLIENTE   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Via Cliente do comprovante    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">715&minus;xxx   </td><td class="markdownTableBodyLeft">VIA_ESTABELECIMENTO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Via Estabelecimento do comprovante    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">718&minus;000   </td><td class="markdownTableBodyLeft">TERMINAL   </td><td class="markdownTableBodyCenter">(I)(O)   </td><td class="markdownTableBodyLeft">Número lógico do terminal. Normalmente esta ligado ao PINPAD ou POS    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">729&minus;000   </td><td class="markdownTableBodyLeft">REQUER_CONFIRMACAO   </td><td class="markdownTableBodyCenter">(*O)   </td><td class="markdownTableBodyLeft">Indica o status da confirmação da transação. 1: transação não requer confirmação, ou já confirmada. 2: transação requer confirmação/ Se campo não presente o AC pode confirmar a transação se houver cupom a ser impresso ou pela chave 375-028.    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">731&minus;000   </td><td class="markdownTableBodyLeft">TIPO_CARTAO   </td><td class="markdownTableBodyCenter">(I)(O)   </td><td class="markdownTableBodyLeft">Tipo de cartão [0: qualquer / não definido (padrão) 1: crédito 2: débito 3: voucher]    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">737&minus;000   </td><td class="markdownTableBodyLeft">VIAS_IMPRIMIR   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Indica quais vias devem ser impressas: 0: NENHUM, 1: imprimir a via do Cliente, 2: imprimir a via do Estabelecimento, 3: imprimir vias do Cliente e do Estabelecimento    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">740&minus;000   </td><td class="markdownTableBodyLeft">PAN_MASCARADO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Número do cartão utilizado na transação, sempre mascarado.    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">741&minus;000   </td><td class="markdownTableBodyLeft">NOME_PORTADOR_CARTAO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Nome do Cliente, extraído do cartão ou informado pelo emissor.    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">742&minus;000   </td><td class="markdownTableBodyLeft">NOME_PRODUTO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Nome do Produto. Transações de venda: CREDITO, MASTERCARD DEBITO, etc.    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">743&minus;000   </td><td class="markdownTableBodyLeft">VALOR_DEVIDO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Valor restante a pagar, em centavos.    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">748&minus;000   </td><td class="markdownTableBodyLeft">NOME_CARTAO_PADRAO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Nome do cartão padronizado, este campo poderá ser utilizado pelo AC para gerar relatório com base no nome do cartão. Caso o intuito for esse, utilizar este campo ao invés do 040-000.    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyCenter">749&minus;000   </td><td class="markdownTableBodyLeft">MODALIDADE_PAGAMENTO   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Modalidade de pagamento: Cartão, carteira digital    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">750&minus;000   </td><td class="markdownTableBodyLeft">ID_PORTADOR_CARTEIRA_DIGITAL   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Forma de identificação do portador da carteira digital    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">805&minus;000   </td><td class="markdownTableBodyLeft">NUMERO_TELEFONE   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Campo que fornece o telefone do cliente, informação retornada do Autorizador.    </td></tr>
+<td class="markdownTableBodyCenter">750&minus;000   </td><td class="markdownTableBodyLeft">ID_PORTADOR_CARTEIRA_DIGITAL   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Forma de identificação do portador da carteira digital    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">805&minus;000   </td><td class="markdownTableBodyLeft">NUMERO_TELEFONE   </td><td class="markdownTableBodyCenter">(O)   </td><td class="markdownTableBodyLeft">Campo que fornece o telefone do cliente, informação retornada do Autorizador.    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyCenter">999&minus;999   </td><td class="markdownTableBodyLeft">REGISTRO_FINAL   </td><td class="markdownTableBodyCenter">(*I)(*O)   </td><td class="markdownTableBodyLeft">Indica o final do arquivo.   </td></tr>
 </table>
 </div><!-- contents -->
