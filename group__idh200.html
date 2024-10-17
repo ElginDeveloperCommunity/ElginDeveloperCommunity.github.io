@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Plataforma de Comunicação Elgin: Iniciando o Intent TEF</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -45,9 +45,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="logoElginDevelopersCommunity.PNG"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo-light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.4</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.8</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -55,7 +55,7 @@
  </tbody>
 </table>
 </div>
-<!-- end header part --><!-- Gerado por Doxygen 1.9.4 -->
+<!-- end header part --><!-- Gerado por Doxygen 1.9.3 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
@@ -108,45 +108,56 @@ $(document).ready(function(){initNavTree('group__idh200.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 <p >O primeiro passo é instanciar um objeto Intent passando o nome da aplicação como argumento, neste caso, o nome é <code>com.elgin.e1.digitalhub.TEF</code>. Através desta informação, o Android buscará o aplicativo do IDH entre os aplicativos instalados no dispositivo.</p>
-<p >Em seguida, devem ser configurados três parâmetros obrigatórios através da função putExtra(String, String): empresaSitef, CNPJ_CPF e modalidade. Esses e outros parâmetros estão detalhados <em>REFERENCIA TODO</em>.</p>
-<p >Por fim, se executa a função nativa do Android `startActivityForResult(Intent, int) passando como parâmetros o objeto Intent e um número arbitrário. Este número será utilizado como um ID para a recuperação de informações que o IDH enviará ao aplicativo que o acionou. Nesta documentação, utilizaremos o ID = 1234.</p>
-<p >O exemplo abaixo mostra uma chamada simples do fluxo de venda.</p>
+<p >Em seguida, devem ser configurados os parâmetros obrigatórios através da função putExtra(String, String). Esses e outros parâmetros estão detalhados <em>Referência</em>.</p>
 <div class="fragment"><div class="line">Intent i = <span class="keyword">new</span> Intent(<span class="stringliteral">&quot;com.elgin.e1.digitalhub.TEF&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;empresaSitef&quot;</span>, <span class="stringliteral">&quot;00000001&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;modalidade&quot;</span>, <span class="stringliteral">&quot;0&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;valor&quot;</span>, <span class="stringliteral">&quot;9000&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;CNPJ_CPF&quot;</span>, <span class="stringliteral">&quot;12345678912345&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;funcao&quot;</span>, <span class="stringliteral">&quot;configurar&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;nome&quot;</span>, <span class="stringliteral">&quot;Elgin&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;versao&quot;</span>, <span class="stringliteral">&quot;1.5.0&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;textoPinpad&quot;</span>, <span class="stringliteral">&quot;Elgin Tef&quot;</span>);</div>
 <div class="line">startActivityForResult(i,1234); <span class="comment">// ID = 1234</span></div>
-</div><!-- fragment --><p >Exemplos de chamada do IDH ElginTef</p>
-<p >a) Pagamento Para realizar o pagamento, a automação comercial pode fazer a seguinte chamada intent:</p>
+</div><!-- fragment --><p >Depois podemos ativar o terminal.</p>
 <div class="fragment"><div class="line">Intent i = <span class="keyword">new</span> Intent(<span class="stringliteral">&quot;com.elgin.e1.digitalhub.TEF&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;empresaSitef&quot;</span>, <span class="stringliteral">&quot;00000001&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;operador&quot;</span>, <span class="stringliteral">&quot;0001&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;data&quot;</span>, <span class="stringliteral">&quot;20140312&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;hora&quot;</span>, <span class="stringliteral">&quot;150000&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;numeroCupom&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;numParcelas&quot;</span>, <span class="stringliteral">&quot;3&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;modalidade&quot;</span>, <span class="stringliteral">&quot;0&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;valor&quot;</span>, <span class="stringliteral">&quot;9000&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;CNPJ_CPF&quot;</span>, <span class="stringliteral">&quot;12345678912345&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;funcao&quot;</span>, <span class="stringliteral">&quot;ativar&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;cnpjCpf&quot;</span>, <span class="stringliteral">&quot;00.000.000/0000-00&quot;</span>);</div>
+<div class="line">startActivityForResult(i,1234); <span class="comment">// ID = 1234</span></div>
+</div><!-- fragment --><p >Os 2 passos acima só é necessário fazer a primeira vez, nas próximas vezes tudo fica salvo no IDH. Os 2 passos também podem ser feitos direto na interface do IDH.</p>
+<p >Por fim, se executa a função nativa do Android startActivityForResult(Intent, int) passando como parâmetros o objeto Intent e um número arbitrário. Este número será utilizado como um ID para a recuperação de informações que o IDH enviará ao aplicativo que o acionou. Nesta documentação, utilizaremos o ID = 1234.</p>
+<p >Exemplos de transações do IDH ElginTef</p>
+<p ><em>Venda simples</em></p>
+<div class="fragment"><div class="line">Intent i = <span class="keyword">new</span> Intent(<span class="stringliteral">&quot;com.elgin.e1.digitalhub.TEF&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;funcao&quot;</span>, <span class="stringliteral">&quot;vender&quot;</span>);</div>
+<div class="line">startActivityForResult(i,1234); <span class="comment">// ID = 1234</span></div>
+</div><!-- fragment --><p ><em>Débito</em></p>
+<div class="fragment"><div class="line">Intent i = <span class="keyword">new</span> Intent(<span class="stringliteral">&quot;com.elgin.e1.digitalhub.TEF&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;funcao&quot;</span>, <span class="stringliteral">&quot;debito&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;valor&quot;</span>, <span class="stringliteral">&quot;1400&quot;</span>);</div>
 <div class="line">startActivityForResult(i,1234);</div>
-</div><!-- fragment --><p >b) Débito à vista</p>
+</div><!-- fragment --><p ><em>Crédito</em></p>
 <div class="fragment"><div class="line">Intent i = <span class="keyword">new</span> Intent(<span class="stringliteral">&quot;com.elgin.e1.digitalhub.TEF&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;empresaSitef&quot;</span>, <span class="stringliteral">&quot;00000001&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;operador&quot;</span>, <span class="stringliteral">&quot;0001&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;data&quot;</span>, <span class="stringliteral">&quot;20140312&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;hora&quot;</span>, <span class="stringliteral">&quot;150000&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;numeroCupom&quot;</span>, <span class="stringliteral">&quot;1&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;modalidade&quot;</span>, <span class="stringliteral">&quot;2&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;valor&quot;</span>, <span class="stringliteral">&quot;9000&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;restricoes&quot;</span>, <span class="stringliteral">&quot;TransacoesHabilitadas=16&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;CNPJ_CPF&quot;</span>, <span class="stringliteral">&quot;12345678912345&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;funcao&quot;</span>, <span class="stringliteral">&quot;credito&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;valor&quot;</span>, <span class="stringliteral">&quot;1500&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;parcelas&quot;</span>, <span class="stringliteral">&quot;3&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;financiamento&quot;</span>, <span class="stringliteral">&quot;3&quot;</span>);</div>
 <div class="line">startActivityForResult(i,1234);</div>
-</div><!-- fragment --><p >b) Cancelamento</p>
+</div><!-- fragment --><p ><em>Pix</em></p>
 <div class="fragment"><div class="line">Intent i = <span class="keyword">new</span> Intent(<span class="stringliteral">&quot;com.elgin.e1.digitalhub.TEF&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;empresaSitef&quot;</span>, <span class="stringliteral">&quot;00000001&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;modalidade&quot;</span>, <span class="stringliteral">&quot;200&quot;</span>);</div>
-<div class="line">i.putExtra(<span class="stringliteral">&quot;CNPJ_CPF&quot;</span>, <span class="stringliteral">&quot;12345678912345&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;funcao&quot;</span>, <span class="stringliteral">&quot;pix&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;valor&quot;</span>, <span class="stringliteral">&quot;13.00&quot;</span>);</div>
+<div class="line">startActivityForResult(i,1234);</div>
+</div><!-- fragment --><p ><em>Cancelamento</em></p>
+<div class="fragment"><div class="line">Intent i = <span class="keyword">new</span> Intent(<span class="stringliteral">&quot;com.elgin.e1.digitalhub.TEF&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;funcao&quot;</span>, <span class="stringliteral">&quot;cancelar&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;valor&quot;</span>, <span class="stringliteral">&quot;11.00&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;nsu&quot;</span>, <span class="stringliteral">&quot;000144&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;data&quot;</span>, <span class="stringliteral">&quot;10/05/23&quot;</span>);</div>
+<div class="line">startActivityForResult(i,1234);</div>
+</div><!-- fragment --><p ><em>Relatório</em></p>
+<div class="fragment"><div class="line">Intent i = <span class="keyword">new</span> Intent(<span class="stringliteral">&quot;com.elgin.e1.digitalhub.TEF&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;funcao&quot;</span>, <span class="stringliteral">&quot;relatorio&quot;</span>);</div>
+<div class="line">startActivityForResult(i,1234);</div>
+</div><!-- fragment --><p ><em>Reimprimir</em></p>
+<div class="fragment"><div class="line">Intent i = <span class="keyword">new</span> Intent(<span class="stringliteral">&quot;com.elgin.e1.digitalhub.TEF&quot;</span>);</div>
+<div class="line">i.putExtra(<span class="stringliteral">&quot;funcao&quot;</span>, <span class="stringliteral">&quot;reimprimir&quot;</span>);</div>
 <div class="line">startActivityForResult(i,1234);</div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->

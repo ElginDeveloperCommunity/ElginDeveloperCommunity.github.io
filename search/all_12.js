@@ -15,12 +15,13 @@ var searchData=
   ['limpamemoria_12',['LimpaMemoria',['../group___m0.html#ga90c744271b59a250c3cf7cf0b291e63d',1,'exportafuncoes.h']]],
   ['limpamodulo_13',['LimpaModulo',['../group___m0.html#ga9cbbed7bb745ebc319cc712efd14642f',1,'exportafuncoes.h']]],
   ['limparlayout_14',['LimparLayout',['../group__g54.html#ga938fa46ba0da0819f18365ec697cddc7',1,'exportafuncoes.h']]],
-  ['linha_5faltura_5finvalida_15',['LINHA_ALTURA_INVALIDA',['../group__g1.html#ggab1caacf1457d3a103207613c50d0e087a65e9d183f126559ab86a24d7b947c811',1,'codigoerro.h']]],
-  ['linha_5fcomprimento_5finvalido_16',['LINHA_COMPRIMENTO_INVALIDO',['../group__g1.html#ggab1caacf1457d3a103207613c50d0e087a66d661c8ed0c823b12f6aa69bacd316e',1,'codigoerro.h']]],
-  ['linha_5fcoordenada_5fx_5finvalida_17',['LINHA_COORDENADA_X_INVALIDA',['../group__g1.html#ggab1caacf1457d3a103207613c50d0e087af1c5f0b0cac932b164fdcf5872a153a1',1,'codigoerro.h']]],
-  ['linha_5fcoordenada_5fy_5finvalida_18',['LINHA_COORDENADA_Y_INVALIDA',['../group__g1.html#ggab1caacf1457d3a103207613c50d0e087a0bb43b91afc4224783d8c24035866b53',1,'codigoerro.h']]],
-  ['lista_20de_20itens_20obsoletos_19',['Lista de itens obsoletos',['../deprecated.html',1,'']]],
-  ['listareventos_20',['ListarEventos',['../group__g50.html#gaba33a5a6ed32a7e13144477919e0bc71',1,'exportafuncoes.h']]],
-  ['listavailablesatasjson_21',['ListAvailableSatAsJson',['../group__g2.html#gaa29a3413652539c0ea4df50c33a49009',1,'exportafuncoes.h']]],
-  ['logradouro_5finvalido_22',['LOGRADOURO_INVALIDO',['../group__g1.html#ggabce12b1307411516d5ae219d5e3da4fca80aaf8272c5849c7558829e520d0542d',1,'codigoerro.h']]]
+  ['linha_20posgo_20e_20m10_15',['Linha PosGo e M10',['../group__g30.html',1,'']]],
+  ['linha_5faltura_5finvalida_16',['LINHA_ALTURA_INVALIDA',['../group__g1.html#ggab1caacf1457d3a103207613c50d0e087a65e9d183f126559ab86a24d7b947c811',1,'codigoerro.h']]],
+  ['linha_5fcomprimento_5finvalido_17',['LINHA_COMPRIMENTO_INVALIDO',['../group__g1.html#ggab1caacf1457d3a103207613c50d0e087a66d661c8ed0c823b12f6aa69bacd316e',1,'codigoerro.h']]],
+  ['linha_5fcoordenada_5fx_5finvalida_18',['LINHA_COORDENADA_X_INVALIDA',['../group__g1.html#ggab1caacf1457d3a103207613c50d0e087af1c5f0b0cac932b164fdcf5872a153a1',1,'codigoerro.h']]],
+  ['linha_5fcoordenada_5fy_5finvalida_19',['LINHA_COORDENADA_Y_INVALIDA',['../group__g1.html#ggab1caacf1457d3a103207613c50d0e087a0bb43b91afc4224783d8c24035866b53',1,'codigoerro.h']]],
+  ['lista_20de_20itens_20obsoletos_20',['Lista de itens obsoletos',['../deprecated.html',1,'']]],
+  ['listareventos_21',['ListarEventos',['../group__g50.html#gaba33a5a6ed32a7e13144477919e0bc71',1,'exportafuncoes.h']]],
+  ['listavailablesatasjson_22',['ListAvailableSatAsJson',['../group__g2.html#gaa29a3413652539c0ea4df50c33a49009',1,'exportafuncoes.h']]],
+  ['logradouro_5finvalido_23',['LOGRADOURO_INVALIDO',['../group__g1.html#ggabce12b1307411516d5ae219d5e3da4fca80aaf8272c5849c7558829e520d0542d',1,'codigoerro.h']]]
 ];
