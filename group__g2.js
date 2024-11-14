@@ -1,6 +1,5 @@
 var group__g2 =
 [
-    [ "XML SAT", "group__s0.html", "group__s0" ],
     [ "AtivarSAT", "group__g2.html#gad4a90343e6150d00b8f80a35e105ff4c", null ],
     [ "EnviarDadosVenda", "group__g2.html#ga403fca8ecae9abeb9dd05b5b81ffa61e", null ],
     [ "CancelarUltimaVenda", "group__g2.html#gacfab3974c80bd4f3c716345a14562a9a", null ],

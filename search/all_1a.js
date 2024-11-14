@@ -51,7 +51,6 @@ var searchData=
   ['tipo_5finvalido_48',['TIPO_INVALIDO',['../group__g1.html#ggaaf847b41b132e891ed9cd18f57c1d54cade79caf92db1c9d9754baa722d16e9a5',1,'codigoerro.h']]],
   ['tipo_5fparametro_5finvalido_49',['TIPO_PARAMETRO_INVALIDO',['../group__g1.html#gga997c5e807d27e95e6e2cf73714524876a92a623e57f2022dbe40cf8bbdcb5cd1d',1,'codigoerro.h']]],
   ['tipoimpressao_50',['TipoImpressao',['../group__sp20.html#ga59529b807f980a3f1b2d0152ae27eb40',1,'ElginPay.h']]],
-  ['tratatimeoutcomunicacao_51',['TrataTimeoutComunicacao',['../group__s0.html#ga8212114daaa11e5b118a36260d77f0df',1,'exportafuncoes.h']]],
-  ['trocarcodigodeativacao_52',['TrocarCodigoDeAtivacao',['../group__g2.html#ga1a972ef2847ce97a80ce4704ecb3f442',1,'exportafuncoes.h']]],
-  ['térmica_53',['Térmica',['../group__g40.html',1,'(<em>Namespace</em> global)'],['../group___m1.html',1,'(<em>Namespace</em> global)']]]
+  ['trocarcodigodeativacao_51',['TrocarCodigoDeAtivacao',['../group__g2.html#ga1a972ef2847ce97a80ce4704ecb3f442',1,'exportafuncoes.h']]],
+  ['térmica_52',['Térmica',['../group__g40.html',1,'(<em>Namespace</em> global)'],['../group___m1.html',1,'(<em>Namespace</em> global)']]]
 ];

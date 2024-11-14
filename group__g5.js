@@ -5,6 +5,7 @@ var group__g5 =
     [ "ObterProtocoloComunicacao", "group__g5.html#ga0a5aed390271cd1296168fc6a1dc81db", null ],
     [ "ConfigurarProtocoloComunicacao", "group__g5.html#ga5dfef4c58be6722f2195bd507b21880d", null ],
     [ "AbrirSerial", "group__g5.html#ga7a2a471dd1975ddb354aa54957689f45", null ],
+    [ "AbrirUSB", "group__g5.html#gae29f8592b144fbd41f28e44feb486d4f", null ],
     [ "DirectIO", "group__g5.html#gaaa1cae14fe00890f9b468f438f4e4c12", null ],
     [ "Fechar", "group__g5.html#gab3ba406567f579ce6c96d562035d79b0", null ],
     [ "ObterTipoConexao", "group__g5.html#ga2de74dd1f5d987754d775740f5764ce5", null ],

@@ -4,6 +4,5 @@ var searchData=
   ['testaconexaonfce_1',['TestaConexaoNFCe',['../group__g50.html#gafd841a2391cdab971e4bbbf24f02495c',1,'exportafuncoes.h']]],
   ['teste_2',['Teste',['../group___m0.html#gae59c76694805242b556f36472f093a91',1,'exportafuncoes.h']]],
   ['testefimafim_3',['TesteFimAFim',['../group__g2.html#ga5dc413d155b0cce13065fbc8bcd62647',1,'exportafuncoes.h']]],
-  ['tratatimeoutcomunicacao_4',['TrataTimeoutComunicacao',['../group__s0.html#ga8212114daaa11e5b118a36260d77f0df',1,'exportafuncoes.h']]],
-  ['trocarcodigodeativacao_5',['TrocarCodigoDeAtivacao',['../group__g2.html#ga1a972ef2847ce97a80ce4704ecb3f442',1,'exportafuncoes.h']]]
+  ['trocarcodigodeativacao_4',['TrocarCodigoDeAtivacao',['../group__g2.html#ga1a972ef2847ce97a80ce4704ecb3f442',1,'exportafuncoes.h']]]
 ];

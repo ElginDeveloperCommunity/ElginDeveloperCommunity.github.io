@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo-light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.8</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.9</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -130,6 +130,9 @@ Funções</h2></td></tr>
 <tr class="memitem:ga7a2a471dd1975ddb354aa54957689f45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g5.html#ga7a2a471dd1975ddb354aa54957689f45">AbrirSerial</a> (const char *device, int baudrate, int length, char parity, int stopbits)</td></tr>
 <tr class="memdesc:ga7a2a471dd1975ddb354aa54957689f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abre uma conexão serial com a balança.  <a href="group__g5.html#ga7a2a471dd1975ddb354aa54957689f45">Mais...</a><br /></td></tr>
 <tr class="separator:ga7a2a471dd1975ddb354aa54957689f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae29f8592b144fbd41f28e44feb486d4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g5.html#gae29f8592b144fbd41f28e44feb486d4f">AbrirUSB</a> (int baudrate)</td></tr>
+<tr class="memdesc:gae29f8592b144fbd41f28e44feb486d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abre uma conexão usb com os conversores ch340 ou 341 e FTDI com a balança.  <a href="group__g5.html#gae29f8592b144fbd41f28e44feb486d4f">Mais...</a><br /></td></tr>
+<tr class="separator:gae29f8592b144fbd41f28e44feb486d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaa1cae14fe00890f9b468f438f4e4c12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g5.html#gaaa1cae14fe00890f9b468f438f4e4c12">DirectIO</a> (const char *wbuffer, unsigned int wlen, char *rdbuffer, unsigned int rdlen)</td></tr>
 <tr class="memdesc:gaaa1cae14fe00890f9b468f438f4e4c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envia comandos direto para a porta de comunicação.  <a href="group__g5.html#gaaa1cae14fe00890f9b468f438f4e4c12">Mais...</a><br /></td></tr>
 <tr class="separator:gaaa1cae14fe00890f9b468f438f4e4c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -515,6 +518,35 @@ Valores válidos: <blockquote class="doxtable">
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
+A função bem-sucedida deve retornar 0.<br  />
+<ul>
+<li>Para mais informações, consulte <a class="el" href="group__g1.html#gaedb3f16f89dfde80153d144d0e23c3ea" title="The Bal_Erro_Balanca enum -791 à -800.">Bal_Erro_Balanca</a>, <a class="el" href="group__g1.html#ga26f56f69fc2315144d2761e146b951de" title="The Bal_Erro_Protocolo enum -801 à -810.">Bal_Erro_Protocolo</a>, <a class="el" href="group__g1.html#gaf371e8afc279ea44082eb07a0e35b7a7" title="The Bal_Erro_Abertura enum -811 à -820.">Bal_Erro_Abertura</a> ou <a class="el" href="group__g1.html#gac8fd271395908a0ba0e1460d2e2ffc2a" title="The Bal_Erro_Outros enum -821 à -830.">Bal_Erro_Outros</a> </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="gae29f8592b144fbd41f28e44feb486d4f" name="gae29f8592b144fbd41f28e44feb486d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae29f8592b144fbd41f28e44feb486d4f">&#9670;&nbsp;</a></span>AbrirUSB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AbrirUSB </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>baudrate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Abre uma conexão usb com os conversores ch340 ou 341 e FTDI com a balança. </p>
+<ul>
+<li>OBS: Função disponível somente na biblioteca android.</li>
+</ul>
 <dl class="section return"><dt>Retorna</dt><dd>O retorno da função é do tipo numérico.<br  />
 A função bem-sucedida deve retornar 0.<br  />
 <ul>

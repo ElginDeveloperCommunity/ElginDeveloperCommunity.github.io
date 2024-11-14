@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo-light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.8</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.9</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -126,6 +126,7 @@ $(document).ready(function(){initNavTree('group__ma3.html',''); initResizable();
 <div class="line"><span class="keywordtype">int</span> protocolo = BalancaE1.ConfigurarProtocoloComunicacao(0); <span class="comment">// Configura protocolo como Protocolo 0</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> abrir = BalancaE1.AbrirSerial(9600, 8, <span class="charliteral">&#39;n&#39;</span>, 1); <span class="comment">// Configuracao serial da balanca...</span></div>
+<div class="line"><span class="keywordtype">int</span> abrir = BalancaE1.AbrirUSB(2400); <span class="comment">// Configuracao para conversores ch340 ou 341 e FTDI...</span></div>
 <div class="line">String peso = BalancaE1.LerPeso(1);</div>
 <div class="line"><span class="keywordtype">int</span> fechar = BalancaE1.Fechar();</div>
 <div class="line"> </div>
@@ -140,13 +141,15 @@ $(document).ready(function(){initNavTree('group__ma3.html',''); initResizable();
 </blockquote>
 <p>- <a class="el" href="group__g5.html#ga7a2a471dd1975ddb354aa54957689f45" title="Abre uma conexão serial com a balança.">AbrirSerial</a><br  />
 </p><ul>
+<li><a class="el" href="group__g5.html#gae29f8592b144fbd41f28e44feb486d4f" title="Abre uma conexão usb com os conversores ch340 ou 341 e FTDI com a balança.">AbrirUSB</a><br  />
+</li>
 <li><a class="el" href="group__g5.html#gabed56c6faf716867c79b20230da2c708" title="Configura o modelo da balança para uso na biblioteca.">ConfigurarModeloBalanca</a><br  />
 </li>
 <li><a class="el" href="group__g5.html#ga5dfef4c58be6722f2195bd507b21880d" title="Configura o protocolo de comunicação para uso na biblioteca.">ConfigurarProtocoloComunicacao</a><br  />
 </li>
-<li>DirectIO<br  />
+<li><a class="el" href="group__ma0.html#ga86f7243db250544a1173c75da1371a66" title="Envia comandos ESCPOS direto para a porta de comunicação.">DirectIO</a><br  />
 </li>
-<li>Fechar<br  />
+<li><a class="el" href="group__ma4.html#gab3ba406567f579ce6c96d562035d79b0" title="Método utilizado para encerrar uma conexão TCP/IP com o serviço.">Fechar</a><br  />
 </li>
 <li><a class="el" href="group__g5.html#gae7d43d8af4b950d574fe4e118312d3bb" title="Obtém o tempo máximo configurado para a duração da leitura contínua.">GetContinuousReadTime</a><br  />
 </li>
