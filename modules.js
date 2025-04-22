@@ -11,6 +11,10 @@ var modules =
     [ "Tef Web", "group__g14.html", null ],
     [ "E1 Pix4", "group__g13.html", "group__g13" ],
     [ "Android", "group__g3.html", "group__g3" ],
+    [ "Contextualização ElginTef", "group__ma62.html", null ],
+    [ "Integração ElginTef", "group__ma63.html", null ],
+    [ "Funções", "group__ma60.html", "group__ma60" ],
+    [ "JSON Retorno TEF", "group__ma61.html", null ],
     [ "ChangeLog", "group__g4.html", "group__g4" ],
     [ "Códigos de erro.", "group__g1.html", "group__g1" ]
 ];
