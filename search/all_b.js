@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['e1_20nfc_2de_0',['E1 NFC-e',['../group__g11.html',1,'']]],
+  ['e1_20notas_0',['E1 Notas',['../group__g11.html',1,'']]],
   ['e1_20pix4_1',['E1 Pix4',['../group__g13.html',1,'']]],
   ['e1_20tef_2',['E1 TEF',['../group__g7.html',1,'']]],
   ['e1_5fbridge_3',['E1_Bridge',['../group__g12.html',1,'']]],
@@ -10,7 +10,7 @@ var searchData=
   ['e1_5fpix4_5fandroid_7',['e1_pix4_android',['../md_src__e1__pix4_e1_pix4_android.html',1,'']]],
   ['e1_5fpix4_5fdescription_8',['e1_pix4_description',['../md_src__e1__pix4_e1_pix4_description.html',1,'']]],
   ['e1_5ftef_5fdescription_9',['e1_tef_description',['../md_src__e1__t_e_f_e1_tef_description.html',1,'']]],
-  ['emitirnota_10',['EmitirNota',['../group__g50.html#gaf7dd95f30cfdef6d9a27dc0ea4c5820f',1,'exportafuncoes.h']]],
+  ['emitirnota_10',['EmitirNota',['../group__g50.html#ga8740f9c8da5045b4e7a51f1d5674fa29',1,'exportafuncoes.h']]],
   ['enviaimagem_11',['EnviaImagem',['../group___m0.html#ga8ef71a5102630088a5b6af34dc92be37',1,'exportafuncoes.h']]],
   ['enviardadosvenda_12',['EnviarDadosVenda',['../group__g2.html#ga403fca8ecae9abeb9dd05b5b81ffa61e',1,'exportafuncoes.h']]],
   ['envio_13',['Envio',['../group__idh210.html',1,'']]],

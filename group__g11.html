@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plataforma de Comunicação Elgin: E1 NFC-e</title>
+<title>Plataforma de Comunicação Elgin: E1 Notas</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo-light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.13.10</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.14.00</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -106,105 +106,89 @@ $(document).ready(function(){initNavTree('group__g11.html',''); initResizable();
 <div class="header">
   <div class="summary">
 <a href="#groups">Módulos</a>  </div>
-  <div class="headertitle"><div class="title">E1 NFC-e</div></div>
+  <div class="headertitle"><div class="title">E1 Notas</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>E1 NFC-e.  
+<p>E1 Notas.  
 <a href="#details">Mais...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
 Módulos</h2></td></tr>
-<tr class="memitem:group__g50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html">Funcoes NFC-e E1</a></td></tr>
+<tr class="memitem:group__g50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html">Funcoes E1 Notas</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
-<p >E1 NFC-e. </p>
-<p >Esse módulo tem como objetivo simplificar o processo de integração dos pontos de venda (PDV) com o ambiente SEFAZ de emissão de nota fiscal do consumidor (NFCe). A aplicação de PDV deverá utilizar o módulo E1_NFCe para gerar os arquivos que serão transmitidos para sefaz e ao fim da geração devera enviar o arquivo gerado para função de emissão. Antes de entrar nos detalhes de integração se faz necessários alguns esclarecimentos sobre esse módulo. Abaixo estão detalhados os componentes desse módulo.</p>
+<p >E1 Notas. </p>
+<p >Esse módulo tem como objetivo simplificar o processo de integração dos pontos de venda (PDV) com o ambiente SEFAZ de emissão de nota fiscal do consumidor (NFCe). A aplicação de PDV deverá utilizar o módulo E1_Notas para gerar os arquivos que serão transmitidos para sefaz e ao fim da geração devera enviar o arquivo gerado para função de emissão. Antes de entrar nos detalhes de integração se faz necessários alguns esclarecimentos sobre esse módulo. Abaixo estão detalhados os componentes desse módulo.</p>
 <h3>Componentes</h3>
-<p ><b>E1_NFCe</b> <b></b>(DLL/SO) <b>-</b> Extensão de aplicativo (DLL/SO) onde estão exportadas todas as funções para criação do documento, emissão, consulta e cancelamento de notas. É por meio dessa que o PDV fara toda a integração com o sistema de NFCe.</p>
-<p ><b>api_settings.ini</b> <b>-</b> Arquivo de configuração da DLL, onde estão as configurações de timeout, identificação do PDV, URL da plataforma cloud e configurações de proxy.</p>
-<p ><b>NFCe</b> <b>Veraciti</b> <b>-</b> Plataforma cloud responsavel por realizar a assinatura e transmissão para a SEFAZ. Nesse sistema o parceiro irá criar toda sua estrutura, desde a empresa, PDVs, configuração dos certificados. Também será nessa plataforma onde o cliente poderá consultar as notas emitidas, status das notas, valores processados, etc.</p>
+<p ><b>E1_Notas</b> <b></b>(DLL/SO) <b>-</b> Extensão de aplicativo (DLL/SO) onde estão exportadas todas as funções para criação do documento, emissão, consulta e cancelamento de notas. É por meio dessa que o PDV fara toda a integração com o sistema de NFCe.</p>
+<p ><b>e1_notas.cfg</b> <b>-</b> Arquivo de configuração da DLL, onde estão as configurações de logs e url do emissor.</p>
+<p ><b>NFCe</b> <b>Veraciti</b> <b>-</b> Plataforma cloud responsavel pela custódia das emissões. Nesse sistema o parceiro irá criar toda sua estrutura. Também será nessa plataforma onde o cliente poderá consultar as notas emitidas, status das notas, valores processados, etc.</p>
 <h3>Por onde começar</h3>
 <h3>Cloud</h3>
 <ol type="1">
-<li>A integração com o sistema de emissão de nota fiscal do consumidor pode ser iniciado criando uma conta na plataforma da Veracitti. Solicite a criação da conta pelo canal de suporte ao desenvolvedor (<a href="https://elginbematech.com.br/chamado/">https://elginbematech.com.br/chamado/</a>).<br  />
+<li>A integração com o sistema de emissão de nota fiscal do consumidor pode ser iniciado criando uma conta na plataforma da Veracitti. Solicite a criação da conta pelo canal de suporte ao desenvolvedor no whatsapp 11 99851-9559 <br  />
 </li>
 <li>Após a criação da conta, acesse <a href="https://nfce.veraciti.com.br/#/">https://nfce.veraciti.com.br/#/</a> e realize o login com os dados recebidos no email de cadastro.<br  />
-</li>
-<li>Ao realizar o primeiro acesso, faça o cadastro da empresa emitente no menu lateral Empresas &gt; Empresas &gt; Nova Empresa.<br  />
- <em><b>Para emissão de NFCe será necessário carregar um certificado digital válido para assinatura dos documentos.</b></em><br  />
-<br  />
-<div class="image">
-<img src="cadastro_empresa.png" alt=""/>
-</div>
- <br  />
-</li>
-<li>Logo em seguida, crie um PDV clicando sobre Novo ponto de venda na opção PDVS da empresa criada anteriormente.<br  />
-<br  />
-<div class="image">
-<img src="cadastro_pdv.png" alt=""/>
-</div>
- <br  />
-</li>
-<li>Após a criação do Ponto de Venda, será gerado os dados de autenticação com a plataforma, ClientID e Client Secret. Essa informações são visualizadas na seta ao lado de Editar.<br  />
-<br  />
-<div class="image">
-<img src="dados_cliente.png" alt=""/>
-</div>
- <br  />
-</li>
-<li>Guarde estes dados para configuração do arquivo api_settings.ini.<br  />
 <h4></h4>
 </li>
 </ol>
 <h3>Local</h3>
-<p >• O primeiro passo será configurar no arquivo api_settings.ini os dados do PDV que está sendo configurado. Por padrão a DLL irá criar o arquivo caso no encontre o mesmo na pasta de trabalho. Seu conteúdo padrão deve ser parecido com o descrito abaixo:</p>
-<div class="fragment"><div class="line"><span class="preprocessor"># Endereços da plataforma NFCE Veraciti</span></div>
-<div class="line">[ENDPOINTS]</div>
-<div class="line">raiz=https:<span class="comment">//console.veraciti.com.br/api/v1/</span></div>
-<div class="line">token=auth2_token/token</div>
-<div class="line">emissao=nfce/</div>
-<div class="line">consulta=nfce/{nfe_key}</div>
-<div class="line">cancelamento=nfce/{nfe_key}/cancel</div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor"># Configurações de proxy</span></div>
-<div class="line">[CONFIGURACOES_PROXY]</div>
-<div class="line"><span class="preprocessor"># Aceita 0 para desativar e 1 para ativar</span></div>
-<div class="line">ativado=0</div>
-<div class="line">endereco_ip=127.0.0.1</div>
-<div class="line">porta=8080</div>
-<div class="line">usuario=null</div>
-<div class="line">senha=null</div>
-<div class="line"> </div>
-<div class="line"><span class="preprocessor"># Dados de autenticação com plataforma Veraciti</span></div>
-<div class="line">[DADOS_CLIENTE]</div>
-<div class="line"><span class="preprocessor"># Substituir por dados gerados na criação do PDV</span></div>
-<div class="line">client_id=null</div>
-<div class="line">client_secret=null</div>
-<div class="line">timeout_comunicacao=30</div>
-</div><!-- fragment --><p >Convenções usada nas chamadas das funções da biblioteca: <br  />
-<b>Windows</b><br  />
-</p><blockquote class="doxtable">
-<p >&zwj;__stdcall </p>
-</blockquote>
-<p><b>Linux</b><br  />
-</p><blockquote class="doxtable">
-<p >&zwj;__cdecl<br  />
+<p >• O primeiro passo será instalar o nosso emissor que pode ser baixado neste link: <a href="https://github.com/ElginDeveloperCommunity/SmartNFCeElgin">https://github.com/ElginDeveloperCommunity/SmartNFCeElgin</a> <br  />
+ • Para instalação, é preciso ter estes dados em mãos: <br  />
+ </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Campo   </th><th class="markdownTableHeadNone">Descrição    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Nome Fantasia do estabelecimento   </td><td class="markdownTableBodyNone">Nome do estabelecimento    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">UF   </td><td class="markdownTableBodyNone">Estado    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">IE   </td><td class="markdownTableBodyNone">Inscrição estadual    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">IM   </td><td class="markdownTableBodyNone">Inscrição municipal    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">PDV   </td><td class="markdownTableBodyNone">Número do PDV    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Código da licença   </td><td class="markdownTableBodyNone">Licença fornecida pela Elgin    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Client ID   </td><td class="markdownTableBodyNone">Número fornecido pela Elgin    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Escolher o ambiente   </td><td class="markdownTableBodyNone">Homologação ou produção    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Regime tributário   </td><td class="markdownTableBodyNone">Regime tributário do estabelecimento    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">CSC   </td><td class="markdownTableBodyNone">Código de Segurança do Contribuinte    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ID CSC   </td><td class="markdownTableBodyNone">Identificador numérico do CSC cadastrado na SEFAZ    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Certificado digital   </td><td class="markdownTableBodyNone">Certificado digital A1    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Senha do certificado   </td><td class="markdownTableBodyNone">Senha do certificado    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Selecionar o diretório   </td><td class="markdownTableBodyNone">Seleção do diretório    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Habilitar logs   </td><td class="markdownTableBodyNone">Logs da aplicação   </td></tr>
+</table>
+<p >• As informações CSC e ID CSC devem ser obtidas ao habilitar o emissor em suas respectivas UFs: <br  />
 </p>
-</blockquote>
-<p>• Localmente, o PDV deve carregar a DLL/SO e realizar as chamadas referente a criação do documento de<br  />
- acordo com a venda e então chamar a função de Emissão da nota.<br  />
- • Ao fim desse fluxo o PDV irá receber um json com os detalhes da emissão e o arquivo de XML processado pela<br  />
- sefaz em BASE64.<br  />
- • O PDV pode ainda usar a função de decodificação da nota para traduzir o BASE64 e gerar o arquivo em uma<br  />
- estrutura de pasta organizadas por data.<br  />
-<br  />
- O fluxo de integração com o a DLL segue os seguintes passos:</p>
+<p >O fluxo de integração com o a DLL segue os seguintes passos:</p>
 <div class="image">
 <img src="fluxo_basico_integracao.jpg" alt=""/>
 </div>
- </div><!-- contents -->
+<p >• O arquivo e1_notas.cfg tem os seguintes campos: <br  />
+ </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Campo   </th><th class="markdownTableHeadNone">Descrição    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">enableLogs   </td><td class="markdownTableBodyNone">false/true ativa ou desativa os logs    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">useCustomUrlBase   </td><td class="markdownTableBodyNone">false/true ativa ou desativa o uso de url customizada para o emissor    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">customUrlBase   </td><td class="markdownTableBodyNone">url customizada do emissor   </td></tr>
+</table>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->

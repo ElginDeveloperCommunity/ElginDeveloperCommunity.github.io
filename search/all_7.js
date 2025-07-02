@@ -2,7 +2,7 @@ var searchData=
 [
   ['abreconexaodisplay_0',['AbreConexaoDisplay',['../group__g130.html#ga438acbaa12c823456a108e6cae01ff84',1,'e1_pix4_funcoes.h']]],
   ['abreconexaoimpressora_1',['AbreConexaoImpressora',['../group___m1.html#ga928f0795631b062f8d5c8c20b9681d8d',1,'exportafuncoes.h']]],
-  ['abrecupomvenda_2',['AbreCupomVenda',['../group__g50.html#gaac86a98c391135a7d0510c5fb1614df5',1,'exportafuncoes.h']]],
+  ['abrecupomvenda_2',['AbreCupomVenda',['../group__g50.html#gaad545cfb1bd3297b7da3ccf48214a919',1,'exportafuncoes.h']]],
   ['abregaveta_3',['AbreGaveta',['../group___m1.html#ga82f718c7155c604104b0b2fb5e800a40',1,'exportafuncoes.h']]],
   ['abregavetaelgin_4',['AbreGavetaElgin',['../group___m1.html#ga0477cb1087969802c31407757eb23073',1,'exportafuncoes.h']]],
   ['abreportaserial_5',['AbrePortaSerial',['../group__g10.html#gaa4cbd7569b6235c42acab08776874d47',1,'exportafuncoesposte.h']]],

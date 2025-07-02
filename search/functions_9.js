@@ -15,6 +15,5 @@ var searchData=
   ['limpamemoria_12',['LimpaMemoria',['../group___m0.html#ga90c744271b59a250c3cf7cf0b291e63d',1,'exportafuncoes.h']]],
   ['limpamodulo_13',['LimpaModulo',['../group___m0.html#ga9cbbed7bb745ebc319cc712efd14642f',1,'exportafuncoes.h']]],
   ['limparlayout_14',['LimparLayout',['../group__g54.html#ga938fa46ba0da0819f18365ec697cddc7',1,'exportafuncoes.h']]],
-  ['listareventos_15',['ListarEventos',['../group__g50.html#gaba33a5a6ed32a7e13144477919e0bc71',1,'exportafuncoes.h']]],
-  ['listavailablesatasjson_16',['ListAvailableSatAsJson',['../group__g2.html#gaa29a3413652539c0ea4df50c33a49009',1,'exportafuncoes.h']]]
+  ['listavailablesatasjson_15',['ListAvailableSatAsJson',['../group__g2.html#gaa29a3413652539c0ea4df50c33a49009',1,'exportafuncoes.h']]]
 ];
