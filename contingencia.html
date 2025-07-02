@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento GVP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #74ebd5, #9face6);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header {
+		    position: fixed;
+            top: 100px;
+            background-color: #ffffffcc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+            color: #5e5ee6;
+        }
+
+        header p {
+            font-size: 1rem;
+            margin: 5px 0 0;
+            color: #333;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CONTINGÊNCIA ATENDIMENTO ELGIN</h1>
+        <p>Inicie o atendimento clicando no icone de chat no canto inferiro direito</p>
+    </header>
+    
+    <!-- Embed do GVP -->
+    <script type="text/javascript">
+        var GVP_AccountKey = "Rk5ce23oPU6F8dadrhgmnd7sYv4zUVzv_vzbyeaEq0Rc=_NenLYiytats=", GVP_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s2 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0]; 
+            s1.async = true; s1.src = "https://app.gvpomni.com/embed/monitoramento.js"; s1.charset = "UTF-8"; s2.src = "https://app.gvpomni.com/embed/jquery.gvp.js"; 
+            s0.parentNode.insertBefore(s2, s0); s0.parentNode.insertBefore(s1, s0); 
+            jqgvp = jQuery.noConflict(true); 
+        })();
+    </script>
+
+</body>
+</html>
