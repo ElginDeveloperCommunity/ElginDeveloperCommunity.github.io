@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo-light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.14.01</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.14.02</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -120,9 +120,9 @@ Módulos</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <p >E1 Notas. </p>
-<p >Esse módulo tem como objetivo simplificar o processo de integração dos pontos de venda (PDV) com o ambiente SEFAZ de emissão de nota fiscal do consumidor (NFCe). A aplicação de PDV deverá utilizar o módulo E1_Notas para gerar os arquivos que serão transmitidos para sefaz e ao fim da geração devera enviar o arquivo gerado para função de emissão. Antes de entrar nos detalhes de integração se faz necessários alguns esclarecimentos sobre esse módulo. Abaixo estão detalhados os componentes desse módulo.</p>
+<p >Esse módulo tem como objetivo simplificar o processo de integração dos pontos de venda (PDV) com o ambiente SEFAZ de emissão de nota fiscal do consumidor (NFCe). A aplicação de PDV deverá utilizar o módulo E1_Notas para gerar os arquivos que serão transmitidos para sefaz e ao fim da geração devera enviar o arquivo gerado para função de emissão. Antes de entrar nos detalhes de integração se faz necessários alguns esclarecimentos sobre esse módulo. É importante salientar que o emissor é responsável por todo o processo de emissão em contingência, desde entrada, inutilização, envio das notas quando reestabelecida a conexão com a internet. Abaixo estão detalhados os componentes desse módulo.</p>
 <h3>Componentes</h3>
-<p ><b>E1_Notas</b> <b></b>(DLL/SO) <b>-</b> Extensão de aplicativo (DLL/SO) onde estão exportadas todas as funções para criação do documento, emissão, consulta e cancelamento de notas. É por meio dessa que o PDV fara toda a integração com o sistema de NFCe.</p>
+<p ><b>E1_Notas</b> <b></b>(DLL/SO) <b>-</b> Extensão de aplicativo (DLL/SO) onde estão exportadas todas as funções para criação do documento, emissão, consulta e cancelamento de notas. É por meio dessa que o PDV fara toda a integração com o sistema de NFCe. Convenção de chamada: <b>cdecl</b> <b></b>.</p>
 <p ><b>e1_notas.cfg</b> <b>-</b> Arquivo de configuração da DLL, onde estão as configurações de logs e url do emissor.</p>
 <p ><b>NFCe</b> <b>Veraciti</b> <b>-</b> Plataforma cloud responsavel pela custódia das emissões. Nesse sistema o parceiro irá criar toda sua estrutura. Também será nessa plataforma onde o cliente poderá consultar as notas emitidas, status das notas, valores processados, etc.</p>
 <h3>Por onde começar</h3>
