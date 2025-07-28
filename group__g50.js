@@ -49,5 +49,10 @@ var group__g50 =
     [ "InformaValorTotalTributos", "group__g50.html#ga56a3285d2e3d6d4cb3581b4e3e934b7d", null ],
     [ "InformaPagamento", "group__g50.html#ga07f5232ae8e2b4905ab315559c6a2d2e", null ],
     [ "InformaValorTroco", "group__g50.html#gafd4593d3309b9d2a62d35d9e8b069b14", null ],
-    [ "FechaCupomVenda", "group__g50.html#gabe9024f69527ec2fc15919de9d09a9df", null ]
+    [ "FechaCupomVenda", "group__g50.html#gabe9024f69527ec2fc15919de9d09a9df", null ],
+    [ "CartaDeCorrecao", "group__g50.html#gabb4509e3f5786ec4ec4d3880a439fd87", null ],
+    [ "InformaInformacoesAdicionais", "group__g50.html#ga9ca6d1e1349a1791951b260c878186b2", null ],
+    [ "InformaObservacoesContribuinte", "group__g50.html#ga9f968851d3cf38af316cd946ea7e27f3", null ],
+    [ "InformaObservacoesFisco", "group__g50.html#ga1ff3535c0bc4a15f1aa4a7f593d10b69", null ],
+    [ "InformaProcessoReferenciado", "group__g50.html#ga923acdfc437529afabb047f8917c9631", null ]
 ];

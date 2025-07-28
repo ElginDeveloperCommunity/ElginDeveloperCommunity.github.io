@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo-light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.14.03</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.14.04</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -262,6 +262,21 @@ Funções</h2></td></tr>
 <tr class="memitem:gabe9024f69527ec2fc15919de9d09a9df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gabe9024f69527ec2fc15919de9d09a9df">FechaCupomVenda</a> (char *path)</td></tr>
 <tr class="memdesc:gabe9024f69527ec2fc15919de9d09a9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fecha o cupom de venda e gera o XML final.  <a href="group__g50.html#gabe9024f69527ec2fc15919de9d09a9df">Mais...</a><br /></td></tr>
 <tr class="separator:gabe9024f69527ec2fc15919de9d09a9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb4509e3f5786ec4ec4d3880a439fd87"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gabb4509e3f5786ec4ec4d3880a439fd87">CartaDeCorrecao</a> (char *chCFe, char *xCorrecao)</td></tr>
+<tr class="memdesc:gabb4509e3f5786ec4ec4d3880a439fd87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para criar uma carta de correção.  <a href="group__g50.html#gabb4509e3f5786ec4ec4d3880a439fd87">Mais...</a><br /></td></tr>
+<tr class="separator:gabb4509e3f5786ec4ec4d3880a439fd87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ca6d1e1349a1791951b260c878186b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga9ca6d1e1349a1791951b260c878186b2">InformaInformacoesAdicionais</a> (char *infAdFiscoOp, char *infCplOp)</td></tr>
+<tr class="memdesc:ga9ca6d1e1349a1791951b260c878186b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para informar as informações adicionais do documento fiscal.  <a href="group__g50.html#ga9ca6d1e1349a1791951b260c878186b2">Mais...</a><br /></td></tr>
+<tr class="separator:ga9ca6d1e1349a1791951b260c878186b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f968851d3cf38af316cd946ea7e27f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga9f968851d3cf38af316cd946ea7e27f3">InformaObservacoesContribuinte</a> (char *xCampo, char *xTexto)</td></tr>
+<tr class="memdesc:ga9f968851d3cf38af316cd946ea7e27f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para informar campos de uso livre do contribuinte.  <a href="group__g50.html#ga9f968851d3cf38af316cd946ea7e27f3">Mais...</a><br /></td></tr>
+<tr class="separator:ga9f968851d3cf38af316cd946ea7e27f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ff3535c0bc4a15f1aa4a7f593d10b69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga1ff3535c0bc4a15f1aa4a7f593d10b69">InformaObservacoesFisco</a> (char *xCampo, char *xTexto)</td></tr>
+<tr class="memdesc:ga1ff3535c0bc4a15f1aa4a7f593d10b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para informar campos de uso livre do fisco.  <a href="group__g50.html#ga1ff3535c0bc4a15f1aa4a7f593d10b69">Mais...</a><br /></td></tr>
+<tr class="separator:ga1ff3535c0bc4a15f1aa4a7f593d10b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga923acdfc437529afabb047f8917c9631"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga923acdfc437529afabb047f8917c9631">InformaProcessoReferenciado</a> (char *nProc, int indProc)</td></tr>
+<tr class="memdesc:ga923acdfc437529afabb047f8917c9631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para informar processo referenciado na nota fiscal.  <a href="group__g50.html#ga923acdfc437529afabb047f8917c9631">Mais...</a><br /></td></tr>
+<tr class="separator:ga923acdfc437529afabb047f8917c9631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <h2 class="groupheader">Funções</h2>
@@ -4891,6 +4906,196 @@ Funções</h2></td></tr>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>Caminho para salvar o arquivo XML.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gabb4509e3f5786ec4ec4d3880a439fd87" name="gabb4509e3f5786ec4ec4d3880a439fd87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb4509e3f5786ec4ec4d3880a439fd87">&#9670;&nbsp;</a></span>CartaDeCorrecao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * CartaDeCorrecao </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>chCFe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xCorrecao</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para criar uma carta de correção. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chCFe</td><td>chave de acesso. </td></tr>
+    <tr><td class="paramname">xCorrecao</td><td>texto de correção.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será o conteúdo da resposta HTTP(200). </dd></dl>
+
+</div>
+</div>
+<a id="ga9ca6d1e1349a1791951b260c878186b2" name="ga9ca6d1e1349a1791951b260c878186b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ca6d1e1349a1791951b260c878186b2">&#9670;&nbsp;</a></span>InformaInformacoesAdicionais()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaInformacoesAdicionais </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>infAdFiscoOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>infCplOp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para informar as informações adicionais do documento fiscal. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">infAdFiscoOp</td><td>informações adicionais de interesse do fisco. </td></tr>
+    <tr><td class="paramname">infCplOp</td><td>informações complementares de interesse do contribuinte.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga9f968851d3cf38af316cd946ea7e27f3" name="ga9f968851d3cf38af316cd946ea7e27f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f968851d3cf38af316cd946ea7e27f3">&#9670;&nbsp;</a></span>InformaObservacoesContribuinte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaObservacoesContribuinte </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xCampo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xTexto</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para informar campos de uso livre do contribuinte. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xCampo</td><td>nome do campo definido pelo contribuinte. </td></tr>
+    <tr><td class="paramname">xTexto</td><td>texto que será informado no campo.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga1ff3535c0bc4a15f1aa4a7f593d10b69" name="ga1ff3535c0bc4a15f1aa4a7f593d10b69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ff3535c0bc4a15f1aa4a7f593d10b69">&#9670;&nbsp;</a></span>InformaObservacoesFisco()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaObservacoesFisco </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xCampo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xTexto</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para informar campos de uso livre do fisco. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xCampo</td><td>nome do campo definido pelo fisco. </td></tr>
+    <tr><td class="paramname">xTexto</td><td>texto que será informado no campo.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga923acdfc437529afabb047f8917c9631" name="ga923acdfc437529afabb047f8917c9631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga923acdfc437529afabb047f8917c9631">&#9670;&nbsp;</a></span>InformaProcessoReferenciado()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaProcessoReferenciado </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nProc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indProc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para informar processo referenciado na nota fiscal. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nProc</td><td>número do processo referenciado. </td></tr>
+    <tr><td class="paramname">indProc</td><td>indicador da origem do processo (0 - Justiça Federal, 1 - Justiça Estadual, etc.).</td></tr>
   </table>
   </dd>
 </dl>
