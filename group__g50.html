@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo-light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.14.04</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.14.05</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -277,6 +277,27 @@ Funções</h2></td></tr>
 <tr class="memitem:ga923acdfc437529afabb047f8917c9631"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga923acdfc437529afabb047f8917c9631">InformaProcessoReferenciado</a> (char *nProc, int indProc)</td></tr>
 <tr class="memdesc:ga923acdfc437529afabb047f8917c9631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para informar processo referenciado na nota fiscal.  <a href="group__g50.html#ga923acdfc437529afabb047f8917c9631">Mais...</a><br /></td></tr>
 <tr class="separator:ga923acdfc437529afabb047f8917c9631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d683cb0bdd9c9eb4e447da718aa8cbe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga9d683cb0bdd9c9eb4e447da718aa8cbe">LoadPDF</a> ()</td></tr>
+<tr class="memdesc:ga9d683cb0bdd9c9eb4e447da718aa8cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para carregar a biblioteca E1_Pdf.  <a href="group__g50.html#ga9d683cb0bdd9c9eb4e447da718aa8cbe">Mais...</a><br /></td></tr>
+<tr class="separator:ga9d683cb0bdd9c9eb4e447da718aa8cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74ba769e0322343c941b3d35781c9d4b"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga74ba769e0322343c941b3d35781c9d4b">ConfigurarDiretorioSaidaPDF</a> (char *path)</td></tr>
+<tr class="memdesc:ga74ba769e0322343c941b3d35781c9d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para configurar o diretório de saída dos DANFEs em PDF.  <a href="group__g50.html#ga74ba769e0322343c941b3d35781c9d4b">Mais...</a><br /></td></tr>
+<tr class="separator:ga74ba769e0322343c941b3d35781c9d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf6f2d4377308da19a4d23f70da3df5e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gabf6f2d4377308da19a4d23f70da3df5e">GerarDanfeNFCePDF</a> (char *path, int indexcsc, char *csc)</td></tr>
+<tr class="memdesc:gabf6f2d4377308da19a4d23f70da3df5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para gerar um DANFE NFC-e em PDF.  <a href="group__g50.html#gabf6f2d4377308da19a4d23f70da3df5e">Mais...</a><br /></td></tr>
+<tr class="separator:gabf6f2d4377308da19a4d23f70da3df5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b617e61c31021ce43d3fc9f4b88eafe"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga7b617e61c31021ce43d3fc9f4b88eafe">GerarDanfeNFCePersonalizadoPDF</a> (char *path, int indexcsc, char *csc, int param)</td></tr>
+<tr class="memdesc:ga7b617e61c31021ce43d3fc9f4b88eafe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para gerar um DANFE NFC-e personalizado em PDF.  <a href="group__g50.html#ga7b617e61c31021ce43d3fc9f4b88eafe">Mais...</a><br /></td></tr>
+<tr class="separator:ga7b617e61c31021ce43d3fc9f4b88eafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2595ea98695908ebd83edf45b9ac963"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaf2595ea98695908ebd83edf45b9ac963">GerarDanfeNFePDF</a> (char *path, char *logoPath)</td></tr>
+<tr class="memdesc:gaf2595ea98695908ebd83edf45b9ac963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para gerar um DANFE NF-e em PDF.  <a href="group__g50.html#gaf2595ea98695908ebd83edf45b9ac963">Mais...</a><br /></td></tr>
+<tr class="separator:gaf2595ea98695908ebd83edf45b9ac963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga511846dd30dfe5fb9a85641ea6f334b0"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga511846dd30dfe5fb9a85641ea6f334b0">GerarDanfeNFePersonalizadoPDF</a> (char *path, char *logoPath, int layout, int param)</td></tr>
+<tr class="memdesc:ga511846dd30dfe5fb9a85641ea6f334b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para gerar um DANFE NF-e personalizado em PDF.  <a href="group__g50.html#ga511846dd30dfe5fb9a85641ea6f334b0">Mais...</a><br /></td></tr>
+<tr class="separator:ga511846dd30dfe5fb9a85641ea6f334b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96f5e785eca4cff50aeeb18f885cbdac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga96f5e785eca4cff50aeeb18f885cbdac">UnloadPDF</a> ()</td></tr>
+<tr class="memdesc:ga96f5e785eca4cff50aeeb18f885cbdac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para descarregar a biblioteca E1_Pdf.  <a href="group__g50.html#ga96f5e785eca4cff50aeeb18f885cbdac">Mais...</a><br /></td></tr>
+<tr class="separator:ga96f5e785eca4cff50aeeb18f885cbdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <h2 class="groupheader">Funções</h2>
@@ -5099,6 +5120,262 @@ Funções</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga9d683cb0bdd9c9eb4e447da718aa8cbe" name="ga9d683cb0bdd9c9eb4e447da718aa8cbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d683cb0bdd9c9eb4e447da718aa8cbe">&#9670;&nbsp;</a></span>LoadPDF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LoadPDF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para carregar a biblioteca E1_Pdf. </p>
+<p >Esta função inicializa e carrega todos os recursos necessários para uso das funções de geração de PDF.</p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga74ba769e0322343c941b3d35781c9d4b" name="ga74ba769e0322343c941b3d35781c9d4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74ba769e0322343c941b3d35781c9d4b">&#9670;&nbsp;</a></span>ConfigurarDiretorioSaidaPDF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * ConfigurarDiretorioSaidaPDF </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para configurar o diretório de saída dos DANFEs em PDF. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Caminho completo do diretório de saída.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna mensagem de status (erro ou confirmação). </dd></dl>
+
+</div>
+</div>
+<a id="gabf6f2d4377308da19a4d23f70da3df5e" name="gabf6f2d4377308da19a4d23f70da3df5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf6f2d4377308da19a4d23f70da3df5e">&#9670;&nbsp;</a></span>GerarDanfeNFCePDF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * GerarDanfeNFCePDF </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indexcsc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>csc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para gerar um DANFE NFC-e em PDF. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Caminho completo do arquivo XML da NFC-e. </td></tr>
+    <tr><td class="paramname">indexcsc</td><td>Índice do CSC (Código de Segurança do Contribuinte). </td></tr>
+    <tr><td class="paramname">csc</td><td>Código de Segurança do Contribuinte.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna o caminho do arquivo PDF gerado ou mensagem de erro. </dd></dl>
+
+</div>
+</div>
+<a id="ga7b617e61c31021ce43d3fc9f4b88eafe" name="ga7b617e61c31021ce43d3fc9f4b88eafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7b617e61c31021ce43d3fc9f4b88eafe">&#9670;&nbsp;</a></span>GerarDanfeNFCePersonalizadoPDF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * GerarDanfeNFCePersonalizadoPDF </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indexcsc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>csc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para gerar um DANFE NFC-e personalizado em PDF. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Caminho completo do arquivo XML da NFC-e. </td></tr>
+    <tr><td class="paramname">indexcsc</td><td>Índice do CSC (Código de Segurança do Contribuinte). </td></tr>
+    <tr><td class="paramname">csc</td><td>Código de Segurança do Contribuinte. </td></tr>
+    <tr><td class="paramname">param</td><td>Parâmetro adicional para personalização.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna o caminho do arquivo PDF gerado ou mensagem de erro. </dd></dl>
+
+</div>
+</div>
+<a id="gaf2595ea98695908ebd83edf45b9ac963" name="gaf2595ea98695908ebd83edf45b9ac963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2595ea98695908ebd83edf45b9ac963">&#9670;&nbsp;</a></span>GerarDanfeNFePDF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * GerarDanfeNFePDF </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>logoPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para gerar um DANFE NF-e em PDF. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Caminho completo do arquivo XML da NF-e. </td></tr>
+    <tr><td class="paramname">logoPath</td><td>Caminho completo do arquivo de imagem do logotipo.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna o caminho do arquivo PDF gerado ou mensagem de erro. </dd></dl>
+
+</div>
+</div>
+<a id="ga511846dd30dfe5fb9a85641ea6f334b0" name="ga511846dd30dfe5fb9a85641ea6f334b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga511846dd30dfe5fb9a85641ea6f334b0">&#9670;&nbsp;</a></span>GerarDanfeNFePersonalizadoPDF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * GerarDanfeNFePersonalizadoPDF </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>logoPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>layout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para gerar um DANFE NF-e personalizado em PDF. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Caminho completo do arquivo XML da NF-e. </td></tr>
+    <tr><td class="paramname">logoPath</td><td>Caminho completo do arquivo de imagem do logotipo. </td></tr>
+    <tr><td class="paramname">layout</td><td>Tipo de layout a ser utilizado. </td></tr>
+    <tr><td class="paramname">param</td><td>Parâmetro adicional para personalização.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna o caminho do arquivo PDF gerado ou mensagem de erro. </dd></dl>
+
+</div>
+</div>
+<a id="ga96f5e785eca4cff50aeeb18f885cbdac" name="ga96f5e785eca4cff50aeeb18f885cbdac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga96f5e785eca4cff50aeeb18f885cbdac">&#9670;&nbsp;</a></span>UnloadPDF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UnloadPDF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para descarregar a biblioteca E1_Pdf. </p>
+<p >Esta função libera todos os recursos previamente alocados pela <a class="el" href="group__g50.html#ga9d683cb0bdd9c9eb4e447da718aa8cbe" title="Função utilizada para carregar a biblioteca E1_Pdf.">LoadPDF()</a>.</p>
 <dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
 
 </div>

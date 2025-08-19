@@ -34,8 +34,8 @@ var NAVTREEINDEX =
 "group___m0.html",
 "group__g1.html#gga27af06c8572a3ef6daf38e465dd6f153a29f35569889bf52c4e82a54bf406f298",
 "group__g1.html#ggaadd6dde8b5904c2bdb01d2b8567ca238aca99d5b9e87cd91e07f20a38b24b31a6",
-"group__g50.html#ga7515dc5a7baddc53eaab38460823c0f3",
-"group__sp20.html#gabe54b4a87666a9f955a78c3b7dad5043"
+"group__g50.html#ga714a82654c6ffeb3e9668182e1cf7298",
+"group__sp20.html#ga5b9b0af0c7756c7eee44b03ae8654337"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';

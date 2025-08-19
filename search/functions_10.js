@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zerarbalanca_0',['ZerarBalanca',['../group__g5.html#gafb63f48220b6308edfb3eb61f5ed4cd3',1,'exportafuncoes.h']]]
+  ['unloadpdf_0',['UnloadPDF',['../group__g50.html#ga96f5e785eca4cff50aeeb18f885cbdac',1,'exportafuncoes.h']]]
 ];

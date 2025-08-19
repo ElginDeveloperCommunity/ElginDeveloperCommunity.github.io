@@ -54,5 +54,12 @@ var group__g50 =
     [ "InformaInformacoesAdicionais", "group__g50.html#ga9ca6d1e1349a1791951b260c878186b2", null ],
     [ "InformaObservacoesContribuinte", "group__g50.html#ga9f968851d3cf38af316cd946ea7e27f3", null ],
     [ "InformaObservacoesFisco", "group__g50.html#ga1ff3535c0bc4a15f1aa4a7f593d10b69", null ],
-    [ "InformaProcessoReferenciado", "group__g50.html#ga923acdfc437529afabb047f8917c9631", null ]
+    [ "InformaProcessoReferenciado", "group__g50.html#ga923acdfc437529afabb047f8917c9631", null ],
+    [ "LoadPDF", "group__g50.html#ga9d683cb0bdd9c9eb4e447da718aa8cbe", null ],
+    [ "ConfigurarDiretorioSaidaPDF", "group__g50.html#ga74ba769e0322343c941b3d35781c9d4b", null ],
+    [ "GerarDanfeNFCePDF", "group__g50.html#gabf6f2d4377308da19a4d23f70da3df5e", null ],
+    [ "GerarDanfeNFCePersonalizadoPDF", "group__g50.html#ga7b617e61c31021ce43d3fc9f4b88eafe", null ],
+    [ "GerarDanfeNFePDF", "group__g50.html#gaf2595ea98695908ebd83edf45b9ac963", null ],
+    [ "GerarDanfeNFePersonalizadoPDF", "group__g50.html#ga511846dd30dfe5fb9a85641ea6f334b0", null ],
+    [ "UnloadPDF", "group__g50.html#ga96f5e785eca4cff50aeeb18f885cbdac", null ]
 ];
