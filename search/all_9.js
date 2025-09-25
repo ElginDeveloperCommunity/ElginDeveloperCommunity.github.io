@@ -41,7 +41,7 @@ var searchData=
   ['consultarnota_38',['ConsultarNota',['../group__g50.html#ga08b9d83b43e5cd583d7e41af9b54bfdd',1,'exportafuncoes.h']]],
   ['consultarnumerosessao_39',['ConsultarNumeroSessao',['../group__g2.html#gaae8d194e2b3d6b0affaf22fb3d68e10f',1,'exportafuncoes.h']]],
   ['consultarsat_40',['ConsultarSAT',['../group__g2.html#ga2c41c1bc96e2b5689520e1be389b9da9',1,'exportafuncoes.h']]],
-  ['consultarstatus_41',['ConsultarStatus',['../group__g51.html#ga6eb353e03d0ca71bc32bba3466a497ec',1,'exportafuncoes.h']]],
+  ['consultarstatus_41',['ConsultarStatus',['../group__g51.html#ga6eb353e03d0ca71bc32bba3466a497ec',1,'ConsultarStatus():&#160;exportafuncoes.h'],['../group__g50.html#ga7941e6c52a8dbda0a7b043382af3d79d',1,'ConsultarStatus(char *uuid):&#160;exportafuncoes.h']]],
   ['consultarstatusarq_42',['ConsultarStatusArq',['../group__g53.html#gacbf998bfeb80a15e21639a10437995fb',1,'exportafuncoes.h']]],
   ['consultarstatusoperacional_43',['ConsultarStatusOperacional',['../group__g2.html#ga2b343adc1e85a4204ffb88219fcddd2e',1,'exportafuncoes.h']]],
   ['consultarstatusref_44',['ConsultarStatusRef',['../group__g52.html#ga007f4eae9caed7217d111ed3317b46f2',1,'exportafuncoes.h']]],

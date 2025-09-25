@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo-light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.14.06</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.14.07</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -112,12 +112,15 @@ $(document).ready(function(){initNavTree('group__g50.html',''); initResizable();
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Funções</h2></td></tr>
-<tr class="memitem:ga8740f9c8da5045b4e7a51f1d5674fa29"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga8740f9c8da5045b4e7a51f1d5674fa29">EmitirNota</a> (char *path)</td></tr>
-<tr class="memdesc:ga8740f9c8da5045b4e7a51f1d5674fa29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emite uma Nota Fiscal Eletrônica, após a geração da mesma.  <a href="group__g50.html#ga8740f9c8da5045b4e7a51f1d5674fa29">Mais...</a><br /></td></tr>
-<tr class="separator:ga8740f9c8da5045b4e7a51f1d5674fa29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab73bd542e314b343a06e399b2f4a6a7d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gab73bd542e314b343a06e399b2f4a6a7d">EmitirNota</a> (char *path, char *uuid)</td></tr>
+<tr class="memdesc:gab73bd542e314b343a06e399b2f4a6a7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada na emissão da NFe, após a geração do arquivo XML.  <a href="group__g50.html#gab73bd542e314b343a06e399b2f4a6a7d">Mais...</a><br /></td></tr>
+<tr class="separator:gab73bd542e314b343a06e399b2f4a6a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga08b9d83b43e5cd583d7e41af9b54bfdd"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga08b9d83b43e5cd583d7e41af9b54bfdd">ConsultarNota</a> (char *chave)</td></tr>
 <tr class="memdesc:ga08b9d83b43e5cd583d7e41af9b54bfdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consulta uma determinada Nota Fiscal Eletrônica pela chave.  <a href="group__g50.html#ga08b9d83b43e5cd583d7e41af9b54bfdd">Mais...</a><br /></td></tr>
 <tr class="separator:ga08b9d83b43e5cd583d7e41af9b54bfdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7941e6c52a8dbda0a7b043382af3d79d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga7941e6c52a8dbda0a7b043382af3d79d">ConsultarStatus</a> (char *uuid)</td></tr>
+<tr class="memdesc:ga7941e6c52a8dbda0a7b043382af3d79d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para consultar o status da autorização da NFe.  <a href="group__g50.html#ga7941e6c52a8dbda0a7b043382af3d79d">Mais...</a><br /></td></tr>
+<tr class="separator:ga7941e6c52a8dbda0a7b043382af3d79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaab5282bc3c9f6a1dc55cba8b1910a731"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaab5282bc3c9f6a1dc55cba8b1910a731">CancelarNota</a> (char *chave, char *protocolo, char *justificativa)</td></tr>
 <tr class="memdesc:gaab5282bc3c9f6a1dc55cba8b1910a731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancela uma Nota Fiscal Eletrônica pela chave.  <a href="group__g50.html#gaab5282bc3c9f6a1dc55cba8b1910a731">Mais...</a><br /></td></tr>
 <tr class="separator:gaab5282bc3c9f6a1dc55cba8b1910a731"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,30 +163,30 @@ Funções</h2></td></tr>
 <tr class="memitem:gaf43947fe1ce5316265f42b5c107b907c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaf43947fe1ce5316265f42b5c107b907c">InformaICMS10</a> (int nItem, int orig, char *CST, int modBC, char *vBC, char *pICMS, char *vICMS, char *vBCFCP_a, char *pFCP_a, char *vFCP_a, int modBCST, char *pMVASTop, char *pRedBCSTop, char *vBCST, char *pICMSST, char *vICMSST, char *vBCFCPST_b, char *pFCPST_b, char *vFCPST_b)</td></tr>
 <tr class="memdesc:gaf43947fe1ce5316265f42b5c107b907c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tributação do ICMS = 10.  <a href="group__g50.html#gaf43947fe1ce5316265f42b5c107b907c">Mais...</a><br /></td></tr>
 <tr class="separator:gaf43947fe1ce5316265f42b5c107b907c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf38c2e9ac542a4fb43ee057fbd8bdbd2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaf38c2e9ac542a4fb43ee057fbd8bdbd2">InformaICMS20</a> (int nItem, int orig, char *CST, int modBC, char *pRedBC, char *vBC, char *pICMS, char *vICMS, char *vBCFCP_a, char *pFCP_a, char *vFCP_a, char *vICMSDeson_b, int motDesICMS_b)</td></tr>
-<tr class="memdesc:gaf38c2e9ac542a4fb43ee057fbd8bdbd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informa os dados do ICMS20.  <a href="group__g50.html#gaf38c2e9ac542a4fb43ee057fbd8bdbd2">Mais...</a><br /></td></tr>
-<tr class="separator:gaf38c2e9ac542a4fb43ee057fbd8bdbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga166074d3470ba46e4b63c112f53c824c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga166074d3470ba46e4b63c112f53c824c">InformaICMS30</a> (int nItem, int orig, char *CST, int modBCST, char *pMVASTop, char *pRedBCSTop, char *vBCST, char *pICMSST, char *vICMSST, char *vBCFCPST_a, char *pFCPST_a, char *vFCPST_a, char *vICMSDeson_b, int motDesICMS_b)</td></tr>
-<tr class="memdesc:ga166074d3470ba46e4b63c112f53c824c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tributação do ICMS = 30.  <a href="group__g50.html#ga166074d3470ba46e4b63c112f53c824c">Mais...</a><br /></td></tr>
-<tr class="separator:ga166074d3470ba46e4b63c112f53c824c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga901add070b4251910c908af3b6b8bff2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga901add070b4251910c908af3b6b8bff2">InformaICMS40</a> (int nItem, int orig, char *CST, char *vICMSDeson_a, int motDesICMS_a)</td></tr>
-<tr class="memdesc:ga901add070b4251910c908af3b6b8bff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informa os dados do ICMS40.  <a href="group__g50.html#ga901add070b4251910c908af3b6b8bff2">Mais...</a><br /></td></tr>
-<tr class="separator:ga901add070b4251910c908af3b6b8bff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6edd101402c794a870ad32352ff5174"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gac6edd101402c794a870ad32352ff5174">InformaICMS20</a> (int nItem, int orig, char *CST, int modBC, char *pRedBC, char *vBC, char *pICMS, char *vICMS, char *vBCFCP_a, char *pFCP_a, char *vFCP_a, char *vICMSDeson_b, int motDesICMS_b, int indDeduzDesonOp)</td></tr>
+<tr class="memdesc:gac6edd101402c794a870ad32352ff5174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informa os dados do ICMS20.  <a href="group__g50.html#gac6edd101402c794a870ad32352ff5174">Mais...</a><br /></td></tr>
+<tr class="separator:gac6edd101402c794a870ad32352ff5174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa4b4f6d8ae8b3c48d5fbfcf3b58b44a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gafa4b4f6d8ae8b3c48d5fbfcf3b58b44a">InformaICMS30</a> (int nItem, int orig, char *CST, int modBCST, char *pMVASTop, char *pRedBCSTop, char *vBCST, char *pICMSST, char *vICMSST, char *vBCFCPST_a, char *pFCPST_a, char *vFCPST_a, char *vICMSDeson_b, int motDesICMS_b, int indDeduzDesonOp)</td></tr>
+<tr class="memdesc:gafa4b4f6d8ae8b3c48d5fbfcf3b58b44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tributação do ICMS = 30.  <a href="group__g50.html#gafa4b4f6d8ae8b3c48d5fbfcf3b58b44a">Mais...</a><br /></td></tr>
+<tr class="separator:gafa4b4f6d8ae8b3c48d5fbfcf3b58b44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf216d9ea5696fb407f4f37ec98b835ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaf216d9ea5696fb407f4f37ec98b835ea">InformaICMS40</a> (int nItem, int orig, char *CST, char *vICMSDeson_a, int motDesICMS_a, int indDeduzDesonOp)</td></tr>
+<tr class="memdesc:gaf216d9ea5696fb407f4f37ec98b835ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informa os dados do ICMS40.  <a href="group__g50.html#gaf216d9ea5696fb407f4f37ec98b835ea">Mais...</a><br /></td></tr>
+<tr class="separator:gaf216d9ea5696fb407f4f37ec98b835ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae8bc25faad55331af763b1070dd9afdd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gae8bc25faad55331af763b1070dd9afdd">InformaICMS51</a> (int nItem, int orig, char *CST, int modBCop, char *pRedBCop, char *vBCop, char *pICMSop, char *vICMSOpOp, char *pDifOp, char *vICMSDifOp, char *vICMSop, char *vBCFCP_a, char *pFCP_a, char *vFCP_a)</td></tr>
 <tr class="memdesc:gae8bc25faad55331af763b1070dd9afdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informa os dados do ICMS51.  <a href="group__g50.html#gae8bc25faad55331af763b1070dd9afdd">Mais...</a><br /></td></tr>
 <tr class="separator:gae8bc25faad55331af763b1070dd9afdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7515dc5a7baddc53eaab38460823c0f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga7515dc5a7baddc53eaab38460823c0f3">InformaICMS60</a> (int nItem, int orig, char *CST, char *vBCSTRet_a, char *pST_a, char *vICMSSubstitutoOp_a, char *vICMSSTRet_a, char *vBCFCPSTRet_b, char *pFCPSTRet_b, char *vFCPSTRet_b, char *pRedBCEfet_c, char *vBCEfet_c, char *pICMSEfet_c, char *vICMSEfet_c)</td></tr>
 <tr class="memdesc:ga7515dc5a7baddc53eaab38460823c0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informa os dados do ICMS60.  <a href="group__g50.html#ga7515dc5a7baddc53eaab38460823c0f3">Mais...</a><br /></td></tr>
 <tr class="separator:ga7515dc5a7baddc53eaab38460823c0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaceb9a618341afcfe556d23355be2de61"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaceb9a618341afcfe556d23355be2de61">InformaICMS70</a> (int nItem, int orig, char *CST, int modBC, char *pRedBC, char *vBC, char *pICMS, char *vICMS, char *vBCFCP_a, char *pFCP_a, char *vFCP_a, int modBCST, char *pMVASTop, char *pRedBCSTop, char *vBCST, char *pICMSST, char *vICMSST, char *vBCFCPST_b, char *pFCPST_b, char *vFCPST_b, char *vICMSDeson_c, int motDesICMS_c)</td></tr>
-<tr class="memdesc:gaceb9a618341afcfe556d23355be2de61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tributação do ICMS = 70.  <a href="group__g50.html#gaceb9a618341afcfe556d23355be2de61">Mais...</a><br /></td></tr>
-<tr class="separator:gaceb9a618341afcfe556d23355be2de61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0c342c9d4580e87fd6c563e17a066b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaa0c342c9d4580e87fd6c563e17a066b2">InformaICMS90</a> (int nItem, int orig, char *CST, int modBC_a, char *vBC_a, char *pRedBCop_a, char *pICMS_a, char *vICMS_a, char *vBCFCP_aa, char *pFCP_aa, char *vFCP_aa, int modBCST_b, char *pMVASTop_b, char *pRedBCSTop_b, char *vBCST_b, char *pICMSST_b, char *vICMSST_b, char *vBCFCPST_bb, char *pFCPST_bb, char *vFCPST_bb, char *vICMSDeson_c, int motDesICMS_c)</td></tr>
-<tr class="memdesc:gaa0c342c9d4580e87fd6c563e17a066b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informa os dados do ICMS90.  <a href="group__g50.html#gaa0c342c9d4580e87fd6c563e17a066b2">Mais...</a><br /></td></tr>
-<tr class="separator:gaa0c342c9d4580e87fd6c563e17a066b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9234493f0c7c7dccb19d7a39a6247383"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga9234493f0c7c7dccb19d7a39a6247383">InformaICMSPart</a> (int nItem, int orig, char *CST, int modBC, char *vBC, char *pRedBCop, char *pICMS, char *vICMS, int modBCST, char *pMVASTop, char *pRedBCSTop, char *vBCST, char *pICMSST, char *vICMSST, char *pBCOper, char *UFST)</td></tr>
-<tr class="memdesc:ga9234493f0c7c7dccb19d7a39a6247383"><td class="mdescLeft">&#160;</td><td class="mdescRight">ICMS com partilha entre UF.  <a href="group__g50.html#ga9234493f0c7c7dccb19d7a39a6247383">Mais...</a><br /></td></tr>
-<tr class="separator:ga9234493f0c7c7dccb19d7a39a6247383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3506099f4c79f4688548130308dd5471"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga3506099f4c79f4688548130308dd5471">InformaICMS70</a> (int nItem, int orig, char *CST, int modBC, char *pRedBC, char *vBC, char *pICMS, char *vICMS, char *vBCFCP_a, char *pFCP_a, char *vFCP_a, int modBCST, char *pMVASTop, char *pRedBCSTop, char *vBCST, char *pICMSST, char *vICMSST, char *vBCFCPST_b, char *pFCPST_b, char *vFCPST_b, char *vICMSDeson_c, int motDesICMS_c, int indDeduzDesonOp)</td></tr>
+<tr class="memdesc:ga3506099f4c79f4688548130308dd5471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tributação do ICMS = 70.  <a href="group__g50.html#ga3506099f4c79f4688548130308dd5471">Mais...</a><br /></td></tr>
+<tr class="separator:ga3506099f4c79f4688548130308dd5471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0565e275f9a9b8f1dbfe64fe7e7fa9b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaa0565e275f9a9b8f1dbfe64fe7e7fa9b">InformaICMS90</a> (int nItem, int orig, char *CST, int modBC_a, char *vBC_a, char *pRedBCop_a, char *pICMS_a, char *vICMS_a, char *vBCFCP_aa, char *pFCP_aa, char *vFCP_aa, int modBCST_b, char *pMVASTop_b, char *pRedBCSTop_b, char *vBCST_b, char *pICMSST_b, char *vICMSST_b, char *vBCFCPST_bb, char *pFCPST_bb, char *vFCPST_bb, char *vICMSDeson_c, int motDesICMS_c, int indDeduzDesonOp)</td></tr>
+<tr class="memdesc:gaa0565e275f9a9b8f1dbfe64fe7e7fa9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informa os dados do ICMS90.  <a href="group__g50.html#gaa0565e275f9a9b8f1dbfe64fe7e7fa9b">Mais...</a><br /></td></tr>
+<tr class="separator:gaa0565e275f9a9b8f1dbfe64fe7e7fa9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8fe35c5f360c0246d0e865532aa6f4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gae8fe35c5f360c0246d0e865532aa6f4b">InformaICMSPart</a> (int nItem, int orig, char *CST, int modBC, char *vBC, char *pRedBCop, char *pICMS, char *vICMS, int modBCST, char *pMVASTop, char *pRedBCSTop, char *vBCST, char *pICMSST, char *vICMSST, char *vBCFCPST_a, char *pFCPST_a, char *vFCPST_a, char *pBCOper, char *UFST)</td></tr>
+<tr class="memdesc:gae8fe35c5f360c0246d0e865532aa6f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo de Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na legislação.  <a href="group__g50.html#gae8fe35c5f360c0246d0e865532aa6f4b">Mais...</a><br /></td></tr>
+<tr class="separator:gae8fe35c5f360c0246d0e865532aa6f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8da8c4d4fd5eadc0815d11f539b35b6b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga8da8c4d4fd5eadc0815d11f539b35b6b">InformaICMSST</a> (int nItem, int orig, char *CST, char *vBCSTRet, char *pSTop, char *vICMSSubstitutoOp, char *vICMSSTRet, char *vBCFCPSTRet_a, char *pFCPSTRet_a, char *vFCPSTRet_a, char *vBCSTDest, char *vICMSSTDest, char *pRedBCEfet_b, char *vBCEfet_b, char *pICMSEfet_b, char *vICMSEfet_b)</td></tr>
 <tr class="memdesc:ga8da8c4d4fd5eadc0815d11f539b35b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ICMS ST.  <a href="group__g50.html#ga8da8c4d4fd5eadc0815d11f539b35b6b">Mais...</a><br /></td></tr>
 <tr class="separator:ga8da8c4d4fd5eadc0815d11f539b35b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,9 +256,12 @@ Funções</h2></td></tr>
 <tr class="memitem:ga56a3285d2e3d6d4cb3581b4e3e934b7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga56a3285d2e3d6d4cb3581b4e3e934b7d">InformaValorTotalTributos</a> (int nItem, char *vTotTrib)</td></tr>
 <tr class="memdesc:ga56a3285d2e3d6d4cb3581b4e3e934b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valor total de tributos federais, estaduais e municipais.  <a href="group__g50.html#ga56a3285d2e3d6d4cb3581b4e3e934b7d">Mais...</a><br /></td></tr>
 <tr class="separator:ga56a3285d2e3d6d4cb3581b4e3e934b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga07f5232ae8e2b4905ab315559c6a2d2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga07f5232ae8e2b4905ab315559c6a2d2e">InformaPagamento</a> (int indPagOp, char *tPag, char *vPag, int tpIntegra, char *CNPJOp, char *tBandOp, char *cAutOp)</td></tr>
-<tr class="memdesc:ga07f5232ae8e2b4905ab315559c6a2d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informa os dados de pagamento.  <a href="group__g50.html#ga07f5232ae8e2b4905ab315559c6a2d2e">Mais...</a><br /></td></tr>
-<tr class="separator:ga07f5232ae8e2b4905ab315559c6a2d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabe54290cf1012ad2d7e1fd97cf3fe13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaabe54290cf1012ad2d7e1fd97cf3fe13">InformaPagamento</a> (int indPagOp, char *tPag, char *xPagOp, char *vPag, char *dPagOp, int tpIntegra, char *CNPJOp, char *tBandOp, char *cAutOp, char *CNPJRecebOp, char *idTermPagOp)</td></tr>
+<tr class="memdesc:gaabe54290cf1012ad2d7e1fd97cf3fe13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Detalhamento do Pagamento.  <a href="group__g50.html#gaabe54290cf1012ad2d7e1fd97cf3fe13">Mais...</a><br /></td></tr>
+<tr class="separator:gaabe54290cf1012ad2d7e1fd97cf3fe13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19d9266f03f05f6b6d18a4b7126e8bea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga19d9266f03f05f6b6d18a4b7126e8bea">InformaInformacoesPagamento</a> (char *vTrocoOp, char *CNPJPag_a, char *UFPag_a)</td></tr>
+<tr class="memdesc:ga19d9266f03f05f6b6d18a4b7126e8bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informações gerais do grupo de pagamento.  <a href="group__g50.html#ga19d9266f03f05f6b6d18a4b7126e8bea">Mais...</a><br /></td></tr>
+<tr class="separator:ga19d9266f03f05f6b6d18a4b7126e8bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafd4593d3309b9d2a62d35d9e8b069b14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gafd4593d3309b9d2a62d35d9e8b069b14">InformaValorTroco</a> (char *vTroco)</td></tr>
 <tr class="memdesc:gafd4593d3309b9d2a62d35d9e8b069b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informa o valor do troco.  <a href="group__g50.html#gafd4593d3309b9d2a62d35d9e8b069b14">Mais...</a><br /></td></tr>
 <tr class="separator:gafd4593d3309b9d2a62d35d9e8b069b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,9 +280,9 @@ Funções</h2></td></tr>
 <tr class="memitem:ga1ff3535c0bc4a15f1aa4a7f593d10b69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga1ff3535c0bc4a15f1aa4a7f593d10b69">InformaObservacoesFisco</a> (char *xCampo, char *xTexto)</td></tr>
 <tr class="memdesc:ga1ff3535c0bc4a15f1aa4a7f593d10b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para informar campos de uso livre do fisco.  <a href="group__g50.html#ga1ff3535c0bc4a15f1aa4a7f593d10b69">Mais...</a><br /></td></tr>
 <tr class="separator:ga1ff3535c0bc4a15f1aa4a7f593d10b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga923acdfc437529afabb047f8917c9631"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga923acdfc437529afabb047f8917c9631">InformaProcessoReferenciado</a> (char *nProc, int indProc)</td></tr>
-<tr class="memdesc:ga923acdfc437529afabb047f8917c9631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para informar processo referenciado na nota fiscal.  <a href="group__g50.html#ga923acdfc437529afabb047f8917c9631">Mais...</a><br /></td></tr>
-<tr class="separator:ga923acdfc437529afabb047f8917c9631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac88f5d6a1be5f177ef143b79d8527e0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gac88f5d6a1be5f177ef143b79d8527e0a">InformaProcessoReferenciado</a> (char *nProc, int indProc, char *tpAtoOp)</td></tr>
+<tr class="memdesc:gac88f5d6a1be5f177ef143b79d8527e0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Processo referenciado.  <a href="group__g50.html#gac88f5d6a1be5f177ef143b79d8527e0a">Mais...</a><br /></td></tr>
+<tr class="separator:gac88f5d6a1be5f177ef143b79d8527e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9d683cb0bdd9c9eb4e447da718aa8cbe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga9d683cb0bdd9c9eb4e447da718aa8cbe">LoadPDF</a> ()</td></tr>
 <tr class="memdesc:ga9d683cb0bdd9c9eb4e447da718aa8cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para carregar a biblioteca E1_Pdf.  <a href="group__g50.html#ga9d683cb0bdd9c9eb4e447da718aa8cbe">Mais...</a><br /></td></tr>
 <tr class="separator:ga9d683cb0bdd9c9eb4e447da718aa8cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,11 +304,134 @@ Funções</h2></td></tr>
 <tr class="memitem:ga96f5e785eca4cff50aeeb18f885cbdac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga96f5e785eca4cff50aeeb18f885cbdac">UnloadPDF</a> ()</td></tr>
 <tr class="memdesc:ga96f5e785eca4cff50aeeb18f885cbdac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para descarregar a biblioteca E1_Pdf.  <a href="group__g50.html#ga96f5e785eca4cff50aeeb18f885cbdac">Mais...</a><br /></td></tr>
 <tr class="separator:ga96f5e785eca4cff50aeeb18f885cbdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70e6d3335762ecc8b108221a14c588cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga70e6d3335762ecc8b108221a14c588cd">InformaDocumentoReferenciadoNFe</a> (char *refNFeEx, char *refNFeSigEx)</td></tr>
+<tr class="memdesc:ga70e6d3335762ecc8b108221a14c588cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informação de Documentos Fiscais referenciados - NFe.  <a href="group__g50.html#ga70e6d3335762ecc8b108221a14c588cd">Mais...</a><br /></td></tr>
+<tr class="separator:ga70e6d3335762ecc8b108221a14c588cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47b917fa2664dfad0a4d4b410805f984"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga47b917fa2664dfad0a4d4b410805f984">InformaDocumentoReferenciadoNF</a> (char *cUF, char *AAMM, char *CNPJ, char *mod, char *serie, char *nNF)</td></tr>
+<tr class="memdesc:ga47b917fa2664dfad0a4d4b410805f984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informação de Documentos Fiscais referenciados - NF Modelo 1/1A ou 2.  <a href="group__g50.html#ga47b917fa2664dfad0a4d4b410805f984">Mais...</a><br /></td></tr>
+<tr class="separator:ga47b917fa2664dfad0a4d4b410805f984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27858d9fdc6e606fb8c2d3c02e765809"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga27858d9fdc6e606fb8c2d3c02e765809">InformaDocumentoReferenciadoNFP</a> (char *cUF, char *AAMM, char *CNPJEx, char *CPFEx, char *IE, char *mod, char *serie, char *nNF)</td></tr>
+<tr class="memdesc:ga27858d9fdc6e606fb8c2d3c02e765809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informação de Documentos Fiscais referenciados - NF Produtor Rural.  <a href="group__g50.html#ga27858d9fdc6e606fb8c2d3c02e765809">Mais...</a><br /></td></tr>
+<tr class="separator:ga27858d9fdc6e606fb8c2d3c02e765809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7f1c7a7d7bca122a8ebb660179a8e43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaa7f1c7a7d7bca122a8ebb660179a8e43">InformaDocumentoReferenciadoCTe</a> (char *refCTeEx)</td></tr>
+<tr class="memdesc:gaa7f1c7a7d7bca122a8ebb660179a8e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informação de Documentos Fiscais referenciados - CTe.  <a href="group__g50.html#gaa7f1c7a7d7bca122a8ebb660179a8e43">Mais...</a><br /></td></tr>
+<tr class="separator:gaa7f1c7a7d7bca122a8ebb660179a8e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf86b5969c5430e66ccf35b53d3b8b250"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaf86b5969c5430e66ccf35b53d3b8b250">InformaDocumentoReferenciadoECF</a> (char *mod, char *nECF, char *nCOO)</td></tr>
+<tr class="memdesc:gaf86b5969c5430e66ccf35b53d3b8b250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informação de Documentos Fiscais referenciados - ECF.  <a href="group__g50.html#gaf86b5969c5430e66ccf35b53d3b8b250">Mais...</a><br /></td></tr>
+<tr class="separator:gaf86b5969c5430e66ccf35b53d3b8b250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga629af5d5d0bcb205d0d99c0c997fecab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga629af5d5d0bcb205d0d99c0c997fecab">InformaInformacoesAdicionaisProduto</a> (int nItem, char *infAdProd)</td></tr>
+<tr class="memdesc:ga629af5d5d0bcb205d0d99c0c997fecab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informações Adicionais do Produto.  <a href="group__g50.html#ga629af5d5d0bcb205d0d99c0c997fecab">Mais...</a><br /></td></tr>
+<tr class="separator:ga629af5d5d0bcb205d0d99c0c997fecab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a56ddf4b04272927031f1b0480c4834"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga3a56ddf4b04272927031f1b0480c4834">InformaDeclaracaoImportacao</a> (int nItem, char *nDI, char *dDI, char *xLocDesemb, char *UFDesemb, char *dDesemb, int tpViaTransp, char *vAFRMMOp, int tpIntermedio, char *CNPJEx, char *CPFEx, char *UFTerceiroOp, char *cExportador)</td></tr>
+<tr class="memdesc:ga3a56ddf4b04272927031f1b0480c4834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaração de Importação.  <a href="group__g50.html#ga3a56ddf4b04272927031f1b0480c4834">Mais...</a><br /></td></tr>
+<tr class="separator:ga3a56ddf4b04272927031f1b0480c4834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec467e358a4f04e08866bb90dd76612d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaec467e358a4f04e08866bb90dd76612d">InformaAdicaoDeclaracaoImportacao</a> (int nItem, int nDI, char *nAdicaoOp, char *nSeqAdic, char *cFabricante, char *vDescDIOp, char *nDrawOp)</td></tr>
+<tr class="memdesc:gaec467e358a4f04e08866bb90dd76612d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adições da Declaração de Importação.  <a href="group__g50.html#gaec467e358a4f04e08866bb90dd76612d">Mais...</a><br /></td></tr>
+<tr class="separator:gaec467e358a4f04e08866bb90dd76612d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad32ceabf6cbe2c06d8cc850b6e0d278f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gad32ceabf6cbe2c06d8cc850b6e0d278f">InformaDetalhamentoExportacao</a> (int nItem, char *nDrawOp)</td></tr>
+<tr class="memdesc:gad32ceabf6cbe2c06d8cc850b6e0d278f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo de informações de exportação para o item.  <a href="group__g50.html#gad32ceabf6cbe2c06d8cc850b6e0d278f">Mais...</a><br /></td></tr>
+<tr class="separator:gad32ceabf6cbe2c06d8cc850b6e0d278f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43565e9338243bc27595305827432730"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga43565e9338243bc27595305827432730">InformaRastreabilidade</a> (int nItem, char *nLote, char *qLote, char *dFab, char *dVal, char *cAgregOp)</td></tr>
+<tr class="memdesc:ga43565e9338243bc27595305827432730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detalhamento de produto sujeito a rastreabilidade.  <a href="group__g50.html#ga43565e9338243bc27595305827432730">Mais...</a><br /></td></tr>
+<tr class="separator:ga43565e9338243bc27595305827432730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff8be127020dd83619da1e486f57e327"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaff8be127020dd83619da1e486f57e327">InformaVeiculoNovo</a> (int nItem, int tpOp, char *chassi, char *cCor, char *xCor, char *pot, char *cilin, char *pesoL, char *pesoB, char *nSerie, char *tpComb, char *nMotor, char *CMT, char *dist, char *anoMod, char *anoFab, char *tpPint, char *tpVeic, int espVeic, char *VIN, int condVeic, char *cMod, char *cCorDENATRAN, char *lota, int tpRest)</td></tr>
+<tr class="memdesc:gaff8be127020dd83619da1e486f57e327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detalhamento de Veículos novos.  <a href="group__g50.html#gaff8be127020dd83619da1e486f57e327">Mais...</a><br /></td></tr>
+<tr class="separator:gaff8be127020dd83619da1e486f57e327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1333e0c7789f3feb8b595dae52f026dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga1333e0c7789f3feb8b595dae52f026dd">InformaMedicamento</a> (int nItem, char *cProdANVISA, char *xMotivoIsencaoOp, char *vPMC)</td></tr>
+<tr class="memdesc:ga1333e0c7789f3feb8b595dae52f026dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detalhamento de Medicamentos.  <a href="group__g50.html#ga1333e0c7789f3feb8b595dae52f026dd">Mais...</a><br /></td></tr>
+<tr class="separator:ga1333e0c7789f3feb8b595dae52f026dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fc88a4d2c1e75723847bd80098b7b2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga8fc88a4d2c1e75723847bd80098b7b2b">InformaArmamento</a> (int nItem, int tpArma, char *nSerie, char *nCano, char *descr)</td></tr>
+<tr class="memdesc:ga8fc88a4d2c1e75723847bd80098b7b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detalhamento de Armamento.  <a href="group__g50.html#ga8fc88a4d2c1e75723847bd80098b7b2b">Mais...</a><br /></td></tr>
+<tr class="separator:ga8fc88a4d2c1e75723847bd80098b7b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga242b880574f50df48b8991e6a3fa7b33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga242b880574f50df48b8991e6a3fa7b33">InformaCombustivel</a> (int nItem, char *cProdANP, char *descANP, char *pGLPOp, char *pGNnOp, char *pGNiOp, char *vPartOp, char *CODIFOp, char *qTempOp, char *UFCons, char *pBioOp)</td></tr>
+<tr class="memdesc:ga242b880574f50df48b8991e6a3fa7b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informações específicas para combustíveis líquidos e lubrificantes.  <a href="group__g50.html#ga242b880574f50df48b8991e6a3fa7b33">Mais...</a><br /></td></tr>
+<tr class="separator:ga242b880574f50df48b8991e6a3fa7b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac89af78df61bfa34c3c55cdffd4e7c02"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gac89af78df61bfa34c3c55cdffd4e7c02">InformaCombustivelCIDE</a> (int nItem, char *qBCProd, char *vAliqProd, char *vCIDE)</td></tr>
+<tr class="memdesc:gac89af78df61bfa34c3c55cdffd4e7c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informações da CIDE.  <a href="group__g50.html#gac89af78df61bfa34c3c55cdffd4e7c02">Mais...</a><br /></td></tr>
+<tr class="separator:gac89af78df61bfa34c3c55cdffd4e7c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad70738c61eb09be91c6f06a69cabb28d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gad70738c61eb09be91c6f06a69cabb28d">InformaCombustivelEncerrante</a> (int nItem, char *nBico, char *nBombaOp, char *nTanque, char *vEncIni, char *vEncFin)</td></tr>
+<tr class="memdesc:gad70738c61eb09be91c6f06a69cabb28d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informações do grupo de "encerrante".  <a href="group__g50.html#gad70738c61eb09be91c6f06a69cabb28d">Mais...</a><br /></td></tr>
+<tr class="separator:gad70738c61eb09be91c6f06a69cabb28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8fae99513bc90abf1739582ae497bac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gae8fae99513bc90abf1739582ae497bac">InformaCombustivelOrigem</a> (int nItem, int indImport, char *cUFOrig, char *pOrig)</td></tr>
+<tr class="memdesc:gae8fae99513bc90abf1739582ae497bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo indicador da origem do combustível.  <a href="group__g50.html#gae8fae99513bc90abf1739582ae497bac">Mais...</a><br /></td></tr>
+<tr class="separator:gae8fae99513bc90abf1739582ae497bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9682e169e632b84f7e979b3abdf57839"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga9682e169e632b84f7e979b3abdf57839">InformaIPIDevolvido</a> (int nItem, char *pDevol, char *vIPIDevol)</td></tr>
+<tr class="memdesc:ga9682e169e632b84f7e979b3abdf57839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informação do IPI devolvido.  <a href="group__g50.html#ga9682e169e632b84f7e979b3abdf57839">Mais...</a><br /></td></tr>
+<tr class="separator:ga9682e169e632b84f7e979b3abdf57839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9e980f6f1b7f58057e8c1262a430bf5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaa9e980f6f1b7f58057e8c1262a430bf5">InformaObservacaoContribuinteItem</a> (int nItem, char *xCampo, char *xTexto)</td></tr>
+<tr class="memdesc:gaa9e980f6f1b7f58057e8c1262a430bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo de observações de uso livre do Contribuinte (para item).  <a href="group__g50.html#gaa9e980f6f1b7f58057e8c1262a430bf5">Mais...</a><br /></td></tr>
+<tr class="separator:gaa9e980f6f1b7f58057e8c1262a430bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga165450f427f681fd784572343bbef2e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga165450f427f681fd784572343bbef2e5">InformaObservacaoFiscoItem</a> (int nItem, char *xCampo, char *xTexto)</td></tr>
+<tr class="memdesc:ga165450f427f681fd784572343bbef2e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo de observações de uso livre do Fisco (para item).  <a href="group__g50.html#ga165450f427f681fd784572343bbef2e5">Mais...</a><br /></td></tr>
+<tr class="separator:ga165450f427f681fd784572343bbef2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9554f51cacb52fa9455f31b4c2d3a1a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga9554f51cacb52fa9455f31b4c2d3a1a4">InformaTransporte</a> (int modFrete, char *vagaoEx, char *balsaEx)</td></tr>
+<tr class="memdesc:ga9554f51cacb52fa9455f31b4c2d3a1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Informações do Transporte.  <a href="group__g50.html#ga9554f51cacb52fa9455f31b4c2d3a1a4">Mais...</a><br /></td></tr>
+<tr class="separator:ga9554f51cacb52fa9455f31b4c2d3a1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace50b0978d1711d887befefc75e85db3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gace50b0978d1711d887befefc75e85db3">InformaTransportador</a> (char *CNPJEx, char *CPFEx, char *xNomeOp, char *IEOp, char *xEnderOp, char *xMunOp, char *UFOp)</td></tr>
+<tr class="memdesc:gace50b0978d1711d887befefc75e85db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Transportador.  <a href="group__g50.html#gace50b0978d1711d887befefc75e85db3">Mais...</a><br /></td></tr>
+<tr class="separator:gace50b0978d1711d887befefc75e85db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga965b4119db6eb4145d5dbb6288c2af60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga965b4119db6eb4145d5dbb6288c2af60">InformaRetencaoTransporte</a> (char *vServ, char *vBCRet, char *pICMSRet, char *vICMSRet, char *CFOP, char *cMunFG)</td></tr>
+<tr class="memdesc:ga965b4119db6eb4145d5dbb6288c2af60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Retenção ICMS transporte.  <a href="group__g50.html#ga965b4119db6eb4145d5dbb6288c2af60">Mais...</a><br /></td></tr>
+<tr class="separator:ga965b4119db6eb4145d5dbb6288c2af60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad47bebd4ca52b9e1be05c91499d5d39b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gad47bebd4ca52b9e1be05c91499d5d39b">InformaVeiculoTransporte</a> (char *placa, char *UF, char *RNTCOp)</td></tr>
+<tr class="memdesc:gad47bebd4ca52b9e1be05c91499d5d39b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Veículo Transporte.  <a href="group__g50.html#gad47bebd4ca52b9e1be05c91499d5d39b">Mais...</a><br /></td></tr>
+<tr class="separator:gad47bebd4ca52b9e1be05c91499d5d39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49acc03fb2bb227f238f33c5ffe315d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga49acc03fb2bb227f238f33c5ffe315d9">InformaReboque</a> (char *placa, char *UF, char *RNTCOp)</td></tr>
+<tr class="memdesc:ga49acc03fb2bb227f238f33c5ffe315d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Reboque.  <a href="group__g50.html#ga49acc03fb2bb227f238f33c5ffe315d9">Mais...</a><br /></td></tr>
+<tr class="separator:ga49acc03fb2bb227f238f33c5ffe315d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1c5c80d6bda442345b1a473ff228a60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gac1c5c80d6bda442345b1a473ff228a60">InformaVolume</a> (char *qVolOp, char *espOp, char *marcaOp, char *nVolOp, char *pesoLOp, char *pesoBOp)</td></tr>
+<tr class="memdesc:gac1c5c80d6bda442345b1a473ff228a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Volumes.  <a href="group__g50.html#gac1c5c80d6bda442345b1a473ff228a60">Mais...</a><br /></td></tr>
+<tr class="separator:gac1c5c80d6bda442345b1a473ff228a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga191c62dbbda2af5e28b9bdf52258d258"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga191c62dbbda2af5e28b9bdf52258d258">InformaLacre</a> (int nVolume, char *nLacre)</td></tr>
+<tr class="memdesc:ga191c62dbbda2af5e28b9bdf52258d258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Lacres.  <a href="group__g50.html#ga191c62dbbda2af5e28b9bdf52258d258">Mais...</a><br /></td></tr>
+<tr class="separator:ga191c62dbbda2af5e28b9bdf52258d258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8306b4f084dec38c5a95e6792c23d09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gad8306b4f084dec38c5a95e6792c23d09">InformaFatura</a> (char *nFatOp, char *vOrigOp, char *vDescOp, char *vLiqOp)</td></tr>
+<tr class="memdesc:gad8306b4f084dec38c5a95e6792c23d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Fatura.  <a href="group__g50.html#gad8306b4f084dec38c5a95e6792c23d09">Mais...</a><br /></td></tr>
+<tr class="separator:gad8306b4f084dec38c5a95e6792c23d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb8ad06850d5760329234ebaa0ed95ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gacb8ad06850d5760329234ebaa0ed95ee">InformaParcela</a> (char *nDupOp, char *dVencOp, char *vDup)</td></tr>
+<tr class="memdesc:gacb8ad06850d5760329234ebaa0ed95ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Parcelas.  <a href="group__g50.html#gacb8ad06850d5760329234ebaa0ed95ee">Mais...</a><br /></td></tr>
+<tr class="separator:gacb8ad06850d5760329234ebaa0ed95ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d7cb52f1aea1d451bfcf366a301a49d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga7d7cb52f1aea1d451bfcf366a301a49d">InformaIntermediador</a> (char *CNPJ, char *idCadIntTran)</td></tr>
+<tr class="memdesc:ga7d7cb52f1aea1d451bfcf366a301a49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo de Informações do Intermediador da Transação.  <a href="group__g50.html#ga7d7cb52f1aea1d451bfcf366a301a49d">Mais...</a><br /></td></tr>
+<tr class="separator:ga7d7cb52f1aea1d451bfcf366a301a49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3dc82f9390f9c0abc15078bd10c8b098"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga3dc82f9390f9c0abc15078bd10c8b098">InformaExportacao</a> (char *UFSaidaPais, char *xLocExporta, char *xLocDespachoOp)</td></tr>
+<tr class="memdesc:ga3dc82f9390f9c0abc15078bd10c8b098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Exportação.  <a href="group__g50.html#ga3dc82f9390f9c0abc15078bd10c8b098">Mais...</a><br /></td></tr>
+<tr class="separator:ga3dc82f9390f9c0abc15078bd10c8b098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdaf1487ad16edd5fcece2656d121668"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gabdaf1487ad16edd5fcece2656d121668">InformaCompra</a> (char *xNEmpOp, char *xPedOp, char *xContOp)</td></tr>
+<tr class="memdesc:gabdaf1487ad16edd5fcece2656d121668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Compra.  <a href="group__g50.html#gabdaf1487ad16edd5fcece2656d121668">Mais...</a><br /></td></tr>
+<tr class="separator:gabdaf1487ad16edd5fcece2656d121668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5dcf10abc39290a266daaec85133b05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gae5dcf10abc39290a266daaec85133b05">InformaCana</a> (char *safra, char *ref, char *qTotMes, char *qTotAnt, char *qTotGer, char *vFor, char *vTotDed, char *vLiqFor)</td></tr>
+<tr class="memdesc:gae5dcf10abc39290a266daaec85133b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Cana.  <a href="group__g50.html#gae5dcf10abc39290a266daaec85133b05">Mais...</a><br /></td></tr>
+<tr class="separator:gae5dcf10abc39290a266daaec85133b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9db380b06371ecd6f9878eb77e54c27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gac9db380b06371ecd6f9878eb77e54c27">InformaFornecimentoDiarioCana</a> (char *dia, char *qtde)</td></tr>
+<tr class="memdesc:gac9db380b06371ecd6f9878eb77e54c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Fornecimento diário de cana.  <a href="group__g50.html#gac9db380b06371ecd6f9878eb77e54c27">Mais...</a><br /></td></tr>
+<tr class="separator:gac9db380b06371ecd6f9878eb77e54c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab563abfdb3a8959d2e2c06edbcb264ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gab563abfdb3a8959d2e2c06edbcb264ac">InformaDeducaoCana</a> (char *xDed, char *vDed)</td></tr>
+<tr class="memdesc:gab563abfdb3a8959d2e2c06edbcb264ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grupo Deduções da Cana.  <a href="group__g50.html#gab563abfdb3a8959d2e2c06edbcb264ac">Mais...</a><br /></td></tr>
+<tr class="separator:gab563abfdb3a8959d2e2c06edbcb264ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga912982fe895ed3dac6d2a47383201ff5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga912982fe895ed3dac6d2a47383201ff5">InformaResponsavelTecnico</a> (char *CNPJ, char *xContato, char *email, char *fone, char *idCSRT_a, char *hashCSRT_a)</td></tr>
+<tr class="memdesc:ga912982fe895ed3dac6d2a47383201ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informações do Responsável Técnico.  <a href="group__g50.html#ga912982fe895ed3dac6d2a47383201ff5">Mais...</a><br /></td></tr>
+<tr class="separator:ga912982fe895ed3dac6d2a47383201ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69d2f3ae1386e87b6811a0b15ac0c44e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga69d2f3ae1386e87b6811a0b15ac0c44e">InformaInformacoesSuplementares</a> (char *qrCode, char *urlChave)</td></tr>
+<tr class="memdesc:ga69d2f3ae1386e87b6811a0b15ac0c44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informações suplementares da NFe.  <a href="group__g50.html#ga69d2f3ae1386e87b6811a0b15ac0c44e">Mais...</a><br /></td></tr>
+<tr class="separator:ga69d2f3ae1386e87b6811a0b15ac0c44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad7fade7caedd983bcfeffd14e9adaac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaad7fade7caedd983bcfeffd14e9adaac">InformaICMS02</a> (int nItem, int orig, char *CST, char *qBCMonoOp, char *adRemICMS, char *vICMSMono)</td></tr>
+<tr class="memdesc:gaad7fade7caedd983bcfeffd14e9adaac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tributação do ICMS = 02.  <a href="group__g50.html#gaad7fade7caedd983bcfeffd14e9adaac">Mais...</a><br /></td></tr>
+<tr class="separator:gaad7fade7caedd983bcfeffd14e9adaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeef2ab402784de2841f53c95acb441be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaeef2ab402784de2841f53c95acb441be">InformaICMS15</a> (int nItem, int orig, char *CST, char *qBCMonoOp, char *adRemICMS, char *vICMSMono, char *qBCMonoRetenOp, char *adRemICMSReten, char *vICMSMonoReten, char *pRedAdRem_a, int motRedAdRem_a)</td></tr>
+<tr class="memdesc:gaeef2ab402784de2841f53c95acb441be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tributação do ICMS = 15.  <a href="group__g50.html#gaeef2ab402784de2841f53c95acb441be">Mais...</a><br /></td></tr>
+<tr class="separator:gaeef2ab402784de2841f53c95acb441be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7b074cd149271a3381339fb436e800e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#gaa7b074cd149271a3381339fb436e800e">InformaICMS53</a> (int nItem, int orig, char *CST, char *qBCMonoOp, char *adRemICMSOp, char *vICMSMonoOperOp, char *pDifOp, char *vICMSMonoDifOp, char *vICMSMonoOp)</td></tr>
+<tr class="memdesc:gaa7b074cd149271a3381339fb436e800e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tributação do ICMS = 53.  <a href="group__g50.html#gaa7b074cd149271a3381339fb436e800e">Mais...</a><br /></td></tr>
+<tr class="separator:gaa7b074cd149271a3381339fb436e800e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e575fd70a1b49dfa6574942dfebd0ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html#ga3e575fd70a1b49dfa6574942dfebd0ce">InformaICMS61</a> (int nItem, int orig, char *CST, char *qBCMonoRetOp, char *adRemICMSRet, char *vICMSMonoRet)</td></tr>
+<tr class="memdesc:ga3e575fd70a1b49dfa6574942dfebd0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tributação do ICMS = 61.  <a href="group__g50.html#ga3e575fd70a1b49dfa6574942dfebd0ce">Mais...</a><br /></td></tr>
+<tr class="separator:ga3e575fd70a1b49dfa6574942dfebd0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <h2 class="groupheader">Funções</h2>
-<a id="ga8740f9c8da5045b4e7a51f1d5674fa29" name="ga8740f9c8da5045b4e7a51f1d5674fa29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8740f9c8da5045b4e7a51f1d5674fa29">&#9670;&nbsp;</a></span>EmitirNota()</h2>
+<a id="gab73bd542e314b343a06e399b2f4a6a7d" name="gab73bd542e314b343a06e399b2f4a6a7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab73bd542e314b343a06e399b2f4a6a7d">&#9670;&nbsp;</a></span>EmitirNota()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,20 +440,31 @@ Funções</h2></td></tr>
           <td class="memname">char * EmitirNota </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>uuid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Emite uma Nota Fiscal Eletrônica, após a geração da mesma. </p>
+<p>Função utilizada na emissão da NFe, após a geração do arquivo XML. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">path</td><td>- Caminho do arquivo contendo XML com os dados da nota.</td></tr>
+    <tr><td class="paramname">path</td><td>Caminho onde foi salvo o XML a ser enviado. </td></tr>
+    <tr><td class="paramname">uuid</td><td>UUID identificador único da NFe.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será o conteúdo da resposta HTTP(200).</dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna string com o resultado da emissão.</dd></dl>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Campo   </th><th class="markdownTableHeadNone">Descrição    </th></tr>
@@ -384,6 +524,33 @@ Funções</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será o conteúdo da resposta HTTP(200). </dd></dl>
+
+</div>
+</div>
+<a id="ga7941e6c52a8dbda0a7b043382af3d79d" name="ga7941e6c52a8dbda0a7b043382af3d79d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7941e6c52a8dbda0a7b043382af3d79d">&#9670;&nbsp;</a></span>ConsultarStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * ConsultarStatus </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>uuid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para consultar o status da autorização da NFe. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uuid</td><td>UUID identificador único da NFe.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna string com o status da autorização. </dd></dl>
 
 </div>
 </div>
@@ -1930,8 +2097,8 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a id="gaf38c2e9ac542a4fb43ee057fbd8bdbd2" name="gaf38c2e9ac542a4fb43ee057fbd8bdbd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf38c2e9ac542a4fb43ee057fbd8bdbd2">&#9670;&nbsp;</a></span>InformaICMS20()</h2>
+<a id="gac6edd101402c794a870ad32352ff5174" name="gac6edd101402c794a870ad32352ff5174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6edd101402c794a870ad32352ff5174">&#9670;&nbsp;</a></span>InformaICMS20()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2012,7 +2179,13 @@ Funções</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>motDesICMS_b</em>&#160;</td>
+          <td class="paramname"><em>motDesICMS_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indDeduzDesonOp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2037,7 +2210,8 @@ Funções</h2></td></tr>
     <tr><td class="paramname">pFCP_a</td><td>Percentual do FCP. </td></tr>
     <tr><td class="paramname">vFCP_a</td><td>Valor do FCP. </td></tr>
     <tr><td class="paramname">vICMSDeson_b</td><td>Valor do ICMS desonerado. </td></tr>
-    <tr><td class="paramname">motDesICMS_b</td><td>Motivo da desoneração do ICMS.</td></tr>
+    <tr><td class="paramname">motDesICMS_b</td><td>Motivo da desoneração do ICMS. </td></tr>
+    <tr><td class="paramname">indDeduzDesonOp</td><td>Indicador de dedução da desoneração.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2045,8 +2219,8 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a id="ga166074d3470ba46e4b63c112f53c824c" name="ga166074d3470ba46e4b63c112f53c824c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga166074d3470ba46e4b63c112f53c824c">&#9670;&nbsp;</a></span>InformaICMS30()</h2>
+<a id="gafa4b4f6d8ae8b3c48d5fbfcf3b58b44a" name="gafa4b4f6d8ae8b3c48d5fbfcf3b58b44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa4b4f6d8ae8b3c48d5fbfcf3b58b44a">&#9670;&nbsp;</a></span>InformaICMS30()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2133,7 +2307,13 @@ Funções</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>motDesICMS_b</em>&#160;</td>
+          <td class="paramname"><em>motDesICMS_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indDeduzDesonOp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2159,7 +2339,8 @@ Funções</h2></td></tr>
     <tr><td class="paramname">pFCPST_a</td><td>Percentual do FCP ST. </td></tr>
     <tr><td class="paramname">vFCPST_a</td><td>Valor do FCP ST. </td></tr>
     <tr><td class="paramname">vICMSDeson_b</td><td>Valor do ICMS desonerado. </td></tr>
-    <tr><td class="paramname">motDesICMS_b</td><td>Motivo da desoneração do ICMS.</td></tr>
+    <tr><td class="paramname">motDesICMS_b</td><td>Motivo da desoneração do ICMS. </td></tr>
+    <tr><td class="paramname">indDeduzDesonOp</td><td>Indicador de dedução da desoneração.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2167,8 +2348,8 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a id="ga901add070b4251910c908af3b6b8bff2" name="ga901add070b4251910c908af3b6b8bff2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga901add070b4251910c908af3b6b8bff2">&#9670;&nbsp;</a></span>InformaICMS40()</h2>
+<a id="gaf216d9ea5696fb407f4f37ec98b835ea" name="gaf216d9ea5696fb407f4f37ec98b835ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf216d9ea5696fb407f4f37ec98b835ea">&#9670;&nbsp;</a></span>InformaICMS40()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2201,7 +2382,13 @@ Funções</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>motDesICMS_a</em>&#160;</td>
+          <td class="paramname"><em>motDesICMS_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indDeduzDesonOp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2218,7 +2405,8 @@ Funções</h2></td></tr>
     <tr><td class="paramname">orig</td><td>Origem da mercadoria. </td></tr>
     <tr><td class="paramname">CST</td><td>Tributação do ICMS = 40, 41 ou 50. </td></tr>
     <tr><td class="paramname">vICMSDeson_a</td><td>Valor do ICMS desonerado. </td></tr>
-    <tr><td class="paramname">motDesICMS_a</td><td>Motivo da desoneração do ICMS.</td></tr>
+    <tr><td class="paramname">motDesICMS_a</td><td>Motivo da desoneração do ICMS. </td></tr>
+    <tr><td class="paramname">indDeduzDesonOp</td><td>Indicador de dedução da desoneração.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2470,8 +2658,8 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a id="gaceb9a618341afcfe556d23355be2de61" name="gaceb9a618341afcfe556d23355be2de61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaceb9a618341afcfe556d23355be2de61">&#9670;&nbsp;</a></span>InformaICMS70()</h2>
+<a id="ga3506099f4c79f4688548130308dd5471" name="ga3506099f4c79f4688548130308dd5471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3506099f4c79f4688548130308dd5471">&#9670;&nbsp;</a></span>InformaICMS70()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2606,7 +2794,13 @@ Funções</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>motDesICMS_c</em>&#160;</td>
+          <td class="paramname"><em>motDesICMS_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indDeduzDesonOp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2640,7 +2834,8 @@ Funções</h2></td></tr>
     <tr><td class="paramname">pFCPST_b</td><td>Percentual do FCP ST. </td></tr>
     <tr><td class="paramname">vFCPST_b</td><td>Valor do FCP ST. </td></tr>
     <tr><td class="paramname">vICMSDeson_c</td><td>Valor do ICMS desonerado. </td></tr>
-    <tr><td class="paramname">motDesICMS_c</td><td>Motivo da desoneração do ICMS.</td></tr>
+    <tr><td class="paramname">motDesICMS_c</td><td>Motivo da desoneração do ICMS. </td></tr>
+    <tr><td class="paramname">indDeduzDesonOp</td><td>Indicador de dedução da desoneração.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2648,8 +2843,8 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa0c342c9d4580e87fd6c563e17a066b2" name="gaa0c342c9d4580e87fd6c563e17a066b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa0c342c9d4580e87fd6c563e17a066b2">&#9670;&nbsp;</a></span>InformaICMS90()</h2>
+<a id="gaa0565e275f9a9b8f1dbfe64fe7e7fa9b" name="gaa0565e275f9a9b8f1dbfe64fe7e7fa9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0565e275f9a9b8f1dbfe64fe7e7fa9b">&#9670;&nbsp;</a></span>InformaICMS90()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2784,7 +2979,13 @@ Funções</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>motDesICMS_c</em>&#160;</td>
+          <td class="paramname"><em>motDesICMS_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indDeduzDesonOp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2823,7 +3024,8 @@ Funções</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">vFCPST_bb</td><td>Valor do FCP ST. </td></tr>
     <tr><td class="paramname">vICMSDeson_c</td><td>Valor do ICMS desonerado. </td></tr>
-    <tr><td class="paramname">motDesICMS_c</td><td>Motivo da desoneração do ICMS.</td></tr>
+    <tr><td class="paramname">motDesICMS_c</td><td>Motivo da desoneração do ICMS. </td></tr>
+    <tr><td class="paramname">indDeduzDesonOp</td><td>Indicador de dedução da desoneração.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2831,8 +3033,8 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9234493f0c7c7dccb19d7a39a6247383" name="ga9234493f0c7c7dccb19d7a39a6247383"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9234493f0c7c7dccb19d7a39a6247383">&#9670;&nbsp;</a></span>InformaICMSPart()</h2>
+<a id="gae8fe35c5f360c0246d0e865532aa6f4b" name="gae8fe35c5f360c0246d0e865532aa6f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8fe35c5f360c0246d0e865532aa6f4b">&#9670;&nbsp;</a></span>InformaICMSPart()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2925,6 +3127,24 @@ Funções</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vBCFCPST_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pFCPST_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vFCPST_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>pBCOper</em>, </td>
         </tr>
         <tr>
@@ -2941,7 +3161,7 @@ Funções</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>ICMS com partilha entre UF. </p>
+<p>Grupo de Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na legislação. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
@@ -2958,8 +3178,11 @@ Funções</h2></td></tr>
     <tr><td class="paramname">vBCST</td><td>Valor da BC do ICMS ST. </td></tr>
     <tr><td class="paramname">pICMSST</td><td>Alíquota do imposto do ICMS ST. </td></tr>
     <tr><td class="paramname">vICMSST</td><td>Valor do ICMS ST. </td></tr>
-    <tr><td class="paramname">pBCOper</td><td>Percentual da BC operação própria. </td></tr>
-    <tr><td class="paramname">UFST</td><td>UF para qual é devido o ICMS ST.</td></tr>
+    <tr><td class="paramname">vBCFCPST_a</td><td>Valor da BC do FCP ST. </td></tr>
+    <tr><td class="paramname">pFCPST_a</td><td>Percentual do FCP ST. </td></tr>
+    <tr><td class="paramname">vFCPST_a</td><td>Valor do FCP ST. </td></tr>
+    <tr><td class="paramname">pBCOper</td><td>Percentual da BC da operação. </td></tr>
+    <tr><td class="paramname">UFST</td><td>UF do ICMS ST.</td></tr>
   </table>
   </dd>
 </dl>
@@ -4807,8 +5030,8 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a id="ga07f5232ae8e2b4905ab315559c6a2d2e" name="ga07f5232ae8e2b4905ab315559c6a2d2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga07f5232ae8e2b4905ab315559c6a2d2e">&#9670;&nbsp;</a></span>InformaPagamento()</h2>
+<a id="gaabe54290cf1012ad2d7e1fd97cf3fe13" name="gaabe54290cf1012ad2d7e1fd97cf3fe13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaabe54290cf1012ad2d7e1fd97cf3fe13">&#9670;&nbsp;</a></span>InformaPagamento()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4829,7 +5052,19 @@ Funções</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xPagOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>vPag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dPagOp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4853,7 +5088,19 @@ Funções</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>cAutOp</em>&#160;</td>
+          <td class="paramname"><em>cAutOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CNPJRecebOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>idTermPagOp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -4863,20 +5110,69 @@ Funções</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Informa os dados de pagamento. </p>
+<p>Grupo Detalhamento do Pagamento. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">indPagOp</td><td>Indicador da Forma de Pagamento. </td></tr>
-    <tr><td class="paramname">tPag</td><td>Meio de Pagamento.</td></tr>
-    <tr><td class="paramname">vPag</td><td>Valor do Pagamento. </td></tr>
-    <tr><td class="paramname">tpIntegra</td><td>Tipo de Integração para pagamento. </td></tr>
-    <tr><td class="paramname">CNPJOp</td><td>CNPJ da instituição de pagamento. </td></tr>
-    <tr><td class="paramname">tBandOp</td><td>Bandeira da operadora de cartão de crédito e/ou débito. </td></tr>
-    <tr><td class="paramname">cAutOp</td><td>Número de autorização da operação cartão de crédito e/ou débito.</td></tr>
+    <tr><td class="paramname">indPagOp</td><td>Indicador do pagamento da operação. </td></tr>
+    <tr><td class="paramname">tPag</td><td>Tipo de pagamento. </td></tr>
+    <tr><td class="paramname">xPagOp</td><td>Descrição do pagamento da operação. </td></tr>
+    <tr><td class="paramname">vPag</td><td>Valor do pagamento. </td></tr>
+    <tr><td class="paramname">dPagOp</td><td>Data do pagamento da operação. </td></tr>
+    <tr><td class="paramname">tpIntegra</td><td>Tipo de integração. </td></tr>
+    <tr><td class="paramname">CNPJOp</td><td>CNPJ da operação. </td></tr>
+    <tr><td class="paramname">tBandOp</td><td>Tipo de bandeira da operação. </td></tr>
+    <tr><td class="paramname">cAutOp</td><td>Código de autorização da operação. </td></tr>
+    <tr><td class="paramname">CNPJRecebOp</td><td>CNPJ do recebedor da operação. </td></tr>
+    <tr><td class="paramname">idTermPagOp</td><td>Identificador do terminal de pagamento da operação.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>O retorno em caso de sucesso será o index do pagamento criado. Desse modo o valor deve ser &gt; 1. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga19d9266f03f05f6b6d18a4b7126e8bea" name="ga19d9266f03f05f6b6d18a4b7126e8bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga19d9266f03f05f6b6d18a4b7126e8bea">&#9670;&nbsp;</a></span>InformaInformacoesPagamento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaInformacoesPagamento </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vTrocoOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CNPJPag_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>UFPag_a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informações gerais do grupo de pagamento. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vTrocoOp</td><td>Valor do troco da operação. </td></tr>
+    <tr><td class="paramname">CNPJPag_a</td><td>CNPJ do pagamento. </td></tr>
+    <tr><td class="paramname">UFPag_a</td><td>UF do pagamento.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
 
 </div>
 </div>
@@ -5086,8 +5382,8 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a id="ga923acdfc437529afabb047f8917c9631" name="ga923acdfc437529afabb047f8917c9631"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga923acdfc437529afabb047f8917c9631">&#9670;&nbsp;</a></span>InformaProcessoReferenciado()</h2>
+<a id="gac88f5d6a1be5f177ef143b79d8527e0a" name="gac88f5d6a1be5f177ef143b79d8527e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac88f5d6a1be5f177ef143b79d8527e0a">&#9670;&nbsp;</a></span>InformaProcessoReferenciado()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5102,7 +5398,13 @@ Funções</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>indProc</em>&#160;</td>
+          <td class="paramname"><em>indProc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tpAtoOp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -5112,11 +5414,12 @@ Funções</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Função utilizada para informar processo referenciado na nota fiscal. </p>
+<p>Grupo Processo referenciado. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">nProc</td><td>número do processo referenciado. </td></tr>
-    <tr><td class="paramname">indProc</td><td>indicador da origem do processo (0 - Justiça Federal, 1 - Justiça Estadual, etc.).</td></tr>
+    <tr><td class="paramname">nProc</td><td>Número do processo. </td></tr>
+    <tr><td class="paramname">indProc</td><td>Indicador do processo. </td></tr>
+    <tr><td class="paramname">tpAtoOp</td><td>Tipo do ato da operação.</td></tr>
   </table>
   </dd>
 </dl>
@@ -5376,6 +5679,2491 @@ Funções</h2></td></tr>
 
 <p>Função utilizada para descarregar a biblioteca E1_Pdf. </p>
 <p >Esta função libera todos os recursos previamente alocados pela <a class="el" href="group__g50.html#ga9d683cb0bdd9c9eb4e447da718aa8cbe" title="Função utilizada para carregar a biblioteca E1_Pdf.">LoadPDF()</a>.</p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga70e6d3335762ecc8b108221a14c588cd" name="ga70e6d3335762ecc8b108221a14c588cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga70e6d3335762ecc8b108221a14c588cd">&#9670;&nbsp;</a></span>InformaDocumentoReferenciadoNFe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaDocumentoReferenciadoNFe </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>refNFeEx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>refNFeSigEx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informação de Documentos Fiscais referenciados - NFe. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">refNFeEx</td><td>Chave de acesso da NFe referenciada externa. </td></tr>
+    <tr><td class="paramname">refNFeSigEx</td><td>Sigla da NFe referenciada externa.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga47b917fa2664dfad0a4d4b410805f984" name="ga47b917fa2664dfad0a4d4b410805f984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga47b917fa2664dfad0a4d4b410805f984">&#9670;&nbsp;</a></span>InformaDocumentoReferenciadoNF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaDocumentoReferenciadoNF </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cUF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>AAMM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CNPJ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>mod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>serie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nNF</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informação de Documentos Fiscais referenciados - NF Modelo 1/1A ou 2. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cUF</td><td>Código da UF do emitente. </td></tr>
+    <tr><td class="paramname">AAMM</td><td>Ano e mês de emissão da NF. </td></tr>
+    <tr><td class="paramname">CNPJ</td><td>CNPJ do emitente. </td></tr>
+    <tr><td class="paramname">mod</td><td>Modelo do documento fiscal. </td></tr>
+    <tr><td class="paramname">serie</td><td>Série do documento fiscal. </td></tr>
+    <tr><td class="paramname">nNF</td><td>Número do documento fiscal.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga27858d9fdc6e606fb8c2d3c02e765809" name="ga27858d9fdc6e606fb8c2d3c02e765809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27858d9fdc6e606fb8c2d3c02e765809">&#9670;&nbsp;</a></span>InformaDocumentoReferenciadoNFP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaDocumentoReferenciadoNFP </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cUF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>AAMM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CNPJEx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CPFEx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>IE</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>mod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>serie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nNF</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informação de Documentos Fiscais referenciados - NF Produtor Rural. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cUF</td><td>Código da UF do emitente. </td></tr>
+    <tr><td class="paramname">AAMM</td><td>Ano e mês de emissão da NF. </td></tr>
+    <tr><td class="paramname">CNPJEx</td><td>CNPJ do emitente (opcional). </td></tr>
+    <tr><td class="paramname">CPFEx</td><td>CPF do emitente (opcional). </td></tr>
+    <tr><td class="paramname">IE</td><td>Inscrição Estadual do emitente. </td></tr>
+    <tr><td class="paramname">mod</td><td>Modelo do documento fiscal. </td></tr>
+    <tr><td class="paramname">serie</td><td>Série do documento fiscal. </td></tr>
+    <tr><td class="paramname">nNF</td><td>Número do documento fiscal.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gaa7f1c7a7d7bca122a8ebb660179a8e43" name="gaa7f1c7a7d7bca122a8ebb660179a8e43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7f1c7a7d7bca122a8ebb660179a8e43">&#9670;&nbsp;</a></span>InformaDocumentoReferenciadoCTe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaDocumentoReferenciadoCTe </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>refCTeEx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informação de Documentos Fiscais referenciados - CTe. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">refCTeEx</td><td>Chave de acesso do CTe referenciado.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gaf86b5969c5430e66ccf35b53d3b8b250" name="gaf86b5969c5430e66ccf35b53d3b8b250"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf86b5969c5430e66ccf35b53d3b8b250">&#9670;&nbsp;</a></span>InformaDocumentoReferenciadoECF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaDocumentoReferenciadoECF </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>mod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nECF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nCOO</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informação de Documentos Fiscais referenciados - ECF. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mod</td><td>Modelo do ECF. </td></tr>
+    <tr><td class="paramname">nECF</td><td>Número de série do ECF. </td></tr>
+    <tr><td class="paramname">nCOO</td><td>Número do Contador de Ordem de Operação - COO.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga629af5d5d0bcb205d0d99c0c997fecab" name="ga629af5d5d0bcb205d0d99c0c997fecab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga629af5d5d0bcb205d0d99c0c997fecab">&#9670;&nbsp;</a></span>InformaInformacoesAdicionaisProduto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaInformacoesAdicionaisProduto </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>infAdProd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informações Adicionais do Produto. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">infAdProd</td><td>Informações adicionais do produto.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga3a56ddf4b04272927031f1b0480c4834" name="ga3a56ddf4b04272927031f1b0480c4834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a56ddf4b04272927031f1b0480c4834">&#9670;&nbsp;</a></span>InformaDeclaracaoImportacao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaDeclaracaoImportacao </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nDI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dDI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xLocDesemb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>UFDesemb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dDesemb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tpViaTransp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vAFRMMOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tpIntermedio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CNPJEx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CPFEx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>UFTerceiroOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cExportador</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Declaração de Importação. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">nDI</td><td>Número da Declaração de Importação. </td></tr>
+    <tr><td class="paramname">dDI</td><td>Data da Declaração de Importação. </td></tr>
+    <tr><td class="paramname">xLocDesemb</td><td>Local de desembaraço aduaneiro. </td></tr>
+    <tr><td class="paramname">UFDesemb</td><td>UF do desembaraço aduaneiro. </td></tr>
+    <tr><td class="paramname">dDesemb</td><td>Data do desembaraço aduaneiro. </td></tr>
+    <tr><td class="paramname">tpViaTransp</td><td>Tipo da via de transporte. </td></tr>
+    <tr><td class="paramname">vAFRMMOp</td><td>Valor da AFRMM. </td></tr>
+    <tr><td class="paramname">tpIntermedio</td><td>Tipo de intermediação. </td></tr>
+    <tr><td class="paramname">CNPJEx</td><td>CNPJ do adquirente/encomendante. </td></tr>
+    <tr><td class="paramname">CPFEx</td><td>CPF do adquirente/encomendante. </td></tr>
+    <tr><td class="paramname">UFTerceiroOp</td><td>UF do terceiro. </td></tr>
+    <tr><td class="paramname">cExportador</td><td>Código do exportador.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gaec467e358a4f04e08866bb90dd76612d" name="gaec467e358a4f04e08866bb90dd76612d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec467e358a4f04e08866bb90dd76612d">&#9670;&nbsp;</a></span>InformaAdicaoDeclaracaoImportacao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaAdicaoDeclaracaoImportacao </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nDI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nAdicaoOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nSeqAdic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cFabricante</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vDescDIOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nDrawOp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adições da Declaração de Importação. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">nDI</td><td>Número da Declaração de Importação. </td></tr>
+    <tr><td class="paramname">nAdicaoOp</td><td>Número da adição. </td></tr>
+    <tr><td class="paramname">nSeqAdic</td><td>Número sequencial da adição. </td></tr>
+    <tr><td class="paramname">cFabricante</td><td>Código do fabricante. </td></tr>
+    <tr><td class="paramname">vDescDIOp</td><td>Valor do desconto da DI. </td></tr>
+    <tr><td class="paramname">nDrawOp</td><td>Número do drawback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gad32ceabf6cbe2c06d8cc850b6e0d278f" name="gad32ceabf6cbe2c06d8cc850b6e0d278f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad32ceabf6cbe2c06d8cc850b6e0d278f">&#9670;&nbsp;</a></span>InformaDetalhamentoExportacao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaDetalhamentoExportacao </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nDrawOp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo de informações de exportação para o item. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">nDrawOp</td><td>Número do drawback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga43565e9338243bc27595305827432730" name="ga43565e9338243bc27595305827432730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43565e9338243bc27595305827432730">&#9670;&nbsp;</a></span>InformaRastreabilidade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaRastreabilidade </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nLote</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>qLote</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dFab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dVal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cAgregOp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Detalhamento de produto sujeito a rastreabilidade. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">nLote</td><td>Número do lote. </td></tr>
+    <tr><td class="paramname">qLote</td><td>Quantidade no lote. </td></tr>
+    <tr><td class="paramname">dFab</td><td>Data de fabricação. </td></tr>
+    <tr><td class="paramname">dVal</td><td>Data de validade. </td></tr>
+    <tr><td class="paramname">cAgregOp</td><td>Código de agregação.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gaff8be127020dd83619da1e486f57e327" name="gaff8be127020dd83619da1e486f57e327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaff8be127020dd83619da1e486f57e327">&#9670;&nbsp;</a></span>InformaVeiculoNovo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaVeiculoNovo </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tpOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>chassi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cCor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xCor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cilin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pesoL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pesoB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nSerie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tpComb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nMotor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CMT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>anoMod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>anoFab</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tpPint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tpVeic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>espVeic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>VIN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>condVeic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cMod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cCorDENATRAN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>lota</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tpRest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Detalhamento de Veículos novos. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">tpOp</td><td>Tipo de operação. </td></tr>
+    <tr><td class="paramname">chassi</td><td>Chassi do veículo. </td></tr>
+    <tr><td class="paramname">cCor</td><td>Código da cor. </td></tr>
+    <tr><td class="paramname">xCor</td><td>Descrição da cor. </td></tr>
+    <tr><td class="paramname">pot</td><td>Potência do motor. </td></tr>
+    <tr><td class="paramname">cilin</td><td>Cilindrada. </td></tr>
+    <tr><td class="paramname">pesoL</td><td>Peso líquido. </td></tr>
+    <tr><td class="paramname">pesoB</td><td>Peso bruto. </td></tr>
+    <tr><td class="paramname">nSerie</td><td>Número de série. </td></tr>
+    <tr><td class="paramname">tpComb</td><td>Tipo de combustível. </td></tr>
+    <tr><td class="paramname">nMotor</td><td>Número do motor. </td></tr>
+    <tr><td class="paramname">CMT</td><td>Capacidade Máxima de Tração. </td></tr>
+    <tr><td class="paramname">dist</td><td>Distância entre eixos. </td></tr>
+    <tr><td class="paramname">anoMod</td><td>Ano do modelo. </td></tr>
+    <tr><td class="paramname">anoFab</td><td>Ano de fabricação. </td></tr>
+    <tr><td class="paramname">tpPint</td><td>Tipo de pintura. </td></tr>
+    <tr><td class="paramname">tpVeic</td><td>Tipo de veículo. </td></tr>
+    <tr><td class="paramname">espVeic</td><td>Espécie do veículo. </td></tr>
+    <tr><td class="paramname">VIN</td><td>Vehicle Identification Number. </td></tr>
+    <tr><td class="paramname">condVeic</td><td>Condição do veículo. </td></tr>
+    <tr><td class="paramname">cMod</td><td>Código do modelo. </td></tr>
+    <tr><td class="paramname">cCorDENATRAN</td><td>Código da cor DENATRAN. </td></tr>
+    <tr><td class="paramname">lota</td><td>Lotação. </td></tr>
+    <tr><td class="paramname">tpRest</td><td>Tipo de restrição.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga1333e0c7789f3feb8b595dae52f026dd" name="ga1333e0c7789f3feb8b595dae52f026dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1333e0c7789f3feb8b595dae52f026dd">&#9670;&nbsp;</a></span>InformaMedicamento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaMedicamento </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cProdANVISA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xMotivoIsencaoOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vPMC</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Detalhamento de Medicamentos. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">cProdANVISA</td><td>Código do produto na ANVISA. </td></tr>
+    <tr><td class="paramname">xMotivoIsencaoOp</td><td>Motivo da isenção. </td></tr>
+    <tr><td class="paramname">vPMC</td><td>Preço Máximo ao Consumidor.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga8fc88a4d2c1e75723847bd80098b7b2b" name="ga8fc88a4d2c1e75723847bd80098b7b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8fc88a4d2c1e75723847bd80098b7b2b">&#9670;&nbsp;</a></span>InformaArmamento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaArmamento </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tpArma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nSerie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nCano</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>descr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Detalhamento de Armamento. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">tpArma</td><td>Tipo de arma. </td></tr>
+    <tr><td class="paramname">nSerie</td><td>Número de série. </td></tr>
+    <tr><td class="paramname">nCano</td><td>Número do cano. </td></tr>
+    <tr><td class="paramname">descr</td><td>Descrição da arma.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga242b880574f50df48b8991e6a3fa7b33" name="ga242b880574f50df48b8991e6a3fa7b33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga242b880574f50df48b8991e6a3fa7b33">&#9670;&nbsp;</a></span>InformaCombustivel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaCombustivel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cProdANP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>descANP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pGLPOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pGNnOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pGNiOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vPartOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CODIFOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>qTempOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>UFCons</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pBioOp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informações específicas para combustíveis líquidos e lubrificantes. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">cProdANP</td><td>Código do produto na ANP. </td></tr>
+    <tr><td class="paramname">descANP</td><td>Descrição do produto na ANP. </td></tr>
+    <tr><td class="paramname">pGLPOp</td><td>Percentual de GLP. </td></tr>
+    <tr><td class="paramname">pGNnOp</td><td>Percentual de Gás Natural Nacional. </td></tr>
+    <tr><td class="paramname">pGNiOp</td><td>Percentual de Gás Natural Importado. </td></tr>
+    <tr><td class="paramname">vPartOp</td><td>Valor de partida. </td></tr>
+    <tr><td class="paramname">CODIFOp</td><td>Código de autorização CODIF. </td></tr>
+    <tr><td class="paramname">qTempOp</td><td>Quantidade temperatura de referência. </td></tr>
+    <tr><td class="paramname">UFCons</td><td>UF de consumo. </td></tr>
+    <tr><td class="paramname">pBioOp</td><td>Percentual de biodiesel.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gac89af78df61bfa34c3c55cdffd4e7c02" name="gac89af78df61bfa34c3c55cdffd4e7c02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac89af78df61bfa34c3c55cdffd4e7c02">&#9670;&nbsp;</a></span>InformaCombustivelCIDE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaCombustivelCIDE </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>qBCProd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vAliqProd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vCIDE</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informações da CIDE. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">qBCProd</td><td>Quantidade na base de cálculo do produto. </td></tr>
+    <tr><td class="paramname">vAliqProd</td><td>Valor da alíquota do produto. </td></tr>
+    <tr><td class="paramname">vCIDE</td><td>Valor da CIDE.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gad70738c61eb09be91c6f06a69cabb28d" name="gad70738c61eb09be91c6f06a69cabb28d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad70738c61eb09be91c6f06a69cabb28d">&#9670;&nbsp;</a></span>InformaCombustivelEncerrante()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaCombustivelEncerrante </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nBico</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nBombaOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nTanque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vEncIni</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vEncFin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informações do grupo de "encerrante". </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">nBico</td><td>Número do bico. </td></tr>
+    <tr><td class="paramname">nBombaOp</td><td>Número da bomba. </td></tr>
+    <tr><td class="paramname">nTanque</td><td>Número do tanque. </td></tr>
+    <tr><td class="paramname">vEncIni</td><td>Valor do encerrante inicial. </td></tr>
+    <tr><td class="paramname">vEncFin</td><td>Valor do encerrante final.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gae8fae99513bc90abf1739582ae497bac" name="gae8fae99513bc90abf1739582ae497bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8fae99513bc90abf1739582ae497bac">&#9670;&nbsp;</a></span>InformaCombustivelOrigem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaCombustivelOrigem </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indImport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cUFOrig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pOrig</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo indicador da origem do combustível. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">indImport</td><td>Indicador de importação. </td></tr>
+    <tr><td class="paramname">cUFOrig</td><td>Código da UF de origem. </td></tr>
+    <tr><td class="paramname">pOrig</td><td>Percentual de origem.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga9682e169e632b84f7e979b3abdf57839" name="ga9682e169e632b84f7e979b3abdf57839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9682e169e632b84f7e979b3abdf57839">&#9670;&nbsp;</a></span>InformaIPIDevolvido()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaIPIDevolvido </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pDevol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vIPIDevol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informação do IPI devolvido. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">pDevol</td><td>Percentual devolvido. </td></tr>
+    <tr><td class="paramname">vIPIDevol</td><td>Valor do IPI devolvido.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gaa9e980f6f1b7f58057e8c1262a430bf5" name="gaa9e980f6f1b7f58057e8c1262a430bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9e980f6f1b7f58057e8c1262a430bf5">&#9670;&nbsp;</a></span>InformaObservacaoContribuinteItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaObservacaoContribuinteItem </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xCampo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xTexto</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo de observações de uso livre do Contribuinte (para item). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">xCampo</td><td>Identificação do campo. </td></tr>
+    <tr><td class="paramname">xTexto</td><td>Conteúdo do campo.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga165450f427f681fd784572343bbef2e5" name="ga165450f427f681fd784572343bbef2e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga165450f427f681fd784572343bbef2e5">&#9670;&nbsp;</a></span>InformaObservacaoFiscoItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaObservacaoFiscoItem </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xCampo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xTexto</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo de observações de uso livre do Fisco (para item). </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">xCampo</td><td>Identificação do campo. </td></tr>
+    <tr><td class="paramname">xTexto</td><td>Conteúdo do campo.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga9554f51cacb52fa9455f31b4c2d3a1a4" name="ga9554f51cacb52fa9455f31b4c2d3a1a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9554f51cacb52fa9455f31b4c2d3a1a4">&#9670;&nbsp;</a></span>InformaTransporte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaTransporte </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>modFrete</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vagaoEx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>balsaEx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo Informações do Transporte. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">modFrete</td><td>Modalidade do frete. </td></tr>
+    <tr><td class="paramname">vagaoEx</td><td>Identificação do vagão. </td></tr>
+    <tr><td class="paramname">balsaEx</td><td>Identificação da balsa.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gace50b0978d1711d887befefc75e85db3" name="gace50b0978d1711d887befefc75e85db3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gace50b0978d1711d887befefc75e85db3">&#9670;&nbsp;</a></span>InformaTransportador()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaTransportador </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CNPJEx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CPFEx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xNomeOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>IEOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xEnderOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xMunOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>UFOp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo Transportador. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CNPJEx</td><td>CNPJ do transportador. </td></tr>
+    <tr><td class="paramname">CPFEx</td><td>CPF do transportador. </td></tr>
+    <tr><td class="paramname">xNomeOp</td><td>Razão social ou nome do transportador. </td></tr>
+    <tr><td class="paramname">IEOp</td><td>Inscrição Estadual do transportador. </td></tr>
+    <tr><td class="paramname">xEnderOp</td><td>Endereço completo do transportador. </td></tr>
+    <tr><td class="paramname">xMunOp</td><td>Nome do município do transportador. </td></tr>
+    <tr><td class="paramname">UFOp</td><td>Sigla da UF do transportador.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga965b4119db6eb4145d5dbb6288c2af60" name="ga965b4119db6eb4145d5dbb6288c2af60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga965b4119db6eb4145d5dbb6288c2af60">&#9670;&nbsp;</a></span>InformaRetencaoTransporte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaRetencaoTransporte </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vServ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vBCRet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pICMSRet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vICMSRet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CFOP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cMunFG</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo Retenção ICMS transporte. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vServ</td><td>Valor do serviço. </td></tr>
+    <tr><td class="paramname">vBCRet</td><td>Valor da base de cálculo da retenção. </td></tr>
+    <tr><td class="paramname">pICMSRet</td><td>Alíquota da retenção. </td></tr>
+    <tr><td class="paramname">vICMSRet</td><td>Valor do ICMS retido. </td></tr>
+    <tr><td class="paramname">CFOP</td><td>Código Fiscal de Operações e Prestações. </td></tr>
+    <tr><td class="paramname">cMunFG</td><td>Código do município de ocorrência do fato gerador.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gad47bebd4ca52b9e1be05c91499d5d39b" name="gad47bebd4ca52b9e1be05c91499d5d39b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad47bebd4ca52b9e1be05c91499d5d39b">&#9670;&nbsp;</a></span>InformaVeiculoTransporte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaVeiculoTransporte </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>placa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>UF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>RNTCOp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo Veículo Transporte. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">placa</td><td>Placa do veículo. </td></tr>
+    <tr><td class="paramname">UF</td><td>UF de licenciamento do veículo. </td></tr>
+    <tr><td class="paramname">RNTCOp</td><td>Registro Nacional de Transportador de Carga.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga49acc03fb2bb227f238f33c5ffe315d9" name="ga49acc03fb2bb227f238f33c5ffe315d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49acc03fb2bb227f238f33c5ffe315d9">&#9670;&nbsp;</a></span>InformaReboque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaReboque </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>placa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>UF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>RNTCOp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo Reboque. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">placa</td><td>Placa do reboque. </td></tr>
+    <tr><td class="paramname">UF</td><td>UF de licenciamento do reboque. </td></tr>
+    <tr><td class="paramname">RNTCOp</td><td>Registro Nacional de Transportador de Carga.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gac1c5c80d6bda442345b1a473ff228a60" name="gac1c5c80d6bda442345b1a473ff228a60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac1c5c80d6bda442345b1a473ff228a60">&#9670;&nbsp;</a></span>InformaVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaVolume </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>qVolOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>espOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>marcaOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nVolOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pesoLOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pesoBOp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo Volumes. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qVolOp</td><td>Quantidade de volumes. </td></tr>
+    <tr><td class="paramname">espOp</td><td>Espécie dos volumes. </td></tr>
+    <tr><td class="paramname">marcaOp</td><td>Marca dos volumes. </td></tr>
+    <tr><td class="paramname">nVolOp</td><td>Numeração dos volumes. </td></tr>
+    <tr><td class="paramname">pesoLOp</td><td>Peso líquido. </td></tr>
+    <tr><td class="paramname">pesoBOp</td><td>Peso bruto.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga191c62dbbda2af5e28b9bdf52258d258" name="ga191c62dbbda2af5e28b9bdf52258d258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga191c62dbbda2af5e28b9bdf52258d258">&#9670;&nbsp;</a></span>InformaLacre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaLacre </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nVolume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nLacre</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo Lacres. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nVolume</td><td>Número do volume. </td></tr>
+    <tr><td class="paramname">nLacre</td><td>Número do lacre.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gad8306b4f084dec38c5a95e6792c23d09" name="gad8306b4f084dec38c5a95e6792c23d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8306b4f084dec38c5a95e6792c23d09">&#9670;&nbsp;</a></span>InformaFatura()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaFatura </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nFatOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vOrigOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vDescOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vLiqOp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo Fatura. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nFatOp</td><td>Número da fatura. </td></tr>
+    <tr><td class="paramname">vOrigOp</td><td>Valor original da fatura. </td></tr>
+    <tr><td class="paramname">vDescOp</td><td>Valor do desconto da fatura. </td></tr>
+    <tr><td class="paramname">vLiqOp</td><td>Valor líquido da fatura.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gacb8ad06850d5760329234ebaa0ed95ee" name="gacb8ad06850d5760329234ebaa0ed95ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacb8ad06850d5760329234ebaa0ed95ee">&#9670;&nbsp;</a></span>InformaParcela()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaParcela </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nDupOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dVencOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vDup</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo Parcelas. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nDupOp</td><td>Número da parcela. </td></tr>
+    <tr><td class="paramname">dVencOp</td><td>Data de vencimento. </td></tr>
+    <tr><td class="paramname">vDup</td><td>Valor da parcela.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga7d7cb52f1aea1d451bfcf366a301a49d" name="ga7d7cb52f1aea1d451bfcf366a301a49d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d7cb52f1aea1d451bfcf366a301a49d">&#9670;&nbsp;</a></span>InformaIntermediador()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaIntermediador </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CNPJ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>idCadIntTran</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo de Informações do Intermediador da Transação. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CNPJ</td><td>CNPJ do intermediador. </td></tr>
+    <tr><td class="paramname">idCadIntTran</td><td>Identificador do cadastro de intermediador.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga3dc82f9390f9c0abc15078bd10c8b098" name="ga3dc82f9390f9c0abc15078bd10c8b098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3dc82f9390f9c0abc15078bd10c8b098">&#9670;&nbsp;</a></span>InformaExportacao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaExportacao </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>UFSaidaPais</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xLocExporta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xLocDespachoOp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo Exportação. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">UFSaidaPais</td><td>UF de saída do país. </td></tr>
+    <tr><td class="paramname">xLocExporta</td><td>Local de exportação. </td></tr>
+    <tr><td class="paramname">xLocDespachoOp</td><td>Local de despacho.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gabdaf1487ad16edd5fcece2656d121668" name="gabdaf1487ad16edd5fcece2656d121668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabdaf1487ad16edd5fcece2656d121668">&#9670;&nbsp;</a></span>InformaCompra()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaCompra </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xNEmpOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xPedOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xContOp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo Compra. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xNEmpOp</td><td>Nota de empenho. </td></tr>
+    <tr><td class="paramname">xPedOp</td><td>Pedido. </td></tr>
+    <tr><td class="paramname">xContOp</td><td>Contrato.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gae5dcf10abc39290a266daaec85133b05" name="gae5dcf10abc39290a266daaec85133b05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae5dcf10abc39290a266daaec85133b05">&#9670;&nbsp;</a></span>InformaCana()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaCana </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>safra</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>qTotMes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>qTotAnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>qTotGer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vFor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vTotDed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vLiqFor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo Cana. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">safra</td><td>Identificação da safra. </td></tr>
+    <tr><td class="paramname">ref</td><td>Mês e ano de referência. </td></tr>
+    <tr><td class="paramname">qTotMes</td><td>Quantidade total do mês. </td></tr>
+    <tr><td class="paramname">qTotAnt</td><td>Quantidade total anterior. </td></tr>
+    <tr><td class="paramname">qTotGer</td><td>Quantidade total geral. </td></tr>
+    <tr><td class="paramname">vFor</td><td>Valor dos fornecimentos. </td></tr>
+    <tr><td class="paramname">vTotDed</td><td>Valor total das deduções. </td></tr>
+    <tr><td class="paramname">vLiqFor</td><td>Valor líquido dos fornecimentos.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gac9db380b06371ecd6f9878eb77e54c27" name="gac9db380b06371ecd6f9878eb77e54c27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9db380b06371ecd6f9878eb77e54c27">&#9670;&nbsp;</a></span>InformaFornecimentoDiarioCana()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaFornecimentoDiarioCana </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dia</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>qtde</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo Fornecimento diário de cana. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dia</td><td>Dia do fornecimento. </td></tr>
+    <tr><td class="paramname">qtde</td><td>Quantidade fornecida.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gab563abfdb3a8959d2e2c06edbcb264ac" name="gab563abfdb3a8959d2e2c06edbcb264ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab563abfdb3a8959d2e2c06edbcb264ac">&#9670;&nbsp;</a></span>InformaDeducaoCana()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaDeducaoCana </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xDed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vDed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Grupo Deduções da Cana. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xDed</td><td>Descrição da dedução. </td></tr>
+    <tr><td class="paramname">vDed</td><td>Valor da dedução.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga912982fe895ed3dac6d2a47383201ff5" name="ga912982fe895ed3dac6d2a47383201ff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga912982fe895ed3dac6d2a47383201ff5">&#9670;&nbsp;</a></span>InformaResponsavelTecnico()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaResponsavelTecnico </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CNPJ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>xContato</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>email</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>fone</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>idCSRT_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>hashCSRT_a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informações do Responsável Técnico. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CNPJ</td><td>CNPJ do responsável técnico. </td></tr>
+    <tr><td class="paramname">xContato</td><td>Nome da pessoa a ser contatada. </td></tr>
+    <tr><td class="paramname">email</td><td>Email do contato. </td></tr>
+    <tr><td class="paramname">fone</td><td>Telefone do contato. </td></tr>
+    <tr><td class="paramname">idCSRT_a</td><td>Identificador do CSRT. </td></tr>
+    <tr><td class="paramname">hashCSRT_a</td><td>Hash do CSRT.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga69d2f3ae1386e87b6811a0b15ac0c44e" name="ga69d2f3ae1386e87b6811a0b15ac0c44e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69d2f3ae1386e87b6811a0b15ac0c44e">&#9670;&nbsp;</a></span>InformaInformacoesSuplementares()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaInformacoesSuplementares </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>qrCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>urlChave</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Informações suplementares da NFe. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qrCode</td><td>Texto com o QR-Code. </td></tr>
+    <tr><td class="paramname">urlChave</td><td>URL da consulta por chave de acesso.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gaad7fade7caedd983bcfeffd14e9adaac" name="gaad7fade7caedd983bcfeffd14e9adaac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad7fade7caedd983bcfeffd14e9adaac">&#9670;&nbsp;</a></span>InformaICMS02()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaICMS02 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>orig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CST</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>qBCMonoOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>adRemICMS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vICMSMono</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tributação do ICMS = 02. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">orig</td><td>Origem da mercadoria. </td></tr>
+    <tr><td class="paramname">CST</td><td>Tributação do ICMS = 02. </td></tr>
+    <tr><td class="paramname">qBCMonoOp</td><td>Quantidade tributável do monofásico. </td></tr>
+    <tr><td class="paramname">adRemICMS</td><td>Alíquota ad rem do ICMS. </td></tr>
+    <tr><td class="paramname">vICMSMono</td><td>Valor do ICMS monofásico.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gaeef2ab402784de2841f53c95acb441be" name="gaeef2ab402784de2841f53c95acb441be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeef2ab402784de2841f53c95acb441be">&#9670;&nbsp;</a></span>InformaICMS15()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaICMS15 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>orig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CST</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>qBCMonoOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>adRemICMS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vICMSMono</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>qBCMonoRetenOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>adRemICMSReten</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vICMSMonoReten</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pRedAdRem_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>motRedAdRem_a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tributação do ICMS = 15. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">orig</td><td>Origem da mercadoria. </td></tr>
+    <tr><td class="paramname">CST</td><td>Tributação do ICMS = 15. </td></tr>
+    <tr><td class="paramname">qBCMonoOp</td><td>Quantidade tributável do monofásico. </td></tr>
+    <tr><td class="paramname">adRemICMS</td><td>Alíquota ad rem do ICMS. </td></tr>
+    <tr><td class="paramname">vICMSMono</td><td>Valor do ICMS monofásico. </td></tr>
+    <tr><td class="paramname">qBCMonoRetenOp</td><td>Quantidade tributável do monofásico com retenção. </td></tr>
+    <tr><td class="paramname">adRemICMSReten</td><td>Alíquota ad rem do ICMS com retenção. </td></tr>
+    <tr><td class="paramname">vICMSMonoReten</td><td>Valor do ICMS monofásico com retenção. </td></tr>
+    <tr><td class="paramname">pRedAdRem_a</td><td>Percentual de redução da alíquota ad rem. </td></tr>
+    <tr><td class="paramname">motRedAdRem_a</td><td>Motivo da redução da alíquota ad rem.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="gaa7b074cd149271a3381339fb436e800e" name="gaa7b074cd149271a3381339fb436e800e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7b074cd149271a3381339fb436e800e">&#9670;&nbsp;</a></span>InformaICMS53()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaICMS53 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>orig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CST</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>qBCMonoOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>adRemICMSOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vICMSMonoOperOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pDifOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vICMSMonoDifOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vICMSMonoOp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tributação do ICMS = 53. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">orig</td><td>Origem da mercadoria. </td></tr>
+    <tr><td class="paramname">CST</td><td>Tributação do ICMS = 53. </td></tr>
+    <tr><td class="paramname">qBCMonoOp</td><td>Quantidade tributável do monofásico. </td></tr>
+    <tr><td class="paramname">adRemICMSOp</td><td>Alíquota ad rem do ICMS da operação. </td></tr>
+    <tr><td class="paramname">vICMSMonoOperOp</td><td>Valor do ICMS monofásico da operação. </td></tr>
+    <tr><td class="paramname">pDifOp</td><td>Percentual de diferimento. </td></tr>
+    <tr><td class="paramname">vICMSMonoDifOp</td><td>Valor do ICMS monofásico diferido. </td></tr>
+    <tr><td class="paramname">vICMSMonoOp</td><td>Valor do ICMS monofásico.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
+
+</div>
+</div>
+<a id="ga3e575fd70a1b49dfa6574942dfebd0ce" name="ga3e575fd70a1b49dfa6574942dfebd0ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e575fd70a1b49dfa6574942dfebd0ce">&#9670;&nbsp;</a></span>InformaICMS61()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InformaICMS61 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>orig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CST</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>qBCMonoRetOp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>adRemICMSRet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>vICMSMonoRet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tributação do ICMS = 61. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nItem</td><td>Número do item. </td></tr>
+    <tr><td class="paramname">orig</td><td>Origem da mercadoria. </td></tr>
+    <tr><td class="paramname">CST</td><td>Tributação do ICMS = 61. </td></tr>
+    <tr><td class="paramname">qBCMonoRetOp</td><td>Quantidade tributável do monofásico com retenção. </td></tr>
+    <tr><td class="paramname">adRemICMSRet</td><td>Alíquota ad rem do ICMS com retenção. </td></tr>
+    <tr><td class="paramname">vICMSMonoRet</td><td>Valor do ICMS monofásico com retenção.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Retorna</dt><dd>Retorna 0 em caso de sucesso. </dd></dl>
 
 </div>
