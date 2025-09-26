@@ -50,7 +50,6 @@ var group__g50 =
     [ "InformaValorTotalTributos", "group__g50.html#ga56a3285d2e3d6d4cb3581b4e3e934b7d", null ],
     [ "InformaPagamento", "group__g50.html#gaabe54290cf1012ad2d7e1fd97cf3fe13", null ],
     [ "InformaInformacoesPagamento", "group__g50.html#ga19d9266f03f05f6b6d18a4b7126e8bea", null ],
-    [ "InformaValorTroco", "group__g50.html#gafd4593d3309b9d2a62d35d9e8b069b14", null ],
     [ "FechaCupomVenda", "group__g50.html#gabe9024f69527ec2fc15919de9d09a9df", null ],
     [ "CartaDeCorrecao", "group__g50.html#gabb4509e3f5786ec4ec4d3880a439fd87", null ],
     [ "InformaInformacoesAdicionais", "group__g50.html#ga9ca6d1e1349a1791951b260c878186b2", null ],
@@ -81,6 +80,10 @@ var group__g50 =
     [ "InformaCombustivelCIDE", "group__g50.html#gac89af78df61bfa34c3c55cdffd4e7c02", null ],
     [ "InformaCombustivelEncerrante", "group__g50.html#gad70738c61eb09be91c6f06a69cabb28d", null ],
     [ "InformaCombustivelOrigem", "group__g50.html#gae8fae99513bc90abf1739582ae497bac", null ],
+    [ "InformaICMS02", "group__g50.html#gaad7fade7caedd983bcfeffd14e9adaac", null ],
+    [ "InformaICMS15", "group__g50.html#gaeef2ab402784de2841f53c95acb441be", null ],
+    [ "InformaICMS53", "group__g50.html#gaa7b074cd149271a3381339fb436e800e", null ],
+    [ "InformaICMS61", "group__g50.html#ga3e575fd70a1b49dfa6574942dfebd0ce", null ],
     [ "InformaIPIDevolvido", "group__g50.html#ga9682e169e632b84f7e979b3abdf57839", null ],
     [ "InformaObservacaoContribuinteItem", "group__g50.html#gaa9e980f6f1b7f58057e8c1262a430bf5", null ],
     [ "InformaObservacaoFiscoItem", "group__g50.html#ga165450f427f681fd784572343bbef2e5", null ],
@@ -100,9 +103,5 @@ var group__g50 =
     [ "InformaFornecimentoDiarioCana", "group__g50.html#gac9db380b06371ecd6f9878eb77e54c27", null ],
     [ "InformaDeducaoCana", "group__g50.html#gab563abfdb3a8959d2e2c06edbcb264ac", null ],
     [ "InformaResponsavelTecnico", "group__g50.html#ga912982fe895ed3dac6d2a47383201ff5", null ],
-    [ "InformaInformacoesSuplementares", "group__g50.html#ga69d2f3ae1386e87b6811a0b15ac0c44e", null ],
-    [ "InformaICMS02", "group__g50.html#gaad7fade7caedd983bcfeffd14e9adaac", null ],
-    [ "InformaICMS15", "group__g50.html#gaeef2ab402784de2841f53c95acb441be", null ],
-    [ "InformaICMS53", "group__g50.html#gaa7b074cd149271a3381339fb436e800e", null ],
-    [ "InformaICMS61", "group__g50.html#ga3e575fd70a1b49dfa6574942dfebd0ce", null ]
+    [ "InformaInformacoesSuplementares", "group__g50.html#ga69d2f3ae1386e87b6811a0b15ac0c44e", null ]
 ];
