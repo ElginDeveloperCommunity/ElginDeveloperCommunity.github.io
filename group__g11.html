@@ -47,7 +47,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo-light.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.14.07</span>
+   <div id="projectname">Plataforma de Comunicação Elgin<span id="projectnumber">&#160;versão 3.14.08</span>
    </div>
    <div id="projectbrief">Documentação das bibliotecas de integração com hardware Elgin</div>
   </td>
@@ -116,6 +116,7 @@ $(document).ready(function(){initNavTree('group__g11.html',''); initResizable();
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
 Módulos</h2></td></tr>
 <tr class="memitem:group__g50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__g50.html">Funcoes E1 Notas</a></td></tr>
+<tr class="memdesc:group__g50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funções relacionadas à emissão de NFC-e. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
@@ -125,56 +126,32 @@ Módulos</h2></td></tr>
 <p ><b>E1_Notas</b> <b></b>(DLL/SO) <b>-</b> Extensão de aplicativo (DLL/SO) onde estão exportadas todas as funções para criação do documento, emissão, consulta e cancelamento de notas. É por meio dessa que o PDV fara toda a integração com o sistema de NFCe. <br  />
  Convenção de chamada: <b>cdecl</b> <b></b>. <br  />
  Os parâmetros devem ser enviados para a dll em utf-8.</p>
-<p ><b>e1_notas.cfg</b> <b>-</b> Arquivo de configuração da DLL, onde estão as configurações de logs e url do emissor.</p>
-<p ><b>NFCe</b> <b>Veraciti</b> <b>-</b> Plataforma cloud responsavel pela custódia das emissões. Nesse sistema o parceiro irá criar toda sua estrutura. Também será nessa plataforma onde o cliente poderá consultar as notas emitidas, status das notas, valores processados, etc.</p>
+<p ><b>e1_notas.cfg</b> <b>-</b> Arquivo de configuração da DLL, utilizado para definir parâmetros como URL, logs, entre outras configurações necessárias para o funcionamento da integração.</p>
+<p ><b>NFCe</b> <b>Veraciti</b> <b>-</b> Plataforma de gerenciamento do SmartDFe. Por meio dela, é possível realizar o armazenamento de documentos fiscais e a gestão do sistema, incluindo:</p><ul>
+<li>cadastro de novos clientes,</li>
+<li>atualização de versões,</li>
+<li>download de documentos fiscais.</li>
+</ul>
 <h3>Por onde começar</h3>
-<h3>Cloud</h3>
-<ol type="1">
-<li>A integração com o sistema de emissão de nota fiscal do consumidor pode ser iniciado criando uma conta na plataforma da Veracitti. Solicite a criação da conta pelo canal de suporte ao desenvolvedor no whatsapp 11 99851-9559 <br  />
-</li>
-<li>Após a criação da conta, acesse <a href="https://nfce.veraciti.com.br/#/">https://nfce.veraciti.com.br/#/</a> e realize o login com os dados recebidos no email de cadastro.<br  />
-<h4></h4>
-</li>
-</ol>
-<h3>Local</h3>
-<p >• O primeiro passo será instalar o nosso emissor que pode ser baixado neste link: <a href="https://github.com/ElginDeveloperCommunity/SmartNFCeElgin">https://github.com/ElginDeveloperCommunity/SmartNFCeElgin</a> <br  />
- • Para instalação, é preciso ter estes dados em mãos: <br  />
- </p><table class="markdownTable">
+<h3>Veraciti</h3>
+<p >A solicitação de integração com o SmartDFe deve ser realizada por meio do canal de suporte ao desenvolvedor, via WhatsApp: (11) 99851-9559, opção 2.</p>
+<p >O time de integração e homologação realizará o cadastro do CNPJ e do e-mail informado. Após essa etapa, você receberá um e-mail com as instruções para criação da senha de acesso à plataforma: <a href="https://nfce.veraciti.com.br/">https://nfce.veraciti.com.br/</a></p>
+<h3>Ambiente de desenvolvimento</h3>
+<p >O E1 Notas é o método de integração realizado por meio de DLL. Caso opte pela integração via API, os mesmos passos descritos abaixo deverão ser seguidos.</p>
+<p >Após a instalação e liberação do ambiente de desenvolvimento, a documentação da API estará disponível no seguinte endereço: <a href="http://localhost:8080/swagger/index.html">http://localhost:8080/swagger/index.html</a></p>
+<h3>Instalação do ambiente</h3>
+<p >O time de integração entrará em contato para realizar a instalação e a liberação do ambiente de desenvolvimento, permitindo o início da integração.</p>
+<p >Para a configuração desse ambiente, é necessário fornecer as seguintes informações:</p>
+<table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Campo   </th><th class="markdownTableHeadNone">Descrição    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Nome Fantasia do estabelecimento   </td><td class="markdownTableBodyNone">Nome do estabelecimento    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">UF   </td><td class="markdownTableBodyNone">Estado    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">IE   </td><td class="markdownTableBodyNone">Inscrição estadual    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">IM   </td><td class="markdownTableBodyNone">Inscrição municipal    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">PDV   </td><td class="markdownTableBodyNone">Número do PDV    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Código da licença   </td><td class="markdownTableBodyNone">Licença fornecida pela Elgin    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Client ID   </td><td class="markdownTableBodyNone">Número fornecido pela Elgin    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Escolher o ambiente   </td><td class="markdownTableBodyNone">Homologação ou produção    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Regime tributário   </td><td class="markdownTableBodyNone">Regime tributário do estabelecimento    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">CSC   </td><td class="markdownTableBodyNone">Código de Segurança do Contribuinte    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ID CSC   </td><td class="markdownTableBodyNone">Identificador numérico do CSC cadastrado na SEFAZ    </td></tr>
-<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Certificado digital   </td><td class="markdownTableBodyNone">Certificado digital A1    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Senha do certificado   </td><td class="markdownTableBodyNone">Senha do certificado    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Selecionar o diretório   </td><td class="markdownTableBodyNone">Seleção do diretório    </td></tr>
+<td class="markdownTableBodyNone">IE   </td><td class="markdownTableBodyNone">Inscrição estadual    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Habilitar logs   </td><td class="markdownTableBodyNone">Logs da aplicação   </td></tr>
+<td class="markdownTableBodyNone">Regime tributário   </td><td class="markdownTableBodyNone">Regime tributário do estabelecimento   </td></tr>
 </table>
-<p >• As informações CSC e ID CSC devem ser obtidas ao habilitar o emissor em suas respectivas UFs: <br  />
-</p>
 <p >O fluxo de integração com o a DLL segue os seguintes passos:</p>
 <div class="image">
 <img src="fluxo_basico_integracao.jpg" alt=""/>
