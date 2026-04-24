@@ -121,7 +121,11 @@ Módulos</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <p >E1 Notas. </p>
-<p >Esse módulo tem como objetivo simplificar o processo de integração dos pontos de venda (PDV) com o ambiente SEFAZ de emissão de nota fiscal do consumidor (NFCe). A aplicação de PDV deverá utilizar o módulo E1_Notas para gerar os arquivos que serão transmitidos para sefaz e ao fim da geração devera enviar o arquivo gerado para função de emissão. Antes de entrar nos detalhes de integração se faz necessários alguns esclarecimentos sobre esse módulo. É importante salientar que o emissor é responsável por todo o processo de emissão em contingência, desde entrada, inutilização, envio das notas quando reestabelecida a conexão com a internet. Abaixo estão detalhados os componentes desse módulo.</p>
+<p >O objetivo deste módulo é simplificar o processo de integração dos pontos de venda (PDV) com o ambiente da SEFAZ para a emissão da Nota Fiscal de Consumidor Eletrônica (NFC-e).</p>
+<p >A aplicação de PDV deverá utilizar o módulo E1_Notas para realizar a geração dos arquivos XML que serão transmitidos à SEFAZ. A SWH pode utilizar a dll para geração do xml completo e emissão do mesmo.</p>
+<p >Antes de detalhar o processo de integração, é importante esclarecer alguns pontos sobre o funcionamento deste módulo.</p>
+<p >Cabe destacar que o emissor é responsável por todo o processo de emissão em contingência, incluindo a entrada em contingência, inutilização de numeração quando necessária e o envio das notas fiscais pendentes assim que a conexão com a internet for restabelecida.</p>
+<p >A seguir, estão descritos os principais componentes que compõem este módulo.</p>
 <h3>Componentes</h3>
 <p ><b>E1_Notas</b> <b></b>(DLL/SO) <b>-</b> Extensão de aplicativo (DLL/SO) onde estão exportadas todas as funções para criação do documento, emissão, consulta e cancelamento de notas. É por meio dessa que o PDV fara toda a integração com o sistema de NFCe. <br  />
  Convenção de chamada: <b>cdecl</b> <b></b>. <br  />
@@ -152,11 +156,10 @@ Módulos</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Regime tributário   </td><td class="markdownTableBodyNone">Regime tributário do estabelecimento   </td></tr>
 </table>
-<p >O fluxo de integração com o a DLL segue os seguintes passos:</p>
-<div class="image">
-<img src="fluxo_basico_integracao.jpg" alt=""/>
-</div>
- </div><!-- contents -->
+<pre class="fragment">   O fluxo de integração com o a DLL segue os seguintes passos:
+
+   \image html fluxo_basico_integracao.jpg
+</pre> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.4-->
 <!-- start footer part -->
