@@ -1,0 +1,1 @@
+import{t as e}from"./index-Bq4zs3fT.js";t.displayName=`jsonp`,t.aliases=[];function t(t){t.register(e),t.languages.jsonp=t.languages.extend(`json`,{punctuation:/[{}[\]();,.]/}),t.languages.insertBefore(`jsonp`,`punctuation`,{function:/(?!\s)[_$a-zA-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*(?=\s*\()/})}export{t as default};
