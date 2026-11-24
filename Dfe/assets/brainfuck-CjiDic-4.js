@@ -1,0 +1,1 @@
+e.displayName=`brainfuck`,e.aliases=[];function e(e){e.languages.brainfuck={pointer:{pattern:/<|>/,alias:`keyword`},increment:{pattern:/\+/,alias:`inserted`},decrement:{pattern:/-/,alias:`deleted`},branching:{pattern:/\[|\]/,alias:`important`},operator:/[.,]/,comment:/\S+/}}export{e as default};
